@@ -1,5 +1,5 @@
 {
-  "atualizado": "14/11/2026 14:45",
+  "atualizado": "14/11/2026 15:07",
   "marcas": [
     {
       "nome": "Carnan",
@@ -33,11 +33,13 @@
     },
     {
       "nome": "À La Garçonne",
-      "site": "",
+      "site": "www.alagarconne.com.br",
       "relacao": "segue",
-      "obs": "Site sem catálogo público",
+      "obs": "Site próprio (ÀLG), lido pelas páginas da loja",
       "liberada": "",
-      "arquivos": []
+      "arquivos": [
+        "data/www-alagarconne-com-br.json"
+      ]
     },
     {
       "nome": "Carhartt WIP",
