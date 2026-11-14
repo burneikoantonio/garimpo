@@ -71,6 +71,10 @@ img { max-width: 100%; display: block; }
 .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-block: 1px solid var(--border); }
 .tile { background: var(--bg); border: 0; padding: 0; text-align: left; display: flex; flex-direction: column; min-width: 0; }
 .tile:hover { background: var(--layer); }
+.tilewrap { position: relative; display: flex; min-width: 0; background: var(--bg); }
+.tilewrap > .tile { flex: 1; }
+.heart { position: absolute; top: 6px; right: 6px; z-index: 2; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(22, 22, 22, .55); color: #fff; font-size: 19px; line-height: 1; display: grid; place-items: center; }
+.heart.on { background: var(--bad); }
 .ph { aspect-ratio: 4 / 5; width: 100%; max-width: 100%; position: relative; background: #e5e5e5; overflow: hidden; }
 .ph img { width: 100%; height: 100%; object-fit: cover; }
 .ph .tags { position: absolute; left: 8px; top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
@@ -206,7 +210,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794682474"></script>
+<script src="core.js?v=1794683563"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -324,14 +328,16 @@ function tile({ p, e }) {
   if (e.novo) tags.push('<span class="tag t-new">Novo</span>');
   if (e.baixou) tags.push('<span class="tag t-ok">Baixou</span>');
   else if (e.justo?.nivel === 'abaixo') tags.push('<span class="tag t-ok">Preço bom</span>');
-  return `<button class="tile" data-open="${esc(p.key)}">
+  // o coração fica por cima da foto, fora do botão da peça, para curtir sem abrir
+  const curti = !!S.curtidas[p.key];
+  return `<div class="tilewrap"><button class="heart ${curti ? 'on' : ''}" data-curti="${esc(p.key)}" aria-pressed="${curti}" aria-label="${curti ? 'Remover curtida' : 'Curtir'}">${curti ? '♥' : '♡'}</button><button class="tile" data-open="${esc(p.key)}">
     <div class="ph"><img loading="lazy" src="${esc(img(p.imagens[0], 400))}" alt=""><div class="tags">${tags.join('')}</div></div>
     <div class="body">
       <span class="brand">${esc(p.marca)}${p.relacao === 'sugerida' ? ' · sugerida' : ''}${e.lojas.length > 1 ? ` · ${e.lojas.length} lojas` : p.ofertas[0].loja.startsWith('Site ') ? '' : ` · ${esc(e.lojas[0].loja)}`}</span>
       <span class="pname">${esc(p.titulo)}</span>
       <span class="prices">${e.de ? `<span class="was mono">${brl(e.de)}</span>` : ''}<span class="now mono">${brl(e.price)}</span></span>
       <span class="scoreline"><span class="meter ${e.score >= S.notaMin ? 'hi' : ''}"><i style="width:${e.score}%"></i></span><span class="score mono">Nota ${e.score}</span></span>
-    </div></button>`;
+    </div></button></div>`;
 }
 const header = (title, extra = '') => `<header class="hdr"><div class="wrap"><h1>${title}</h1>${extra}</div></header>`;
 function grid(items, moreKey) {
@@ -771,8 +777,11 @@ document.addEventListener('click', ev => {
   else if (d.curti) {
     const k = d.curti, p = DATA.produtos.find(x => x.key === k);
     if (S.curtidas[k]) { delete S.curtidas[k]; toast('Curtida removida'); }
-    else { const e = evaluate(p); S.curtidas = { ...S.curtidas, [k]: { marca: p.marca, kind: p.kind, titulo: p.titulo, preco: e.ok ? e.price : null, em: Date.now() } }; toast(`Curtido. Vou trazer mais ${KIND_LABEL[p.kind].toLowerCase()} assim.`); }
-    persist(); openDetail(k);
+    else { const e = evaluate(p); S.curtidas = { ...S.curtidas, [k]: { marca: p.marca, kind: p.kind, titulo: p.titulo, preco: e.ok ? e.price : null, em: Date.now() } }; toast(p.kind === 'outro' ? 'Curtido. Vou trazer mais peças assim.' : `Curtido. Vou trazer mais ${KIND_LABEL[p.kind].toLowerCase()} assim.`); }
+    persist();
+    // na tela da peça, redesenha a peça; na lista, só troca o coração (sem reordenar o feed debaixo do dedo)
+    if (!document.getElementById('sheet').hidden) openDetail(k);
+    else document.querySelectorAll(`.heart[data-curti="${CSS.escape(k)}"]`).forEach(h => { const on = !!S.curtidas[k]; h.classList.toggle('on', on); h.textContent = on ? '♥' : '♡'; h.setAttribute('aria-pressed', on); h.setAttribute('aria-label', on ? 'Remover curtida' : 'Curtir'); });
   }
   else if (d.unsave) { delete S.saved[d.unsave]; render(); }
   else if (d.follow) {

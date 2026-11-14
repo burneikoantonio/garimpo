@@ -8,7 +8,7 @@ const median = arr => { if (!arr.length) return null; const s = [...arr].sort((a
 const EXCLUIR = /feminin|\bwomen|\bwoman\b|\bwmns\b|\bmeias?\b|\bsocks?\b|\bbody\b|vestido|dress|\bsaia\b|skirt|baby tee|sufbab|gift|adesivo|sticker|bolsa|\bbags?\b|mochila|backpack|chaveiro|keychain|porta-moeda|cueca|boxer|caneca|poster|isqueiro|tableware|home decor|\bbooks?\b|magazine|textile|high times|gloves|scarves|wallet|cardholder/;
 const KINDS = [
   ['tenis', /t[eê]nis|sneaker|footwear|sapato|\bbota|derby|loafer|mocassim|chinelo|\bslide/],
-  ['bone', /bon[eé]|\bhats?\b|\bcaps?\b|gorro|beanie|chap[eé]u|bucket|6-panel|dad ?hat|viseira/],
+  ['bone', /bon[eé]|touca|\bhats?\b|\bcaps?\b|gorro|beanie|chap[eé]u|bucket|6-panel|dad ?hat|viseira/],
   ['acessorio', /\bmeias?\b|socks?\b|cinto|belt|carteira|wallet|acess[oó]r|[oó]culos|colar|corrente|pulseira|anel\b/],
   ['calca', /cal[cç]a|pants|jeans|trouser|jogger/],
   ['bermuda', /short|bermuda/],
