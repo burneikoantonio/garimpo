@@ -13,7 +13,12 @@ UA="Mozilla/5.0 (Garimpo; uso pessoal)"
 echo '[]' > "$TMP/marcas.json"
 : > "$TMP/arquivos.tsv"   # marca <tab> arquivo
 
-trim() { echo "$1" | xargs; }
+trim() { printf '%s' "$1" | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//'; }
+
+# marcas recomendadas com data de liberação no futuro ficam na fila (uma leva por semana)
+aguardando() {
+  awk -F'|' -v n="$1" -v h="$HOJE" '!/^#/ { g=$1; gsub(/^ +| +$/, "", g); d=$5; gsub(/^ +| +$/, "", d); if (g == n && d != "" && d > h) f=1 } END { exit !f }' marcas.txt
+}
 
 registrar_historico() {  # $1 = arquivo de catálogo
   jq --slurpfile cat "$1" --arg hoje "$HOJE" '
@@ -25,6 +30,7 @@ registrar_historico() {  # $1 = arquivo de catálogo
 grep -v '^#' lojas.txt | while IFS='|' read -r loja site marca buscas filtro; do
   loja=$(trim "$loja"); site=$(trim "$site"); marca=$(trim "$marca"); filtro=$(trim "$filtro")
   [ -z "$loja" ] && continue
+  aguardando "$marca" && continue
   rm -f "$TMP"/v-*.json
   i=0
   IFS=';' read -ra termos <<< "$buscas"
@@ -41,12 +47,12 @@ grep -v '^#' lojas.txt | while IFS='|' read -r loja site marca buscas filtro; do
     done
   done
   if ! ls "$TMP"/v-*.json >/dev/null 2>&1; then echo "✗ $loja / $marca: sem resposta"; continue; fi
-  arquivo="data/$(echo "$site-$marca" | tr 'A-Z .' 'a-z--').json"
+  arquivo="data/$(echo "$site-$marca" | tr 'A-Z .' 'a-z--' | tr -cd 'a-z0-9.-').json"
   jq -s --arg marca "$marca" --arg loja "$loja" --arg site "$site" --arg filtro "$filtro" '
     [.[][]]
     | map(select(
         (.brand | ascii_downcase | test($filtro)) and
-        ((.["Gêneros"] // .["gênero"] // .["Gênero"] // ["Unissex"]) | any(test("homens|masculino|unissex"; "i"))) and
+        ((.["Gêneros"] // .["gênero"] // .["Gênero"] // ["Unissex"]) | any(test("homens|masculino|unissex|unisex"; "i"))) and
         (.productName | test("infantil|feminin|juvenil|chuteira|beb[eê]|kids|menin"; "i") | not)))
     | unique_by(.productId)
     | {marca: $marca, loja: $loja, site: $site, atualizado: (now | todate), produtos: map({
@@ -79,7 +85,7 @@ grep -v '^#' importados.txt | while IFS='|' read -r loja site marca colecao moed
     sleep 1
   done
   if ! ls "$TMP"/i-*.json >/dev/null 2>&1; then echo "✗ $loja / $marca: sem resposta"; continue; fi
-  arquivo="data/$(echo "$site-$marca" | tr 'A-Z .' 'a-z--').json"
+  arquivo="data/$(echo "$site-$marca" | tr 'A-Z .' 'a-z--' | tr -cd 'a-z0-9.-').json"
   jq -s --arg marca "$marca" --arg loja "$loja" --arg site "$site" --arg moeda "$moeda" --argjson frete "$frete" --arg envio "$envio" '
     [.[].products[] | select(.title | test("women|wmns"; "i") | not) | {
       id: (.id | tostring), titulo: .title, url: ("https://" + $site + "/products/" + .handle), ref: "",
@@ -98,9 +104,10 @@ for m in USD EUR GBP; do
 done | jq -s 'add' > "$TMP/cambio.json" && jq -e '.EUR' "$TMP/cambio.json" >/dev/null && mv "$TMP/cambio.json" data/cambio.json && echo "✓ Câmbio: EUR $(jq '.EUR' data/cambio.json)"
 
 # ---------- 2. Sites oficiais (Shopify) ----------
-grep -v '^#' marcas.txt | while IFS='|' read -r nome site rel obs; do
-  nome=$(trim "$nome"); site=$(trim "$site"); rel=$(trim "$rel"); obs=$(trim "$obs")
+grep -v '^#' marcas.txt | while IFS='|' read -r nome site rel obs liberar; do
+  nome=$(trim "$nome"); site=$(trim "$site"); rel=$(trim "$rel"); obs=$(trim "$obs"); liberar=$(trim "$liberar")
   [ -z "$nome" ] && continue
+  if aguardando "$nome"; then echo "… $nome: entra na aba Novas em $liberar"; continue; fi
   if [ -n "$site" ]; then
     rm -f "$TMP"/pagina-*.json
     for pagina in 1 2 3 4 5 6 7 8; do
@@ -128,8 +135,8 @@ grep -v '^#' marcas.txt | while IFS='|' read -r nome site rel obs; do
   fi
   arquivos=$(awk -F'\t' -v m="$nome" '$1 == m {print $2}' "$TMP/arquivos.tsv" | jq -R . | jq -s .)
   [ "$arquivos" = "[]" ] && [ -z "$site" ] && echo "– $nome: sem fonte automática"
-  jq --arg nome "$nome" --arg site "$site" --arg rel "$rel" --arg obs "$obs" --argjson arqs "$arquivos" \
-    '. + [{nome: $nome, site: $site, relacao: $rel, obs: $obs, arquivos: $arqs}]' "$TMP/marcas.json" > "$TMP/m.json" && mv "$TMP/m.json" "$TMP/marcas.json"
+  jq --arg nome "$nome" --arg site "$site" --arg rel "$rel" --arg obs "$obs" --arg lib "$liberar" --argjson arqs "$arquivos" \
+    '. + [{nome: $nome, site: $site, relacao: $rel, obs: $obs, liberada: $lib, arquivos: $arqs}]' "$TMP/marcas.json" > "$TMP/m.json" && mv "$TMP/m.json" "$TMP/marcas.json"
 done
 
 jq --arg hoje "$(date '+%d/%m/%Y %H:%M')" '{atualizado: $hoje, marcas: .}' "$TMP/marcas.json" > data/marcas.json

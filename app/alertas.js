@@ -51,6 +51,13 @@ async function enviar(msg) {
   }
   for (const a of alertas) enviados[a.chave] = hoje;
 
+  // leva nova de marcas recomendadas: avisa uma vez, no dia em que entra na aba Novas
+  const levaHoje = idx.marcas.filter(m => m.relacao === 'sugerida' && m.liberada === hoje && (m.arquivos || []).length);
+  if (levaHoje.length && !enviados[`leva|${hoje}`]) {
+    await enviar({ title: 'Marcas novas para você', message: `${levaHoje.map(m => m.nome).join(', ')} entraram na aba Novas. Siga as que gostar.`, tags: ['sparkles'], click: site || undefined });
+    enviados[`leva|${hoje}`] = hoje;
+  }
+
   // resumo do dia: na última rodada, se nenhum aviso saiu hoje
   const saiuHoje = Object.values(enviados).includes(hoje);
   if (!saiuHoje && hora >= cfg.resumoAPartirDas && resumo.length) {

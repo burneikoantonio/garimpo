@@ -33,7 +33,11 @@ const BOTTOM_EQ = { 36: ['36', '26', 'PP', 'XS'], 38: ['38', '28', 'P', 'S'], 40
 const tokens = t => t.toUpperCase().split(/[^0-9A-Z.]+/).filter(Boolean);
 function fits(variantTitle, group) {
   if (group === 'one' || variantTitle === 'Default Title') return true;
-  const want = group === 'top' ? TOP_EQ[S.sizes.top] : group === 'bottom' ? BOTTOM_EQ[S.sizes.bottom] : [String(S.sizes.shoe)];
+  // cada categoria aceita vários tamanhos (ex.: tênis 41, 42 e 43)
+  const lista = v => (Array.isArray(v) ? v : [v]).map(String);
+  const want = group === 'top' ? lista(S.sizes.top).flatMap(s => TOP_EQ[s] || [])
+    : group === 'bottom' ? lista(S.sizes.bottom).flatMap(s => BOTTOM_EQ[s] || [])
+    : lista(S.sizes.shoe);
   const tk = tokens(variantTitle);
   return (want || []).some(w => tk.includes(w));
 }

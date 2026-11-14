@@ -1,9 +1,30 @@
 {
-  "tamanhos": { "top": "M", "bottom": "40", "shoe": "41" },
-  "marcas": ["Carnan", "Piet", "PACE", "À La Garçonne", "Carhartt WIP", "Adidas Originals", "Jordan"],
+  "tamanhos": {
+    "top": [
+      "M"
+    ],
+    "bottom": [
+      "40"
+    ],
+    "shoe": [
+      "41"
+    ]
+  },
+  "marcas": [
+    "Carnan",
+    "Piet",
+    "PACE",
+    "À La Garçonne",
+    "Carhartt WIP",
+    "Adidas Originals",
+    "Jordan"
+  ],
   "incluirSugeridas": true,
   "notaMin": 70,
-  "importados": { "mostrar": true, "economiaMinima": 20 },
+  "importados": {
+    "mostrar": true,
+    "economiaMinima": 20
+  },
   "avisosPorVez": 5,
   "resumoAPartirDas": 17
 }

@@ -132,7 +132,18 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .switch[aria-checked="true"] { background: #24a148; }
 .switch[aria-checked="true"]::after { transform: translateX(24px); }
 
-.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(5, 1fr); }
+.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(6, 1fr); }
+.nav .navdot { position: absolute; top: 8px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
+.rec { padding-block: 16px; border-bottom: 1px solid var(--border); display: grid; gap: 10px; }
+.rec-top { display: flex; align-items: flex-start; gap: 12px; }
+.rec-top .grow { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.rec-name { font-size: 16px; font-weight: 600; }
+.rec-why { font-size: 13px; color: var(--fg2); }
+.rec-pics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.rec-pics button { border: 0; padding: 0; background: #e5e5e5; aspect-ratio: 4 / 5; overflow: hidden; }
+.rec-pics img { width: 100%; height: 100%; object-fit: cover; }
+.rec-links { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; }
+.rec-links a, .rec-links button { color: var(--link); background: none; border: 0; padding: 0; font-size: 13px; text-decoration: none; }
 .nav button { height: var(--nav-h); background: none; border: 0; display: grid; place-items: center; gap: 2px; padding-top: 6px; font-size: 11px; color: var(--helper); letter-spacing: .32px; position: relative; }
 .nav svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .nav button[aria-current="page"] { color: var(--fg); }
@@ -182,6 +193,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 const ICON = {
   ofertas: '<svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg>',
   buscar: '<svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>',
+  novas: '<svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>',
   marcas: '<svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>',
   salvos: '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
   perfil: '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.5-6.5 8-6.5s7 2 8 6.5"/></svg>',
@@ -204,11 +216,16 @@ const store = {
 };
 
 /* ---------- Estado ---------- */
-const DEFAULT_SIZES = { top: 'M', bottom: '40', shoe: '41' };
+const DEFAULT_SIZES = { top: ['M'], bottom: ['40'], shoe: ['41'] };
+const SIZE_OPTS = { top: Object.keys(TOP_EQ), bottom: Object.keys(BOTTOM_EQ), shoe: ['37', '38', '39', '40', '41', '42', '43', '44', '45'] };
+// versões antigas guardavam um tamanho só por categoria
+const asList = v => (Array.isArray(v) ? v : [v]).map(String);
+const loadSizes = () => { const s = store.get('sizes', DEFAULT_SIZES); return { top: asList(s.top), bottom: asList(s.bottom), shoe: asList(s.shoe) }; };
+const sizesText = () => [S.sizes.top, S.sizes.bottom, S.sizes.shoe].map(l => l.join('/')).join(' · ');
 const S = {
   tab: store.get('tab', 'ofertas'), cat: 'Tudo', limit: 40,
   q: '', qKind: 'Tudo', qBrand: 'Todas', qMax: 1500, qSale: false,
-  sizes: store.get('sizes', DEFAULT_SIZES), onlyMySize: store.get('onlyMySize', true),
+  sizes: loadSizes(), onlyMySize: store.get('onlyMySize', true),
   withSuggested: store.get('withSuggested', true), notaMin: store.get('notaMin', 70),
   saved: store.get('saved', {}), follow: store.get('follow', null),
   showIntl: store.get('showIntl', true), minSave: store.get('minSave', 20),
@@ -276,7 +293,7 @@ function viewOfertas() {
   const fontes = DATA.marcas.filter(m => m.arquivos?.length && brands.has(m.nome)).length;
   return header('<b>Garimpo</b>', `<button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${alerts.length ? '<span class="dot"></span>' : ''}</button>`) + `
     <div class="wrap intro">
-      <p>${deals.length} ofertas no seu tamanho (${esc(S.sizes.top)} · ${esc(S.sizes.bottom)} · ${esc(S.sizes.shoe)}) em ${fontes} marcas</p>
+      <p>${deals.length} ofertas nos seus tamanhos (${esc(sizesText())}) em ${fontes} marcas</p>
       <p>Atualizado em ${esc(DATA.atualizado)}</p>
     </div>
     <div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>
@@ -304,6 +321,30 @@ function viewBuscar() {
       <p class="section-sub" style="margin:16px 0 12px">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p>
     </div>
     ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
+}
+
+function viewNovas() {
+  const recs = DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada && m.arquivos?.length);
+  const levas = [...new Set(recs.map(m => m.liberada))].sort().reverse();
+  const card = m => {
+    const ps = DATA.produtos.filter(p => p.marca === m.nome).map(p => ({ p, e: evaluate(p) })).filter(x => x.e.ok).sort((a, b) => b.e.score - a.e.score);
+    const sale = ps.filter(x => x.e.off > 0);
+    const max = sale.length ? Math.round(Math.max(...sale.map(x => x.e.off)) * 100) : 0;
+    const f = S.follow.includes(m.nome);
+    return `<div class="rec">
+      <div class="rec-top"><div class="grow"><span class="rec-name">${esc(m.nome)}</span><span class="rec-why">${esc(m.obs.replace(/\s*\((lojas|site)[^)]*\)/i, ''))}</span>
+        <span class="t2" style="color:var(--helper);font-size:12px">${ps.length} peças nos seus tamanhos${sale.length ? ` · ${sale.length} em sale, até ${max}%` : ''}</span></div>
+        <button class="btn ${f ? 'ghost' : ''} sm" data-follow="${esc(m.nome)}">${f ? 'Seguindo ✓' : 'Seguir'}</button></div>
+      ${ps.length ? `<div class="rec-pics">${ps.slice(0, 3).map(x => `<button data-open="${esc(x.p.key)}" aria-label="${esc(x.p.titulo)}"><img loading="lazy" src="${esc(img(x.p.imagens[0], 300))}" alt=""></button>`).join('')}</div>` : ''}
+      <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button><a href="${esc(farfetch(m.nome))}" target="_blank" rel="noopener">Ver na Farfetch ↗</a></div>
+    </div>`;
+  };
+  const label = d => { const [y, mo, da] = d.split('-'); return `Leva de ${da}/${mo}`; };
+  return header('Marcas novas') + `<div class="wrap">
+    <p class="section-sub" style="margin:16px 0 4px">Toda semana entram marcas recomendadas no seu estilo. Siga as que gostar: elas passam a contar como suas marcas.</p>
+    ${levas.map((d, i) => `<h2 class="section-h">${label(d)}${i === 0 ? ' <span class="tag t-new" style="margin-left:6px">Mais recente</span>' : ''}</h2>
+      ${recs.filter(m => m.liberada === d).map(card).join('')}`).join('') || '<p class="section-sub" style="padding-block:16px">Nenhuma recomendação ainda.</p>'}
+  </div>`;
 }
 
 function viewMarcas() {
@@ -377,11 +418,11 @@ function viewPerfil() {
   const sw = (key, title, sub, val) => `<div class="toggle"><div class="grow"><span>${title}</span>${sub ? `<small>${sub}</small>` : ''}</div><button class="switch" role="switch" data-sw="${key}" aria-checked="${val}" aria-label="${title}"></button></div>`;
   return header('Perfil') + `<div class="wrap">
     <h2 class="section-h">Seus tamanhos</h2>
-    <div class="field-row" style="grid-template-columns:1fr 1fr 1fr">
-      <div class="field"><label for="szTop">Parte de cima</label>${sel('szTop', Object.keys(TOP_EQ), S.sizes.top)}</div>
-      <div class="field"><label for="szBottom">Calça/bermuda</label>${sel('szBottom', Object.keys(BOTTOM_EQ), S.sizes.bottom)}</div>
-      <div class="field"><label for="szShoe">Tênis</label>${sel('szShoe', [37, 38, 39, 40, 41, 42, 43, 44, 45], S.sizes.shoe)}</div>
-    </div>
+    <p class="section-sub">Toque para marcar um ou mais tamanhos em cada categoria</p>
+    ${[['top', 'Camisetas, moletons e jaquetas'], ['bottom', 'Calças e bermudas'], ['shoe', 'Tênis']].map(([g, label]) => `
+      <div class="field"><span class="lbl">${label}</span>
+        <div class="sizes" role="group" aria-label="${label}">${SIZE_OPTS[g].map(o => `<button class="size ${S.sizes[g].includes(o) ? 'mine' : ''}" data-size="${g}:${o}" aria-pressed="${S.sizes[g].includes(o)}" style="background:none">${o}</button>`).join('')}</div>
+      </div>`).join('')}
     ${sw('onlyMySize', 'Mostrar só meu tamanho', 'Preço e disponibilidade calculados no seu tamanho', S.onlyMySize)}
     <h2 class="section-h">Ofertas</h2>
     ${sw('withSuggested', 'Incluir marcas sugeridas', 'Sufgang, Disturb e outras recomendações', S.withSuggested)}
@@ -497,14 +538,18 @@ let toastT;
 function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
 
 /* ---------- Render ---------- */
-const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['marcas', 'Marcas'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
-const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, marcas: viewMarcas, salvos: viewSalvos, perfil: viewPerfil };
+const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['novas', 'Novas'], ['marcas', 'Marcas'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
+const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, novas: viewNovas, marcas: viewMarcas, salvos: viewSalvos, perfil: viewPerfil };
+// a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
+const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
+const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
 function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); }
 function render(keepFocus) {
   const active = keepFocus && document.activeElement && document.activeElement.id;
   const caret = active === 'q' ? document.activeElement.selectionStart : null;
   document.getElementById('app').innerHTML = VIEWS[S.tab]();
-  document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[k]}<span>${l}</span></button>`).join('');
+  if (S.tab === 'novas') store.set('novasVistas', ultimaLeva());
+  document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[k]}<span>${l}</span>${k === 'novas' && temNovidade() ? '<i class="navdot"></i>' : ''}</button>`).join('');
   if (active) { const el = document.getElementById(active); if (el) { el.focus(); if (caret !== null) el.setSelectionRange(caret, caret); } }
   persist();
 }
@@ -533,6 +578,12 @@ document.addEventListener('click', ev => {
     toast(S.follow.includes(n) ? `Seguindo ${n}` : `Você deixou de seguir ${n}`); render();
   }
   else if (d.sw) { S[d.sw] = !S[d.sw]; render(); }
+  else if (d.size) {
+    const [g, o] = d.size.split(':'); const atual = S.sizes[g];
+    if (atual.includes(o)) { if (atual.length > 1) S.sizes = { ...S.sizes, [g]: atual.filter(x => x !== o) }; else toast('Deixe pelo menos um tamanho marcado'); }
+    else S.sizes = { ...S.sizes, [g]: [...atual, o].sort((a, b) => SIZE_OPTS[g].indexOf(a) - SIZE_OPTS[g].indexOf(b)) };
+    render();
+  }
 });
 document.addEventListener('input', ev => {
   const t = ev.target;
@@ -548,9 +599,6 @@ document.addEventListener('change', ev => {
   else if (t.id === 'qMax') S.qMax = +t.value;
   else if (t.id === 'notaMin') S.notaMin = +t.value;
   else if (t.id === 'minSave') S.minSave = +t.value;
-  else if (t.id === 'szTop') S.sizes = { ...S.sizes, top: t.value };
-  else if (t.id === 'szBottom') S.sizes = { ...S.sizes, bottom: t.value };
-  else if (t.id === 'szShoe') S.sizes = { ...S.sizes, shoe: t.value };
   else if (t.dataset.alvo) { const v = parseFloat(t.value); if (v > 0) S.saved[t.dataset.alvo].alvo = v; }
   else return;
   render();

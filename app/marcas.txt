@@ -1,6 +1,7 @@
-# nome | site | relação | observação
-# relação: segue (marcas que você citou) ou sugerida (recomendação)
-# site vazio = ainda sem forma de puxar dados automaticamente
+# nome | site | relação | observação | liberar em (só recomendadas)
+# relação: segue (marcas que você citou) ou sugerida (recomendação, aparece na aba Novas)
+# site vazio = sem catálogo próprio aberto (pode vir de lojas.txt) ou sem fonte ainda
+# liberar em: AAAA-MM-DD. Recomendações com data futura ficam na fila e entram na aba Novas nesse dia (uma leva por semana).
 Carnan | carnan.com.br | segue |
 Piet | piet.com.br | segue |
 PACE | pacecompany.com.br | segue |
@@ -8,9 +9,22 @@ PACE | pacecompany.com.br | segue |
 Carhartt WIP | | segue | Aguardando Farfetch (programa de afiliados)
 Adidas Originals | | segue | Via Artwalk e Authentic Feet (lojas.txt)
 Jordan | | segue | Via Artwalk e Authentic Feet (lojas.txt)
-Sufgang | sufgang.com.br | sugerida | Streetwear de SP, camisetas e moletons
-Disturb | disturb.com.br | sugerida | Streetwear com collabs (Diadora, Pepsi)
-THESAINT | thesaint.com.br | sugerida | Streetwear de SP, referência entre boleiros e artistas
-Overcome | www.overcome.com.br | sugerida | Streetwear, moletons e cargo
-Bolovo | bolovo.com.br | sugerida | Casual e workwear paulistano
-Osklen | | sugerida | Premium brasileira (site próprio, lojas.txt)
+
+# --- recomendadas: leva de 13/11
+Sufgang | sufgang.com.br | sugerida | Streetwear de SP, camisetas e moletons pesados | 2026-11-13
+Disturb | disturb.com.br | sugerida | Streetwear com collabs (Diadora, Pepsi) e muita sale | 2026-11-13
+
+# --- recomendadas: leva de 14/11
+THESAINT | thesaint.com.br | sugerida | Streetwear de SP, referência entre boleiros e artistas | 2026-11-14
+Overcome | www.overcome.com.br | sugerida | Streetwear, moletons e calças cargo | 2026-11-14
+Bolovo | bolovo.com.br | sugerida | Casual e workwear paulistano, peças duráveis | 2026-11-14
+Osklen | | sugerida | Premium brasileira, linha masculina (lojas.txt) | 2026-11-14
+Mad Enlatados | madenlatados.com.br | sugerida | Streetwear paulistano de estampas provocativas | 2026-11-14
+Nama Denim | namadenim.com | sugerida | Jeans selvedge premium feito no Brasil | 2026-11-14
+New Balance | | sugerida | Tênis e lifestyle, loja oficial no Brasil (lojas.txt) | 2026-11-14
+Levi's | | sugerida | Jeans e jaquetas clássicos, loja oficial (lojas.txt) | 2026-11-14
+
+# --- fila: leva de 21/11
+Insider | insiderstore.com.br | sugerida | Básicos de tecido tecnológico, bom para o dia a dia | 2026-11-21
+Dendezeiro | dendezeiro.com.br | sugerida | Moda autoral de Salvador, destaque no Rio Fashion Week | 2026-11-21
+Blck Brasil | blckbrasil.com.br | sugerida | Bonés e acessórios streetwear | 2026-11-21
