@@ -67,7 +67,7 @@ async function carregarPrefs() {
   }
   const avisoPeca = (titulo, p, e, extra, tag) => enviar({
     title: titulo, tags: [tag],
-    message: `${p.titulo}\n${brl(e.price)}${extra ? ' ' + extra : ''} · nota ${e.score}\n${e.lojas[0].loja}`,
+    message: `${p.titulo}\n${brl(e.price)}${extra ? " " + extra : ""}${e.score > 0 ? ` · nota ${e.score}` : ""}\n${e.lojas[0].loja}`,
     click: link(p) || e.lojas[0].url, attach: foto(p),
   });
 
