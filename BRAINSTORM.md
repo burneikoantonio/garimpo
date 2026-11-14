@@ -46,7 +46,11 @@ Itens com nota ≥ 70 (ajustável) geram alerta. Descontos a partir de ~25–30%
 
 ---
 
-## Onde paramos (13/11/2026)
+## Onde paramos (14/11/2026)
+- **No ar:** https://fascinating-puffpuff-02b586.netlify.app (Netlify) e robô no GitHub (projeto privado burneikoantonio/garimpo) às 8h e 18h, com avisos no ntfy.
+- **Para mudar o app:** editar os arquivos e rodar `./publicar.sh "descrição"`.
+
+## Histórico (13/11/2026)
 - **App real** em `app/`: 1.622 produtos com fotos e preços reais de Carnan, Piet, PACE, Sufgang, Disturb, Jordan e Adidas Originals (estas duas via Artwalk e Authentic Feet).
 - **Atualização automática** todo dia às 8h no Mac. O histórico de preços começou hoje.
 - **Para abrir:** rodar `app/servidor.sh` no Mac e acessar no iPhone pelo endereço que ele mostra (mesmo Wi-Fi).
