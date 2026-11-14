@@ -2,7 +2,7 @@
   "marca": "Adidas Originals",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-14T15:45:35Z",
+  "atualizado": "2026-11-14T16:31:04Z",
   "produtos": [
     {
       "id": "28560",
@@ -488,8 +488,8 @@
         },
         {
           "t": "42",
-          "p": 309.99,
-          "c": 899.99,
+          "p": 900.0,
+          "c": 900.0,
           "a": false
         },
         {
@@ -600,8 +600,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 109.99,
-          "c": 279.99,
+          "p": 280.0,
+          "c": 280.0,
           "a": false
         },
         {
@@ -612,8 +612,8 @@
         },
         {
           "t": "39",
-          "p": 109.99,
-          "c": 279.99,
+          "p": 280.0,
+          "c": 280.0,
           "a": false
         },
         {
@@ -1845,6 +1845,59 @@
           "t": "GGG",
           "p": 69.99,
           "c": 279.99,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "38886",
+      "titulo": "Calça adidas Camo Masculina",
+      "url": "https://www.authenticfeet.com.br/calca-adidas-camo-masculina-hf488-0-300/p",
+      "ref": "HF488-0-300",
+      "tipo": "/Roupas/Masculino/Calças/ Calças",
+      "tags": [],
+      "publicado": "2023-08-15T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/249552/Calca-adidas-Camo-Masculina-Verde.jpg?v=637805645826530000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/249553/Calca-adidas-Camo-Masculina-Verde-2.jpg?v=637805645916430000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/249554/Calca-adidas-Camo-Masculina-Verde-3.jpg?v=637805646035030000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/334482/HF488-0-300-1.jpg?v=638210572603500000"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 179.99,
+          "c": 349.99,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 179.99,
+          "c": 349.99,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 179.99,
+          "c": 349.99,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 179.99,
+          "c": 349.99,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 179.99,
+          "c": 349.99,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 179.99,
+          "c": 349.99,
           "a": false
         }
       ]
@@ -6439,208 +6492,6 @@
           "t": "46",
           "p": 399.99,
           "c": 699.99,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "52476",
-      "titulo": "Tênis Adidas Samba Og Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-samba-og-unissex-ig617-5-001/p",
-      "ref": "IG617-5-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2023-12-28T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/407359/IG617-5-001-1.jpg?v=638442209599770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/407436/IG617-5-001-2.jpg?v=638442210122130000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/407513/IG617-5-001-3.jpg?v=638442210638130000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/407590/IG617-5-001-4.jpg?v=638442211194230000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 399.99,
-          "c": 799.99,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "52515",
-      "titulo": "Tênis Adidas Samba Og Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-samba-og-unissex-ig617-4-001/p",
-      "ref": "IG617-4-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2024-01-03T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/417159/IG617-4-001-1.jpg?v=638936393763200000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/417160/IG617-4-001-2.jpg?v=638936393763200000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/417161/IG617-4-001-3.jpg?v=638936393763200000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/417162/IG617-4-001-4.jpg?v=638936393763370000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 419.99,
-          "c": 599.99,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 419.99,
-          "c": 599.99,
           "a": false
         }
       ]
@@ -19196,47 +19047,6 @@
           "p": 259.99,
           "c": 399.99,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "64085",
-      "titulo": "Camiseta adidas Grafica Originals Masculina",
-      "url": "https://www.authenticfeet.com.br/camiseta-adidas-grafica-originals-masculina-jy276-0-100/p",
-      "ref": "JY276-0-100",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2025-12-13T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509346/JY276-0-100-1-800x1000.jpg?v=639023693596100000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509347/JY276-0-100-2-800x1000.jpg?v=639023693596100000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509348/JY276-0-100-3-800x1000.jpg?v=639023693596270000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509349/JY276-0-100-4-800x1000.jpg?v=639023693596270000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 129.99,
-          "c": 199.99,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 129.99,
-          "c": 199.99,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 129.99,
-          "c": 199.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 129.99,
-          "c": 199.99,
-          "a": false
         }
       ]
     },
