@@ -2,9 +2,61 @@
   "consultadoEm": "2026-11-14",
   "freteUsd": 30,
   "modelos": [
-    { "modelo": "New Balance 9060 Triple Black", "busca": "9060", "ultimaVenda": 106, "menorAnuncio": 63, "url": "https://stockx.com/new-balance-9060-triple-black", "img": "https://images.stockx.com/images/New-Balance-9060-Triple-Black-Product.jpg" },
-    { "modelo": "adidas Samba OG branco e preto", "busca": "samba og", "ultimaVenda": 63, "menorAnuncio": 47, "url": "https://stockx.com/adidas-samba-og-cloud-white-core-black", "img": "https://images.stockx.com/360/adidas-Samba-OG-Cloud-White-Core-Black/Images/adidas-Samba-OG-Cloud-White-Core-Black/Lv2/img01.jpg" },
-    { "modelo": "adidas Campus 00s Core Black", "busca": "campus 00s", "ultimaVenda": 51, "menorAnuncio": 27, "url": "https://stockx.com/adidas-campus-00s-core-black", "img": "https://images.stockx.com/360/adidas-Campus-00s-Core-Black/Images/adidas-Campus-00s-Core-Black/Lv2/img01.jpg" },
-    { "modelo": "Air Jordan 1 Low OG Chicago", "busca": "jordan 1 low", "ultimaVenda": 109, "menorAnuncio": 58, "url": "https://stockx.com/air-jordan-1-retro-low-og-chicago-2025", "img": "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-Chicago-2025/Images/Air-Jordan-1-Retro-Low-OG-Chicago-2025/Lv2/img01.jpg" }
+    {
+      "modelo": "New Balance 9060 Triple Black",
+      "busca": "9060",
+      "ultimaVenda": 106,
+      "menorAnuncio": 63,
+      "url": "https://stockx.com/new-balance-9060-triple-black",
+      "img": "https://images.stockx.com/images/New-Balance-9060-Triple-Black-Product.jpg"
+    },
+    {
+      "modelo": "adidas Samba OG branco e preto",
+      "busca": "samba og",
+      "ultimaVenda": 63,
+      "menorAnuncio": 47,
+      "url": "https://stockx.com/adidas-samba-og-cloud-white-core-black",
+      "img": "https://images.stockx.com/360/adidas-Samba-OG-Cloud-White-Core-Black/Images/adidas-Samba-OG-Cloud-White-Core-Black/Lv2/img01.jpg"
+    },
+    {
+      "modelo": "adidas Campus 00s Core Black",
+      "busca": "campus 00s",
+      "ultimaVenda": 51,
+      "menorAnuncio": 27,
+      "url": "https://stockx.com/adidas-campus-00s-core-black",
+      "img": "https://images.stockx.com/360/adidas-Campus-00s-Core-Black/Images/adidas-Campus-00s-Core-Black/Lv2/img01.jpg"
+    },
+    {
+      "modelo": "Air Jordan 1 Low OG Chicago",
+      "busca": "jordan 1 low",
+      "ultimaVenda": 109,
+      "menorAnuncio": 58,
+      "url": "https://stockx.com/air-jordan-1-retro-low-og-chicago-2025",
+      "img": "https://images.stockx.com/360/Air-Jordan-1-Retro-Low-OG-Chicago-2025/Images/Air-Jordan-1-Retro-Low-OG-Chicago-2025/Lv2/img01.jpg"
+    },
+    {
+      "modelo": "Salomon XT-6 Gore-Tex preto",
+      "busca": "xt-6",
+      "ultimaVenda": 181,
+      "menorAnuncio": 124,
+      "url": "https://stockx.com/salomon-xt-6-gore-tex-black-silver",
+      "img": "https://images.stockx.com/360/Salomon-XT-6-Gore-Tex-Black-Silver/Images/Salomon-XT-6-Gore-Tex-Black-Silver/Lv2/img01.jpg"
+    },
+    {
+      "modelo": "Yeezy Boost 350 V2 Onyx",
+      "busca": "yeezy 350",
+      "ultimaVenda": 224,
+      "menorAnuncio": 80,
+      "url": "https://stockx.com/adidas-yeezy-boost-350-v2-onyx",
+      "img": "https://images.stockx.com/360/adidas-Yeezy-Boost-350-V2-Onyx/Images/adidas-Yeezy-Boost-350-V2-Onyx/Lv2/img01.jpg"
+    },
+    {
+      "modelo": "Yeezy Slide Onyx",
+      "busca": "yeezy slide",
+      "ultimaVenda": 105,
+      "menorAnuncio": 70,
+      "url": "https://stockx.com/adidas-yeezy-slide-black-onyx",
+      "img": "https://images.stockx.com/360/adidas-Yeezy-Slide-Black/Images/adidas-Yeezy-Slide-Black/Lv2/img01.jpg"
+    }
   ]
 }

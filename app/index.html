@@ -429,7 +429,7 @@ function stockxBloco() {
   const bons = linhas.filter(l => l.compensa).length;
   return `<div class="wrap"><h2 class="section-h">StockX x Brasil</h2>
     <p class="section-sub">Tênis que você acompanha: quanto sai trazer da StockX, com tudo incluído, comparado ao menor preço nas lojas brasileiras nos seus tamanhos.</p>
-    <div class="notice ${bons ? 'ok' : ''}" style="margin-bottom:12px"><span>${bons ? `${bons} ${bons > 1 ? 'modelos compensam' : 'modelo compensa'} importar agora.` : '<b>Nenhum compensa importar agora.</b> Com frete, IOF, imposto e ICMS, todos saem mais caros que no Brasil.'}</span></div>
+    <div class="notice ${bons ? 'ok' : ''}" style="margin-bottom:12px"><span>${bons ? `${bons} ${bons > 1 ? 'modelos compensam' : 'modelo compensa'} importar agora.` : '<b>Nenhum compensa importar agora.</b> Com frete, IOF, imposto e ICMS, os modelos que também têm aqui saem mais caros que no Brasil. Os que não são vendidos no Brasil (Salomon, Yeezy) aparecem só com o custo total.'}</span></div>
     ${linhas.map(({ m, custo, br, dif, compensa }) => `<div class="row" style="align-items:flex-start">
       <a class="thumb" href="${esc(m.url)}" target="_blank" rel="noopener" style="background:#fff"><img loading="lazy" src="${esc(m.img)}" alt="" style="object-fit:contain"></a>
       <div class="grow">
