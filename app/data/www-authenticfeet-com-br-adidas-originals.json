@@ -2,7 +2,7 @@
   "marca": "Adidas Originals",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-14T19:52:23Z",
+  "atualizado": "2026-11-14T21:35:20Z",
   "produtos": [
     {
       "id": "28560",
@@ -476,14 +476,14 @@
         },
         {
           "t": "40",
-          "p": 900.0,
-          "c": 900.0,
+          "p": 309.99,
+          "c": 899.99,
           "a": false
         },
         {
           "t": "41",
-          "p": 900.0,
-          "c": 900.0,
+          "p": 309.99,
+          "c": 899.99,
           "a": false
         },
         {
@@ -506,8 +506,8 @@
         },
         {
           "t": "45",
-          "p": 309.99,
-          "c": 899.99,
+          "p": 900.0,
+          "c": 900.0,
           "a": false
         }
       ]
@@ -1903,59 +1903,6 @@
       ]
     },
     {
-      "id": "38886",
-      "titulo": "Calça adidas Camo Masculina",
-      "url": "https://www.authenticfeet.com.br/calca-adidas-camo-masculina-hf488-0-300/p",
-      "ref": "HF488-0-300",
-      "tipo": "/Roupas/Masculino/Calças/ Calças",
-      "tags": [],
-      "publicado": "2023-08-15T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/249552/Calca-adidas-Camo-Masculina-Verde.jpg?v=637805645826530000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/249553/Calca-adidas-Camo-Masculina-Verde-2.jpg?v=637805645916430000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/249554/Calca-adidas-Camo-Masculina-Verde-3.jpg?v=637805646035030000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/334482/HF488-0-300-1.jpg?v=638210572603500000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 179.99,
-          "c": 349.99,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 179.99,
-          "c": 349.99,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 179.99,
-          "c": 349.99,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 179.99,
-          "c": 349.99,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 179.99,
-          "c": 349.99,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 179.99,
-          "c": 349.99,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "38906",
       "titulo": "Camiseta adidas 3-Stripes Masculina",
       "url": "https://www.authenticfeet.com.br/camiseta-adidas-3-stripes-masculina-he954-8-500/p",
@@ -2036,69 +1983,6 @@
           "t": "ÚNICO",
           "p": 69.99,
           "c": 229.99,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "38916",
-      "titulo": "Camiseta adidas 3Bar Masculina",
-      "url": "https://www.authenticfeet.com.br/camiseta-adidas-3bar-masculina-hf475-3-600/p",
-      "ref": "HF475-3-600",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2021-12-13T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/249501/Camiseta-adidas-3Bar-Masculina-Rosa.jpg?v=637805422633870000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/249502/Camiseta-adidas-3Bar-Masculina-Rosa-2.jpg?v=637805422737870000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 69.99,
-          "c": 149.99,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 69.99,
-          "c": 149.99,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 69.99,
-          "c": 149.99,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 69.99,
-          "c": 149.99,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 69.99,
-          "c": 149.99,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 69.99,
-          "c": 149.99,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 69.99,
-          "c": 149.99,
-          "a": false
-        },
-        {
-          "t": "GGGGG",
-          "p": 69.99,
-          "c": 149.99,
           "a": false
         }
       ]
@@ -2301,155 +2185,6 @@
           "t": "46.5",
           "p": 489.99,
           "c": 699.99,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "41255",
-      "titulo": "Tênis adidas NMD_R1 Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-nmd_r1-masculino-gw162-0-001/p",
-      "ref": "GW162-0-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2022-03-22T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/255527/Tenis-adidas-NMD_R1-Masculino-Preto-1.jpg?v=637853836972900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/255528/Tenis-adidas-NMD_R1-Masculino-Preto-2.jpg?v=637853837071400000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/255529/Tenis-adidas-NMD_R1-Masculino-Preto-3.jpg?v=637853837197000000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/255530/Tenis-adidas-NMD_R1-Masculino-Preto-4.jpg?v=637853837307870000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "33.5",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "35.5",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "45.5",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 259.99,
-          "c": 899.99,
-          "a": false
-        },
-        {
-          "t": "46.5",
-          "p": 259.99,
-          "c": 899.99,
           "a": false
         }
       ]
@@ -3612,65 +3347,6 @@
       ]
     },
     {
-      "id": "47772",
-      "titulo": "Tênis adidas Superstar 360 CF",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-superstar-360-cf-hq608-0-001/p",
-      "ref": "HQ608-0-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2022-11-30T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/357329/HQ608-0-001-1.jpg?v=638273706782770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/359385/HQ608-0-001-2.jpg?v=638735780932900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/361362/HQ608-0-001-3.jpg?v=638735780932900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/363193/HQ608-0-001-4.jpg?v=638735780932900000"
-      ],
-      "variantes": [
-        {
-          "t": "26",
-          "p": 189.99,
-          "c": 399.99,
-          "a": false
-        },
-        {
-          "t": "27",
-          "p": 189.99,
-          "c": 399.99,
-          "a": false
-        },
-        {
-          "t": "28",
-          "p": 189.99,
-          "c": 399.99,
-          "a": false
-        },
-        {
-          "t": "29",
-          "p": 189.99,
-          "c": 399.99,
-          "a": false
-        },
-        {
-          "t": "30",
-          "p": 189.99,
-          "c": 399.99,
-          "a": false
-        },
-        {
-          "t": "31",
-          "p": 189.99,
-          "c": 399.99,
-          "a": false
-        },
-        {
-          "t": "32",
-          "p": 189.99,
-          "c": 399.99,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "48197",
       "titulo": "Tênis adidas Campus 80s Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-adidas-campus-80s-masculino-fz615-2-600/p",
@@ -3836,8 +3512,8 @@
         },
         {
           "t": "34",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 299.99,
+          "c": 499.99,
           "a": false
         },
         {
@@ -3866,8 +3542,8 @@
         },
         {
           "t": "39",
-          "p": 299.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "a": false
         },
         {
@@ -3902,8 +3578,8 @@
         },
         {
           "t": "45",
-          "p": 299.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "a": false
         }
       ]
