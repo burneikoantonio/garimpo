@@ -146,7 +146,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .switch[aria-checked="true"] { background: #24a148; }
 .switch[aria-checked="true"]::after { transform: translateX(24px); }
 
-.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(6, 1fr); }
+.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(7, 1fr); }
 .nav .navdot { position: absolute; top: 8px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
 .rec { padding-block: 16px; border-bottom: 1px solid var(--border); display: grid; gap: 10px; }
 .rec-top { display: flex; align-items: flex-start; gap: 12px; }
@@ -207,6 +207,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 const ICON = {
   ofertas: '<svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg>',
   buscar: '<svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>',
+  farfetch: '<svg viewBox="0 0 24 24"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9v12"/></svg>',
   novas: '<svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>',
   marcas: '<svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>',
   salvos: '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
@@ -222,23 +223,15 @@ const brl = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: v % 
 const img = (src, w = 600) => !src ? ''
   : src.includes('vteximg') ? src.replace(/\/ids\/(\d+)(-\d+-\d+)?\//, `/ids/$1-${w}-${Math.round(w * 1.25)}/`)
   : src + (src.includes('?') ? '&' : '?') + 'width=' + w;
-// atalho para a busca masculina da Farfetch Brasil (até entrar pelo programa de afiliados)
-const farfetch = q => 'https://www.farfetch.com/br/shopping/men/search/items.aspx?q=' + encodeURIComponent(q);
-// marcas que a Farfetch Brasil vende (endereços conferidos em 14/11/2026); as outras não estão lá
-const FF_SLUG = { 'Carhartt WIP': 'carhartt-wip', 'Jordan': 'jordan', 'Adidas Originals': 'adidas', 'New Balance': 'new-balance', "Levi's": 'levis', 'Osklen': 'osklen', 'Piet': 'piet' };
-const FF_EXTRA = [['Études', 'etudes'], ['Stüssy', 'stussy'], ['Nike', 'nike']];
-const SALE_AQUI = ['Carnan', 'PACE'];
-const ffMarca = (slug, sale) => `https://www.farfetch.com/br/shopping/men/${sale ? 'sale/' : ''}${slug}/items.aspx`;
-const ffLink = nome => FF_SLUG[nome] ? `<a class="t2" style="color:var(--link)" href="${esc(ffMarca(FF_SLUG[nome]))}" target="_blank" rel="noopener">Ver na Farfetch ↗</a>` : '';
-function farfetchBloco() {
-  const minhas = Object.keys(FF_SLUG).filter(n => S.follow.includes(n)).map(n => [n, FF_SLUG[n]]);
-  const outras = Object.keys(FF_SLUG).filter(n => !S.follow.includes(n)).map(n => [n, FF_SLUG[n]]);
-  const itens = [...minhas, ...outras, ...FF_EXTRA];
-  // marcas que a Farfetch não vende: a sale abre aqui mesmo, com os dados do Garimpo
-  const daqui = SALE_AQUI.filter(n => DATA.produtos.some(p => p.marca === n));
+// atalhos para a sale de cada marca que você segue, aberta aqui mesmo com os dados do Garimpo
+function saleBloco() {
+  const marcas = S.follow.filter(n => DATA.produtos.some(p => p.marca === n));
+  const itens = marcas.map(n => ({ n, q: DATA.produtos.filter(p => p.marca === n && !S.ocultas[p.key]).map(evaluate).filter(e => e.ok && e.off > 0).length }))
+    .sort((a, b) => b.q - a.q);
+  if (!itens.length) return '';
   return `<div class="wrap ff">
-    <div class="ff-h"><span class="ff-t">Atalhos de sale</span><span class="t2">↗ abre a Farfetch Brasil, em reais</span></div>
-    <div class="chips">${daqui.map(n => { const q = DATA.produtos.filter(p => p.marca === n).map(evaluate).filter(e => e.ok && e.off > 0).length; return `<button class="chip ff-chip" data-salebrand="${esc(n)}">${q ? `Sale ${esc(n)} (${q})` : `${esc(n)}: sem sale agora`}</button>`; }).join('')}${itens.map(([n, s]) => `<a class="chip ff-chip" href="${esc(ffMarca(s, true))}" target="_blank" rel="noopener">${esc(n)} ↗</a>`).join('')}</div>
+    <div class="ff-h"><span class="ff-t">Sale das suas marcas</span><span class="t2">nos seus tamanhos</span></div>
+    <div class="chips">${itens.map(({ n, q }) => `<button class="chip ff-chip" data-salebrand="${esc(n)}">${q ? `${esc(n)} (${q})` : `${esc(n)}: sem sale agora`}</button>`).join('')}</div>
   </div>`;
 }
 const store = {
@@ -275,6 +268,7 @@ async function load() {
   const cats = await Promise.all(fontes.map(({ m, a }) => get(a).then(c => ({ m, c })).catch(() => null)));
   if (!S.follow) S.follow = idx.marcas.filter(m => m.relacao === 'segue').map(m => m.nome);
   DATA = buildData(idx, cats, hist, cambio);
+  FF = await get("farfetch.json").catch(() => null);
 }
 
 // o app aprende com o "Não curti": cada peça escondida da mesma marca e tipo empurra as parecidas para baixo no feed
@@ -337,7 +331,7 @@ function viewOfertas() {
       <p>${deals.length} ofertas nos seus tamanhos (${esc(sizesText())}) em ${fontes} marcas</p>
       <p>Atualizado em ${esc(DATA.atualizado)}</p>
     </div>
-    ${farfetchBloco()}
+    ${saleBloco()}
     <div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>
     ${grid(deals) || '<div class="wrap note"><span>Nenhuma oferta nesta categoria agora.</span></div>'}
     <div class="wrap note">${hiddenSize ? `<span>${hiddenSize} peças ocultas por não ter seu tamanho disponível.</span>` : ''}<span>Fotos e preços vêm direto dos sites das marcas.</span></div>`;
@@ -378,7 +372,7 @@ function viewNovas() {
         <span class="t2" style="color:var(--helper);font-size:12px">${ps.length} peças nos seus tamanhos${sale.length ? ` · ${sale.length} em sale, até ${max}%` : ''}</span></div>
         <button class="btn ${f ? 'ghost' : ''} sm" data-follow="${esc(m.nome)}">${f ? 'Seguindo ✓' : 'Seguir'}</button></div>
       ${ps.length ? `<div class="rec-pics">${ps.slice(0, 3).map(x => `<button data-open="${esc(x.p.key)}" aria-label="${esc(x.p.titulo)}"><img loading="lazy" src="${esc(img(x.p.imagens[0], 300))}" alt=""></button>`).join('')}</div>` : ''}
-      <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button>${FF_SLUG[m.nome] ? `<a href="${esc(ffMarca(FF_SLUG[m.nome]))}" target="_blank" rel="noopener">Ver na Farfetch ↗</a>` : ''}</div>
+      <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button></div>
     </div>`;
   };
   const label = d => { const [y, mo, da] = d.split('-'); return `Leva de ${da}/${mo}`; };
@@ -387,6 +381,26 @@ function viewNovas() {
     ${levas.map((d, i) => `<h2 class="section-h">${label(d)}${i === 0 ? ' <span class="tag t-new" style="margin-left:6px">Mais recente</span>' : ''}</h2>
       ${recs.filter(m => m.liberada === d).map(card).join('')}`).join('') || '<p class="section-sub" style="padding-block:16px">Nenhuma recomendação ainda.</p>'}
   </div>`;
+}
+
+/* ---------- Aba Farfetch: marcas e achados escolhidos à mão (o robô não consegue ler a Farfetch) ---------- */
+let FF = null;
+function viewFarfetch() {
+  if (!FF) return header('Farfetch') + '<div class="wrap note"><span>Não consegui carregar os achados da Farfetch.</span></div>';
+  const ff = (slug, sale) => `https://www.farfetch.com/br/shopping/men/${sale ? 'sale/' : ''}${slug}/items.aspx`;
+  const quando = FF.escolhidosEm.split('-').reverse().slice(0, 2).join('/');
+  return header('Farfetch') + `
+    <div class="wrap"><div class="notice" style="margin-top:16px"><span>Achados escolhidos por mim em <b>${esc(quando)}</b>. O robô não consegue acompanhar a Farfetch, então preço e estoque podem ter mudado. Para eu escolher de novo, peça: <b>"atualiza os achados da Farfetch"</b>.</span></div>
+    <h2 class="section-h">Achados com bom desconto</h2></div>
+    <div class="grid">${FF.achados.map(a => `<a class="tile" href="${esc(a.url)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+      <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags"><span class="tag t-sale">-${a.off}%</span></div></div>
+      <div class="body"><span class="brand">${esc(a.marca)} · Farfetch</span><span class="pname">${esc(a.nome)}</span>
+        <span class="prices"><span class="was mono">${brl(a.de)}</span><span class="now mono">${brl(a.por)}</span></span>
+        <span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">Tamanhos: ${esc(a.tam)}</span></div></a>`).join('')}</div>
+    <div class="wrap"><h2 class="section-h">Marcas na Farfetch</h2>
+      ${FF.marcas.map(m => `<div class="rec"><div class="rec-top"><div class="grow"><span class="rec-name">${esc(m.nome)}</span><span class="rec-why">${esc(m.frase)}</span></div></div>
+        <div class="rec-links">${m.sale ? `<a href="${esc(ff(m.slug, true))}" target="_blank" rel="noopener">Ver sale ↗</a>` : ''}<a href="${esc(ff(m.slug))}" target="_blank" rel="noopener">Ver novidades ↗</a></div></div>`).join('')}
+    </div>`;
 }
 
 function viewMarcas() {
@@ -407,7 +421,7 @@ function viewMarcas() {
     } else { sub = esc(m.obs || 'Sem fonte de dados ainda'); tag = '<span class="tag t-gray">Sem conexão</span>'; }
     return `<div class="row">
       <span class="avatar">${esc(initials(m.nome))}</span>
-      <div class="grow">${m.arquivos?.length ? `<button class="btn ghost" style="padding:0;height:auto;color:var(--fg);justify-content:flex-start" data-brand="${esc(m.nome)}">${esc(m.nome)}</button>` : `<span class="t1">${esc(m.nome)}</span>`}<span class="t2">${sub}</span>${ffLink(m.nome)}</div>
+      <div class="grow">${m.arquivos?.length ? `<button class="btn ghost" style="padding:0;height:auto;color:var(--fg);justify-content:flex-start" data-brand="${esc(m.nome)}">${esc(m.nome)}</button>` : `<span class="t1">${esc(m.nome)}</span>`}<span class="t2">${sub}</span></div>
       ${tag}
       <button class="btn ${f ? 'ghost' : 'tertiary'} sm" data-follow="${esc(m.nome)}">${f ? 'Seguindo' : 'Seguir'}</button></div>`;
   };
@@ -479,7 +493,7 @@ function viewPerfil() {
     <h2 class="section-h">Como a nota é calculada</h2>
     <div class="notice"><span><b>Desconto</b> informado pela loja (até 45 pts), <b>preço comparado</b> à mediana de peças do mesmo tipo em todas as marcas (até 30) <b>histórico</b>: menor preço já registrado (até 15) e, quando a peça está em mais de uma loja, <b>comparação entre lojas</b> (até 25). O histórico começou em ${esc(DATA.atualizado.split(' ')[0])} e fica mais útil a cada atualização.</span></div>
     <h2 class="section-h">Ainda não disponível</h2>
-    <div class="notice"><span>Farfetch (marcas importadas, inclusive Carhartt WIP) e Maze entram pelos programas de afiliados. À La Garçonne não tem catálogo aberto.</span></div>
+    <div class="notice"><span>Carhartt WIP, Maze e À La Garçonne: sem catálogo aberto em loja brasileira por enquanto.</span></div>
   </div>`;
 }
 
@@ -580,7 +594,6 @@ function openDetail(key) {
         ${bars.map(b => `<div class="bar-row"><span>${b[0]}</span><span class="mono" style="color:var(--helper)">${Math.round(b[1])}/${b[2]}</span><span class="meter ${b[1] / b[2] > .6 ? 'hi' : ''}"><i style="width:${(b[1] / b[2]) * 100}%"></i></span></div>`).join('')}
       </div>` : ''}
       ${lojasBlock}
-      ${FF_SLUG[p.marca] ? `<div class="row"><div class="grow"><span class="t1">Farfetch</span><span class="t2">Procure a mesma peça e compare, em reais</span></div><a class="btn ghost sm" href="${esc(farfetch(p.marca + ' ' + p.titulo.replace(/\s*-\s*[^-]*$/, '')))}" target="_blank" rel="noopener">Procurar ↗</a></div>` : ''}
       ${intlBlock}
       <h3 class="section-h">Histórico de preço</h3>
       ${histBlock}
@@ -598,8 +611,8 @@ let toastT;
 function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
 
 /* ---------- Render ---------- */
-const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['novas', 'Novas'], ['marcas', 'Marcas'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
-const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, novas: viewNovas, marcas: viewMarcas, salvos: viewSalvos, perfil: viewPerfil };
+const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['novas', 'Novas'], ['marcas', 'Marcas'], ['farfetch', 'Farfetch'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
+const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, novas: viewNovas, marcas: viewMarcas, farfetch: viewFarfetch, salvos: viewSalvos, perfil: viewPerfil };
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
