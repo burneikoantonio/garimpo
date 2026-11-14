@@ -65,6 +65,8 @@ img { max-width: 100%; display: block; }
 .ordem label { font-size: 12px; color: var(--helper); }
 .ordem select { height: 32px; background: var(--layer); border: 0; border-bottom: 1px solid var(--border-strong); padding: 0 8px; font-size: 14px; max-width: 70%; }
 .ff-chip { display: inline-flex; align-items: center; text-decoration: none; color: var(--fg); background: var(--bg); }
+.acoes3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; margin-top: 16px; }
+.acoes3 .btn { height: 52px; padding: 0 10px; justify-content: center; font-size: 13px; text-align: center; }
 
 .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-block: 1px solid var(--border); }
 .tile { background: var(--bg); border: 0; padding: 0; text-align: left; display: flex; flex-direction: column; min-width: 0; }
@@ -204,7 +206,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794681962"></script>
+<script src="core.js?v=1794682474"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -262,6 +264,7 @@ const S = {
   showIntl: store.get('showIntl', true), minSave: store.get('minSave', 20),
   sort: store.get('sort', 'nota'),
   modelos: store.get('modelos', []),   // alertas de modelo: { id, texto, max }
+  curtidas: store.get('curtidas', {}),  // peças curtidas: chave -> { marca, kind, titulo, preco, em }
   canal: store.get('canal', ''),       // canal do ntfy (o mesmo assinado no app ntfy)
   ocultas: store.get('ocultas', {}),   // peças marcadas como "Não curti": chave -> { marca, kind }
 };
@@ -294,6 +297,13 @@ function naoCurtiContagem() {
   return c;
 }
 const naoCurtiPeso = p => Math.min(40, 12 * (naoCurtiContagem()[p.marca + '|' + p.kind] || 0));
+// o "Curti" faz o contrário: peças da mesma marca e tipo sobem; o mesmo tipo em outras marcas sobe um pouco
+function estilo() {
+  const mk = {}, marca = {}, kind = {};
+  for (const c of Object.values(S.curtidas)) { mk[c.marca + '|' + c.kind] = (mk[c.marca + '|' + c.kind] || 0) + 1; marca[c.marca] = (marca[c.marca] || 0) + 1; kind[c.kind] = (kind[c.kind] || 0) + 1; }
+  return { mk, marca, kind };
+}
+const curtiPeso = p => { const e = estilo(); return Math.min(30, 10 * (e.mk[p.marca + '|' + p.kind] || 0)) + Math.min(12, 3 * (e.marca[p.marca] || 0)) + Math.min(9, 3 * (e.kind[p.kind] || 0)); };
 
 function feedList(filter) {
   const out = []; let hiddenSize = 0;
@@ -338,7 +348,7 @@ function viewOfertas() {
   // intercala marcas: cada peça seguinte da mesma marca perde 3 pontos na ordenação
   const rank = {};
   let deals = items.filter(x => x.e.off > 0 || x.e.score >= S.notaMin)
-    .map(x => ({ x, k: x.e.score - 3 * (rank[x.p.marca] = (rank[x.p.marca] ?? -1) + 1) - naoCurtiPeso(x.p) }))
+    .map(x => ({ x, k: x.e.score - 3 * (rank[x.p.marca] = (rank[x.p.marca] ?? -1) + 1) - naoCurtiPeso(x.p) + curtiPeso(x.p) }))
     .sort((a, b) => b.k - a.k).map(o => o.x);
   if (S.sort !== 'nota') deals = ordenar(deals);
   const alerts = buildAlerts();
@@ -515,13 +525,14 @@ function viewSalvos() {
     const p = DATA.produtos.find(x => x.key === k);
     if (!p) return `<div class="row"><div class="grow"><span class="t1">${esc(S.saved[k].titulo || k)}</span><span class="t2">Saiu do catálogo da marca</span></div><button class="btn ghost sm" data-unsave="${esc(k)}">Remover</button></div>`;
     const e = evaluate(p); const alvo = S.saved[k].alvo;
-    const price = e.ok ? e.price : null; const hit = price && price <= alvo;
+    const price = e.ok ? e.price : null; const hit = price && alvo && price <= alvo;
+    const incomum = price && !alvo && (e.justo?.nivel === 'abaixo' || (e.temHist && e.parts.historico >= 15));
     return `<div class="row">
       <button class="thumb" data-open="${esc(k)}" aria-label="Abrir ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>
       <div class="grow">
         <span class="t2">${esc(p.marca)}</span><span class="t1">${esc(p.titulo)}</span>
-        <span class="mono" style="font-size:15px">${price ? brl(price) : 'Esgotado no seu tamanho'} ${hit ? '<span class="tag t-ok">Abaixo do alvo</span>' : ''}</span>
-        <label class="t2" style="display:flex;align-items:center;gap:6px">Alvo R$ <input class="mono" data-alvo="${esc(k)}" type="number" inputmode="numeric" value="${alvo}" style="width:84px;height:28px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 6px;font-size:16px"></label>
+        <span class="mono" style="font-size:15px">${price ? brl(price) : 'Esgotado no seu tamanho'} ${hit ? '<span class="tag t-ok">Abaixo do alvo</span>' : incomum ? '<span class="tag t-ok">Preço fora do comum</span>' : ''}</span>
+        <label class="t2" style="display:flex;align-items:center;gap:6px">Alvo R$ <input class="mono" data-alvo="${esc(k)}" type="number" inputmode="numeric" value="${alvo ?? ''}" placeholder="auto" style="width:84px;height:28px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 6px;font-size:16px"></label>
       </div>
       <div style="display:grid;gap:4px;justify-items:end">${spark(productHist(p))}</div>
     </div>`;
@@ -539,9 +550,11 @@ function viewSalvos() {
       <div class="field"><label for="mMax">Até R$</label><input id="mMax" type="number" inputmode="numeric" placeholder="1000"></div>
       <div class="field"><button class="btn sm" type="submit" style="height:40px">Criar</button></div>
     </form>
-    <h2 class="section-h">Peças salvas</h2>
-    <p class="section-sub">Quando o preço no seu tamanho ficar abaixo do alvo, chega aviso no celular.</p>
-    <div class="list">${rows.join('') || '<p class="section-sub" style="padding-block:16px">Nada salvo ainda. Abra uma peça e toque em Salvar.</p>'}</div>
+    <h2 class="section-h">Peças com alerta 🔔</h2>
+    <p class="section-sub">Com o alvo em "auto", o aviso chega quando o preço sair do comum: abaixo do preço justo, o menor já visto ou uma queda forte. Se preferir, escreva um valor.</p>
+    <div class="list">${rows.join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta ainda. Abra uma peça e toque em 🔔 Alerta.</p>'}</div>
+    <h2 class="section-h">Curtidas ♥</h2>
+    ${Object.keys(S.curtidas).length ? `<div class="rec-pics" style="grid-template-columns:repeat(4,1fr)">${Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k, c]) => { const p = DATA.produtos.find(x => x.key === k); return p ? `<button data-open="${esc(k)}" aria-label="${esc(c.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>` : ''; }).join('')}</div>` : '<p class="section-sub">Nada curtido ainda. Toque em ♡ Curti nas peças que combinam com você.</p>'}
   </div>`;
 }
 
@@ -559,6 +572,13 @@ function viewPerfil() {
     <h2 class="section-h">Ofertas</h2>
     ${sw('withSuggested', 'Incluir marcas sugeridas', 'Sufgang, Disturb e outras recomendações', S.withSuggested)}
     <div class="field"><div class="range-val"><label for="notaMin">Nota mínima para destacar e avisar</label><span class="mono lbl">${S.notaMin}</span></div><input id="notaMin" type="range" min="40" max="90" step="5" value="${S.notaMin}"></div>
+    <h2 class="section-h">Seu estilo ♥</h2>
+    ${(() => {
+      const e = estilo(), n = Object.keys(S.curtidas).length;
+      if (!n) return '<p class="section-sub">Curta peças (♡) para o Garimpo aprender seu estilo e trazer mais coisas parecidas.</p>';
+      const top = (o, rot) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([k, v]) => `${rot(k)} (${v})`).join(', ');
+      return `<p class="section-sub">${n} ${n > 1 ? 'peças curtidas' : 'peça curtida'}. Você curte mais: <b>${esc(top(e.kind, k => KIND_LABEL[k].toLowerCase()))}</b>, das marcas <b>${esc(top(e.marca, k => k))}</b>. Peças assim sobem no feed, e eu uso isso para escolher marcas novas e importados.</p>`;
+    })()}
     <h2 class="section-h">Avisos no celular</h2>
     <p class="section-sub">Digite o mesmo canal que você assinou no app ntfy. Assim o robô sabe dos seus salvos, alertas de modelo e tamanhos.</p>
     <div class="field"><label for="canal">Seu canal do ntfy</label><input id="canal" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" value="${esc(S.canal)}" placeholder="garimpo-..." style="height:40px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 12px;font-size:16px"></div>
@@ -623,7 +643,7 @@ function priceChart(h) {
 function openDetail(key) {
   const p = DATA.produtos.find(x => x.key === key); if (!p) return;
   const e = evaluate(p);
-  const saved = !!S.saved[key];
+  const saved = !!S.saved[key], curti = !!S.curtidas[key];
   // tamanhos: disponível se existir em alguma loja
   const tam = new Map();
   for (const v of p.ofertas.flatMap(o => o.variantes)) { const l = sizeLabel(v.t); tam.set(l, { t: v.t, a: (tam.get(l)?.a || v.a) }); }
@@ -677,11 +697,13 @@ function openDetail(key) {
       ${intlBlock}
       <h3 class="section-h">Histórico de preço</h3>
       ${histBlock}
-      <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:16px;color:var(--helper)">Não curti: esconder esta peça</button>
-      <div class="actions">
-        <button class="btn tertiary" data-save="${esc(key)}">${saved ? 'Salvo ✓' : 'Salvar e criar alerta'}</button>
+      <div class="acoes3">
+        <button class="btn ${saved ? '' : 'tertiary'}" data-save="${esc(key)}" aria-pressed="${saved}">${saved ? '🔔 Alerta ligado' : '🔔 Alerta'}</button>
+        <button class="btn ${curti ? '' : 'tertiary'}" data-curti="${esc(key)}" aria-pressed="${curti}" style="${curti ? 'background:var(--bad)' : ''}">${curti ? '♥ Curtido' : '♡ Curti'}</button>
         <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener">${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato ↗' : 'Ver na loja ↗'}</a>
       </div>
+      <p class="section-sub" style="margin-top:8px">🔔 avisa quando o preço sair do comum. ♡ ensina o Garimpo a trazer mais peças e marcas assim.</p>
+      <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">Não curti: esconder esta peça</button>
     </div>`);
 }
 
@@ -696,11 +718,11 @@ const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, novas: viewNovas, marc
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
-function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('sort', S.sort); store.set('modelos', S.modelos); store.set('canal', S.canal); agendarSync(); }
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('sort', S.sort); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
 
 /* ---------- Sincronia com o robô: salvos, alertas de modelo e tamanhos vão por um canal privado do ntfy ---------- */
 // o robô lê "<seu canal>-prefs" depois de cada atualização; só o que importa para os avisos é enviado
-const prefsAtuais = () => JSON.stringify({ tamanhos: S.sizes, follow: S.follow, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos });
+const prefsAtuais = () => JSON.stringify({ tamanhos: S.sizes, follow: S.follow, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
 let syncT;
 function agendarSync() {
   if (!S.canal) return;
@@ -740,9 +762,16 @@ document.addEventListener('click', ev => {
   else if ('close' in d) { closeSheet(); render(); }
   else if (d.brand) { S.tab = 'buscar'; S.qBrand = d.brand; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.save) {
+    // alerta sem alvo: o robô avisa quando o preço sair do comum (abaixo do preço justo, menor já visto ou queda forte)
     const k = d.save, p = DATA.produtos.find(x => x.key === k);
-    if (S.saved[k]) { delete S.saved[k]; toast('Removido dos salvos'); }
-    else { const e = evaluate(p); S.saved[k] = { titulo: p.titulo, alvo: Math.round((e.ok ? e.price : 0) * 0.9) }; toast('Salvo. Alvo definido 10% abaixo do preço atual'); }
+    if (S.saved[k]) { delete S.saved[k]; toast('Alerta desligado'); }
+    else { S.saved[k] = { titulo: p.titulo, alvo: null }; toast(S.canal ? 'Alerta ligado. Aviso quando o preço sair do comum.' : 'Alerta ligado. Informe seu canal no Perfil para receber no celular.'); }
+    persist(); openDetail(k);
+  }
+  else if (d.curti) {
+    const k = d.curti, p = DATA.produtos.find(x => x.key === k);
+    if (S.curtidas[k]) { delete S.curtidas[k]; toast('Curtida removida'); }
+    else { const e = evaluate(p); S.curtidas = { ...S.curtidas, [k]: { marca: p.marca, kind: p.kind, titulo: p.titulo, preco: e.ok ? e.price : null, em: Date.now() } }; toast(`Curtido. Vou trazer mais ${KIND_LABEL[p.kind].toLowerCase()} assim.`); }
     persist(); openDetail(k);
   }
   else if (d.unsave) { delete S.saved[d.unsave]; render(); }
@@ -785,7 +814,7 @@ document.addEventListener('change', ev => {
   else if (t.id === 'notaMin') S.notaMin = +t.value;
   else if (t.id === 'minSave') S.minSave = +t.value;
   else if (t.id === 'canal') { S.canal = t.value.trim().toLowerCase(); store.set('ultimoSync', ''); if (S.canal) toast('Canal salvo'); }
-  else if (t.dataset.alvo) { const v = parseFloat(t.value); if (v > 0) S.saved[t.dataset.alvo].alvo = v; }
+  else if (t.dataset.alvo) { const v = parseFloat(t.value); S.saved[t.dataset.alvo].alvo = v > 0 ? v : null; }
   else return;
   render();
 });

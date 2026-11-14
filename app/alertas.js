@@ -26,7 +26,11 @@ async function carregarPrefs() {
       }
     } catch (e) { console.error('Não consegui ler as preferências do celular:', e.message); }
   }
-  if (guardadas && !TESTE) { fs.mkdirSync(path.dirname(PREFS), { recursive: true }); fs.writeFileSync(PREFS, JSON.stringify(guardadas)); }
+  if (guardadas && !TESTE) {
+    fs.mkdirSync(path.dirname(PREFS), { recursive: true }); fs.writeFileSync(PREFS, JSON.stringify(guardadas));
+    // reenvia a versão mais recente para o canal, que guarda mensagens por só 12 horas
+    try { await fetch('https://ntfy.sh', { method: 'POST', body: JSON.stringify({ topic: `${topic}-prefs`, message: JSON.stringify(guardadas) }) }); } catch (e) {}
+  }
   return guardadas;
 }
 
@@ -71,9 +75,17 @@ async function carregarPrefs() {
   let nSalvos = 0;
   for (const [key, s] of Object.entries(prefs?.salvos || {})) {
     const p = DATA.produtos.find(x => x.key === key); if (!p) continue;
-    const e = core.evaluate(p); if (!e.ok || !(e.price <= s.alvo)) continue;
+    const e = core.evaluate(p); if (!e.ok) continue;
+    // com alvo: preço no alvo. Sem alvo ("auto"): preço fora do comum
+    const anterior = e.hist.length > 1 ? e.hist[e.hist.length - 2][1] : null;
+    const motivo = s.alvo ? (e.price <= s.alvo ? `(seu alvo: ${brl(s.alvo)})` : null)
+      : e.temHist && e.parts.historico >= 15 && anterior && e.price < anterior ? '(menor preço já visto)'
+      : anterior && e.price <= anterior * 0.9 ? `(era ${brl(anterior)})`
+      : e.justo?.nivel === 'abaixo' ? `(${Math.round(-e.justo.dif * 100)}% abaixo do preço justo)`
+      : null;
+    if (!motivo) continue;
     const chave = `salvo|${key}|${e.price}`; if (enviados[chave]) continue;
-    await avisoPeca(`Salvo no alvo: ${p.marca}`, p, e, `(seu alvo: ${brl(s.alvo)})`, 'dart');
+    await avisoPeca(`🔔 ${p.marca}: preço ${s.alvo ? 'no seu alvo' : 'fora do comum'}`, p, e, motivo, 'bell');
     enviados[chave] = hoje; nSalvos++;
   }
 
