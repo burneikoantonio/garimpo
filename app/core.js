@@ -5,7 +5,7 @@ const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const median = arr => { if (!arr.length) return null; const s = [...arr].sort((a, b) => a - b); return s[Math.floor(s.length / 2)]; };
 
 /* ---------- Categorias e tamanhos ---------- */
-const EXCLUIR = /vestido|dress|\bsaia\b|skirt|baby tee|sufbab|gift|adesivo|sticker|bolsa|\bbags?\b|mochila|backpack|chaveiro|keychain|porta-moeda|cueca|boxer|caneca|poster|isqueiro|tableware|home decor|\bbooks?\b|magazine|textile|high times|gloves|scarves|wallet|cardholder/;
+const EXCLUIR = /\bmeias?\b|\bsocks?\b|\bbody\b|vestido|dress|\bsaia\b|skirt|baby tee|sufbab|gift|adesivo|sticker|bolsa|\bbags?\b|mochila|backpack|chaveiro|keychain|porta-moeda|cueca|boxer|caneca|poster|isqueiro|tableware|home decor|\bbooks?\b|magazine|textile|high times|gloves|scarves|wallet|cardholder/;
 const KINDS = [
   ['tenis', /t[eê]nis|sneaker|footwear|sapato|\bbota|derby|loafer|mocassim|chinelo|\bslide/],
   ['bone', /bon[eé]|\bhats?\b|\bcaps?\b|gorro|beanie|chap[eé]u|bucket|6-panel|dad ?hat|viseira/],
@@ -78,8 +78,15 @@ function buildData(idx, cats, hist, cambio) {
   const produtos = [...porChave.values()];
   // mediana de preço por tipo de peça (para comparar com peças parecidas)
   const byKind = {};
-  for (const p of produtos) { const a = p.ofertas.filter(o => !o.intl).flatMap(o => o.variantes).filter(v => v.a); if (a.length) (byKind[p.kind] ||= []).push(Math.min(...a.map(v => v.p))); }
-  return { marcas: idx.marcas, atualizado: idx.atualizado, produtos, hist, cambio, medianas: Object.fromEntries(Object.entries(byKind).map(([k, v]) => [k, median(v)])) };
+  // preço justo: por quanto esse tipo de peça está saindo hoje na própria marca (mediana, já com as promoções)
+  const byMarcaKind = {};
+  for (const p of produtos) {
+    const a = p.ofertas.filter(o => !o.intl).flatMap(o => o.variantes).filter(v => v.a); if (!a.length) continue;
+    (byKind[p.kind] ||= []).push(Math.min(...a.map(v => v.p)));
+    (byMarcaKind[p.marca + "|" + p.kind] ||= []).push(Math.min(...a.map(v => v.p)));
+  }
+  const justos = Object.fromEntries(Object.entries(byMarcaKind).filter(([, v]) => v.length >= 4).map(([k, v]) => [k, { preco: median(v), n: v.length }]));
+  return { marcas: idx.marcas, atualizado: idx.atualizado, produtos, hist, cambio, justos, medianas: Object.fromEntries(Object.entries(byKind).map(([k, v]) => [k, median(v)])) };
 }
 
 /* ---------- Avaliação (Nota de Oferta) ---------- */
@@ -133,7 +140,10 @@ function evaluate(p) {
   const score = Math.round(((parts.desconto + parts.parecidas + parts.historico + parts.lojas) / max) * 100);
   const baixou = temHist && price < prev[prev.length - 1];
   const novo = p.publicado && (Date.now() - new Date(p.publicado)) < 21 * 864e5;
-  return { ok: true, price, de, off, med, parts, score, max, temHist, hist: h, baixou, novo, lojas, intl: !!lojas[0].intl, intlDescartado, mySize: mine.length > 0, avail, mine, allVars };
+  // preço justo: compara com o preço típico (hoje) desse tipo de peça na mesma marca
+  const ref = DATA.justos?.[p.marca + "|" + p.kind];
+  const justo = ref ? { preco: ref.preco, n: ref.n, dif: price / ref.preco - 1, nivel: price <= ref.preco * 0.75 ? "abaixo" : price >= ref.preco * 1.25 ? "acima" : "media" } : null;
+  return { ok: true, price, de, off, med, parts, score, max, temHist, hist: h, baixou, novo, lojas, justo, intl: !!lojas[0].intl, intlDescartado, mySize: mine.length > 0, avail, mine, allVars };
 }
 
 /* ---------- Alertas para o celular (usado pelo robô na nuvem) ---------- */
