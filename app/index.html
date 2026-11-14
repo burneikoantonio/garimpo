@@ -7,6 +7,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Garimpo">
 <meta name="theme-color" content="#161616">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icone-180.png">
+<link rel="icon" type="image/png" href="icone-192.png">
 <title>Garimpo</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap">
 <style>
@@ -162,6 +165,8 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .loading { padding: 48px 16px; color: var(--helper); text-align: center; }
 
 @media (max-width: 500px) { .app, .nav, .sheet { border-inline: 0; } }
+/* selo "Powered by Netlify" (plano grátis) ficava por cima das abas Salvos e Perfil */
+#nl-badge-frame { display: none !important; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
