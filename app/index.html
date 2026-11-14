@@ -61,6 +61,9 @@ img { max-width: 100%; display: block; }
 .ff-h { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 8px; }
 .ff-t { font-size: 13px; font-weight: 600; letter-spacing: .32px; text-transform: uppercase; }
 .ff-h .t2 { font-size: 11px; color: var(--helper); }
+.ordem { display: flex; align-items: center; justify-content: flex-end; gap: 8px; padding-bottom: 12px; }
+.ordem label { font-size: 12px; color: var(--helper); }
+.ordem select { height: 32px; background: var(--layer); border: 0; border-bottom: 1px solid var(--border-strong); padding: 0 8px; font-size: 14px; max-width: 70%; }
 .ff-chip { display: inline-flex; align-items: center; text-decoration: none; color: var(--fg); background: var(--bg); }
 
 .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-block: 1px solid var(--border); }
@@ -201,7 +204,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js"></script>
+<script src="core.js?v=1794680251"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -257,6 +260,7 @@ const S = {
   withSuggested: store.get('withSuggested', true), notaMin: store.get('notaMin', 70),
   saved: store.get('saved', {}), follow: store.get('follow', null),
   showIntl: store.get('showIntl', true), minSave: store.get('minSave', 20),
+  sort: store.get('sort', 'nota'),
   ocultas: store.get('ocultas', {}),   // peças marcadas como "Não curti": chave -> { marca, kind }
 };
 
@@ -331,9 +335,10 @@ function viewOfertas() {
   const { items, hiddenSize } = feedList(p => brands.has(p.marca) && (S.cat === 'Tudo' || p.cat === S.cat));
   // intercala marcas: cada peça seguinte da mesma marca perde 3 pontos na ordenação
   const rank = {};
-  const deals = items.filter(x => x.e.off > 0 || x.e.score >= S.notaMin)
+  let deals = items.filter(x => x.e.off > 0 || x.e.score >= S.notaMin)
     .map(x => ({ x, k: x.e.score - 3 * (rank[x.p.marca] = (rank[x.p.marca] ?? -1) + 1) - naoCurtiPeso(x.p) }))
     .sort((a, b) => b.k - a.k).map(o => o.x);
+  if (S.sort !== 'nota') deals = ordenar(deals);
   const alerts = buildAlerts();
   const fontes = DATA.marcas.filter(m => m.arquivos?.length && brands.has(m.nome)).length;
   return header('<b>Garimpo</b>', `<button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${alerts.length ? '<span class="dot"></span>' : ''}</button>`) + `
@@ -343,9 +348,25 @@ function viewOfertas() {
     </div>
     ${saleBloco()}
     <div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>
+    <div class="wrap">${seletorOrdem('sortOfertas')}</div>
     ${grid(deals) || '<div class="wrap note"><span>Nenhuma oferta nesta categoria agora.</span></div>'}
     <div class="wrap note">${hiddenSize ? `<span>${hiddenSize} peças ocultas por não ter seu tamanho disponível.</span>` : ''}<span>Fotos e preços vêm direto dos sites das marcas.</span></div>`;
 }
+
+// ordenação escolhida pelo usuário (vale para Ofertas e Buscar)
+const ORDENS = { nota: 'Melhor nota', menor: 'Menor preço', maior: 'Maior preço', desconto: 'Maior desconto', novos: 'Mais novos', justo: 'Mais abaixo do preço justo' };
+function ordenar(lista) {
+  const f = {
+    nota: (a, b) => b.e.score - a.e.score,
+    menor: (a, b) => a.e.price - b.e.price,
+    maior: (a, b) => b.e.price - a.e.price,
+    desconto: (a, b) => b.e.off - a.e.off || b.e.score - a.e.score,
+    novos: (a, b) => String(b.p.publicado || '').localeCompare(String(a.p.publicado || '')),
+    justo: (a, b) => (a.e.justo?.dif ?? 9) - (b.e.justo?.dif ?? 9),
+  }[S.sort] || ((a, b) => b.e.score - a.e.score);
+  return [...lista].sort(f);
+}
+const seletorOrdem = id => `<div class="ordem"><label for="${id}">Ordenar por</label><select id="${id}" data-ordem>${Object.entries(ORDENS).map(([k, v]) => `<option value="${k}" ${S.sort === k ? 'selected' : ''}>${v}</option>`).join('')}</select></div>`;
 
 function viewBuscar() {
   const q = S.q.trim().toLowerCase();
@@ -354,7 +375,7 @@ function viewBuscar() {
   let { items, hiddenSize } = feedList(p =>
     (!q || (p.marca + ' ' + p.titulo).toLowerCase().includes(q)) &&
     (S.qKind === 'Tudo' || p.kind === S.qKind) && (S.qBrand === 'Todas' || p.marca === S.qBrand));
-  items = items.filter(x => x.e.price <= S.qMax && (!S.qSale || x.e.off > 0));
+  items = ordenar(items.filter(x => x.e.price <= S.qMax && (!S.qSale || x.e.off > 0)));
   return header('Buscar') + `
     <div class="wrap">
       <label class="search"><span>${ICON.buscar}</span><input id="q" type="search" placeholder="Marca ou peça" value="${esc(S.q)}" autocomplete="off" enterkeyhint="search"></label>
@@ -364,7 +385,8 @@ function viewBuscar() {
         <div class="field"><div class="range-val"><label for="qMax">Até</label><span class="mono lbl">${brl(S.qMax)}</span></div><input id="qMax" type="range" min="100" max="3000" step="50" value="${S.qMax}"></div>
       </div>
       <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-sw="qSale" aria-checked="${S.qSale}" aria-label="Só peças com desconto"></button></div>
-      <p class="section-sub" style="margin:16px 0 12px">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p>
+      <div style="margin-top:8px">${seletorOrdem('sortBuscar')}</div>
+      <p class="section-sub" style="margin:8px 0 12px">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p>
     </div>
     ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
 }
@@ -655,7 +677,7 @@ const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, novas: viewNovas, marc
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
-function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); }
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('sort', S.sort); }
 function render(keepFocus) {
   const active = keepFocus && document.activeElement && document.activeElement.id;
   const caret = active === 'q' ? document.activeElement.selectionStart : null;
@@ -715,7 +737,8 @@ document.addEventListener('input', ev => {
 });
 document.addEventListener('change', ev => {
   const t = ev.target;
-  if (t.id === 'qBrand') S.qBrand = t.value;
+  if (t.dataset.ordem !== undefined) S.sort = t.value;
+  else if (t.id === 'qBrand') S.qBrand = t.value;
   else if (t.id === 'qMax') S.qMax = +t.value;
   else if (t.id === 'notaMin') S.notaMin = +t.value;
   else if (t.id === 'minSave') S.minSave = +t.value;

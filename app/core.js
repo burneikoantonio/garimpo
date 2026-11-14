@@ -104,7 +104,7 @@ function evaluate(p) {
   // melhor preço de cada loja (no seu tamanho, se o filtro estiver ligado)
   let lojas = p.ofertas.map(o => {
     if (o.intl && !S.showIntl) return null;
-    const vs = o.variantes.filter(v => v.a && (!S.onlyMySize || fits(v.t, p.group)));
+    const vs = o.variantes.filter(v => v.a && v.p >= 10 && (!S.onlyMySize || fits(v.t, p.group))); // abaixo de R$ 10 são brindes ou itens de teste das lojas
     if (!vs.length) return null;
     const best = vs.reduce((a, b) => (b.p < a.p ? b : a));
     const c = Math.max(0, ...vs.filter(v => v.p === best.p).map(v => v.c));

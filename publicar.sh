@@ -9,6 +9,9 @@ MSG=${1:-"Atualiza o Garimpo"}
 TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
 
+# o celular sempre baixa a versão nova das regras (evita cópia antiga em cache)
+sed -i "" -E "s/core\.js\?v=[0-9]+/core.js?v=$(date +%s)/" app/index.html
+
 base=$($GH api "repos/$REPO/git/ref/heads/main" --jq .object.sha)
 base_tree=$($GH api "repos/$REPO/git/commits/$base" --jq .tree.sha)
 
