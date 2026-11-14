@@ -217,7 +217,7 @@ const img = (src, w = 600) => !src ? ''
 const farfetch = q => 'https://www.farfetch.com/br/shopping/men/search/items.aspx?q=' + encodeURIComponent(q);
 // marcas que a Farfetch Brasil vende (endereços conferidos em 14/11/2026); as outras não estão lá
 const FF_SLUG = { 'Carhartt WIP': 'carhartt-wip', 'Jordan': 'jordan', 'Adidas Originals': 'adidas', 'New Balance': 'new-balance', "Levi's": 'levis', 'Osklen': 'osklen', 'Piet': 'piet' };
-const FF_EXTRA = [['Stüssy', 'stussy'], ['Nike', 'nike']];
+const FF_EXTRA = [['Études', 'etudes'], ['Stüssy', 'stussy'], ['Nike', 'nike']];
 const SALE_AQUI = ['Carnan', 'PACE'];
 const ffMarca = (slug, sale) => `https://www.farfetch.com/br/shopping/men/${sale ? 'sale/' : ''}${slug}/items.aspx`;
 const ffLink = nome => FF_SLUG[nome] ? `<a class="t2" style="color:var(--link)" href="${esc(ffMarca(FF_SLUG[nome]))}" target="_blank" rel="noopener">Ver na Farfetch ↗</a>` : '';
