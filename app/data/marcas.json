@@ -1,5 +1,5 @@
 {
-  "atualizado": "14/11/2026 13:33",
+  "atualizado": "14/11/2026 14:45",
   "marcas": [
     {
       "nome": "Carnan",
@@ -43,7 +43,7 @@
       "nome": "Carhartt WIP",
       "site": "",
       "relacao": "segue",
-      "obs": "Aguardando Farfetch (programa de afiliados)",
+      "obs": "Sem loja brasileira com catálogo aberto",
       "liberada": "",
       "arquivos": []
     },
@@ -55,7 +55,8 @@
       "liberada": "",
       "arquivos": [
         "data/www-artwalk-com-br-adidas-originals.json",
-        "data/www-authenticfeet-com-br-adidas-originals.json"
+        "data/www-authenticfeet-com-br-adidas-originals.json",
+        "data/www-overboard-com-br-adidas-originals.json"
       ]
     },
     {
@@ -66,7 +67,18 @@
       "liberada": "",
       "arquivos": [
         "data/www-artwalk-com-br-jordan.json",
-        "data/www-authenticfeet-com-br-jordan.json"
+        "data/www-authenticfeet-com-br-jordan.json",
+        "data/www-overboard-com-br-jordan.json"
+      ]
+    },
+    {
+      "nome": "New Balance",
+      "site": "",
+      "relacao": "segue",
+      "obs": "Loja oficial no Brasil, destaque para o 9060 (lojas.txt)",
+      "liberada": "",
+      "arquivos": [
+        "data/www-newbalance-com-br-new-balance.json"
       ]
     },
     {
@@ -150,16 +162,6 @@
       ]
     },
     {
-      "nome": "New Balance",
-      "site": "",
-      "relacao": "sugerida",
-      "obs": "Tênis e lifestyle, loja oficial no Brasil (lojas.txt)",
-      "liberada": "2026-11-14",
-      "arquivos": [
-        "data/www-newbalance-com-br-new-balance.json"
-      ]
-    },
-    {
       "nome": "Levi's",
       "site": "",
       "relacao": "sugerida",
@@ -167,6 +169,16 @@
       "liberada": "2026-11-14",
       "arquivos": [
         "data/www-levi-com-br-levis.json"
+      ]
+    },
+    {
+      "nome": "Handred",
+      "site": "handred.com.br",
+      "relacao": "sugerida",
+      "obs": "Autoral brasileira, alfaiataria leve em linho e seda, no clima de João Pimenta",
+      "liberada": "2026-11-14",
+      "arquivos": [
+        "data/handred-com-br.json"
       ]
     }
   ]
