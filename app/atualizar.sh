@@ -108,7 +108,19 @@ grep -v '^#' marcas.txt | while IFS='|' read -r nome site rel obs liberar; do
   nome=$(trim "$nome"); site=$(trim "$site"); rel=$(trim "$rel"); obs=$(trim "$obs"); liberar=$(trim "$liberar")
   [ -z "$nome" ] && continue
   if aguardando "$nome"; then echo "… $nome: entra na aba Novas em $liberar"; continue; fi
-  if [ -n "$site" ]; then
+  # lojas Nuvemshop (ex.: nuvemshop:www.alagarconne.com.br): lidas pelas páginas de listagem
+  if [[ "$site" == nuvemshop:* ]]; then
+    site=${site#nuvemshop:}
+    arquivo="data/$(echo "$site" | tr '.' '-').json"
+    if ruby nuvemshop.rb "$site" "$nome" > "$TMP/ns.json" && [ "$(jq '.produtos | length' "$TMP/ns.json")" -gt 0 ]; then
+      mv "$TMP/ns.json" "$arquivo"
+      registrar_historico "$arquivo"
+      printf '%s\t%s\n' "$nome" "$arquivo" >> "$TMP/arquivos.tsv"
+      echo "✓ $nome: $(jq '.produtos | length' "$arquivo") produtos"
+    else
+      echo "✗ $nome: não consegui ler $site"
+    fi
+  elif [ -n "$site" ]; then
     rm -f "$TMP"/pagina-*.json
     for pagina in 1 2 3 4 5 6 7 8; do
       curl -s -L --max-time 40 -A "$UA" "https://$site/products.json?limit=250&page=$pagina" -o "$TMP/pagina-$pagina.json"
