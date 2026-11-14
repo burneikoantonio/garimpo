@@ -47,7 +47,7 @@ Itens com nota ≥ 70 (ajustável) geram alerta. Descontos a partir de ~25–30%
 ---
 
 ## Onde paramos (14/11/2026)
-- **No ar:** https://fascinating-puffpuff-02b586.netlify.app (Netlify) e robô no GitHub (projeto privado burneikoantonio/garimpo) às 8h e 18h, com avisos no ntfy.
+- **No ar:** https://burneikoantonio.github.io/garimpo (GitHub Pages) e robô no GitHub (projeto público burneikoantonio/garimpo) às 8h e 18h, com avisos no ntfy.
 - **Para mudar o app:** editar os arquivos e rodar `./publicar.sh "descrição"`.
 
 ## Histórico (13/11/2026)

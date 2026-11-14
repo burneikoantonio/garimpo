@@ -5,7 +5,7 @@ const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const median = arr => { if (!arr.length) return null; const s = [...arr].sort((a, b) => a - b); return s[Math.floor(s.length / 2)]; };
 
 /* ---------- Categorias e tamanhos ---------- */
-const EXCLUIR = /\bmeias?\b|\bsocks?\b|\bbody\b|vestido|dress|\bsaia\b|skirt|baby tee|sufbab|gift|adesivo|sticker|bolsa|\bbags?\b|mochila|backpack|chaveiro|keychain|porta-moeda|cueca|boxer|caneca|poster|isqueiro|tableware|home decor|\bbooks?\b|magazine|textile|high times|gloves|scarves|wallet|cardholder/;
+const EXCLUIR = /feminin|\bwomen|\bwoman\b|\bwmns\b|\bmeias?\b|\bsocks?\b|\bbody\b|vestido|dress|\bsaia\b|skirt|baby tee|sufbab|gift|adesivo|sticker|bolsa|\bbags?\b|mochila|backpack|chaveiro|keychain|porta-moeda|cueca|boxer|caneca|poster|isqueiro|tableware|home decor|\bbooks?\b|magazine|textile|high times|gloves|scarves|wallet|cardholder/;
 const KINDS = [
   ['tenis', /t[eê]nis|sneaker|footwear|sapato|\bbota|derby|loafer|mocassim|chinelo|\bslide/],
   ['bone', /bon[eé]|\bhats?\b|\bcaps?\b|gorro|beanie|chap[eé]u|bucket|6-panel|dad ?hat|viseira/],
