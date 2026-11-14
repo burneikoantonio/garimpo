@@ -231,9 +231,13 @@ function saleBloco() {
   if (!itens.length) return '';
   return `<div class="wrap ff">
     <div class="ff-h"><span class="ff-t">Sale das suas marcas</span><span class="t2">nos seus tamanhos</span></div>
-    <div class="chips">${itens.map(({ n, q }) => `<button class="chip ff-chip" data-salebrand="${esc(n)}">${q ? `${esc(n)} (${q})` : `${esc(n)}: sem sale agora`}</button>`).join('')}</div>
+    <div class="chips">${MODELOS.map(m => `<button class="chip ff-chip" data-busca="${esc(m)}" style="border-color:var(--link)">${esc(m)} ⌕</button>`).join('')}${itens.map(({ n, q }) => `<button class="chip ff-chip" data-salebrand="${esc(n)}">${q ? `${esc(n)} (${q})` : `${esc(n)}: sem sale agora`}</button>`).join('')}</div>
   </div>`;
 }
+// modelos que você acompanha de perto: abrem a busca já filtrada
+const MODELOS = ['New Balance 9060'];
+// marcas que já eram "suas" antes de existir esta lista (para seguir sozinho as que entrarem depois)
+const SEGUE_ANTIGAS = ['Carnan', 'Piet', 'PACE', 'À La Garçonne', 'Carhartt WIP', 'Adidas Originals', 'Jordan'];
 const store = {
   get(k, d) { try { const v = localStorage.getItem('garimpo:' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem('garimpo:' + k, JSON.stringify(v)); } catch (e) {} },
@@ -266,9 +270,15 @@ async function load() {
   const cambio = await get('data/cambio.json').catch(() => null);
   const fontes = idx.marcas.flatMap(m => (m.arquivos || []).map(a => ({ m, a })));
   const cats = await Promise.all(fontes.map(({ m, a }) => get(a).then(c => ({ m, c })).catch(() => null)));
-  if (!S.follow) S.follow = idx.marcas.filter(m => m.relacao === 'segue').map(m => m.nome);
+  const segue = idx.marcas.filter(m => m.relacao === 'segue').map(m => m.nome);
+  if (!S.follow) S.follow = [...segue];
+  // marca que passou a ser "sua" (ex.: New Balance) entra sozinha na lista de seguidas
+  const vistas = store.get('segueVistas', SEGUE_ANTIGAS);
+  for (const n of segue) if (!vistas.includes(n) && !S.follow.includes(n)) S.follow.push(n);
+  store.set('segueVistas', segue);
   DATA = buildData(idx, cats, hist, cambio);
   FF = await get("farfetch.json").catch(() => null);
+  SX = await get("stockx.json").catch(() => null);
 }
 
 // o app aprende com o "Não curti": cada peça escondida da mesma marca e tipo empurra as parecidas para baixo no feed
@@ -384,14 +394,15 @@ function viewNovas() {
 }
 
 /* ---------- Aba Farfetch: marcas e achados escolhidos à mão (o robô não consegue ler a Farfetch) ---------- */
-let FF = null;
+let FF = null, SX = null;
 function viewFarfetch() {
   if (!FF) return header('Farfetch') + '<div class="wrap note"><span>Não consegui carregar os achados da Farfetch.</span></div>';
   const ff = (slug, sale) => `https://www.farfetch.com/br/shopping/men/${sale ? 'sale/' : ''}${slug}/items.aspx`;
   const quando = FF.escolhidosEm.split('-').reverse().slice(0, 2).join('/');
-  return header('Farfetch') + `
-    <div class="wrap"><div class="notice" style="margin-top:16px"><span>Achados escolhidos por mim em <b>${esc(quando)}</b>. O robô não consegue acompanhar a Farfetch, então preço e estoque podem ter mudado. Para eu escolher de novo, peça: <b>"atualiza os achados da Farfetch"</b>.</span></div>
-    <h2 class="section-h">Achados com bom desconto</h2></div>
+  return header('Importados') + `
+    <div class="wrap"><div class="notice" style="margin-top:16px"><span>Achados escolhidos por mim em <b>${esc(quando)}</b>. O robô não consegue acompanhar a Farfetch nem a StockX, então preço e estoque podem ter mudado. Para eu olhar de novo, peça: <b>"atualiza os importados"</b>.</span></div>
+    <h2 class="section-h">Farfetch: achados com bom desconto</h2>
+    <p class="section-sub">Preços em reais na Farfetch Brasil</p></div>
     <div class="grid">${FF.achados.map(a => `<a class="tile" href="${esc(a.url)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
       <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags"><span class="tag t-sale">-${a.off}%</span></div></div>
       <div class="body"><span class="brand">${esc(a.marca)} · Farfetch</span><span class="pname">${esc(a.nome)}</span>
@@ -400,7 +411,35 @@ function viewFarfetch() {
     <div class="wrap"><h2 class="section-h">Marcas na Farfetch</h2>
       ${FF.marcas.map(m => `<div class="rec"><div class="rec-top"><div class="grow"><span class="rec-name">${esc(m.nome)}</span><span class="rec-why">${esc(m.frase)}</span></div></div>
         <div class="rec-links">${m.sale ? `<a href="${esc(ff(m.slug, true))}" target="_blank" rel="noopener">Ver sale ↗</a>` : ''}<a href="${esc(ff(m.slug))}" target="_blank" rel="noopener">Ver novidades ↗</a></div></div>`).join('')}
-    </div>`;
+    </div>
+    ${stockxBloco()}`;
+}
+
+// StockX x Brasil: custo total para importar o tênis comparado ao menor preço dele nas lojas brasileiras
+function stockxBloco() {
+  if (!SX || !DATA.cambio?.USD) return '';
+  const linhas = SX.modelos.map(m => {
+    const custo = custoImportado({ moeda: 'USD', frete: SX.freteUsd }, m.ultimaVenda);
+    const re = new RegExp(m.busca.split(' ').join('.*'), 'i');
+    const br = DATA.produtos.filter(p => p.cat === 'Tênis' && re.test(p.titulo)).map(p => ({ p, e: evaluate(p) })).filter(x => x.e.ok && !x.e.intl).sort((a, b) => a.e.price - b.e.price)[0];
+    const dif = br ? custo.total / br.e.price - 1 : null;
+    const compensa = br && dif <= 0.05;
+    return { m, custo, br, dif, compensa };
+  });
+  const bons = linhas.filter(l => l.compensa).length;
+  return `<div class="wrap"><h2 class="section-h">StockX x Brasil</h2>
+    <p class="section-sub">Tênis que você acompanha: quanto sai trazer da StockX, com tudo incluído, comparado ao menor preço nas lojas brasileiras nos seus tamanhos.</p>
+    <div class="notice ${bons ? 'ok' : ''}" style="margin-bottom:12px"><span>${bons ? `${bons} ${bons > 1 ? 'modelos compensam' : 'modelo compensa'} importar agora.` : '<b>Nenhum compensa importar agora.</b> Com frete, IOF, imposto e ICMS, todos saem mais caros que no Brasil.'}</span></div>
+    ${linhas.map(({ m, custo, br, dif, compensa }) => `<div class="row" style="align-items:flex-start">
+      <a class="thumb" href="${esc(m.url)}" target="_blank" rel="noopener" style="background:#fff"><img loading="lazy" src="${esc(m.img)}" alt="" style="object-fit:contain"></a>
+      <div class="grow">
+        <span class="t1">${esc(m.modelo)}</span>
+        <span class="t2">StockX: último vendido US$ ${m.ultimaVenda} → <b class="mono">${brl(custo.total)}</b> com tudo</span>
+        <span class="t2">${br ? `Brasil: <b class="mono">${brl(br.e.price)}</b> ${br.e.lojas[0].loja.startsWith('Site ') ? `no site da ${esc(br.e.lojas[0].loja.slice(5))}` : `na ${esc(br.e.lojas[0].loja)}`}` : 'Sem esse modelo nas lojas brasileiras do app'}</span>
+        <span>${br ? `<span class="tag ${compensa ? 't-ok' : 't-sale'}">${compensa ? 'Compensa importar' : `Importar sai ${Math.round(dif * 100)}% mais caro`}</span>` : ''}</span>
+      </div></div>`).join('')}
+    <p class="section-sub" style="margin-top:12px">Conta: preço × dólar do dia (R$ ${DATA.cambio.USD.toFixed(2)}) + frete estimado US$ ${SX.freteUsd} + IOF 3,5% + imposto de importação 60% + ICMS 17%. Desde maio/2026, compras de até US$ 50 em sites do Remessa Conforme não pagam imposto federal (só ICMS), mas tênis da StockX costumam passar desse valor com o frete. Confira o total no checkout.</p>
+  </div>`;
 }
 
 function viewMarcas() {
@@ -611,7 +650,7 @@ let toastT;
 function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
 
 /* ---------- Render ---------- */
-const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['novas', 'Novas'], ['marcas', 'Marcas'], ['farfetch', 'Farfetch'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
+const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['novas', 'Novas'], ['marcas', 'Marcas'], ['farfetch', 'Importados'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
 const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, novas: viewNovas, marcas: viewMarcas, farfetch: viewFarfetch, salvos: viewSalvos, perfil: viewPerfil };
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
@@ -656,6 +695,7 @@ document.addEventListener('click', ev => {
     closeSheet(); render(); toast(`Escondida. Vou mostrar menos ${KIND_LABEL[p.kind].toLowerCase()} da ${p.marca}.`);
   }
   else if ('restaurar' in d) { S.ocultas = {}; render(); toast('Todas as peças escondidas voltaram'); }
+  else if (d.busca) { S.tab = 'buscar'; S.q = d.busca.replace(/^New Balance /, ''); S.qBrand = 'Todas'; S.qSale = false; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.salebrand) { S.tab = 'buscar'; S.qBrand = d.salebrand; S.qSale = true; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.sw) { S[d.sw] = !S[d.sw]; render(); }
   else if (d.size) {

@@ -1,23 +1,207 @@
 {
   "escolhidosEm": "2026-11-14",
   "marcas": [
-    { "nome": "Études", "slug": "etudes", "sale": true, "frase": "Streetwear parisiense com pegada artística: estampas, moletons e cortes amplos." },
-    { "nome": "Stüssy", "slug": "stussy", "sale": true, "frase": "Clássico do streetwear californiano desde os anos 80. Camisetas e moletons com o logo icônico." },
-    { "nome": "Carhartt WIP", "slug": "carhartt-wip", "sale": true, "frase": "A linha urbana da Carhartt: workwear resistente, calças carpenter e jaquetas." },
-    { "nome": "Represent", "slug": "represent", "sale": true, "frase": "Britânica, streetwear premium com camisetas e moletons pesados." },
-    { "nome": "Our Legacy", "slug": "our-legacy", "sale": true, "frase": "Sueca e minimalista: tecidos excelentes e modelagens soltas." },
-    { "nome": "Stone Island", "slug": "stone-island", "sale": true, "frase": "Italiana, famosa pelos tecidos técnicos e pelo patch de bússola no braço." },
-    { "nome": "Aimé Leon Dore", "slug": "aime-leon-dore", "sale": false, "frase": "Casual de Nova York com cara de clube vintage. Quase nunca entra em sale." }
+    {
+      "nome": "Études",
+      "slug": "etudes",
+      "sale": true,
+      "frase": "Streetwear parisiense com pegada artística: estampas, moletons e cortes amplos."
+    },
+    {
+      "nome": "Stüssy",
+      "slug": "stussy",
+      "sale": true,
+      "frase": "Clássico do streetwear californiano desde os anos 80. Camisetas e moletons com o logo icônico."
+    },
+    {
+      "nome": "Carhartt WIP",
+      "slug": "carhartt-wip",
+      "sale": true,
+      "frase": "A linha urbana da Carhartt: workwear resistente, calças carpenter e jaquetas."
+    },
+    {
+      "nome": "Represent",
+      "slug": "represent",
+      "sale": true,
+      "frase": "Britânica, streetwear premium com camisetas e moletons pesados."
+    },
+    {
+      "nome": "Our Legacy",
+      "slug": "our-legacy",
+      "sale": true,
+      "frase": "Sueca e minimalista: tecidos excelentes e modelagens soltas."
+    },
+    {
+      "nome": "Stone Island",
+      "slug": "stone-island",
+      "sale": true,
+      "frase": "Italiana, famosa pelos tecidos técnicos e pelo patch de bússola no braço."
+    },
+    {
+      "nome": "Aimé Leon Dore",
+      "slug": "aime-leon-dore",
+      "sale": false,
+      "frase": "Casual de Nova York com cara de clube vintage. Quase nunca entra em sale."
+    },
+    {
+      "nome": "Vision of Super",
+      "slug": "vision-of-super",
+      "sale": true,
+      "frase": "Italiana, streetwear com chamas e estampas pesadas, muito usada por artistas."
+    },
+    {
+      "nome": "Off-White",
+      "slug": "off-white",
+      "sale": true,
+      "frase": "Grife do Virgil Abloh: setas, listras diagonais e logos grandes."
+    },
+    {
+      "nome": "The North Face",
+      "slug": "the-north-face",
+      "sale": true,
+      "frase": "Outdoor que virou streetwear: jaquetas puffer e corta-ventos."
+    }
   ],
   "achados": [
-    { "marca": "Études", "nome": "Moletom com capuz paint-splatter", "de": 2166, "por": 431, "off": 70, "tam": "XXS, S, M, L", "url": "https://www.farfetch.com/br/shopping/men/etudes-studio-paint-splatter-hoodie-item-31706506.aspx", "img": "https://cdn-images.farfetch-contents.com/31/70/65/06/31706506_93464956_480.jpg" },
-    { "marca": "Études", "nome": "Calça de moletom Sky com friso", "de": 2389, "por": 497, "off": 70, "tam": "XXS a XL", "url": "https://www.farfetch.com/br/shopping/men/etudes-studio-sky-contrast-piping-track-pants-item-39001644.aspx", "img": "https://cdn-images.farfetch-contents.com/39/00/16/44/39001644_98435133_480.jpg" },
-    { "marca": "Études", "nome": "Calça de moletom com listra lateral", "de": 2389, "por": 497, "off": 70, "tam": "XS, S, M", "url": "https://www.farfetch.com/br/shopping/men/etudes-studio-side-stripe-track-pants-item-34102482.aspx", "img": "https://cdn-images.farfetch-contents.com/34/10/24/82/34102482_76304793_480.jpg" },
-    { "marca": "Represent", "nome": "Camiseta British Cowboys", "de": 2043, "por": 789, "off": 60, "tam": "XS a XXL", "url": "https://www.farfetch.com/br/shopping/men/represent-british-cowboys-t-shirt-item-34324031.aspx", "img": "https://cdn-images.farfetch-contents.com/34/32/40/31/34324031_95003605_480.jpg" },
-    { "marca": "Represent", "nome": "Moletom British Cowboys", "de": 3089, "por": 1446, "off": 50, "tam": "XS a XXL", "url": "https://www.farfetch.com/br/shopping/men/represent-british-cowboys-hoodie-item-34234100.aspx", "img": "https://cdn-images.farfetch-contents.com/34/23/41/00/34234100_98196960_480.jpg" },
-    { "marca": "Carhartt WIP", "nome": "Camisa listrada Kanan", "de": 1332, "por": 675, "off": 45, "tam": "S a XXL", "url": "https://www.farfetch.com/br/shopping/men/carhartt-wip-kanan-stripe-shirt-item-36909393.aspx", "img": "https://cdn-images.farfetch-contents.com/36/90/93/93/36909393_96078398_480.jpg" },
-    { "marca": "Represent", "nome": "Camiseta Owners Club", "de": 1424, "por": 750, "off": 45, "tam": "XS a XXL", "url": "https://www.farfetch.com/br/shopping/men/represent-owners-club-t-shirt-item-36544872.aspx", "img": "https://cdn-images.farfetch-contents.com/36/54/48/72/36544872_84756845_480.jpg" },
-    { "marca": "Stone Island", "nome": "Overshirt ripstop de algodão orgânico", "de": 6129, "por": 3599, "off": 40, "tam": "S a XXL", "url": "https://www.farfetch.com/br/shopping/men/stone-island-1200005-mercerised-organic-cotton-ripstop-overshirt-item-33392566.aspx", "img": "https://cdn-images.farfetch-contents.com/33/39/25/66/33392566_76194207_480.jpg" },
-    { "marca": "Stüssy", "nome": "Camisa polo de algodão", "de": 1288, "por": 810, "off": 30, "tam": "L, XL", "url": "https://www.farfetch.com/br/shopping/men/stussy-cotton-polo-shirt-item-30386160.aspx", "img": "https://cdn-images.farfetch-contents.com/30/38/61/60/30386160_75830476_480.jpg" }
+    {
+      "marca": "Études",
+      "nome": "Moletom com capuz paint-splatter",
+      "de": 2166,
+      "por": 431,
+      "off": 70,
+      "tam": "XXS, S, M, L",
+      "url": "https://www.farfetch.com/br/shopping/men/etudes-studio-paint-splatter-hoodie-item-31706506.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/31/70/65/06/31706506_93464956_480.jpg"
+    },
+    {
+      "marca": "Études",
+      "nome": "Calça de moletom Sky com friso",
+      "de": 2389,
+      "por": 497,
+      "off": 70,
+      "tam": "XXS a XL",
+      "url": "https://www.farfetch.com/br/shopping/men/etudes-studio-sky-contrast-piping-track-pants-item-39001644.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/39/00/16/44/39001644_98435133_480.jpg"
+    },
+    {
+      "marca": "Études",
+      "nome": "Calça de moletom com listra lateral",
+      "de": 2389,
+      "por": 497,
+      "off": 70,
+      "tam": "XS, S, M",
+      "url": "https://www.farfetch.com/br/shopping/men/etudes-studio-side-stripe-track-pants-item-34102482.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/34/10/24/82/34102482_76304793_480.jpg"
+    },
+    {
+      "marca": "Represent",
+      "nome": "Camiseta British Cowboys",
+      "de": 2043,
+      "por": 789,
+      "off": 60,
+      "tam": "XS a XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/represent-british-cowboys-t-shirt-item-34324031.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/34/32/40/31/34324031_95003605_480.jpg"
+    },
+    {
+      "marca": "Vision of Super",
+      "nome": "Jaqueta acolchoada com capuz",
+      "de": 3416,
+      "por": 1465,
+      "off": 55,
+      "tam": "M",
+      "url": "https://www.farfetch.com/br/shopping/men/vision-of-super-hooded-padded-jacket-item-32474447.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/32/47/44/47/32474447_76058701_480.jpg"
+    },
+    {
+      "marca": "Represent",
+      "nome": "Moletom British Cowboys",
+      "de": 3089,
+      "por": 1446,
+      "off": 50,
+      "tam": "XS a XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/represent-british-cowboys-hoodie-item-34234100.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/34/23/41/00/34234100_98196960_480.jpg"
+    },
+    {
+      "marca": "Off-White",
+      "nome": "Camiseta com logo",
+      "de": 4276,
+      "por": 1950,
+      "off": 50,
+      "tam": "XS a XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/off-white-logo-print-t-shirt-item-37354127.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/35/41/27/37354127_96438283_480.jpg"
+    },
+    {
+      "marca": "Carhartt WIP",
+      "nome": "Camisa listrada Kanan",
+      "de": 1332,
+      "por": 675,
+      "off": 45,
+      "tam": "S a XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/carhartt-wip-kanan-stripe-shirt-item-36909393.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/36/90/93/93/36909393_96078398_480.jpg"
+    },
+    {
+      "marca": "Represent",
+      "nome": "Camiseta Owners Club",
+      "de": 1424,
+      "por": 750,
+      "off": 45,
+      "tam": "XS a XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/represent-owners-club-t-shirt-item-36544872.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/36/54/48/72/36544872_84756845_480.jpg"
+    },
+    {
+      "marca": "Off-White",
+      "nome": "Moletom com logo bordado",
+      "de": 9985,
+      "por": 5403,
+      "off": 45,
+      "tam": "M",
+      "url": "https://www.farfetch.com/br/shopping/men/off-white-logo-embroidered-cotton-hoodie-item-39480882.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/39/48/08/82/39480882_97622489_480.jpg"
+    },
+    {
+      "marca": "Stone Island",
+      "nome": "Overshirt ripstop de algodão orgânico",
+      "de": 6129,
+      "por": 3599,
+      "off": 40,
+      "tam": "S a XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/stone-island-1200005-mercerised-organic-cotton-ripstop-overshirt-item-33392566.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/33/39/25/66/33392566_76194207_480.jpg"
+    },
+    {
+      "marca": "The North Face",
+      "nome": "Calça Chakal",
+      "de": 3277,
+      "por": 1957,
+      "off": 40,
+      "tam": "M",
+      "url": "https://www.farfetch.com/br/shopping/men/the-north-face-chakal-trousers-item-40247478.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/40/24/74/78/40247478_97974126_480.jpg"
+    },
+    {
+      "marca": "Stüssy",
+      "nome": "Camisa polo de algodão",
+      "de": 1288,
+      "por": 810,
+      "off": 30,
+      "tam": "L, XL",
+      "url": "https://www.farfetch.com/br/shopping/men/stussy-cotton-polo-shirt-item-30386160.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/30/38/61/60/30386160_75830476_480.jpg"
+    },
+    {
+      "marca": "The North Face",
+      "nome": "Jaqueta Mountain Range com capuz",
+      "de": 4602,
+      "por": 3066,
+      "off": 30,
+      "tam": "S a XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/the-north-face-mountain-range-hooded-zip-jacket-item-32298128.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/32/29/81/28/32298128_93874751_480.jpg"
+    }
   ]
 }
