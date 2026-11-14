@@ -1,0 +1,120 @@
+{
+  "atualizado": "14/11/2026 11:02",
+  "marcas": [
+    {
+      "nome": "Carnan",
+      "site": "carnan.com.br",
+      "relacao": "segue",
+      "obs": "",
+      "arquivos": [
+        "data/carnan-com-br.json"
+      ]
+    },
+    {
+      "nome": "Piet",
+      "site": "piet.com.br",
+      "relacao": "segue",
+      "obs": "",
+      "arquivos": [
+        "data/piet-com-br.json"
+      ]
+    },
+    {
+      "nome": "PACE",
+      "site": "pacecompany.com.br",
+      "relacao": "segue",
+      "obs": "",
+      "arquivos": [
+        "data/pacecompany-com-br.json"
+      ]
+    },
+    {
+      "nome": "À La Garçonne",
+      "site": "",
+      "relacao": "segue",
+      "obs": "Site sem catálogo público",
+      "arquivos": []
+    },
+    {
+      "nome": "Carhartt WIP",
+      "site": "",
+      "relacao": "segue",
+      "obs": "Aguardando Farfetch (programa de afiliados)",
+      "arquivos": []
+    },
+    {
+      "nome": "Adidas Originals",
+      "site": "",
+      "relacao": "segue",
+      "obs": "Via Artwalk e Authentic Feet (lojas.txt)",
+      "arquivos": [
+        "data/www-artwalk-com-br-adidas-originals.json",
+        "data/www-authenticfeet-com-br-adidas-originals.json"
+      ]
+    },
+    {
+      "nome": "Jordan",
+      "site": "",
+      "relacao": "segue",
+      "obs": "Via Artwalk e Authentic Feet (lojas.txt)",
+      "arquivos": [
+        "data/www-artwalk-com-br-jordan.json",
+        "data/www-authenticfeet-com-br-jordan.json"
+      ]
+    },
+    {
+      "nome": "Sufgang",
+      "site": "sufgang.com.br",
+      "relacao": "sugerida",
+      "obs": "Streetwear de SP, camisetas e moletons",
+      "arquivos": [
+        "data/sufgang-com-br.json"
+      ]
+    },
+    {
+      "nome": "Disturb",
+      "site": "disturb.com.br",
+      "relacao": "sugerida",
+      "obs": "Streetwear com collabs (Diadora, Pepsi)",
+      "arquivos": [
+        "data/disturb-com-br.json"
+      ]
+    },
+    {
+      "nome": "THESAINT",
+      "site": "thesaint.com.br",
+      "relacao": "sugerida",
+      "obs": "Streetwear de SP, referência entre boleiros e artistas",
+      "arquivos": [
+        "data/thesaint-com-br.json"
+      ]
+    },
+    {
+      "nome": "Overcome",
+      "site": "www.overcome.com.br",
+      "relacao": "sugerida",
+      "obs": "Streetwear, moletons e cargo",
+      "arquivos": [
+        "data/www-overcome-com-br.json"
+      ]
+    },
+    {
+      "nome": "Bolovo",
+      "site": "bolovo.com.br",
+      "relacao": "sugerida",
+      "obs": "Casual e workwear paulistano",
+      "arquivos": [
+        "data/bolovo-com-br.json"
+      ]
+    },
+    {
+      "nome": "Osklen",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Premium brasileira (site próprio, lojas.txt)",
+      "arquivos": [
+        "data/www-osklen-com-br-osklen.json"
+      ]
+    }
+  ]
+}

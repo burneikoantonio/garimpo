@@ -1,0 +1,15 @@
+# O Netlify publica a pasta app/ a cada atualização que o robô salva no GitHub.
+[build]
+  publish = "app"
+  command = ""
+
+# dados e página sempre frescos no iPhone
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache"

@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Garimpo">
+<meta name="theme-color" content="#161616">
+<title>Garimpo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap">
+<style>
+/* Carbon g100: coluna de celular, cabeçalho fixo, grade de 2 colunas, barra de abas inferior */
+:root {
+  color-scheme: dark;
+  --bg: #161616; --layer: #262626; --layer2: #393939;
+  --border: #393939; --border-strong: #6f6f6f;
+  --fg: #f4f4f4; --fg2: #c6c6c6; --helper: #a8a8a8;
+  --accent: #0f62fe; --link: #78a9ff; --good: #42be65; --warn: #f1c21b; --bad: #fa4d56;
+  --sale-bg: #a2191f; --sale-fg: #ffd7d9; --new-bg: #0043ce; --new-fg: #d0e2ff;
+  --ok-bg: #044317; --ok-fg: #a7f0ba; --sug-bg: #491d8b; --sug-fg: #e8daff;
+  --font: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", Menlo, "Courier New", monospace;
+  --col: 480px; --nav-h: 56px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--fg); }
+body { font-family: var(--font); font-size: 14px; line-height: 1.43; letter-spacing: .16px; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+button, input, select { font: inherit; color: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--fg); outline-offset: -2px; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+.app { max-width: var(--col); margin: 0 auto; min-height: 100vh; border-inline: 1px solid var(--border); padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 24px); }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+.hdr { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--border); }
+.hdr .wrap { display: flex; align-items: center; gap: 12px; min-height: 48px; padding-block: 8px; }
+.hdr h1 { font-size: 20px; font-weight: 400; margin: 0; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hdr h1 b { font-weight: 600; }
+.iconbtn { width: 40px; height: 40px; display: grid; place-items: center; background: none; border: 0; position: relative; flex: none; }
+.iconbtn:hover { background: var(--layer); }
+.iconbtn svg { width: 20px; height: 20px; fill: none; stroke: var(--fg); stroke-width: 1.5; }
+.dot { position: absolute; top: 8px; right: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
+
+.intro { padding-block: 16px 12px; display: grid; gap: 2px; }
+.intro p { margin: 0; color: var(--helper); font-size: 12px; letter-spacing: .32px; }
+
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-block: 4px 12px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; height: 32px; padding: 0 16px; border: 1px solid var(--border-strong); background: transparent; border-radius: 16px; font-size: 13px; white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-block: 1px solid var(--border); }
+.tile { background: var(--bg); border: 0; padding: 0; text-align: left; display: flex; flex-direction: column; min-width: 0; }
+.tile:hover { background: var(--layer); }
+.ph { aspect-ratio: 4 / 5; width: 100%; max-width: 100%; position: relative; background: #e5e5e5; overflow: hidden; }
+.ph img { width: 100%; height: 100%; object-fit: cover; }
+.ph .tags { position: absolute; left: 8px; top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+.tile .body { padding: 10px 12px 16px; display: grid; gap: 2px; min-width: 0; }
+.brand { font-size: 11px; letter-spacing: .32px; color: var(--helper); text-transform: uppercase; }
+.pname { font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.8em; }
+.prices { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.was { font-size: 11px; color: var(--helper); text-decoration: line-through; }
+.now { font-size: 15px; font-weight: 500; }
+.off { font-size: 11px; color: var(--good); }
+.scoreline { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+.meter { flex: 1; height: 4px; background: var(--layer2); position: relative; }
+.meter i { position: absolute; inset: 0 auto 0 0; background: var(--fg2); }
+.meter.hi i { background: var(--good); }
+.score { font-size: 11px; }
+
+.tag { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; border-radius: 10px; font-size: 11px; font-weight: 500; letter-spacing: .32px; white-space: nowrap; }
+.t-sale { background: var(--sale-bg); color: var(--sale-fg); }
+.t-new { background: var(--new-bg); color: var(--new-fg); }
+.t-ok { background: var(--ok-bg); color: var(--ok-fg); }
+.t-sug { background: var(--sug-bg); color: var(--sug-fg); }
+.t-gray { background: var(--layer2); color: var(--fg2); }
+.t-intl { background: var(--sug-bg); color: var(--sug-fg); }
+.breakdown { display: grid; gap: 6px; font-size: 13px; }
+.breakdown div { display: flex; justify-content: space-between; gap: 12px; }
+.breakdown .mono { white-space: nowrap; }
+.breakdown .tot { border-top: 1px solid var(--border-strong); padding-top: 8px; font-weight: 600; }
+
+.more { display: flex; justify-content: center; padding-block: 16px; }
+.note { padding-block: 16px; color: var(--helper); font-size: 12px; display: grid; gap: 4px; }
+
+.section-h { font-size: 14px; font-weight: 600; margin: 0; padding-block: 24px 8px; }
+.section-sub { color: var(--helper); font-size: 12px; margin: -4px 0 8px; }
+.list { border-top: 1px solid var(--border); }
+.row { display: flex; gap: 12px; align-items: center; padding-block: 12px; border-bottom: 1px solid var(--border); min-width: 0; }
+.row .grow { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.row .t1 { font-size: 14px; }
+.row .t2 { font-size: 12px; color: var(--helper); }
+.thumb { width: 64px; height: 80px; flex: none; background: #e5e5e5; border: 0; padding: 0; overflow: hidden; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.avatar { width: 40px; height: 40px; flex: none; background: var(--layer2); display: grid; place-items: center; font-family: var(--mono); font-size: 13px; }
+.rowbtn { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--border); text-align: left; }
+.rowbtn:hover { background: var(--layer); }
+
+.btn { height: 40px; padding: 0 16px; border: 0; background: var(--accent); color: #fff; font-size: 14px; display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; text-decoration: none; }
+.btn:hover { background: #0353e9; }
+.btn.ghost { background: transparent; color: var(--link); padding: 0 8px; }
+.btn.ghost:hover { background: var(--layer); }
+.btn.tertiary { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1px var(--fg); }
+.btn.tertiary:hover { background: var(--fg); color: var(--bg); }
+.btn.sm { height: 32px; font-size: 13px; }
+
+.search { display: flex; align-items: center; gap: 8px; height: 48px; background: var(--layer); border-bottom: 1px solid var(--border-strong); padding: 0 12px; margin-block: 16px 12px; }
+.search svg { width: 18px; height: 18px; stroke: var(--helper); fill: none; stroke-width: 1.5; flex: none; }
+.search input { flex: 1; min-width: 0; height: 100%; background: none; border: 0; outline: 0; font-size: 16px; }
+.search input::placeholder { color: #6f6f6f; }
+.field { display: grid; gap: 8px; padding-block: 8px; min-width: 0; }
+.field label, .lbl { font-size: 12px; color: var(--fg2); letter-spacing: .32px; }
+.field select, .field input[type="number"] { height: 40px; background: var(--layer); border: 0; border-bottom: 1px solid var(--border-strong); padding: 0 12px; font-size: 16px; min-width: 0; width: 100%; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+input[type="range"] { width: 100%; accent-color: var(--accent); }
+.range-val { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+
+.toggle { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--border); }
+.toggle .grow { display: grid; gap: 2px; min-width: 0; }
+.toggle small { color: var(--helper); font-size: 12px; }
+.switch { width: 48px; height: 24px; border-radius: 12px; background: #8d8d8d; border: 0; position: relative; flex: none; transition: background .15s; }
+.switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: transform .15s; }
+.switch[aria-checked="true"] { background: #24a148; }
+.switch[aria-checked="true"]::after { transform: translateX(24px); }
+
+.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(5, 1fr); }
+.nav button { height: var(--nav-h); background: none; border: 0; display: grid; place-items: center; gap: 2px; padding-top: 6px; font-size: 11px; color: var(--helper); letter-spacing: .32px; position: relative; }
+.nav svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.nav button[aria-current="page"] { color: var(--fg); }
+.nav button[aria-current="page"]::before { content: ""; position: absolute; top: -1px; left: 20%; right: 20%; height: 2px; background: var(--accent); }
+
+.sheet { position: fixed; inset: 0; z-index: 40; max-width: var(--col); margin: 0 auto; background: var(--bg); overflow-y: auto; -webkit-overflow-scrolling: touch; border-inline: 1px solid var(--border); padding-top: env(safe-area-inset-top, 0px); padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 32px); }
+.sheet .hdr { top: 0; }
+.gallery { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; background: #e5e5e5; scrollbar-width: none; }
+.gallery::-webkit-scrollbar { display: none; }
+.gallery img { flex: none; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; scroll-snap-align: start; }
+.gallery-count { color: var(--helper); font-size: 11px; padding-top: 6px; }
+.detail-head { padding-block: 12px 16px; display: grid; gap: 4px; }
+.detail-head h2 { font-size: 22px; font-weight: 400; margin: 0; line-height: 1.27; text-wrap: balance; }
+.bigprice { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+.bigprice .now { font-size: 28px; font-weight: 400; }
+.sizes { display: flex; flex-wrap: wrap; gap: 6px; }
+.size { min-width: 40px; height: 32px; padding: 0 8px; display: inline-grid; place-items: center; border: 1px solid var(--border-strong); font-family: var(--mono); font-size: 12px; }
+.size.off { color: #6f6f6f; border-color: var(--border); text-decoration: line-through; }
+.size.mine { border-color: var(--good); color: var(--good); }
+.panel { background: var(--layer); padding: 16px; display: grid; gap: 12px; }
+.bar-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; font-size: 13px; }
+.bar-row .meter { grid-column: 1 / -1; }
+.chart { width: 100%; height: auto; display: block; }
+.chart text { fill: var(--helper); font-family: var(--mono); font-size: 10px; }
+.notice { border-left: 3px solid var(--warn); background: var(--layer); padding: 12px 16px; font-size: 13px; display: grid; gap: 4px; }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 16px; }
+.actions .btn { height: 56px; align-items: flex-start; padding-top: 12px; }
+
+.toast { position: fixed; z-index: 60; left: 16px; right: 16px; margin: 0 auto; max-width: calc(var(--col) - 32px); bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 12px); background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 13px; border-left: 3px solid var(--good); }
+.loading { padding: 48px 16px; color: var(--helper); text-align: center; }
+
+@media (max-width: 500px) { .app, .nav, .sheet { border-inline: 0; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="app" id="app"><p class="loading">Carregando catálogo…</p></div>
+<nav class="nav" id="nav" aria-label="Navegação principal"></nav>
+<div id="sheet" class="sheet" hidden></div>
+<div id="toast" class="toast" role="status" hidden></div>
+
+<script src="core.js"></script>
+<script>
+/* ---------- Ícones ---------- */
+const ICON = {
+  ofertas: '<svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg>',
+  buscar: '<svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>',
+  marcas: '<svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>',
+  salvos: '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+  perfil: '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.5-6.5 8-6.5s7 2 8 6.5"/></svg>',
+  bell: '<svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4z"/><path d="M10 21h4"/></svg>',
+  back: '<svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>',
+  close: '<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+};
+
+/* ---------- Utilidades ---------- */
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const brl = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 });
+const img = (src, w = 600) => !src ? ''
+  : src.includes('vteximg') ? src.replace(/\/ids\/(\d+)(-\d+-\d+)?\//, `/ids/$1-${w}-${Math.round(w * 1.25)}/`)
+  : src + (src.includes('?') ? '&' : '?') + 'width=' + w;
+// atalho para a busca masculina da Farfetch Brasil (até entrar pelo programa de afiliados)
+const farfetch = q => 'https://www.farfetch.com/br/shopping/men/search/items.aspx?q=' + encodeURIComponent(q);
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('garimpo:' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('garimpo:' + k, JSON.stringify(v)); } catch (e) {} },
+};
+
+/* ---------- Estado ---------- */
+const DEFAULT_SIZES = { top: 'M', bottom: '40', shoe: '41' };
+const S = {
+  tab: store.get('tab', 'ofertas'), cat: 'Tudo', limit: 40,
+  q: '', qKind: 'Tudo', qBrand: 'Todas', qMax: 1500, qSale: false,
+  sizes: store.get('sizes', DEFAULT_SIZES), onlyMySize: store.get('onlyMySize', true),
+  withSuggested: store.get('withSuggested', true), notaMin: store.get('notaMin', 70),
+  saved: store.get('saved', {}), follow: store.get('follow', null),
+  showIntl: store.get('showIntl', true), minSave: store.get('minSave', 20),
+};
+
+let DATA = { marcas: [], atualizado: '', produtos: [], hist: {} };
+
+/* ---------- Carregamento ---------- */
+async function load() {
+  const get = async u => { const r = await fetch(u, { cache: 'no-store' }); if (!r.ok) throw new Error(u); return r.json(); };
+  const idx = await get('data/marcas.json');
+  const hist = await get('data/historico.json').catch(() => ({}));
+  const cambio = await get('data/cambio.json').catch(() => null);
+  const fontes = idx.marcas.flatMap(m => (m.arquivos || []).map(a => ({ m, a })));
+  const cats = await Promise.all(fontes.map(({ m, a }) => get(a).then(c => ({ m, c })).catch(() => null)));
+  if (!S.follow) S.follow = idx.marcas.filter(m => m.relacao === 'segue').map(m => m.nome);
+  DATA = buildData(idx, cats, hist, cambio);
+}
+
+function feedList(filter) {
+  const out = []; let hiddenSize = 0;
+  for (const p of DATA.produtos) {
+    if (filter && !filter(p)) continue;
+    const e = evaluate(p);
+    if (!e.ok) { if (e.avail.length) hiddenSize++; continue; }
+    out.push({ p, e });
+  }
+  return { items: out.sort((a, b) => b.e.score - a.e.score || b.e.off - a.e.off), hiddenSize };
+}
+
+/* ---------- Componentes ---------- */
+function tile({ p, e }) {
+  const tags = [];
+  if (e.intl) tags.push('<span class="tag t-intl">INTERNACIONAL</span>');
+  if (e.off >= 0.05) tags.push(`<span class="tag t-sale">-${Math.round(e.off * 100)}%</span>`);
+  if (e.novo) tags.push('<span class="tag t-new">Novo</span>');
+  if (e.baixou) tags.push('<span class="tag t-ok">Baixou</span>');
+  return `<button class="tile" data-open="${esc(p.key)}">
+    <div class="ph"><img loading="lazy" src="${esc(img(p.imagens[0], 400))}" alt=""><div class="tags">${tags.join('')}</div></div>
+    <div class="body">
+      <span class="brand">${esc(p.marca)}${p.relacao === 'sugerida' ? ' · sugerida' : ''}${e.lojas.length > 1 ? ` · ${e.lojas.length} lojas` : p.ofertas[0].loja.startsWith('Site ') ? '' : ` · ${esc(e.lojas[0].loja)}`}</span>
+      <span class="pname">${esc(p.titulo)}</span>
+      <span class="prices">${e.de ? `<span class="was mono">${brl(e.de)}</span>` : ''}<span class="now mono">${brl(e.price)}</span></span>
+      <span class="scoreline"><span class="meter ${e.score >= S.notaMin ? 'hi' : ''}"><i style="width:${e.score}%"></i></span><span class="score mono">Nota ${e.score}</span></span>
+    </div></button>`;
+}
+const header = (title, extra = '') => `<header class="hdr"><div class="wrap"><h1>${title}</h1>${extra}</div></header>`;
+function grid(items, moreKey) {
+  if (!items.length) return '';
+  const shown = items.slice(0, S.limit);
+  return `<div class="grid">${shown.map(tile).join('')}</div>${items.length > S.limit ? `<div class="more"><button class="btn tertiary sm" data-more>Mostrar mais (${items.length - S.limit})</button></div>` : ''}`;
+}
+const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.nome) || (S.withSuggested && m.relacao === 'sugerida')).map(m => m.nome));
+
+/* ---------- Telas ---------- */
+function viewOfertas() {
+  const brands = activeBrands();
+  const { items, hiddenSize } = feedList(p => brands.has(p.marca) && (S.cat === 'Tudo' || p.cat === S.cat));
+  // intercala marcas: cada peça seguinte da mesma marca perde 3 pontos na ordenação
+  const rank = {};
+  const deals = items.filter(x => x.e.off > 0 || x.e.score >= S.notaMin)
+    .map(x => ({ x, k: x.e.score - 3 * (rank[x.p.marca] = (rank[x.p.marca] ?? -1) + 1) }))
+    .sort((a, b) => b.k - a.k).map(o => o.x);
+  const alerts = buildAlerts();
+  const fontes = DATA.marcas.filter(m => m.arquivos?.length && brands.has(m.nome)).length;
+  return header('<b>Garimpo</b>', `<button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${alerts.length ? '<span class="dot"></span>' : ''}</button>`) + `
+    <div class="wrap intro">
+      <p>${deals.length} ofertas no seu tamanho (${esc(S.sizes.top)} · ${esc(S.sizes.bottom)} · ${esc(S.sizes.shoe)}) em ${fontes} marcas</p>
+      <p>Atualizado em ${esc(DATA.atualizado)}</p>
+    </div>
+    <div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>
+    ${grid(deals) || '<div class="wrap note"><span>Nenhuma oferta nesta categoria agora.</span></div>'}
+    <div class="wrap note">${hiddenSize ? `<span>${hiddenSize} peças ocultas por não ter seu tamanho disponível.</span>` : ''}<span>Fotos e preços vêm direto dos sites das marcas.</span></div>`;
+}
+
+function viewBuscar() {
+  const q = S.q.trim().toLowerCase();
+  const brands = ['Todas', ...DATA.marcas.filter(m => m.arquivos?.length).map(m => m.nome)];
+  const kinds = ['Tudo', ...Object.keys(KIND_LABEL).filter(k => DATA.produtos.some(p => p.kind === k))];
+  let { items, hiddenSize } = feedList(p =>
+    (!q || (p.marca + ' ' + p.titulo).toLowerCase().includes(q)) &&
+    (S.qKind === 'Tudo' || p.kind === S.qKind) && (S.qBrand === 'Todas' || p.marca === S.qBrand));
+  items = items.filter(x => x.e.price <= S.qMax && (!S.qSale || x.e.off > 0));
+  return header('Buscar') + `
+    <div class="wrap">
+      <label class="search"><span>${ICON.buscar}</span><input id="q" type="search" placeholder="Marca ou peça" value="${esc(S.q)}" autocomplete="off" enterkeyhint="search"></label>
+      <div class="chips" role="group" aria-label="Tipo de peça">${kinds.map(k => `<button class="chip" data-qkind="${k}" aria-pressed="${S.qKind === k}">${k === 'Tudo' ? 'Tudo' : KIND_LABEL[k]}</button>`).join('')}</div>
+      <div class="field-row">
+        <div class="field"><label for="qBrand">Marca</label><select id="qBrand">${brands.map(b => `<option ${b === S.qBrand ? 'selected' : ''}>${esc(b)}</option>`).join('')}</select></div>
+        <div class="field"><div class="range-val"><label for="qMax">Até</label><span class="mono lbl">${brl(S.qMax)}</span></div><input id="qMax" type="range" min="100" max="3000" step="50" value="${S.qMax}"></div>
+      </div>
+      <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-sw="qSale" aria-checked="${S.qSale}" aria-label="Só peças com desconto"></button></div>
+      <p class="section-sub" style="margin:16px 0 12px">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p>
+    </div>
+    ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
+}
+
+function viewMarcas() {
+  const initials = n => n.split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  const stats = m => {
+    const ps = DATA.produtos.filter(p => p.marca === m.nome).map(p => evaluate(p)).filter(e => e.ok);
+    const sale = ps.filter(e => e.off > 0);
+    return { total: ps.length, sale: sale.length, max: sale.length ? Math.round(Math.max(...sale.map(e => e.off)) * 100) : 0 };
+  };
+  const row = m => {
+    const f = S.follow.includes(m.nome);
+    let sub, tag = '';
+    if (m.arquivos?.length) {
+      const s = stats(m);
+      const lojas = [...new Set(DATA.produtos.filter(p => p.marca === m.nome).flatMap(p => p.ofertas.map(o => o.loja)))];
+      sub = `${s.total} peças no seu tamanho · ${esc(m.site || lojas.join(', '))}`;
+      tag = s.sale ? `<span class="tag t-sale">Sale até ${s.max}%</span>` : '<span class="tag t-gray">Sem sale</span>';
+    } else { sub = esc(m.obs || 'Sem fonte de dados ainda'); tag = '<span class="tag t-gray">Sem conexão</span>'; }
+    return `<div class="row">
+      <span class="avatar">${esc(initials(m.nome))}</span>
+      <div class="grow">${m.arquivos?.length ? `<button class="btn ghost" style="padding:0;height:auto;color:var(--fg);justify-content:flex-start" data-brand="${esc(m.nome)}">${esc(m.nome)}</button>` : `<span class="t1">${esc(m.nome)}</span>`}<span class="t2">${sub}</span><a class="t2" style="color:var(--link)" href="${esc(farfetch(m.nome))}" target="_blank" rel="noopener">Ver na Farfetch ↗</a></div>
+      ${tag}
+      <button class="btn ${f ? 'ghost' : 'tertiary'} sm" data-follow="${esc(m.nome)}">${f ? 'Seguindo' : 'Seguir'}</button></div>`;
+  };
+  const seg = DATA.marcas.filter(m => m.relacao === 'segue');
+  const sug = DATA.marcas.filter(m => m.relacao === 'sugerida');
+  return header('Marcas') + `<div class="wrap">
+    <h2 class="section-h">Suas marcas</h2>
+    <div class="list">${seg.map(row).join('')}</div>
+    <h2 class="section-h">Sugeridas para você</h2>
+    <p class="section-sub">Streetwear nacional na mesma linha e faixa de preço das suas marcas</p>
+    <div class="list">${sug.map(row).join('')}</div>
+    <div class="note"><span>Marcas "sem conexão" não têm catálogo aberto. Elas entram quando conectarmos um programa de afiliados ou outra fonte.</span></div>
+  </div>`;
+}
+
+function spark(h, w = 88, hgt = 28) {
+  if (h.length < 2) return `<span class="t2" style="font-size:10px">histórico começou ${esc(fmtDate(h[0]?.[0]))}</span>`;
+  const vals = h.map(([, v]) => v), min = Math.min(...vals), max = Math.max(...vals), r = max - min || 1;
+  const pts = vals.map((v, i) => [(i / (vals.length - 1)) * (w - 4) + 2, hgt - 3 - ((v - min) / r) * (hgt - 6)]);
+  const last = pts[pts.length - 1];
+  return `<svg width="${w}" height="${hgt}" viewBox="0 0 ${w} ${hgt}" aria-hidden="true"><polyline points="${pts.map(p => p.join(',')).join(' ')}" fill="none" stroke="#a8a8a8" stroke-width="1.25"/><circle cx="${last[0]}" cy="${last[1]}" r="2.5" fill="#42be65"/></svg>`;
+}
+const fmtDate = d => d ? d.split('-').reverse().slice(0, 2).join('/') : '';
+
+function viewSalvos() {
+  const keys = Object.keys(S.saved);
+  const rows = keys.map(k => {
+    const p = DATA.produtos.find(x => x.key === k);
+    if (!p) return `<div class="row"><div class="grow"><span class="t1">${esc(S.saved[k].titulo || k)}</span><span class="t2">Saiu do catálogo da marca</span></div><button class="btn ghost sm" data-unsave="${esc(k)}">Remover</button></div>`;
+    const e = evaluate(p); const alvo = S.saved[k].alvo;
+    const price = e.ok ? e.price : null; const hit = price && price <= alvo;
+    return `<div class="row">
+      <button class="thumb" data-open="${esc(k)}" aria-label="Abrir ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>
+      <div class="grow">
+        <span class="t2">${esc(p.marca)}</span><span class="t1">${esc(p.titulo)}</span>
+        <span class="mono" style="font-size:15px">${price ? brl(price) : 'Esgotado no seu tamanho'} ${hit ? '<span class="tag t-ok">Abaixo do alvo</span>' : ''}</span>
+        <label class="t2" style="display:flex;align-items:center;gap:6px">Alvo R$ <input class="mono" data-alvo="${esc(k)}" type="number" inputmode="numeric" value="${alvo}" style="width:84px;height:28px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 6px;font-size:16px"></label>
+      </div>
+      <div style="display:grid;gap:4px;justify-items:end">${spark(productHist(p))}</div>
+    </div>`;
+  });
+  return header('Salvos') + `<div class="wrap">
+    <p class="section-sub" style="margin:16px 0 12px">O alerta dispara quando o preço no seu tamanho ficar abaixo do alvo.</p>
+    <div class="list">${rows.join('') || '<p class="section-sub" style="padding-block:16px">Nada salvo ainda. Abra uma peça e toque em Salvar.</p>'}</div>
+  </div>`;
+}
+
+function viewPerfil() {
+  const sel = (id, opts, val) => `<select id="${id}">${opts.map(o => `<option ${String(o) === String(val) ? 'selected' : ''}>${o}</option>`).join('')}</select>`;
+  const sw = (key, title, sub, val) => `<div class="toggle"><div class="grow"><span>${title}</span>${sub ? `<small>${sub}</small>` : ''}</div><button class="switch" role="switch" data-sw="${key}" aria-checked="${val}" aria-label="${title}"></button></div>`;
+  return header('Perfil') + `<div class="wrap">
+    <h2 class="section-h">Seus tamanhos</h2>
+    <div class="field-row" style="grid-template-columns:1fr 1fr 1fr">
+      <div class="field"><label for="szTop">Parte de cima</label>${sel('szTop', Object.keys(TOP_EQ), S.sizes.top)}</div>
+      <div class="field"><label for="szBottom">Calça/bermuda</label>${sel('szBottom', Object.keys(BOTTOM_EQ), S.sizes.bottom)}</div>
+      <div class="field"><label for="szShoe">Tênis</label>${sel('szShoe', [37, 38, 39, 40, 41, 42, 43, 44, 45], S.sizes.shoe)}</div>
+    </div>
+    ${sw('onlyMySize', 'Mostrar só meu tamanho', 'Preço e disponibilidade calculados no seu tamanho', S.onlyMySize)}
+    <h2 class="section-h">Ofertas</h2>
+    ${sw('withSuggested', 'Incluir marcas sugeridas', 'Sufgang, Disturb e outras recomendações', S.withSuggested)}
+    <div class="field"><div class="range-val"><label for="notaMin">Nota mínima para destacar e avisar</label><span class="mono lbl">${S.notaMin}</span></div><input id="notaMin" type="range" min="40" max="90" step="5" value="${S.notaMin}"></div>
+    <h2 class="section-h">Como a nota é calculada</h2>
+    <div class="notice"><span><b>Desconto</b> informado pela loja (até 45 pts), <b>preço comparado</b> à mediana de peças do mesmo tipo em todas as marcas (até 30) <b>histórico</b>: menor preço já registrado (até 15) e, quando a peça está em mais de uma loja, <b>comparação entre lojas</b> (até 25). O histórico começou em ${esc(DATA.atualizado.split(' ')[0])} e fica mais útil a cada atualização.</span></div>
+    <h2 class="section-h">Ainda não disponível</h2>
+    <div class="notice"><span>Farfetch (marcas importadas, inclusive Carhartt WIP) e Maze entram pelos programas de afiliados. À La Garçonne não tem catálogo aberto.</span></div>
+  </div>`;
+}
+
+/* ---------- Alertas (gerados a partir do histórico) ---------- */
+function buildAlerts() {
+  const out = [];
+  for (const k of Object.keys(S.saved)) {
+    const p = DATA.produtos.find(x => x.key === k); if (!p) continue;
+    const e = evaluate(p); if (!e.ok) continue;
+    if (e.price <= S.saved[k].alvo) out.push({ tag: ['t-ok', 'Alvo'], t: `${p.titulo} está ${brl(e.price)}, abaixo do seu alvo`, key: k });
+    else if (e.baixou) out.push({ tag: ['t-sale', 'Baixou'], t: `${p.titulo} baixou para ${brl(e.price)}`, key: k });
+  }
+  const brands = activeBrands();
+  for (const p of DATA.produtos) {
+    if (!brands.has(p.marca) || S.saved[p.key]) continue;
+    const e = evaluate(p); if (!e.ok) continue;
+    if (e.baixou && e.score >= S.notaMin) out.push({ tag: ['t-sale', 'Baixou'], t: `${p.marca}: ${p.titulo} baixou para ${brl(e.price)}`, key: p.key });
+    else if (e.novo && S.follow.includes(p.marca)) out.push({ tag: ['t-new', 'Novo'], t: `${p.marca} lançou ${p.titulo}`, key: p.key });
+  }
+  return out.slice(0, 30);
+}
+function openAlerts() {
+  const a = buildAlerts();
+  showSheet(`<header class="hdr"><div class="wrap"><h1>Alertas</h1><button class="iconbtn" data-close aria-label="Fechar">${ICON.close}</button></div></header>
+    <div class="wrap"><p class="section-sub" style="margin:16px 0 12px">Quedas de preço aparecem a partir da segunda atualização, quando há com o que comparar.</p>
+    <div class="list">${a.map(x => `<button class="row rowbtn" data-open="${esc(x.key)}"><span class="tag ${x.tag[0]}">${x.tag[1]}</span><div class="grow"><span class="t1">${esc(x.t)}</span></div></button>`).join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta no momento.</p>'}</div></div>`);
+}
+
+/* ---------- Detalhe ---------- */
+function priceChart(h) {
+  const vals = h.map(([, v]) => v);
+  const W = 360, H = 140, L = 48, R = 8, T = 12, B = 22;
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const lo = Math.floor(min * 0.95 / 10) * 10, hi = Math.ceil(max * 1.05 / 10) * 10;
+  const x = i => L + (i / (vals.length - 1)) * (W - L - R);
+  const y = v => T + (1 - (v - lo) / (hi - lo)) * (H - T - B);
+  const line = vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Histórico de preço">
+    ${[lo, hi].map(t => `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="#393939"/><text x="${L - 6}" y="${y(t) + 3}" text-anchor="end">${t}</text>`).join('')}
+    <polygon points="${x(0)},${H - B} ${line} ${x(vals.length - 1)},${H - B}" fill="#0f62fe" fill-opacity=".18"/>
+    <polyline points="${line}" fill="none" stroke="#78a9ff" stroke-width="2"/>
+    <circle cx="${x(vals.length - 1)}" cy="${y(vals[vals.length - 1])}" r="4" fill="#f4f4f4"/>
+    <text x="${L}" y="${H - 6}">${fmtDate(h[0][0])}</text><text x="${W - R}" y="${H - 6}" text-anchor="end">${fmtDate(h[h.length - 1][0])}</text>
+  </svg>`;
+}
+
+function openDetail(key) {
+  const p = DATA.produtos.find(x => x.key === key); if (!p) return;
+  const e = evaluate(p);
+  const saved = !!S.saved[key];
+  // tamanhos: disponível se existir em alguma loja
+  const tam = new Map();
+  for (const v of p.ofertas.flatMap(o => o.variantes)) { const l = sizeLabel(v.t); tam.set(l, { t: v.t, a: (tam.get(l)?.a || v.a) }); }
+  const sizes = [...tam.entries()].map(([l, v]) => `<span class="size ${!v.a ? 'off' : fits(v.t, p.group) && p.group !== 'one' ? 'mine' : ''}">${esc(l)}</span>`).join('');
+  const bars = e.ok ? [['Desconto da loja', e.parts.desconto, 45], [`Preço vs. ${KIND_LABEL[p.kind].toLowerCase()} parecidas (mediana ${brl(Math.round(e.med))})`, e.parts.parecidas, 30], ['Menor preço já registrado', e.parts.historico, 15], ...(e.lojas.length > 1 ? [['Comparação entre lojas', e.parts.lojas, 25]] : [])] : [];
+  const imp = e.ok && e.lojas.find(l => l.intl) || e.intlDescartado;
+  const brMin = e.ok ? e.lojas.find(l => !l.intl)?.price : null;
+  const fmt2 = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const sym = { EUR: '€', USD: 'US$', GBP: '£' };
+  const intlBlock = imp ? `<h3 class="section-h">Custo total para importar <span class="tag t-intl" style="margin-left:6px">INTERNACIONAL</span></h3>
+    <div class="panel"><div class="breakdown">
+      <div><span>Produto <span style="color:var(--helper)">${sym[imp.custo.moeda] || imp.custo.moeda} ${imp.custo.preco.toLocaleString('pt-BR')} × ${imp.custo.taxa.toFixed(2)}</span></span><span class="mono">${fmt2(imp.custo.produto)}</span></div>
+      <div><span>Frete estimado (${esc(imp.intl.envio === 'direto' ? 'a loja entrega no Brasil' : 'via redirecionador')})</span><span class="mono">${fmt2(imp.custo.frete)}</span></div>
+      <div><span>IOF do cartão (3,5%)</span><span class="mono">${fmt2(imp.custo.iof)}</span></div>
+      <div><span>Imposto de importação (60%)</span><span class="mono">${fmt2(imp.custo.ii)}</span></div>
+      <div><span>ICMS (17%)</span><span class="mono">${fmt2(imp.custo.icms)}</span></div>
+      <div class="tot"><span>Total estimado · ${esc(imp.loja)}</span><span class="mono">${fmt2(imp.custo.total)}</span></div>
+      ${brMin ? `<div style="color:var(--helper)"><span>Melhor preço no Brasil</span><span class="mono">${brl(brMin)}</span></div>` : ''}
+    </div>
+    <div class="notice" style="background:var(--layer2)"><span>${e.intlDescartado ? `Não compensa importar: precisa sair ${S.minSave}% mais barato que no Brasil.` : brMin ? `Compensa: ${Math.round((1 - imp.price / brMin) * 100)}% mais barato que no Brasil.` : 'Não encontramos esta peça à venda no Brasil, então comparamos só com peças parecidas.'} Câmbio de ${esc(fmtDate(DATA.cambio?.data))}; frete e impostos são estimativas.</span></div></div>` : '';
+  const lojasBlock = e.ok ? `<h3 class="section-h">Onde comprar${S.onlyMySize && p.group !== 'one' ? ' no seu tamanho' : ''}</h3>
+    <div class="list">${e.lojas.map((l, i) => `<div class="row"><div class="grow"><span class="t1">${esc(l.loja)} ${l.intl ? '<span class="tag t-intl">INTERNACIONAL</span> ' : ''}${i === 0 && e.lojas.length > 1 ? (e.lojas[1].price > l.price ? '<span class="tag t-ok">Mais barato</span>' : '<span class="tag t-gray">Mesmo preço</span>') : ''}</span>${l.de ? `<span class="t2 mono">de ${brl(l.de)}</span>` : ''}</div><span class="mono" style="font-size:15px">${brl(l.price)}</span><a class="btn ghost sm" href="${esc(l.url)}" target="_blank" rel="noopener">Abrir ↗</a></div>`).join('')}</div>` : '';
+  const histBlock = e.ok && e.hist.length > 1 ? `<div class="panel">${priceChart(e.hist)}</div>`
+    : `<div class="notice"><span>O histórico deste item começou em ${esc(fmtDate(e.hist?.[0]?.[0]) || 'hoje')}. A cada atualização o gráfico ganha um ponto e a nota passa a considerar se é o menor preço já visto.</span></div>`;
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${esc(p.marca)}</h1></div></header>
+    <div class="gallery">${p.imagens.map((s, i) => `<img src="${esc(img(s, 800))}" alt="${esc(p.titulo)} – foto ${i + 1}" ${i ? 'loading="lazy"' : ''}>`).join('')}</div>
+    <div class="wrap">
+      ${p.imagens.length > 1 ? `<div class="gallery-count">${p.imagens.length} fotos · deslize para o lado</div>` : ''}
+      <div class="detail-head">
+        <span class="brand">${esc(p.marca)} · ${KIND_LABEL[p.kind]}</span>
+        <h2>${esc(p.titulo)}</h2>
+        ${e.ok ? `<div class="bigprice"><span class="now mono">${brl(e.price)}</span>${e.de ? `<span class="was mono">${brl(e.de)}</span><span class="off mono">-${Math.round(e.off * 100)}%</span>` : ''}</div>` : '<p class="section-sub">Esgotado no seu tamanho</p>'}
+      </div>
+      <div class="lbl" style="margin-bottom:8px">Tamanhos${p.group !== 'one' ? ' · verde = seu tamanho' : ''}</div>
+      <div class="sizes">${sizes}</div>
+      ${e.ok ? `<h3 class="section-h">Nota de Oferta</h3><div class="panel">
+        <div class="range-val"><span class="t2" style="color:var(--helper);font-size:12px">${e.temHist ? 'Com histórico' : 'Sem histórico ainda'} · calculada sobre ${e.max} pontos</span><span class="mono" style="font-size:24px;color:${e.score >= S.notaMin ? 'var(--good)' : 'var(--fg)'}">${e.score}<span style="font-size:13px;color:var(--helper)">/100</span></span></div>
+        ${bars.map(b => `<div class="bar-row"><span>${b[0]}</span><span class="mono" style="color:var(--helper)">${Math.round(b[1])}/${b[2]}</span><span class="meter ${b[1] / b[2] > .6 ? 'hi' : ''}"><i style="width:${(b[1] / b[2]) * 100}%"></i></span></div>`).join('')}
+      </div>` : ''}
+      ${lojasBlock}
+      <div class="row"><div class="grow"><span class="t1">Farfetch</span><span class="t2">Compare com marcas importadas vendidas em reais</span></div><a class="btn ghost sm" href="${esc(farfetch(p.marca + ' ' + p.titulo.replace(/\s*-\s*[^-]*$/, '')))}" target="_blank" rel="noopener">Procurar ↗</a></div>
+      ${intlBlock}
+      <h3 class="section-h">Histórico de preço</h3>
+      ${histBlock}
+      <div class="actions">
+        <button class="btn tertiary" data-save="${esc(key)}">${saved ? 'Salvo ✓' : 'Salvar e criar alerta'}</button>
+        <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener">${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato ↗' : 'Ver na loja ↗'}</a>
+      </div>
+    </div>`);
+}
+
+function showSheet(html) { const s = document.getElementById('sheet'); s.innerHTML = html; s.hidden = false; s.scrollTop = 0; document.body.style.overflow = 'hidden'; }
+function closeSheet() { const s = document.getElementById('sheet'); s.hidden = true; s.innerHTML = ''; document.body.style.overflow = ''; }
+let toastT;
+function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
+
+/* ---------- Render ---------- */
+const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['marcas', 'Marcas'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
+const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, marcas: viewMarcas, salvos: viewSalvos, perfil: viewPerfil };
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); }
+function render(keepFocus) {
+  const active = keepFocus && document.activeElement && document.activeElement.id;
+  const caret = active === 'q' ? document.activeElement.selectionStart : null;
+  document.getElementById('app').innerHTML = VIEWS[S.tab]();
+  document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[k]}<span>${l}</span></button>`).join('');
+  if (active) { const el = document.getElementById(active); if (el) { el.focus(); if (caret !== null) el.setSelectionRange(caret, caret); } }
+  persist();
+}
+
+document.addEventListener('click', ev => {
+  const b = ev.target.closest('button'); if (!b) return;
+  const d = b.dataset;
+  if (d.tab) { S.tab = d.tab; S.limit = 40; closeSheet(); render(); window.scrollTo(0, 0); }
+  else if (d.cat) { S.cat = d.cat; S.limit = 40; render(); }
+  else if (d.qkind) { S.qKind = d.qkind; S.limit = 40; render(); }
+  else if ('more' in d) { S.limit += 40; render(); }
+  else if (d.open) { openDetail(d.open); }
+  else if ('alerts' in d) { openAlerts(); }
+  else if ('close' in d) { closeSheet(); render(); }
+  else if (d.brand) { S.tab = 'buscar'; S.qBrand = d.brand; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
+  else if (d.save) {
+    const k = d.save, p = DATA.produtos.find(x => x.key === k);
+    if (S.saved[k]) { delete S.saved[k]; toast('Removido dos salvos'); }
+    else { const e = evaluate(p); S.saved[k] = { titulo: p.titulo, alvo: Math.round((e.ok ? e.price : 0) * 0.9) }; toast('Salvo. Alvo definido 10% abaixo do preço atual'); }
+    persist(); openDetail(k);
+  }
+  else if (d.unsave) { delete S.saved[d.unsave]; render(); }
+  else if (d.follow) {
+    const n = d.follow;
+    S.follow = S.follow.includes(n) ? S.follow.filter(x => x !== n) : [...S.follow, n];
+    toast(S.follow.includes(n) ? `Seguindo ${n}` : `Você deixou de seguir ${n}`); render();
+  }
+  else if (d.sw) { S[d.sw] = !S[d.sw]; render(); }
+});
+document.addEventListener('input', ev => {
+  const t = ev.target;
+  if (t.id === 'q') { S.q = t.value; S.limit = 40; render(true); return; }
+  const lbl = t.type === 'range' && t.closest('.field').querySelector('.lbl');
+  if (t.id === 'qMax') lbl.textContent = brl(+t.value);
+  else if (t.id === 'notaMin') lbl.textContent = t.value;
+  else if (t.id === 'minSave') lbl.textContent = t.value + '%';
+});
+document.addEventListener('change', ev => {
+  const t = ev.target;
+  if (t.id === 'qBrand') S.qBrand = t.value;
+  else if (t.id === 'qMax') S.qMax = +t.value;
+  else if (t.id === 'notaMin') S.notaMin = +t.value;
+  else if (t.id === 'minSave') S.minSave = +t.value;
+  else if (t.id === 'szTop') S.sizes = { ...S.sizes, top: t.value };
+  else if (t.id === 'szBottom') S.sizes = { ...S.sizes, bottom: t.value };
+  else if (t.id === 'szShoe') S.sizes = { ...S.sizes, shoe: t.value };
+  else if (t.dataset.alvo) { const v = parseFloat(t.value); if (v > 0) S.saved[t.dataset.alvo].alvo = v; }
+  else return;
+  render();
+});
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !document.getElementById('sheet').hidden) { closeSheet(); render(); } });
+
+load().then(() => {
+  render();
+  // link de notificação: abre a peça direto
+  const m = location.hash.match(/^#produto=(.+)$/);
+  if (m) { openDetail(decodeURIComponent(m[1])); history.replaceState(null, '', location.pathname); }
+}).catch(err => {
+  document.getElementById('app').innerHTML = `<p class="loading">Não consegui carregar os dados (${esc(err.message)}).<br>Rode <code>./atualizar.sh</code> e abra pelo <code>./servidor.sh</code>.</p>`;
+});
+</script>
+</body>
+</html>

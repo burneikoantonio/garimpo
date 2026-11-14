@@ -1,0 +1,40 @@
+name: Atualizar Garimpo
+
+on:
+  schedule:
+    - cron: '0 11 * * *'   # 8h em Brasília
+    - cron: '0 21 * * *'   # 18h em Brasília
+  workflow_dispatch:        # botão "Run workflow" para rodar na hora
+
+permissions:
+  contents: write
+
+env:
+  TZ: America/Sao_Paulo
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Baixar preços das lojas
+        run: bash app/atualizar.sh
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Mandar avisos para o celular (ntfy)
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: node app/alertas.js
+
+      - name: Salvar os dados novos
+        run: |
+          git config user.name "garimpo-bot"
+          git config user.email "garimpo-bot@users.noreply.github.com"
+          git add app/data
+          git diff --cached --quiet || git commit -m "Atualiza preços $(date '+%d/%m %H:%M')"
+          git push

@@ -1,0 +1,613 @@
+<title>Garimpo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: one phone-width column (Carbon g100), sticky header, 2-col tile grid, fixed bottom tab bar */
+:root {
+  color-scheme: dark;
+  --bg: #161616;          /* Carbon background g100 */
+  --layer: #262626;       /* layer-01 */
+  --layer2: #393939;      /* layer-02 */
+  --border: #393939;
+  --border-strong: #6f6f6f;
+  --fg: #f4f4f4;
+  --fg2: #c6c6c6;
+  --helper: #a8a8a8;
+  --accent: #0f62fe;      /* button-primary */
+  --link: #78a9ff;
+  --good: #42be65;
+  --warn: #f1c21b;
+  --bad: #fa4d56;
+  --intl-bg: #491d8b; --intl-fg: #e8daff;   /* purple tag */
+  --sale-bg: #a2191f; --sale-fg: #ffd7d9;   /* red tag */
+  --new-bg: #0043ce; --new-fg: #d0e2ff;     /* blue tag */
+  --ok-bg: #044317; --ok-fg: #a7f0ba;       /* green tag */
+  --font: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", Menlo, "Courier New", monospace;
+  --col: 440px;
+  --nav-h: 56px;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--bg); color: var(--fg); }
+body { font-family: var(--font); font-size: 14px; line-height: 1.43; letter-spacing: .16px; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+button, input, select { font: inherit; color: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--fg); outline-offset: -2px; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+.app { max-width: var(--col); margin: 0 auto; min-height: 100%; border-inline: 1px solid var(--border); padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 24px); position: relative; }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* header */
+.hdr { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--border); }
+.hdr .wrap { display: flex; align-items: center; gap: 12px; min-height: 48px; padding-block: 8px; }
+.hdr h1 { font-size: 20px; font-weight: 400; margin: 0; flex: 1; text-wrap: balance; }
+.hdr h1 b { font-weight: 600; }
+.iconbtn { width: 40px; height: 40px; display: grid; place-items: center; background: none; border: 0; position: relative; }
+.iconbtn:hover { background: var(--layer); }
+.iconbtn svg { width: 20px; height: 20px; fill: none; stroke: var(--fg); stroke-width: 1.5; }
+.dot { position: absolute; top: 8px; right: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
+
+.intro { padding-block: 16px 12px; display: grid; gap: 4px; }
+.intro p { margin: 0; color: var(--helper); font-size: 12px; letter-spacing: .32px; }
+.proto-note { font-family: var(--mono); font-size: 11px; color: var(--warn); }
+
+/* chips (Carbon content switcher-ish) */
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-block: 4px 12px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; height: 32px; padding: 0 16px; border: 1px solid var(--border-strong); background: transparent; border-radius: 16px; font-size: 13px; }
+.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+/* grid of tiles */
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-block: 1px solid var(--border); }
+.tile { background: var(--bg); border: 0; padding: 0; text-align: left; display: flex; flex-direction: column; min-width: 0; }
+.tile:hover { background: var(--layer); }
+.ph { aspect-ratio: 1 / 1; max-width: 100%; width: 100%; position: relative; display: grid; place-items: center; background: var(--layer); }
+.ph svg { width: 62%; height: 62%; }
+.ph .tags { position: absolute; left: 8px; top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+.tile .body { padding: 12px 12px 16px; display: grid; gap: 2px; min-width: 0; }
+.brand { font-size: 12px; letter-spacing: .32px; color: var(--helper); text-transform: uppercase; }
+.pname { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.prices { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.was { font-size: 12px; color: var(--helper); text-decoration: line-through; }
+.now { font-size: 16px; font-weight: 500; }
+.off { font-size: 12px; color: var(--good); }
+.scoreline { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.meter { flex: 1; height: 4px; background: var(--layer2); position: relative; }
+.meter i { position: absolute; inset: 0 auto 0 0; background: var(--fg2); }
+.meter.hi i { background: var(--good); }
+.score { font-size: 12px; }
+
+.tag { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; border-radius: 10px; font-size: 11px; font-weight: 500; letter-spacing: .32px; white-space: nowrap; }
+.t-intl { background: var(--intl-bg); color: var(--intl-fg); }
+.t-sale { background: var(--sale-bg); color: var(--sale-fg); }
+.t-new { background: var(--new-bg); color: var(--new-fg); }
+.t-ok { background: var(--ok-bg); color: var(--ok-fg); }
+.t-gray { background: var(--layer2); color: var(--fg2); }
+
+.hidden-note { padding-block: 16px; color: var(--helper); font-size: 12px; display: grid; gap: 4px; }
+
+/* lists */
+.section-h { font-size: 14px; font-weight: 600; margin: 0; padding-block: 24px 8px; }
+.section-sub { color: var(--helper); font-size: 12px; margin: -4px 0 8px; }
+.list { border-top: 1px solid var(--border); }
+.row { display: flex; gap: 12px; align-items: center; padding-block: 12px; border-bottom: 1px solid var(--border); min-width: 0; }
+.row .grow { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.row .t1 { font-size: 14px; }
+.row .t2 { font-size: 12px; color: var(--helper); }
+.thumb { width: 56px; height: 56px; flex: none; background: var(--layer); display: grid; place-items: center; }
+.thumb svg { width: 70%; height: 70%; }
+.mono-avatar { width: 40px; height: 40px; flex: none; background: var(--layer2); display: grid; place-items: center; font-family: var(--mono); font-size: 13px; }
+
+.btn { height: 40px; padding: 0 16px; border: 0; background: var(--accent); color: #fff; font-size: 14px; display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; }
+.btn:hover { background: #0353e9; }
+.btn.ghost { background: transparent; color: var(--link); padding: 0 8px; }
+.btn.ghost:hover { background: var(--layer); }
+.btn.tertiary { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1px var(--fg); }
+.btn.tertiary:hover { background: var(--fg); color: var(--bg); }
+.btn.sm { height: 32px; font-size: 13px; }
+.btn.full { width: 100%; height: 48px; }
+
+/* search */
+.search { display: flex; align-items: center; gap: 8px; height: 48px; background: var(--layer); border-bottom: 1px solid var(--border-strong); padding: 0 12px; margin-block: 16px 12px; }
+.search svg { width: 18px; height: 18px; stroke: var(--helper); fill: none; stroke-width: 1.5; flex: none; }
+.search input { flex: 1; min-width: 0; height: 100%; background: none; border: 0; outline: 0; font-size: 15px; }
+.search input::placeholder { color: #6f6f6f; }
+.field { display: grid; gap: 8px; padding-block: 8px; }
+.field label, .lbl { font-size: 12px; color: var(--fg2); letter-spacing: .32px; }
+.field select, .field input[type="number"] { height: 40px; background: var(--layer); border: 0; border-bottom: 1px solid var(--border-strong); padding: 0 12px; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+input[type="range"] { width: 100%; accent-color: var(--accent); }
+.range-val { display: flex; justify-content: space-between; align-items: baseline; }
+
+.toggle { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--border); }
+.toggle .grow { display: grid; gap: 2px; min-width: 0; }
+.switch { width: 48px; height: 24px; border-radius: 12px; background: #8d8d8d; border: 0; position: relative; flex: none; transition: background .15s; }
+.switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: transform .15s; }
+.switch[aria-checked="true"] { background: #24a148; }
+.switch[aria-checked="true"]::after { transform: translateX(24px); }
+
+/* bottom nav */
+.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(5, 1fr); }
+.nav button { height: var(--nav-h); background: none; border: 0; display: grid; place-items: center; gap: 2px; padding-top: 6px; font-size: 11px; color: var(--helper); letter-spacing: .32px; position: relative; }
+.nav svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.nav button[aria-current="page"] { color: var(--fg); }
+.nav button[aria-current="page"]::before { content: ""; position: absolute; top: -1px; left: 20%; right: 20%; height: 2px; background: var(--accent); }
+
+/* overlay (product detail, alerts) */
+.sheet { position: fixed; inset: 0; z-index: 40; max-width: var(--col); margin: 0 auto; background: var(--bg); overflow-y: auto; border-inline: 1px solid var(--border); padding-top: env(safe-area-inset-top, 0px); padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 32px); }
+.sheet .hdr { top: 0; }
+.detail-ph { aspect-ratio: 4 / 3; max-width: 100%; background: var(--layer); display: grid; place-items: center; position: relative; }
+.detail-ph svg { width: 50%; height: 70%; }
+.detail-head { padding-block: 16px; display: grid; gap: 4px; }
+.detail-head h2 { font-size: 24px; font-weight: 400; margin: 0; line-height: 1.25; text-wrap: balance; }
+.bigprice { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+.bigprice .now { font-size: 28px; font-weight: 400; }
+.panel { background: var(--layer); padding: 16px; display: grid; gap: 12px; }
+.bar-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; font-size: 13px; }
+.bar-row .meter { grid-column: 1 / -1; }
+.chart { width: 100%; height: auto; display: block; }
+.chart text { fill: var(--helper); font-family: var(--mono); font-size: 10px; }
+.tbl-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; font-weight: 600; font-size: 12px; color: var(--fg2); background: var(--layer2); padding: 10px 12px; white-space: nowrap; }
+td { padding: 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+td.num, th.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.best td:first-child { box-shadow: inset 3px 0 0 var(--good); }
+.breakdown { display: grid; gap: 6px; font-size: 13px; }
+.breakdown div { display: flex; justify-content: space-between; gap: 12px; }
+.breakdown .tot { border-top: 1px solid var(--border-strong); padding-top: 8px; font-weight: 600; }
+.notice { border-left: 3px solid var(--warn); background: var(--layer); padding: 12px 16px; font-size: 13px; display: grid; gap: 4px; }
+.notice.ok { border-left-color: var(--good); }
+.notice.bad { border-left-color: var(--bad); }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 16px; }
+.actions .btn { height: 56px; align-items: flex-start; padding-top: 12px; }
+
+.toast { position: fixed; z-index: 60; left: 0; right: 0; margin: 0 auto; max-width: calc(var(--col) - 32px); bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 12px); background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 13px; border-left: 3px solid var(--good); transition: opacity .2s, transform .2s; }
+.toast[hidden] { display: none !important; }
+
+@media (max-width: 460px) { .app, .nav, .sheet { border-inline: 0; } .toast { margin-inline: 16px; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="app" id="app"></div>
+<nav class="nav" id="nav" aria-label="Navegação principal"></nav>
+<div id="sheet" class="sheet" hidden></div>
+<div id="toast" class="toast" role="status" hidden></div>
+
+<script>
+/* ---------- Ícones ---------- */
+const ICON = {
+  ofertas: '<svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg>',
+  buscar: '<svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>',
+  marcas: '<svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>',
+  salvos: '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+  perfil: '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.5-6.5 8-6.5s7 2 8 6.5"/></svg>',
+  bell: '<svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4z"/><path d="M10 21h4"/></svg>',
+  back: '<svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>',
+  close: '<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+};
+const SHAPE = {
+  tee: 'M35 20 L25 24 L12 36 L20 46 L28 40 L28 82 L72 82 L72 40 L80 46 L88 36 L75 24 L65 20 Q50 30 35 20Z',
+  hoodie: 'M38 18 Q50 6 62 18 L76 24 L88 62 L79 65 L72 44 L72 84 L28 84 L28 44 L21 65 L12 62 L24 24 Z M38 62 L62 62 L60 74 L40 74 Z',
+  jacket: 'M38 18 L50 26 L62 18 L76 24 L88 66 L79 68 L72 46 L72 84 L52 84 L52 30 L48 30 L48 84 L28 84 L28 46 L21 68 L12 66 L24 24 Z',
+  pants: 'M30 12 L70 12 L75 88 L56 88 L50 38 L44 88 L25 88 Z',
+  shorts: 'M27 28 L73 28 L77 68 L54 68 L50 48 L46 68 L23 68 Z',
+  sneaker: 'M10 64 L12 48 Q24 47 32 38 L44 41 Q52 51 66 53 Q85 55 90 63 L90 70 L10 70 Z M10 70 L90 70 L90 76 L10 76 Z',
+  cap: 'M22 62 Q22 30 50 30 Q74 30 76 58 L94 64 Q92 69 76 67 L22 66 Z',
+};
+const garment = (kind, tint) => `<svg viewBox="0 0 100 100" aria-hidden="true"><path d="${SHAPE[kind]}" fill="${tint}" fill-rule="evenodd" stroke="#161616" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
+
+/* ---------- Dados de exemplo ---------- */
+const PRODUCTS = [
+  { id: 'samba', brand: 'Adidas Originals', name: 'Tênis Samba OG', cat: 'Tênis', kind: 'sneaker', tint: '#e0e0e0', group: 'shoe', sizes: ['39','40','41','42','43'], typical: 699, similar: 640, earlierLow: 429, flag: 'sale',
+    stores: [{ n: 'Artwalk', p: 449, f: 'Grátis', parc: '5x sem juros' }, { n: 'Netshoes', p: 479, f: 'Grátis', parc: '10x sem juros' }, { n: 'Adidas', p: 499, f: 'R$ 19,90', parc: '6x sem juros' }] },
+  { id: 'piet-moletom', brand: 'Piet', name: 'Moletom Canguru Logo', cat: 'Roupas', kind: 'hoodie', tint: '#8d8d8d', group: 'top', sizes: ['P','M','G'], typical: 399, similar: 349, flag: 'sale',
+    stores: [{ n: 'Site Piet', p: 229, f: 'Grátis', parc: '4x sem juros' }, { n: 'Farfetch (boutique BR)', p: 279, f: 'R$ 25,00', parc: '6x sem juros' }] },
+  { id: 'carnan-tee', brand: 'Carnan', name: 'Camiseta Heavy Logo', cat: 'Roupas', kind: 'tee', tint: '#f4f4f4', group: 'top', sizes: ['P','M','G','GG'], typical: 199, similar: 179,
+    stores: [{ n: 'Site Carnan', p: 139, f: 'R$ 18,00', parc: '3x sem juros' }, { n: 'Maze', p: 159, f: 'Grátis', parc: '3x sem juros' }] },
+  { id: 'carhartt-bone', brand: 'Carhartt WIP', name: 'Boné Icon Canvas', cat: 'Acessórios', kind: 'cap', tint: '#b28600', group: 'one', sizes: ['Único'], typical: 599, similar: 380, flag: 'new',
+    stores: [{ n: 'Maze', p: 599, f: 'Grátis', parc: '6x sem juros' }], intl: { store: 'END. Clothing', usd: 38 } },
+  { id: 'aj1-low', brand: 'Jordan', name: 'Air Jordan 1 Low', cat: 'Tênis', kind: 'sneaker', tint: '#da1e28', group: 'shoe', sizes: ['40','41','42'], typical: 899, similar: 820, flag: 'restock',
+    stores: [{ n: 'Maze', p: 699, f: 'Grátis', parc: '6x sem juros' }, { n: 'Artwalk', p: 729, f: 'Grátis', parc: '10x sem juros' }, { n: 'Nike', p: 749, f: 'Grátis', parc: '10x sem juros' }], intl: { store: 'END. Clothing', usd: 110 } },
+  { id: 'pac3-tee', brand: 'Pac3', name: 'Camiseta Oversized Boxy', cat: 'Roupas', kind: 'tee', tint: '#393939', group: 'top', sizes: ['M','G','GG'], typical: 169, similar: 179,
+    stores: [{ n: 'Site Pac3', p: 119, f: 'R$ 15,00', parc: '2x sem juros' }] },
+  { id: 'alg-jaqueta', brand: 'À La Garçonne', name: 'Jaqueta Jeans Patchwork', cat: 'Roupas', kind: 'jacket', tint: '#4589ff', group: 'top', sizes: ['M','G'], typical: 1890, similar: 1400, flag: 'sale',
+    stores: [{ n: 'Site À La Garçonne', p: 1290, f: 'Grátis', parc: '10x sem juros' }, { n: 'Farfetch (boutique BR)', p: 1490, f: 'Grátis', parc: '10x sem juros' }] },
+  { id: 'firebird', brand: 'Adidas Originals', name: 'Calça Track Firebird', cat: 'Roupas', kind: 'pants', tint: '#525252', group: 'bottom', sizes: ['38','40','42'], typical: 449, similar: 380,
+    stores: [{ n: 'Adidas', p: 299, f: 'R$ 19,90', parc: '5x sem juros' }, { n: 'Centauro', p: 329, f: 'Grátis', parc: '5x sem juros' }] },
+  { id: 'jordan-bermuda', brand: 'Jordan', name: 'Bermuda Jumpman Fleece', cat: 'Roupas', kind: 'shorts', tint: '#6f6f6f', group: 'bottom', sizes: ['40','42'], typical: 329, similar: 260,
+    stores: [{ n: 'Nike', p: 249, f: 'Grátis', parc: '4x sem juros' }, { n: 'Netshoes', p: 269, f: 'Grátis', parc: '5x sem juros' }] },
+  { id: 'pac3-bone', brand: 'Pac3', name: 'Boné Dad Hat Bordado', cat: 'Acessórios', kind: 'cap', tint: '#24a148', group: 'one', sizes: ['Único'], typical: 129, similar: 140,
+    stores: [{ n: 'Site Pac3', p: 99, f: 'R$ 15,00', parc: '2x sem juros' }] },
+  { id: 'carnan-bermuda', brand: 'Carnan', name: 'Bermuda Sarja Workwear', cat: 'Roupas', kind: 'shorts', tint: '#8a3800', group: 'bottom', sizes: ['38','40','42'], typical: 249, similar: 230, earlierLow: 169,
+    stores: [{ n: 'Site Carnan', p: 179, f: 'R$ 18,00', parc: '3x sem juros' }] },
+  { id: 'piet-tee', brand: 'Piet', name: 'Camiseta Logo Script', cat: 'Roupas', kind: 'tee', tint: '#d0e2ff', group: 'top', sizes: ['P','GG'], typical: 189, similar: 179,
+    stores: [{ n: 'Site Piet', p: 119, f: 'Grátis', parc: '2x sem juros' }] },
+];
+const FOLLOWING = [
+  { n: 'Carnan', status: ['t-sale', 'Sale até 30%'] },
+  { n: 'Piet', status: ['t-sale', 'Sale até 45%'] },
+  { n: 'Pac3', status: ['t-new', '4 novidades'] },
+  { n: 'Carhartt WIP', status: ['t-new', 'Drop novo'] },
+  { n: 'À La Garçonne', status: ['t-sale', 'Fim de coleção'] },
+  { n: 'Adidas Originals', status: ['t-gray', 'Sem novidades'] },
+  { n: 'Jordan', status: ['t-ok', 'Reposição 41'] },
+];
+const SUGGESTED = [
+  { n: 'High Company', why: 'Parecida com Pac3 e Carnan' },
+  { n: 'Sufgang', why: 'Parecida com Pac3' },
+  { n: 'Approve', why: 'Parecida com Piet' },
+  { n: 'Disturb', why: 'Parecida com À La Garçonne' },
+  { n: 'BAW Clothing', why: 'Parecida com Carnan' },
+];
+const ALERTS = [
+  { k: 't-sale', tag: 'Baixou', t: 'Tênis Samba OG caiu para R$ 449 na Artwalk', when: 'há 12 min', id: 'samba' },
+  { k: 't-ok', tag: 'Reposição', t: 'Air Jordan 1 Low voltou no 41 na Maze', when: 'há 2 h', id: 'aj1-low' },
+  { k: 't-new', tag: 'Sale', t: 'Piet entrou em sale com até 45% off', when: 'hoje, 09:10', id: 'piet-moletom' },
+  { k: 't-gray', tag: 'Resumo', t: 'Resumo de ontem: 6 ofertas com nota acima de 70', when: 'ontem, 20:00' },
+];
+const REDIR = { 'USCloser': 95, 'Zipcodebox': 85, 'Envio direto da loja': 120 };
+
+/* ---------- Estado ---------- */
+const DEFAULTS = { tab: 'ofertas', cat: 'Tudo', q: '', qCat: 'Tudo', qStore: 'Todas', qMax: 2000, qHideIntl: false,
+  sizes: { top: 'M', bottom: '40', shoe: '41' }, onlyMySize: true, showIntl: true, redir: 'USCloser', minSave: 20, cambio: 5.40,
+  notaMin: 70, saved: ['samba', 'aj1-low', 'piet-moletom'], targets: { samba: 450, 'aj1-low': 650, 'piet-moletom': 250 },
+  follow: FOLLOWING.map(b => b.n), notif: { baixou: true, sale: true, historico: true, reposicao: true } };
+let S = structuredClone(DEFAULTS);
+try { const saved = JSON.parse(localStorage.getItem('garimpo') || 'null'); if (saved) S = { ...S, ...saved, tab: saved.tab || 'ofertas' }; } catch (e) {}
+const persist = () => { try { localStorage.setItem('garimpo', JSON.stringify(S)); } catch (e) {} };
+
+/* ---------- Cálculos ---------- */
+const brl = v => 'R$ ' + Math.round(v).toLocaleString('pt-BR');
+const brl2 = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+
+function importCost(p) {
+  if (!p.intl) return null;
+  const usd = p.intl.usd;
+  const produto = usd * S.cambio;
+  const iof = produto * 0.035;
+  const frete = REDIR[S.redir];
+  const aliquota = usd <= 50 ? 0.20 : 0.60;            // exemplo: Remessa Conforme até US$ 50, 60% acima
+  const ii = (produto + iof + frete) * aliquota;
+  const icms = (produto + iof + frete + ii) / (1 - 0.17) - (produto + iof + frete + ii); // ICMS 17% "por dentro"
+  const total = produto + iof + frete + ii + icms;
+  return { usd, produto, iof, frete, aliquota, ii, icms, total };
+}
+
+function evaluate(p) {
+  const brBest = [...p.stores].sort((a, b) => a.p - b.p)[0];
+  const imp = importCost(p);
+  const saving = imp ? 1 - imp.total / brBest.p : 0;
+  const intlWins = !!imp && S.showIntl && saving * 100 >= S.minSave;
+  const price = intlWins ? imp.total : brBest.p;
+  const history = makeHistory(p, brBest.p);
+  const others = p.stores.filter(s => s !== brBest).map(s => s.p);
+  const median = others.length ? others.sort((a, b) => a - b)[Math.floor(others.length / 2)] : null;
+
+  const disc = 1 - price / p.typical;
+  const parts = {
+    desconto: clamp(disc * 100, 0, 45),
+    lojas: median ? clamp(10 + ((median - price) / median) * 150, 0, 25) : (intlWins ? 22 : 10),
+    parecidas: clamp(8 + ((p.similar - price) / p.similar) * 60, 0, 15),
+    historico: price <= Math.min(...history.slice(0, -1)) ? 15 : 0,
+  };
+  const score = Math.round(Object.values(parts).reduce((a, b) => a + b, 0));
+  const mySize = p.group === 'one' || p.sizes.includes(S.sizes[p.group]);
+  return { brBest, imp, saving, intlWins, price, history, parts, score, disc, mySize };
+}
+
+function makeHistory(p, current) {
+  const h = [];
+  for (let i = 0; i < 12; i++) {
+    let v = p.typical * (1 - ((i * 7) % 5) * 0.012);
+    if (i >= 9) v = p.typical - (p.typical - current) * ((i - 8) / 4);
+    h.push(Math.round(v));
+  }
+  if (p.earlierLow) h[4] = p.earlierLow;
+  h.push(current);
+  return h;
+}
+
+function visible(list) {
+  const out = [], hidden = { size: 0, intl: 0 };
+  for (const p of list) {
+    const e = evaluate(p);
+    if (S.onlyMySize && !e.mySize) { hidden.size++; continue; }
+    out.push({ p, e });
+  }
+  for (const p of list) { const e = evaluate(p); if (e.imp && !e.intlWins && S.showIntl) hidden.intl++; }
+  return { items: out.sort((a, b) => b.e.score - a.e.score), hidden };
+}
+
+/* ---------- Componentes ---------- */
+const tagFor = { sale: ['t-sale', 'Sale'], new: ['t-new', 'Novo'], restock: ['t-ok', 'Reposição'] };
+function tile({ p, e }) {
+  const tags = [];
+  if (e.intlWins) tags.push('<span class="tag t-intl">INTERNACIONAL</span>');
+  if (p.flag) tags.push(`<span class="tag ${tagFor[p.flag][0]}">${tagFor[p.flag][1]}</span>`);
+  return `<button class="tile" data-open="${p.id}">
+    <div class="ph">${garment(p.kind, p.tint)}<div class="tags">${tags.join('')}</div></div>
+    <div class="body">
+      <span class="brand">${p.brand}</span>
+      <span class="pname">${p.name}</span>
+      <span class="prices"><span class="was mono">${brl(p.typical)}</span><span class="now mono">${brl(e.price)}</span><span class="off mono">-${Math.round(e.disc * 100)}%</span></span>
+      <span class="scoreline"><span class="meter ${e.score >= S.notaMin ? 'hi' : ''}"><i style="width:${e.score}%"></i></span><span class="score mono">Nota ${e.score}</span></span>
+    </div></button>`;
+}
+function header(title, extra = '') {
+  return `<header class="hdr"><div class="wrap"><h1>${title}</h1>${extra}</div></header>`;
+}
+function hiddenNote(h) {
+  const lines = [];
+  if (h.size) lines.push(`${h.size} ${h.size > 1 ? 'itens ocultos' : 'item oculto'} por não ter seu tamanho`);
+  if (h.intl) lines.push(`${h.intl} ${h.intl > 1 ? 'importados ficaram' : 'importado ficou'} no preço do Brasil porque importar não compensava`);
+  return lines.length ? `<div class="hidden-note wrap">${lines.map(l => `<span>${l}</span>`).join('')}</div>` : '';
+}
+
+/* ---------- Telas ---------- */
+function viewOfertas() {
+  const cats = ['Tudo', 'Roupas', 'Tênis', 'Acessórios'];
+  const list = PRODUCTS.filter(p => S.cat === 'Tudo' || p.cat === S.cat);
+  const { items, hidden } = visible(list);
+  const above = items.filter(x => x.e.score >= S.notaMin).length;
+  return header('<b>Garimpo</b>', `<button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}<span class="dot"></span></button>`) + `
+    <div class="wrap intro">
+      <p>${above} ofertas com nota ${S.notaMin}+ no seu tamanho (${S.sizes.top} · ${S.sizes.bottom} · ${S.sizes.shoe})</p>
+      <span class="proto-note">PROTÓTIPO · preços e lojas de exemplo</span>
+    </div>
+    <div class="wrap chips" role="group" aria-label="Categoria">${cats.map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>
+    <div class="grid">${items.map(tile).join('')}</div>
+    ${hiddenNote(hidden)}`;
+}
+
+function viewBuscar() {
+  const stores = ['Todas', ...new Set(PRODUCTS.flatMap(p => p.stores.map(s => s.n)))];
+  const q = S.q.trim().toLowerCase();
+  const list = PRODUCTS.filter(p =>
+    (!q || (p.brand + ' ' + p.name).toLowerCase().includes(q)) &&
+    (S.qCat === 'Tudo' || p.cat === S.qCat) &&
+    (S.qStore === 'Todas' || p.stores.some(s => s.n === S.qStore)));
+  let { items, hidden } = visible(list);
+  items = items.filter(x => x.e.price <= S.qMax && !(S.qHideIntl && x.e.intlWins));
+  return header('Buscar') + `
+    <div class="wrap">
+      <label class="search"><span>${ICON.buscar}</span><input id="q" type="search" placeholder="Marca, peça ou modelo" value="${S.q.replace(/"/g, '&quot;')}" autocomplete="off"></label>
+      <div class="chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-qcat="${c}" aria-pressed="${S.qCat === c}">${c}</button>`).join('')}</div>
+      <div class="field-row">
+        <div class="field"><label for="qStore">Loja</label><select id="qStore">${stores.map(s => `<option ${s === S.qStore ? 'selected' : ''}>${s}</option>`).join('')}</select></div>
+        <div class="field"><div class="range-val"><label for="qMax">Preço até</label><span class="mono lbl">${brl(S.qMax)}</span></div><input id="qMax" type="range" min="100" max="2000" step="50" value="${S.qMax}"></div>
+      </div>
+      <div class="toggle"><div class="grow"><span>Esconder internacionais</span><span class="t2" style="color:var(--helper);font-size:12px">Mostra só o que entrega do Brasil</span></div><button class="switch" role="switch" data-sw="qHideIntl" aria-checked="${S.qHideIntl}" aria-label="Esconder internacionais"></button></div>
+      <p class="section-sub" style="margin:16px 0 12px">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}</p>
+    </div>
+    ${items.length ? `<div class="grid">${items.map(tile).join('')}</div>` : `<div class="wrap hidden-note"><span>Nada encontrado com esses filtros. Tente aumentar o preço máximo ou trocar a loja.</span></div>`}
+    ${hiddenNote(hidden)}`;
+}
+
+function viewMarcas() {
+  const initials = n => n.split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  const row = (b, followed, sub, statusTag) => `<div class="row">
+    <span class="mono-avatar">${initials(b)}</span>
+    <div class="grow"><span class="t1">${b}</span><span class="t2">${sub}</span></div>
+    ${statusTag || ''}
+    <button class="btn ${followed ? 'ghost' : 'tertiary'} sm" data-follow="${b}">${followed ? 'Seguindo' : 'Seguir'}</button></div>`;
+  const followed = FOLLOWING.filter(b => S.follow.includes(b.n));
+  const extra = SUGGESTED.filter(b => S.follow.includes(b.n));
+  return header('Marcas') + `<div class="wrap">
+    <h2 class="section-h">Você segue</h2>
+    <div class="list">${followed.map(b => row(b.n, true, `${PRODUCTS.filter(p => p.brand === b.n).length} ofertas monitoradas`, `<span class="tag ${b.status[0]}">${b.status[1]}</span>`)).join('')}
+      ${extra.map(b => row(b.n, true, 'Seguida recentemente')).join('')}</div>
+    <h2 class="section-h">Parecidas com as suas</h2>
+    <p class="section-sub">Sugestões pelo estilo e faixa de preço das marcas que você segue</p>
+    <div class="list">${SUGGESTED.filter(b => !S.follow.includes(b.n)).map(b => row(b.n, false, b.why)).join('') || '<p class="section-sub" style="padding-block:12px">Você já segue todas as sugestões.</p>'}
+      ${FOLLOWING.filter(b => !S.follow.includes(b.n)).map(b => row(b.n, false, 'Você deixou de seguir')).join('')}</div>
+  </div>`;
+}
+
+function spark(h, w = 96, hgt = 28) {
+  const min = Math.min(...h), max = Math.max(...h), r = max - min || 1;
+  const pts = h.map((v, i) => [(i / (h.length - 1)) * (w - 4) + 2, hgt - 3 - ((v - min) / r) * (hgt - 6)]);
+  const last = pts[pts.length - 1];
+  return `<svg width="${w}" height="${hgt}" viewBox="0 0 ${w} ${hgt}" aria-hidden="true"><polyline points="${pts.map(p => p.join(',')).join(' ')}" fill="none" stroke="#a8a8a8" stroke-width="1.25"/><circle cx="${last[0]}" cy="${last[1]}" r="2.5" fill="#42be65"/></svg>`;
+}
+
+function viewSalvos() {
+  const items = S.saved.map(id => PRODUCTS.find(p => p.id === id)).filter(Boolean);
+  return header('Salvos') + `<div class="wrap">
+    <p class="section-sub" style="margin:16px 0 12px">Você recebe um alerta na hora quando o preço fica abaixo do seu alvo.</p>
+    <div class="list">${items.length ? items.map(p => {
+      const e = evaluate(p); const target = S.targets[p.id] ?? Math.round(e.price * 0.9);
+      const hit = e.price <= target;
+      return `<div class="row">
+        <button class="thumb" data-open="${p.id}" aria-label="Abrir ${p.name}" style="border:0">${garment(p.kind, p.tint)}</button>
+        <div class="grow">
+          <span class="t2">${p.brand}</span><span class="t1">${p.name}</span>
+          <span class="mono" style="font-size:15px">${brl(e.price)} ${hit ? '<span class="tag t-ok">Abaixo do alvo</span>' : ''}</span>
+          <label class="t2" style="display:flex;align-items:center;gap:6px">Alvo <input class="mono" data-target="${p.id}" type="number" inputmode="numeric" value="${target}" style="width:80px;height:28px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 6px"></label>
+        </div>
+        <div style="display:grid;gap:4px;justify-items:end">${spark(e.history)}<span class="t2 mono" style="font-size:10px;color:var(--helper)">90 dias</span></div>
+      </div>`;
+    }).join('') : '<p class="section-sub" style="padding-block:16px">Nada salvo ainda. Abra uma oferta e toque em Salvar.</p>'}</div>
+  </div>`;
+}
+
+function viewPerfil() {
+  const sel = (id, opts, val) => `<select id="${id}">${opts.map(o => `<option ${o === val ? 'selected' : ''}>${o}</option>`).join('')}</select>`;
+  const sw = (key, title, sub, val) => `<div class="toggle"><div class="grow"><span>${title}</span>${sub ? `<span style="color:var(--helper);font-size:12px">${sub}</span>` : ''}</div><button class="switch" role="switch" data-sw="${key}" aria-checked="${val}" aria-label="${title}"></button></div>`;
+  return header('Perfil') + `<div class="wrap">
+    <h2 class="section-h">Seus tamanhos</h2>
+    <div class="field-row" style="grid-template-columns:1fr 1fr 1fr">
+      <div class="field"><label for="szTop">Partes de cima</label>${sel('szTop', ['PP','P','M','G','GG'], S.sizes.top)}</div>
+      <div class="field"><label for="szBottom">Calças/bermudas</label>${sel('szBottom', ['36','38','40','42','44'], S.sizes.bottom)}</div>
+      <div class="field"><label for="szShoe">Tênis</label>${sel('szShoe', ['38','39','40','41','42','43','44'], S.sizes.shoe)}</div>
+    </div>
+    ${sw('onlyMySize', 'Mostrar só meu tamanho', 'Itens sem seu tamanho ficam ocultos', S.onlyMySize)}
+
+    <h2 class="section-h">Compras internacionais</h2>
+    ${sw('showIntl', 'Considerar importados', 'Só aparecem se o custo total compensar', S.showIntl)}
+    <div class="field"><label for="redir">Como chega ao Brasil</label>${sel('redir', Object.keys(REDIR), S.redir)}<span style="color:var(--helper);font-size:12px">Frete estimado: ${brl(REDIR[S.redir])}</span></div>
+    <div class="field"><div class="range-val"><label for="minSave">Economia mínima para importar</label><span class="mono lbl">${S.minSave}%</span></div><input id="minSave" type="range" min="0" max="50" step="5" value="${S.minSave}"></div>
+    <div class="field"><label for="cambio">Dólar (R$)</label><input id="cambio" class="mono" type="number" step="0.01" value="${S.cambio.toFixed(2)}"></div>
+
+    <h2 class="section-h">Alertas</h2>
+    <div class="field"><div class="range-val"><label for="notaMin">Nota mínima para avisar</label><span class="mono lbl">${S.notaMin}</span></div><input id="notaMin" type="range" min="40" max="90" step="5" value="${S.notaMin}"></div>
+    ${sw('notif.baixou', 'Item salvo baixou de preço', '', S.notif.baixou)}
+    ${sw('notif.sale', 'Sale de marca que você segue', '', S.notif.sale)}
+    ${sw('notif.historico', 'Menor preço já registrado', '', S.notif.historico)}
+    ${sw('notif.reposicao', 'Lançamento ou reposição no seu tamanho', '', S.notif.reposicao)}
+    <div class="notice" style="margin-top:16px"><strong>Quando você é avisado</strong><span>Na hora em que acontece. Se o dia passar sem nenhum alerta, chega um resumo às 20h com as melhores ofertas.</span></div>
+    <div style="margin-top:24px"><button class="btn tertiary sm" data-reset>Restaurar dados de exemplo</button></div>
+  </div>`;
+}
+
+/* ---------- Detalhe do produto ---------- */
+function priceChart(h) {
+  const W = 360, H = 140, L = 44, R = 8, T = 12, B = 22;
+  const min = Math.min(...h), max = Math.max(...h);
+  const lo = Math.floor(min * 0.95 / 50) * 50, hi = Math.ceil(max * 1.02 / 50) * 50;
+  const x = i => L + (i / (h.length - 1)) * (W - L - R);
+  const y = v => T + (1 - (v - lo) / (hi - lo)) * (H - T - B);
+  const ticks = [lo, Math.round((lo + hi) / 2 / 10) * 10, hi];
+  const line = h.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+  const area = `${x(0)},${H - B} ${line} ${x(h.length - 1)},${H - B}`;
+  const minI = h.indexOf(min);
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Histórico de preço, 90 dias">
+    ${ticks.map(t => `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="#393939"/><text x="${L - 6}" y="${y(t) + 3}" text-anchor="end">${t}</text>`).join('')}
+    <polygon points="${area}" fill="#0f62fe" fill-opacity=".18"/>
+    <polyline points="${line}" fill="none" stroke="#78a9ff" stroke-width="2"/>
+    <circle cx="${x(minI)}" cy="${y(min)}" r="3.5" fill="#42be65"/>
+    <circle cx="${x(h.length - 1)}" cy="${y(h[h.length - 1])}" r="4" fill="#f4f4f4"/>
+    <text x="${L}" y="${H - 6}">90 dias atrás</text><text x="${W - R}" y="${H - 6}" text-anchor="end">hoje</text>
+  </svg>`;
+}
+
+function openDetail(id) {
+  const p = PRODUCTS.find(x => x.id === id); const e = evaluate(p);
+  const saved = S.saved.includes(id);
+  const bars = [['Desconto real vs. preço habitual', e.parts.desconto, 45], ['Comparação entre lojas', e.parts.lojas, 25], ['Comparado a peças parecidas', e.parts.parecidas, 15], ['Menor preço já registrado', e.parts.historico, 15]];
+  const imp = e.imp;
+  let intlBlock = '';
+  if (imp) {
+    const rows = [['Produto', `US$ ${imp.usd} × ${S.cambio.toFixed(2)}`, imp.produto], ['IOF do cartão (3,5%)', '', imp.iof], [`Frete (${S.redir})`, '', imp.frete], [`Imposto de importação (${imp.aliquota * 100}%)`, '', imp.ii], ['ICMS (17%)', '', imp.icms]];
+    const cls = e.intlWins ? 'ok' : 'bad';
+    const verdict = e.intlWins ? `Compensa importar: ${Math.round(e.saving * 100)}% mais barato que no Brasil` : (e.saving > 0 ? `Não compensa: economia de ${Math.round(e.saving * 100)}%, abaixo do mínimo de ${S.minSave}%` : `Não compensa: sai ${brl(imp.total - e.brBest.p)} mais caro que no Brasil`);
+    intlBlock = `<h3 class="section-h">Comprando de fora <span class="tag t-intl" style="margin-left:8px">INTERNACIONAL</span></h3>
+      <div class="panel"><div class="breakdown">${rows.map(r => `<div><span>${r[0]} <span style="color:var(--helper)">${r[1]}</span></span><span class="mono">${brl2(r[2])}</span></div>`).join('')}
+        <div class="tot"><span>Total estimado · ${imp && p.intl.store}</span><span class="mono">${brl2(imp.total)}</span></div>
+        <div style="color:var(--helper)"><span>Melhor preço no Brasil · ${e.brBest.n}</span><span class="mono">${brl2(e.brBest.p)}</span></div></div>
+        <div class="notice ${cls}" style="background:var(--layer2)"><strong>${verdict}</strong><span style="color:var(--helper);font-size:12px">Alíquotas e câmbio de exemplo. Ficam editáveis porque as regras mudam.</span></div></div>`;
+  }
+  const sheet = document.getElementById('sheet');
+  sheet.innerHTML = `<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${p.brand}</h1></div></header>
+    <div class="detail-ph">${garment(p.kind, p.tint)}</div>
+    <div class="wrap">
+      <div class="detail-head">
+        <span class="brand">${p.brand} · ${p.cat}</span>
+        <h2>${p.name}</h2>
+        <div class="bigprice"><span class="now mono">${brl(e.price)}</span><span class="was mono">${brl(p.typical)}</span><span class="off mono">-${Math.round(e.disc * 100)}% do preço habitual</span></div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">${e.intlWins ? '<span class="tag t-intl">INTERNACIONAL</span>' : ''}${e.mySize ? `<span class="tag t-ok">Tem seu tamanho</span>` : '<span class="tag t-gray">Sem seu tamanho</span>'}<span class="tag t-gray">Tamanhos: ${p.sizes.join(', ')}</span></div>
+      </div>
+      <div class="panel">
+        <div class="range-val"><strong>Nota de Oferta</strong><span class="mono" style="font-size:24px;color:${e.score >= S.notaMin ? 'var(--good)' : 'var(--fg)'}">${e.score}<span style="font-size:13px;color:var(--helper)">/100</span></span></div>
+        ${bars.map(b => `<div class="bar-row"><span>${b[0]}</span><span class="mono" style="color:var(--helper)">${Math.round(b[1])}/${b[2]}</span><span class="meter ${b[1] / b[2] > .6 ? 'hi' : ''}"><i style="width:${(b[1] / b[2]) * 100}%"></i></span></div>`).join('')}
+      </div>
+      <h3 class="section-h">Histórico de preço</h3>
+      <div class="panel">${priceChart(e.history)}<span style="color:var(--helper);font-size:12px">Ponto verde: menor preço em 90 dias${e.parts.historico ? ' (é o preço de hoje)' : ''}.</span></div>
+      <h3 class="section-h">Onde comprar no Brasil</h3>
+      <div class="tbl-wrap"><table><thead><tr><th>Loja</th><th class="num">Preço</th><th>Frete</th><th>Parcelas</th></tr></thead><tbody>
+        ${[...p.stores].sort((a, b) => a.p - b.p).map((s, i) => `<tr class="${i === 0 ? 'best' : ''}"><td>${s.n}</td><td class="num">${brl(s.p)}</td><td style="color:var(--helper)">${s.f}</td><td style="color:var(--helper)">${s.parc}</td></tr>`).join('')}
+      </tbody></table></div>
+      ${intlBlock}
+      <div class="actions">
+        <button class="btn tertiary" data-save="${id}">${saved ? 'Salvo ✓' : 'Salvar e criar alerta'}</button>
+        <button class="btn" data-store>Ver na loja</button>
+      </div>
+    </div>`;
+  sheet.hidden = false; sheet.scrollTop = 0; document.body.style.overflow = 'hidden';
+}
+
+function openAlerts() {
+  const sheet = document.getElementById('sheet');
+  sheet.innerHTML = `<header class="hdr"><div class="wrap"><h1>Alertas</h1><button class="iconbtn" data-close aria-label="Fechar">${ICON.close}</button></div></header>
+    <div class="wrap"><p class="section-sub" style="margin:16px 0 12px">Exemplos do que chegaria como notificação no iPhone</p>
+    <div class="list">${ALERTS.map(a => `<${a.id ? `button data-open="${a.id}"` : 'div'} class="row" style="width:100%;background:none;border:0;border-bottom:1px solid var(--border);text-align:left">
+      <span class="tag ${a.k}">${a.tag}</span><div class="grow"><span class="t1">${a.t}</span><span class="t2">${a.when}</span></div></${a.id ? 'button' : 'div'}>`).join('')}</div></div>`;
+  sheet.hidden = false; sheet.scrollTop = 0; document.body.style.overflow = 'hidden';
+}
+function closeSheet() { const s = document.getElementById('sheet'); s.hidden = true; s.innerHTML = ''; document.body.style.overflow = ''; }
+
+let toastT;
+function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
+
+/* ---------- Render ---------- */
+const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['marcas', 'Marcas'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
+const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, marcas: viewMarcas, salvos: viewSalvos, perfil: viewPerfil };
+function render(keepFocus) {
+  const active = keepFocus && document.activeElement && document.activeElement.id;
+  const caret = active === 'q' ? document.activeElement.selectionStart : null;
+  document.getElementById('app').innerHTML = VIEWS[S.tab]();
+  document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[k]}<span>${l}</span></button>`).join('');
+  if (active) { const el = document.getElementById(active); if (el) { el.focus(); if (caret !== null) el.setSelectionRange(caret, caret); } }
+  persist();
+}
+
+document.addEventListener('click', ev => {
+  const b = ev.target.closest('button'); if (!b) return;
+  const d = b.dataset;
+  if (d.tab) { S.tab = d.tab; closeSheet(); render(); window.scrollTo(0, 0); }
+  else if (d.cat) { S.cat = d.cat; render(); }
+  else if (d.qcat) { S.qCat = d.qcat; render(); }
+  else if (d.open) { openDetail(d.open); }
+  else if ('alerts' in d) { openAlerts(); }
+  else if ('close' in d) { closeSheet(); render(); }
+  else if (d.save) {
+    const id = d.save;
+    if (S.saved.includes(id)) { S.saved = S.saved.filter(x => x !== id); toast('Removido dos salvos'); }
+    else { S.saved.push(id); S.targets[id] = Math.round(evaluate(PRODUCTS.find(p => p.id === id)).price * 0.9); toast('Salvo. Você será avisado se baixar 10%'); }
+    persist(); openDetail(id);
+  }
+  else if ('store' in d) { toast('No app real, abre a página da loja com o melhor preço'); }
+  else if (d.follow) {
+    const n = d.follow;
+    S.follow = S.follow.includes(n) ? S.follow.filter(x => x !== n) : [...S.follow, n];
+    toast(S.follow.includes(n) ? `Seguindo ${n}. Você será avisado das sales.` : `Você deixou de seguir ${n}`); render();
+  }
+  else if (d.sw) {
+    const path = d.sw.split('.');
+    if (path.length === 2) S[path[0]][path[1]] = !S[path[0]][path[1]]; else S[path[0]] = !S[path[0]];
+    render();
+  }
+  else if ('reset' in d) { S = structuredClone(DEFAULTS); S.tab = 'perfil'; render(); toast('Dados de exemplo restaurados'); }
+});
+document.addEventListener('input', ev => {
+  const t = ev.target;
+  if (t.id === 'q') { S.q = t.value; render(true); return; }
+  // sliders: só atualiza o número enquanto arrasta; a tela recalcula ao soltar (evento change)
+  const lbl = t.type === 'range' && t.closest('.field').querySelector('.lbl');
+  if (t.id === 'qMax') lbl.textContent = brl(+t.value);
+  else if (t.id === 'minSave') lbl.textContent = t.value + '%';
+  else if (t.id === 'notaMin') lbl.textContent = t.value;
+});
+document.addEventListener('change', ev => {
+  const t = ev.target;
+  if (t.id === 'qStore') S.qStore = t.value;
+  else if (t.id === 'qMax') S.qMax = +t.value;
+  else if (t.id === 'minSave') S.minSave = +t.value;
+  else if (t.id === 'notaMin') S.notaMin = +t.value;
+  else if (t.id === 'szTop') S.sizes.top = t.value;
+  else if (t.id === 'szBottom') S.sizes.bottom = t.value;
+  else if (t.id === 'szShoe') S.sizes.shoe = t.value;
+  else if (t.id === 'redir') S.redir = t.value;
+  else if (t.id === 'cambio') { const v = parseFloat(t.value); if (v > 0) S.cambio = v; }
+  else if (t.dataset.target) { const v = parseFloat(t.value); if (v > 0) S.targets[t.dataset.target] = v; }
+  else return;
+  render();
+});
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !document.getElementById('sheet').hidden) { closeSheet(); render(); } });
+
+render();
+</script>
