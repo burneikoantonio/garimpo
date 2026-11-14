@@ -20,7 +20,7 @@ base_tree=$($GH api "repos/$REPO/git/commits/$base" --jq .tree.sha)
 excluir_dados=(-not -path './app/data/*')
 [ "${INCLUIR_DADOS:-0}" = 1 ] && excluir_dados=()
 find . -type f \
-  -not -path './.git/*' -not -path './.ferramentas/*' -not -path './.claude/*' \
+  -not -path './.git/*' -not -path './.ferramentas/*' -not -path './.claude/*' -not -path './.prefs/*' \
   -not -name '.DS_Store' ${excluir_dados[@]+"${excluir_dados[@]}"} | sed 's|^\./||' | sort > "$TMP/arquivos.txt"
 
 echo '[]' > "$TMP/tree.json"

@@ -204,7 +204,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794680251"></script>
+<script src="core.js?v=1794681962"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -261,6 +261,8 @@ const S = {
   saved: store.get('saved', {}), follow: store.get('follow', null),
   showIntl: store.get('showIntl', true), minSave: store.get('minSave', 20),
   sort: store.get('sort', 'nota'),
+  modelos: store.get('modelos', []),   // alertas de modelo: { id, texto, max }
+  canal: store.get('canal', ''),       // canal do ntfy (o mesmo assinado no app ntfy)
   ocultas: store.get('ocultas', {}),   // peças marcadas como "Não curti": chave -> { marca, kind }
 };
 
@@ -524,8 +526,21 @@ function viewSalvos() {
       <div style="display:grid;gap:4px;justify-items:end">${spark(productHist(p))}</div>
     </div>`;
   });
+  // alertas de modelo: o que existe agora nos seus tamanhos dentro do preço
+  const achados = m => { const ws = m.texto.toLowerCase().split(/\s+/).filter(Boolean); return DATA.produtos.filter(p => ws.every(w => (p.marca + ' ' + p.titulo).toLowerCase().includes(w))).map(evaluate).filter(e => e.ok && e.price <= m.max).length; };
+  const semCanal = !S.canal ? `<div class="notice" style="margin-bottom:12px"><span>Para os avisos chegarem no celular, informe seu canal do ntfy no <b>Perfil</b>, em "Avisos no celular".</span></div>` : '';
   return header('Salvos') + `<div class="wrap">
-    <p class="section-sub" style="margin:16px 0 12px">O alerta dispara quando o preço no seu tamanho ficar abaixo do alvo.</p>
+    <h2 class="section-h">Alertas de modelo</h2>
+    <p class="section-sub">Ex.: "9060" até R$ 1.000. O robô avisa quando aparecer, nos seus tamanhos, em qualquer loja do app.</p>
+    ${semCanal}
+    <div class="list">${S.modelos.map(m => { const n = achados(m); return `<div class="row"><div class="grow"><span class="t1">${esc(m.texto)}</span><span class="t2">até ${brl(m.max)} · ${n ? `<b style="color:var(--good)">${n} ${n > 1 ? 'peças' : 'peça'} agora</b> <button class="btn ghost sm" style="height:auto;padding:0" data-busca="${esc(m.texto)}">ver</button>` : 'nada agora'}</span></div><button class="btn ghost sm" data-delmodelo="${esc(m.id)}">Remover</button></div>`; }).join('')}</div>
+    <form id="formModelo" class="field-row" style="grid-template-columns:1fr 110px auto;align-items:end;margin-top:8px">
+      <div class="field"><label for="mTexto">Modelo ou palavra</label><input id="mTexto" type="text" placeholder="ex.: samba og" style="height:40px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 12px;font-size:16px;min-width:0"></div>
+      <div class="field"><label for="mMax">Até R$</label><input id="mMax" type="number" inputmode="numeric" placeholder="1000"></div>
+      <div class="field"><button class="btn sm" type="submit" style="height:40px">Criar</button></div>
+    </form>
+    <h2 class="section-h">Peças salvas</h2>
+    <p class="section-sub">Quando o preço no seu tamanho ficar abaixo do alvo, chega aviso no celular.</p>
     <div class="list">${rows.join('') || '<p class="section-sub" style="padding-block:16px">Nada salvo ainda. Abra uma peça e toque em Salvar.</p>'}</div>
   </div>`;
 }
@@ -544,6 +559,10 @@ function viewPerfil() {
     <h2 class="section-h">Ofertas</h2>
     ${sw('withSuggested', 'Incluir marcas sugeridas', 'Sufgang, Disturb e outras recomendações', S.withSuggested)}
     <div class="field"><div class="range-val"><label for="notaMin">Nota mínima para destacar e avisar</label><span class="mono lbl">${S.notaMin}</span></div><input id="notaMin" type="range" min="40" max="90" step="5" value="${S.notaMin}"></div>
+    <h2 class="section-h">Avisos no celular</h2>
+    <p class="section-sub">Digite o mesmo canal que você assinou no app ntfy. Assim o robô sabe dos seus salvos, alertas de modelo e tamanhos.</p>
+    <div class="field"><label for="canal">Seu canal do ntfy</label><input id="canal" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" value="${esc(S.canal)}" placeholder="garimpo-..." style="height:40px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 12px;font-size:16px"></div>
+    ${S.canal ? `<p class="section-sub">${store.get('ultimoSyncEm') ? `Último envio: ${new Date(store.get('ultimoSyncEm')).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })}` : 'Ainda não enviado'} · <button class="btn ghost sm" style="height:auto;padding:0" data-sync>Enviar agora</button></p>` : ''}
     <h2 class="section-h">Peças que você não curtiu</h2>
     ${(() => {
       const n = Object.keys(S.ocultas).length;
@@ -677,7 +696,28 @@ const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, novas: viewNovas, marc
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
-function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('sort', S.sort); }
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('sort', S.sort); store.set('modelos', S.modelos); store.set('canal', S.canal); agendarSync(); }
+
+/* ---------- Sincronia com o robô: salvos, alertas de modelo e tamanhos vão por um canal privado do ntfy ---------- */
+// o robô lê "<seu canal>-prefs" depois de cada atualização; só o que importa para os avisos é enviado
+const prefsAtuais = () => JSON.stringify({ tamanhos: S.sizes, follow: S.follow, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos });
+let syncT;
+function agendarSync() {
+  if (!S.canal) return;
+  const atual = prefsAtuais();
+  if (atual === store.get('ultimoSync', '')) return;
+  clearTimeout(syncT);
+  syncT = setTimeout(() => sincronizar(atual), 1500);
+}
+async function sincronizar(atual = prefsAtuais(), avisar = false) {
+  if (!S.canal) return;
+  try {
+    const r = await fetch('https://ntfy.sh/', { method: 'POST', body: JSON.stringify({ topic: S.canal + '-prefs', message: JSON.stringify({ ...JSON.parse(atual), em: Date.now() }) }) });
+    if (!r.ok) throw new Error(r.status);
+    store.set('ultimoSync', atual); store.set('ultimoSyncEm', Date.now());
+    if (avisar) { toast('Enviado. O robô usa isso na próxima atualização.'); render(); }
+  } catch (e) { if (avisar) toast('Não consegui enviar agora. Tente de novo com internet.'); }
+}
 function render(keepFocus) {
   const active = keepFocus && document.activeElement && document.activeElement.id;
   const caret = active === 'q' ? document.activeElement.selectionStart : null;
@@ -716,6 +756,8 @@ document.addEventListener('click', ev => {
     S.ocultas = { ...S.ocultas, [d.ocultar]: { marca: p.marca, kind: p.kind } };
     closeSheet(); render(); toast(`Escondida. Vou mostrar menos ${KIND_LABEL[p.kind].toLowerCase()} da ${p.marca}.`);
   }
+  else if (d.delmodelo) { S.modelos = S.modelos.filter(m => m.id !== d.delmodelo); render(); }
+  else if ('sync' in d) { sincronizar(prefsAtuais(), true); }
   else if ('restaurar' in d) { S.ocultas = {}; render(); toast('Todas as peças escondidas voltaram'); }
   else if (d.busca) { S.tab = 'buscar'; S.q = d.busca.replace(/^New Balance /, ''); S.qBrand = 'Todas'; S.qSale = false; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.salebrand) { S.tab = 'buscar'; S.qBrand = d.salebrand; S.qSale = true; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
@@ -742,11 +784,20 @@ document.addEventListener('change', ev => {
   else if (t.id === 'qMax') S.qMax = +t.value;
   else if (t.id === 'notaMin') S.notaMin = +t.value;
   else if (t.id === 'minSave') S.minSave = +t.value;
+  else if (t.id === 'canal') { S.canal = t.value.trim().toLowerCase(); store.set('ultimoSync', ''); if (S.canal) toast('Canal salvo'); }
   else if (t.dataset.alvo) { const v = parseFloat(t.value); if (v > 0) S.saved[t.dataset.alvo].alvo = v; }
   else return;
   render();
 });
 document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !document.getElementById('sheet').hidden) { closeSheet(); render(); } });
+document.addEventListener('submit', ev => {
+  if (ev.target.id !== 'formModelo') return;
+  ev.preventDefault();
+  const texto = document.getElementById('mTexto').value.trim(), max = parseFloat(document.getElementById('mMax').value);
+  if (!texto || !(max > 0)) { toast('Escreva o modelo e o preço máximo'); return; }
+  S.modelos = [...S.modelos, { id: Date.now().toString(36), texto, max }];
+  render(); toast(S.canal ? `Alerta criado: ${texto} até ${brl(max)}` : 'Alerta criado. Informe seu canal no Perfil para receber no celular.');
+});
 
 load().then(() => {
   render();

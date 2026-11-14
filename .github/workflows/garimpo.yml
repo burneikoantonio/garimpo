@@ -5,6 +5,11 @@ on:
     - cron: '0 11 * * *'   # 8h em Brasília
     - cron: '0 21 * * *'   # 18h em Brasília
   workflow_dispatch:        # botão "Run workflow" para rodar na hora
+    inputs:
+      canal_teste:
+        description: "Canal do ntfy para teste (vazio = avisos de verdade)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -34,11 +39,26 @@ jobs:
         with:
           node-version: 20
 
+      - name: Recuperar preferências do celular (salvos e alertas de modelo)
+        uses: actions/cache/restore@v4
+        with:
+          path: .prefs
+          key: prefs-${{ github.run_id }}
+          restore-keys: prefs-
+
       - name: Mandar avisos para o celular (ntfy)
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          CANAL_TESTE: ${{ inputs.canal_teste }}
           SITE_URL: ${{ vars.SITE_URL }}
         run: node app/alertas.js
+
+      - name: Guardar preferências do celular para a próxima rodada
+        if: ${{ always() && !inputs.canal_teste }}
+        uses: actions/cache/save@v4
+        with:
+          path: .prefs
+          key: prefs-${{ github.run_id }}
 
       - name: Salvar os dados novos
         run: |
