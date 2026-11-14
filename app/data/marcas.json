@@ -1,11 +1,12 @@
 {
-  "atualizado": "14/11/2026 11:28",
+  "atualizado": "14/11/2026 12:47",
   "marcas": [
     {
       "nome": "Carnan",
       "site": "carnan.com.br",
       "relacao": "segue",
       "obs": "",
+      "liberada": "",
       "arquivos": [
         "data/carnan-com-br.json"
       ]
@@ -15,6 +16,7 @@
       "site": "piet.com.br",
       "relacao": "segue",
       "obs": "",
+      "liberada": "",
       "arquivos": [
         "data/piet-com-br.json"
       ]
@@ -24,6 +26,7 @@
       "site": "pacecompany.com.br",
       "relacao": "segue",
       "obs": "",
+      "liberada": "",
       "arquivos": [
         "data/pacecompany-com-br.json"
       ]
@@ -33,6 +36,7 @@
       "site": "",
       "relacao": "segue",
       "obs": "Site sem catálogo público",
+      "liberada": "",
       "arquivos": []
     },
     {
@@ -40,6 +44,7 @@
       "site": "",
       "relacao": "segue",
       "obs": "Aguardando Farfetch (programa de afiliados)",
+      "liberada": "",
       "arquivos": []
     },
     {
@@ -47,6 +52,7 @@
       "site": "",
       "relacao": "segue",
       "obs": "Via Artwalk e Authentic Feet (lojas.txt)",
+      "liberada": "",
       "arquivos": [
         "data/www-artwalk-com-br-adidas-originals.json",
         "data/www-authenticfeet-com-br-adidas-originals.json"
@@ -57,6 +63,7 @@
       "site": "",
       "relacao": "segue",
       "obs": "Via Artwalk e Authentic Feet (lojas.txt)",
+      "liberada": "",
       "arquivos": [
         "data/www-artwalk-com-br-jordan.json",
         "data/www-authenticfeet-com-br-jordan.json"
@@ -66,7 +73,8 @@
       "nome": "Sufgang",
       "site": "sufgang.com.br",
       "relacao": "sugerida",
-      "obs": "Streetwear de SP, camisetas e moletons",
+      "obs": "Streetwear de SP, camisetas e moletons pesados",
+      "liberada": "2026-11-13",
       "arquivos": [
         "data/sufgang-com-br.json"
       ]
@@ -75,7 +83,8 @@
       "nome": "Disturb",
       "site": "disturb.com.br",
       "relacao": "sugerida",
-      "obs": "Streetwear com collabs (Diadora, Pepsi)",
+      "obs": "Streetwear com collabs (Diadora, Pepsi) e muita sale",
+      "liberada": "2026-11-13",
       "arquivos": [
         "data/disturb-com-br.json"
       ]
@@ -85,6 +94,7 @@
       "site": "thesaint.com.br",
       "relacao": "sugerida",
       "obs": "Streetwear de SP, referência entre boleiros e artistas",
+      "liberada": "2026-11-14",
       "arquivos": [
         "data/thesaint-com-br.json"
       ]
@@ -93,7 +103,8 @@
       "nome": "Overcome",
       "site": "www.overcome.com.br",
       "relacao": "sugerida",
-      "obs": "Streetwear, moletons e cargo",
+      "obs": "Streetwear, moletons e calças cargo",
+      "liberada": "2026-11-14",
       "arquivos": [
         "data/www-overcome-com-br.json"
       ]
@@ -102,7 +113,8 @@
       "nome": "Bolovo",
       "site": "bolovo.com.br",
       "relacao": "sugerida",
-      "obs": "Casual e workwear paulistano",
+      "obs": "Casual e workwear paulistano, peças duráveis",
+      "liberada": "2026-11-14",
       "arquivos": [
         "data/bolovo-com-br.json"
       ]
@@ -111,9 +123,50 @@
       "nome": "Osklen",
       "site": "",
       "relacao": "sugerida",
-      "obs": "Premium brasileira (site próprio, lojas.txt)",
+      "obs": "Premium brasileira, linha masculina (lojas.txt)",
+      "liberada": "2026-11-14",
       "arquivos": [
         "data/www-osklen-com-br-osklen.json"
+      ]
+    },
+    {
+      "nome": "Mad Enlatados",
+      "site": "madenlatados.com.br",
+      "relacao": "sugerida",
+      "obs": "Streetwear paulistano de estampas provocativas",
+      "liberada": "2026-11-14",
+      "arquivos": [
+        "data/madenlatados-com-br.json"
+      ]
+    },
+    {
+      "nome": "Nama Denim",
+      "site": "namadenim.com",
+      "relacao": "sugerida",
+      "obs": "Jeans selvedge premium feito no Brasil",
+      "liberada": "2026-11-14",
+      "arquivos": [
+        "data/namadenim-com.json"
+      ]
+    },
+    {
+      "nome": "New Balance",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Tênis e lifestyle, loja oficial no Brasil (lojas.txt)",
+      "liberada": "2026-11-14",
+      "arquivos": [
+        "data/www-newbalance-com-br-new-balance.json"
+      ]
+    },
+    {
+      "nome": "Levi's",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Jeans e jaquetas clássicos, loja oficial (lojas.txt)",
+      "liberada": "2026-11-14",
+      "arquivos": [
+        "data/www-levi-com-br-levis.json"
       ]
     }
   ]
