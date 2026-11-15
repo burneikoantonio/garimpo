@@ -1,5 +1,5 @@
 {
-  "atualizado": "15/11/2026 08:41",
+  "atualizado": "15/11/2026 12:53",
   "marcas": [
     {
       "nome": "Carnan",
@@ -197,6 +197,76 @@
       "liberada": "2026-11-14",
       "arquivos": [
         "data/handred-com-br.json"
+      ]
+    },
+    {
+      "nome": "Korova",
+      "site": "korova.com.br",
+      "relacao": "sugerida",
+      "obs": "Streetwear paulistano com estampas de cultura brasileira",
+      "liberada": "2026-11-15",
+      "arquivos": [
+        "data/korova-com-br.json"
+      ]
+    },
+    {
+      "nome": "Gangue do Caramelo",
+      "site": "ganguedocaramelo.com.br",
+      "relacao": "sugerida",
+      "obs": "Camisas e camisetas com o Brasil e o futebol de rua como tema",
+      "liberada": "2026-11-15",
+      "arquivos": [
+        "data/ganguedocaramelo-com-br.json"
+      ]
+    },
+    {
+      "nome": "SHUI",
+      "site": "shui.com.br",
+      "relacao": "sugerida",
+      "obs": "Streetwear com alfaiataria e referências asiáticas, modelagens amplas",
+      "liberada": "2026-11-15",
+      "arquivos": [
+        "data/shui-com-br.json"
+      ]
+    },
+    {
+      "nome": "Amenbreak",
+      "site": "amenbreak.com.br",
+      "relacao": "sugerida",
+      "obs": "Moletons, flanelas e peças de inverno com cara de marca independente",
+      "liberada": "2026-11-15",
+      "arquivos": [
+        "data/amenbreak-com-br.json"
+      ]
+    },
+    {
+      "nome": "Dendezeiro",
+      "site": "dendezeiro.com.br",
+      "relacao": "sugerida",
+      "obs": "Moda autoral de Salvador, destaque no Rio Fashion Week",
+      "liberada": "2026-11-15",
+      "arquivos": [
+        "data/dendezeiro-com-br.json"
+      ]
+    },
+    {
+      "nome": "Insider",
+      "site": "insiderstore.com.br",
+      "relacao": "sugerida",
+      "obs": "Básicos de tecido tecnológico, bom para o dia a dia",
+      "liberada": "2026-11-15",
+      "arquivos": [
+        "data/insiderstore-com-br.json"
+      ]
+    },
+    {
+      "nome": "Blck Brasil",
+      "site": "blckbrasil.com.br",
+      "relacao": "sugerida",
+      "obs": "Bonés e acessórios streetwear",
+      "liberada": "2026-11-15",
+      "arquivos": [
+        "data/blckbrasil-com-br.json"
       ]
     }
   ]
