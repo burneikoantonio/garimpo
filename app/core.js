@@ -5,7 +5,9 @@ const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const median = arr => { if (!arr.length) return null; const s = [...arr].sort((a, b) => a - b); return s[Math.floor(s.length / 2)]; };
 
 /* ---------- Categorias e tamanhos ---------- */
-const EXCLUIR = /feminin|\bwomen|\bwoman\b|\bwmns\b|\bmeias?\b|\bsocks?\b|\bbody\b|vestido|dress|\bsaia\b|skirt|baby tee|sufbab|gift|adesivo|sticker|bolsa|\bbags?\b|mochila|backpack|chaveiro|keychain|porta-moeda|cueca|boxer|caneca|poster|isqueiro|tableware|home decor|\bbooks?\b|magazine|textile|high times|gloves|scarves|wallet|cardholder/;
+const EXCLUIR = /feminin|\bwomen|\bwoman\b|\bwmns\b|\bmeias?\b|\bsocks?\b|\bbody\b|vestido|dress|\bsaia\b|skirt|baby tee|sufbab|gift|adesivo|sticker|bolsa|\bbags?\b|mochila|backpack|chaveiro|keychain|porta-moeda|cueca|boxer|caneca|poster|isqueiro|tableware|home decor|\bbooks?\b|magazine|textile|high times|gloves|scarves|wallet|cardholder|\bkids?\b|infantil|junior|\bjr\b|baby ?look|cropped|legging|suti[aã]|calcinha|biqu[ií]ni|t[uú]nica|macac[aã]o|blusa (de al[cç]a|seda)|drapead|corset|\bgirls?\b|top fitness|regata curta/;
+// tags e endereço também denunciam peça feminina ou infantil ("all-feminino" sem masculino; URL "-feminino-" nas lojas VTEX)
+const FEM_TAG = /femin|women|mulher|\bkids?\b|infantil|sufbab/, OCULTO = /esconder-busca-site|excluirfeed|collection-only/, MASC_TAG = /masculin|\bmen\b|unissex|unisex/;
 const KINDS = [
   ['tenis', /t[eê]nis|sneaker|footwear|sapato|\bbota|derby|loafer|mocassim|chinelo|\bslide/],
   ['bone', /bon[eé]|touca|\bhats?\b|\bcaps?\b|gorro|beanie|chap[eé]u|bucket|6-panel|dad ?hat|viseira/],
@@ -22,6 +24,9 @@ function classify(p) {
   const main = `${p.tipo} ${p.titulo}`.toLowerCase();
   if (EXCLUIR.test(main)) return null;
   const tags = (p.tags || []).join(' ').toLowerCase();
+  if (OCULTO.test(tags) || (FEM_TAG.test(tags) && !MASC_TAG.test(tags))) return null;
+  const slug = (p.url || '').toLowerCase().replace(/^https?:\/\/[^/]+/, '').replace(/[-_/?=]+/g, ' ');
+  if (/\b(feminino|feminina|women|wmns|cropped|infantil|kids)\b/.test(slug)) return null;
   for (const [k, re] of KINDS) if (re.test(main)) return k;
   for (const [k, re] of KINDS) if (re.test(tags)) return k;
   return 'outro';

@@ -19,7 +19,7 @@
   --bg: #161616; --layer: #262626; --layer2: #393939;
   --border: #393939; --border-strong: #6f6f6f;
   --fg: #f4f4f4; --fg2: #c6c6c6; --helper: #a8a8a8;
-  --accent: #0f62fe; --link: #78a9ff; --good: #42be65; --warn: #f1c21b; --bad: #fa4d56;
+  --accent: #0f62fe; --accent-hover: #0353e9; --accent-fg: #ffffff; --chart: #78a9ff; --chart-fill: #0f62fe; --c-produto: #378ADD; --link: #78a9ff; --good: #42be65; --warn: #f1c21b; --bad: #fa4d56;
   --sale-bg: #a2191f; --sale-fg: #ffd7d9; --new-bg: #0043ce; --new-fg: #d0e2ff;
   --ok-bg: #044317; --ok-fg: #a7f0ba; --sug-bg: #491d8b; --sug-fg: #e8daff;
   --font: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
@@ -33,8 +33,9 @@
   --bg: #ffffff; --layer: #f4f4f4; --layer2: #e0e0e0;
   --border: #e0e0e0; --border-strong: #8d8d8d;
   --fg: #161616; --fg2: #525252; --helper: #6f6f6f;
-  --link: #0f62fe; --good: #198038; --warn: #8e6a00; --bad: #da1e28;
-  --sale-bg: #ffd7d9; --sale-fg: #a2191f; --new-bg: #d0e2ff; --new-fg: #0043ce;
+  --accent: #161616; --accent-hover: #393939; --accent-fg: #ffffff; --chart: #161616; --chart-fill: #161616; --c-produto: #161616;
+  --link: #161616; --good: #198038; --warn: #8e6a00; --bad: #da1e28;
+  --sale-bg: #ffd7d9; --sale-fg: #a2191f; --new-bg: #161616; --new-fg: #ffffff;
   --ok-bg: #a7f0ba; --ok-fg: #044317; --sug-bg: #e8daff; --sug-fg: #491d8b;
   --photo: #f4f4f4;
 }
@@ -167,8 +168,8 @@ img { max-width: 100%; display: block; }
 .rowbtn { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--border); text-align: left; }
 .rowbtn:hover { background: var(--layer); }
 
-.btn { height: 40px; padding: 0 16px; border: 0; background: var(--accent); color: #fff; font-size: 14px; display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; text-decoration: none; }
-.btn:hover { background: #0353e9; }
+.btn { height: 40px; padding: 0 16px; border: 0; background: var(--accent); color: var(--accent-fg); font-size: 14px; display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; text-decoration: none; }
+.btn:hover { background: var(--accent-hover); }
 .btn.ghost { background: transparent; color: var(--link); padding: 0 8px; }
 .btn.ghost:hover { background: var(--layer); }
 .btn.tertiary { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1px var(--fg); }
@@ -254,7 +255,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794762547"></script>
+<script src="core.js?v=1794774785"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -275,7 +276,10 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const brl = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 });
 const img = (src, w = 600) => !src ? ''
   : src.includes('vteximg') ? src.replace(/\/ids\/(\d+)(-\d+-\d+)?\//, `/ids/$1-${w}-${Math.round(w * 1.25)}/`)
-  : src + (src.includes('?') ? '&' : '?') + 'width=' + w;
+  // Nuvemshop: o endereço salvo é a miniatura de 50px; tamanhos que existem: 240, 320, 480, 640
+  : src.includes('mitiendanube') ? src.replace(/-\d+-0\.(webp|jpg|png)/, `-${w > 480 ? 640 : 480}-0.$1`)
+  : src.includes('farfetch-contents') ? src.replace(/_\d+\.jpg$/, w > 480 ? '_1000.jpg' : '_480.jpg')
+  : src +(src.includes('?') ? '&' : '?') + 'width=' + w;
 // atalhos para a sale de cada marca que você segue, aberta aqui mesmo com os dados do Achei
 function saleBloco() {
   const marcas = S.follow.filter(n => DATA.produtos.some(p => p.marca === n));
@@ -385,7 +389,7 @@ function tile({ p, e }) {
   // o coração fica por cima da foto, fora do botão da peça, para curtir sem abrir
   const curti = !!S.curtidas[p.key];
   return `<div class="tilewrap"><button class="heart ${curti ? 'on' : ''}" data-curti="${esc(p.key)}" aria-pressed="${curti}" aria-label="${curti ? 'Remover curtida' : 'Curtir'}">${curti ? '♥' : '♡'}</button><button class="tile" data-open="${esc(p.key)}">
-    <div class="ph"><img loading="lazy" src="${esc(img(p.imagens[0], 400))}" alt=""><div class="tags">${tags.join('')}</div></div>
+    <div class="ph"><img loading="lazy" src="${esc(img(p.imagens[0], 540))}" alt=""><div class="tags">${tags.join('')}</div></div>
     <div class="body">
       <span class="brand">${esc(p.marca)}${p.relacao === 'sugerida' ? ' · sugerida' : ''}${e.lojas.length > 1 ? ` · ${e.lojas.length} lojas` : p.ofertas[0].loja.startsWith('Site ') ? '' : ` · ${esc(e.lojas[0].loja)}`}</span>
       <span class="pname">${esc(p.titulo)}</span>
@@ -583,10 +587,10 @@ function abrirImportado(i) {
   const a = FF.achados[i]; if (!a) return;
   const k = custoFarfetch(a.por), usd = DATA.cambio?.USD;
   const fmt2 = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  const partes = [['Produto', k.produto, '#378ADD'], ['Frete', k.frete, '#888780'], [`Imposto de importação (${Math.round(k.c.ii * 100)}%)`, k.ii, '#EF9F27'], [`ICMS (${Math.round(k.c.icms * 100)}%)`, k.icms, '#D85A30']];
+  const partes = [['Produto', k.produto, 'var(--c-produto)'], ['Frete', k.frete, '#888780'], [`Imposto de importação (${Math.round(k.c.ii * 100)}%)`, k.ii, '#EF9F27'], [`ICMS (${Math.round(k.c.icms * 100)}%)`, k.icms, '#D85A30']];
   const pct = v => Math.round(v / k.total * 100);
   showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${esc(a.marca)} · Farfetch</h1></div></header>
-    <div class="gallery"><img src="${esc(a.img)}" alt="${esc(a.nome)}"></div>
+    <div class="gallery"><img src="${esc(img(a.img, 800))}" alt="${esc(a.nome)}"></div>
     <div class="wrap">
       <div class="detail-head"><span class="brand">${esc(a.marca)}</span><h2>${esc(a.nome)}</h2>
         ${a.tam ? `<span class="t2" style="color:var(--helper);font-size:12px">Tamanhos disponíveis: ${esc(a.tam)}</span>` : ''}</div>
@@ -871,10 +875,10 @@ function priceChart(h) {
   const y = v => T + (1 - (v - lo) / (hi - lo)) * (H - T - B);
   const line = vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Histórico de preço">
-    ${[lo, hi].map(t => `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="#393939"/><text x="${L - 6}" y="${y(t) + 3}" text-anchor="end">${t}</text>`).join('')}
-    <polygon points="${x(0)},${H - B} ${line} ${x(vals.length - 1)},${H - B}" fill="#0f62fe" fill-opacity=".18"/>
-    <polyline points="${line}" fill="none" stroke="#78a9ff" stroke-width="2"/>
-    <circle cx="${x(vals.length - 1)}" cy="${y(vals[vals.length - 1])}" r="4" fill="#f4f4f4"/>
+    ${[lo, hi].map(t => `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" style="stroke:var(--border)"/><text x="${L - 6}" y="${y(t) + 3}" text-anchor="end">${t}</text>`).join('')}
+    <polygon points="${x(0)},${H - B} ${line} ${x(vals.length - 1)},${H - B}" style="fill:var(--chart-fill)" fill-opacity=".18"/>
+    <polyline points="${line}" fill="none" style="stroke:var(--chart)" stroke-width="2"/>
+    <circle cx="${x(vals.length - 1)}" cy="${y(vals[vals.length - 1])}" r="4" style="fill:var(--fg)"/>
     <text x="${L}" y="${H - 6}">${fmtDate(h[0][0])}</text><text x="${W - R}" y="${H - 6}" text-anchor="end">${fmtDate(h[h.length - 1][0])}</text>
   </svg>`;
 }

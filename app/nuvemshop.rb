@@ -25,6 +25,7 @@ produtos = {}
     nome = CGI.unescapeHTML(b[/title="([^"]+)"/, 1] || b[/alt="([^"]+)"/, 1] || '')
     img = b[/data-srcset="([^" ]+)/, 1] || b[/srcset="([^" ]+)/, 1] || b[/src="(\/\/[^"]+)"/, 1]
     img = "https:#{img}" if img&.start_with?('//')
+    img = img.sub(/-\d+-0\.(webp|jpg|png)/, '-640-0.\\1') if img  # a 1ª do srcset é a miniatura de 50px
     produtos[id] = {
       id: id, titulo: nome, url: link, ref: '', tipo: '', tags: [], publicado: nil,
       imagens: img ? [img] : [],
