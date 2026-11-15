@@ -198,6 +198,11 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(5, 1fr); }
 .nav .navdot { position: absolute; top: 8px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
 .rec { padding-block: 16px; border-bottom: 1px solid var(--border); display: grid; gap: 10px; }
+.mini-look { display: grid; grid-template-columns: 140px 1fr; gap: 12px; align-items: start; }
+.mini-fig .boneco { zoom: .54; width: 260px; margin: 0; }
+.mini-lista { display: grid; gap: 6px; min-width: 0; }
+.mini-item { display: grid; gap: 1px; text-align: left; background: var(--layer); border: 0; padding: 6px 8px; min-width: 0; }
+.mini-nome { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .boneco { width: min(260px, 72vw); margin: 8px auto 12px; padding: 12px 8px; background: var(--photo); border-radius: 8px; display: grid; justify-items: center; gap: 0; }
 .boneco img { display: block; object-fit: contain; mix-blend-mode: multiply; }
 .b-cabeca { height: 64px; width: 40%; display: grid; place-items: center; margin-bottom: -6px; position: relative; z-index: 2; }
@@ -271,7 +276,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794778518"></script>
+<script src="core.js?v=1794780855"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -661,6 +666,7 @@ function abrirImportado(i) {
         </div>
         <p class="section-sub" style="margin-top:8px">O preço nos EUA é uma estimativa a partir do preço sem impostos (a Farfetch não deixa abrir a loja americana daqui do Brasil). Para trazer você mesmo: dólar do dia R$ ${cp.usd.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}, frete estimado US$ ${FRETE_EUA_USD}, IOF 3,5%, imposto de importação 60% e ICMS 17%.</p>`;
       })()}
+      ${(q => q ? miniLook(q) : '')(ffProdutos().find(x => x.ffi === i))}
       <div class="actions" style="grid-template-columns:1fr"><a class="btn" href="${esc(a.url)}" target="_blank" rel="noopener">Ver na Farfetch ↗</a></div>
     </div>`);
 }
@@ -808,12 +814,23 @@ function harmonia(base, q) {
   if (aNeutra) return 1.2;                                      // base neutra aceita uma cor de destaque
   return b.some(c => a.includes(c)) ? 0.8 : -1;                 // duas cores fortes diferentes brigam
 }
+// peças da Farfetch viram "produtos" simples para entrar nos looks (como peça principal ou sugestão)
+let FFPRODS = null;
+function ffProdutos() {
+  if (FFPRODS) return FFPRODS; if (!FF) return [];
+  FFPRODS = FF.achados.map((a, i) => ({ key: 'ff:' + i, ffi: i, marca: a.marca, titulo: a.nome, kind: classify({ tipo: '', titulo: a.nome, tags: [] }), imagens: [a.img], ff: true }))
+    .filter(p => p.kind && vagaDe(p.kind));
+  return FFPRODS;
+}
+const acharPeca = k => DATA.produtos.find(x => x.key === k) || ffProdutos().find(x => x.key === k);
+function avaliar(q) { if (!q.ff) return evaluate(q); const a = FF.achados[q.ffi]; return { ok: true, price: a.por, score: comparaImportado(a).nota, off: (a.off || 0) / 100 }; }
+const abrirAttr = q => q.ff ? `data-ffi="${q.ffi}"` : `data-open="${esc(q.key)}"`;
 function sugestoesLook(base, kinds, n = 6) {
-  const eb = evaluate(base), fam = familia(base), seguidas = new Set(S.follow);
+  const eb = avaliar(base), fam = familia(base), seguidas = new Set(S.follow);
   const curtidasMarca = new Set(Object.values(S.curtidas).map(c => c.marca));
   const porMarca = {};
-  return DATA.produtos.filter(q => kinds.includes(q.kind) && q.key !== base.key && !S.dispensadas.includes(q.marca) && !S.ocultas[q.key])
-    .map(q => ({ q, e: evaluate(q) })).filter(x => x.e.ok)
+  return [...DATA.produtos, ...ffProdutos()].filter(q => kinds.includes(q.kind) && q.key !== base.key && !S.dispensadas.includes(q.marca) && !S.ocultas[q.key])
+    .map(q => ({ q, e: avaliar(q) })).filter(x => x.e.ok)
     .map(x => {
       const preco = eb.ok ? x.e.price / eb.price : 1;
       const s = harmonia(base, x.q) * 2 + (familia(x.q) === fam ? 1.5 : familia(x.q) === 'casual' || fam === 'casual' ? 0.5 : -1)
@@ -825,12 +842,31 @@ function sugestoesLook(base, kinds, n = 6) {
     .filter(x => (porMarca[x.q.marca] = (porMarca[x.q.marca] || 0) + 1) <= 2).slice(0, n);
 }
 let LOOK = null;   // { base, vagas: [{ id, nome, ops, sel }] }
+function montarLook(base) {
+  const vg = base && vagaDe(base.kind); if (!vg) return null;
+  // moletom ou jaqueta como peça principal: por cima só vai jaqueta (não esconde a sua peça)
+  const k2 = (id, kinds) => id === 'cima' && (base.kind === 'moletom' || base.kind === 'jaqueta') ? kinds.filter(k => k === 'jaqueta' && base.kind !== 'jaqueta') : kinds;
+  return { base, vagas: VAGAS[vg].map(([id, nome, kinds]) => ({ id, nome, ops: k2(id, kinds).length ? sugestoesLook(base, k2(id, kinds)) : [], sel: id === 'cima' && vg === 'top' ? -1 : 0 })).filter(v => v.ops.length) };
+}
 function abrirLook(key) {
-  const base = DATA.produtos.find(x => x.key === key); if (!base) return;
-  const vg = vagaDe(base.kind);
-  if (!vg) { toast('Ainda não sei combinar esse tipo de peça'); return; }
-  LOOK = { base, vagas: VAGAS[vg].map(([id, nome, kinds]) => ({ id, nome, ops: sugestoesLook(base, kinds), sel: 0 })).filter(v => v.ops.length) };
-  desenharLook();
+  const L = montarLook(acharPeca(key));
+  if (!L) { toast('Ainda não sei combinar esse tipo de peça'); return; }
+  LOOK = L; desenharLook();
+}
+// boneco pequeno na tela de cada peça, com o look sugerido
+function miniLook(base) {
+  const L = montarLook(base); if (!L || !L.vagas.length) return '';
+  const eb = avaliar(base), esc2 = L.vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel]);
+  const total = (eb.ok ? eb.price : 0) + esc2.reduce((s, x) => s + x.e.price, 0);
+  return `<h3 class="section-h">Um look com esta peça</h3>
+    <div class="mini-look">
+      <div class="mini-fig">${boneco(base, L.vagas)}</div>
+      <div class="mini-lista">
+        ${esc2.map(x => `<button class="mini-item" ${abrirAttr(x.q)}><span class="t2">${esc(x.q.marca)}${x.q.ff ? ' · Farfetch' : ''}</span><span class="mini-nome">${esc(x.q.titulo)}</span><span class="mono">${brl(x.e.price)}</span></button>`).join('')}
+        <span class="t2" style="margin-top:4px">Look completo: <b class="mono">${brl(total)}</b></span>
+        <button class="btn tertiary sm" data-look="${esc(base.key)}" style="margin-top:6px;justify-content:center">👕 Trocar peças</button>
+      </div>
+    </div>`;
 }
 // recorta o fundo liso das fotos (preenchendo a partir das bordas) e corta a sobra, para a peça encaixar no corpo
 const RECORTES = new Map();
@@ -864,7 +900,12 @@ function recortar(u) {
         }
         if (tirados < W * H * 0.08) { RECORTES.set(u, null); return ok(null); }   // fundo não é liso (foto com modelo): deixa como está
         let x0 = W, y0 = H, x1 = 0, y1 = 0;
-        for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) if (px[at(x, y) + 3] > 40) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+        // linhas/colunas só contam com um pouco de peça de verdade (ignora pontinhos soltos e sombras na borda)
+        const col = new Uint32Array(W), lin = new Uint32Array(H);
+        for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) if (px[at(x, y) + 3] > 40) { col[x]++; lin[y]++; }
+        const mc = Math.max(2, H * 0.015), ml = Math.max(2, W * 0.015);
+        for (let x = 0; x < W; x++) if (col[x] >= mc) { x0 = Math.min(x0, x); x1 = x; }
+        for (let y = 0; y < H; y++) if (lin[y] >= ml) { y0 = Math.min(y0, y); y1 = y; }
         if (x1 <= x0 || y1 <= y0) { RECORTES.set(u, null); return ok(null); }
         cx.putImageData(d, 0, 0);
         const out = document.createElement('canvas'); out.width = x1 - x0 + 1; out.height = y1 - y0 + 1;
@@ -898,7 +939,7 @@ function boneco(base, vagas) {
   </div>`;
 }
 function desenharLook() {
-  const { base, vagas } = LOOK, eb = evaluate(base);
+  const { base, vagas } = LOOK, eb = avaliar(base);
   const escolhidas = vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel]);
   const total = (eb.ok ? eb.price : 0) + escolhidas.reduce((s, x) => s + x.e.price, 0);
   const cores = [...new Set([base, ...escolhidas.map(x => x.q)].flatMap(coresLook))];
@@ -906,8 +947,8 @@ function desenharLook() {
   showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">Combinar</h1></div></header>
     <div class="wrap">
       <div class="row" style="align-items:center;border:0">
-        <button class="thumb" data-open="${esc(base.key)}"><img src="${esc(img(base.imagens[0], 200))}" alt=""></button>
-        <div class="grow"><span class="t2">Sua peça · ${esc(base.marca)}</span><span class="t1">${esc(base.titulo)}</span><span class="mono">${eb.ok ? brl(eb.price) : 'esgotada no seu tamanho'}</span></div>
+        <button class="thumb" ${abrirAttr(base)}><img src="${esc(img(base.imagens[0], 200))}" alt=""></button>
+        <div class="grow"><span class="t2">Sua peça · ${esc(base.marca)}${base.ff ? ' · Farfetch' : ''}</span><span class="t1">${esc(base.titulo)}</span><span class="mono">${eb.ok ? brl(eb.price) : 'esgotada no seu tamanho'}</span></div>
       </div>
       ${boneco(base, vagas)}
       <div class="panel" style="display:grid;gap:4px">
@@ -917,11 +958,10 @@ function desenharLook() {
       ${vagas.map((v, i) => `<h3 class="section-h">${esc(v.nome)}</h3>
         <div class="vitrine look-ops">${v.ops.map((x, j) => `<button data-lookvaga="${i}" data-lookop="${j}" aria-pressed="${v.sel === j}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt="${esc(x.q.titulo)}"><span class="mono">${brl(x.e.price)}</span></button>`).join('')}
           <button data-lookvaga="${i}" data-lookop="-1" aria-pressed="${v.sel === -1}" class="look-sem"><span>Sem ${esc(v.nome.toLowerCase())}</span></button></div>
-        ${v.sel >= 0 ? `<button class="btn ghost sm" data-open="${esc(v.ops[v.sel].q.key)}" style="padding:0;height:auto;margin-top:4px">${esc(v.ops[v.sel].q.marca)} · ${esc(v.ops[v.sel].q.titulo)} ›</button>` : ''}`).join('')}
+        ${v.sel >= 0 ? `<button class="btn ghost sm" ${abrirAttr(v.ops[v.sel].q)} style="padding:0;height:auto;margin-top:4px">${esc(v.ops[v.sel].q.marca)}${v.ops[v.sel].q.ff ? ' (Farfetch)' : ''} · ${esc(v.ops[v.sel].q.titulo)} ›</button>` : ''}`).join('')}
       <div class="actions" style="grid-template-columns:1fr;margin-top:16px"><button class="btn" data-lookcarrinho>🛒 Simular a compra deste look</button></div>
       <p class="section-sub" style="margin-top:8px">Escolhi por cor (neutros combinam com tudo; peça colorida pede o resto neutro), estilo parecido e marcas que você curte ou segue. Toque nas fotos para trocar.</p>
     </div>`);
-  aplicarRecortes();
 }
 
 /* ---------- Simular compra: vale a pena levar agora? ---------- */
@@ -1215,19 +1255,19 @@ function openDetail(key) {
       ${intlBlock}
       <h3 class="section-h">Histórico de preço</h3>
       ${histBlock}
+      ${miniLook(p)}
       <div class="acoes3">
         <button class="btn ${saved ? '' : 'tertiary'}" data-save="${esc(key)}" aria-pressed="${saved}">${saved ? '🔔 Alerta ligado' : '🔔 Alerta'}</button>
         <button class="btn ${curti ? '' : 'tertiary'}" data-curti="${esc(key)}" aria-pressed="${curti}" style="${curti ? 'background:var(--bad)' : ''}">${curti ? '♥ Curtido' : '♡ Curti'}</button>
         <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener">${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato ↗' : 'Ver na loja ↗'}</a>
       </div>
-      <button class="btn tertiary" data-look="${esc(key)}" style="width:100%;justify-content:center;margin-top:1px">👕 Combinar com outras peças</button>
       <button class="btn ${S.carrinho[key] ? '' : 'tertiary'}" data-carrinho="${esc(key)}" style="width:100%;justify-content:center;margin-top:1px">${S.carrinho[key] ? '✓ Na simulação de compra (tirar)' : '🛒 Simular compra'}</button>
       <p class="section-sub" style="margin-top:8px">🔔 avisa quando o preço sair do comum. ♡ ensina o Achei a trazer mais peças e marcas assim.</p>
       <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">Não curti: esconder esta peça</button>
     </div>`);
 }
 
-function showSheet(html) { const s = document.getElementById('sheet'); s.innerHTML = html; s.hidden = false; s.scrollTop = 0; document.body.style.overflow = 'hidden'; }
+function showSheet(html) { const s = document.getElementById('sheet'); s.innerHTML = html; s.hidden = false; s.scrollTop = 0; document.body.style.overflow = 'hidden'; aplicarRecortes(); }
 function closeSheet() { const s = document.getElementById('sheet'); s.hidden = true; s.innerHTML = ''; document.body.style.overflow = ''; }
 let toastT;
 function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
@@ -1291,9 +1331,9 @@ document.addEventListener('click', ev => {
   else if (d.look) abrirLook(d.look);
   else if (d.lookvaga !== undefined && LOOK) { LOOK.vagas[+d.lookvaga].sel = +d.lookop; const y = document.getElementById('sheet').scrollTop; desenharLook(); document.getElementById('sheet').scrollTop = y; }
   else if (d.lookcarrinho !== undefined && LOOK) {
-    const ks = [LOOK.base.key, ...LOOK.vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel].q.key)];
+    const todas = [LOOK.base, ...LOOK.vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel].q)], ks = todas.filter(q => !q.ff).map(q => q.key);
     S.carrinho = { ...S.carrinho, ...Object.fromEntries(ks.map(k => [k, { em: Date.now() }])) }; persist();
-    toast(`${ks.length} peças na simulação: veja em Salvos`);
+    toast(`${ks.length} peças na simulação: veja em Salvos${todas.length > ks.length ? ' (as da Farfetch ficam de fora)' : ''}`);
   }
   else if (d.carrinho) {
     const k = d.carrinho;
