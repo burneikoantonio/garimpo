@@ -255,7 +255,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794775008"></script>
+<script src="core.js?v=1794775814"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -328,7 +328,8 @@ const S = {
   modelos: store.get('modelos', []),   // alertas de modelo: { id, texto, max }
   curtidas: store.get('curtidas', {}),  // peças curtidas: chave -> { marca, kind, titulo, preco, em }
   canal: store.get('canal', ''),       // canal do ntfy (o mesmo assinado no app ntfy)
-  dispensadas: store.get('dispensadas', []),   // marcas sugeridas que você dispensou
+  dispensadas: store.get('dispensadas', []),
+  carrinho: store.get('carrinho', {}),   // simulação de compra: chave -> { em }   // marcas sugeridas que você dispensou
   ocultas: store.get('ocultas', {}),   // peças marcadas como "Não curti": chave -> { marca, kind }
 };
 
@@ -760,6 +761,91 @@ function spark(h, w = 88, hgt = 28) {
 }
 const fmtDate = d => d ? d.split('-').reverse().slice(0, 2).join('/') : '';
 
+/* ---------- Simular compra: vale a pena levar agora? ---------- */
+// cores e detalhes do nome servem para achar peças parecidas no visual (não temos como comparar as fotos em si)
+const CORES = [['preto', /pret|black|onyx/], ['branco', /branc|white(?!.*off)/], ['off', /off.?white|creme|cream|gelo|ecru|natural|areia|sand|bege|beige|nude/],
+  ['cinza', /cinza|grey|gray|mescla|heather/], ['azul', /azul|blue|marinho|navy|indigo|royal|petr[oó]leo/], ['verde', /verde|green|oliva|olive|militar|menta/],
+  ['marrom', /marrom|brown|caramelo|chocolate|caf[eé]|mocha|telha|terracota/], ['vermelho', /vermelh|red|bord[oô]|vinho|burgundy|coral/],
+  ['rosa', /rosa|pink|p[eê]ssego/], ['amarelo', /amarel|yellow|mostarda|laranja|orange/], ['caqui', /caqui|khaki/], ['roxo', /roxo|purple|lil[aá]s/]];
+const ESTILO = /oversized|boxy|regular|slim|cargo|jogger|wide|ampla|reta|baggy|carpenter|capuz|hoodie|crewneck|zip|polo|xadrez|plaid|listr|stripe|bordad|embroider|estamp|print|graphic|logo|b[aá]sic|tie.?dye|veludo|nylon|ripstop|linho|couro|leather|su[eé]de|camur|tricot|knit|jeans|denim|sarja|twill|moletom|fleece|retr[oô]|vintage|estonad|washed|lavad/g;
+function tracos(p) {
+  const t = p.titulo.toLowerCase();
+  return { cores: CORES.filter(([, re]) => re.test(t)).map(([c]) => c), estilo: [...new Set(t.match(ESTILO) || [])] };
+}
+function parecidas(p, e, n = 3) {
+  const a = tracos(p);
+  return DATA.produtos.filter(q => q.kind === p.kind && q.key !== p.key && !S.dispensadas.includes(q.marca) && !S.ocultas[q.key])
+    .map(q => {
+      const b = tracos(q);
+      const cor = a.cores.length ? a.cores.filter(c => b.cores.includes(c)).length / a.cores.length : 0.5;
+      const est = a.estilo.filter(w => b.estilo.includes(w)).length;
+      return { q, sim: cor * 2 + est + (q.marca === p.marca ? 0.5 : 0) + afinidadePeca(q), cor };
+    })
+    .filter(x => x.sim >= 1.5 && (a.cores.length === 0 || x.cor > 0))
+    .map(x => ({ ...x, e: evaluate(x.q) })).filter(x => x.e.ok && x.e.price <= e.price * 1.05 && x.e.price >= e.price * 0.6)
+    .sort((x, y) => y.sim - x.sim || x.e.price - y.e.price).slice(0, n);
+}
+const afinidadePeca = q => S.curtidas && Object.values(S.curtidas).some(c => c.marca === q.marca) ? 0.5 : 0;
+function veredito(p, e) {
+  const prev = e.hist.slice(0, -1).map(([, v]) => v);
+  const minAntes = prev.length ? Math.min(...prev) : null;
+  const marcaPs = DATA.produtos.filter(q => q.marca === p.marca).map(evaluate).filter(x => x.ok);
+  const marcaSale = marcaPs.length ? marcaPs.filter(x => x.off > 0).length / marcaPs.length : 0;
+  const par = parecidas(p, e);
+  const maisBarata = par.filter(x => x.sim >= 2.5 && x.e.price <= e.price * 0.85).sort((a, b) => a.e.price - b.e.price)[0];
+  const motivos = [];
+  if (e.off > 0) motivos.push(`${Math.round(e.off * 100)}% de desconto`);
+  if (e.justo?.nivel === 'abaixo') motivos.push(`${Math.round(-e.justo.dif * 100)}% abaixo do preço normal da marca`);
+  if (e.justo?.nivel === 'acima') motivos.push(`${Math.round(e.justo.dif * 100)}% acima do preço normal da marca`);
+  const caiu = minAntes && e.price < minAntes;   // menor preço que já registramos
+  if (caiu) motivos.push('menor preço já visto');
+  let v, cor, economia = 0;
+  if (minAntes && minAntes < e.price * 0.95) { v = 'Espere baixar'; cor = 'warn'; economia = e.price - minAntes; motivos.unshift(`já custou ${brl(minAntes)}`); }
+  else if (e.score >= S.notaMin || e.justo?.nivel === 'abaixo' || e.off >= 0.3 || caiu) { v = 'Vale a pena'; cor = 'good'; if (maisBarata) motivos.push(`ou uma parecida da ${maisBarata.q.marca} por ${brl(maisBarata.e.price)}`); }
+  else if (maisBarata) { v = 'Tem parecida mais barata'; cor = 'warn'; economia = e.price - maisBarata.e.price; motivos.push(`parecida da ${maisBarata.q.marca} por ${brl(maisBarata.e.price)}`); }
+  else if (e.off === 0 && marcaSale >= 0.25) { v = 'Espere a sale'; cor = 'warn'; motivos.push(`${Math.round(marcaSale * 100)}% das peças da ${p.marca} estão em sale agora; esta ainda não`); }
+  else if (e.justo?.nivel === 'acima') { v = 'Caro para a marca'; cor = 'bad'; }
+  else { v = 'Preço normal'; cor = 'helper'; motivos.push('sem desconto nem preço especial: compre se gostar muito'); }
+  return { v, cor, motivos, par, maisBarata, economia };
+}
+function simulacaoBloco() {
+  const itens = Object.keys(S.carrinho).map(k => DATA.produtos.find(x => x.key === k)).filter(Boolean)
+    .map(p => ({ p, e: evaluate(p) }));
+  if (!itens.length) return `<h2 class="section-h">Simular compra</h2>
+    <p class="section-sub">Na tela de uma peça, toque em <b>🛒 Simular compra</b>. Eu digo se vale levar agora, se é melhor esperar baixar e se tem peça parecida por menos.</p>`;
+  const ok = itens.filter(x => x.e.ok).map(x => ({ ...x, r: veredito(x.p, x.e) }));
+  const total = ok.reduce((s, x) => s + x.e.price, 0);
+  const valem = ok.filter(x => x.r.cor === 'good');
+  const economia = ok.reduce((s, x) => s + x.r.economia, 0);
+  const lojas = [...new Set(ok.map(x => x.e.lojas[0].loja))];
+  const cores = { good: 'var(--good)', warn: 'var(--warn)', bad: 'var(--bad)', helper: 'var(--helper)' };
+  const geral = !ok.length ? 'Nenhuma peça disponível no seu tamanho.'
+    : valem.length === ok.length ? `<b>Pode comprar tudo.</b> As ${ok.length} peças estão com preço bom.`
+    : valem.length ? `<b>Compre ${valem.length} de ${ok.length} agora</b> (${brl(valem.reduce((s, x) => s + x.e.price, 0))}). Nas outras, dá para economizar até <b>${brl(economia)}</b> esperando ou trocando por parecidas.`
+    : `<b>Melhor não comprar agora.</b> Esperando ou trocando por parecidas, dá para economizar até <b>${brl(economia)}</b>.`;
+  return `<h2 class="section-h">Simular compra</h2>
+    <div class="panel" style="display:grid;gap:8px">
+      <div class="range-val"><span>${ok.length} ${ok.length === 1 ? 'peça' : 'peças'} · ${lojas.length} ${lojas.length === 1 ? 'loja' : 'lojas'}</span><span class="mono" style="font-size:20px;font-weight:600">${brl(total)}</span></div>
+      <p class="t2" style="margin:0;font-size:13px">${geral}</p>
+      ${lojas.length > 1 ? `<p class="t2" style="margin:0;font-size:12px;color:var(--helper)">São ${lojas.length} pedidos separados (${esc(lojas.join(', '))}): confira o frete de cada loja.</p>` : ''}
+    </div>
+    <div class="list" style="margin-top:8px">${itens.map(({ p, e }) => {
+      if (!e.ok) return `<div class="row"><div class="grow"><span class="t1">${esc(p.titulo)}</span><span class="t2">Esgotado no seu tamanho</span></div><button class="btn ghost sm" data-carrinho="${esc(p.key)}">Tirar</button></div>`;
+      const r = veredito(p, e);
+      return `<div class="row" style="align-items:flex-start">
+        <button class="thumb" data-open="${esc(p.key)}" aria-label="Abrir ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>
+        <div class="grow" style="display:grid;gap:3px">
+          <span class="t2">${esc(p.marca)} · ${esc(e.lojas[0].loja)}</span><span class="t1">${esc(p.titulo)}</span>
+          <span><span class="mono" style="font-size:15px">${brl(e.price)}</span> <b style="color:${cores[r.cor]};font-size:13px;margin-left:6px">● ${r.v}</b></span>
+          ${r.motivos.length ? `<span class="t2" style="font-size:12px">${esc(r.motivos.join(' · '))}</span>` : ''}
+          ${r.par.length ? `<span class="t2" style="font-size:12px;margin-top:4px">Parecidas por preço igual ou menor:</span>
+          <div class="vitrine" style="margin:0;padding:0">${r.par.map(x => `<button data-open="${esc(x.q.key)}" aria-label="${esc(x.q.titulo)}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt=""><span class="mono">${brl(x.e.price)}</span></button>`).join('')}</div>` : ''}
+          <button class="btn ghost sm" data-carrinho="${esc(p.key)}" style="justify-self:start;padding:0;height:auto;color:var(--helper)">Tirar da simulação</button>
+        </div></div>`;
+    }).join('')}</div>
+    <button class="btn tertiary sm" data-limpar-carrinho style="margin-top:8px">Limpar simulação</button>`;
+}
+
 function viewSalvos() {
   const keys = Object.keys(S.saved);
   const rows = keys.map(k => {
@@ -782,6 +868,7 @@ function viewSalvos() {
   const achados = m => { const ws = m.texto.toLowerCase().split(/\s+/).filter(Boolean); return DATA.produtos.filter(p => ws.every(w => (p.marca + ' ' + p.titulo).toLowerCase().includes(w))).map(evaluate).filter(e => e.ok && e.price <= m.max).length; };
   const semCanal = !S.canal ? `<div class="notice" style="margin-bottom:12px"><span>Para os avisos chegarem no celular, informe seu canal do ntfy no <b>Perfil</b>, em "Avisos no celular".</span></div>` : '';
   return header('Salvos') + `<div class="wrap">
+    ${simulacaoBloco()}
     <h2 class="section-h">Alertas de modelo</h2>
     <p class="section-sub">Ex.: "9060" até R$ 1.000. O robô avisa quando aparecer, nos seus tamanhos, em qualquer loja do app.</p>
     ${semCanal}
@@ -962,6 +1049,7 @@ function openDetail(key) {
         <button class="btn ${curti ? '' : 'tertiary'}" data-curti="${esc(key)}" aria-pressed="${curti}" style="${curti ? 'background:var(--bad)' : ''}">${curti ? '♥ Curtido' : '♡ Curti'}</button>
         <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener">${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato ↗' : 'Ver na loja ↗'}</a>
       </div>
+      <button class="btn ${S.carrinho[key] ? '' : 'tertiary'}" data-carrinho="${esc(key)}" style="width:100%;justify-content:center;margin-top:1px">${S.carrinho[key] ? '✓ Na simulação de compra (tirar)' : '🛒 Simular compra'}</button>
       <p class="section-sub" style="margin-top:8px">🔔 avisa quando o preço sair do comum. ♡ ensina o Achei a trazer mais peças e marcas assim.</p>
       <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">Não curti: esconder esta peça</button>
     </div>`);
@@ -978,7 +1066,7 @@ const VIEWS = { ofertas: viewOfertas, marcas: viewMarcas, farfetch: viewFarfetch
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
-function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('dispensadas', S.dispensadas); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('dispensadas', S.dispensadas); store.set('carrinho', S.carrinho); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
 
 /* ---------- Sincronia com o robô: salvos, alertas de modelo e tamanhos vão por um canal privado do ntfy ---------- */
 // o robô lê "<seu canal>-prefs" depois de cada atualização; só o que importa para os avisos é enviado
@@ -1028,6 +1116,14 @@ document.addEventListener('click', ev => {
     else { S.saved[k] = { titulo: p.titulo, alvo: null }; toast(S.canal ? 'Alerta ligado. Aviso quando o preço sair do comum.' : 'Alerta ligado. Informe seu canal no Perfil para receber no celular.'); }
     persist(); openDetail(k);
   }
+  else if (d.carrinho) {
+    const k = d.carrinho;
+    if (S.carrinho[k]) { const c = { ...S.carrinho }; delete c[k]; S.carrinho = c; toast('Saiu da simulação'); }
+    else { S.carrinho = { ...S.carrinho, [k]: { em: Date.now() } }; toast('Na simulação: veja em Salvos'); }
+    persist();
+    if (!document.getElementById('sheet').hidden && document.querySelector('#sheet [data-carrinho]')) openDetail(k); else render();
+  }
+  else if (d.limparCarrinho !== undefined) { S.carrinho = {}; render(); }
   else if (d.curti) {
     const k = d.curti, p = DATA.produtos.find(x => x.key === k);
     if (S.curtidas[k]) { delete S.curtidas[k]; toast('Curtida removida'); }
