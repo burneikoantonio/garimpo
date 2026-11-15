@@ -177,4 +177,11 @@ function gerarAlertas(cfg, enviados, agora) {
   return { alertas, resumo };
 }
 
-if (typeof module !== 'undefined') module.exports = { buildData, evaluate, productHist, gerarAlertas, fits, classify, custoImportado, KIND_LABEL };
+// Top 10 da semana: as melhores notas com desconto das marcas ativas (no máximo 2 por marca). Usado pelo robô e pelo app.
+function top10(ativas) {
+  const porMarca = {};
+  return DATA.produtos.filter(p => ativas.has(p.marca)).map(p => ({ p, e: evaluate(p) }))
+    .filter(x => x.e.ok && x.e.off > 0).sort((a, b) => b.e.score - a.e.score)
+    .filter(x => (porMarca[x.p.marca] = (porMarca[x.p.marca] || 0) + 1) <= 2).slice(0, 10);
+}
+if (typeof module !== 'undefined') module.exports = { top10, buildData, evaluate, productHist, gerarAlertas, fits, classify, custoImportado, KIND_LABEL };

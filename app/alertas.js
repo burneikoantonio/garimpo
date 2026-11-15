@@ -130,12 +130,9 @@ async function carregarPrefs() {
   if (domingo && hora >= cfg.resumoAPartirDas && !enviados[`top10|${hoje}`]) {
     const seguidas = new Set(cfg.marcas);
     const ativas = new Set(DATA.marcas.filter(m => seguidas.has(m.nome) || (cfg.incluirSugeridas && m.relacao === 'sugerida' && !(cfg.dispensadas || []).includes(m.nome))).map(m => m.nome));
-    const porMarca = {};
-    const lista = DATA.produtos.filter(p => ativas.has(p.marca)).map(p => ({ p, e: core.evaluate(p) }))
-      .filter(x => x.e.ok && x.e.off > 0).sort((a, b) => b.e.score - a.e.score)
-      .filter(x => (porMarca[x.p.marca] = (porMarca[x.p.marca] || 0) + 1) <= 2).slice(0, 10);
+    const lista = core.top10(ativas);
     if (lista.length) {
-      await enviar({ title: 'Top 10 da semana no Achei', message: lista.map((x, i) => `${i + 1}. ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['trophy'], click: site || undefined });
+      await enviar({ title: 'Top 10 da semana no Achei', message: lista.map((x, i) => `${i + 1}. ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['trophy'], click: site ? `${site}/#top10` : undefined });
       enviados[`top10|${hoje}`] = hoje; top = true;
     }
   }

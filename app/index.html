@@ -276,7 +276,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794780855"></script>
+<script src="core.js?v=1794781855"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -430,7 +430,7 @@ const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.n
 
 /* ---------- Telas ---------- */
 function viewOfertas() {
-  const cabeca = header('<span class="marca-app"><img src="logo-128.png" alt=""><b>Achei</b></span>', `<button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
+  const cabeca = header('<span class="marca-app"><img src="logo-128.png" alt=""><b>Achei</b></span>', `<button class="iconbtn" data-top10 aria-label="Top 10 da semana" style="font-size:18px">🏆</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
   const cats = `<div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>`;
   // com busca ou filtro: procura em todas as marcas e lojas, e compara as lojas
   if (buscando()) {
@@ -667,7 +667,7 @@ function abrirImportado(i) {
         <p class="section-sub" style="margin-top:8px">O preço nos EUA é uma estimativa a partir do preço sem impostos (a Farfetch não deixa abrir a loja americana daqui do Brasil). Para trazer você mesmo: dólar do dia R$ ${cp.usd.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}, frete estimado US$ ${FRETE_EUA_USD}, IOF 3,5%, imposto de importação 60% e ICMS 17%.</p>`;
       })()}
       ${(q => q ? miniLook(q) : '')(ffProdutos().find(x => x.ffi === i))}
-      <div class="actions" style="grid-template-columns:1fr"><a class="btn" href="${esc(a.url)}" target="_blank" rel="noopener">Ver na Farfetch ↗</a></div>
+      <div class="actions" style="grid-template-columns:1fr 1fr">${(k => `<button class="btn ${S.curtidas[k] ? '' : 'tertiary'}" data-curti="${esc(k)}" aria-pressed="${!!S.curtidas[k]}" style="justify-content:center;${S.curtidas[k] ? 'background:var(--bad)' : ''}">${S.curtidas[k] ? '♥ Curtido' : '♡ Curti'}</button>`)(ffKey(a))}<a class="btn" href="${esc(a.url)}" target="_blank" rel="noopener">Ver na Farfetch ↗</a></div>
     </div>`);
 }
 
@@ -698,12 +698,12 @@ function viewFarfetch() {
       <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-ffsale aria-checked="${FFS.sale}" aria-label="Só peças com desconto"></button></div>
       <p class="section-sub" style="margin:12px 0">${achados.length} ${achados.length === 1 ? 'peça' : 'peças'}</p>
     </div>
-    <div class="grid">${achados.map(a => `<button class="tile" data-ffi="${FF.achados.indexOf(a)}">
+    <div class="grid">${achados.map(a => `<div class="tilewrap">${(k => `<button class="heart ${S.curtidas[k] ? 'on' : ''}" data-curti="${esc(k)}" aria-pressed="${!!S.curtidas[k]}" aria-label="${S.curtidas[k] ? 'Remover curtida' : 'Curtir'}">${S.curtidas[k] ? '♥' : '♡'}</button>`)(ffKey(a))}<button class="tile" data-ffi="${FF.achados.indexOf(a)}">
       <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags">${a.off ? `<span class="tag t-sale">-${a.off}%</span>` : ''}<span class="tag ${faixaDe[a.marca] === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[faixaDe[a.marca]] || '')}</span></div></div>
       <div class="body"><span class="brand">${esc(a.marca)} · Farfetch</span><span class="pname">${esc(a.nome)}</span>
         <span class="prices">${a.de ? `<span class="was mono">${brl(a.de)}</span>` : ''}<span class="now mono">${brl(a.por)}</span></span>
         <span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">${brl(custoFarfetch(a.por).total)} com frete${a.tam ? ` · ${esc(a.tam)}` : ''}</span>
-        ${(n => `<span class="scoreline"><span class="meter ${n >= 50 ? 'hi' : ''}"><i style="width:${n}%"></i></span><span class="score mono">Nota ${n}</span></span>`)(comparaImportado(a).nota)}</div></button>`).join('') || '<div class="wrap note"><span>Nenhuma peça com esses filtros.</span></div>'}</div>
+        ${(n => `<span class="scoreline"><span class="meter ${n >= 50 ? 'hi' : ''}"><i style="width:${n}%"></i></span><span class="score mono">Nota ${n}</span></span>`)(comparaImportado(a).nota)}</div></button></div>`).join('') || '<div class="wrap note"><span>Nenhuma peça com esses filtros.</span></div>'}</div>
     <div class="wrap"><h2 class="section-h">Marcas${FFS.faixa !== 'todas' ? ` · ${esc(FF.faixas[FFS.faixa])}` : ''}</h2>
       <div class="list">${marcasNaFaixa.map(m => `<div class="row"><div class="grow"><span class="t1">${esc(m.nome)} <span class="tag ${m.faixa === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[m.faixa])}</span></span><span class="t2">${esc(m.frase)}${comAchado.has(m.nome) ? '' : ` · nada até ${brl(FF.limite)} agora`}</span></div><a class="btn ghost sm" href="${esc(buscaFF(m))}" target="_blank" rel="noopener">Farfetch ↗</a></div>`).join('')}</div>
     </div>
@@ -816,10 +816,10 @@ function harmonia(base, q) {
 }
 // peças da Farfetch viram "produtos" simples para entrar nos looks (como peça principal ou sugestão)
 let FFPRODS = null;
+const ffKey = a => 'ff:' + (a.url.match(/item-(\d+)/)?.[1] || a.nome);
 function ffProdutos() {
   if (FFPRODS) return FFPRODS; if (!FF) return [];
-  FFPRODS = FF.achados.map((a, i) => ({ key: 'ff:' + i, ffi: i, marca: a.marca, titulo: a.nome, kind: classify({ tipo: '', titulo: a.nome, tags: [] }), imagens: [a.img], ff: true }))
-    .filter(p => p.kind && vagaDe(p.kind));
+  FFPRODS = FF.achados.map((a, i) => ({ key: ffKey(a), ffi: i, marca: a.marca, titulo: a.nome, kind: classify({ tipo: '', titulo: a.nome, tags: [] }) || 'outro', imagens: [a.img], ff: true }));
   return FFPRODS;
 }
 const acharPeca = k => DATA.produtos.find(x => x.key === k) || ffProdutos().find(x => x.key === k);
@@ -964,6 +964,20 @@ function desenharLook() {
     </div>`);
 }
 
+/* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
+function abrirTop10() {
+  const lista = top10(activeBrands());
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top 10 da semana</h1></div></header>
+    <div class="wrap">
+      <p class="section-sub" style="margin-top:12px">As 10 melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. Atualiza a cada rodada do robô (8h e 18h).</p>
+      <div class="list">${lista.map(({ p, e }, i) => `<button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;border-bottom:1px solid var(--border);background:none">
+        <span class="mono" style="font-size:20px;width:28px;flex:none;color:var(--helper)">${i + 1}</span>
+        <span class="thumb"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></span>
+        <span class="grow" style="display:grid;gap:2px"><span class="t2">${esc(p.marca)} · ${esc(e.lojas[0].loja)}</span><span class="t1">${esc(p.titulo)}</span>
+          <span><span class="mono">${brl(e.price)}</span> ${e.de ? `<span class="mono was" style="font-size:12px">${brl(e.de)}</span>` : ''} <span class="tag t-sale">-${Math.round(e.off * 100)}%</span> <span class="mono" style="font-size:12px;color:var(--helper)">nota ${e.score}</span></span></span>
+      </button>`).join('') || '<p class="section-sub">Nenhuma peça com desconto nas suas marcas agora.</p>'}</div>
+    </div>`);
+}
 /* ---------- Simular compra: vale a pena levar agora? ---------- */
 // cores e detalhes do nome servem para achar peças parecidas no visual (não temos como comparar as fotos em si)
 const CORES = [['preto', /pret|black|onyx/], ['branco', /branc|white(?!.*off)/], ['off', /off.?white|bone white|creme|cream|gelo|ecru|natural|areia|sand|bege|beige|nude/],
@@ -1074,7 +1088,7 @@ function viewSalvos() {
     ${simulacaoBloco()}
     ${(() => {
       const ks = [...new Set([...Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k]) => k), ...Object.keys(S.saved)])]
-        .map(k => DATA.produtos.find(x => x.key === k)).filter(p => p && vagaDe(p.kind));
+        .map(k => acharPeca(k)).filter(p => p && vagaDe(p.kind));
       return `<h2 class="section-h">Combinar roupas 👕</h2>
       ${ks.length ? `<p class="section-sub">Toque numa peça curtida ou salva e eu monto um look com ela.</p>
       <div class="vitrine">${ks.map(p => `<button data-look="${esc(p.key)}" aria-label="Combinar ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 300))}" alt=""><span>${esc(KIND_LABEL[p.kind])}</span></button>`).join('')}</div>`
@@ -1093,7 +1107,7 @@ function viewSalvos() {
     <p class="section-sub">Com o alvo em "auto", o aviso chega quando o preço sair do comum: abaixo do preço justo, o menor já visto ou uma queda forte. Se preferir, escreva um valor.</p>
     <div class="list">${rows.join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta ainda. Abra uma peça e toque em 🔔 Alerta.</p>'}</div>
     <h2 class="section-h">Curtidas ♥</h2>
-    ${Object.keys(S.curtidas).length ? `<div class="rec-pics" style="grid-template-columns:repeat(4,1fr)">${Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k, c]) => { const p = DATA.produtos.find(x => x.key === k); return p ? `<button data-open="${esc(k)}" aria-label="${esc(c.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>` : ''; }).join('')}</div>` : '<p class="section-sub">Nada curtido ainda. Toque em ♡ Curti nas peças que combinam com você.</p>'}
+    ${Object.keys(S.curtidas).length ? `<div class="rec-pics" style="grid-template-columns:repeat(4,1fr)">${Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k, c]) => { const p = acharPeca(k); return p ? `<button ${abrirAttr(p)} aria-label="${esc(c.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>` : ''; }).join('')}</div>` : '<p class="section-sub">Nada curtido ainda. Toque em ♡ Curti nas peças que combinam com você.</p>'}
   </div>`;
 }
 
@@ -1335,6 +1349,7 @@ document.addEventListener('click', ev => {
     S.carrinho = { ...S.carrinho, ...Object.fromEntries(ks.map(k => [k, { em: Date.now() }])) }; persist();
     toast(`${ks.length} peças na simulação: veja em Salvos${todas.length > ks.length ? ' (as da Farfetch ficam de fora)' : ''}`);
   }
+  else if (d.top10 !== undefined) abrirTop10();
   else if (d.carrinho) {
     const k = d.carrinho;
     if (S.carrinho[k]) { const c = { ...S.carrinho }; delete c[k]; S.carrinho = c; toast('Saiu da simulação'); }
@@ -1344,12 +1359,12 @@ document.addEventListener('click', ev => {
   }
   else if (d.limparCarrinho !== undefined) { S.carrinho = {}; render(); }
   else if (d.curti) {
-    const k = d.curti, p = DATA.produtos.find(x => x.key === k);
+    const k = d.curti, p = acharPeca(k); if (!p) return;
     if (S.curtidas[k]) { delete S.curtidas[k]; toast('Curtida removida'); }
-    else { const e = evaluate(p); S.curtidas = { ...S.curtidas, [k]: { marca: p.marca, kind: p.kind, titulo: p.titulo, preco: e.ok ? e.price : null, em: Date.now() } }; toast(p.kind === 'outro' ? 'Curtido. Vou trazer mais peças assim.' : `Curtido. Vou trazer mais ${KIND_LABEL[p.kind].toLowerCase()} assim.`); }
+    else { const e = avaliar(p); S.curtidas = { ...S.curtidas, [k]: { marca: p.marca, kind: p.kind, titulo: p.titulo, preco: e.ok ? e.price : null, em: Date.now() } }; toast(p.kind === 'outro' ? 'Curtido. Vou trazer mais peças assim.' : `Curtido. Vou trazer mais ${KIND_LABEL[p.kind].toLowerCase()} assim.`); }
     persist();
     // na tela da peça, redesenha a peça; na lista, só troca o coração (sem reordenar o feed debaixo do dedo)
-    if (!document.getElementById('sheet').hidden) openDetail(k);
+    if (!document.getElementById('sheet').hidden) { const y = document.getElementById('sheet').scrollTop; p.ff ? abrirImportado(p.ffi) : openDetail(k); document.getElementById('sheet').scrollTop = y; }
     else document.querySelectorAll(`.heart[data-curti="${CSS.escape(k)}"]`).forEach(h => { const on = !!S.curtidas[k]; h.classList.toggle('on', on); h.textContent = on ? '♥' : '♡'; h.setAttribute('aria-pressed', on); h.setAttribute('aria-label', on ? 'Remover curtida' : 'Curtir'); });
   }
   else if (d.unsave) { delete S.saved[d.unsave]; render(); }
@@ -1427,11 +1442,19 @@ document.addEventListener('submit', ev => {
 
 aplicarTema();
 prefereClaro?.addEventListener?.('change', () => { if (S.tema === 'auto') aplicarTema(); });
+// links das notificações: #produto=<chave> abre a peça; #top10 abre o Top 10 da semana
+function abrirPorLink() {
+  const m = location.hash.match(/^#produto=(.+)$/);
+  if (m) openDetail(decodeURIComponent(m[1]));
+  else if (location.hash === '#top10') abrirTop10();
+  else return;
+  history.replaceState(null, '', location.pathname);
+}
 load().then(() => {
   render();
   // link de notificação: abre a peça direto
-  const m = location.hash.match(/^#produto=(.+)$/);
-  if (m) { openDetail(decodeURIComponent(m[1])); history.replaceState(null, '', location.pathname); }
+  abrirPorLink();
+  addEventListener('hashchange', abrirPorLink);
 }).catch(err => {
   document.getElementById('app').innerHTML = `<p class="loading">Não consegui carregar os dados (${esc(err.message)}).<br>Rode <code>./atualizar.sh</code> e abra pelo <code>./servidor.sh</code>.</p>`;
 });
