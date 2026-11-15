@@ -181,13 +181,16 @@ function gerarAlertas(cfg, enviados, agora) {
 // Cresce até 15 ou 20 só se as peças a mais também forem excelentes (nota 90+ e 30%+ de desconto).
 // fora: chaves de peças marcadas como "Não curti" (ficam fora e a próxima entra no lugar)
 function top10(ativas, cat, fora) {
+  const ordem = (a, b) => b.e.score - a.e.score || b.e.off - a.e.off;
+  const cands = DATA.produtos.filter(p => ativas.has(p.marca) && (!cat || p.cat === cat) && !(fora && fora.has(p.key))).map(p => ({ p, e: evaluate(p) }))
+    .filter(x => x.e.ok && x.e.off > 0).sort(ordem);
+  // até 2 por marca; se não der 10 (poucas marcas, como em tênis), completa com as próximas melhores das mesmas marcas
   const porMarca = {};
-  const todos = DATA.produtos.filter(p => ativas.has(p.marca) && (!cat || p.cat === cat) && !(fora && fora.has(p.key))).map(p => ({ p, e: evaluate(p) }))
-    .filter(x => x.e.ok && x.e.off > 0).sort((a, b) => b.e.score - a.e.score || b.e.off - a.e.off)
-    .filter(x => (porMarca[x.p.marca] = (porMarca[x.p.marca] || 0) + 1) <= 2);
-  const extra = todos.slice(10, 20).filter(x => x.e.score >= 90 && x.e.off >= 0.3);
-  const n = extra.length >= 10 ? 20 : extra.length >= 5 ? 15 : 10;
-  return [...todos.slice(0, 10), ...extra].slice(0, n);
+  let todos = cands.filter(x => (porMarca[x.p.marca] = (porMarca[x.p.marca] || 0) + 1) <= 2);
+  if (todos.length < 20) { const ja = new Set(todos.map(x => x.p.key)); todos = [...todos, ...cands.filter(x => !ja.has(x.p.key))]; }   // as extras ficam depois, sem passar na frente da variedade
+  // passa de 10 só com peças excelentes (nota 90+ e 30%+ de desconto), até 20
+  const extra = todos.slice(10).filter(x => x.e.score >= 90 && x.e.off >= 0.3).slice(0, 10);
+  return [...todos.slice(0, 10), ...extra];
 }
 // Top separado: Tênis, Roupas e Acessórios, cada um com 10 (até 15 ou 20 se houver mais ofertas excelentes)
 const TOP_CATS = [['Tênis', 'tenis'], ['Roupas', 'roupas'], ['Acessórios', 'acessorios']];

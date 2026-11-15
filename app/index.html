@@ -280,7 +280,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794784953"></script>
+<script src="core.js?v=1794785939"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -1010,7 +1010,7 @@ function abrirTop10(slug = 'tenis') {
   showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top ${lista.length} ${esc(atual.cat)} da semana</h1></div></header>
     <div class="wrap">
       <div class="chips" role="group" aria-label="Categoria" style="margin-top:12px">${tops.map(t => `<button class="chip" data-topcat="${t.slug}" aria-pressed="${t.slug === atual.slug}">${esc(t.cat)} (${t.lista.length})</button>`).join('')}</div>
-      <p class="section-sub">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10 por categoria; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), cresce para 15 ou 20. Atualiza a cada rodada do robô (8h e 18h).</p>
+      <p class="section-sub">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10 por categoria; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), cresce até 20. Tocou em ✕, entra a próxima melhor. Atualiza a cada rodada do robô (8h e 18h).</p>
       <div class="list">${lista.map(({ p, e }, i) => `<div class="top-linha"><button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;background:none">
         <span class="mono" style="font-size:20px;width:28px;flex:none;color:var(--helper)">${i + 1}</span>
         <span class="thumb"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></span>
@@ -1458,8 +1458,10 @@ document.addEventListener('click', ev => {
     // Não curti no Top: esconde, aprende e a próxima melhor oferta entra no lugar
     const p = DATA.produtos.find(x => x.key === d.topfora); if (!p) return;
     S.ocultas = { ...S.ocultas, [d.topfora]: { marca: p.marca, kind: p.kind } }; persist();
+    const antes = document.querySelectorAll('#sheet .top-linha').length;
     const y = document.getElementById('sheet').scrollTop; abrirTop10(d.slug); document.getElementById('sheet').scrollTop = y;
-    toast('Tirei essa e coloquei outra no lugar');
+    const depois = document.querySelectorAll('#sheet .top-linha').length;
+    toast(depois >= antes ? 'Tirei essa e coloquei outra no lugar' : 'Tirei essa. Não há mais ofertas boas para repor nesta categoria agora.');
   }
   else if (d.ocultar) {
     const p = DATA.produtos.find(x => x.key === d.ocultar);
