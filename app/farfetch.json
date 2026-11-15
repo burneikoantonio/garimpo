@@ -1,71 +1,287 @@
 {
-  "escolhidosEm": "2026-11-14",
+  "escolhidosEm": "2026-11-15",
+  "limite": 1500,
+  "faixas": {
+    "acessivel": "Acessível",
+    "premium": "Premium",
+    "luxo": "Luxo e grife"
+  },
   "marcas": [
     {
-      "nome": "Études",
-      "slug": "etudes",
-      "sale": true,
-      "frase": "Streetwear parisiense com pegada artística: estampas, moletons e cortes amplos."
+      "nome": "Abercrombie & Fitch",
+      "faixa": "acessivel",
+      "frase": "Casual americano: moletons, polos e jeans.",
+      "busca": "abercrombie"
     },
     {
-      "nome": "Stüssy",
-      "slug": "stussy",
-      "sale": true,
-      "frase": "Clássico do streetwear californiano desde os anos 80. Camisetas e moletons com o logo icônico."
+      "nome": "Birkenstock",
+      "faixa": "acessivel",
+      "frase": "Sandálias e babuchas alemãs, como a Arizona e a Boston.",
+      "busca": "birkenstock"
     },
     {
-      "nome": "Carhartt WIP",
-      "slug": "carhartt-wip",
-      "sale": true,
-      "frase": "A linha urbana da Carhartt: workwear resistente, calças carpenter e jaquetas."
+      "nome": "Brooksfield",
+      "faixa": "acessivel",
+      "frase": "Brasileira de alfaiataria e casual clássico.",
+      "busca": "brooksfield"
     },
     {
-      "nome": "Represent",
-      "slug": "represent",
-      "sale": true,
-      "frase": "Britânica, streetwear premium com camisetas e moletons pesados."
+      "nome": "Calvin Klein",
+      "faixa": "acessivel",
+      "frase": "Básicos, jeans e cuecas com o logo clássico.",
+      "busca": "calvin klein"
     },
     {
-      "nome": "Our Legacy",
-      "slug": "our-legacy",
-      "sale": true,
-      "frase": "Sueca e minimalista: tecidos excelentes e modelagens soltas."
-    },
-    {
-      "nome": "Stone Island",
-      "slug": "stone-island",
-      "sale": true,
-      "frase": "Italiana, famosa pelos tecidos técnicos e pelo patch de bússola no braço."
-    },
-    {
-      "nome": "Aimé Leon Dore",
-      "slug": "aime-leon-dore",
-      "sale": false,
-      "frase": "Casual de Nova York com cara de clube vintage. Quase nunca entra em sale."
-    },
-    {
-      "nome": "Vision of Super",
-      "slug": "vision-of-super",
-      "sale": true,
-      "frase": "Italiana, streetwear com chamas e estampas pesadas, muito usada por artistas."
-    },
-    {
-      "nome": "Off-White",
-      "slug": "off-white",
-      "sale": true,
-      "frase": "Grife do Virgil Abloh: setas, listras diagonais e logos grandes."
+      "nome": "Citizen",
+      "faixa": "acessivel",
+      "frase": "Relógios japoneses, com destaque para os movidos a luz.",
+      "busca": "citizen"
     },
     {
       "nome": "The North Face",
-      "slug": "the-north-face",
-      "sale": true,
-      "frase": "Outdoor que virou streetwear: jaquetas puffer e corta-ventos."
+      "faixa": "acessivel",
+      "frase": "Outdoor que virou streetwear: jaquetas puffer e corta-ventos.",
+      "busca": "the north face"
+    },
+    {
+      "nome": "A Bathing Ape",
+      "faixa": "premium",
+      "frase": "BAPE: o streetwear japonês do camuflado e do macaco.",
+      "busca": "a bathing ape"
+    },
+    {
+      "nome": "Acne Studios",
+      "faixa": "premium",
+      "frase": "Sueca: jeans, gorros com o rostinho e cortes minimalistas.",
+      "busca": "acne studios"
+    },
+    {
+      "nome": "AMI Paris",
+      "faixa": "premium",
+      "frase": "Parisiense: o coração \"Ami de Coeur\" em malhas e camisetas.",
+      "busca": "ami paris"
+    },
+    {
+      "nome": "Billionaire Boys Club",
+      "faixa": "premium",
+      "frase": "Streetwear de Pharrell, com estampas espaciais.",
+      "busca": "billionaire boys club"
+    },
+    {
+      "nome": "Axel Arigato",
+      "faixa": "premium",
+      "frase": "Tênis e roupas minimalistas suecos.",
+      "busca": "axel arigato"
+    },
+    {
+      "nome": "Carhartt WIP",
+      "faixa": "premium",
+      "frase": "A linha urbana da Carhartt: workwear resistente.",
+      "busca": "carhartt wip"
+    },
+    {
+      "nome": "Emporio Armani",
+      "faixa": "premium",
+      "frase": "A linha mais acessível da Armani: camisetas e polos com logo.",
+      "busca": "emporio armani"
+    },
+    {
+      "nome": "Fear of God Essentials",
+      "faixa": "premium",
+      "frase": "Linha básica da Fear of God: moletons e camisetas oversized.",
+      "busca": "fear of god essentials"
+    },
+    {
+      "nome": "Hide&Jack",
+      "faixa": "premium",
+      "frase": "Italiana de tênis e sapatos em couro.",
+      "busca": "hide&jack"
+    },
+    {
+      "nome": "Our Legacy",
+      "faixa": "premium",
+      "frase": "Sueca e minimalista: tecidos excelentes e modelagens soltas.",
+      "busca": "our legacy"
+    },
+    {
+      "nome": "Pleasures",
+      "faixa": "premium",
+      "frase": "Streetwear de Los Angeles com pegada punk e rock.",
+      "busca": "pleasures"
+    },
+    {
+      "nome": "Ralph Lauren",
+      "faixa": "premium",
+      "frase": "O polo clássico americano.",
+      "busca": "ralph lauren"
+    },
+    {
+      "nome": "Represent",
+      "faixa": "premium",
+      "frase": "Britânica, streetwear premium com moletons pesados.",
+      "busca": "represent"
+    },
+    {
+      "nome": "Stüssy",
+      "faixa": "premium",
+      "frase": "Clássico do streetwear californiano desde os anos 80.",
+      "busca": "stussy"
+    },
+    {
+      "nome": "Études",
+      "faixa": "premium",
+      "frase": "Streetwear parisiense com pegada artística.",
+      "busca": "etudes studio"
+    },
+    {
+      "nome": "Vision of Super",
+      "faixa": "premium",
+      "frase": "Italiana, streetwear com chamas e estampas pesadas.",
+      "busca": "vision of super"
+    },
+    {
+      "nome": "Y-3",
+      "faixa": "premium",
+      "frase": "Linha da Adidas com Yohji Yamamoto: esportivo de grife.",
+      "busca": "y-3"
+    },
+    {
+      "nome": "Willy Chavarria",
+      "faixa": "premium",
+      "frase": "Estilista americano; tem collab com a Adidas.",
+      "busca": "willy chavarria"
+    },
+    {
+      "nome": "Aimé Leon Dore",
+      "faixa": "premium",
+      "frase": "Casual de Nova York com cara de clube vintage.",
+      "busca": "aime leon dore"
+    },
+    {
+      "nome": "Amiri",
+      "faixa": "luxo",
+      "frase": "Grife de Los Angeles: jeans destruídos e estética rock.",
+      "busca": "amiri"
+    },
+    {
+      "nome": "Armani",
+      "faixa": "luxo",
+      "frase": "Giorgio Armani: alfaiataria italiana de luxo.",
+      "busca": "giorgio armani"
+    },
+    {
+      "nome": "Brunello Cucinelli",
+      "faixa": "luxo",
+      "frase": "Luxo italiano em cashmere, discreto e caro.",
+      "busca": "brunello cucinelli"
+    },
+    {
+      "nome": "Burberry",
+      "faixa": "luxo",
+      "frase": "Britânica do xadrez clássico e do trench coat.",
+      "busca": "burberry"
+    },
+    {
+      "nome": "Chrome Hearts",
+      "faixa": "luxo",
+      "frase": "Joias de prata e roupas com cruzes góticas.",
+      "busca": "chrome hearts"
+    },
+    {
+      "nome": "Dolce & Gabbana",
+      "faixa": "luxo",
+      "frase": "Grife italiana de luxo e estampas marcantes.",
+      "busca": "dolce gabbana"
+    },
+    {
+      "nome": "Enfants Riches Déprimés",
+      "faixa": "luxo",
+      "frase": "Grife punk de Los Angeles, peças raras e caras.",
+      "busca": "enfants riches deprimes"
+    },
+    {
+      "nome": "Fear of God",
+      "faixa": "luxo",
+      "frase": "Linha principal de Jerry Lorenzo: luxo relaxado.",
+      "busca": "fear of god"
+    },
+    {
+      "nome": "Ferragamo",
+      "faixa": "luxo",
+      "frase": "Italiana de sapatos, cintos e gravatas de seda.",
+      "busca": "ferragamo"
+    },
+    {
+      "nome": "Givenchy",
+      "faixa": "luxo",
+      "frase": "Maison francesa com linha masculina streetwear de luxo.",
+      "busca": "givenchy"
+    },
+    {
+      "nome": "Golden Goose",
+      "faixa": "luxo",
+      "frase": "Tênis italianos com efeito \"gasto\" e a estrela.",
+      "busca": "golden goose"
+    },
+    {
+      "nome": "Jacob Cohën",
+      "faixa": "luxo",
+      "frase": "Jeans italiano de luxo.",
+      "busca": "jacob cohen"
+    },
+    {
+      "nome": "Lemaire",
+      "faixa": "luxo",
+      "frase": "Francesa, minimalismo de luxo com cortes fluidos.",
+      "busca": "lemaire"
+    },
+    {
+      "nome": "Maison Margiela",
+      "faixa": "luxo",
+      "frase": "Vanguarda francesa: as quatro costuras e o Tabi.",
+      "busca": "maison margiela"
+    },
+    {
+      "nome": "Moncler",
+      "faixa": "luxo",
+      "frase": "Jaquetas puffer de luxo, da França e Itália.",
+      "busca": "moncler"
+    },
+    {
+      "nome": "Montblanc",
+      "faixa": "luxo",
+      "frase": "Canetas, carteiras e relógios de luxo.",
+      "busca": "montblanc"
+    },
+    {
+      "nome": "Off-White",
+      "faixa": "luxo",
+      "frase": "Grife do Virgil Abloh: setas e listras diagonais.",
+      "busca": "off-white"
+    },
+    {
+      "nome": "Palm Angels",
+      "faixa": "luxo",
+      "frase": "Streetwear de luxo italiano com pegada de skate.",
+      "busca": "palm angels"
+    },
+    {
+      "nome": "Rhude",
+      "faixa": "luxo",
+      "frase": "Streetwear de luxo de Los Angeles.",
+      "busca": "rhude"
+    },
+    {
+      "nome": "Stone Island",
+      "faixa": "luxo",
+      "frase": "Italiana dos tecidos técnicos e do patch de bússola.",
+      "busca": "stone island"
     }
   ],
   "achados": [
     {
       "marca": "Études",
-      "nome": "Moletom com capuz paint-splatter",
+      "nome": "Études Studio paint-splatter hoodie",
       "de": 2166,
       "por": 431,
       "off": 70,
@@ -75,17 +291,17 @@
     },
     {
       "marca": "Études",
-      "nome": "Calça de moletom Sky com friso",
+      "nome": "Études Studio Sky contrast-piping track pants",
       "de": 2389,
       "por": 497,
       "off": 70,
-      "tam": "XXS a XL",
+      "tam": "XXS, XS, S, M, L, XL",
       "url": "https://www.farfetch.com/br/shopping/men/etudes-studio-sky-contrast-piping-track-pants-item-39001644.aspx",
       "img": "https://cdn-images.farfetch-contents.com/39/00/16/44/39001644_98435133_480.jpg"
     },
     {
       "marca": "Études",
-      "nome": "Calça de moletom com listra lateral",
+      "nome": "Études Studio side-stripe track pants",
       "de": 2389,
       "por": 497,
       "off": 70,
@@ -95,17 +311,17 @@
     },
     {
       "marca": "Represent",
-      "nome": "Camiseta British Cowboys",
+      "nome": "Represent British Cowboys T-shirt",
       "de": 2043,
       "por": 789,
       "off": 60,
-      "tam": "XS a XXL",
+      "tam": "XS, S, M, L, XL, XXL",
       "url": "https://www.farfetch.com/br/shopping/men/represent-british-cowboys-t-shirt-item-34324031.aspx",
       "img": "https://cdn-images.farfetch-contents.com/34/32/40/31/34324031_95003605_480.jpg"
     },
     {
       "marca": "Vision of Super",
-      "nome": "Jaqueta acolchoada com capuz",
+      "nome": "Vision Of Super hooded padded jacket",
       "de": 3416,
       "por": 1465,
       "off": 55,
@@ -115,77 +331,87 @@
     },
     {
       "marca": "Represent",
-      "nome": "Moletom British Cowboys",
+      "nome": "Represent British Cowboys hoodie",
       "de": 3089,
       "por": 1446,
       "off": 50,
-      "tam": "XS a XXL",
+      "tam": "XS, S, M, L, XL, XXL",
       "url": "https://www.farfetch.com/br/shopping/men/represent-british-cowboys-hoodie-item-34234100.aspx",
       "img": "https://cdn-images.farfetch-contents.com/34/23/41/00/34234100_98196960_480.jpg"
     },
     {
-      "marca": "Off-White",
-      "nome": "Camiseta com logo",
-      "de": 4276,
-      "por": 1950,
-      "off": 50,
-      "tam": "XS a XXL",
-      "url": "https://www.farfetch.com/br/shopping/men/off-white-logo-print-t-shirt-item-37354127.aspx",
-      "img": "https://cdn-images.farfetch-contents.com/37/35/41/27/37354127_96438283_480.jpg"
-    },
-    {
       "marca": "Carhartt WIP",
-      "nome": "Camisa listrada Kanan",
+      "nome": "Carhartt WIP Kanan stripe shirt",
       "de": 1332,
       "por": 675,
       "off": 45,
-      "tam": "S a XXL",
+      "tam": "S, M, L, XL, XXL",
       "url": "https://www.farfetch.com/br/shopping/men/carhartt-wip-kanan-stripe-shirt-item-36909393.aspx",
       "img": "https://cdn-images.farfetch-contents.com/36/90/93/93/36909393_96078398_480.jpg"
     },
     {
       "marca": "Represent",
-      "nome": "Camiseta Owners Club",
+      "nome": "Represent Owners Club T-shirt",
       "de": 1424,
       "por": 750,
       "off": 45,
-      "tam": "XS a XXL",
+      "tam": "XS, S, M, L, XL, XXL",
       "url": "https://www.farfetch.com/br/shopping/men/represent-owners-club-t-shirt-item-36544872.aspx",
       "img": "https://cdn-images.farfetch-contents.com/36/54/48/72/36544872_84756845_480.jpg"
     },
     {
-      "marca": "Off-White",
-      "nome": "Moletom com logo bordado",
-      "de": 9985,
-      "por": 5403,
-      "off": 45,
-      "tam": "M",
-      "url": "https://www.farfetch.com/br/shopping/men/off-white-logo-embroidered-cotton-hoodie-item-39480882.aspx",
-      "img": "https://cdn-images.farfetch-contents.com/39/48/08/82/39480882_97622489_480.jpg"
+      "marca": "Acne Studios",
+      "nome": "Acne Studios River slim-fit jeans",
+      "de": 2522,
+      "por": 1392,
+      "off": 40,
+      "tam": "XS",
+      "url": "https://www.farfetch.com/br/shopping/men/acne-studios-river-slim-fit-jeans-item-15501791.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/15/50/17/91/15501791_27861784_480.jpg"
     },
     {
-      "marca": "Stone Island",
-      "nome": "Overshirt ripstop de algodão orgânico",
-      "de": 6129,
-      "por": 3599,
-      "off": 40,
-      "tam": "S a XXL",
-      "url": "https://www.farfetch.com/br/shopping/men/stone-island-1200005-mercerised-organic-cotton-ripstop-overshirt-item-33392566.aspx",
-      "img": "https://cdn-images.farfetch-contents.com/33/39/25/66/33392566_76194207_480.jpg"
+      "marca": "Emporio Armani",
+      "nome": "Emporio Armani logo-embroidered T-shirt",
+      "de": 1099,
+      "por": 676,
+      "off": 35,
+      "tam": "S, M, L, XL, XXL, 3XL",
+      "url": "https://www.farfetch.com/br/shopping/men/emporio-armani-logo-embroidered-t-shirt-item-37590418.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/59/04/18/37590418_70332746_480.jpg"
     },
     {
-      "marca": "The North Face",
-      "nome": "Calça Chakal",
-      "de": 3277,
-      "por": 1957,
-      "off": 40,
-      "tam": "M",
-      "url": "https://www.farfetch.com/br/shopping/men/the-north-face-chakal-trousers-item-40247478.aspx",
-      "img": "https://cdn-images.farfetch-contents.com/40/24/74/78/40247478_97974126_480.jpg"
+      "marca": "Emporio Armani",
+      "nome": "Emporio Armani slim fit T-shirts",
+      "de": 1462,
+      "por": 882,
+      "off": 35,
+      "tam": "M, L, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/emporio-armani-slim-fit-t-shirts-item-38391488.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/38/39/14/88/38391488_71546682_480.jpg"
+    },
+    {
+      "marca": "Emporio Armani",
+      "nome": "Emporio Armani heavy-jersey logo T-shirt",
+      "de": 1546,
+      "por": 953,
+      "off": 35,
+      "tam": "S, XL, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/emporio-armani-heavy-jersey-t-shirt-with-embroidered-logo-item-37802652.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/80/26/52/37802652_71106655_480.jpg"
+    },
+    {
+      "marca": "Emporio Armani",
+      "nome": "Emporio Armani lyocell polo shirt",
+      "de": 2043,
+      "por": 1281,
+      "off": 35,
+      "tam": "S, M, XXL, 3XL",
+      "url": "https://www.farfetch.com/br/shopping/men/emporio-armani-polo-shirt-in-lyocell-blend-with-all-over-logo-item-37678789.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/67/87/89/37678789_72606436_480.jpg"
     },
     {
       "marca": "Stüssy",
-      "nome": "Camisa polo de algodão",
+      "nome": "Stüssy cotton polo shirt",
       "de": 1288,
       "por": 810,
       "off": 30,
@@ -194,14 +420,514 @@
       "img": "https://cdn-images.farfetch-contents.com/30/38/61/60/30386160_75830476_480.jpg"
     },
     {
-      "marca": "The North Face",
-      "nome": "Jaqueta Mountain Range com capuz",
-      "de": 4602,
-      "por": 3066,
-      "off": 30,
-      "tam": "S a XXL",
-      "url": "https://www.farfetch.com/br/shopping/men/the-north-face-mountain-range-hooded-zip-jacket-item-32298128.aspx",
-      "img": "https://cdn-images.farfetch-contents.com/32/29/81/28/32298128_93874751_480.jpg"
+      "marca": "Carhartt WIP",
+      "nome": "Carhartt WIP Short Watch hat",
+      "de": null,
+      "por": 140,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/carhartt-wip-short-watch-hat-item-37454153.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/45/41/53/37454153_70229719_480.jpg"
+    },
+    {
+      "marca": "Carhartt WIP",
+      "nome": "Carhartt WIP Chase T-shirt",
+      "de": null,
+      "por": 258,
+      "off": 0,
+      "tam": "L, XL",
+      "url": "https://www.farfetch.com/br/shopping/men/carhartt-wip-chase-t-shirt-item-40993743.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/40/99/37/43/40993743_98638006_480.jpg"
+    },
+    {
+      "marca": "Carhartt WIP",
+      "nome": "Carhartt WIP S/S pocket T-Shirt",
+      "de": null,
+      "por": 454,
+      "off": 0,
+      "tam": "S, L",
+      "url": "https://www.farfetch.com/br/shopping/men/carhartt-wip-ss-pocket-t-shirt-item-37636469.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/63/64/69/37636469_70472197_480.jpg"
+    },
+    {
+      "marca": "Pleasures",
+      "nome": "Pleasures Stage Dive T-shirt",
+      "de": null,
+      "por": 500,
+      "off": 0,
+      "tam": "S, M, L, XL, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/pleasures-stage-dive-t-shirt-item-39863309.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/39/86/33/09/39863309_76744563_480.jpg"
+    },
+    {
+      "marca": "Pleasures",
+      "nome": "Pleasures Recluse logo-print T-shirt",
+      "de": null,
+      "por": 500,
+      "off": 0,
+      "tam": "S, M, L, XL, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/pleasures-recluse-logo-print-t-shirt-item-39783439.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/39/78/34/39/39783439_73437187_480.jpg"
+    },
+    {
+      "marca": "Calvin Klein",
+      "nome": "Calvin Klein striped logo beach shorts",
+      "de": null,
+      "por": 634,
+      "off": 0,
+      "tam": "XL",
+      "url": "https://www.farfetch.com/br/shopping/men/calvin-klein-striped-logo-beach-shorts-item-34937606.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/34/93/76/06/34937606_66745234_480.jpg"
+    },
+    {
+      "marca": "Palm Angels",
+      "nome": "Palm Angels logo-embroidered beanie hat",
+      "de": null,
+      "por": 634,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/palm-angels-logo-embroidered-beanie-hat-item-40469575.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/40/46/95/75/40469575_98460039_480.jpg"
+    },
+    {
+      "marca": "Billionaire Boys Club",
+      "nome": "Billionaire Boys Club graphic-print T-shirt",
+      "de": null,
+      "por": 638,
+      "off": 0,
+      "tam": "S, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/billionaire-boys-club-graphic-print-t-shirt-item-36985959.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/36/98/59/59/36985959_69704675_480.jpg"
+    },
+    {
+      "marca": "Pleasures",
+      "nome": "Pleasures graphic-print T-shirt",
+      "de": null,
+      "por": 675,
+      "off": 0,
+      "tam": "S, M, L, XL, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/pleasures-graphic-print-t-shirt-item-39782639.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/39/78/26/39/39782639_73419046_480.jpg"
+    },
+    {
+      "marca": "Calvin Klein",
+      "nome": "Calvin Klein square-frame sunglasses",
+      "de": null,
+      "por": 739,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/calvin-klein-square-frame-sunglasses-item-36862926.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/36/86/29/26/36862926_69762361_480.jpg"
+    },
+    {
+      "marca": "Axel Arigato",
+      "nome": "Axel Arigato Arigato Stitch cap",
+      "de": null,
+      "por": 772,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/axel-arigato-arigato-stitch-cap-item-37355999.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/35/59/99/37355999_70159826_480.jpg"
+    },
+    {
+      "marca": "Études",
+      "nome": "Études Studio Wonder Accent T-shirt",
+      "de": null,
+      "por": 773,
+      "off": 0,
+      "tam": "S, M, L, XL",
+      "url": "https://www.farfetch.com/br/shopping/men/etudes-studio-studio-wonder-accent-t-shirt-item-37814023.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/81/40/23/37814023_70798861_480.jpg"
+    },
+    {
+      "marca": "Off-White",
+      "nome": "Off-White xL/AB Diagonal oversized T-shirt",
+      "de": null,
+      "por": 781,
+      "off": 0,
+      "tam": "S, M, L, XL",
+      "url": "https://www.farfetch.com/br/shopping/men/off-white-xlab-diagonal-oversized-t-shirt-item-39645147.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/39/64/51/47/39645147_73169756_480.jpg"
+    },
+    {
+      "marca": "Fear of God",
+      "nome": "FEAR OF GOD ESSENTIALS Cut Off 90s T-shirt",
+      "de": null,
+      "por": 795,
+      "off": 0,
+      "tam": "M, L, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/fear-of-god-essentials-cut-off-90s-t-shirt-item-37408388.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/40/83/88/37408388_70138073_480.jpg"
+    },
+    {
+      "marca": "Axel Arigato",
+      "nome": "Axel Arigato NYC embroidered T-shirt",
+      "de": null,
+      "por": 833,
+      "off": 0,
+      "tam": "XS, S, M, L, XL",
+      "url": "https://www.farfetch.com/br/shopping/men/axel-arigato-nyc-embroidered-t-shirt-item-36222176.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/36/22/21/76/36222176_68011629_480.jpg"
+    },
+    {
+      "marca": "Amiri",
+      "nome": "AMIRI 1994 canvas tote bag",
+      "de": null,
+      "por": 844,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/amiri-1994-canvas-tote-bag-item-36515432.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/36/51/54/32/36515432_76560221_480.jpg"
+    },
+    {
+      "marca": "Our Legacy",
+      "nome": "OUR LEGACY boxy-fit T-shirt",
+      "de": null,
+      "por": 863,
+      "off": 0,
+      "tam": "XS, S, M, L, XL, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/our-legacy-boxy-fit-t-shirt-item-17592274.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/17/59/22/74/17592274_72044105_480.jpg"
+    },
+    {
+      "marca": "Palm Angels",
+      "nome": "Palm Angels logo-embroidered baseball cap",
+      "de": null,
+      "por": 863,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/palm-angels-logo-embroidered-baseball-cap-item-40470120.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/40/47/01/20/40470120_98459911_480.jpg"
+    },
+    {
+      "marca": "Lemaire",
+      "nome": "LEMAIRE round-neck tank top",
+      "de": null,
+      "por": 919,
+      "off": 0,
+      "tam": "S, M, L, XL",
+      "url": "https://www.farfetch.com/br/shopping/men/lemaire-round-neck-tank-top-item-33284735.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/33/28/47/35/33284735_64084368_480.jpg"
+    },
+    {
+      "marca": "Ralph Lauren",
+      "nome": "Polo Ralph Lauren embroidered logo polo shirt",
+      "de": null,
+      "por": 921,
+      "off": 0,
+      "tam": "XL",
+      "url": "https://www.farfetch.com/br/shopping/men/polo-ralph-lauren-embroidered-logo-polo-shirt-item-14954397.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/14/95/43/97/14954397_24628073_480.jpg"
+    },
+    {
+      "marca": "Ralph Lauren",
+      "nome": "Polo Ralph Lauren corduroy ball cap",
+      "de": null,
+      "por": 948,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/polo-ralph-lauren-corduroy-ball-cap-item-34946599.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/34/94/65/99/34946599_69369047_480.jpg"
+    },
+    {
+      "marca": "Birkenstock",
+      "nome": "Birkenstock Arizona sandals",
+      "de": null,
+      "por": 967,
+      "off": 0,
+      "tam": "",
+      "url": "https://www.farfetch.com/br/shopping/men/birkenstock-arizona-sandals-item-24579361.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/24/57/93/61/24579361_55072055_480.jpg"
+    },
+    {
+      "marca": "Represent",
+      "nome": "Represent Team 247 oversized T-shirt",
+      "de": null,
+      "por": 1000,
+      "off": 0,
+      "tam": "S, M, L, XL",
+      "url": "https://www.farfetch.com/br/shopping/men/represent-team-247-oversized-t-shirt-item-33378573.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/33/37/85/73/33378573_72603763_480.jpg"
+    },
+    {
+      "marca": "Billionaire Boys Club",
+      "nome": "Billionaire Boys Club logo-print T-shirt",
+      "de": null,
+      "por": 1028,
+      "off": 0,
+      "tam": "XL, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/billionaire-boys-club-logo-print-t-shirt-item-40559720.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/40/55/97/20/40559720_76964335_480.jpg"
+    },
+    {
+      "marca": "Acne Studios",
+      "nome": "Acne Studios Face logo beanie",
+      "de": null,
+      "por": 1034,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/acne-studios-face-logo-beanie-yak-item-33756410.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/33/75/64/10/33756410_64587863_480.jpg"
+    },
+    {
+      "marca": "Billionaire Boys Club",
+      "nome": "Billionaire Boys Club fuzzy crew-neck sweater",
+      "de": null,
+      "por": 1063,
+      "off": 0,
+      "tam": "XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/billionaire-boys-club-fuzzy-crew-neck-sweater-item-39943098.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/39/94/30/98/39943098_74017382_480.jpg"
+    },
+    {
+      "marca": "Birkenstock",
+      "nome": "Birkenstock Arizona two-strap sandals",
+      "de": null,
+      "por": 1080,
+      "off": 0,
+      "tam": "",
+      "url": "https://www.farfetch.com/br/shopping/men/birkenstock-arizona-two-strap-sandals-item-15622629.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/15/62/26/29/15622629_28225472_480.jpg"
+    },
+    {
+      "marca": "Axel Arigato",
+      "nome": "Axel Arigato logo-embroidered T-shirt",
+      "de": null,
+      "por": 1085,
+      "off": 0,
+      "tam": "XS, S, M, L, XL",
+      "url": "https://www.farfetch.com/br/shopping/men/axel-arigato-logo-embroidered-t-shirt-item-36220861.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/36/22/08/61/36220861_68011638_480.jpg"
+    },
+    {
+      "marca": "Billionaire Boys Club",
+      "nome": "Billionaire Boys Club embroidered snapback cap",
+      "de": null,
+      "por": 1098,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/billionaire-boys-club-embroidered-snapback-cap-item-40479004.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/40/47/90/04/40479004_77113476_480.jpg"
+    },
+    {
+      "marca": "Rhude",
+      "nome": "RHUDE logo-print twill baseball cap",
+      "de": null,
+      "por": 1121,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/rhude-logo-print-twill-baseball-cap-item-40930343.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/40/93/03/43/40930343_98746166_480.jpg"
+    },
+    {
+      "marca": "Our Legacy",
+      "nome": "OUR LEGACY beanie hat",
+      "de": null,
+      "por": 1150,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/our-legacy-beanie-hat-item-35080470.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/35/08/04/70/35080470_71849128_480.jpg"
+    },
+    {
+      "marca": "A Bathing Ape",
+      "nome": "A BATHING APE® round-neck short-sleeve T-shirt",
+      "de": null,
+      "por": 1153,
+      "off": 0,
+      "tam": "S, M, L, XL",
+      "url": "https://www.farfetch.com/br/shopping/men/a-bathing-ape-round-neck-short-sleeve-t-shirt-item-39916938.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/39/91/69/38/39916938_77030349_480.jpg"
+    },
+    {
+      "marca": "Fear of God",
+      "nome": "FEAR OF GOD ESSENTIALS front-logo technical track pants",
+      "de": null,
+      "por": 1177,
+      "off": 0,
+      "tam": "XXS, XS",
+      "url": "https://www.farfetch.com/br/shopping/men/fear-of-god-essentials-front-logo-techical-track-pants-item-18675018.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/18/67/50/18/18675018_40701577_480.jpg"
+    },
+    {
+      "marca": "Rhude",
+      "nome": "RHUDE printed shirt",
+      "de": null,
+      "por": 1194,
+      "off": 0,
+      "tam": "S, M, L",
+      "url": "https://www.farfetch.com/br/shopping/men/rhude-printed-shirt-item-33741269.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/33/74/12/69/33741269_64568320_480.jpg"
+    },
+    {
+      "marca": "Birkenstock",
+      "nome": "Birkenstock Arizona leather sandals",
+      "de": null,
+      "por": 1205,
+      "off": 0,
+      "tam": "",
+      "url": "https://www.farfetch.com/br/shopping/men/birkenstock-arizona-leather-sandals-item-22591619.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/22/59/16/19/22591619_52615727_480.jpg"
+    },
+    {
+      "marca": "Maison Margiela",
+      "nome": "MM6 Maison Margiela crew-neck T-shirt",
+      "de": null,
+      "por": 1216,
+      "off": 0,
+      "tam": "S, M, L",
+      "url": "https://www.farfetch.com/br/shopping/men/mm6-maison-margiela-crew-neck-t-shirt-item-38685545.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/38/68/55/45/38685545_72267766_480.jpg"
+    },
+    {
+      "marca": "Maison Margiela",
+      "nome": "MM6 Maison Margiela short-sleeves T-shirt",
+      "de": null,
+      "por": 1216,
+      "off": 0,
+      "tam": "S, M, L",
+      "url": "https://www.farfetch.com/br/shopping/men/mm6-maison-margiela-short-sleeves-t-shirt-item-38685517.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/38/68/55/17/38685517_71911489_480.jpg"
+    },
+    {
+      "marca": "Fear of God",
+      "nome": "Fear Of God long-sleeve sweater",
+      "de": null,
+      "por": 1246,
+      "off": 0,
+      "tam": "S, M",
+      "url": "https://www.farfetch.com/br/shopping/men/fear-of-god-long-sleeve-sweater-item-32388278.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/32/38/82/78/32388278_63425579_480.jpg"
+    },
+    {
+      "marca": "AMI Paris",
+      "nome": "AMI Paris Ami De Coeur wool beanie",
+      "de": null,
+      "por": 1274,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/ami-paris-ami-de-coeur-wool-beanie-item-30651147.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/30/65/11/47/30651147_67066024_480.jpg"
+    },
+    {
+      "marca": "Burberry",
+      "nome": "Burberry Eyewear Icon Stripe sunglasses",
+      "de": null,
+      "por": 1290,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/burberry-eyewear-icon-stripe-sunglasses-item-16734139.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/16/73/41/39/16734139_33058304_480.jpg"
+    },
+    {
+      "marca": "Burberry",
+      "nome": "Burberry Eyewear vintage check square sunglasses",
+      "de": null,
+      "por": 1290,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/burberry-eyewear-vintage-check-detail-square-frame-sunglasses-item-14201309.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/14/20/13/09/14201309_20027516_480.jpg"
+    },
+    {
+      "marca": "Off-White",
+      "nome": "Off-White Arrows baseball cap",
+      "de": null,
+      "por": 1296,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/off-white-arrows-baseball-cap-item-39936210.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/39/93/62/10/39936210_99307137_480.jpg"
+    },
+    {
+      "marca": "Golden Goose",
+      "nome": "Golden Goose star-patch T-shirt",
+      "de": null,
+      "por": 1300,
+      "off": 0,
+      "tam": "S, M, L, XL, XXL",
+      "url": "https://www.farfetch.com/br/shopping/men/golden-goose-star-patch-t-shirt-item-19533385.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/19/53/33/85/19533385_43620264_480.jpg"
+    },
+    {
+      "marca": "Hide&Jack",
+      "nome": "Hide&Jack Ciock shearling loafers",
+      "de": null,
+      "por": 1320,
+      "off": 0,
+      "tam": "",
+      "url": "https://www.farfetch.com/br/shopping/men/hidejack-ciock-buckle-fastening-shearling-loafers-item-37632626.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/63/26/26/37632626_73965413_480.jpg"
+    },
+    {
+      "marca": "A Bathing Ape",
+      "nome": "A BATHING APE® Ape Head logo-embroidered baseball cap",
+      "de": null,
+      "por": 1336,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/a-bathing-ape-ape-head-logo-embroidered-baseball-cap-item-35201870.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/35/20/18/70/35201870_68901514_480.jpg"
+    },
+    {
+      "marca": "AMI Paris",
+      "nome": "AMI Paris Ami de Coeur ribbed-knit beanie hat",
+      "de": null,
+      "por": 1358,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/ami-paris-ami-de-coeur-ribbed-knit-beanie-hat-item-36289690.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/36/28/96/90/36289690_73191864_480.jpg"
+    },
+    {
+      "marca": "Hide&Jack",
+      "nome": "Hide&Jack Running 2000 panelled sneakers",
+      "de": null,
+      "por": 1366,
+      "off": 0,
+      "tam": "",
+      "url": "https://www.farfetch.com/br/shopping/men/hidejack-running-2000-panelled-sneakers-item-37632622.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/37/63/26/22/37632622_73961066_480.jpg"
+    },
+    {
+      "marca": "Brooksfield",
+      "nome": "BROOKSFIELD braided suede belt",
+      "de": null,
+      "por": 1399,
+      "off": 0,
+      "tam": "L",
+      "url": "https://www.farfetch.com/br/shopping/men/brooksfield-braided-suede-belt-item-36824973.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/36/82/49/73/36824973_69112025_480.jpg"
+    },
+    {
+      "marca": "Rhude",
+      "nome": "RHUDE sherpa runner hi-tops sneakers",
+      "de": null,
+      "por": 1399,
+      "off": 0,
+      "tam": "",
+      "url": "https://www.farfetch.com/br/shopping/men/rhude-sherpa-runner-hi-tops-sneakers-item-33152665.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/33/15/26/65/33152665_63930234_480.jpg"
+    },
+    {
+      "marca": "Moncler",
+      "nome": "Moncler embroidered-logo hoodie",
+      "de": null,
+      "por": 1433,
+      "off": 0,
+      "tam": "XS, S",
+      "url": "https://www.farfetch.com/br/shopping/men/moncler-embroidered-logo-hoodie-item-40377454.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/40/37/74/54/40377454_76580152_480.jpg"
+    },
+    {
+      "marca": "A Bathing Ape",
+      "nome": "A BATHING APE® ABC Camo knit beanie hat",
+      "de": null,
+      "por": 1479,
+      "off": 0,
+      "tam": "OS",
+      "url": "https://www.farfetch.com/br/shopping/men/a-bathing-ape-abc-camo-knit-beanie-hat-item-41101367.aspx",
+      "img": "https://cdn-images.farfetch-contents.com/41/10/13/67/41101367_99018622_480.jpg"
     }
   ]
 }

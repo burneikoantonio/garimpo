@@ -225,7 +225,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794759486"></script>
+<script src="core.js?v=1794761497"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -512,22 +512,40 @@ function cardMarca(m) {
 
 /* ---------- Aba Farfetch: marcas e achados escolhidos à mão (o robô não consegue ler a Farfetch) ---------- */
 let FF = null, SX = null;
+// filtros da aba Importados (não ficam salvos)
+const FFS = { faixa: 'todas', tipo: 'Tudo', marca: 'Todas', max: 1500, sale: false, ordem: 'desconto' };
+const tipoImportado = nome => /sneaker|sandal|loafer|boot|trainer|slide|mule/i.test(nome) ? 'Calçados' : /cap\b|beanie|hat\b|sunglasses|belt|bag|wallet|scarf/i.test(nome) ? 'Acessórios' : 'Roupas';
 function viewFarfetch() {
-  if (!FF) return header('Farfetch') + '<div class="wrap note"><span>Não consegui carregar os achados da Farfetch.</span></div>';
-  const ff = (slug, sale) => `https://www.farfetch.com/br/shopping/men/${sale ? 'sale/' : ''}${slug}/items.aspx`;
+  if (!FF) return header('Importados') + '<div class="wrap note"><span>Não consegui carregar os importados.</span></div>';
   const quando = FF.escolhidosEm.split('-').reverse().slice(0, 2).join('/');
+  const faixaDe = Object.fromEntries(FF.marcas.map(m => [m.nome, m.faixa]));
+  const buscaFF = m => `https://www.farfetch.com/br/shopping/men/search/items.aspx?q=${encodeURIComponent(m.busca)}&price=0-${FF.limite}`;
+  const marcasNaFaixa = FF.marcas.filter(m => FFS.faixa === 'todas' || m.faixa === FFS.faixa);
+  let achados = FF.achados.filter(a => a.por <= FFS.max && (FFS.faixa === 'todas' || faixaDe[a.marca] === FFS.faixa)
+    && (FFS.tipo === 'Tudo' || tipoImportado(a.nome) === FFS.tipo) && (FFS.marca === 'Todas' || a.marca === FFS.marca) && (!FFS.sale || a.off > 0));
+  achados = [...achados].sort({ desconto: (a, b) => b.off - a.off || a.por - b.por, menor: (a, b) => a.por - b.por, maior: (a, b) => b.por - a.por }[FFS.ordem]);
+  const comAchado = new Set(FF.achados.map(a => a.marca));
+  const chip = (attr, val, atual, rot) => `<button class="chip" data-${attr}="${esc(val)}" aria-pressed="${atual === val}">${esc(rot)}</button>`;
   return header('Importados') + `
-    <div class="wrap"><div class="notice" style="margin-top:16px"><span>Achados escolhidos por mim em <b>${esc(quando)}</b>. O robô não consegue acompanhar a Farfetch nem a StockX, então preço e estoque podem ter mudado. Para eu olhar de novo, peça: <b>"atualiza os importados"</b>.</span></div>
-    <h2 class="section-h">Farfetch: achados com bom desconto</h2>
-    <p class="section-sub">Preços em reais na Farfetch Brasil</p></div>
-    <div class="grid">${FF.achados.map(a => `<a class="tile" href="${esc(a.url)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
-      <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags"><span class="tag t-sale">-${a.off}%</span></div></div>
+    <div class="wrap">
+      <div class="notice" style="margin-top:16px"><span>Peças da Farfetch Brasil, em reais, <b>até ${brl(FF.limite)}</b>, escolhidas por mim em <b>${esc(quando)}</b>. O robô não consegue acompanhar a Farfetch, então preço e estoque podem mudar. Para eu olhar de novo, peça <b>"atualiza os importados"</b>.</span></div>
+      <div class="chips" role="group" aria-label="Faixa" style="margin-top:12px">${chip('fffaixa', 'todas', FFS.faixa, 'Todas')}${Object.entries(FF.faixas).map(([k, v]) => chip('fffaixa', k, FFS.faixa, v)).join('')}</div>
+      <div class="chips" role="group" aria-label="Tipo">${['Tudo', 'Roupas', 'Calçados', 'Acessórios'].map(t => chip('fftipo', t, FFS.tipo, t)).join('')}</div>
+      <div class="field-row">
+        <div class="field"><label for="ffMarca">Marca</label><select id="ffMarca">${['Todas', ...[...comAchado].sort()].map(m => `<option ${m === FFS.marca ? 'selected' : ''}>${esc(m)}</option>`).join('')}</select></div>
+        <div class="field"><label for="ffOrdem">Ordenar</label><select id="ffOrdem">${Object.entries({ desconto: 'Maior desconto', menor: 'Menor preço', maior: 'Maior preço' }).map(([k, v]) => `<option value="${k}" ${FFS.ordem === k ? 'selected' : ''}>${v}</option>`).join('')}</select></div>
+      </div>
+      <div class="field"><div class="range-val"><label for="ffMax">Preço até</label><span class="mono lbl">${brl(FFS.max)}</span></div><input id="ffMax" type="range" min="100" max="${FF.limite}" step="50" value="${FFS.max}"></div>
+      <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-ffsale aria-checked="${FFS.sale}" aria-label="Só peças com desconto"></button></div>
+      <p class="section-sub" style="margin:12px 0">${achados.length} ${achados.length === 1 ? 'peça' : 'peças'}</p>
+    </div>
+    <div class="grid">${achados.map(a => `<a class="tile" href="${esc(a.url)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+      <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags">${a.off ? `<span class="tag t-sale">-${a.off}%</span>` : ''}<span class="tag ${faixaDe[a.marca] === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[faixaDe[a.marca]] || '')}</span></div></div>
       <div class="body"><span class="brand">${esc(a.marca)} · Farfetch</span><span class="pname">${esc(a.nome)}</span>
-        <span class="prices"><span class="was mono">${brl(a.de)}</span><span class="now mono">${brl(a.por)}</span></span>
-        <span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">Tamanhos: ${esc(a.tam)}</span></div></a>`).join('')}</div>
-    <div class="wrap"><h2 class="section-h">Marcas na Farfetch</h2>
-      ${FF.marcas.map(m => `<div class="rec"><div class="rec-top"><div class="grow"><span class="rec-name">${esc(m.nome)}</span><span class="rec-why">${esc(m.frase)}</span></div></div>
-        <div class="rec-links">${m.sale ? `<a href="${esc(ff(m.slug, true))}" target="_blank" rel="noopener">Ver sale ↗</a>` : ''}<a href="${esc(ff(m.slug))}" target="_blank" rel="noopener">Ver novidades ↗</a></div></div>`).join('')}
+        <span class="prices">${a.de ? `<span class="was mono">${brl(a.de)}</span>` : ''}<span class="now mono">${brl(a.por)}</span></span>
+        ${a.tam ? `<span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">Tamanhos: ${esc(a.tam)}</span>` : ''}</div></a>`).join('') || '<div class="wrap note"><span>Nenhuma peça com esses filtros.</span></div>'}</div>
+    <div class="wrap"><h2 class="section-h">Marcas${FFS.faixa !== 'todas' ? ` · ${esc(FF.faixas[FFS.faixa])}` : ''}</h2>
+      <div class="list">${marcasNaFaixa.map(m => `<div class="row"><div class="grow"><span class="t1">${esc(m.nome)} <span class="tag ${m.faixa === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[m.faixa])}</span></span><span class="t2">${esc(m.frase)}${comAchado.has(m.nome) ? '' : ` · nada até ${brl(FF.limite)} agora`}</span></div><a class="btn ghost sm" href="${esc(buscaFF(m))}" target="_blank" rel="noopener">Farfetch ↗</a></div>`).join('')}</div>
     </div>
     ${stockxBloco()}`;
 }
@@ -892,6 +910,9 @@ document.addEventListener('click', ev => {
   else if ('sync' in d) { sincronizar(prefsAtuais(), true); }
   else if ('restaurar' in d) { S.ocultas = {}; render(); toast('Todas as peças escondidas voltaram'); }
   else if (d.busca) { S.tab = 'ofertas'; S.q = d.busca.replace(/^New Balance /, ''); S.qBrand = 'Todas'; S.qSale = false; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
+  else if (d.fffaixa) { FFS.faixa = d.fffaixa; FFS.marca = 'Todas'; render(); }
+  else if (d.fftipo) { FFS.tipo = d.fftipo; render(); }
+  else if ('ffsale' in d) { FFS.sale = !FFS.sale; render(); }
   else if ('filtros' in d) { S.filtrosAbertos = !S.filtrosAbertos; render(); }
   else if ('limpar' in d) { Object.assign(S, { q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, limit: 40 }); render(); }
   else if (d.loja) { S.qLoja = d.loja; S.limit = 40; render(); }
@@ -908,7 +929,8 @@ document.addEventListener('input', ev => {
   const t = ev.target;
   if (t.id === 'q') { S.q = t.value; S.limit = 40; render(true); return; }
   const lbl = t.type === 'range' && t.closest('.field').querySelector('.lbl');
-  if (t.id === 'qMax') lbl.textContent = brl(+t.value);
+  if (t.id === 'qMax') lbl.textContent = +t.value >= 3000 ? 'qualquer' : brl(+t.value);
+  else if (t.id === 'ffMax') lbl.textContent = brl(+t.value);
   else if (t.id === 'notaMin') lbl.textContent = t.value;
   else if (t.id === 'minSave') lbl.textContent = t.value + '%';
 });
@@ -917,6 +939,9 @@ document.addEventListener('change', ev => {
   if (t.dataset.ordem !== undefined) S.sort = t.value;
   else if (t.id === 'qBrand') S.qBrand = t.value;
   else if (t.id === 'qLoja') S.qLoja = t.value;
+  else if (t.id === 'ffMarca') FFS.marca = t.value;
+  else if (t.id === 'ffOrdem') FFS.ordem = t.value;
+  else if (t.id === 'ffMax') FFS.max = +t.value;
   else if (t.id === 'qMax') S.qMax = +t.value;
   else if (t.id === 'notaMin') S.notaMin = +t.value;
   else if (t.id === 'minSave') S.minSave = +t.value;
