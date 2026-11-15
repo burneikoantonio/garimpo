@@ -198,8 +198,20 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(5, 1fr); }
 .nav .navdot { position: absolute; top: 8px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
 .rec { padding-block: 16px; border-bottom: 1px solid var(--border); display: grid; gap: 10px; }
-.look { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 4px; margin: 8px 0 12px; }
-.look img { width: 100%; aspect-ratio: 3/4; object-fit: cover; background: var(--photo); border-radius: 4px; }
+.boneco { width: min(260px, 72vw); margin: 8px auto 12px; padding: 12px 8px; background: var(--photo); border-radius: 8px; display: grid; justify-items: center; gap: 0; }
+.boneco img { display: block; object-fit: contain; mix-blend-mode: multiply; }
+.b-cabeca { height: 64px; width: 40%; display: grid; place-items: center; margin-bottom: -6px; position: relative; z-index: 2; }
+.b-cabeca img { width: 100%; height: 100%; }
+.b-rosto { width: 40px; height: 48px; border-radius: 50% 50% 46% 46%; background: #c9c4bb; display: block; }
+.b-tronco { position: relative; width: 100%; height: 190px; z-index: 1; }
+.b-tronco .b-fora { width: 100%; height: 100%; }
+.b-tronco .b-dentro { position: absolute; width: 34%; height: 40%; right: -14%; bottom: -4%; border-radius: 6px; background: var(--photo); box-shadow: 0 0 0 2px var(--photo), 0 2px 8px rgba(0,0,0,.15); mix-blend-mode: normal; padding: 4px; }
+.boneco img.recortada { mix-blend-mode: normal; }
+.b-pernas { width: 70%; height: 200px; margin-top: -10px; }
+.b-pernas img { width: 100%; height: 100%; }
+.b-pes { width: 62%; height: 70px; margin-top: -4px; }
+.b-pes img { width: 100%; height: 100%; }
+.b-vazio { display: grid; place-items: center; height: 100%; font-size: 11px; color: #8d8d8d; font-style: normal; border: 1px dashed #c6c6c6; border-radius: 6px; }
 .look-ops button[aria-pressed="true"] { outline: 2px solid var(--fg); outline-offset: -2px; }
 .look-ops .look-sem { display: grid; place-items: center; min-width: 90px; background: var(--layer); border: 0; color: var(--helper); font-size: 12px; padding: 8px; }
 .rec-top { display: flex; align-items: flex-start; gap: 12px; }
@@ -259,7 +271,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794777163"></script>
+<script src="core.js?v=1794778518"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -820,6 +832,71 @@ function abrirLook(key) {
   LOOK = { base, vagas: VAGAS[vg].map(([id, nome, kinds]) => ({ id, nome, ops: sugestoesLook(base, kinds), sel: 0 })).filter(v => v.ops.length) };
   desenharLook();
 }
+// recorta o fundo liso das fotos (preenchendo a partir das bordas) e corta a sobra, para a peça encaixar no corpo
+const RECORTES = new Map();
+function recortar(u) {
+  if (RECORTES.has(u)) return Promise.resolve(RECORTES.get(u));
+  return new Promise(ok => {
+    const im = new Image(); im.crossOrigin = 'anonymous';
+    im.onerror = () => ok(null);
+    im.onload = () => {
+      try {
+        const W = Math.min(360, im.naturalWidth), H = Math.round(im.naturalHeight * W / im.naturalWidth);
+        const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+        const cx = cv.getContext('2d', { willReadFrequently: true }); cx.drawImage(im, 0, 0, W, H);
+        const d = cx.getImageData(0, 0, W, H), px = d.data;
+        const at = (x, y) => (y * W + x) * 4;
+        const cantos = [[2, 2], [W - 3, 2], [2, H - 3], [W - 3, H - 3]].map(([x, y]) => at(x, y));
+        const bg = [0, 1, 2].map(c => cantos.reduce((s, i) => s + px[i + c], 0) / 4);
+        const longe = i => Math.hypot(px[i] - bg[0], px[i + 1] - bg[1], px[i + 2] - bg[2]);
+        const varia = Math.max(...cantos.map(i => longe(i)));   // cantos diferentes = fundo em degradê
+        const LIM = Math.min(60, 34 + varia);
+        const visto = new Uint8Array(W * H), fila = [];
+        for (let x = 0; x < W; x++) fila.push(x, (H - 1) * W + x);
+        for (let y = 0; y < H; y++) fila.push(y * W, y * W + W - 1);
+        let tirados = 0;
+        while (fila.length) {
+          const k = fila.pop(); if (visto[k]) continue; visto[k] = 1;
+          const i = k * 4; const dist = longe(i); if (dist > LIM) continue;
+          px[i + 3] = dist < LIM - 14 ? 0 : Math.round((dist - LIM + 14) / 14 * 255); tirados++;
+          const x = k % W, y = (k / W) | 0;
+          if (x > 0) fila.push(k - 1); if (x < W - 1) fila.push(k + 1); if (y > 0) fila.push(k - W); if (y < H - 1) fila.push(k + W);
+        }
+        if (tirados < W * H * 0.08) { RECORTES.set(u, null); return ok(null); }   // fundo não é liso (foto com modelo): deixa como está
+        let x0 = W, y0 = H, x1 = 0, y1 = 0;
+        for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) if (px[at(x, y) + 3] > 40) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+        if (x1 <= x0 || y1 <= y0) { RECORTES.set(u, null); return ok(null); }
+        cx.putImageData(d, 0, 0);
+        const out = document.createElement('canvas'); out.width = x1 - x0 + 1; out.height = y1 - y0 + 1;
+        out.getContext('2d').drawImage(cv, x0, y0, out.width, out.height, 0, 0, out.width, out.height);
+        const url = out.toDataURL('image/png'); RECORTES.set(u, url); ok(url);
+      } catch (e) { RECORTES.set(u, null); ok(null); }
+    };
+    im.src = u;
+  });
+}
+function aplicarRecortes() {
+  document.querySelectorAll('.boneco img[data-recorte]').forEach(el => {
+    if (el.dataset.ok) return;
+    recortar(el.dataset.recorte).then(url => { el.dataset.ok = 1; if (url) { el.src = url; el.classList.add('recortada'); } });
+  });
+}
+// boneco em pé montado com as fotos reais: boné na cabeça, peça de cima no tronco (jaqueta por fora), calça nas pernas, tênis nos pés
+function boneco(base, vagas) {
+  const pos = { [vagaDe(base.kind)]: base };
+  for (const v of vagas) if (v.sel >= 0) { const q = v.ops[v.sel].q; pos[v.id === 'top' && pos.top ? 'top2' : v.id] = q; }
+  // quando a peça-base é moletom/jaqueta escolhida "por cima" e a vaga top também existe, a de cima vai por fora
+  if (pos.cima && vagaDe(pos.cima.kind) === 'top' && !pos.top) { pos.top = pos.cima; delete pos.cima; }
+  const foto = (q, cls) => { if (!q) return ''; const u = img(q.imagens[0], 400); return `<img class="${cls}" src="${esc(RECORTES.get(u) || u)}" data-recorte="${esc(u)}" alt="${esc(q.titulo)}">`; };
+  const dentro = pos.top2 || (pos.cima ? pos.top : null);
+  const fora = pos.cima || pos.top;
+  return `<div class="boneco" aria-label="Look montado">
+    <div class="b-cabeca">${pos.cabeca ? foto(pos.cabeca, 'b-bone') : '<i class="b-rosto"></i>'}</div>
+    <div class="b-tronco">${foto(fora, 'b-fora')}${dentro && dentro !== fora ? foto(dentro, 'b-dentro') : ''}</div>
+    <div class="b-pernas">${pos.baixo ? foto(pos.baixo, '') : '<i class="b-vazio">sem parte de baixo</i>'}</div>
+    <div class="b-pes">${pos.pe ? foto(pos.pe, '') : '<i class="b-vazio">sem tênis</i>'}</div>
+  </div>`;
+}
 function desenharLook() {
   const { base, vagas } = LOOK, eb = evaluate(base);
   const escolhidas = vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel]);
@@ -832,7 +909,7 @@ function desenharLook() {
         <button class="thumb" data-open="${esc(base.key)}"><img src="${esc(img(base.imagens[0], 200))}" alt=""></button>
         <div class="grow"><span class="t2">Sua peça · ${esc(base.marca)}</span><span class="t1">${esc(base.titulo)}</span><span class="mono">${eb.ok ? brl(eb.price) : 'esgotada no seu tamanho'}</span></div>
       </div>
-      <div class="look">${[{ q: base }, ...escolhidas].map(x => `<img src="${esc(img(x.q.imagens[0], 300))}" alt="">`).join('')}</div>
+      ${boneco(base, vagas)}
       <div class="panel" style="display:grid;gap:4px">
         <div class="range-val"><span>Look completo (${escolhidas.length + 1} peças)</span><span class="mono" style="font-size:18px;font-weight:600">${brl(total)}</span></div>
         <span class="t2" style="font-size:12px">${esc(dica)} Cores: ${esc(cores.length ? cores.map(c => c === 'off' ? 'off-white/bege' : c.replace('-', ' ')).join(', ') : 'neutras')}.</span>
@@ -844,6 +921,7 @@ function desenharLook() {
       <div class="actions" style="grid-template-columns:1fr;margin-top:16px"><button class="btn" data-lookcarrinho>🛒 Simular a compra deste look</button></div>
       <p class="section-sub" style="margin-top:8px">Escolhi por cor (neutros combinam com tudo; peça colorida pede o resto neutro), estilo parecido e marcas que você curte ou segue. Toque nas fotos para trocar.</p>
     </div>`);
+  aplicarRecortes();
 }
 
 /* ---------- Simular compra: vale a pena levar agora? ---------- */
