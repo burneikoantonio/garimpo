@@ -280,7 +280,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794784304"></script>
+<script src="core.js?v=1794784416"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -1179,6 +1179,7 @@ function viewPerfil() {
     <h2 class="section-h">Notificações do Achei</h2>
     ${(() => {
       const st = estadoPush();
+      if (st === 'ativo' && !S.canal) return `<div class="notice" style="border-left:3px solid var(--warn)"><span><b>Falta um passo:</b> preencha <b>Seu canal do ntfy</b> logo abaixo. Sem ele, o robô não sabe para onde mandar as notificações.</span></div>`;
       if (st === 'ativo') return `<div class="notice ok"><span><b>Ativadas neste celular.</b> Ao tocar num aviso, o Achei abre direto na peça.</span></div>
         <div style="display:flex;gap:8px;margin-top:8px"><button class="btn tertiary sm" data-push-teste>Mandar um teste</button><button class="btn ghost sm" data-push-desligar style="color:var(--helper)">Desativar</button></div>`;
       if (st === 'instalar') return '<p class="section-sub">Para receber notificações do próprio Achei, abra o app pelo ícone na tela de início (no iPhone, não funciona pelo Safari).</p>';
