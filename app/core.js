@@ -179,13 +179,16 @@ function gerarAlertas(cfg, enviados, agora) {
 
 // Top da semana: as 10 melhores notas com desconto das marcas ativas (no máximo 2 por marca). Usado pelo robô e pelo app.
 // Cresce até 15 ou 20 só se as peças a mais também forem excelentes (nota 90+ e 30%+ de desconto).
-function top10(ativas) {
+function top10(ativas, cat) {
   const porMarca = {};
-  const todos = DATA.produtos.filter(p => ativas.has(p.marca)).map(p => ({ p, e: evaluate(p) }))
+  const todos = DATA.produtos.filter(p => ativas.has(p.marca) && (!cat || p.cat === cat)).map(p => ({ p, e: evaluate(p) }))
     .filter(x => x.e.ok && x.e.off > 0).sort((a, b) => b.e.score - a.e.score || b.e.off - a.e.off)
     .filter(x => (porMarca[x.p.marca] = (porMarca[x.p.marca] || 0) + 1) <= 2);
   const extra = todos.slice(10, 20).filter(x => x.e.score >= 90 && x.e.off >= 0.3);
   const n = extra.length >= 10 ? 20 : extra.length >= 5 ? 15 : 10;
   return [...todos.slice(0, 10), ...extra].slice(0, n);
 }
-if (typeof module !== 'undefined') module.exports = { top10, buildData, evaluate, productHist, gerarAlertas, fits, classify, custoImportado, KIND_LABEL };
+// Top separado: Tênis, Roupas e Acessórios, cada um com 10 (até 15 ou 20 se houver mais ofertas excelentes)
+const TOP_CATS = [['Tênis', 'tenis'], ['Roupas', 'roupas'], ['Acessórios', 'acessorios']];
+const topPorCategoria = ativas => TOP_CATS.map(([cat, slug]) => ({ cat, slug, lista: top10(ativas, cat) }));
+if (typeof module !== 'undefined') module.exports = { top10, topPorCategoria, buildData, evaluate, productHist, gerarAlertas, fits, classify, custoImportado, KIND_LABEL };

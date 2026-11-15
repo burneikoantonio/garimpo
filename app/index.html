@@ -276,7 +276,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794783390"></script>
+<script src="core.js?v=1794783781"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -1000,11 +1000,13 @@ if ('serviceWorker' in navigator) {
 }
 
 /* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
-function abrirTop10() {
-  const lista = top10(activeBrands());
-  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top ${lista.length} da semana</h1></div></header>
+function abrirTop10(slug = 'tenis') {
+  const tops = topPorCategoria(activeBrands());
+  const atual = tops.find(t => t.slug === slug) || tops[0], lista = atual.lista;
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top ${lista.length} ${esc(atual.cat)} da semana</h1></div></header>
     <div class="wrap">
-      <p class="section-sub" style="margin-top:12px">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), a lista cresce para 15 ou 20. Atualiza a cada rodada do robô (8h e 18h).</p>
+      <div class="chips" role="group" aria-label="Categoria" style="margin-top:12px">${tops.map(t => `<button class="chip" data-topcat="${t.slug}" aria-pressed="${t.slug === atual.slug}">${esc(t.cat)} (${t.lista.length})</button>`).join('')}</div>
+      <p class="section-sub">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10 por categoria; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), cresce para 15 ou 20. Atualiza a cada rodada do robô (8h e 18h).</p>
       <div class="list">${lista.map(({ p, e }, i) => `<button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;border-bottom:1px solid var(--border);background:none">
         <span class="mono" style="font-size:20px;width:28px;flex:none;color:var(--helper)">${i + 1}</span>
         <span class="thumb"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></span>
@@ -1398,6 +1400,7 @@ document.addEventListener('click', ev => {
     toast(`${ks.length} peças na simulação: veja em Salvos${todas.length > ks.length ? ' (as da Farfetch ficam de fora)' : ''}`);
   }
   else if (d.top10 !== undefined) abrirTop10();
+  else if (d.topcat) abrirTop10(d.topcat);
   else if (d.pushAtivar !== undefined) ativarPush();
   else if (d.pushDesligar !== undefined) desligarPush();
   else if (d.pushTeste !== undefined) testarPush();
@@ -1497,7 +1500,7 @@ prefereClaro?.addEventListener?.('change', () => { if (S.tema === 'auto') aplica
 function abrirPorLink() {
   const m = location.hash.match(/^#produto=(.+)$/);
   if (m) openDetail(decodeURIComponent(m[1]));
-  else if (location.hash === '#top10') abrirTop10();
+  else if (/^#top10(-\w+)?$/.test(location.hash)) abrirTop10(location.hash.split('-')[1]);
   else return;
   history.replaceState(null, '', location.pathname);
 }

@@ -101,7 +101,7 @@ async function carregarPrefs() {
     enviadosAgora++;
     await enviarPush(msg);
     if (process.env.DRY_RUN || !TOPICO) { console.log('[aviso]', msg.title, '—', msg.message.replace(/\n/g, ' | ')); return; }
-    const r = await fetch('https://ntfy.sh', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ topic: TOPICO, ...msg }) });
+    const r = await fetch('https://ntfy.sh', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ topic: TOPICO, ...msg, tag: undefined }) });
     if (!r.ok) console.error('ntfy respondeu', r.status, await r.text());
   }
   const avisoPeca = (titulo, p, e, extra, tag) => enviar({
@@ -169,11 +169,13 @@ async function carregarPrefs() {
   if (process.env.FORCAR_TOP10 || (domingo && hora >= cfg.resumoAPartirDas && !enviados[`top10|${hoje}`])) {
     const seguidas = new Set(cfg.marcas);
     const ativas = new Set(DATA.marcas.filter(m => seguidas.has(m.nome) || (cfg.incluirSugeridas && m.relacao === 'sugerida' && !(cfg.dispensadas || []).includes(m.nome))).map(m => m.nome));
-    const lista = core.top10(ativas);
-    if (lista.length) {
-      await enviar({ title: `Top ${lista.length} da semana no Achei`, message: lista.map((x, i) => `${i + 1}. ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['trophy'], click: site ? `${site}/#top10` : undefined });
-      enviados[`top10|${hoje}`] = hoje; top = true;
+    // um aviso por categoria (Tênis, Roupas, Acessórios), cada um abrindo a sua lista no app
+    for (const { cat, slug, lista } of core.topPorCategoria(ativas)) {
+      if (!lista.length) continue;
+      await enviar({ title: `🏆 Top ${lista.length} ${cat} da semana`, message: lista.map((x, i) => `${i + 1}. ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['trophy'], tag: `top-${slug}`, click: site ? `${site}/#top10-${slug}` : undefined });
+      top = true;
     }
+    if (top) enviados[`top10|${hoje}`] = hoje;
   }
 
   // 6. Resumo do dia: na rodada da tarde, se nenhum aviso saiu hoje
