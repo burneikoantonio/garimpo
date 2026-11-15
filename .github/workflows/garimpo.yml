@@ -72,14 +72,16 @@ jobs:
           git config user.email "garimpo-bot@users.noreply.github.com"
           git add app/data
           git diff --cached --quiet || git commit -m "Atualiza preços $(date '+%d/%m %H:%M')"
-          git pull --rebase --quiet origin main
+          git pull --rebase -X theirs --quiet origin main   # em conflito nos dados, fica a versão desta rodada
           git push
 
       - name: Preparar o site
+        if: ${{ !cancelled() }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: app
 
       - name: Publicar no GitHub Pages
+        if: ${{ !cancelled() }}
         id: site
         uses: actions/deploy-pages@v4
