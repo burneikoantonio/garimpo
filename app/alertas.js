@@ -127,12 +127,13 @@ async function carregarPrefs() {
 
   // 5. Top 10 da semana: domingo, na rodada da tarde (no máximo 2 peças por marca)
   let top = false;
-  if (domingo && hora >= cfg.resumoAPartirDas && !enviados[`top10|${hoje}`]) {
+  // FORCAR_TOP10=1 (botão "top_agora" no GitHub) manda na hora, em qualquer dia
+  if (process.env.FORCAR_TOP10 || (domingo && hora >= cfg.resumoAPartirDas && !enviados[`top10|${hoje}`])) {
     const seguidas = new Set(cfg.marcas);
     const ativas = new Set(DATA.marcas.filter(m => seguidas.has(m.nome) || (cfg.incluirSugeridas && m.relacao === 'sugerida' && !(cfg.dispensadas || []).includes(m.nome))).map(m => m.nome));
     const lista = core.top10(ativas);
     if (lista.length) {
-      await enviar({ title: 'Top 10 da semana no Achei', message: lista.map((x, i) => `${i + 1}. ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['trophy'], click: site ? `${site}/#top10` : undefined });
+      await enviar({ title: `Top ${lista.length} da semana no Achei`, message: lista.map((x, i) => `${i + 1}. ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['trophy'], click: site ? `${site}/#top10` : undefined });
       enviados[`top10|${hoje}`] = hoje; top = true;
     }
   }

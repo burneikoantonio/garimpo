@@ -10,6 +10,11 @@ on:
         description: "Canal do ntfy para teste (vazio = avisos de verdade)"
         required: false
         default: ""
+      top_agora:
+        description: "Mandar o Top da semana agora (qualquer dia)"
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -50,6 +55,7 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           CANAL_TESTE: ${{ inputs.canal_teste }}
+          FORCAR_TOP10: ${{ inputs.top_agora && '1' || '' }}
           SITE_URL: ${{ vars.SITE_URL }}
         run: node app/alertas.js
 

@@ -276,7 +276,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794781855"></script>
+<script src="core.js?v=1794781991"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -967,9 +967,9 @@ function desenharLook() {
 /* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
 function abrirTop10() {
   const lista = top10(activeBrands());
-  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top 10 da semana</h1></div></header>
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top ${lista.length} da semana</h1></div></header>
     <div class="wrap">
-      <p class="section-sub" style="margin-top:12px">As 10 melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. Atualiza a cada rodada do robô (8h e 18h).</p>
+      <p class="section-sub" style="margin-top:12px">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), a lista cresce para 15 ou 20. Atualiza a cada rodada do robô (8h e 18h).</p>
       <div class="list">${lista.map(({ p, e }, i) => `<button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;border-bottom:1px solid var(--border);background:none">
         <span class="mono" style="font-size:20px;width:28px;flex:none;color:var(--helper)">${i + 1}</span>
         <span class="thumb"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></span>
