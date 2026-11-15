@@ -12,7 +12,7 @@ const POLITICA = /\blula\b|bolsonaro|\bmarx\b|\bche\b|guevara|mais um silva|bras
 const FEM_TAG = /femin|women|mulher|\bkids?\b|infantil|sufbab/, OCULTO = /esconder-busca-site|excluirfeed|collection-only/, MASC_TAG = /masculin|\bmen\b|unissex|unisex/;
 const KINDS = [
   ['tenis', /t[eê]nis|sneaker|footwear|sapato|\bbota|derby|loafer|mocassim|chinelo|\bslide/],
-  ['bone', /bon[eé]|touca|\bhats?\b|\bcaps?\b|gorro|beanie|chap[eé]u|bucket|6-panel|dad ?hat|viseira/],
+  ['bone', /(?<!- )\bbon[eé]s?(?![a-z])(?!\s*(white|wash|color|cor))|touca|\bhats?\b|\bcaps?\b|gorro|beanie|chap[eé]u|bucket|6-panel|dad ?hat|viseira/],
   ['acessorio', /\bmeias?\b|socks?\b|cinto|belt|carteira|wallet|acess[oó]r|[oó]culos|colar|corrente|pulseira|anel\b/],
   ['calca', /cal[cç]a|pants|jeans|trouser|jogger/],
   ['bermuda', /short|bermuda/],

@@ -198,6 +198,10 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(5, 1fr); }
 .nav .navdot { position: absolute; top: 8px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
 .rec { padding-block: 16px; border-bottom: 1px solid var(--border); display: grid; gap: 10px; }
+.look { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 4px; margin: 8px 0 12px; }
+.look img { width: 100%; aspect-ratio: 3/4; object-fit: cover; background: var(--photo); border-radius: 4px; }
+.look-ops button[aria-pressed="true"] { outline: 2px solid var(--fg); outline-offset: -2px; }
+.look-ops .look-sem { display: grid; place-items: center; min-width: 90px; background: var(--layer); border: 0; color: var(--helper); font-size: 12px; padding: 8px; }
 .rec-top { display: flex; align-items: flex-start; gap: 12px; }
 .rec-top .grow { flex: 1; min-width: 0; display: grid; gap: 2px; }
 .rec-name { font-size: 16px; font-weight: 600; }
@@ -255,7 +259,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794775814"></script>
+<script src="core.js?v=1794777163"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -761,12 +765,93 @@ function spark(h, w = 88, hgt = 28) {
 }
 const fmtDate = d => d ? d.split('-').reverse().slice(0, 2).join('/') : '';
 
+/* ---------- Combinar: monta um look em volta de uma peça curtida ou salva ---------- */
+// regras simples de moda masculina: neutros combinam com tudo; peça colorida pede o resto neutro; estilo parecido (street × alfaiataria)
+const NEUTRAS = new Set(['preto', 'branco', 'off', 'cinza', 'caqui', 'azul-escuro']);
+function coresLook(p) {
+  const t = p.titulo.toLowerCase();
+  const c = tracos(p).cores.map(x => x === 'azul' && /marinho|navy|indigo|jeans|denim|escuro/.test(t) ? 'azul-escuro' : x);
+  if (!c.length && /jeans|denim/.test(t)) c.push('azul-escuro');
+  return c;
+}
+const familia = p => {
+  const t = (p.titulo + ' ' + p.marca).toLowerCase();
+  if (/alfaiataria|linho|loafer|derby|mocassim|social|blazer|camisa|polo|pregas|seda|tricot|sapato/.test(t)) return 'classico';
+  if (/oversized|boxy|cargo|baggy|graphic|estamp|hoodie|moletom|jogger|track|chunky|9060|skate|tie.?dye|logo/.test(t)) return 'street';
+  return 'casual';
+};
+const VAGAS = {
+  top: [['baixo', 'Parte de baixo', ['calca', 'bermuda']], ['pe', 'Tênis', ['tenis']], ['cima', 'Por cima', ['jaqueta', 'moletom']], ['cabeca', 'Boné', ['bone']]],
+  baixo: [['top', 'Parte de cima', ['camiseta', 'camisa']], ['pe', 'Tênis', ['tenis']], ['cima', 'Por cima', ['jaqueta', 'moletom']], ['cabeca', 'Boné', ['bone']]],
+  pe: [['top', 'Parte de cima', ['camiseta', 'camisa', 'moletom']], ['baixo', 'Parte de baixo', ['calca', 'bermuda']], ['cima', 'Por cima', ['jaqueta']]],
+  cima: [['top', 'Por baixo', ['camiseta', 'camisa']], ['baixo', 'Parte de baixo', ['calca', 'bermuda']], ['pe', 'Tênis', ['tenis']]],
+  cabeca: [['top', 'Parte de cima', ['camiseta', 'camisa', 'moletom']], ['baixo', 'Parte de baixo', ['calca', 'bermuda']], ['pe', 'Tênis', ['tenis']]],
+};
+const vagaDe = k => ({ camiseta: 'top', camisa: 'top', calca: 'baixo', bermuda: 'baixo', tenis: 'pe', jaqueta: 'cima', moletom: 'top', bone: 'cabeca' })[k];
+function harmonia(base, q) {
+  const a = coresLook(base), b = coresLook(q);
+  if (!b.length) return 0.5;                                   // sem cor no nome: neutro provável
+  const bNeutra = b.every(c => NEUTRAS.has(c)), aNeutra = !a.length || a.every(c => NEUTRAS.has(c));
+  if (bNeutra) return 2;                                        // neutro com qualquer coisa
+  if (aNeutra) return 1.2;                                      // base neutra aceita uma cor de destaque
+  return b.some(c => a.includes(c)) ? 0.8 : -1;                 // duas cores fortes diferentes brigam
+}
+function sugestoesLook(base, kinds, n = 6) {
+  const eb = evaluate(base), fam = familia(base), seguidas = new Set(S.follow);
+  const curtidasMarca = new Set(Object.values(S.curtidas).map(c => c.marca));
+  const porMarca = {};
+  return DATA.produtos.filter(q => kinds.includes(q.kind) && q.key !== base.key && !S.dispensadas.includes(q.marca) && !S.ocultas[q.key])
+    .map(q => ({ q, e: evaluate(q) })).filter(x => x.e.ok)
+    .map(x => {
+      const preco = eb.ok ? x.e.price / eb.price : 1;
+      const s = harmonia(base, x.q) * 2 + (familia(x.q) === fam ? 1.5 : familia(x.q) === 'casual' || fam === 'casual' ? 0.5 : -1)
+        + (curtidasMarca.has(x.q.marca) ? 1.5 : seguidas.has(x.q.marca) ? 1.2 : 0) + (S.curtidas[x.q.key] ? 2 : 0)
+        + x.e.score / 100 + (preco > 4 ? -1.5 : preco < 0.3 ? -2 : preco < 0.45 ? -0.8 : 0) + (x.q.marca === base.marca ? 0.3 : 0);
+      return { ...x, s };
+    })
+    .sort((a, b) => b.s - a.s)
+    .filter(x => (porMarca[x.q.marca] = (porMarca[x.q.marca] || 0) + 1) <= 2).slice(0, n);
+}
+let LOOK = null;   // { base, vagas: [{ id, nome, ops, sel }] }
+function abrirLook(key) {
+  const base = DATA.produtos.find(x => x.key === key); if (!base) return;
+  const vg = vagaDe(base.kind);
+  if (!vg) { toast('Ainda não sei combinar esse tipo de peça'); return; }
+  LOOK = { base, vagas: VAGAS[vg].map(([id, nome, kinds]) => ({ id, nome, ops: sugestoesLook(base, kinds), sel: 0 })).filter(v => v.ops.length) };
+  desenharLook();
+}
+function desenharLook() {
+  const { base, vagas } = LOOK, eb = evaluate(base);
+  const escolhidas = vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel]);
+  const total = (eb.ok ? eb.price : 0) + escolhidas.reduce((s, x) => s + x.e.price, 0);
+  const cores = [...new Set([base, ...escolhidas.map(x => x.q)].flatMap(coresLook))];
+  const dica = familia(base) === 'street' ? 'Look streetwear: peças mais largas e tênis robusto.' : familia(base) === 'classico' ? 'Look mais arrumado: cortes retos e calçado limpo.' : 'Look casual: básico que funciona no dia a dia.';
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">Combinar</h1></div></header>
+    <div class="wrap">
+      <div class="row" style="align-items:center;border:0">
+        <button class="thumb" data-open="${esc(base.key)}"><img src="${esc(img(base.imagens[0], 200))}" alt=""></button>
+        <div class="grow"><span class="t2">Sua peça · ${esc(base.marca)}</span><span class="t1">${esc(base.titulo)}</span><span class="mono">${eb.ok ? brl(eb.price) : 'esgotada no seu tamanho'}</span></div>
+      </div>
+      <div class="look">${[{ q: base }, ...escolhidas].map(x => `<img src="${esc(img(x.q.imagens[0], 300))}" alt="">`).join('')}</div>
+      <div class="panel" style="display:grid;gap:4px">
+        <div class="range-val"><span>Look completo (${escolhidas.length + 1} peças)</span><span class="mono" style="font-size:18px;font-weight:600">${brl(total)}</span></div>
+        <span class="t2" style="font-size:12px">${esc(dica)} Cores: ${esc(cores.length ? cores.map(c => c === 'off' ? 'off-white/bege' : c.replace('-', ' ')).join(', ') : 'neutras')}.</span>
+      </div>
+      ${vagas.map((v, i) => `<h3 class="section-h">${esc(v.nome)}</h3>
+        <div class="vitrine look-ops">${v.ops.map((x, j) => `<button data-lookvaga="${i}" data-lookop="${j}" aria-pressed="${v.sel === j}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt="${esc(x.q.titulo)}"><span class="mono">${brl(x.e.price)}</span></button>`).join('')}
+          <button data-lookvaga="${i}" data-lookop="-1" aria-pressed="${v.sel === -1}" class="look-sem"><span>Sem ${esc(v.nome.toLowerCase())}</span></button></div>
+        ${v.sel >= 0 ? `<button class="btn ghost sm" data-open="${esc(v.ops[v.sel].q.key)}" style="padding:0;height:auto;margin-top:4px">${esc(v.ops[v.sel].q.marca)} · ${esc(v.ops[v.sel].q.titulo)} ›</button>` : ''}`).join('')}
+      <div class="actions" style="grid-template-columns:1fr;margin-top:16px"><button class="btn" data-lookcarrinho>🛒 Simular a compra deste look</button></div>
+      <p class="section-sub" style="margin-top:8px">Escolhi por cor (neutros combinam com tudo; peça colorida pede o resto neutro), estilo parecido e marcas que você curte ou segue. Toque nas fotos para trocar.</p>
+    </div>`);
+}
+
 /* ---------- Simular compra: vale a pena levar agora? ---------- */
 // cores e detalhes do nome servem para achar peças parecidas no visual (não temos como comparar as fotos em si)
-const CORES = [['preto', /pret|black|onyx/], ['branco', /branc|white(?!.*off)/], ['off', /off.?white|creme|cream|gelo|ecru|natural|areia|sand|bege|beige|nude/],
+const CORES = [['preto', /pret|black|onyx/], ['branco', /branc|white(?!.*off)/], ['off', /off.?white|bone white|creme|cream|gelo|ecru|natural|areia|sand|bege|beige|nude/],
   ['cinza', /cinza|grey|gray|mescla|heather/], ['azul', /azul|blue|marinho|navy|indigo|royal|petr[oó]leo/], ['verde', /verde|green|oliva|olive|militar|menta/],
   ['marrom', /marrom|brown|caramelo|chocolate|caf[eé]|mocha|telha|terracota/], ['vermelho', /vermelh|red|bord[oô]|vinho|burgundy|coral/],
-  ['rosa', /rosa|pink|p[eê]ssego/], ['amarelo', /amarel|yellow|mostarda|laranja|orange/], ['caqui', /caqui|khaki/], ['roxo', /roxo|purple|lil[aá]s/]];
+  ['rosa', /rosa|pink|p[eê]ssego|guava|goiaba|salm[aã]o|lilac/], ['amarelo', /amarel|yellow|mostarda|laranja|orange/], ['caqui', /caqui|khaki/], ['roxo', /roxo|purple|lil[aá]s/]];
 const ESTILO = /oversized|boxy|regular|slim|cargo|jogger|wide|ampla|reta|baggy|carpenter|capuz|hoodie|crewneck|zip|polo|xadrez|plaid|listr|stripe|bordad|embroider|estamp|print|graphic|logo|b[aá]sic|tie.?dye|veludo|nylon|ripstop|linho|couro|leather|su[eé]de|camur|tricot|knit|jeans|denim|sarja|twill|moletom|fleece|retr[oô]|vintage|estonad|washed|lavad/g;
 function tracos(p) {
   const t = p.titulo.toLowerCase();
@@ -869,6 +954,14 @@ function viewSalvos() {
   const semCanal = !S.canal ? `<div class="notice" style="margin-bottom:12px"><span>Para os avisos chegarem no celular, informe seu canal do ntfy no <b>Perfil</b>, em "Avisos no celular".</span></div>` : '';
   return header('Salvos') + `<div class="wrap">
     ${simulacaoBloco()}
+    ${(() => {
+      const ks = [...new Set([...Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k]) => k), ...Object.keys(S.saved)])]
+        .map(k => DATA.produtos.find(x => x.key === k)).filter(p => p && vagaDe(p.kind));
+      return `<h2 class="section-h">Combinar roupas 👕</h2>
+      ${ks.length ? `<p class="section-sub">Toque numa peça curtida ou salva e eu monto um look com ela.</p>
+      <div class="vitrine">${ks.map(p => `<button data-look="${esc(p.key)}" aria-label="Combinar ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 300))}" alt=""><span>${esc(KIND_LABEL[p.kind])}</span></button>`).join('')}</div>`
+      : '<p class="section-sub">Curta (♡) ou salve peças e elas aparecem aqui para montar looks. Também dá para tocar em "👕 Combinar" na tela de qualquer peça.</p>'}`;
+    })()}
     <h2 class="section-h">Alertas de modelo</h2>
     <p class="section-sub">Ex.: "9060" até R$ 1.000. O robô avisa quando aparecer, nos seus tamanhos, em qualquer loja do app.</p>
     ${semCanal}
@@ -1049,6 +1142,7 @@ function openDetail(key) {
         <button class="btn ${curti ? '' : 'tertiary'}" data-curti="${esc(key)}" aria-pressed="${curti}" style="${curti ? 'background:var(--bad)' : ''}">${curti ? '♥ Curtido' : '♡ Curti'}</button>
         <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener">${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato ↗' : 'Ver na loja ↗'}</a>
       </div>
+      <button class="btn tertiary" data-look="${esc(key)}" style="width:100%;justify-content:center;margin-top:1px">👕 Combinar com outras peças</button>
       <button class="btn ${S.carrinho[key] ? '' : 'tertiary'}" data-carrinho="${esc(key)}" style="width:100%;justify-content:center;margin-top:1px">${S.carrinho[key] ? '✓ Na simulação de compra (tirar)' : '🛒 Simular compra'}</button>
       <p class="section-sub" style="margin-top:8px">🔔 avisa quando o preço sair do comum. ♡ ensina o Achei a trazer mais peças e marcas assim.</p>
       <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">Não curti: esconder esta peça</button>
@@ -1115,6 +1209,13 @@ document.addEventListener('click', ev => {
     if (S.saved[k]) { delete S.saved[k]; toast('Alerta desligado'); }
     else { S.saved[k] = { titulo: p.titulo, alvo: null }; toast(S.canal ? 'Alerta ligado. Aviso quando o preço sair do comum.' : 'Alerta ligado. Informe seu canal no Perfil para receber no celular.'); }
     persist(); openDetail(k);
+  }
+  else if (d.look) abrirLook(d.look);
+  else if (d.lookvaga !== undefined && LOOK) { LOOK.vagas[+d.lookvaga].sel = +d.lookop; const y = document.getElementById('sheet').scrollTop; desenharLook(); document.getElementById('sheet').scrollTop = y; }
+  else if (d.lookcarrinho !== undefined && LOOK) {
+    const ks = [LOOK.base.key, ...LOOK.vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel].q.key)];
+    S.carrinho = { ...S.carrinho, ...Object.fromEntries(ks.map(k => [k, { em: Date.now() }])) }; persist();
+    toast(`${ks.length} peças na simulação: veja em Salvos`);
   }
   else if (d.carrinho) {
     const k = d.carrinho;
