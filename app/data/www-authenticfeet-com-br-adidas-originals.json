@@ -2,7 +2,7 @@
   "marca": "Adidas Originals",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-15T22:33:07Z",
+  "atualizado": "2026-11-15T23:05:55Z",
   "produtos": [
     {
       "id": "28560",
@@ -476,8 +476,8 @@
         },
         {
           "t": "40",
-          "p": 309.99,
-          "c": 899.99,
+          "p": 900.0,
+          "c": 900.0,
           "a": false
         },
         {
@@ -3854,26 +3854,26 @@
         },
         {
           "t": "37",
-          "p": 299.99,
-          "c": 499.99,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 299.99,
-          "c": 499.99,
-          "a": false
-        },
-        {
-          "t": "39",
           "p": 500.0,
           "c": 500.0,
           "a": false
         },
         {
-          "t": "40",
+          "t": "38",
+          "p": 500.0,
+          "c": 500.0,
+          "a": false
+        },
+        {
+          "t": "39",
           "p": 299.99,
           "c": 499.99,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 500.0,
+          "c": 500.0,
           "a": false
         },
         {
@@ -3896,8 +3896,8 @@
         },
         {
           "t": "44",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 299.99,
+          "c": 499.99,
           "a": false
         },
         {
@@ -19413,6 +19413,47 @@
           "p": 259.99,
           "c": 399.99,
           "a": true
+        }
+      ]
+    },
+    {
+      "id": "64085",
+      "titulo": "Camiseta adidas Grafica Originals Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-adidas-grafica-originals-masculina-jy276-0-100/p",
+      "ref": "JY276-0-100",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2025-12-13T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/509346/JY276-0-100-1-800x1000.jpg?v=639023693596100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/509347/JY276-0-100-2-800x1000.jpg?v=639023693596100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/509348/JY276-0-100-3-800x1000.jpg?v=639023693596270000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/509349/JY276-0-100-4-800x1000.jpg?v=639023693596270000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 129.99,
+          "c": 199.99,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 129.99,
+          "c": 199.99,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 129.99,
+          "c": 199.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 129.99,
+          "c": 199.99,
+          "a": false
         }
       ]
     },
