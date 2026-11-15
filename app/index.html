@@ -255,7 +255,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794774785"></script>
+<script src="core.js?v=1794775008"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -328,6 +328,7 @@ const S = {
   modelos: store.get('modelos', []),   // alertas de modelo: { id, texto, max }
   curtidas: store.get('curtidas', {}),  // peças curtidas: chave -> { marca, kind, titulo, preco, em }
   canal: store.get('canal', ''),       // canal do ntfy (o mesmo assinado no app ntfy)
+  dispensadas: store.get('dispensadas', []),   // marcas sugeridas que você dispensou
   ocultas: store.get('ocultas', {}),   // peças marcadas como "Não curti": chave -> { marca, kind }
 };
 
@@ -403,7 +404,7 @@ function grid(items, moreKey) {
   const shown = items.slice(0, S.limit);
   return `<div class="grid">${shown.map(tile).join('')}</div>${items.length > S.limit ? `<div class="more"><button class="btn tertiary sm" data-more>Mostrar mais (${items.length - S.limit})</button></div>` : ''}`;
 }
-const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.nome) || (S.withSuggested && m.relacao === 'sugerida')).map(m => m.nome));
+const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.nome) || (S.withSuggested && m.relacao === 'sugerida' && !S.dispensadas.includes(m.nome))).map(m => m.nome));
 
 /* ---------- Telas ---------- */
 function viewOfertas() {
@@ -549,7 +550,7 @@ function cardMarca(m) {
       <span class="t2" style="color:var(--helper);font-size:12px">${ps.length} peças nos seus tamanhos${sale.length ? ` · ${sale.length} em sale, até ${max}%` : ''}</span></div>
       <button class="btn sm" data-follow="${esc(m.nome)}">Seguir</button></div>
     ${fotos.length ? `<div class="vitrine">${fotos.map(x => `<button data-open="${esc(x.p.key)}" aria-label="${esc(x.p.titulo)}"><img loading="lazy" src="${esc(img(x.p.imagens[0], 300))}" alt=""><span class="mono">${brl(x.ev.price)}</span></button>`).join('')}</div>` : ''}
-    <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button></div>
+    <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button><button data-dispensar="${esc(m.nome)}" style="color:var(--helper)">Dispensar marca ✕</button></div>
   </div>`;
 }
 
@@ -737,7 +738,7 @@ function viewMarcas() {
   };
   // suas marcas = as que você segue; as recomendadas que você ainda não segue aparecem como "marcas novas"
   const seg = DATA.marcas.filter(m => S.follow.includes(m.nome));
-  const novas = DATA.marcas.filter(m => m.relacao === 'sugerida' && !S.follow.includes(m.nome) && m.arquivos?.length)
+  const novas = DATA.marcas.filter(m => m.relacao === 'sugerida' && !S.follow.includes(m.nome) && !S.dispensadas.includes(m.nome) && m.arquivos?.length)
     .map(m => ({ m, a: afinidade(m) })).sort((x, y) => y.a - x.a || String(y.m.liberada).localeCompare(String(x.m.liberada))).map(x => x.m);
   const curtiu = Object.keys(S.curtidas).length;
   return header('Marcas') + `<div class="wrap">
@@ -833,6 +834,8 @@ function viewPerfil() {
       const menos = Object.entries(naoCurtiContagem()).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([k]) => { const [m, kd] = k.split('|'); return `${KIND_LABEL[kd]} da ${m}`; });
       return `<p class="section-sub">${n} ${n > 1 ? 'peças escondidas' : 'peça escondida'}. Mostrando menos: ${esc(menos.join(', '))}.</p><button class="btn tertiary sm" data-restaurar>Mostrar todas de novo</button>`;
     })()}
+    <h2 class="section-h">Marcas dispensadas</h2>
+    ${S.dispensadas.length ? `<p class="section-sub">Não aparecem em Marcas novas nem nas Ofertas. Toque para trazer de volta.</p><div class="chips">${S.dispensadas.map(n => `<button class="chip" data-voltar="${esc(n)}">${esc(n)} ↺</button>`).join('')}</div>` : '<p class="section-sub">Nenhuma. Em Marcas novas, toque em "Dispensar marca" nas que não combinam com você.</p>'}
     <h2 class="section-h">Como a nota é calculada</h2>
     <div class="notice"><span><b>Desconto</b> informado pela loja (até 45 pts), <b>preço comparado</b> à mediana de peças do mesmo tipo em todas as marcas (até 30) <b>histórico</b>: menor preço já registrado (até 15) e, quando a peça está em mais de uma loja, <b>comparação entre lojas</b> (até 25). O histórico começou em ${esc(DATA.atualizado.split(' ')[0])} e fica mais útil a cada atualização.</span></div>
     <h2 class="section-h">Ainda não disponível</h2>
@@ -975,11 +978,11 @@ const VIEWS = { ofertas: viewOfertas, marcas: viewMarcas, farfetch: viewFarfetch
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
-function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('dispensadas', S.dispensadas); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
 
 /* ---------- Sincronia com o robô: salvos, alertas de modelo e tamanhos vão por um canal privado do ntfy ---------- */
 // o robô lê "<seu canal>-prefs" depois de cada atualização; só o que importa para os avisos é enviado
-const prefsAtuais = () => JSON.stringify({ tamanhos: S.sizes, follow: S.follow, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
+const prefsAtuais = () => JSON.stringify({ tamanhos: S.sizes, follow: S.follow, dispensadas: S.dispensadas, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
 let syncT;
 function agendarSync() {
   if (!S.canal) return;
@@ -1040,6 +1043,12 @@ document.addEventListener('click', ev => {
     S.follow = S.follow.includes(n) ? S.follow.filter(x => x !== n) : [...S.follow, n];
     toast(S.follow.includes(n) ? `Seguindo ${n}` : `Você deixou de seguir ${n}`); render();
   }
+  else if (d.dispensar) {
+    const n = d.dispensar;
+    if (!S.dispensadas.includes(n)) S.dispensadas = [...S.dispensadas, n];
+    toast(`${n} dispensada. Para trazer de volta: Perfil → Marcas dispensadas`); render();
+  }
+  else if (d.voltar) { S.dispensadas = S.dispensadas.filter(x => x !== d.voltar); toast(`${d.voltar} voltou para Marcas novas`); render(); }
   else if (d.ocultar) {
     const p = DATA.produtos.find(x => x.key === d.ocultar);
     S.ocultas = { ...S.ocultas, [d.ocultar]: { marca: p.marca, kind: p.kind } };

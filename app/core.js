@@ -5,7 +5,9 @@ const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const median = arr => { if (!arr.length) return null; const s = [...arr].sort((a, b) => a - b); return s[Math.floor(s.length / 2)]; };
 
 /* ---------- Categorias e tamanhos ---------- */
-const EXCLUIR = /feminin|\bwomen|\bwoman\b|\bwmns\b|\bmeias?\b|\bsocks?\b|\bbody\b|vestido|dress|\bsaia\b|skirt|baby tee|sufbab|gift|adesivo|sticker|bolsa|\bbags?\b|mochila|backpack|chaveiro|keychain|porta-moeda|cueca|boxer|caneca|poster|isqueiro|tableware|home decor|\bbooks?\b|magazine|textile|high times|gloves|scarves|wallet|cardholder|\bkids?\b|infantil|junior|\bjr\b|baby ?look|cropped|legging|suti[aã]|calcinha|biqu[ií]ni|t[uú]nica|macac[aã]o|blusa (de al[cç]a|seda)|drapead|corset|\bgirls?\b|top fitness|regata curta/;
+const EXCLUIR = /feminin|\bwomen|\bwoman\b|\bwmns\b|\bmeias?\b|\bsocks?\b|\bbody\b|vestido|dress|\bsaia\b|skirt|baby tee|sufbab|gift|adesivo|sticker|bolsa|\bbags?\b|mochila|backpack|chaveiro|keychain|porta-moeda|cueca|boxer|caneca|poster|isqueiro|tableware|home decor|\bbooks?\b|magazine|textile|high times|gloves|scarves|wallet|cardholder|\bkids?\b|infantil|junior|\bjr\b|baby ?look|cropped|legging|suti[aã]|calcinha|biqu[ií]ni|t[uú]nica|macac[aã]o|blusa (de al[cç]a|seda)|drapead|corset|\bgirls?\b|top fitness|regata curta|frete motoboy|miniatura/;
+// peças com tema político (pedido do usuário): ficam fora em qualquer marca
+const POLITICA = /\blula\b|bolsonaro|\bmarx\b|\bche\b|guevara|mais um silva|brasil [eé] dos brasileiros|angela davis|malcol?m x|rosa parks|\bpresidente\b|elei[cç][aã]o|\bfaz o l\b/;
 // tags e endereço também denunciam peça feminina ou infantil ("all-feminino" sem masculino; URL "-feminino-" nas lojas VTEX)
 const FEM_TAG = /femin|women|mulher|\bkids?\b|infantil|sufbab/, OCULTO = /esconder-busca-site|excluirfeed|collection-only/, MASC_TAG = /masculin|\bmen\b|unissex|unisex/;
 const KINDS = [
@@ -22,7 +24,7 @@ const KINDS = [
 const KIND_LABEL = { tenis: 'Tênis', bone: 'Bonés', acessorio: 'Acessórios', calca: 'Calças', bermuda: 'Bermudas', jaqueta: 'Jaquetas', moletom: 'Moletons', camiseta: 'Camisetas', camisa: 'Camisas', outro: 'Outros' };
 function classify(p) {
   const main = `${p.tipo} ${p.titulo}`.toLowerCase();
-  if (EXCLUIR.test(main)) return null;
+  if (EXCLUIR.test(main) || POLITICA.test(main)) return null;
   const tags = (p.tags || []).join(' ').toLowerCase();
   if (OCULTO.test(tags) || (FEM_TAG.test(tags) && !MASC_TAG.test(tags))) return null;
   const slug = (p.url || '').toLowerCase().replace(/^https?:\/\/[^/]+/, '').replace(/[-_/?=]+/g, ' ');
@@ -155,7 +157,7 @@ function evaluate(p) {
 // cfg: config.json · enviados: { "chave|preço": "AAAA-MM-DD" } · agora: Date
 function gerarAlertas(cfg, enviados, agora) {
   const seguidas = new Set(cfg.marcas);
-  const ativas = new Set(DATA.marcas.filter(m => seguidas.has(m.nome) || (cfg.incluirSugeridas && m.relacao === 'sugerida')).map(m => m.nome));
+  const ativas = new Set(DATA.marcas.filter(m => seguidas.has(m.nome) || (cfg.incluirSugeridas && m.relacao === 'sugerida' && !(cfg.dispensadas || []).includes(m.nome))).map(m => m.nome));
   const alertas = [], candidatos = [];
   for (const p of DATA.produtos) {
     if (!ativas.has(p.marca)) continue;

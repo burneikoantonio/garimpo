@@ -39,6 +39,7 @@ async function carregarPrefs() {
   const prefs = await carregarPrefs();
   globalThis.S = { sizes: prefs?.tamanhos || cfg.tamanhos, onlyMySize: true, showIntl: cfg.importados.mostrar, minSave: cfg.importados.economiaMinima };
   if (prefs?.follow?.length) cfg.marcas = prefs.follow;
+  cfg.dispensadas = prefs?.dispensadas || [];
   const core = require('./core.js');
 
   const idx = ler('data/marcas.json');
@@ -118,7 +119,7 @@ async function carregarPrefs() {
   for (const a of alertas) enviados[a.chave] = hoje;
 
   // 4. Leva nova de marcas recomendadas: avisa uma vez, no dia em que entra na aba Novas
-  const levaHoje = idx.marcas.filter(m => m.relacao === 'sugerida' && m.liberada === hoje && (m.arquivos || []).length);
+  const levaHoje = idx.marcas.filter(m => m.relacao === 'sugerida' && !cfg.dispensadas.includes(m.nome) && m.liberada === hoje && (m.arquivos || []).length);
   if (levaHoje.length && !enviados[`leva|${hoje}`]) {
     await enviar({ title: 'Marcas novas para você', message: `${levaHoje.map(m => m.nome).join(', ')} entraram na aba Marcas. Siga as que gostar.`, tags: ['sparkles'], click: site || undefined });
     enviados[`leva|${hoje}`] = hoje;
@@ -128,7 +129,7 @@ async function carregarPrefs() {
   let top = false;
   if (domingo && hora >= cfg.resumoAPartirDas && !enviados[`top10|${hoje}`]) {
     const seguidas = new Set(cfg.marcas);
-    const ativas = new Set(DATA.marcas.filter(m => seguidas.has(m.nome) || (cfg.incluirSugeridas && m.relacao === 'sugerida')).map(m => m.nome));
+    const ativas = new Set(DATA.marcas.filter(m => seguidas.has(m.nome) || (cfg.incluirSugeridas && m.relacao === 'sugerida' && !(cfg.dispensadas || []).includes(m.nome))).map(m => m.nome));
     const porMarca = {};
     const lista = DATA.produtos.filter(p => ativas.has(p.marca)).map(p => ({ p, e: core.evaluate(p) }))
       .filter(x => x.e.ok && x.e.off > 0).sort((a, b) => b.e.score - a.e.score)
