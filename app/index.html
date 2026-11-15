@@ -24,8 +24,26 @@
   --ok-bg: #044317; --ok-fg: #a7f0ba; --sug-bg: #491d8b; --sug-fg: #e8daff;
   --font: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   --mono: "IBM Plex Mono", Menlo, "Courier New", monospace;
+  --photo: #e8e6e1;   /* vitrine clara: fundo das fotos no tema escuro */
   --col: 480px; --nav-h: 56px;
 }
+/* tema claro (Carbon White) */
+:root[data-tema="claro"] {
+  color-scheme: light;
+  --bg: #ffffff; --layer: #f4f4f4; --layer2: #e0e0e0;
+  --border: #e0e0e0; --border-strong: #8d8d8d;
+  --fg: #161616; --fg2: #525252; --helper: #6f6f6f;
+  --link: #0f62fe; --good: #198038; --warn: #8e6a00; --bad: #da1e28;
+  --sale-bg: #ffd7d9; --sale-fg: #a2191f; --new-bg: #d0e2ff; --new-fg: #0043ce;
+  --ok-bg: #a7f0ba; --ok-fg: #044317; --sug-bg: #e8daff; --sug-fg: #491d8b;
+  --photo: #f4f4f4;
+}
+:root[data-tema="claro"] .marca-app img { filter: none; mix-blend-mode: multiply; }
+/* tema escuro: cada foto vira um quadro claro com cantos arredondados */
+:root:not([data-tema="claro"]) .tile .ph { margin: 6px 6px 0; width: auto; border-radius: 6px; }
+:root:not([data-tema="claro"]) .vitrine button, :root:not([data-tema="claro"]) .thumb, :root:not([data-tema="claro"]) .rec-pics button { border-radius: 6px; }
+/* o branco das fotos se mistura ao fundo do quadro */
+.ph img, .gallery img, .thumb img, .vitrine img, .rec-pics img { mix-blend-mode: multiply; }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--fg); }
 body { font-family: var(--font); font-size: 14px; line-height: 1.43; letter-spacing: .16px; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
@@ -76,6 +94,17 @@ img { max-width: 100%; display: block; }
 .ordem select { height: 32px; background: var(--layer); border: 0; border-bottom: 1px solid var(--border-strong); padding: 0 8px; font-size: 14px; max-width: 70%; }
 .ff-chip { display: inline-flex; align-items: center; text-decoration: none; color: var(--fg); background: var(--bg); }
 .acoes3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; margin-top: 16px; }
+.conv { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.conv .panel { gap: 2px; padding: 12px; }
+.barra { display: flex; height: 14px; overflow: hidden; border-radius: 4px; }
+.barra i { display: block; height: 100%; }
+.nota { display: grid; margin-top: 10px; font-size: 13px; }
+.nota > div { display: grid; grid-template-columns: 1fr auto 44px; gap: 8px; padding-block: 7px; border-bottom: 1px solid var(--border); align-items: center; }
+.nota > div > span:first-child { display: flex; align-items: center; gap: 8px; }
+.nota i { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+.nota .pct { color: var(--helper); text-align: right; font-size: 12px; }
+.nota .tot { font-weight: 600; border-bottom: 1px solid var(--border-strong); }
+.nota .imp { color: var(--fg); background: var(--layer); padding-inline: 8px; border-bottom: 0; }
 .acoes3 .btn { height: 52px; padding: 0 10px; justify-content: center; font-size: 13px; text-align: center; }
 
 .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-block: 1px solid var(--border); }
@@ -85,7 +114,7 @@ img { max-width: 100%; display: block; }
 .tilewrap > .tile { flex: 1; }
 .heart { position: absolute; top: 6px; right: 6px; z-index: 2; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(22, 22, 22, .55); color: #fff; font-size: 19px; line-height: 1; display: grid; place-items: center; }
 .heart.on { background: var(--bad); }
-.ph { aspect-ratio: 4 / 5; width: 100%; max-width: 100%; position: relative; background: #e5e5e5; overflow: hidden; }
+.ph { aspect-ratio: 4 / 5; width: 100%; max-width: 100%; position: relative; background: var(--photo); overflow: hidden; }
 .ph img { width: 100%; height: 100%; object-fit: cover; }
 .ph .tags { position: absolute; left: 8px; top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
 .tile .body { padding: 10px 12px 16px; display: grid; gap: 2px; min-width: 0; }
@@ -132,7 +161,7 @@ img { max-width: 100%; display: block; }
 .row .grow { flex: 1; min-width: 0; display: grid; gap: 2px; }
 .row .t1 { font-size: 14px; }
 .row .t2 { font-size: 12px; color: var(--helper); }
-.thumb { width: 64px; height: 80px; flex: none; background: #e5e5e5; border: 0; padding: 0; overflow: hidden; }
+.thumb { width: 64px; height: 80px; flex: none; background: var(--photo); border: 0; padding: 0; overflow: hidden; }
 .thumb img { width: 100%; height: 100%; object-fit: cover; }
 .avatar { width: 40px; height: 40px; flex: none; background: var(--layer2); display: grid; place-items: center; font-family: var(--mono); font-size: 13px; }
 .rowbtn { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--border); text-align: left; }
@@ -173,12 +202,12 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .rec-name { font-size: 16px; font-weight: 600; }
 .rec-why { font-size: 13px; color: var(--fg2); }
 .rec-pics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
-.rec-pics button { border: 0; padding: 0; background: #e5e5e5; aspect-ratio: 4 / 5; overflow: hidden; }
+.rec-pics button { border: 0; padding: 0; background: var(--photo); aspect-ratio: 4 / 5; overflow: hidden; }
 .rec-pics img { width: 100%; height: 100%; object-fit: cover; }
 .rec-links { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; }
 .vitrine { display: flex; gap: 4px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
 .vitrine::-webkit-scrollbar { display: none; }
-.vitrine button { flex: none; width: 38%; border: 0; padding: 0; background: #e5e5e5; aspect-ratio: 4 / 5; position: relative; overflow: hidden; scroll-snap-align: start; }
+.vitrine button { flex: none; width: 38%; border: 0; padding: 0; background: var(--photo); aspect-ratio: 4 / 5; position: relative; overflow: hidden; scroll-snap-align: start; }
 .vitrine img { width: 100%; height: 100%; object-fit: cover; }
 .vitrine .mono { position: absolute; left: 6px; bottom: 6px; background: rgba(22,22,22,.75); color: #fff; font-size: 11px; padding: 2px 6px; }
 .rec-links a, .rec-links button { color: var(--link); background: none; border: 0; padding: 0; font-size: 13px; text-decoration: none; }
@@ -189,7 +218,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 
 .sheet { position: fixed; inset: 0; z-index: 40; max-width: var(--col); margin: 0 auto; background: var(--bg); overflow-y: auto; -webkit-overflow-scrolling: touch; border-inline: 1px solid var(--border); padding-top: env(safe-area-inset-top, 0px); padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 32px); }
 .sheet .hdr { top: 0; }
-.gallery { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; background: #e5e5e5; scrollbar-width: none; }
+.gallery { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; background: var(--photo); scrollbar-width: none; }
 .gallery::-webkit-scrollbar { display: none; }
 .gallery img { flex: none; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; scroll-snap-align: start; }
 .gallery-count { color: var(--helper); font-size: 11px; padding-top: 6px; }
@@ -225,7 +254,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794761497"></script>
+<script src="core.js?v=1794762022"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -262,6 +291,15 @@ function saleBloco() {
 const MODELOS = ['New Balance 9060'];
 // marcas que já eram "suas" antes de existir esta lista (para seguir sozinho as que entrarem depois)
 const SEGUE_ANTIGAS = ['Carnan', 'Piet', 'PACE', 'À La Garçonne', 'Carhartt WIP', 'Adidas Originals', 'Jordan'];
+
+/* ---------- Tema: claro (A) ou escuro com vitrine clara (B) ---------- */
+const prefereClaro = window.matchMedia ? matchMedia('(prefers-color-scheme: light)') : null;
+function aplicarTema() {
+  const tema = S.tema === 'auto' ? (prefereClaro?.matches ? 'claro' : 'escuro') : S.tema;
+  document.documentElement.dataset.tema = tema;
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', tema === 'claro' ? '#ffffff' : '#161616');
+  document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')?.setAttribute('content', tema === 'claro' ? 'default' : 'black-translucent');
+}
 const store = {
   get(k, d) { try { const v = localStorage.getItem('garimpo:' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem('garimpo:' + k, JSON.stringify(v)); } catch (e) {} },
@@ -281,6 +319,7 @@ const S = {
   withSuggested: store.get('withSuggested', true), notaMin: store.get('notaMin', 70),
   saved: store.get('saved', {}), follow: store.get('follow', null),
   showIntl: store.get('showIntl', true), minSave: store.get('minSave', 20),
+  tema: store.get('tema', 'auto'),   // auto (segue o iPhone), claro ou escuro
   sort: store.get('sort', 'nota'),
   modelos: store.get('modelos', []),   // alertas de modelo: { id, texto, max }
   curtidas: store.get('curtidas', {}),  // peças curtidas: chave -> { marca, kind, titulo, preco, em }
@@ -512,6 +551,48 @@ function cardMarca(m) {
 
 /* ---------- Aba Farfetch: marcas e achados escolhidos à mão (o robô não consegue ler a Farfetch) ---------- */
 let FF = null, SX = null;
+// A Farfetch Brasil já embute o imposto de importação no preço e cobra o frete internacional à parte.
+// Separamos o total pago em produto, frete e impostos (estimativa com as alíquotas de farfetch.json).
+function custoFarfetch(preco) {
+  const c = FF?.custos || { freteBRL: 99, ii: 0.6, icms: 0.17 };
+  const total = preco + c.freteBRL;
+  const base = total * (1 - c.icms) / (1 + c.ii);            // valor aduaneiro: produto + frete, sem impostos
+  const frete = c.freteBRL * (1 - c.icms) / (1 + c.ii);
+  const produto = base - frete, ii = base * c.ii, icms = total - base - ii;
+  return { total, produto, frete, ii, icms, impostos: ii + icms, c };
+}
+function abrirImportado(i) {
+  const a = FF.achados[i]; if (!a) return;
+  const k = custoFarfetch(a.por), usd = DATA.cambio?.USD;
+  const fmt2 = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const partes = [['Produto', k.produto, '#378ADD'], ['Frete', k.frete, '#888780'], [`Imposto de importação (${Math.round(k.c.ii * 100)}%)`, k.ii, '#EF9F27'], [`ICMS (${Math.round(k.c.icms * 100)}%)`, k.icms, '#D85A30']];
+  const pct = v => Math.round(v / k.total * 100);
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${esc(a.marca)} · Farfetch</h1></div></header>
+    <div class="gallery"><img src="${esc(a.img)}" alt="${esc(a.nome)}"></div>
+    <div class="wrap">
+      <div class="detail-head"><span class="brand">${esc(a.marca)}</span><h2>${esc(a.nome)}</h2>
+        ${a.tam ? `<span class="t2" style="color:var(--helper);font-size:12px">Tamanhos disponíveis: ${esc(a.tam)}</span>` : ''}</div>
+      <div class="conv">
+        <div class="panel"><span class="t2" style="color:var(--helper);font-size:12px">1 · Só o produto</span><span class="mono" style="font-size:24px">${brl(Math.round(k.produto))}</span><span class="t2" style="color:var(--helper);font-size:12px">${usd ? `lá fora ≈ US$ ${Math.round(k.produto / usd)} × R$ ${usd.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'valor sem impostos'}</span></div>
+        <div class="panel"><span class="t2" style="color:var(--helper);font-size:12px">2 · Com frete e impostos</span><span class="mono" style="font-size:24px">${brl(Math.round(k.total))}</span><span class="t2" style="color:var(--helper);font-size:12px">o que chega na sua casa</span></div>
+      </div>
+      <h3 class="section-h">Para onde vai o dinheiro</h3>
+      <div class="barra">${partes.map(([, v, c]) => `<i style="width:${v / k.total * 100}%;background:${c}"></i>`).join('')}</div>
+      <div class="nota">
+        ${partes.map(([n, v, c]) => `<div><span><i style="background:${c}"></i>${esc(n)}</span><span class="mono">${fmt2(v)}</span><span class="mono pct">${pct(v)}%</span></div>`).join('')}
+        <div class="tot"><span>Total que você paga</span><span class="mono">${fmt2(k.total)}</span><span></span></div>
+        <div class="imp"><span>Impostos no total</span><span class="mono">${fmt2(k.impostos)}</span><span class="mono pct">${pct(k.impostos)}%</span></div>
+      </div>
+      <p class="section-sub" style="margin-top:8px">O preço da Farfetch (${brl(a.por)}) já vem com o imposto de importação embutido, e o frete internacional é ${brl(k.c.freteBRL)}. Os valores de produto e impostos são uma estimativa com as alíquotas atuais.</p>
+      ${a.de ? `<h3 class="section-h">Preço</h3>
+      <div class="panel"><div class="range-val"><span>Preço cheio</span><span class="mono was">${brl(a.de)}</span></div>
+        <div class="meter"><i style="width:100%;background:var(--layer2)"></i></div>
+        <div class="range-val"><span>Agora</span><span class="mono" style="color:var(--good)">${brl(a.por)} (-${a.off}%)</span></div>
+        <div class="meter hi"><i style="width:${a.por / a.de * 100}%"></i></div></div>` : ''}
+      <div class="actions" style="grid-template-columns:1fr"><a class="btn" href="${esc(a.url)}" target="_blank" rel="noopener">Ver na Farfetch ↗</a></div>
+    </div>`);
+}
+
 // filtros da aba Importados (não ficam salvos)
 const FFS = { faixa: 'todas', tipo: 'Tudo', marca: 'Todas', max: 1500, sale: false, ordem: 'desconto' };
 const tipoImportado = nome => /sneaker|sandal|loafer|boot|trainer|slide|mule/i.test(nome) ? 'Calçados' : /cap\b|beanie|hat\b|sunglasses|belt|bag|wallet|scarf/i.test(nome) ? 'Acessórios' : 'Roupas';
@@ -539,11 +620,11 @@ function viewFarfetch() {
       <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-ffsale aria-checked="${FFS.sale}" aria-label="Só peças com desconto"></button></div>
       <p class="section-sub" style="margin:12px 0">${achados.length} ${achados.length === 1 ? 'peça' : 'peças'}</p>
     </div>
-    <div class="grid">${achados.map(a => `<a class="tile" href="${esc(a.url)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+    <div class="grid">${achados.map(a => `<button class="tile" data-ffi="${FF.achados.indexOf(a)}">
       <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags">${a.off ? `<span class="tag t-sale">-${a.off}%</span>` : ''}<span class="tag ${faixaDe[a.marca] === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[faixaDe[a.marca]] || '')}</span></div></div>
       <div class="body"><span class="brand">${esc(a.marca)} · Farfetch</span><span class="pname">${esc(a.nome)}</span>
         <span class="prices">${a.de ? `<span class="was mono">${brl(a.de)}</span>` : ''}<span class="now mono">${brl(a.por)}</span></span>
-        ${a.tam ? `<span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">Tamanhos: ${esc(a.tam)}</span>` : ''}</div></a>`).join('') || '<div class="wrap note"><span>Nenhuma peça com esses filtros.</span></div>'}</div>
+        <span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">${brl(custoFarfetch(a.por).total)} com frete${a.tam ? ` · ${esc(a.tam)}` : ''}</span></div></button>`).join('') || '<div class="wrap note"><span>Nenhuma peça com esses filtros.</span></div>'}</div>
     <div class="wrap"><h2 class="section-h">Marcas${FFS.faixa !== 'todas' ? ` · ${esc(FF.faixas[FFS.faixa])}` : ''}</h2>
       <div class="list">${marcasNaFaixa.map(m => `<div class="row"><div class="grow"><span class="t1">${esc(m.nome)} <span class="tag ${m.faixa === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[m.faixa])}</span></span><span class="t2">${esc(m.frase)}${comAchado.has(m.nome) ? '' : ` · nada até ${brl(FF.limite)} agora`}</span></div><a class="btn ghost sm" href="${esc(buscaFF(m))}" target="_blank" rel="noopener">Farfetch ↗</a></div>`).join('')}</div>
     </div>
@@ -666,6 +747,9 @@ function viewPerfil() {
   const sel = (id, opts, val) => `<select id="${id}">${opts.map(o => `<option ${String(o) === String(val) ? 'selected' : ''}>${o}</option>`).join('')}</select>`;
   const sw = (key, title, sub, val) => `<div class="toggle"><div class="grow"><span>${title}</span>${sub ? `<small>${sub}</small>` : ''}</div><button class="switch" role="switch" data-sw="${key}" aria-checked="${val}" aria-label="${title}"></button></div>`;
   return header('Perfil') + `<div class="wrap">
+    <h2 class="section-h">Aparência</h2>
+    <div class="chips" role="group" aria-label="Aparência">${[['auto', 'Automático'], ['claro', 'Claro'], ['escuro', 'Escuro']].map(([k, l]) => `<button class="chip" data-tema="${k}" aria-pressed="${S.tema === k}">${l}</button>`).join('')}</div>
+    <p class="section-sub">Automático segue o modo claro ou escuro do seu iPhone.</p>
     <h2 class="section-h">Seus tamanhos</h2>
     <p class="section-sub">Toque para marcar um ou mais tamanhos em cada categoria</p>
     ${[['top', 'Camisetas, moletons e jaquetas'], ['bottom', 'Calças e bermudas'], ['shoe', 'Tênis']].map(([g, label]) => `
@@ -836,7 +920,7 @@ const VIEWS = { ofertas: viewOfertas, marcas: viewMarcas, farfetch: viewFarfetch
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
-function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('sort', S.sort); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
 
 /* ---------- Sincronia com o robô: salvos, alertas de modelo e tamanhos vão por um canal privado do ntfy ---------- */
 // o robô lê "<seu canal>-prefs" depois de cada atualização; só o que importa para os avisos é enviado
@@ -913,6 +997,8 @@ document.addEventListener('click', ev => {
   else if (d.fffaixa) { FFS.faixa = d.fffaixa; FFS.marca = 'Todas'; render(); }
   else if (d.fftipo) { FFS.tipo = d.fftipo; render(); }
   else if ('ffsale' in d) { FFS.sale = !FFS.sale; render(); }
+  else if (d.tema) { S.tema = d.tema; aplicarTema(); render(); }
+  else if (d.ffi !== undefined) { abrirImportado(+d.ffi); }
   else if ('filtros' in d) { S.filtrosAbertos = !S.filtrosAbertos; render(); }
   else if ('limpar' in d) { Object.assign(S, { q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, limit: 40 }); render(); }
   else if (d.loja) { S.qLoja = d.loja; S.limit = 40; render(); }
@@ -960,6 +1046,8 @@ document.addEventListener('submit', ev => {
   render(); toast(S.canal ? `Alerta criado: ${texto} até ${brl(max)}` : 'Alerta criado. Informe seu canal no Perfil para receber no celular.');
 });
 
+aplicarTema();
+prefereClaro?.addEventListener?.('change', () => { if (S.tema === 'auto') aplicarTema(); });
 load().then(() => {
   render();
   // link de notificação: abre a peça direto
