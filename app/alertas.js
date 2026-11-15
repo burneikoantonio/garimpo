@@ -120,7 +120,7 @@ async function carregarPrefs() {
   // 4. Leva nova de marcas recomendadas: avisa uma vez, no dia em que entra na aba Novas
   const levaHoje = idx.marcas.filter(m => m.relacao === 'sugerida' && m.liberada === hoje && (m.arquivos || []).length);
   if (levaHoje.length && !enviados[`leva|${hoje}`]) {
-    await enviar({ title: 'Marcas novas para você', message: `${levaHoje.map(m => m.nome).join(', ')} entraram na aba Novas. Siga as que gostar.`, tags: ['sparkles'], click: site || undefined });
+    await enviar({ title: 'Marcas novas para você', message: `${levaHoje.map(m => m.nome).join(', ')} entraram na aba Marcas. Siga as que gostar.`, tags: ['sparkles'], click: site || undefined });
     enviados[`leva|${hoje}`] = hoje;
   }
 

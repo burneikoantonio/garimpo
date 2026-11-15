@@ -155,7 +155,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .switch[aria-checked="true"] { background: #24a148; }
 .switch[aria-checked="true"]::after { transform: translateX(24px); }
 
-.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(7, 1fr); }
+.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(6, 1fr); }
 .nav .navdot { position: absolute; top: 8px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
 .rec { padding-block: 16px; border-bottom: 1px solid var(--border); display: grid; gap: 10px; }
 .rec-top { display: flex; align-items: flex-start; gap: 12px; }
@@ -166,6 +166,11 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .rec-pics button { border: 0; padding: 0; background: #e5e5e5; aspect-ratio: 4 / 5; overflow: hidden; }
 .rec-pics img { width: 100%; height: 100%; object-fit: cover; }
 .rec-links { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; }
+.vitrine { display: flex; gap: 4px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
+.vitrine::-webkit-scrollbar { display: none; }
+.vitrine button { flex: none; width: 38%; border: 0; padding: 0; background: #e5e5e5; aspect-ratio: 4 / 5; position: relative; overflow: hidden; scroll-snap-align: start; }
+.vitrine img { width: 100%; height: 100%; object-fit: cover; }
+.vitrine .mono { position: absolute; left: 6px; bottom: 6px; background: rgba(22,22,22,.75); color: #fff; font-size: 11px; padding: 2px 6px; }
 .rec-links a, .rec-links button { color: var(--link); background: none; border: 0; padding: 0; font-size: 13px; text-decoration: none; }
 .nav button { height: var(--nav-h); background: none; border: 0; display: grid; place-items: center; gap: 2px; padding-top: 6px; font-size: 11px; color: var(--helper); letter-spacing: .32px; position: relative; }
 .nav svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
@@ -210,7 +215,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794686139"></script>
+<script src="core.js?v=1794757599"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -260,7 +265,7 @@ const asList = v => (Array.isArray(v) ? v : [v]).map(String);
 const loadSizes = () => { const s = store.get('sizes', DEFAULT_SIZES); return { top: asList(s.top), bottom: asList(s.bottom), shoe: asList(s.shoe) }; };
 const sizesText = () => [S.sizes.top, S.sizes.bottom, S.sizes.shoe].map(l => l.join('/')).join(' · ');
 const S = {
-  tab: store.get('tab', 'ofertas'), cat: 'Tudo', limit: 40,
+  tab: (t => t === 'novas' ? 'marcas' : t)(store.get('tab', 'ofertas')), cat: 'Tudo', limit: 40,
   q: '', qKind: 'Tudo', qBrand: 'Todas', qMax: 1500, qSale: false,
   sizes: loadSizes(), onlyMySize: store.get('onlyMySize', true),
   withSuggested: store.get('withSuggested', true), notaMin: store.get('notaMin', 70),
@@ -409,27 +414,34 @@ function viewBuscar() {
     ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
 }
 
-function viewNovas() {
-  const recs = DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada && m.arquivos?.length);
-  const levas = [...new Set(recs.map(m => m.liberada))].sort().reverse();
-  const card = m => {
-    const ps = DATA.produtos.filter(p => p.marca === m.nome).map(p => ({ p, e: evaluate(p) })).filter(x => x.e.ok).sort((a, b) => b.e.score - a.e.score);
-    const sale = ps.filter(x => x.e.off > 0);
-    const max = sale.length ? Math.round(Math.max(...sale.map(x => x.e.off)) * 100) : 0;
-    const f = S.follow.includes(m.nome);
-    return `<div class="rec">
-      <div class="rec-top"><div class="grow"><span class="rec-name">${esc(m.nome)}</span><span class="rec-why">${esc(m.obs.replace(/\s*\((lojas|site)[^)]*\)/i, ''))}</span>
-        <span class="t2" style="color:var(--helper);font-size:12px">${ps.length} peças nos seus tamanhos${sale.length ? ` · ${sale.length} em sale, até ${max}%` : ''}</span></div>
-        <button class="btn ${f ? 'ghost' : ''} sm" data-follow="${esc(m.nome)}">${f ? 'Seguindo ✓' : 'Seguir'}</button></div>
-      ${ps.length ? `<div class="rec-pics">${ps.slice(0, 3).map(x => `<button data-open="${esc(x.p.key)}" aria-label="${esc(x.p.titulo)}"><img loading="lazy" src="${esc(img(x.p.imagens[0], 300))}" alt=""></button>`).join('')}</div>` : ''}
-      <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button></div>
-    </div>`;
-  };
-  const label = d => { const [y, mo, da] = d.split('-'); return `Leva de ${da}/${mo}`; };
-  return header('Marcas novas') + `<div class="wrap">
-    <p class="section-sub" style="margin:16px 0 4px">Toda semana entram marcas recomendadas no seu estilo. Siga as que gostar: elas passam a contar como suas marcas.</p>
-    ${levas.map((d, i) => `<h2 class="section-h">${label(d)}${i === 0 ? ' <span class="tag t-new" style="margin-left:6px">Mais recente</span>' : ''}</h2>
-      ${recs.filter(m => m.liberada === d).map(card).join('')}`).join('') || '<p class="section-sub" style="padding-block:16px">Nenhuma recomendação ainda.</p>'}
+/* ---------- Marcas novas: escolhidas e mostradas pelo seu estilo, não pela nota ---------- */
+// fotos de vitrine: peças do tipo que você curte primeiro, depois a ordem da própria loja (as marcas põem as melhores na frente)
+function fotosBonitas(m, n = 6) {
+  const e = estilo(), todas = DATA.produtos.filter(p => p.marca === m.nome);
+  return todas.map((p, i) => ({ p, ev: evaluate(p), i }))
+    .filter(x => x.ev.ok && x.p.imagens.length && !S.ocultas[x.p.key])
+    .map(x => ({ ...x, s: 3 * (e.kind[x.p.kind] || 0) + 2 * (1 - x.i / todas.length) + (x.p.imagens.length > 1 ? 0.5 : 0) + (x.p.cat === 'Acessórios' ? -1.5 : 0) + (x.ev.novo ? 0.5 : 0) + (S.curtidas[x.p.key] ? 5 : 0) }))
+    .sort((a, b) => b.s - a.s).slice(0, n);
+}
+// afinidade da marca com o que você curtiu: mesma marca pesa muito; tipos de peça que você curte pesam pela quantidade
+function afinidade(m) {
+  const e = estilo(), ps = DATA.produtos.filter(p => p.marca === m.nome);
+  if (!ps.length) return 0;
+  const tipos = Object.entries(e.kind).reduce((s, [k, v]) => s + v * ps.filter(p => p.kind === k).length / ps.length, 0);
+  return 10 * (e.marca[m.nome] || 0) + 4 * tipos;
+}
+function cardMarca(m) {
+  const fotos = fotosBonitas(m);
+  const ps = DATA.produtos.filter(p => p.marca === m.nome).map(evaluate).filter(e => e.ok);
+  const sale = ps.filter(e => e.off > 0);
+  const max = sale.length ? Math.round(Math.max(...sale.map(e => e.off)) * 100) : 0;
+  const nova = m.liberada && m.liberada === ultimaLeva(); // selo só para a leva mais recente
+  return `<div class="rec">
+    <div class="rec-top"><div class="grow"><span class="rec-name">${esc(m.nome)} ${nova ? '<span class="tag t-new" style="margin-left:4px">Nova</span>' : ''}</span><span class="rec-why">${esc(m.obs.replace(/\s*\((lojas|site)[^)]*\)/i, ''))}</span>
+      <span class="t2" style="color:var(--helper);font-size:12px">${ps.length} peças nos seus tamanhos${sale.length ? ` · ${sale.length} em sale, até ${max}%` : ''}</span></div>
+      <button class="btn sm" data-follow="${esc(m.nome)}">Seguir</button></div>
+    ${fotos.length ? `<div class="vitrine">${fotos.map(x => `<button data-open="${esc(x.p.key)}" aria-label="${esc(x.p.titulo)}"><img loading="lazy" src="${esc(img(x.p.imagens[0], 300))}" alt=""><span class="mono">${brl(x.ev.price)}</span></button>`).join('')}</div>` : ''}
+    <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button></div>
   </div>`;
 }
 
@@ -504,15 +516,18 @@ function viewMarcas() {
       ${tag}
       <button class="btn ${f ? 'ghost' : 'tertiary'} sm" data-follow="${esc(m.nome)}">${f ? 'Seguindo' : 'Seguir'}</button></div>`;
   };
-  const seg = DATA.marcas.filter(m => m.relacao === 'segue');
-  const sug = DATA.marcas.filter(m => m.relacao === 'sugerida');
+  // suas marcas = as que você segue; as recomendadas que você ainda não segue aparecem como "marcas novas"
+  const seg = DATA.marcas.filter(m => S.follow.includes(m.nome));
+  const novas = DATA.marcas.filter(m => m.relacao === 'sugerida' && !S.follow.includes(m.nome) && m.arquivos?.length)
+    .map(m => ({ m, a: afinidade(m) })).sort((x, y) => y.a - x.a || String(y.m.liberada).localeCompare(String(x.m.liberada))).map(x => x.m);
+  const curtiu = Object.keys(S.curtidas).length;
   return header('Marcas') + `<div class="wrap">
     <h2 class="section-h">Suas marcas</h2>
     <div class="list">${seg.map(row).join('')}</div>
-    <h2 class="section-h">Sugeridas para você</h2>
-    <p class="section-sub">Streetwear nacional na mesma linha e faixa de preço das suas marcas</p>
-    <div class="list">${sug.map(row).join('')}</div>
-    <div class="note"><span>Marcas "sem conexão" não têm catálogo aberto. Elas entram quando conectarmos um programa de afiliados ou outra fonte.</span></div>
+    <h2 class="section-h">Marcas novas para você</h2>
+    <p class="section-sub">${curtiu ? `Ordenadas pelo que você curtiu (${curtiu} ${curtiu > 1 ? 'peças' : 'peça'}). As fotos mostram as peças mais no seu estilo, não as de maior nota.` : 'Curta peças (♡) para eu ordenar estas marcas e as fotos pelo seu estilo.'} Toque em Seguir para levar a marca para cima.</p>
+    ${novas.map(cardMarca).join('') || '<p class="section-sub" style="padding-block:16px">Você já segue todas as recomendações. Peça "reabastece as marcas novas" para eu buscar mais.</p>'}
+    <div class="note"><span>Marcas "sem conexão" não têm catálogo aberto em loja brasileira.</span></div>
   </div>`;
 }
 
@@ -719,8 +734,8 @@ let toastT;
 function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
 
 /* ---------- Render ---------- */
-const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['novas', 'Novas'], ['marcas', 'Marcas'], ['farfetch', 'Importados'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
-const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, novas: viewNovas, marcas: viewMarcas, farfetch: viewFarfetch, salvos: viewSalvos, perfil: viewPerfil };
+const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['marcas', 'Marcas'], ['farfetch', 'Importados'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
+const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, marcas: viewMarcas, farfetch: viewFarfetch, salvos: viewSalvos, perfil: viewPerfil };
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
@@ -750,8 +765,8 @@ function render(keepFocus) {
   const active = keepFocus && document.activeElement && document.activeElement.id;
   const caret = active === 'q' ? document.activeElement.selectionStart : null;
   document.getElementById('app').innerHTML = VIEWS[S.tab]();
-  if (S.tab === 'novas') store.set('novasVistas', ultimaLeva());
-  document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[k]}<span>${l}</span>${k === 'novas' && temNovidade() ? '<i class="navdot"></i>' : ''}</button>`).join('');
+  if (S.tab === 'marcas') store.set('novasVistas', ultimaLeva());
+  document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[k]}<span>${l}</span>${k === 'marcas' && temNovidade() ? '<i class="navdot"></i>' : ''}</button>`).join('');
   if (active) { const el = document.getElementById(active); if (el) { el.focus(); if (caret !== null) el.setSelectionRange(caret, caret); } }
   persist();
 }
