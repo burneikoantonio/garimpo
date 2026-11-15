@@ -1,4 +1,4 @@
-/* Garimpo — regras compartilhadas entre o app (navegador) e o robô de alertas (nuvem).
+/* Achei — regras compartilhadas entre o app (navegador) e o robô de alertas (nuvem).
    Usa as variáveis globais S (preferências) e DATA (catálogo) definidas por quem carrega o arquivo. */
 
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));

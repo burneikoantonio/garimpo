@@ -1,4 +1,4 @@
-// Robô de avisos do Garimpo: roda na nuvem depois de cada atualização e manda as ofertas para o app ntfy.
+// Robô de avisos do Achei: roda na nuvem depois de cada atualização e manda as ofertas para o app ntfy.
 // Variáveis de ambiente: NTFY_TOPIC (canal secreto do ntfy), SITE_URL (endereço do app), DRY_RUN=1 só imprime.
 // Preferências do celular (salvos, alertas de modelo, tamanhos) chegam pelo canal "<NTFY_TOPIC>-prefs"
 // e ficam guardadas em .prefs/prefs.json (cache do GitHub, fora do projeto público).
@@ -113,7 +113,7 @@ async function carregarPrefs() {
   }
   if (alertas.length > individuais.length) {
     const resto = alertas.slice(individuais.length);
-    await enviar({ title: `Mais ${resto.length} ofertas no Garimpo`, message: resto.slice(0, 6).map(a => `• ${a.p.marca} ${a.p.titulo}: ${brl(a.e.price)}`).join('\n'), tags: ['shopping'], click: site || undefined });
+    await enviar({ title: `Mais ${resto.length} ofertas no Achei`, message: resto.slice(0, 6).map(a => `• ${a.p.marca} ${a.p.titulo}: ${brl(a.e.price)}`).join('\n'), tags: ['shopping'], click: site || undefined });
   }
   for (const a of alertas) enviados[a.chave] = hoje;
 
@@ -134,7 +134,7 @@ async function carregarPrefs() {
       .filter(x => x.e.ok && x.e.off > 0).sort((a, b) => b.e.score - a.e.score)
       .filter(x => (porMarca[x.p.marca] = (porMarca[x.p.marca] || 0) + 1) <= 2).slice(0, 10);
     if (lista.length) {
-      await enviar({ title: 'Top 10 da semana no Garimpo', message: lista.map((x, i) => `${i + 1}. ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['trophy'], click: site || undefined });
+      await enviar({ title: 'Top 10 da semana no Achei', message: lista.map((x, i) => `${i + 1}. ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['trophy'], click: site || undefined });
       enviados[`top10|${hoje}`] = hoje; top = true;
     }
   }
@@ -142,7 +142,7 @@ async function carregarPrefs() {
   // 6. Resumo do dia: na rodada da tarde, se nenhum aviso saiu hoje
   const saiuHoje = Object.values(enviados).includes(hoje);
   if (!saiuHoje && hora >= cfg.resumoAPartirDas && resumo.length) {
-    await enviar({ title: 'Resumo do dia no Garimpo', message: resumo.map(x => `• ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['shopping'], click: site || undefined });
+    await enviar({ title: 'Resumo do dia no Achei', message: resumo.map(x => `• ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['shopping'], click: site || undefined });
     enviados[`resumo|${hoje}`] = hoje;
   }
 

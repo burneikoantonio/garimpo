@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Garimpo">
+<meta name="apple-mobile-web-app-title" content="Achei">
 <meta name="theme-color" content="#161616">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icone-180.png">
 <link rel="icon" type="image/png" href="icone-192.png">
-<title>Garimpo</title>
+<title>Achei</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap">
 <style>
 /* Carbon g100: coluna de celular, cabeçalho fixo, grade de 2 colunas, barra de abas inferior */
@@ -45,6 +45,8 @@ img { max-width: 100%; display: block; }
 .hdr .wrap { display: flex; align-items: center; gap: 12px; min-height: 48px; padding-block: 8px; }
 .hdr h1 { font-size: 20px; font-weight: 400; margin: 0; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .hdr h1 b { font-weight: 600; }
+.marca-app { display: inline-flex; align-items: center; gap: 8px; }
+.marca-app img { width: 28px; height: 28px; filter: invert(1); mix-blend-mode: screen; }
 .iconbtn { width: 40px; height: 40px; display: grid; place-items: center; background: none; border: 0; position: relative; flex: none; }
 .iconbtn:hover { background: var(--layer); }
 .iconbtn svg { width: 20px; height: 20px; fill: none; stroke: var(--fg); stroke-width: 1.5; }
@@ -62,6 +64,14 @@ img { max-width: 100%; display: block; }
 .ff-t { font-size: 13px; font-weight: 600; letter-spacing: .32px; text-transform: uppercase; }
 .ff-h .t2 { font-size: 11px; color: var(--helper); }
 .ordem { display: flex; align-items: center; justify-content: flex-end; gap: 8px; padding-bottom: 12px; }
+.busca { display: grid; gap: 4px; padding-top: 8px; }
+.busca .search { margin-block: 4px 0; }
+.busca-acoes { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.busca-acoes .ordem { margin-left: auto; padding-bottom: 0; }
+.filtros { display: grid; gap: 4px; background: var(--layer); padding: 12px; margin-top: 4px; }
+.filtros .field select { background: var(--bg); }
+.comparador { margin-block: 8px 4px; }
+.comparador .rowbtn { padding-inline: 0; }
 .ordem label { font-size: 12px; color: var(--helper); }
 .ordem select { height: 32px; background: var(--layer); border: 0; border-bottom: 1px solid var(--border-strong); padding: 0 8px; font-size: 14px; max-width: 70%; }
 .ff-chip { display: inline-flex; align-items: center; text-decoration: none; color: var(--fg); background: var(--bg); }
@@ -155,7 +165,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .switch[aria-checked="true"] { background: #24a148; }
 .switch[aria-checked="true"]::after { transform: translateX(24px); }
 
-.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(6, 1fr); }
+.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(5, 1fr); }
 .nav .navdot { position: absolute; top: 8px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
 .rec { padding-block: 16px; border-bottom: 1px solid var(--border); display: grid; gap: 10px; }
 .rec-top { display: flex; align-items: flex-start; gap: 12px; }
@@ -215,7 +225,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794757599"></script>
+<script src="core.js?v=1794759486"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -237,7 +247,7 @@ const brl = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: v % 
 const img = (src, w = 600) => !src ? ''
   : src.includes('vteximg') ? src.replace(/\/ids\/(\d+)(-\d+-\d+)?\//, `/ids/$1-${w}-${Math.round(w * 1.25)}/`)
   : src + (src.includes('?') ? '&' : '?') + 'width=' + w;
-// atalhos para a sale de cada marca que você segue, aberta aqui mesmo com os dados do Garimpo
+// atalhos para a sale de cada marca que você segue, aberta aqui mesmo com os dados do Achei
 function saleBloco() {
   const marcas = S.follow.filter(n => DATA.produtos.some(p => p.marca === n));
   const itens = marcas.map(n => ({ n, q: DATA.produtos.filter(p => p.marca === n && !S.ocultas[p.key]).map(evaluate).filter(e => e.ok && e.off > 0).length }))
@@ -265,8 +275,8 @@ const asList = v => (Array.isArray(v) ? v : [v]).map(String);
 const loadSizes = () => { const s = store.get('sizes', DEFAULT_SIZES); return { top: asList(s.top), bottom: asList(s.bottom), shoe: asList(s.shoe) }; };
 const sizesText = () => [S.sizes.top, S.sizes.bottom, S.sizes.shoe].map(l => l.join('/')).join(' · ');
 const S = {
-  tab: (t => t === 'novas' ? 'marcas' : t)(store.get('tab', 'ofertas')), cat: 'Tudo', limit: 40,
-  q: '', qKind: 'Tudo', qBrand: 'Todas', qMax: 1500, qSale: false,
+  tab: (t => t === 'novas' ? 'marcas' : t === 'buscar' ? 'ofertas' : t)(store.get('tab', 'ofertas')), cat: 'Tudo', limit: 40,
+  q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, filtrosAbertos: false,
   sizes: loadSizes(), onlyMySize: store.get('onlyMySize', true),
   withSuggested: store.get('withSuggested', true), notaMin: store.get('notaMin', 70),
   saved: store.get('saved', {}), follow: store.get('follow', null),
@@ -354,6 +364,20 @@ const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.n
 
 /* ---------- Telas ---------- */
 function viewOfertas() {
+  const cabeca = header('<span class="marca-app"><img src="logo-128.png" alt=""><b>Achei</b></span>', `<button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
+  const cats = `<div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>`;
+  // com busca ou filtro: procura em todas as marcas e lojas, e compara as lojas
+  if (buscando()) {
+    const q = semAcento(S.q.trim()).split(/\s+/).filter(Boolean);
+    let { items, hiddenSize } = feedList(p =>
+      q.every(w => semAcento(p.marca + ' ' + p.titulo).includes(w)) &&
+      (S.cat === 'Tudo' || p.cat === S.cat) && (S.qKind === 'Tudo' || p.kind === S.qKind) &&
+      (S.qBrand === 'Todas' || p.marca === S.qBrand) && (S.qLoja === 'Todas' || p.ofertas.some(o => o.loja === S.qLoja)));
+    items = ordenar(items.filter(x => (S.qMax >= 3000 || x.e.price <= S.qMax) && (!S.qSale || x.e.off > 0)));
+    return cabeca + painelBusca() + cats + (S.qLoja === 'Todas' ? comparador(items) : '') + `
+      <div class="wrap"><p class="section-sub" style="margin:12px 0">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p></div>
+      ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
+  }
   const brands = activeBrands();
   const { items, hiddenSize } = feedList(p => brands.has(p.marca) && (S.cat === 'Tudo' || p.cat === S.cat));
   // intercala marcas: cada peça seguinte da mesma marca perde 3 pontos na ordenação
@@ -362,16 +386,13 @@ function viewOfertas() {
     .map(x => ({ x, k: x.e.score - 3 * (rank[x.p.marca] = (rank[x.p.marca] ?? -1) + 1) - naoCurtiPeso(x.p) + curtiPeso(x.p) }))
     .sort((a, b) => b.k - a.k).map(o => o.x);
   if (S.sort !== 'nota') deals = ordenar(deals);
-  const alerts = buildAlerts();
   const fontes = DATA.marcas.filter(m => m.arquivos?.length && brands.has(m.nome)).length;
-  return header('<b>Garimpo</b>', `<button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${alerts.length ? '<span class="dot"></span>' : ''}</button>`) + `
+  return cabeca + painelBusca() + `
     <div class="wrap intro">
-      <p>${deals.length} ofertas nos seus tamanhos (${esc(sizesText())}) em ${fontes} marcas</p>
-      <p>Atualizado em ${esc(DATA.atualizado)}</p>
+      <p>${deals.length} ofertas nos seus tamanhos (${esc(sizesText())}) em ${fontes} marcas · atualizado em ${esc(DATA.atualizado)}</p>
     </div>
     ${saleBloco()}
-    <div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>
-    <div class="wrap">${seletorOrdem('sortOfertas')}</div>
+    ${cats}
     ${grid(deals) || '<div class="wrap note"><span>Nenhuma oferta nesta categoria agora.</span></div>'}
     <div class="wrap note">${hiddenSize ? `<span>${hiddenSize} peças ocultas por não ter seu tamanho disponível.</span>` : ''}<span>Fotos e preços vêm direto dos sites das marcas.</span></div>`;
 }
@@ -391,27 +412,71 @@ function ordenar(lista) {
 }
 const seletorOrdem = id => `<div class="ordem"><label for="${id}">Ordenar por</label><select id="${id}" data-ordem>${Object.entries(ORDENS).map(([k, v]) => `<option value="${k}" ${S.sort === k ? 'selected' : ''}>${v}</option>`).join('')}</select></div>`;
 
-function viewBuscar() {
-  const q = S.q.trim().toLowerCase();
-  const brands = ['Todas', ...DATA.marcas.filter(m => m.arquivos?.length).map(m => m.nome)];
+/* ---------- Busca e filtros (dentro de Ofertas) ---------- */
+const filtrosAtivos = () => [S.qKind !== 'Tudo', S.qBrand !== 'Todas', S.qLoja !== 'Todas', S.qSale, S.qMax < 3000].filter(Boolean).length;
+const buscando = () => !!S.q.trim() || filtrosAtivos() > 0;
+function painelBusca() {
+  const marcas = ['Todas', ...DATA.marcas.filter(m => m.arquivos?.length).map(m => m.nome)];
+  const lojas = ['Todas', ...new Set(DATA.produtos.flatMap(p => p.ofertas.map(o => o.loja)))].sort((a, b) => a === 'Todas' ? -1 : b === 'Todas' ? 1 : a.localeCompare(b));
   const kinds = ['Tudo', ...Object.keys(KIND_LABEL).filter(k => DATA.produtos.some(p => p.kind === k))];
-  let { items, hiddenSize } = feedList(p =>
-    (!q || (p.marca + ' ' + p.titulo).toLowerCase().includes(q)) &&
-    (S.qKind === 'Tudo' || p.kind === S.qKind) && (S.qBrand === 'Todas' || p.marca === S.qBrand));
-  items = ordenar(items.filter(x => x.e.price <= S.qMax && (!S.qSale || x.e.off > 0)));
-  return header('Buscar') + `
-    <div class="wrap">
-      <label class="search"><span>${ICON.buscar}</span><input id="q" type="search" placeholder="Marca ou peça" value="${esc(S.q)}" autocomplete="off" enterkeyhint="search"></label>
+  const n = filtrosAtivos();
+  return `<div class="wrap busca">
+    <label class="search"><span>${ICON.buscar}</span><input id="q" type="search" placeholder="Busque uma peça, modelo ou marca (ex.: 9060)" value="${esc(S.q)}" autocomplete="off" enterkeyhint="search"></label>
+    <div class="busca-acoes">
+      <button class="chip" data-filtros aria-expanded="${S.filtrosAbertos}">Filtros${n ? ` (${n})` : ''} ${S.filtrosAbertos ? '▴' : '▾'}</button>
+      ${buscando() ? '<button class="chip" data-limpar>Limpar busca</button>' : ''}
+      ${seletorOrdem('sortOfertas')}
+    </div>
+    ${S.filtrosAbertos ? `<div class="filtros">
+      <span class="lbl">Tipo de peça</span>
       <div class="chips" role="group" aria-label="Tipo de peça">${kinds.map(k => `<button class="chip" data-qkind="${k}" aria-pressed="${S.qKind === k}">${k === 'Tudo' ? 'Tudo' : KIND_LABEL[k]}</button>`).join('')}</div>
       <div class="field-row">
-        <div class="field"><label for="qBrand">Marca</label><select id="qBrand">${brands.map(b => `<option ${b === S.qBrand ? 'selected' : ''}>${esc(b)}</option>`).join('')}</select></div>
-        <div class="field"><div class="range-val"><label for="qMax">Até</label><span class="mono lbl">${brl(S.qMax)}</span></div><input id="qMax" type="range" min="100" max="3000" step="50" value="${S.qMax}"></div>
+        <div class="field"><label for="qBrand">Marca</label><select id="qBrand">${marcas.map(b => `<option ${b === S.qBrand ? 'selected' : ''}>${esc(b)}</option>`).join('')}</select></div>
+        <div class="field"><label for="qLoja">Loja</label><select id="qLoja">${lojas.map(b => `<option ${b === S.qLoja ? 'selected' : ''}>${esc(b)}</option>`).join('')}</select></div>
       </div>
+      <div class="field"><div class="range-val"><label for="qMax">Preço até</label><span class="mono lbl">${S.qMax >= 3000 ? 'qualquer' : brl(S.qMax)}</span></div><input id="qMax" type="range" min="100" max="3000" step="50" value="${S.qMax}"></div>
       <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-sw="qSale" aria-checked="${S.qSale}" aria-label="Só peças com desconto"></button></div>
-      <div style="margin-top:8px">${seletorOrdem('sortBuscar')}</div>
-      <p class="section-sub" style="margin:8px 0 12px">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p>
-    </div>
-    ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
+    </div>` : ''}
+  </div>`;
+}
+
+// modelo: o nome da peça sem a marca e sem palavras genéricas ("Tênis New Balance 9060 Unissex" → "9060")
+const GENERICAS = new Set(['tenis', 'tênis', 'unissex', 'unisex', 'masculino', 'masculina', 'feminino', 'feminina', 'de', 'da', 'do', 'com', 'e', 'em', 'the', 'men', 'mens', 'adulto']);
+function modeloChave(p) {
+  const marca = new Set(p.marca.toLowerCase().split(/\s+/));
+  return p.titulo.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').split(/[^a-z0-9]+/)
+    .filter(w => w && !GENERICAS.has(w) && !marca.has(w) && !(p.marca === 'Adidas Originals' && w === 'adidas')).sort().join(' ');
+}
+// comparador: para o que foi buscado, qual loja tem mais barato e quais dos seus tamanhos cada uma tem
+function porLoja(lista) {
+  const lojas = {};
+  for (const { p, e } of lista) for (const l of e.lojas) {
+    const o = p.ofertas.find(x => x.loja === l.loja);
+    const tam = (o?.variantes || []).filter(v => v.a && v.p >= 10 && fits(v.t, p.group) && p.group !== 'one').map(v => sizeLabel(v.t));
+    const L = (lojas[l.loja] ||= { loja: l.loja, min: Infinity, n: 0, tam: new Set(), melhor: null });
+    L.n++; tam.forEach(t => L.tam.add(t));
+    if (l.price < L.min) { L.min = l.price; L.melhor = p; }
+  }
+  return Object.values(lojas).sort((a, b) => a.min - b.min);
+}
+// ordem natural dos tamanhos: números primeiro, depois PP, P, M, G, GG, XGG
+const ordemTam = t => (isNaN(+t) ? 100 + ['PP', 'P', 'M', 'G', 'GG', 'XGG'].indexOf(t) : +t);
+const tamTxt = s => [...s].sort((m, n) => ordemTam(m) - ordemTam(n)).join(', ');
+const seloLoja = (L, i) => i !== 0 ? '' : L[1] && L[1].min === L[0].min ? '<span class="tag t-gray">Mesmo preço</span>' : '<span class="tag t-ok">Mais barato</span>';
+const semAcento = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+function comparador(lista) {
+  const L = porLoja(lista);
+  if (L.length < 2) return '';
+  const [a, b] = L, eco = Math.round((1 - a.min / L[L.length - 1].min) * 100);
+  return `<div class="wrap"><div class="panel comparador">
+    <strong>Onde está mais barato: "${esc(S.q.trim() || 'sua busca')}"</strong>
+    <span class="t2" style="color:var(--fg2);font-size:13px"><b>${esc(a.loja.replace(/^Site /, 'Site da '))}</b> tem a partir de <b class="mono">${brl(a.min)}</b>${eco > 0 ? `, ${eco}% menos que a loja mais cara` : ''}. Preços nos seus tamanhos; cores podem variar.</span>
+    <div class="list">${L.map((x, i) => `<button class="row rowbtn" data-loja="${esc(x.loja)}">
+      <div class="grow"><span class="t1">${esc(x.loja)} ${seloLoja(L, i)}</span>
+        <span class="t2">${x.n} ${x.n > 1 ? 'opções' : 'opção'}${x.tam.size ? ` · seus tamanhos: ${tamTxt(x.tam)}` : ''}</span></div>
+      <span class="mono" style="font-size:15px">${brl(x.min)}</span></button>`).join('')}</div>
+    <span class="t2" style="color:var(--helper);font-size:11px">Só lojas confiáveis: sites oficiais das marcas e grandes multimarcas. Toque numa loja para ver só as peças dela.</span>
+  </div></div>`;
 }
 
 /* ---------- Marcas novas: escolhidas e mostradas pelo seu estilo, não pela nota ---------- */
@@ -596,7 +661,7 @@ function viewPerfil() {
     <h2 class="section-h">Seu estilo ♥</h2>
     ${(() => {
       const e = estilo(), n = Object.keys(S.curtidas).length;
-      if (!n) return '<p class="section-sub">Curta peças (♡) para o Garimpo aprender seu estilo e trazer mais coisas parecidas.</p>';
+      if (!n) return '<p class="section-sub">Curta peças (♡) para o Achei aprender seu estilo e trazer mais coisas parecidas.</p>';
       const top = (o, rot) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([k, v]) => `${rot(k)} (${v})`).join(', ');
       return `<p class="section-sub">${n} ${n > 1 ? 'peças curtidas' : 'peça curtida'}. Você curte mais: <b>${esc(top(e.kind, k => KIND_LABEL[k].toLowerCase()))}</b>, das marcas <b>${esc(top(e.marca, k => k))}</b>. Peças assim sobem no feed, e eu uso isso para escolher marcas novas e importados.</p>`;
     })()}
@@ -715,6 +780,20 @@ function openDetail(key) {
         ${bars.map(b => `<div class="bar-row"><span>${b[0]}</span><span class="mono" style="color:var(--helper)">${Math.round(b[1])}/${b[2]}</span><span class="meter ${b[1] / b[2] > .6 ? 'hi' : ''}"><i style="width:${(b[1] / b[2]) * 100}%"></i></span></div>`).join('')}
       </div>` : ''}
       ${lojasBlock}
+      ${(() => {
+        // o mesmo modelo vendido em outras lojas (outras cores entram juntas)
+        const chave = modeloChave(p);
+        if (!chave) return '';
+        const iguais = DATA.produtos.filter(x => x.marca === p.marca && modeloChave(x) === chave).map(x => ({ p: x, e: evaluate(x) })).filter(x => x.e.ok);
+        const L = porLoja(iguais);
+        if (L.length < 2) return '';
+        return `<h3 class="section-h">Mesmo modelo em outras lojas</h3>
+          <p class="section-sub">Menor preço de cada loja nos seus tamanhos. Cores podem variar.</p>
+          <div class="list">${L.map((x, i) => `<button class="row rowbtn" data-open="${esc(x.melhor.key)}">
+            <div class="grow"><span class="t1">${esc(x.loja)} ${seloLoja(L, i)}</span>
+              <span class="t2">${x.n} ${x.n > 1 ? 'cores/opções' : 'opção'}${x.tam.size ? ` · seus tamanhos: ${tamTxt(x.tam)}` : ''}</span></div>
+            <span class="mono" style="font-size:15px">${brl(x.min)}</span></button>`).join('')}</div>`;
+      })()}
       ${intlBlock}
       <h3 class="section-h">Histórico de preço</h3>
       ${histBlock}
@@ -723,7 +802,7 @@ function openDetail(key) {
         <button class="btn ${curti ? '' : 'tertiary'}" data-curti="${esc(key)}" aria-pressed="${curti}" style="${curti ? 'background:var(--bad)' : ''}">${curti ? '♥ Curtido' : '♡ Curti'}</button>
         <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener">${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato ↗' : 'Ver na loja ↗'}</a>
       </div>
-      <p class="section-sub" style="margin-top:8px">🔔 avisa quando o preço sair do comum. ♡ ensina o Garimpo a trazer mais peças e marcas assim.</p>
+      <p class="section-sub" style="margin-top:8px">🔔 avisa quando o preço sair do comum. ♡ ensina o Achei a trazer mais peças e marcas assim.</p>
       <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">Não curti: esconder esta peça</button>
     </div>`);
 }
@@ -734,8 +813,8 @@ let toastT;
 function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
 
 /* ---------- Render ---------- */
-const TABS = [['ofertas', 'Ofertas'], ['buscar', 'Buscar'], ['marcas', 'Marcas'], ['farfetch', 'Importados'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
-const VIEWS = { ofertas: viewOfertas, buscar: viewBuscar, marcas: viewMarcas, farfetch: viewFarfetch, salvos: viewSalvos, perfil: viewPerfil };
+const TABS = [['ofertas', 'Ofertas'], ['marcas', 'Marcas'], ['farfetch', 'Importados'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
+const VIEWS = { ofertas: viewOfertas, marcas: viewMarcas, farfetch: viewFarfetch, salvos: viewSalvos, perfil: viewPerfil };
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
@@ -781,7 +860,7 @@ document.addEventListener('click', ev => {
   else if (d.open) { openDetail(d.open); }
   else if ('alerts' in d) { openAlerts(); }
   else if ('close' in d) { closeSheet(); render(); }
-  else if (d.brand) { S.tab = 'buscar'; S.qBrand = d.brand; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
+  else if (d.brand) { S.tab = 'ofertas'; S.qBrand = d.brand; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.save) {
     // alerta sem alvo: o robô avisa quando o preço sair do comum (abaixo do preço justo, menor já visto ou queda forte)
     const k = d.save, p = DATA.produtos.find(x => x.key === k);
@@ -812,8 +891,11 @@ document.addEventListener('click', ev => {
   else if (d.delmodelo) { S.modelos = S.modelos.filter(m => m.id !== d.delmodelo); render(); }
   else if ('sync' in d) { sincronizar(prefsAtuais(), true); }
   else if ('restaurar' in d) { S.ocultas = {}; render(); toast('Todas as peças escondidas voltaram'); }
-  else if (d.busca) { S.tab = 'buscar'; S.q = d.busca.replace(/^New Balance /, ''); S.qBrand = 'Todas'; S.qSale = false; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
-  else if (d.salebrand) { S.tab = 'buscar'; S.qBrand = d.salebrand; S.qSale = true; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
+  else if (d.busca) { S.tab = 'ofertas'; S.q = d.busca.replace(/^New Balance /, ''); S.qBrand = 'Todas'; S.qSale = false; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
+  else if ('filtros' in d) { S.filtrosAbertos = !S.filtrosAbertos; render(); }
+  else if ('limpar' in d) { Object.assign(S, { q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, limit: 40 }); render(); }
+  else if (d.loja) { S.qLoja = d.loja; S.limit = 40; render(); }
+  else if (d.salebrand) { S.tab = 'ofertas'; S.qBrand = d.salebrand; S.qSale = true; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.sw) { S[d.sw] = !S[d.sw]; render(); }
   else if (d.size) {
     const [g, o] = d.size.split(':'); const atual = S.sizes[g];
@@ -834,6 +916,7 @@ document.addEventListener('change', ev => {
   const t = ev.target;
   if (t.dataset.ordem !== undefined) S.sort = t.value;
   else if (t.id === 'qBrand') S.qBrand = t.value;
+  else if (t.id === 'qLoja') S.qLoja = t.value;
   else if (t.id === 'qMax') S.qMax = +t.value;
   else if (t.id === 'notaMin') S.notaMin = +t.value;
   else if (t.id === 'minSave') S.minSave = +t.value;
