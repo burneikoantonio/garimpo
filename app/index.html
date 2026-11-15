@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Achei">
 <meta name="theme-color" content="#161616">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="icone-180.png">
-<link rel="icon" type="image/png" href="icone-192.png">
+<link rel="manifest" href="manifest.webmanifest?v=2">
+<link rel="apple-touch-icon" href="achei-180.png">
+<link rel="icon" type="image/png" href="achei-192.png">
 <title>Achei</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap">
 <style>
@@ -254,7 +254,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794762022"></script>
+<script src="core.js?v=1794762547"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -561,6 +561,24 @@ function custoFarfetch(preco) {
   const produto = base - frete, ii = base * c.ii, icms = total - base - ii;
   return { total, produto, frete, ii, icms, impostos: ii + icms, c };
 }
+// Comparação final: Brasil (Farfetch BR entregue) × EUA (preço da loja lá e o custo de trazer por conta própria).
+// O preço americano é estimado a partir do preço sem impostos (a Farfetch não deixa abrir a loja dos EUA daqui).
+const FRETE_EUA_USD = 30; // redirecionador/loja americana até o Brasil
+function comparaImportado(a) {
+  const k = custoFarfetch(a.por), usd = DATA.cambio?.USD || 5.5;
+  const euaUsd = k.produto / usd;
+  const euaCheioUsd = a.de ? custoFarfetch(a.de).produto / usd : euaUsd;
+  const trazer = custoImportado({ moeda: 'USD', frete: FRETE_EUA_USD }, euaUsd);
+  const trazerTotal = trazer ? trazer.total : k.total;
+  const econ = (trazerTotal - k.total) / trazerTotal;          // quanto a Farfetch BR economiza vs trazer você mesmo
+  const razao = k.total / (euaCheioUsd * usd);                  // total aqui ÷ preço cheio na loja americana
+  const pDesc = Math.min(40, (a.off || 0) * 40 / 70);
+  const pRota = Math.max(0, Math.min(30, econ * 100));
+  const pCheio = Math.max(0, Math.min(30, (1.5 - razao) * 30));
+  const nota = Math.round(pDesc + pRota + pCheio);
+  const veredito = nota >= 75 ? 'Ótima compra' : nota >= 50 ? 'Boa compra' : nota >= 30 ? 'Compra ok' : 'Só se gostar muito';
+  return { k, usd, euaUsd, euaCheioUsd, trazer, trazerTotal, econ, razao, nota, veredito, pts: [pDesc, pRota, pCheio] };
+}
 function abrirImportado(i) {
   const a = FF.achados[i]; if (!a) return;
   const k = custoFarfetch(a.por), usd = DATA.cambio?.USD;
@@ -589,6 +607,38 @@ function abrirImportado(i) {
         <div class="meter"><i style="width:100%;background:var(--layer2)"></i></div>
         <div class="range-val"><span>Agora</span><span class="mono" style="color:var(--good)">${brl(a.por)} (-${a.off}%)</span></div>
         <div class="meter hi"><i style="width:${a.por / a.de * 100}%"></i></div></div>` : ''}
+      ${(() => {
+        const cp = comparaImportado(a), usd2 = v => 'US$ ' + Math.round(v);
+        const melhor = cp.econ >= 0;
+        const linhas = [
+          ['🇧🇷 Aqui no Brasil', 'Farfetch Brasil, entregue com frete e impostos', k.total, true],
+          ['🇺🇸 Na loja dos EUA', `${usd2(cp.euaUsd)} na etiqueta, sem frete nem imposto`, cp.euaUsd * cp.usd, false],
+          ['🇺🇸 Trazer dos EUA você mesmo', `${usd2(cp.euaUsd)} + frete ${usd2(FRETE_EUA_USD)} + IOF, imposto de importação e ICMS`, cp.trazerTotal, false],
+        ];
+        const maxV = Math.max(...linhas.map(l => l[2]));
+        return `<h3 class="section-h">Comparação final: Brasil × EUA</h3>
+        <div class="panel">
+          ${linhas.map(([t, sub, v, br]) => `<div style="display:grid;gap:4px;margin-bottom:12px">
+            <div class="range-val"><span>${t}</span><span class="mono" style="font-weight:600">${brl(Math.round(v))}</span></div>
+            <div class="meter ${br ? 'hi' : ''}"><i style="width:${v / maxV * 100}%"></i></div>
+            <span class="t2" style="color:var(--helper);font-size:12px">${sub}</span></div>`).join('')}
+          ${a.de ? `<p class="t2" style="color:var(--helper);font-size:12px;margin:0">Preço cheio dessa peça nos EUA: ≈ ${usd2(cp.euaCheioUsd)} (${brl(Math.round(cp.euaCheioUsd * cp.usd))}). Com o desconto, o total aqui é <b>${Math.round(cp.razao * 100)}%</b> desse valor, já com frete e impostos.</p>` : ''}
+        </div>
+        <div class="panel" style="margin-top:12px;display:grid;gap:8px">
+          <div class="range-val"><span style="font-size:16px;font-weight:600">${cp.veredito}</span><span class="score mono" style="font-size:20px">Nota ${cp.nota}</span></div>
+          <div class="meter ${cp.nota >= 50 ? 'hi' : ''}"><i style="width:${cp.nota}%"></i></div>
+          <p class="t2" style="font-size:13px;margin:0">${melhor
+            ? `Comprar na Farfetch Brasil sai <b>${brl(Math.round(cp.trazerTotal - k.total))} mais barato</b> que trazer dos EUA por conta própria.`
+            : `Trazer dos EUA por conta própria sairia <b>${brl(Math.round(k.total - cp.trazerTotal))} mais barato</b> que a Farfetch Brasil.`}
+            Mas, por causa dos impostos, você paga cerca de <b>${(k.total / (cp.euaUsd * cp.usd)).toLocaleString('pt-BR', { maximumFractionDigits: 1 })}×</b> o preço da etiqueta americana.</p>
+          <div class="nota" style="margin-top:0">
+            <div><span>Desconto (${a.off || 0}%)</span><span class="mono">${Math.round(cp.pts[0])}</span><span class="mono pct">/40</span></div>
+            <div><span>Brasil × trazer dos EUA</span><span class="mono">${Math.round(cp.pts[1])}</span><span class="mono pct">/30</span></div>
+            <div><span>Total aqui × preço cheio nos EUA</span><span class="mono">${Math.round(cp.pts[2])}</span><span class="mono pct">/30</span></div>
+          </div>
+        </div>
+        <p class="section-sub" style="margin-top:8px">O preço nos EUA é uma estimativa a partir do preço sem impostos (a Farfetch não deixa abrir a loja americana daqui do Brasil). Para trazer você mesmo: dólar do dia R$ ${cp.usd.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}, frete estimado US$ ${FRETE_EUA_USD}, IOF 3,5%, imposto de importação 60% e ICMS 17%.</p>`;
+      })()}
       <div class="actions" style="grid-template-columns:1fr"><a class="btn" href="${esc(a.url)}" target="_blank" rel="noopener">Ver na Farfetch ↗</a></div>
     </div>`);
 }
@@ -604,7 +654,7 @@ function viewFarfetch() {
   const marcasNaFaixa = FF.marcas.filter(m => FFS.faixa === 'todas' || m.faixa === FFS.faixa);
   let achados = FF.achados.filter(a => a.por <= FFS.max && (FFS.faixa === 'todas' || faixaDe[a.marca] === FFS.faixa)
     && (FFS.tipo === 'Tudo' || tipoImportado(a.nome) === FFS.tipo) && (FFS.marca === 'Todas' || a.marca === FFS.marca) && (!FFS.sale || a.off > 0));
-  achados = [...achados].sort({ desconto: (a, b) => b.off - a.off || a.por - b.por, menor: (a, b) => a.por - b.por, maior: (a, b) => b.por - a.por }[FFS.ordem]);
+  achados = [...achados].sort({ desconto: (a, b) => b.off - a.off || a.por - b.por, nota: (a, b) => comparaImportado(b).nota - comparaImportado(a).nota, menor: (a, b) => a.por - b.por, maior: (a, b) => b.por - a.por }[FFS.ordem]);
   const comAchado = new Set(FF.achados.map(a => a.marca));
   const chip = (attr, val, atual, rot) => `<button class="chip" data-${attr}="${esc(val)}" aria-pressed="${atual === val}">${esc(rot)}</button>`;
   return header('Importados') + `
@@ -614,7 +664,7 @@ function viewFarfetch() {
       <div class="chips" role="group" aria-label="Tipo">${['Tudo', 'Roupas', 'Calçados', 'Acessórios'].map(t => chip('fftipo', t, FFS.tipo, t)).join('')}</div>
       <div class="field-row">
         <div class="field"><label for="ffMarca">Marca</label><select id="ffMarca">${['Todas', ...[...comAchado].sort()].map(m => `<option ${m === FFS.marca ? 'selected' : ''}>${esc(m)}</option>`).join('')}</select></div>
-        <div class="field"><label for="ffOrdem">Ordenar</label><select id="ffOrdem">${Object.entries({ desconto: 'Maior desconto', menor: 'Menor preço', maior: 'Maior preço' }).map(([k, v]) => `<option value="${k}" ${FFS.ordem === k ? 'selected' : ''}>${v}</option>`).join('')}</select></div>
+        <div class="field"><label for="ffOrdem">Ordenar</label><select id="ffOrdem">${Object.entries({ desconto: 'Maior desconto', nota: 'Melhor nota', menor: 'Menor preço', maior: 'Maior preço' }).map(([k, v]) => `<option value="${k}" ${FFS.ordem === k ? 'selected' : ''}>${v}</option>`).join('')}</select></div>
       </div>
       <div class="field"><div class="range-val"><label for="ffMax">Preço até</label><span class="mono lbl">${brl(FFS.max)}</span></div><input id="ffMax" type="range" min="100" max="${FF.limite}" step="50" value="${FFS.max}"></div>
       <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-ffsale aria-checked="${FFS.sale}" aria-label="Só peças com desconto"></button></div>
@@ -624,7 +674,8 @@ function viewFarfetch() {
       <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags">${a.off ? `<span class="tag t-sale">-${a.off}%</span>` : ''}<span class="tag ${faixaDe[a.marca] === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[faixaDe[a.marca]] || '')}</span></div></div>
       <div class="body"><span class="brand">${esc(a.marca)} · Farfetch</span><span class="pname">${esc(a.nome)}</span>
         <span class="prices">${a.de ? `<span class="was mono">${brl(a.de)}</span>` : ''}<span class="now mono">${brl(a.por)}</span></span>
-        <span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">${brl(custoFarfetch(a.por).total)} com frete${a.tam ? ` · ${esc(a.tam)}` : ''}</span></div></button>`).join('') || '<div class="wrap note"><span>Nenhuma peça com esses filtros.</span></div>'}</div>
+        <span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">${brl(custoFarfetch(a.por).total)} com frete${a.tam ? ` · ${esc(a.tam)}` : ''}</span>
+        ${(n => `<span class="scoreline"><span class="meter ${n >= 50 ? 'hi' : ''}"><i style="width:${n}%"></i></span><span class="score mono">Nota ${n}</span></span>`)(comparaImportado(a).nota)}</div></button>`).join('') || '<div class="wrap note"><span>Nenhuma peça com esses filtros.</span></div>'}</div>
     <div class="wrap"><h2 class="section-h">Marcas${FFS.faixa !== 'todas' ? ` · ${esc(FF.faixas[FFS.faixa])}` : ''}</h2>
       <div class="list">${marcasNaFaixa.map(m => `<div class="row"><div class="grow"><span class="t1">${esc(m.nome)} <span class="tag ${m.faixa === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[m.faixa])}</span></span><span class="t2">${esc(m.frase)}${comAchado.has(m.nome) ? '' : ` · nada até ${brl(FF.limite)} agora`}</span></div><a class="btn ghost sm" href="${esc(buscaFF(m))}" target="_blank" rel="noopener">Farfetch ↗</a></div>`).join('')}</div>
     </div>
