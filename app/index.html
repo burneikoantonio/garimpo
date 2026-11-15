@@ -276,7 +276,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794782906"></script>
+<script src="core.js?v=1794783390"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -350,7 +350,8 @@ const S = {
   curtidas: store.get('curtidas', {}),  // peças curtidas: chave -> { marca, kind, titulo, preco, em }
   canal: store.get('canal', ''),       // canal do ntfy (o mesmo assinado no app ntfy)
   dispensadas: store.get('dispensadas', []),
-  carrinho: store.get('carrinho', {}),   // simulação de compra: chave -> { em }   // marcas sugeridas que você dispensou
+  carrinho: store.get('carrinho', {}),
+  push: store.get('push', null),   // inscrição de notificações deste celular (endereço + chaves públicas)   // simulação de compra: chave -> { em }   // marcas sugeridas que você dispensou
   ocultas: store.get('ocultas', {}),   // peças marcadas como "Não curti": chave -> { marca, kind }
 };
 
@@ -964,6 +965,40 @@ function desenharLook() {
     </div>`);
 }
 
+/* ---------- Notificações do próprio Achei (Web Push): o robô manda direto para o celular ---------- */
+const VAPID_PUBLICA = 'BBsbFVsD8hXdsXTuOWcw-g2bhCB17Wep_8cWBa-5086MoL_3cs8wPMXveLwALz5jvec9s8NlNzZVnuOr5LV3F2k';
+const naTelaInicial = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+function estadoPush() {
+  if (!('serviceWorker' in navigator) || !('PushManager' in window) || !('Notification' in window)) return naTelaInicial() ? 'sem-suporte' : 'instalar';
+  if (Notification.permission === 'denied') return 'bloqueado';
+  return S.push && Notification.permission === 'granted' ? 'ativo' : 'desligado';
+}
+const b64url = s => { const p = '='.repeat((4 - s.length % 4) % 4); const b = atob((s + p).replace(/-/g, '+').replace(/_/g, '/')); return Uint8Array.from(b, c => c.charCodeAt(0)); };
+async function ativarPush() {
+  try {
+    const perm = await Notification.requestPermission();
+    if (perm !== 'granted') { toast('Sem permissão: as notificações não foram ativadas'); render(); return; }
+    const reg = await navigator.serviceWorker.ready;
+    const sub = (await reg.pushManager.getSubscription()) || await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64url(VAPID_PUBLICA) });
+    S.push = sub.toJSON(); persist();
+    toast(S.canal ? 'Notificações ativadas. Os próximos avisos chegam pelo Achei.' : 'Ativadas. Preencha o canal no Perfil para o robô saber para onde mandar.');
+    render();
+  } catch (e) { toast('Não consegui ativar: ' + e.message); }
+}
+async function desligarPush() {
+  try { const reg = await navigator.serviceWorker.ready; const sub = await reg.pushManager.getSubscription(); if (sub) await sub.unsubscribe(); } catch (e) {}
+  S.push = null; persist(); toast('Notificações do Achei desativadas'); render();
+}
+async function testarPush() {
+  const reg = await navigator.serviceWorker.ready;
+  await reg.showNotification('Achei', { body: 'Teste: as notificações do Achei estão funcionando neste celular.', icon: 'achei-192.png', data: { url: './#top10' } });
+}
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+  // tocou numa notificação com o app já aberto: vai para a peça ou o Top
+  navigator.serviceWorker.addEventListener('message', ev => { if (ev.data?.abrir) { location.hash = new URL(ev.data.abrir).hash; } });
+}
+
 /* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
 function abrirTop10() {
   const lista = top10(activeBrands());
@@ -1135,6 +1170,19 @@ function viewPerfil() {
       const top = (o, rot) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([k, v]) => `${rot(k)} (${v})`).join(', ');
       return `<p class="section-sub">${n} ${n > 1 ? 'peças curtidas' : 'peça curtida'}. Você curte mais: <b>${esc(top(e.kind, k => KIND_LABEL[k].toLowerCase()))}</b>, das marcas <b>${esc(top(e.marca, k => k))}</b>. Peças assim sobem no feed, e eu uso isso para escolher marcas novas e importados.</p>`;
     })()}
+    <h2 class="section-h">Notificações do Achei</h2>
+    ${(() => {
+      const st = estadoPush();
+      if (st === 'ativo') return `<div class="notice ok"><span><b>Ativadas neste celular.</b> Ao tocar num aviso, o Achei abre direto na peça.</span></div>
+        <div style="display:flex;gap:8px;margin-top:8px"><button class="btn tertiary sm" data-push-teste>Mandar um teste</button><button class="btn ghost sm" data-push-desligar style="color:var(--helper)">Desativar</button></div>`;
+      if (st === 'instalar') return '<p class="section-sub">Para receber notificações do próprio Achei, abra o app pelo ícone na tela de início (no iPhone, não funciona pelo Safari).</p>';
+      if (st === 'bloqueado') return '<p class="section-sub">As notificações estão bloqueadas. No iPhone: Ajustes → Notificações → Achei → Permitir notificações.</p>';
+      if (st === 'sem-suporte') return '<p class="section-sub">Este celular não aceita notificações de apps da web (no iPhone, precisa do iOS 16.4 ou mais novo).</p>';
+      return `<p class="section-sub">Receba os avisos com o nome e o ícone do Achei. Ao tocar, abre o app direto na peça ou no Top.</p>
+        <button class="btn" data-push-ativar>🔔 Ativar notificações</button>
+        ${S.canal ? '' : '<p class="section-sub" style="margin-top:6px">Precisa do seu canal (logo abaixo) preenchido, que é por onde o robô sabe para onde mandar.</p>'}`;
+    })()}
+
     <h2 class="section-h">Avisos no celular</h2>
     <p class="section-sub">Digite o mesmo canal que você assinou no app ntfy. Assim o robô sabe dos seus salvos, alertas de modelo e tamanhos.</p>
     <div class="field"><label for="canal">Seu canal do ntfy</label><input id="canal" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" value="${esc(S.canal)}" placeholder="garimpo-..." style="height:40px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 12px;font-size:16px"></div>
@@ -1292,11 +1340,11 @@ const VIEWS = { ofertas: viewOfertas, marcas: viewMarcas, farfetch: viewFarfetch
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
-function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('dispensadas', S.dispensadas); store.set('carrinho', S.carrinho); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('dispensadas', S.dispensadas); store.set('carrinho', S.carrinho); store.set('push', S.push); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
 
 /* ---------- Sincronia com o robô: salvos, alertas de modelo e tamanhos vão por um canal privado do ntfy ---------- */
 // o robô lê "<seu canal>-prefs" depois de cada atualização; só o que importa para os avisos é enviado
-const prefsAtuais = () => JSON.stringify({ tamanhos: S.sizes, follow: S.follow, dispensadas: S.dispensadas, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
+const prefsAtuais = () => JSON.stringify({ push: S.push || null, tamanhos: S.sizes, follow: S.follow, dispensadas: S.dispensadas, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
 let syncT;
 function agendarSync() {
   if (!S.canal) return;
@@ -1350,6 +1398,9 @@ document.addEventListener('click', ev => {
     toast(`${ks.length} peças na simulação: veja em Salvos${todas.length > ks.length ? ' (as da Farfetch ficam de fora)' : ''}`);
   }
   else if (d.top10 !== undefined) abrirTop10();
+  else if (d.pushAtivar !== undefined) ativarPush();
+  else if (d.pushDesligar !== undefined) desligarPush();
+  else if (d.pushTeste !== undefined) testarPush();
   else if (d.carrinho) {
     const k = d.carrinho;
     if (S.carrinho[k]) { const c = { ...S.carrinho }; delete c[k]; S.carrinho = c; toast('Saiu da simulação'); }

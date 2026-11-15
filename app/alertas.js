@@ -20,9 +20,16 @@ async function carregarPrefs() {
     try {
       const r = await fetch(`https://ntfy.sh/${topic}-prefs/json?poll=1&since=all`);
       const linhas = (await r.text()).trim().split('\n').filter(Boolean).map(l => JSON.parse(l)).filter(m => m.event === 'message');
+      const inscricoes = [...(guardadas?.pushes || [])];
       for (const m of linhas) {
         const p = JSON.parse(m.message);
-        if (!guardadas || (p.em || 0) > (guardadas.em || 0)) guardadas = p;
+        if (p.push?.endpoint) inscricoes.push(p.push);
+        for (const x of p.pushes || []) inscricoes.push(x);
+        if (!guardadas || (p.em || 0) > (guardadas.em || 0)) guardadas = { ...p, pushes: guardadas?.pushes, mortos: guardadas?.mortos };
+      }
+      if (guardadas) {
+        const mortos = new Set(guardadas.mortos || []);
+        guardadas.pushes = [...new Map(inscricoes.filter(x => x?.endpoint && !mortos.has(x.endpoint)).map(x => [x.endpoint, x])).values()];
       }
     } catch (e) { console.error('Não consegui ler as preferências do celular:', e.message); }
   }
@@ -60,8 +67,39 @@ async function carregarPrefs() {
   const foto = p => p.imagens[0] ? p.imagens[0] + (p.imagens[0].includes('vteximg') ? '' : (p.imagens[0].includes('?') ? '&' : '?') + 'width=400') : undefined;
   let enviadosAgora = 0;
 
+  // Notificações do próprio Achei (Web Push): vão para cada celular que tocou em "Ativar notificações"
+  let webpush = null;
+  const pushes = TESTE ? [] : (prefs?.pushes || []);
+  if (pushes.length && process.env.VAPID_PRIVATE && process.env.VAPID_PUBLIC) {
+    try {
+      webpush = require('web-push');
+      webpush.setVapidDetails(site || 'https://burneikoantonio.github.io/garimpo', process.env.VAPID_PUBLIC, process.env.VAPID_PRIVATE);
+    } catch (e) { console.error('web-push indisponível:', e.message); webpush = null; }
+  }
+  let pushOk = 0, pushErro = 0;
+  async function enviarPush(msg) {
+    if (!webpush) return;
+    const corpo = JSON.stringify({ title: msg.title, body: msg.message, url: msg.click || site || './', tag: msg.tag });
+    for (const sub of [...prefs.pushes]) {
+      try { await webpush.sendNotification(sub, corpo, { TTL: 86400 }); pushOk++; }
+      catch (e) {
+        pushErro++;
+        if (e.statusCode === 404 || e.statusCode === 410) { // celular desativou ou reinstalou: esquece essa inscrição
+          prefs.pushes = prefs.pushes.filter(x => x.endpoint !== sub.endpoint);
+          prefs.mortos = [...(prefs.mortos || []), sub.endpoint];
+        } else console.error('Web Push falhou:', e.statusCode, e.body || e.message);
+      }
+    }
+  }
+  if (process.env.TESTE_PUSH) {
+    await enviarPush({ title: 'Achei', message: 'Teste: as notificações do Achei estão chegando direitinho. Toque para abrir o Top da semana.', click: site ? `${site}/#top10` : undefined, tag: 'teste' });
+    console.log(`Teste de notificação: ${pushes.length} celular(es), ${pushOk} enviada(s), ${pushErro} erro(s)`);
+    if (!TESTE && prefs) { fs.mkdirSync(path.dirname(PREFS), { recursive: true }); fs.writeFileSync(PREFS, JSON.stringify(prefs)); }
+    return;
+  }
   async function enviar(msg) {
     enviadosAgora++;
+    await enviarPush(msg);
     if (process.env.DRY_RUN || !TOPICO) { console.log('[aviso]', msg.title, '—', msg.message.replace(/\n/g, ' | ')); return; }
     const r = await fetch('https://ntfy.sh', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ topic: TOPICO, ...msg }) });
     if (!r.ok) console.error('ntfy respondeu', r.status, await r.text());
@@ -146,6 +184,8 @@ async function carregarPrefs() {
   }
 
   if (!TESTE) fs.writeFileSync(path.join(dir, ARQ_ENVIADOS), JSON.stringify(enviados, null, 1));
+  if (!TESTE && prefs) { fs.mkdirSync(path.dirname(PREFS), { recursive: true }); fs.writeFileSync(PREFS, JSON.stringify(prefs)); }  // guarda inscrições limpas
+  console.log(`Notificações do Achei: ${pushes.length} celular(es), ${pushOk} enviadas, ${pushErro} erros`);
   console.log(`Preferências do celular: ${prefs ? `sim (${Object.keys(prefs.salvos || {}).length} salvos, ${(prefs.modelos || []).length} alertas de modelo)` : 'não recebidas ainda'}`);
   console.log(`Avisos: ${enviadosAgora} enviados (salvos ${nSalvos}, modelos ${nModelos}, quedas/lançamentos ${alertas.length}, top 10 ${top ? 'sim' : 'não'})`);
 })();
