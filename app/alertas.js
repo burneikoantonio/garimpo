@@ -7,10 +7,13 @@ const path = require('path');
 
 const dir = __dirname;
 const ler = (f, padrao) => { try { return JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')); } catch (e) { if (padrao !== undefined) return padrao; throw e; } };
-const PREFS = path.join(dir, '..', '.prefs', 'prefs.json');
 // modo teste (CANAL_TESTE): usa outro canal e não grava nada, para não afetar os avisos de verdade
 const TESTE = !!process.env.CANAL_TESTE;
-const TOPICO = process.env.CANAL_TESTE || process.env.NTFY_TOPIC;
+// Vários canais: NTFY_TOPIC é o principal; NTFY_EXTRA traz outros separados por vírgula (cada pessoa com o seu perfil)
+const CANAIS = TESTE ? [process.env.CANAL_TESTE] : [process.env.NTFY_TOPIC, ...(process.env.NTFY_EXTRA || '').split(',')].map(x => (x || '').trim()).filter(Boolean);
+// arquivos de cada canal: o 1º usa os nomes de sempre; os outros ganham -2, -3...
+const sufixo = n => n === 1 ? '' : `-${n}`;
+let PREFS, TOPICO;
 
 async function carregarPrefs() {
   let guardadas = null;
@@ -41,9 +44,10 @@ async function carregarPrefs() {
   return guardadas;
 }
 
-(async () => {
+async function rodarCanal(n) {
   const cfg = ler('config.json');
   const prefs = await carregarPrefs();
+  if (n > 1 && !prefs) { console.log(`Canal ${n}: ainda sem perfil (ninguém configurou o app com ele)`); return; }
   globalThis.S = { sizes: prefs?.tamanhos || cfg.tamanhos, onlyMySize: true, showIntl: cfg.importados.mostrar, minSave: cfg.importados.economiaMinima };
   if (prefs?.follow?.length) cfg.marcas = prefs.follow;
   cfg.dispensadas = prefs?.dispensadas || [];
@@ -57,7 +61,7 @@ async function carregarPrefs() {
   const hoje = agora.toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' });
   const hora = +agora.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo', hour: 'numeric', hour12: false });
   const domingo = new Date(hoje + 'T12:00:00').getDay() === 0;
-  const ARQ_ENVIADOS = 'data/alertas-enviados.json';
+  const ARQ_ENVIADOS = `data/alertas-enviados${sufixo(n)}.json`;
   const enviados = ler(ARQ_ENVIADOS, {});
   for (const [k, d] of Object.entries(enviados)) if ((agora - new Date(d)) > 30 * 864e5) delete enviados[k]; // esquece após 30 dias
 
@@ -190,4 +194,13 @@ async function carregarPrefs() {
   console.log(`Notificações do Achei: ${pushes.length} celular(es), ${pushOk} enviadas, ${pushErro} erros`);
   console.log(`Preferências do celular: ${prefs ? `sim (${Object.keys(prefs.salvos || {}).length} salvos, ${(prefs.modelos || []).length} alertas de modelo)` : 'não recebidas ainda'}`);
   console.log(`Avisos: ${enviadosAgora} enviados (salvos ${nSalvos}, modelos ${nModelos}, quedas/lançamentos ${alertas.length}, top 10 ${top ? 'sim' : 'não'})`);
+}
+
+(async () => {
+  if (!CANAIS.length) CANAIS.push('');
+  for (let i = 0; i < CANAIS.length; i++) {
+    TOPICO = CANAIS[i]; PREFS = path.join(dir, '..', '.prefs', `prefs${sufixo(i + 1)}.json`);
+    console.log(`--- Canal ${i + 1} de ${CANAIS.length} ---`);
+    try { await rodarCanal(i + 1); } catch (e) { console.error(`Canal ${i + 1} falhou:`, e); process.exitCode = 1; }
+  }
 })();

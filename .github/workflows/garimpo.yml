@@ -63,6 +63,7 @@ jobs:
       - name: Mandar avisos para o celular (ntfy)
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_EXTRA: ${{ secrets.NTFY_EXTRA }}
           CANAL_TESTE: ${{ inputs.canal_teste }}
           FORCAR_TOP10: ${{ inputs.top_agora && '1' || '' }}
           TESTE_PUSH: ${{ inputs.teste_push && '1' || '' }}
