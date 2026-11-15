@@ -170,7 +170,7 @@ async function carregarPrefs() {
     const seguidas = new Set(cfg.marcas);
     const ativas = new Set(DATA.marcas.filter(m => seguidas.has(m.nome) || (cfg.incluirSugeridas && m.relacao === 'sugerida' && !(cfg.dispensadas || []).includes(m.nome))).map(m => m.nome));
     // um aviso por categoria (Tênis, Roupas, Acessórios), cada um abrindo a sua lista no app
-    for (const { cat, slug, lista } of core.topPorCategoria(ativas)) {
+    for (const { cat, slug, lista } of core.topPorCategoria(ativas, new Set(prefs?.ocultas || []))) {
       if (!lista.length) continue;
       await enviar({ title: `🏆 Top ${lista.length} ${cat} da semana`, message: lista.map((x, i) => `${i + 1}. ${x.p.marca} ${x.p.titulo}: ${brl(x.e.price)} (-${Math.round(x.e.off * 100)}%)`).join('\n'), tags: ['trophy'], tag: `top-${slug}`, click: site ? `${site}/#top10-${slug}` : undefined });
       top = true;

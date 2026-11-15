@@ -198,6 +198,10 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(5, 1fr); }
 .nav .navdot { position: absolute; top: 8px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
 .rec { padding-block: 16px; border-bottom: 1px solid var(--border); display: grid; gap: 10px; }
+.top-linha { display: flex; align-items: stretch; border-bottom: 1px solid var(--border); }
+.top-linha > .row { flex: 1; min-width: 0; border-bottom: 0 !important; }
+.top-fora { flex: none; width: 56px; display: grid; place-content: center; gap: 2px; background: none; border: 0; border-left: 1px solid var(--border); color: var(--helper); font-size: 18px; }
+.top-fora span { font-size: 9px; }
 .mini-look { display: grid; grid-template-columns: 140px 1fr; gap: 12px; align-items: start; }
 .mini-fig .boneco { zoom: .54; width: 260px; margin: 0; }
 .mini-lista { display: grid; gap: 6px; min-width: 0; }
@@ -276,7 +280,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794783781"></script>
+<script src="core.js?v=1794784304"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -1001,18 +1005,18 @@ if ('serviceWorker' in navigator) {
 
 /* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
 function abrirTop10(slug = 'tenis') {
-  const tops = topPorCategoria(activeBrands());
+  const tops = topPorCategoria(activeBrands(), new Set(Object.keys(S.ocultas)));
   const atual = tops.find(t => t.slug === slug) || tops[0], lista = atual.lista;
   showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top ${lista.length} ${esc(atual.cat)} da semana</h1></div></header>
     <div class="wrap">
       <div class="chips" role="group" aria-label="Categoria" style="margin-top:12px">${tops.map(t => `<button class="chip" data-topcat="${t.slug}" aria-pressed="${t.slug === atual.slug}">${esc(t.cat)} (${t.lista.length})</button>`).join('')}</div>
       <p class="section-sub">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10 por categoria; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), cresce para 15 ou 20. Atualiza a cada rodada do robô (8h e 18h).</p>
-      <div class="list">${lista.map(({ p, e }, i) => `<button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;border-bottom:1px solid var(--border);background:none">
+      <div class="list">${lista.map(({ p, e }, i) => `<div class="top-linha"><button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;background:none">
         <span class="mono" style="font-size:20px;width:28px;flex:none;color:var(--helper)">${i + 1}</span>
         <span class="thumb"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></span>
         <span class="grow" style="display:grid;gap:2px"><span class="t2">${esc(p.marca)} · ${esc(e.lojas[0].loja)}</span><span class="t1">${esc(p.titulo)}</span>
           <span><span class="mono">${brl(e.price)}</span> ${e.de ? `<span class="mono was" style="font-size:12px">${brl(e.de)}</span>` : ''} <span class="tag t-sale">-${Math.round(e.off * 100)}%</span> <span class="mono" style="font-size:12px;color:var(--helper)">nota ${e.score}</span></span></span>
-      </button>`).join('') || '<p class="section-sub">Nenhuma peça com desconto nas suas marcas agora.</p>'}</div>
+      </button><button class="top-fora" data-topfora="${esc(p.key)}" data-slug="${atual.slug}" aria-label="Não curti ${esc(p.titulo)}: trocar por outra">✕<span>Não curti</span></button></div>`).join('') || '<p class="section-sub">Nenhuma peça com desconto nas suas marcas agora.</p>'}</div>
     </div>`);
 }
 /* ---------- Simular compra: vale a pena levar agora? ---------- */
@@ -1346,7 +1350,7 @@ function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store
 
 /* ---------- Sincronia com o robô: salvos, alertas de modelo e tamanhos vão por um canal privado do ntfy ---------- */
 // o robô lê "<seu canal>-prefs" depois de cada atualização; só o que importa para os avisos é enviado
-const prefsAtuais = () => JSON.stringify({ push: S.push || null, tamanhos: S.sizes, follow: S.follow, dispensadas: S.dispensadas, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
+const prefsAtuais = () => JSON.stringify({ push: S.push || null, ocultas: Object.keys(S.ocultas), tamanhos: S.sizes, follow: S.follow, dispensadas: S.dispensadas, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
 let syncT;
 function agendarSync() {
   if (!S.canal) return;
@@ -1433,6 +1437,13 @@ document.addEventListener('click', ev => {
     toast(`${n} dispensada. Para trazer de volta: Perfil → Marcas dispensadas`); render();
   }
   else if (d.voltar) { S.dispensadas = S.dispensadas.filter(x => x !== d.voltar); toast(`${d.voltar} voltou para Marcas novas`); render(); }
+  else if (d.topfora) {
+    // Não curti no Top: esconde, aprende e a próxima melhor oferta entra no lugar
+    const p = DATA.produtos.find(x => x.key === d.topfora); if (!p) return;
+    S.ocultas = { ...S.ocultas, [d.topfora]: { marca: p.marca, kind: p.kind } }; persist();
+    const y = document.getElementById('sheet').scrollTop; abrirTop10(d.slug); document.getElementById('sheet').scrollTop = y;
+    toast('Tirei essa e coloquei outra no lugar');
+  }
   else if (d.ocultar) {
     const p = DATA.produtos.find(x => x.key === d.ocultar);
     S.ocultas = { ...S.ocultas, [d.ocultar]: { marca: p.marca, kind: p.kind } };
