@@ -2,7 +2,7 @@
   "marca": "Overcome",
   "loja": "Site Overcome",
   "site": "www.overcome.com.br",
-  "atualizado": "2026-11-16T12:09:14Z",
+  "atualizado": "2026-11-16T21:52:50Z",
   "produtos": [
     {
       "id": "7085113868467",
@@ -13676,7 +13676,7 @@
           "t": "GG",
           "p": 59.90,
           "c": 0,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -15968,7 +15968,7 @@
           "t": "M",
           "p": 130.00,
           "c": 79.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G",
@@ -25774,46 +25774,6 @@
           "p": 59.90,
           "c": 99.90,
           "a": true
-        },
-        {
-          "t": "G",
-          "p": 59.90,
-          "c": 99.90,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 59.90,
-          "c": 99.90,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "8322649161907",
-      "titulo": "Camiseta Overcome Flame Ball Preta",
-      "url": "https://www.overcome.com.br/products/camiseta-overcome-flame-ball-preta",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [],
-      "publicado": "2025-08-28T16:57:01-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0594/7847/4931/files/DSC_0526.jpg?v=1756416398",
-        "https://cdn.shopify.com/s/files/1/0594/7847/4931/files/DSC_0528.jpg?v=1760469377",
-        "https://cdn.shopify.com/s/files/1/0594/7847/4931/files/DSC_0527.jpg?v=1760469377"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 59.90,
-          "c": 99.90,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 59.90,
-          "c": 99.90,
-          "a": false
         },
         {
           "t": "G",

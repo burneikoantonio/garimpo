@@ -2,79 +2,75 @@
   "marca": "Dendezeiro",
   "loja": "Site Dendezeiro",
   "site": "dendezeiro.com.br",
-  "atualizado": "2026-11-16T12:10:29Z",
+  "atualizado": "2026-11-16T21:54:11Z",
   "produtos": [
     {
-      "id": "10331391525160",
-      "titulo": "Sandália Kenner Dendezeiro - Marrom",
-      "url": "https://dendezeiro.com.br/products/sandalia-kenner-dendezeiro-verde",
+      "id": "10407246135592",
+      "titulo": "Sandália Kenner Dendezeiro - Preto",
+      "url": "https://dendezeiro.com.br/products/sandalia-kenner-dendezeiro-preto",
       "ref": "",
-      "tipo": "SANDÁLIA",
-      "tags": [
-        "Essentials",
-        "todos"
-      ],
-      "publicado": "2026-11-05T14:27:39-03:00",
+      "tipo": "",
+      "tags": [],
+      "publicado": "2026-11-16T11:03:48-03:00",
       "imagens": [
-        "https://cdn.shopify.com/s/files/1/0914/2327/7352/files/IMG_3207.jpg?v=1783178873",
-        "https://cdn.shopify.com/s/files/1/0914/2327/7352/files/IMG_3459.jpg?v=1788198282",
-        "https://cdn.shopify.com/s/files/1/0914/2327/7352/files/IMG_3448.jpg?v=1783178932",
-        "https://cdn.shopify.com/s/files/1/0914/2327/7352/files/IMG_3353.jpg?v=1783178884"
+        "https://cdn.shopify.com/s/files/1/0914/2327/7352/files/IMG_3210_0c036896-0153-4817-b5e3-93b3d1cdf1a9.jpg?v=1787231857",
+        "https://cdn.shopify.com/s/files/1/0914/2327/7352/files/IMG_3212_a2c36291-2b9c-4aa0-914f-e76316079d50.jpg?v=1787231859",
+        "https://cdn.shopify.com/s/files/1/0914/2327/7352/files/IMG_3208_3da1a45c-baf8-435f-ad4f-14e1c8131214.jpg?v=1787231856"
       ],
       "variantes": [
+        {
+          "t": "34/35",
+          "p": 219.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "36",
+          "p": 219.00,
+          "c": 0,
+          "a": true
+        },
         {
           "t": "37",
           "p": 219.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "38",
           "p": 219.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "39",
           "p": 219.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "40",
           "p": 219.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "41",
           "p": 219.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "42",
           "p": 219.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "43",
           "p": 219.00,
           "c": 0,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 219.00,
-          "c": 0,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 219.00,
-          "c": 0,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -112,7 +108,7 @@
           "t": "39",
           "p": 219.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "42",
@@ -1744,54 +1740,6 @@
           "p": 280.00,
           "c": 0,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "10273486012712",
-      "titulo": "T-SHIRT VITA'S HOUSE - OFF WHITH (EXCLUSIVE MERCH)",
-      "url": "https://dendezeiro.com.br/products/t-shirt-vitas-house-off-whith-exclusive-merch",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "Essentials",
-        "todos"
-      ],
-      "publicado": "2026-05-06T14:04:17-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0914/2327/7352/files/IMG_5108.jpg?v=1777669288",
-        "https://cdn.shopify.com/s/files/1/0914/2327/7352/files/IMG_5118.jpg?v=1777669287"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 280.00,
-          "c": 0,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 280.00,
-          "c": 0,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 280.00,
-          "c": 0,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 280.00,
-          "c": 0,
-          "a": true
-        },
-        {
-          "t": "EGG",
-          "p": 280.00,
-          "c": 0,
-          "a": false
         }
       ]
     },

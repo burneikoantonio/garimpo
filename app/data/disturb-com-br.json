@@ -2,7 +2,7 @@
   "marca": "Disturb",
   "loja": "Site Disturb",
   "site": "disturb.com.br",
-  "atualizado": "2026-11-16T12:09:08Z",
+  "atualizado": "2026-11-16T21:52:44Z",
   "produtos": [
     {
       "id": "9390101266712",
@@ -376,7 +376,7 @@
           "t": "S",
           "p": 104.50,
           "c": 209.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
@@ -573,121 +573,6 @@
           "t": "XXL",
           "p": 99.50,
           "c": 199.00,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "9692099379480",
-      "titulo": "Hotline Tee in Black",
-      "url": "https://disturb.com.br/products/hotline-tee-in-black",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [
-        "barra crew",
-        "camisa",
-        "camisa disturb",
-        "camiseta",
-        "disturb",
-        "high company",
-        "radio",
-        "skate",
-        "streetwear",
-        "t-shirt"
-      ],
-      "publicado": "2026-11-13T02:34:00-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/HotlineTeeinBlackBack.jpg?v=1742492693",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/HotlineTeeinBlack.jpg?v=1742492693",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/HotlineTeeinBlack_6690a242-86e7-40bd-9019-8e6dfdacc70f.jpg?v=1742500504",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/HotlineTeeinBlackBack_901668e2-5299-408a-8786-5bffda21f44a.jpg?v=1742500504"
-      ],
-      "variantes": [
-        {
-          "t": "S",
-          "p": 99.50,
-          "c": 199.00,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 99.50,
-          "c": 199.00,
-          "a": false
-        },
-        {
-          "t": "L",
-          "p": 99.50,
-          "c": 199.00,
-          "a": false
-        },
-        {
-          "t": "XL",
-          "p": 99.50,
-          "c": 199.00,
-          "a": false
-        },
-        {
-          "t": "XXL",
-          "p": 99.50,
-          "c": 199.00,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "9824823279896",
-      "titulo": "Tonal Sweatpants in Black",
-      "url": "https://disturb.com.br/products/tonal-sweatpants-in-black",
-      "ref": "",
-      "tipo": "Calça",
-      "tags": [
-        "barra crew",
-        "basic",
-        "calça",
-        "disturb",
-        "essential",
-        "high company",
-        "moletom",
-        "skate",
-        "streetwear"
-      ],
-      "publicado": "2026-11-13T02:26:41-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/TonalSweatpantsinBlack.jpg?v=1755023034",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/TonalSweatpantsinBlackCostas.jpg?v=1755023034",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/TonalSweatpantsinBlack2.jpg?v=1755038579",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/TonalSweatpantsinBlackBack.jpg?v=1755038579"
-      ],
-      "variantes": [
-        {
-          "t": "S",
-          "p": 189.50,
-          "c": 379.00,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 189.50,
-          "c": 379.00,
-          "a": false
-        },
-        {
-          "t": "L",
-          "p": 189.50,
-          "c": 379.00,
-          "a": false
-        },
-        {
-          "t": "XL",
-          "p": 189.50,
-          "c": 379.00,
-          "a": false
-        },
-        {
-          "t": "XXL",
-          "p": 189.50,
-          "c": 379.00,
           "a": false
         }
       ]
@@ -1925,7 +1810,7 @@
           "t": "L",
           "p": 153.30,
           "c": 219.00,
-          "a": true
+          "a": false
         },
         {
           "t": "XL",
@@ -3578,13 +3463,13 @@
           "t": "S",
           "p": 137.40,
           "c": 229.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
           "p": 137.40,
           "c": 229.00,
-          "a": false
+          "a": true
         },
         {
           "t": "L",
@@ -3635,7 +3520,7 @@
           "t": "S",
           "p": 137.40,
           "c": 229.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
@@ -3693,13 +3578,13 @@
           "t": "S",
           "p": 137.40,
           "c": 229.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
           "p": 137.40,
           "c": 229.00,
-          "a": false
+          "a": true
         },
         {
           "t": "L",
@@ -5971,7 +5856,7 @@
           "t": "S",
           "p": 143.40,
           "c": 239.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
@@ -6319,7 +6204,7 @@
           "t": "XL",
           "p": 131.40,
           "c": 219.00,
-          "a": true
+          "a": false
         },
         {
           "t": "XXL",
@@ -12009,61 +11894,6 @@
       ]
     },
     {
-      "id": "9870541947160",
-      "titulo": "Heat Logo T-Shirt in Off-White",
-      "url": "https://disturb.com.br/products/heat-logo-t-shirt-in-off-white",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [
-        "camisa",
-        "camisa disturb",
-        "camiseta",
-        "disturb",
-        "Heat Logo",
-        "skate",
-        "streetwear",
-        "t-shirt"
-      ],
-      "publicado": "2025-09-11T03:01:52-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/HeatLogoTeeinOff-white.jpg?v=1757570014",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/BackTeeOff-white_b8f16862-3fc1-49d4-a91c-2eaf56c7b647.jpg?v=1757570014",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/HeatLogoTeeinOff-white_2754f7ec-6a0e-491b-94dc-dee6a95eae78.jpg?v=1757632896"
-      ],
-      "variantes": [
-        {
-          "t": "S",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "L",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "XL",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "XXL",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "9870543618328",
       "titulo": "Fingerprint T-Shirt in Green",
       "url": "https://disturb.com.br/products/fingerprint-t-shirt-in-green",
@@ -12091,7 +11921,7 @@
           "t": "S",
           "p": 104.50,
           "c": 209.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
@@ -12210,62 +12040,6 @@
           "p": 104.50,
           "c": 209.00,
           "a": true
-        },
-        {
-          "t": "L",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "XL",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "XXL",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "9870523531544",
-      "titulo": "Please do Disturb T-Shirt in Off-White",
-      "url": "https://disturb.com.br/products/please-do-disturb-t-shirt-in-off-white",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [
-        "camisa",
-        "camisa disturb",
-        "camiseta",
-        "disturb",
-        "Please do Disturb",
-        "skate",
-        "streetwear",
-        "t-shirt"
-      ],
-      "publicado": "2025-09-11T02:59:35-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/PleasedoDisturbTeeinOff-whiteBack.jpg?v=1757572126",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/PleasedoDisturbTeeinOff-white.jpg?v=1757572126",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/PleasedoDisturbTeeinOff-whiteBack_d0ea3747-c183-4ec0-aa54-9f0289b681f1.jpg?v=1757625097",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/PleasedoDisturbTeeinOff-white_714c1303-f799-4e57-b407-ab0dde1bc0f5.jpg?v=1757625096"
-      ],
-      "variantes": [
-        {
-          "t": "S",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
         },
         {
           "t": "L",
@@ -12657,63 +12431,6 @@
           "p": 104.50,
           "c": 209.00,
           "a": true
-        },
-        {
-          "t": "L",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "XL",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "XXL",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "9870540079384",
-      "titulo": "Heat Logo T-Shirt in Brown",
-      "url": "https://disturb.com.br/products/heat-logo-t-shirt-in-brown",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [
-        "barra crew",
-        "camisa",
-        "camisa disturb",
-        "camiseta",
-        "disturb",
-        "high company",
-        "radio",
-        "skate",
-        "streetwear",
-        "t-shirt"
-      ],
-      "publicado": "2025-09-11T02:54:57-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/HeatLogoTeeinBrown.jpg?v=1757570102",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/BrownTeeCostas_d9ac5d64-36c1-46a1-9eaf-f609f0dfef37.jpg?v=1757570102",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/HeatLogoTeeinBrown_e082a2c7-f9b0-4c08-a286-fbe775f9b178.jpg?v=1757625693"
-      ],
-      "variantes": [
-        {
-          "t": "S",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
         },
         {
           "t": "L",
@@ -13682,64 +13399,6 @@
       ]
     },
     {
-      "id": "9768800846104",
-      "titulo": "Tobacco T-Shirt in Black",
-      "url": "https://disturb.com.br/products/tobacco-t-shirt-in-black",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [
-        "barra crew",
-        "camisa",
-        "camisa disturb",
-        "camiseta",
-        "disturb",
-        "high company",
-        "radio",
-        "skate",
-        "streetwear",
-        "t-shirt"
-      ],
-      "publicado": "2025-06-16T14:45:51-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/TobaccoT-shirtinBlackBack.jpg?v=1749747325",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/TobaccoT-shirtinBlack.jpg?v=1749747325",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/TobaccoT-shirtinBlack_3f922e13-6215-478a-860a-201cba2177ba.jpg?v=1749755198",
-        "https://cdn.shopify.com/s/files/1/0742/0457/8072/files/TobaccoT-shirtinBlackBack_e6b37963-2f58-49c0-af8f-d430e7f61e39.jpg?v=1749755199"
-      ],
-      "variantes": [
-        {
-          "t": "S",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "L",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "XL",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        },
-        {
-          "t": "XXL",
-          "p": 104.50,
-          "c": 209.00,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "9768811069720",
       "titulo": "Dstar T-Shirt in Burgundy",
       "url": "https://disturb.com.br/products/dstar-t-shirt-in-burgundy",
@@ -13768,7 +13427,7 @@
           "t": "S",
           "p": 104.50,
           "c": 209.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
@@ -14689,7 +14348,7 @@
           "t": "S",
           "p": 99.50,
           "c": 199.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
