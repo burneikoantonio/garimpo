@@ -2,8 +2,60 @@
   "marca": "Piet",
   "loja": "Site Piet",
   "site": "piet.com.br",
-  "atualizado": "2026-11-17T17:16:21Z",
+  "atualizado": "2026-11-17T19:59:07Z",
   "produtos": [
+    {
+      "id": "9789253812453",
+      "titulo": "Piet F.C. Cap - Pink",
+      "url": "https://piet.com.br/products/piet-f-c-cap-pink",
+      "ref": "",
+      "tipo": "Bonés",
+      "tags": [
+        "PIET",
+        "SS26"
+      ],
+      "publicado": "2026-11-17T15:38:07-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/8a26c1631cfd10a6bac61ba8659f1dce.jpg?v=1788876680",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/8446dd9e4d1a1a5770aee476c65e61f2.jpg?v=1788876680",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/4431c00f7478a50fac92071d63feacbf.jpg?v=1788876680",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/7bba7a5f1c0935190b1ddab17a2dacc2.jpg?v=1788876680"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 174.95,
+          "c": 349.90,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "9543434436837",
+      "titulo": "Piet F.C. Distressed Cap - Black",
+      "url": "https://piet.com.br/products/piet-f-c-distressed-cap-black",
+      "ref": "",
+      "tipo": "Bonés",
+      "tags": [
+        "PIET",
+        "SS26"
+      ],
+      "publicado": "2026-11-17T15:30:41-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/piet-ss26reg097-1_1_1.jpg?v=1794940415",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/fc7661d7e518ef9b645471369acef698_097e789e-bde0-4fae-8290-c10a932269fb.jpg?v=1794940364",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/a891d71134469005ee8a6717c1af6185_76d3ff3c-d61f-4423-af0e-4981b8d31511.jpg?v=1794940364",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/0a80932c4cf0a7423787d694cae7afb1_0e6754d9-da42-4711-bc86-ad275b3c8a06.jpg?v=1794940364"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 174.95,
+          "c": 349.90,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "9270946136293",
       "titulo": "Emblem Raw Edge Oversized Tank Top - Vintage Black",
@@ -803,7 +855,7 @@
           "t": "52BR | 42US",
           "p": 699.90,
           "c": 699.90,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -2009,7 +2061,7 @@
           "t": "50BR | 40US",
           "p": 414.95,
           "c": 829.90,
-          "a": true
+          "a": false
         },
         {
           "t": "52BR | 42US",
@@ -4699,7 +4751,7 @@
           "t": "3XG | 3XL",
           "p": 174.95,
           "c": 349.90,
-          "a": true
+          "a": false
         },
         {
           "t": "4XG | 4XL",
