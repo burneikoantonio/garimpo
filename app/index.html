@@ -282,7 +282,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794935296"></script>
+<script src="core.js?v=1794935777"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -635,7 +635,8 @@ function abrirImportado(i) {
   const partes = [['Produto', k.produto, 'var(--c-produto)'], ['Frete', k.frete, '#888780'], [`Imposto de importação (${Math.round(k.c.ii * 100)}%)`, k.ii, '#EF9F27'], [`ICMS (${Math.round(k.c.icms * 100)}%)`, k.icms, '#D85A30']];
   const pct = v => Math.round(v / k.total * 100);
   showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${esc(a.marca)} · Farfetch</h1></div></header>
-    <div class="gallery"><img src="${esc(img(a.img, 800))}" alt="${esc(a.nome)}"></div>
+    <div class="gallery">${(a.imgs || [a.img]).map((u, n) => `<img src="${esc(img(u, 800))}" alt="${esc(a.nome)} – foto ${n + 1}" ${n ? 'loading="lazy"' : ''}>`).join('')}</div>
+    ${(a.imgs || []).length > 1 ? `<div class="wrap"><div class="gallery-count">${a.imgs.length} fotos · deslize para o lado</div></div>` : ''}
     <div class="wrap">
       <div class="detail-head"><span class="brand">${esc(a.marca)}</span><h2>${esc(a.nome)}</h2>
         ${a.tam ? `<span class="t2" style="color:var(--helper);font-size:12px">Tamanhos disponíveis: ${esc(a.tam)}</span>` : ''}</div>
@@ -694,7 +695,7 @@ function abrirImportado(i) {
 }
 
 // filtros da aba Importados (não ficam salvos)
-const FFS = { faixa: 'todas', tipo: 'Tudo', marca: 'Todas', max: 1500, sale: false, ordem: 'desconto' };
+const FFS = { faixa: 'todas', tipo: 'Tudo', marca: 'Todas', max: 2000, sale: false, ordem: 'desconto' };
 const tipoImportado = nome => /sneaker|sandal|loafer|boot|trainer|slide|mule/i.test(nome) ? 'Calçados' : /cap\b|beanie|hat\b|sunglasses|belt|bag|wallet|scarf/i.test(nome) ? 'Acessórios' : 'Roupas';
 function viewFarfetch() {
   if (!FF) return header('Importados') + '<div class="wrap note"><span>Não consegui carregar os importados.</span></div>';
@@ -709,7 +710,7 @@ function viewFarfetch() {
   const chip = (attr, val, atual, rot) => `<button class="chip" data-${attr}="${esc(val)}" aria-pressed="${atual === val}">${esc(rot)}</button>`;
   return header('Importados') + `
     <div class="wrap">
-      <div class="notice" style="margin-top:16px"><span>Peças da Farfetch Brasil, em reais, <b>até ${brl(FF.limite)}</b>, escolhidas por mim em <b>${esc(quando)}</b>. O robô não consegue acompanhar a Farfetch, então preço e estoque podem mudar. Para eu olhar de novo, peça <b>"atualiza os importados"</b>.</span></div>
+      <div class="notice" style="margin-top:16px"><span>Peças da Farfetch Brasil, em reais, <b>até ${brl(FF.limite)}</b>, ${FF.blackFriday ? `<b>${esc(FF.blackFriday)}</b> ` : ''}escolhidas por mim em <b>${esc(quando)}</b>. O robô não consegue acompanhar a Farfetch, então preço e estoque podem mudar. Para eu olhar de novo, peça <b>"atualiza os importados"</b>.</span></div>
       <div class="chips" role="group" aria-label="Faixa" style="margin-top:12px">${chip('fffaixa', 'todas', FFS.faixa, 'Todas')}${Object.entries(FF.faixas).map(([k, v]) => chip('fffaixa', k, FFS.faixa, v)).join('')}</div>
       <div class="chips" role="group" aria-label="Tipo">${['Tudo', 'Roupas', 'Calçados', 'Acessórios'].map(t => chip('fftipo', t, FFS.tipo, t)).join('')}</div>
       <div class="field-row">
@@ -721,7 +722,7 @@ function viewFarfetch() {
       <p class="section-sub" style="margin:12px 0">${achados.length} ${achados.length === 1 ? 'peça' : 'peças'}</p>
     </div>
     <div class="grid">${achados.map(a => `<div class="tilewrap">${(k => `<button class="heart ${S.curtidas[k] ? 'on' : ''}" data-curti="${esc(k)}" aria-pressed="${!!S.curtidas[k]}" aria-label="${S.curtidas[k] ? 'Remover curtida' : 'Curtir'}">${S.curtidas[k] ? '♥' : '♡'}</button>`)(ffKey(a))}<button class="tile" data-ffi="${FF.achados.indexOf(a)}">
-      <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags">${a.off ? `<span class="tag t-sale">-${a.off}%</span>` : ''}<span class="tag ${faixaDe[a.marca] === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[faixaDe[a.marca]] || '')}</span></div></div>
+      <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags">${a.off ? `<span class="tag t-sale">-${a.off}%</span>` : ''}${a.blackFriday ? '<span class="tag t-new">Black Friday</span>' : ''}<span class="tag ${faixaDe[a.marca] === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[faixaDe[a.marca]] || '')}</span></div></div>
       <div class="body"><span class="brand">${esc(a.marca)} · Farfetch</span><span class="pname">${esc(a.nome)}</span>
         <span class="prices">${a.de ? `<span class="was mono">${brl(a.de)}</span>` : ''}<span class="now mono">${brl(a.por)}</span></span>
         <span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">${brl(custoFarfetch(a.por).total)} com frete${a.tam ? ` · ${esc(a.tam)}` : ''}</span>
@@ -841,7 +842,7 @@ let FFPRODS = null;
 const ffKey = a => 'ff:' + (a.url.match(/item-(\d+)/)?.[1] || a.nome);
 function ffProdutos() {
   if (FFPRODS) return FFPRODS; if (!FF) return [];
-  FFPRODS = FF.achados.map((a, i) => ({ key: ffKey(a), ffi: i, marca: a.marca, titulo: a.nome, kind: classify({ tipo: '', titulo: a.nome, tags: [] }) || 'outro', imagens: [a.img], ff: true }));
+  FFPRODS = FF.achados.map((a, i) => ({ key: ffKey(a), ffi: i, marca: a.marca, titulo: a.nome, kind: classify({ tipo: '', titulo: a.nome, tags: [] }) || 'outro', imagens: a.imgs || [a.img], ff: true }));
   return FFPRODS;
 }
 const acharPeca = k => DATA.produtos.find(x => x.key === k) || ffProdutos().find(x => x.key === k);
