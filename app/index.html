@@ -202,6 +202,8 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .top-linha > .row { flex: 1; min-width: 0; border-bottom: 0 !important; }
 .top-fora { flex: none; width: 56px; display: grid; place-content: center; gap: 2px; background: none; border: 0; border-left: 1px solid var(--border); color: var(--helper); font-size: 18px; }
 .top-fora span { font-size: 9px; }
+.pixline { display: block; font-size: 11px; color: var(--good); margin-top: 2px; }
+.pagto { display: grid; gap: 6px; margin: -4px 0 16px; font-size: 13px; color: var(--fg2); }
 .mini-look { display: grid; grid-template-columns: 140px 1fr; gap: 12px; align-items: start; }
 .mini-fig .boneco { zoom: .54; width: 260px; margin: 0; }
 .mini-lista { display: grid; gap: 6px; min-width: 0; }
@@ -280,7 +282,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1794786404"></script>
+<script src="core.js?v=1794935296"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -339,11 +341,13 @@ const DEFAULT_SIZES = { top: ['M'], bottom: ['40'], shoe: ['41'] };
 const SIZE_OPTS = { top: Object.keys(TOP_EQ), bottom: Object.keys(BOTTOM_EQ), shoe: ['37', '38', '39', '40', '41', '42', '43', '44', '45'] };
 // versões antigas guardavam um tamanho só por categoria
 const asList = v => (Array.isArray(v) ? v : [v]).map(String);
+// celular novo: ainda não salvou tamanhos nem marcas → mostra as boas-vindas para a pessoa escolher os dela
+const PRIMEIRA_VEZ = store.get('sizes', null) === null && store.get('follow', null) === null && !store.get('boasVindas', false);
 const loadSizes = () => { const s = store.get('sizes', DEFAULT_SIZES); return { top: asList(s.top), bottom: asList(s.bottom), shoe: asList(s.shoe) }; };
 const sizesText = () => [S.sizes.top, S.sizes.bottom, S.sizes.shoe].map(l => l.join('/')).join(' · ');
 const S = {
   tab: (t => t === 'novas' ? 'marcas' : t === 'buscar' ? 'ofertas' : t)(store.get('tab', 'ofertas')), cat: 'Tudo', limit: 40,
-  q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, filtrosAbertos: false,
+  q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, qBaixou: false, filtrosAbertos: false,
   sizes: loadSizes(), onlyMySize: store.get('onlyMySize', true),
   withSuggested: store.get('withSuggested', true), notaMin: store.get('notaMin', 70),
   saved: store.get('saved', {}), follow: store.get('follow', null),
@@ -367,15 +371,16 @@ async function load() {
   const idx = await get('data/marcas.json');
   const hist = await get('data/historico.json').catch(() => ({}));
   const cambio = await get('data/cambio.json').catch(() => null);
+  const lojasInfo = await get('data/lojas-info.json').catch(() => ({}));
   const fontes = idx.marcas.flatMap(m => (m.arquivos || []).map(a => ({ m, a })));
   const cats = await Promise.all(fontes.map(({ m, a }) => get(a).then(c => ({ m, c })).catch(() => null)));
   const segue = idx.marcas.filter(m => m.relacao === 'segue').map(m => m.nome);
-  if (!S.follow) S.follow = [...segue];
+  if (!S.follow) S.follow = PRIMEIRA_VEZ ? [] : [...segue];
   // marca que passou a ser "sua" (ex.: New Balance) entra sozinha na lista de seguidas
   const vistas = store.get('segueVistas', SEGUE_ANTIGAS);
-  for (const n of segue) if (!vistas.includes(n) && !S.follow.includes(n)) S.follow.push(n);
+  if (!PRIMEIRA_VEZ) for (const n of segue) if (!vistas.includes(n) && !S.follow.includes(n)) S.follow.push(n);
   store.set('segueVistas', segue);
-  DATA = buildData(idx, cats, hist, cambio);
+  DATA = buildData(idx, cats, hist, cambio, lojasInfo);
   FF = await get("farfetch.json").catch(() => null);
   SX = await get("stockx.json").catch(() => null);
 }
@@ -422,6 +427,7 @@ function tile({ p, e }) {
       <span class="brand">${esc(p.marca)}${p.relacao === 'sugerida' ? ' · sugerida' : ''}${e.lojas.length > 1 ? ` · ${e.lojas.length} lojas` : p.ofertas[0].loja.startsWith('Site ') ? '' : ` · ${esc(e.lojas[0].loja)}`}</span>
       <span class="pname">${esc(p.titulo)}</span>
       <span class="prices">${e.de ? `<span class="was mono">${brl(e.de)}</span>` : ''}<span class="now mono">${brl(e.price)}</span></span>
+      ${e.lojas?.[0]?.pix ? `<span class="mono pixline">${brl(e.lojas[0].pix)} no Pix</span>` : ''}
       <span class="scoreline"><span class="meter ${e.score >= S.notaMin ? 'hi' : ''}"><i style="width:${e.score}%"></i></span><span class="score mono">Nota ${e.score}</span></span>
     </div></button></div>`;
 }
@@ -435,7 +441,7 @@ const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.n
 
 /* ---------- Telas ---------- */
 function viewOfertas() {
-  const cabeca = header('<span class="marca-app"><img src="logo-128.png" alt=""><b>Achei</b></span>', `<button class="iconbtn" data-top10 aria-label="Top 10 da semana" style="font-size:18px">🏆</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
+  const cabeca = header('<span class="marca-app"><img src="logo-128.png" alt=""><b>Achei</b></span>', `<button class="iconbtn" data-sw="qBaixou" aria-label="Só o que baixou de preço" aria-pressed="${S.qBaixou}" style="font-size:18px;${S.qBaixou ? "background:var(--layer2)" : ""}">📉</button><button class="iconbtn" data-top10 aria-label="Top 10 da semana" style="font-size:18px">🏆</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
   const cats = `<div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>`;
   // com busca ou filtro: procura em todas as marcas e lojas, e compara as lojas
   if (buscando()) {
@@ -444,7 +450,8 @@ function viewOfertas() {
       q.every(w => semAcento(p.marca + ' ' + p.titulo).includes(w)) &&
       (S.cat === 'Tudo' || p.cat === S.cat) && (S.qKind === 'Tudo' || p.kind === S.qKind) &&
       (S.qBrand === 'Todas' || p.marca === S.qBrand) && (S.qLoja === 'Todas' || p.ofertas.some(o => o.loja === S.qLoja)));
-    items = ordenar(items.filter(x => (S.qMax >= 3000 || x.e.price <= S.qMax) && (!S.qSale || x.e.off > 0)));
+    items = ordenar(items.filter(x => (S.qMax >= 3000 || x.e.price <= S.qMax) && (!S.qSale || x.e.off > 0) && (!S.qBaixou || baixouRecente(x.e))));
+    if (S.qBaixou) items.sort((a, b) => baixouRecente(b.e).queda - baixouRecente(a.e).queda);   // maiores quedas primeiro
     return cabeca + painelBusca() + cats + (S.qLoja === 'Todas' ? comparador(items) : '') + `
       <div class="wrap"><p class="section-sub" style="margin:12px 0">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p></div>
       ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
@@ -484,7 +491,15 @@ function ordenar(lista) {
 const seletorOrdem = id => `<div class="ordem"><label for="${id}">Ordenar por</label><select id="${id}" data-ordem>${Object.entries(ORDENS).map(([k, v]) => `<option value="${k}" ${S.sort === k ? 'selected' : ''}>${v}</option>`).join('')}</select></div>`;
 
 /* ---------- Busca e filtros (dentro de Ofertas) ---------- */
-const filtrosAtivos = () => [S.qKind !== 'Tudo', S.qBrand !== 'Todas', S.qLoja !== 'Todas', S.qSale, S.qMax < 3000].filter(Boolean).length;
+// baixou de preço nos últimos 14 dias (mais amplo que os avisos: qualquer queda conta)
+function baixouRecente(e) {
+  if (!e.hist || e.hist.length < 2) return null;
+  const lim = Date.now() - 14 * 864e5;
+  const antes = e.hist.slice(0, -1).filter(([d]) => new Date(d) >= lim).map(([, v]) => v);
+  const max = antes.length ? Math.max(...antes) : 0;
+  return max > e.price ? { antes: max, queda: 1 - e.price / max } : null;
+}
+const filtrosAtivos = () => [S.qKind !== 'Tudo', S.qBrand !== 'Todas', S.qLoja !== 'Todas', S.qSale, S.qBaixou, S.qMax < 3000].filter(Boolean).length;
 const buscando = () => !!S.q.trim() || filtrosAtivos() > 0;
 function painelBusca() {
   const marcas = ['Todas', ...DATA.marcas.filter(m => m.arquivos?.length).map(m => m.nome)];
@@ -507,6 +522,7 @@ function painelBusca() {
       </div>
       <div class="field"><div class="range-val"><label for="qMax">Preço até</label><span class="mono lbl">${S.qMax >= 3000 ? 'qualquer' : brl(S.qMax)}</span></div><input id="qMax" type="range" min="100" max="3000" step="50" value="${S.qMax}"></div>
       <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-sw="qSale" aria-checked="${S.qSale}" aria-label="Só peças com desconto"></button></div>
+      <div class="toggle"><div class="grow"><span>Só o que baixou de preço</span><span class="t2" style="display:block;font-size:12px;color:var(--helper)">Qualquer queda nos últimos 14 dias, maiores quedas primeiro</span></div><button class="switch" role="switch" data-sw="qBaixou" aria-checked="${S.qBaixou}" aria-label="Só o que baixou de preço"></button></div>
     </div>` : ''}
   </div>`;
 }
@@ -612,6 +628,7 @@ function comparaImportado(a) {
   return { k, usd, euaUsd, euaCheioUsd, trazer, trazerTotal, econ, razao, nota, veredito, pts: [pDesc, pRota, pCheio] };
 }
 function abrirImportado(i) {
+  ATUAL = { fn: abrirImportado, args: [i] };
   const a = FF.achados[i]; if (!a) return;
   const k = custoFarfetch(a.por), usd = DATA.cambio?.USD;
   const fmt2 = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -944,6 +961,7 @@ function boneco(base, vagas) {
   </div>`;
 }
 function desenharLook() {
+  ATUAL = { fn: L => { LOOK = L; desenharLook(); }, args: [LOOK] };
   const { base, vagas } = LOOK, eb = avaliar(base);
   const escolhidas = vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel]);
   const total = (eb.ok ? eb.price : 0) + escolhidas.reduce((s, x) => s + x.e.price, 0);
@@ -1003,22 +1021,54 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.addEventListener('message', ev => { if (ev.data?.abrir) { location.hash = new URL(ev.data.abrir).hash; } });
 }
 
+/* ---------- Boas-vindas: cada pessoa escolhe os próprios tamanhos e marcas ---------- */
+let BOAS_ABERTA = false;
+function abrirBoasVindas() {
+  BOAS_ABERTA = true;
+  const y = document.getElementById('sheet').scrollTop;
+  const marcas = DATA.marcas.filter(m => (m.arquivos || []).length).map(m => m.nome).sort((a, b) => a.localeCompare(b));
+  showSheet(`<header class="hdr"><div class="wrap"><h1 style="font-size:16px">Bem-vindo ao Achei</h1></div></header>
+    <div class="wrap">
+      <p class="section-sub" style="margin-top:12px">Escolha seus tamanhos e as marcas que você curte. Dá para mudar depois no Perfil.</p>
+      ${[['top', 'Camisetas, moletons e jaquetas'], ['bottom', 'Calças e bermudas'], ['shoe', 'Tênis']].map(([g, label]) => `
+        <div class="field"><span class="lbl">${label}</span>
+          <div class="sizes" role="group" aria-label="${label}">${SIZE_OPTS[g].map(o => `<button class="size ${S.sizes[g].includes(o) ? 'mine' : ''}" data-size="${g}:${o}" aria-pressed="${S.sizes[g].includes(o)}" style="background:none">${o}</button>`).join('')}</div>
+        </div>`).join('')}
+      <h2 class="section-h">Marcas que você quer seguir</h2>
+      <div class="chips" style="flex-wrap:wrap">${marcas.map(n => `<button class="chip" data-follow="${esc(n)}" aria-pressed="${S.follow.includes(n)}">${esc(n)}</button>`).join('')}</div>
+      <div class="actions" style="grid-template-columns:1fr;margin:20px 0"><button class="btn" data-boas-fim>Começar</button></div>
+    </div>`);
+  document.getElementById('sheet').scrollTop = y;
+}
+
 /* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
 function abrirTop10(slug = 'tenis') {
+  ATUAL = { fn: abrirTop10, args: [slug] };
   const tops = topPorCategoria(activeBrands(), new Set(Object.keys(S.ocultas)));
   const atual = tops.find(t => t.slug === slug) || tops[0], lista = atual.lista;
   showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top ${lista.length} ${esc(atual.cat)} da semana</h1></div></header>
     <div class="wrap">
       <div class="chips" role="group" aria-label="Categoria" style="margin-top:12px">${tops.map(t => `<button class="chip" data-topcat="${t.slug}" aria-pressed="${t.slug === atual.slug}">${esc(t.cat)} (${t.lista.length})</button>`).join('')}</div>
       <p class="section-sub">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10 por categoria; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), cresce até 20. Tocou em ✕, entra a próxima melhor. Atualiza a cada rodada do robô (8h e 18h).</p>
-      <div class="list">${lista.map(({ p, e }, i) => `<div class="top-linha"><button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;background:none">
+      <div class="list">${lista.map(({ p, e, outra }, i) => `<div class="top-linha"><button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;background:none">
         <span class="mono" style="font-size:20px;width:28px;flex:none;color:var(--helper)">${i + 1}</span>
         <span class="thumb"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></span>
         <span class="grow" style="display:grid;gap:2px"><span class="t2">${esc(p.marca)} · ${esc(e.lojas[0].loja)}</span><span class="t1">${esc(p.titulo)}</span>
-          <span><span class="mono">${brl(e.price)}</span> ${e.de ? `<span class="mono was" style="font-size:12px">${brl(e.de)}</span>` : ''} <span class="tag t-sale">-${Math.round(e.off * 100)}%</span> <span class="mono" style="font-size:12px;color:var(--helper)">nota ${e.score}</span></span></span>
+          <span>${outra ? `<span class="tag t-gray" style="margin-right:4px">${esc(p.cat)}</span>` : ''}<span class="mono">${brl(e.price)}</span> ${e.de ? `<span class="mono was" style="font-size:12px">${brl(e.de)}</span>` : ''} <span class="tag t-sale">-${Math.round(e.off * 100)}%</span> <span class="mono" style="font-size:12px;color:var(--helper)">nota ${e.score}</span></span></span>
       </button><button class="top-fora" data-topfora="${esc(p.key)}" data-slug="${atual.slug}" aria-label="Não curti ${esc(p.titulo)}: trocar por outra">✕<span>Não curti</span></button></div>`).join('') || '<p class="section-sub">Nenhuma peça com desconto nas suas marcas agora.</p>'}</div>
     </div>`);
 }
+/* ---------- Pix e frete grátis da loja (lidos do site pelo robô) ---------- */
+function pagamentoHTML(l, preco) {
+  const linhas = [];
+  if (l.pix) linhas.push(`<span>💠 No Pix: <b class="mono">${brl(l.pix)}</b> <span class="tag t-ok">-${Math.round((1 - l.pix / preco) * 100)}%</span></span>`);
+  if (l.freteGratis === 0) linhas.push('<span>🚚 Frete grátis</span>');
+  else if (l.freteGratis > 0) linhas.push(preco >= l.freteGratis ? `<span>🚚 <b>Frete grátis</b>: na ${esc(l.loja.replace(/^Site /, ''))} é a partir de ${brl(l.freteGratis)}, e esta peça já passa</span>`
+    : `<span>🚚 Frete grátis a partir de ${brl(l.freteGratis)} na ${esc(l.loja.replace(/^Site /, ''))} (faltam ${brl(l.freteGratis - preco)})</span>`);
+  if (l.freteObs) linhas.push(`<span>🚚 ${esc(l.freteObs)}</span>`);
+  return linhas.length ? `<div class="pagto">${linhas.join('')}</div>` : '';
+}
+
 /* ---------- Simular compra: vale a pena levar agora? ---------- */
 // cores e detalhes do nome servem para achar peças parecidas no visual (não temos como comparar as fotos em si)
 const CORES = [['preto', /pret|black|onyx/], ['branco', /branc|white(?!.*off)/], ['off', /off.?white|bone white|creme|cream|gelo|ecru|natural|areia|sand|bege|beige|nude/],
@@ -1085,7 +1135,12 @@ function simulacaoBloco() {
     <div class="panel" style="display:grid;gap:8px">
       <div class="range-val"><span>${ok.length} ${ok.length === 1 ? 'peça' : 'peças'} · ${lojas.length} ${lojas.length === 1 ? 'loja' : 'lojas'}</span><span class="mono" style="font-size:20px;font-weight:600">${brl(total)}</span></div>
       <p class="t2" style="margin:0;font-size:13px">${geral}</p>
-      ${lojas.length > 1 ? `<p class="t2" style="margin:0;font-size:12px;color:var(--helper)">São ${lojas.length} pedidos separados (${esc(lojas.join(', '))}): confira o frete de cada loja.</p>` : ''}
+      ${lojas.map(nome => {
+        const its = ok.filter(x => x.e.lojas[0].loja === nome), l = its[0].e.lojas[0];
+        const tot = its.reduce((s, x) => s + x.e.price, 0), totPix = its.reduce((s, x) => s + (x.e.lojas[0].pix || x.e.price), 0);
+        const frete = l.freteGratis === 0 ? 'frete grátis' : l.freteGratis > 0 ? (tot >= l.freteGratis ? 'frete grátis ✓' : `faltam ${brl(l.freteGratis - tot)} para frete grátis`) : 'frete à parte';
+        return `<p class="t2" style="margin:0;font-size:12px;color:var(--helper)">${esc(nome.replace(/^Site /, ''))}: ${brl(tot)}${totPix < tot ? ` · <b>${brl(totPix)} no Pix</b>` : ''} · ${frete}</p>`;
+      }).join('')}
     </div>
     <div class="list" style="margin-top:8px">${itens.map(({ p, e }) => {
       if (!e.ok) return `<div class="row"><div class="grow"><span class="t1">${esc(p.titulo)}</span><span class="t2">Esgotado no seu tamanho</span></div><button class="btn ghost sm" data-carrinho="${esc(p.key)}">Tirar</button></div>`;
@@ -1257,6 +1312,7 @@ function priceChart(h) {
 }
 
 function openDetail(key) {
+  ATUAL = { fn: openDetail, args: [key] };
   const p = DATA.produtos.find(x => x.key === key); if (!p) return;
   const e = evaluate(p);
   const saved = !!S.saved[key], curti = !!S.curtidas[key];
@@ -1293,6 +1349,7 @@ function openDetail(key) {
         <h2>${esc(p.titulo)}</h2>
         ${e.ok ? `<div class="bigprice"><span class="now mono">${brl(e.price)}</span>${e.de ? `<span class="was mono">${brl(e.de)}</span><span class="off mono">-${Math.round(e.off * 100)}%</span>` : ''}</div>` : '<p class="section-sub">Esgotado no seu tamanho</p>'}
       </div>
+      ${e.ok ? pagamentoHTML(e.lojas[0], e.price) : ''}
       ${e.ok && e.justo ? (() => {
         const j = e.justo, pct = Math.round(Math.abs(j.dif) * 100);
         const rotulo = { abaixo: ['t-ok', 'Preço bom'], media: ['t-gray', 'Preço na média'], acima: ['t-sale', 'Acima do normal'] }[j.nivel];
@@ -1339,8 +1396,20 @@ function openDetail(key) {
     </div>`);
 }
 
+// caminho entre telas: "voltar" leva à tela anterior (ex.: Top → peça → Top; peça → Combinar → peça)
+let ATUAL = null; const PILHA = [];
+function navegar(fn, ...args) {
+  const s = document.getElementById('sheet');
+  if (!s.hidden && ATUAL) PILHA.push({ ...ATUAL, y: s.scrollTop });
+  fn(...args);
+}
+function voltar() {
+  const ant = PILHA.pop();
+  if (!ant) { closeSheet(); render(); return; }
+  ant.fn(...ant.args); document.getElementById('sheet').scrollTop = ant.y;
+}
 function showSheet(html) { const s = document.getElementById('sheet'); s.innerHTML = html; s.hidden = false; s.scrollTop = 0; document.body.style.overflow = 'hidden'; aplicarRecortes(); }
-function closeSheet() { const s = document.getElementById('sheet'); s.hidden = true; s.innerHTML = ''; document.body.style.overflow = ''; }
+function closeSheet() { PILHA.length = 0; ATUAL = null; const s = document.getElementById('sheet'); s.hidden = true; s.innerHTML = ''; document.body.style.overflow = ''; }
 let toastT;
 function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
 
@@ -1393,6 +1462,7 @@ function render(keepFocus) {
   document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[k]}<span>${l}</span>${k === 'marcas' && temNovidade() ? '<i class="navdot"></i>' : ''}</button>`).join('');
   if (active) { const el = document.getElementById(active); if (el) { el.focus(); if (caret !== null) el.setSelectionRange(caret, caret); } }
   persist();
+  if (BOAS_ABERTA) abrirBoasVindas();
 }
 
 document.addEventListener('click', ev => {
@@ -1402,9 +1472,9 @@ document.addEventListener('click', ev => {
   else if (d.cat) { S.cat = d.cat; S.limit = 40; render(); }
   else if (d.qkind) { S.qKind = d.qkind; S.limit = 40; render(); }
   else if ('more' in d) { S.limit += 40; render(); }
-  else if (d.open) { openDetail(d.open); }
+  else if (d.open) { navegar(openDetail, d.open); }
   else if ('alerts' in d) { openAlerts(); }
-  else if ('close' in d) { closeSheet(); render(); }
+  else if ('close' in d) { voltar(); }
   else if (d.brand) { S.tab = 'ofertas'; S.qBrand = d.brand; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.save) {
     // alerta sem alvo: o robô avisa quando o preço sair do comum (abaixo do preço justo, menor já visto ou queda forte)
@@ -1413,14 +1483,15 @@ document.addEventListener('click', ev => {
     else { S.saved[k] = { titulo: p.titulo, alvo: null }; toast(S.canal ? 'Alerta ligado. Aviso quando o preço sair do comum.' : 'Alerta ligado. Informe seu canal no Perfil para receber no celular.'); }
     persist(); openDetail(k);
   }
-  else if (d.look) abrirLook(d.look);
+  else if (d.look) navegar(abrirLook, d.look);
   else if (d.lookvaga !== undefined && LOOK) { LOOK.vagas[+d.lookvaga].sel = +d.lookop; const y = document.getElementById('sheet').scrollTop; desenharLook(); document.getElementById('sheet').scrollTop = y; }
   else if (d.lookcarrinho !== undefined && LOOK) {
     const todas = [LOOK.base, ...LOOK.vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel].q)], ks = todas.filter(q => !q.ff).map(q => q.key);
     S.carrinho = { ...S.carrinho, ...Object.fromEntries(ks.map(k => [k, { em: Date.now() }])) }; persist();
     toast(`${ks.length} peças na simulação: veja em Salvos${todas.length > ks.length ? ' (as da Farfetch ficam de fora)' : ''}`);
   }
-  else if (d.top10 !== undefined) abrirTop10();
+  else if (d.top10 !== undefined) navegar(abrirTop10);
+  else if (d.boasFim !== undefined) { BOAS_ABERTA = false; store.set('boasVindas', true); closeSheet(); render(); toast(S.follow.length ? `Seguindo ${S.follow.length} marcas` : 'Pronto! Siga marcas quando quiser em Marcas'); }
   else if (d.topcat) abrirTop10(d.topcat);
   else if (d.pushAtivar !== undefined) ativarPush();
   else if (d.pushDesligar !== undefined) desligarPush();
@@ -1461,12 +1532,12 @@ document.addEventListener('click', ev => {
     const antes = document.querySelectorAll('#sheet .top-linha').length;
     const y = document.getElementById('sheet').scrollTop; abrirTop10(d.slug); document.getElementById('sheet').scrollTop = y;
     const depois = document.querySelectorAll('#sheet .top-linha').length;
-    toast(depois >= antes ? 'Tirei essa e coloquei outra no lugar' : 'Tirei essa. Não há mais ofertas boas para repor nesta categoria agora.');
+    toast(depois >= antes ? 'Tirei essa e coloquei outra no lugar' : 'Tirei essa. Não há mais ofertas boas para repor agora.');
   }
   else if (d.ocultar) {
     const p = DATA.produtos.find(x => x.key === d.ocultar);
     S.ocultas = { ...S.ocultas, [d.ocultar]: { marca: p.marca, kind: p.kind } };
-    closeSheet(); render(); toast(`Escondida. Vou mostrar menos ${KIND_LABEL[p.kind].toLowerCase()} da ${p.marca}.`);
+    voltar(); toast(`Escondida. Vou mostrar menos ${KIND_LABEL[p.kind].toLowerCase()} da ${p.marca}.`);
   }
   else if (d.delmodelo) { S.modelos = S.modelos.filter(m => m.id !== d.delmodelo); render(); }
   else if ('sync' in d) { sincronizar(prefsAtuais(), true); }
@@ -1476,9 +1547,9 @@ document.addEventListener('click', ev => {
   else if (d.fftipo) { FFS.tipo = d.fftipo; render(); }
   else if ('ffsale' in d) { FFS.sale = !FFS.sale; render(); }
   else if (d.tema) { S.tema = d.tema; aplicarTema(); render(); }
-  else if (d.ffi !== undefined) { abrirImportado(+d.ffi); }
+  else if (d.ffi !== undefined) { navegar(abrirImportado, +d.ffi); }
   else if ('filtros' in d) { S.filtrosAbertos = !S.filtrosAbertos; render(); }
-  else if ('limpar' in d) { Object.assign(S, { q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, limit: 40 }); render(); }
+  else if ('limpar' in d) { Object.assign(S, { q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, qBaixou: false, limit: 40 }); render(); }
   else if (d.loja) { S.qLoja = d.loja; S.limit = 40; render(); }
   else if (d.salebrand) { S.tab = 'ofertas'; S.qBrand = d.salebrand; S.qSale = true; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.sw) { S[d.sw] = !S[d.sw]; render(); }
@@ -1539,6 +1610,7 @@ load().then(() => {
   // link de notificação: abre a peça direto
   abrirPorLink();
   addEventListener('hashchange', abrirPorLink);
+  if (PRIMEIRA_VEZ && document.getElementById('sheet').hidden) abrirBoasVindas();
 }).catch(err => {
   document.getElementById('app').innerHTML = `<p class="loading">Não consegui carregar os dados (${esc(err.message)}).<br>Rode <code>./atualizar.sh</code> e abra pelo <code>./servidor.sh</code>.</p>`;
 });

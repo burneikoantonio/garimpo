@@ -55,7 +55,7 @@ async function rodarCanal(n) {
 
   const idx = ler('data/marcas.json');
   const cats = idx.marcas.flatMap(m => (m.arquivos || []).map(a => ({ m, c: ler(a, null) }))).filter(x => x.c);
-  globalThis.DATA = core.buildData(idx, cats, ler('data/historico.json', {}), ler('data/cambio.json', null));
+  globalThis.DATA = core.buildData(idx, cats, ler('data/historico.json', {}), ler('data/cambio.json', null), ler('data/lojas-info.json', {}));
 
   const agora = new Date();
   const hoje = agora.toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' });

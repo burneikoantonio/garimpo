@@ -33,7 +33,8 @@ produtos = {}
         tam = [v['option0'], v['option1'], v['option2']].compact.join(' / ')
         preco = v['price_number'].to_f
         antes = (v['compare_at_price_number'] || 0).to_f
-        { t: tam.empty? ? 'Default Title' : tam, p: preco, c: antes, a: !!v['available'] }
+        pix = v['price_with_payment_discount_short'].to_s.gsub(/[^\d,]/, '').tr(',', '.').to_f
+        { t: tam.empty? ? 'Default Title' : tam, p: preco, c: antes, x: (pix > 0 && pix < preco ? pix : nil), a: !!v['available'] }
       end
     }
     novos += 1

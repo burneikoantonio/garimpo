@@ -64,6 +64,7 @@ grep -v '^#' lojas.txt | while IFS='|' read -r loja site marca buscas filtro; do
           t: ((.Tamanho // [])[0] // (.name | split(" - ") | last)),
           p: (.sellers[0].commertialOffer.Price // 0),
           c: (.sellers[0].commertialOffer.ListPrice // 0),
+          x: ([.sellers[0].commertialOffer.Installments[]? | select(.PaymentSystemName | test("pix"; "i")) | .Value] | min),
           a: ((.sellers[0].commertialOffer.AvailableQuantity // 0) > 0)}]
       })}' "$TMP"/v-*.json > "$arquivo"
   registrar_historico "$arquivo"
@@ -102,6 +103,10 @@ done
 for m in USD EUR GBP; do
   curl -s -L --max-time 20 "https://api.frankfurter.app/latest?from=$m&to=BRL" | jq -e --arg m "$m" '{($m): .rates.BRL, data: .date}' 2>/dev/null
 done | jq -s 'add' > "$TMP/cambio.json" && jq -e '.EUR' "$TMP/cambio.json" >/dev/null && mv "$TMP/cambio.json" data/cambio.json && echo "✓ Câmbio: EUR $(jq '.EUR' data/cambio.json)"
+
+# regras de cada loja (desconto no Pix, frete grátis), lidas do site todo dia
+echo "→ Regras das lojas (Pix e frete grátis)"
+ruby lojas_info.rb 2>&1 | sed "s/^/  /" || true
 
 # ---------- 2. Sites oficiais (Shopify) ----------
 grep -v '^#' marcas.txt | while IFS='|' read -r nome site rel obs liberar; do

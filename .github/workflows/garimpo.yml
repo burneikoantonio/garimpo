@@ -2,8 +2,9 @@ name: Atualizar Garimpo
 
 on:
   schedule:
-    - cron: '0 11 * * *'   # 8h em Brasília
-    - cron: '0 21 * * *'   # 18h em Brasília
+    # Black Friday: em novembro roda 4x por dia (8h, 12h, 16h e 20h); no resto do ano, 8h e 18h
+    - cron: '0 11,15,19,23 * 11 *'
+    - cron: '0 11,21 * 1-10,12 *'
   workflow_dispatch:        # botão "Run workflow" para rodar na hora
     inputs:
       canal_teste:

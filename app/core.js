@@ -65,7 +65,10 @@ function custoImportado(intl, preco) {
 
 /* ---------- Monta o catálogo ---------- */
 // cats: [{ m: marca de marcas.json, c: arquivo de catálogo }]
-function buildData(idx, cats, hist, cambio) {
+// regras de cada loja lidas do site pelo robô (data/lojas-info.json): % no Pix e frete grátis
+let LOJAS_INFO = {};
+function buildData(idx, cats, hist, cambio, lojasInfo) {
+  LOJAS_INFO = lojasInfo || {};
   // o mesmo produto (mesma referência) em lojas diferentes vira um item só, com várias ofertas
   const porChave = new Map();
   for (const x of cats) {
@@ -93,7 +96,7 @@ function buildData(idx, cats, hist, cambio) {
     (byMarcaKind[p.marca + "|" + p.kind] ||= []).push(Math.min(...a.map(v => v.p)));
   }
   const justos = Object.fromEntries(Object.entries(byMarcaKind).filter(([, v]) => v.length >= 4).map(([k, v]) => [k, { preco: median(v), n: v.length }]));
-  return { marcas: idx.marcas, atualizado: idx.atualizado, produtos, hist, cambio, justos, medianas: Object.fromEntries(Object.entries(byKind).map(([k, v]) => [k, median(v)])) };
+  return { marcas: idx.marcas, atualizado: idx.atualizado, produtos, hist, cambio, lojasInfo: LOJAS_INFO, justos, medianas: Object.fromEntries(Object.entries(byKind).map(([k, v]) => [k, median(v)])) };
 }
 
 /* ---------- Avaliação (Nota de Oferta) ---------- */
@@ -119,7 +122,10 @@ function evaluate(p) {
       const custo = custoImportado(o.intl, best.p); if (!custo) return null;
       return { loja: o.loja, url: o.url, price: custo.total, de: c > best.p ? custoImportado(o.intl, c).total : null, intl: o.intl, custo };
     }
-    return { loja: o.loja, url: o.url, price: best.p, de: c > best.p ? c : null };
+    // Pix: preço que a loja informa por tamanho; se não informa, a regra do site (ex.: 5% no Pix)
+    const info = LOJAS_INFO[o.loja] || {};
+    const pix = best.x && best.x < best.p ? best.x : info.pix ? Math.round(best.p * (1 - info.pix / 100) * 100) / 100 : null;
+    return { loja: o.loja, url: o.url, price: best.p, de: c > best.p ? c : null, pix, freteGratis: info.freteGratis ?? null, freteObs: info.freteObs || null };
   }).filter(Boolean);
   // importado só fica se for pelo menos minSave% mais barato que a melhor loja do Brasil
   const brMin = Math.min(...lojas.filter(l => !l.intl).map(l => l.price));
@@ -194,5 +200,16 @@ function top10(ativas, cat, fora) {
 }
 // Top separado: Tênis, Roupas e Acessórios, cada um com 10 (até 15 ou 20 se houver mais ofertas excelentes)
 const TOP_CATS = [['Tênis', 'tenis'], ['Roupas', 'roupas'], ['Acessórios', 'acessorios']];
-const topPorCategoria = (ativas, fora) => TOP_CATS.map(([cat, slug]) => ({ cat, slug, lista: top10(ativas, cat, fora) }));
+function topPorCategoria(ativas, fora) {
+  const tops = TOP_CATS.map(([cat, slug]) => ({ cat, slug, lista: top10(ativas, cat, fora) }));
+  if (!fora || !fora.size) return tops;
+  // tirou peças e acabaram as da mesma categoria: completa com as melhores de outra categoria
+  const usados = new Set([...fora, ...tops.flatMap(t => t.lista.map(x => x.p.key))]);
+  const reserva = top10(ativas, null, usados);
+  for (const t of tops) {
+    const alvo = top10(ativas, t.cat).length;
+    while (t.lista.length < alvo && reserva.length) t.lista.push({ ...reserva.shift(), outra: true });
+  }
+  return tops;
+}
 if (typeof module !== 'undefined') module.exports = { top10, topPorCategoria, buildData, evaluate, productHist, gerarAlertas, fits, classify, custoImportado, KIND_LABEL };
