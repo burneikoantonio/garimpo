@@ -2,8 +2,128 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-17T11:54:44Z",
+  "atualizado": "2026-11-17T17:17:03Z",
   "produtos": [
+    {
+      "id": "10684708946101",
+      "titulo": "Calça Seda Max Pregas",
+      "url": "https://handred.com.br/products/calca-seda-max-pregas",
+      "ref": "",
+      "tipo": "Calças",
+      "tags": [
+        "CALÇAS",
+        "NOVIDADES",
+        "ROUPAS",
+        "SHOP",
+        "VERAO27",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-17T11:17:14-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CALCASEDAMAXPREGASAZULCHUNBO_CAMISASEDAOVERAZULCHUMBO_745.webp?v=1794838802",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CALCASEDAMAXPREGASAZULCHUNBO_CAMISASEDAOVERAZULCHUMBO_743.webp?v=1794838802",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CALCASEDAMAXPREGASAZULCHUNBO_CAMISASEDAOVERAZULCHUMBO_BLAZERSEDAALFAIATARIAMARROM_748.webp?v=1794838802",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CALCASEDAMAXPREGASAZULCHUNBO_CAMISASEDAOVERAZULCHUMBO_BLAZERSEDAALFAIATARIAMARROM_749.webp?v=1794838802"
+      ],
+      "variantes": [
+        {
+          "t": "AZUL CHUMBO / XXP",
+          "p": 4497.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "AZUL CHUMBO / PP",
+          "p": 4497.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "AZUL CHUMBO / P",
+          "p": 4497.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "AZUL CHUMBO / M",
+          "p": 4497.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "AZUL CHUMBO / G",
+          "p": 4497.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "AZUL CHUMBO / GG",
+          "p": 4497.00,
+          "c": 0,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "10680463655093",
+      "titulo": "Camisa Algodão MC Ajour",
+      "url": "https://handred.com.br/products/camisa-algodao-mc-ajour",
+      "ref": "",
+      "tipo": "Camisas",
+      "tags": [
+        "CAMISAS",
+        "NOVIDADES",
+        "ROUPAS",
+        "SHOP",
+        "VERAO27",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-17T11:15:37-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/camisaalgodaoajouroff_190.webp?v=1794834336",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/camisaalgodaoajouroff_193.webp?v=1794834336",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/camisaalgodaoajouroff_195.webp?v=1794834337",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/camisaalgodaoajouroff_196.webp?v=1794834336"
+      ],
+      "variantes": [
+        {
+          "t": "OFF WHITE / XXP",
+          "p": 987.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "OFF WHITE / PP",
+          "p": 987.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "OFF WHITE / P",
+          "p": 987.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / M",
+          "p": 987.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / G",
+          "p": 987.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / GG",
+          "p": 987.00,
+          "c": 0,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "10654756995253",
       "titulo": "Blazer Linho Box",
@@ -867,7 +987,7 @@
           "t": "AZUL / OV 1",
           "p": 1027.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "AZUL / OV 2",
@@ -2723,7 +2843,7 @@
           "t": "MARROM / G",
           "p": 537.98,
           "c": 727.00,
-          "a": true
+          "a": false
         },
         {
           "t": "MARROM / GG",
@@ -2861,7 +2981,7 @@
           "t": "VERDE / PP",
           "p": 1181.78,
           "c": 1597.00,
-          "a": true
+          "a": false
         },
         {
           "t": "VERDE / P",
@@ -3053,7 +3173,7 @@
           "t": "OFF WHITE / O2",
           "p": 2997.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -3143,7 +3263,7 @@
           "t": "VERDE / G",
           "p": 641.58,
           "c": 867.00,
-          "a": true
+          "a": false
         },
         {
           "t": "VERDE / GG",
@@ -3638,7 +3758,7 @@
           "t": "PRETO / XXP",
           "p": 1497.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "PRETO / PP",
@@ -3650,13 +3770,13 @@
           "t": "PRETO / P",
           "p": 1497.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "PRETO / M",
           "p": 1497.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "PRETO / G",
