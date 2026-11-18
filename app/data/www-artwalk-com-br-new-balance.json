@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-18T11:53:16Z",
+  "atualizado": "2026-11-18T15:50:42Z",
   "produtos": [
     {
       "id": "16020",
@@ -243,8 +243,8 @@
       "variantes": [
         {
           "t": "43",
-          "p": 580.0,
-          "c": 580.0,
+          "p": 239.99,
+          "c": 579.99,
           "x": null,
           "a": false
         },
@@ -7113,8 +7113,8 @@
         },
         {
           "t": "41",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 1199.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -8894,50 +8894,6 @@
           "t": "43",
           "p": 599.99,
           "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2040665",
-      "titulo": "Camiseta New Balance Fitness Center 550 Masculina",
-      "url": "https://www.artwalk.com.br/camiseta-new-balance-fitness-center-550-masculina-28321-5-001/p",
-      "ref": "28321-5-001",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2024-12-27T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/576302/28321-5-001-1-AW-800X1000.jpg?v=638798224317670000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576303/28321-5-001-2-AW-800X1000.jpg?v=638798224386930000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576305/28321-5-001-3-AW-800X1000.jpg?v=638798224495500000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 89.99,
-          "c": 149.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 89.99,
-          "c": 149.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 89.99,
-          "c": 149.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 89.99,
-          "c": 149.99,
           "x": null,
           "a": false
         }
@@ -17366,15 +17322,15 @@
           "t": "35",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1234.99,
+          "a": true
         },
         {
           "t": "36",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1234.99,
+          "a": true
         },
         {
           "t": "37",
@@ -18842,8 +18798,8 @@
           "t": "34",
           "p": 1199.99,
           "c": 1199.99,
-          "x": null,
-          "a": false
+          "x": 1139.99,
+          "a": true
         },
         {
           "t": "35",

@@ -2,8 +2,86 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-18T11:54:57Z",
+  "atualizado": "2026-11-18T15:52:36Z",
   "produtos": [
+    {
+      "id": "10687092555957",
+      "titulo": "Camisa Transpassada Yukata",
+      "url": "https://handred.com.br/products/camisa-transpassada-yukata",
+      "ref": "",
+      "tipo": "Camisas",
+      "tags": [
+        "CAMISAS",
+        "NOVIDADES",
+        "ROUPAS",
+        "SHOP",
+        "VERAO27",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-18T12:20:08-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISATRANSPASSADAYUKATAOFF_BERMUDAALGODAOAMPLAOFF_751.webp?v=1795014079",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISATRANSPASSADAYUKATAOFF_BERMUDAALGODAOAMPLAOFF_756.webp?v=1795014079",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISATRANSPASSADAYUKATAOFF_BERMUDAALGODAOAMPLAOFF_757.webp?v=1795014079",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISATRANSPASSADAYUKATAOFF_BERMUDAALGODAOAMPLAOFF_758.webp?v=1795014079"
+      ],
+      "variantes": [
+        {
+          "t": "OFF WHITE / OV 0",
+          "p": 1697.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "OFF WHITE / OV 1",
+          "p": 1697.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / OV 2",
+          "p": 1697.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10684708913333",
+      "titulo": "Camisa Seda Over",
+      "url": "https://handred.com.br/products/camisa-seda-over-3",
+      "ref": "",
+      "tipo": "Camisas",
+      "tags": [
+        "CAMISAS",
+        "NOVIDADES",
+        "ROUPAS",
+        "SHOP",
+        "VERAO27",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-18T12:19:22-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CALCASEDAMAXPREGASAZULCHUNBO_CAMISASEDAOVERAZULCHUMBO_742.webp?v=1795009785",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CALCASEDAMAXPREGASAZULCHUNBO_CAMISASEDAOVERAZULCHUMBO_743_1.webp?v=1795009785",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CALCASEDAMAXPREGASAZULCHUNBO_CAMISASEDAOVERAZULCHUMBO_745_1.webp?v=1795009785",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CALCASEDAMAXPREGASAZULCHUNBO_CAMISASEDAOVERAZULCHUMBO_BLAZERSEDAALFAIATARIAMARROM_748_2.webp?v=1795009785"
+      ],
+      "variantes": [
+        {
+          "t": "AZUL CHUMBO / O1",
+          "p": 2567.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "AZUL CHUMBO / O2",
+          "p": 2567.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "10684708946101",
       "titulo": "Calça Seda Max Pregas",
@@ -96,7 +174,7 @@
           "t": "OFF WHITE / PP",
           "p": 987.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "OFF WHITE / P",
@@ -2849,7 +2927,7 @@
           "t": "MARROM / GG",
           "p": 537.98,
           "c": 727.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -4652,7 +4730,7 @@
           "t": "MARROM / M",
           "p": 3188.00,
           "c": 2427.00,
-          "a": false
+          "a": true
         },
         {
           "t": "MARROM / G",

@@ -2,8 +2,97 @@
   "marca": "Blck Brasil",
   "loja": "Site Blck Brasil",
   "site": "blckbrasil.com.br",
-  "atualizado": "2026-11-18T11:56:11Z",
+  "atualizado": "2026-11-18T15:53:50Z",
   "produtos": [
+    {
+      "id": "11091301204279",
+      "titulo": "Boné Snapback Off White Aba Preta Contorno Azul",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-aba-preta-contorno-azul",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-18T12:30:33-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B28_6e9df6a2-f66f-4523-ac87-990c54005cb8.jpg?v=1794852228",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B28-2_a1c07bc4-2231-43eb-b5da-36ef066eee84.jpg?v=1794852228",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B28-3_e010b98d-5075-4ae8-ae5c-0b1c6fd8300b.jpg?v=1794852228"
+      ],
+      "variantes": [
+        {
+          "t": "Off White",
+          "p": 199.90,
+          "c": 199.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11068552085815",
+      "titulo": "Conjunto Tricot Off White Wings",
+      "url": "https://blckbrasil.com.br/products/conjunto-tricot-off-white-wings",
+      "ref": "",
+      "tipo": "Conjuntos de roupas",
+      "tags": [
+        "Conjuntos",
+        "LIVE",
+        "VESTUÁRIO"
+      ],
+      "publicado": "2026-11-18T10:48:45-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/TRC02.jpg?v=1793991792"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 197.00,
+          "c": 879.90,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 197.00,
+          "c": 879.90,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 197.00,
+          "c": 879.90,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 197.00,
+          "c": 879.90,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "10870202466615",
+      "titulo": "Boné Kids Snapback Splash Red Black",
+      "url": "https://blckbrasil.com.br/products/bone-kids-snapback-splash-red-black",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "CAIXA",
+        "LIVE"
+      ],
+      "publicado": "2026-11-18T09:14:16-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B01_8bce2357-77dd-4b67-b35a-4a618275d264.jpg?v=1783997012",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B01-2_cfaf70d8-bc87-4329-ad82-17492ab655f3.jpg?v=1783997012",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B01-3_7e2b4c3a-2583-4fc2-9dd7-7b35bdfd424a.jpg?v=1783997012"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / Kids",
+          "p": 67.00,
+          "c": 189.90,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "10831989080375",
       "titulo": "Boné Snapback Amarelo Tiger Verde",
@@ -646,7 +735,7 @@
           "t": "M",
           "p": 97.00,
           "c": 399.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G",
@@ -658,7 +747,7 @@
           "t": "GG",
           "p": 97.00,
           "c": 399.90,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -1815,32 +1904,6 @@
           "t": "Verde / Único",
           "p": 97.00,
           "c": 209.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10971735753015",
-      "titulo": "Boné Snapback Azul Marinho Trend Branco",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-azul-marinho-trend-branco",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE",
-        "PRODUZIR",
-        "TREND"
-      ],
-      "publicado": "2026-11-13T20:02:27-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B20_c7af1028-e974-48e3-8b92-e8e14adf24bd.jpg?v=1789407180",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B20-2_945ee0dc-dbcb-4007-8611-8295e1cd7e3b.jpg?v=1789409133",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B20-3_a8d27977-00fe-442f-a84c-b0fd0128b31d.jpg?v=1789409133"
-      ],
-      "variantes": [
-        {
-          "t": "Azul Marinho / Único",
-          "p": 87.00,
-          "c": 179.90,
           "a": true
         }
       ]
@@ -3980,28 +4043,6 @@
           "p": 67.00,
           "c": 149.90,
           "a": false
-        }
-      ]
-    },
-    {
-      "id": "8539814592823",
-      "titulo": "Botton Blck - Mariposa Mística",
-      "url": "https://blckbrasil.com.br/products/botton-blck-mariposa-mistica",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "ACESSÓRIOS"
-      ],
-      "publicado": "2026-11-06T00:37:22-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/products/2909.jpg?v=1690224999"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 19.90,
-          "c": 19.90,
-          "a": true
         }
       ]
     },

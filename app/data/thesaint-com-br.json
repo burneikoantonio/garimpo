@@ -2,7 +2,7 @@
   "marca": "THESAINT",
   "loja": "Site THESAINT",
   "site": "thesaint.com.br",
-  "atualizado": "2026-11-18T11:54:45Z",
+  "atualizado": "2026-11-18T15:52:24Z",
   "produtos": [
     {
       "id": "10183400456483",
@@ -6543,7 +6543,7 @@
           "t": "M / STONED DARK GREEN",
           "p": 91.20,
           "c": 228.00,
-          "a": false
+          "a": true
         },
         {
           "t": "XGG / STONED DARK GREEN",
@@ -7317,7 +7317,7 @@
           "t": "M / STONED GREEN",
           "p": 149.00,
           "c": 298.00,
-          "a": true
+          "a": false
         },
         {
           "t": "PP / STONED GREEN",
@@ -7912,7 +7912,7 @@
           "t": "XGG / OFF WHITE",
           "p": 107.20,
           "c": 268.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -9127,7 +9127,7 @@
           "t": "P / BLACK",
           "p": 174.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },

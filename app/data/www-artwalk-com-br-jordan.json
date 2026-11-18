@@ -2,7 +2,7 @@
   "marca": "Jordan",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-18T11:49:33Z",
+  "atualizado": "2026-11-18T15:46:51Z",
   "produtos": [
     {
       "id": "2004377",
@@ -849,8 +849,8 @@
         },
         {
           "t": "41",
-          "p": 629.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
@@ -905,8 +905,8 @@
         },
         {
           "t": "47",
-          "p": 629.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
@@ -1144,15 +1144,15 @@
         },
         {
           "t": "40",
-          "p": 679.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
         {
           "t": "40.5",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 679.99,
+          "c": 799.99,
           "x": null,
           "a": false
         },
@@ -1165,8 +1165,8 @@
         },
         {
           "t": "42",
-          "p": 679.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
@@ -1179,15 +1179,15 @@
         },
         {
           "t": "44",
-          "p": 679.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
         {
           "t": "45",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 679.99,
+          "c": 799.99,
           "x": null,
           "a": false
         },
@@ -1273,8 +1273,8 @@
         },
         {
           "t": "42",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 374.99,
+          "c": 499.99,
           "x": null,
           "a": false
         },
@@ -1322,8 +1322,8 @@
         },
         {
           "t": "47",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 374.99,
+          "c": 499.99,
           "x": null,
           "a": false
         },
@@ -1850,8 +1850,8 @@
         },
         {
           "t": "G",
-          "p": 200.0,
-          "c": 200.0,
+          "p": 129.99,
+          "c": 199.99,
           "x": null,
           "a": false
         },
@@ -1871,8 +1871,8 @@
         },
         {
           "t": "GGGG",
-          "p": 129.99,
-          "c": 199.99,
+          "p": 200.0,
+          "c": 200.0,
           "x": null,
           "a": false
         },
@@ -1980,15 +1980,15 @@
       "variantes": [
         {
           "t": "38",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 374.99,
+          "c": 499.99,
           "x": null,
           "a": false
         },
         {
           "t": "39",
-          "p": 374.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "x": null,
           "a": false
         },
@@ -2008,8 +2008,8 @@
         },
         {
           "t": "40.5",
-          "p": 374.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "x": null,
           "a": false
         },
@@ -2022,8 +2022,8 @@
         },
         {
           "t": "42",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 374.99,
+          "c": 499.99,
           "x": null,
           "a": false
         },
@@ -2066,79 +2066,6 @@
           "t": "48",
           "p": 500.0,
           "c": 500.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2020922",
-      "titulo": "Tênis Jordan Delta Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-delta-masculino-cd610-9-002/p",
-      "ref": "CD610-9-002",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2020-03-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/225031/Tenis-Jordan-Delta-Masculino-Multicolor.jpg?v=637309324600700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/225032/Tenis-Jordan-Delta-Masculino-Multicolor-2.jpg?v=637309324803200000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/225033/Tenis-Jordan-Delta-Masculino-Multicolor-3.jpg?v=637309325807470000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/225034/Tenis-Jordan-Delta-Masculino-Multicolor-4.jpg?v=637309326091100000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 399.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 399.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 399.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 399.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 399.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 399.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 399.99,
-          "c": 649.99,
           "x": null,
           "a": false
         }
@@ -3509,8 +3436,8 @@
       "variantes": [
         {
           "t": "U",
-          "p": 230.0,
-          "c": 230.0,
+          "p": 59.99,
+          "c": 229.99,
           "x": null,
           "a": false
         }
@@ -4063,72 +3990,6 @@
       ]
     },
     {
-      "id": "2022637",
-      "titulo": "Camiseta Jordan Jumpman Classics Masculina",
-      "url": "https://www.artwalk.com.br/camiseta-jordan-jumpman-classics-masculina-cv340-5-091/p",
-      "ref": "CV340-5-091",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2024-04-17T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/233702/Camiseta-Jordan-Jumpman-Classics-Masculina-Cinza.jpg?v=637562571714230000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/233703/Camiseta-Jordan-Jumpman-Classics-Masculina-Cinza-2.jpg?v=637562571810800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/233704/Camiseta-Jordan-Jumpman-Classics-Masculina-Cinza-3.jpg?v=637562571907770000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/233705/Camiseta-Jordan-Jumpman-Classics-Masculina-Cinza-4.jpg?v=637562572010970000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 39.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 39.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 39.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 39.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 39.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 39.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 39.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2022664",
       "titulo": "Blusão Air Jordan Jumpman Masculino",
       "url": "https://www.artwalk.com.br/blusao-air-jordan-jumpman-masculino-ck668-4-687/p",
@@ -4195,71 +4056,6 @@
           "t": "GGGGG",
           "p": 309.99,
           "c": 309.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2022679",
-      "titulo": "Jaqueta Jordan Jumpman Classics Masculina",
-      "url": "https://www.artwalk.com.br/jaqueta-jordan-jumpman-classics-masculina-cv233-1-011/p",
-      "ref": "CV233-1-011",
-      "tipo": "/Roupas/Masculino/Jaquetas/ Jaquetas",
-      "tags": [],
-      "publicado": "2024-04-17T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/233291/Jaqueta-Jordan-Jumpman-Classics-Masculina-Preto.jpg?v=637553906810030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/233292/Jaqueta-Jordan-Jumpman-Classics-Masculina-Preto-2.jpg?v=637553907020870000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/233293/Jaqueta-Jordan-Jumpman-Classics-Masculina-Preto-3.jpg?v=637553907192500000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 99.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 99.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 99.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 99.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 99.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 99.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 99.99,
-          "c": 449.99,
           "x": null,
           "a": false
         }
@@ -5017,8 +4813,8 @@
         },
         {
           "t": "P",
-          "p": 79.99,
-          "c": 179.99,
+          "p": 180.0,
+          "c": 180.0,
           "x": null,
           "a": false
         },
@@ -5364,8 +5160,8 @@
         },
         {
           "t": "40",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 799.99,
+          "c": 799.99,
           "x": null,
           "a": false
         },
@@ -5385,8 +5181,8 @@
         },
         {
           "t": "43",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 799.99,
+          "c": 799.99,
           "x": null,
           "a": false
         },
@@ -5420,8 +5216,8 @@
         },
         {
           "t": "48",
-          "p": 799.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         }
@@ -7275,8 +7071,8 @@
         },
         {
           "t": "39",
-          "p": 1199.99,
-          "c": 1499.99,
+          "p": 1500.0,
+          "c": 1500.0,
           "x": null,
           "a": false
         },
@@ -9519,8 +9315,8 @@
         },
         {
           "t": "39",
-          "p": 499.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
@@ -9784,8 +9580,8 @@
         },
         {
           "t": "42",
-          "p": 929.99,
-          "c": 1899.99,
+          "p": 1900.0,
+          "c": 1900.0,
           "x": null,
           "a": false
         },
@@ -9812,8 +9608,8 @@
         },
         {
           "t": "46",
-          "p": 1900.0,
-          "c": 1900.0,
+          "p": 929.99,
+          "c": 1899.99,
           "x": null,
           "a": false
         },
@@ -10738,7 +10534,7 @@
         },
         {
           "t": "34.5",
-          "p": 499.99,
+          "p": 999.99,
           "c": 999.99,
           "x": null,
           "a": false
@@ -10766,7 +10562,7 @@
         },
         {
           "t": "37",
-          "p": 999.99,
+          "p": 499.99,
           "c": 999.99,
           "x": null,
           "a": false
@@ -10794,7 +10590,7 @@
         },
         {
           "t": "39.5",
-          "p": 999.99,
+          "p": 499.99,
           "c": 999.99,
           "x": null,
           "a": false
@@ -10850,7 +10646,7 @@
         },
         {
           "t": "44",
-          "p": 999.99,
+          "p": 499.99,
           "c": 999.99,
           "x": null,
           "a": false
@@ -10871,7 +10667,7 @@
         },
         {
           "t": "47",
-          "p": 499.99,
+          "p": 999.99,
           "c": 999.99,
           "x": null,
           "a": false
@@ -12233,8 +12029,8 @@
       "variantes": [
         {
           "t": "38",
-          "p": 1199.99,
-          "c": 1899.99,
+          "p": 1900.0,
+          "c": 1900.0,
           "x": null,
           "a": false
         },
@@ -12268,8 +12064,8 @@
         },
         {
           "t": "41",
-          "p": 1199.99,
-          "c": 1899.99,
+          "p": 1900.0,
+          "c": 1900.0,
           "x": null,
           "a": false
         },
@@ -13954,8 +13750,8 @@
       "variantes": [
         {
           "t": "PP",
-          "p": 330.0,
-          "c": 330.0,
+          "p": 159.99,
+          "c": 329.99,
           "x": null,
           "a": false
         },
@@ -14487,8 +14283,8 @@
       "variantes": [
         {
           "t": "34",
-          "p": 799.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -14543,8 +14339,8 @@
         },
         {
           "t": "39",
-          "p": 799.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -14578,8 +14374,8 @@
         },
         {
           "t": "42",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 799.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -14641,8 +14437,8 @@
         },
         {
           "t": "49",
-          "p": 799.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -14657,198 +14453,6 @@
           "t": "51",
           "p": 799.99,
           "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2031638",
-      "titulo": "Tênis Jordan Zion 2 Se Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-zion-2-se-masculino-fj295-7-200/p",
-      "ref": "FJ295-7-200",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2023-05-08T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/396191/FJ295-7-200-1.jpg?v=638206162698900000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/396192/FJ295-7-200-2.jpg?v=638206162844130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/396193/FJ295-7-200-3.jpg?v=638206162958570000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/396194/FJ295-7-200-4.jpg?v=638206163038870000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34.5",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35.5",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "50",
-          "p": 549.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "51",
-          "p": 549.99,
-          "c": 1199.99,
           "x": null,
           "a": false
         }
@@ -15064,6 +14668,79 @@
       ]
     },
     {
+      "id": "2032019",
+      "titulo": "Camiseta Air Jordan Crew Masculina",
+      "url": "https://www.artwalk.com.br/camiseta-air-jordan-masculina-dm318-2-133/p",
+      "ref": "DM318-2-133",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2022-09-19T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/507373/DM318-2-133-1-800x1000.jpg?v=638484533494970000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/507374/DM318-2-133-2-800x1000.jpg?v=638484533923930000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/507375/DM318-2-133-3-800x1000.jpg?v=638484534019230000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/507376/DM318-2-133-4-800x1000.jpg?v=638484534095230000"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 139.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 139.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 139.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 139.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 139.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 139.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGG",
+          "p": 139.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGGG",
+          "p": 139.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2032022",
       "titulo": "Tênis Jordan AJKO 1 Masculino",
       "url": "https://www.artwalk.com.br/tenis-jordan-ajko-1-masculino-do504-7-407/p",
@@ -15080,15 +14757,15 @@
       "variantes": [
         {
           "t": "38",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 839.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
         {
           "t": "39",
-          "p": 839.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -15624,198 +15301,6 @@
       ]
     },
     {
-      "id": "2032054",
-      "titulo": "Tênis Jordan Luka 2 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-luka-2-masculino-dx901-3-400/p",
-      "ref": "DX901-3-400",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2023-06-29T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/445542/DX901-3-400-1.jpg?v=638298007661600000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/445543/DX901-3-400-2.jpg?v=638298007734570000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/445544/DX901-3-400-3.jpg?v=638298007811870000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/445545/DX901-3-400-4.jpg?v=638298007900270000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34.5",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35.5",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "50",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "51",
-          "p": 699.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2032082",
       "titulo": "Tênis Air Jordan Tatum 1 Masculino",
       "url": "https://www.artwalk.com.br/tenis-air-jordan-tatum-1-masculino-dz332-0-400/p",
@@ -16031,8 +15516,8 @@
         },
         {
           "t": "34.5",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 799.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -16066,15 +15551,15 @@
         },
         {
           "t": "37.5",
-          "p": 799.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
         {
           "t": "38",
-          "p": 799.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -16087,8 +15572,8 @@
         },
         {
           "t": "39.5",
-          "p": 799.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -16108,8 +15593,8 @@
         },
         {
           "t": "41",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 799.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -16122,8 +15607,8 @@
         },
         {
           "t": "42.5",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 799.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -16143,22 +15628,22 @@
         },
         {
           "t": "44",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 799.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "45",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 799.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "46",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 799.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -16528,37 +16013,6 @@
         {
           "t": "51",
           "p": 699.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2032100",
-      "titulo": "Tênis Jordan Luka 2 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-luka-space-hunter-masculino-dx873-3-005/p",
-      "ref": "DX873-3-005",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2023-06-29T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/433586/DX873-3-005-1.jpg?v=638268497472270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/433587/DX873-3-005-2.jpg?v=638268497546130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/433588/DX873-3-005-3.jpg?v=638268497628400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/433589/DX873-3-005-4.jpg?v=638268497700730000"
-      ],
-      "variantes": [
-        {
-          "t": "50",
-          "p": 869.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "51",
-          "p": 869.99,
           "c": 1099.99,
           "x": null,
           "a": false
@@ -17912,79 +17366,6 @@
       ]
     },
     {
-      "id": "2032872",
-      "titulo": "Tênis Jordan Tatum 1 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-tatum-1-masculino-dz332-4-003/p",
-      "ref": "DZ332-4-003",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-04-17T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/471013/DZ332-4-003-1.jpg?v=638373804847800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/471144/DZ332-4-003-2.jpg?v=638373805695170000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/471272/DZ332-4-003-3.jpg?v=638373806746500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/471396/DZ332-4-003-4.jpg?v=638373807437630000"
-      ],
-      "variantes": [
-        {
-          "t": "42",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2032882",
       "titulo": "Tênis Jordan Masculino",
       "url": "https://www.artwalk.com.br/tenis-air-jordan-jumpman-3-peat-masculino-dz447-5-026/p",
@@ -18335,57 +17716,6 @@
       ]
     },
     {
-      "id": "2032969",
-      "titulo": "Blusão Jordan Zion GFX Masculino",
-      "url": "https://www.artwalk.com.br/blusao-jordan-zion-gfx-masculino-fd239-0-051/p",
-      "ref": "FD239-0-051",
-      "tipo": "/Roupas/Masculino/Blusões/ Blusões",
-      "tags": [],
-      "publicado": "2023-09-11T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/507837/FD239-0-051-1-800x1000.jpg?v=638485203299500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/509111/FD239-0-051-2-800x1000.jpg?v=638732517068830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/510355/FD239-0-051-3-800x1000.jpg?v=638732517069000000"
-      ],
-      "variantes": [
-        {
-          "t": "GGG",
-          "p": 169.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 169.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 169.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 169.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 169.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2032971",
       "titulo": "Blusão Jordan MMBR Masculino",
       "url": "https://www.artwalk.com.br/blusao-jordan-mmbr-masculino-fd746-5-010/p",
@@ -18562,15 +17892,15 @@
         },
         {
           "t": "43",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 1099.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "44",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 1099.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -18597,8 +17927,8 @@
         },
         {
           "t": "40",
-          "p": 1099.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -18701,8 +18031,8 @@
       "variantes": [
         {
           "t": "42",
-          "p": 1099.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -18743,8 +18073,8 @@
         },
         {
           "t": "40",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 1099.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -19066,8 +18396,8 @@
         },
         {
           "t": "GG",
-          "p": 230.0,
-          "c": 230.0,
+          "p": 179.99,
+          "c": 229.99,
           "x": null,
           "a": false
         },
@@ -19285,8 +18615,8 @@
         },
         {
           "t": "45",
-          "p": 879.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         }
@@ -19330,8 +18660,8 @@
         },
         {
           "t": "42",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -19344,8 +18674,8 @@
         },
         {
           "t": "44",
-          "p": 829.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -20154,8 +19484,8 @@
         },
         {
           "t": "39",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 969.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -20168,8 +19498,8 @@
         },
         {
           "t": "41",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 969.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         }
@@ -20229,72 +19559,6 @@
           "t": "41",
           "p": 1099.99,
           "c": 1699.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2034198",
-      "titulo": "Tênis Jordan Zion 3 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-zion-3-masculino-fz131-8-060/p",
-      "ref": "FZ131-8-060",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2026-02-11T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/480852/FZ131-8-060-1.jpg?v=638449997471370000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/480885/FZ131-8-060-2.jpg?v=638449997968970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/480920/FZ131-8-060-3.jpg?v=638449998251070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/480959/FZ131-8-060-4.jpg?v=638449998581400000"
-      ],
-      "variantes": [
-        {
-          "t": "42",
-          "p": 399.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 399.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 399.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 399.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 399.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 399.99,
-          "c": 1199.99,
           "x": null,
           "a": false
         }
@@ -20541,198 +19805,6 @@
         {
           "t": "51",
           "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2034747",
-      "titulo": "Tênis Jordan Luka 2 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-luka-2-masculino-dx873-3-800/p",
-      "ref": "DX873-3-800",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2023-06-29T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/518812/DX873-3-800-1-800x1000.jpg?v=638502537057230000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/518972/DX873-3-800-2-800x1000.jpg?v=638502538048530000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/519132/DX873-3-800-3-800x1000.jpg?v=638502539055830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/519292/DX873-3-800-4-800x1000.jpg?v=638502540045630000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34.5",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35.5",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "50",
-          "p": 799.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "51",
-          "p": 799.99,
           "c": 1099.99,
           "x": null,
           "a": false
@@ -21256,198 +20328,6 @@
           "t": "PP",
           "p": 79.99,
           "c": 199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2034791",
-      "titulo": "Tênis Jordan Tatum 2 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-tatum-2-masculino-fj645-7-100/p",
-      "ref": "FJ645-7-100",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-03-19T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/515376/FJ645-7-100-1-800x1000.jpg?v=638497531001730000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/515509/FJ645-7-100-2-800x1000.jpg?v=638497531989400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/515642/FJ645-7-100-3-800x1000.jpg?v=638497532909500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/515795/FJ645-7-100-4-800x1000.jpg?v=638497539259000000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34.5",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35.5",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "50",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "51",
-          "p": 799.99,
-          "c": 1199.99,
           "x": null,
           "a": false
         }
@@ -23431,6 +22311,72 @@
       ]
     },
     {
+      "id": "2036493",
+      "titulo": "Camiseta Air Jordan Crew Masculina",
+      "url": "https://www.artwalk.com.br/camiseta-air-jordan-masculina-dm318-2-410/p",
+      "ref": "DM318-2-410",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2022-09-19T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/560147/DM318-2-410-1-AW-800X1000.jpg?v=638652292788430000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/560148/DM318-2-410-2-AW-800X1000.jpg?v=638652292947130000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/560149/DM318-2-410-3-AW-800X1000.jpg?v=638652293199300000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/560150/DM318-2-410-4-AW-800X1000.jpg?v=638652296183200000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 109.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 109.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 109.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGG",
+          "p": 109.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 109.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 109.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 109.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2036496",
       "titulo": "Tênis Air Jordan 1 Mid Masculino",
       "url": "https://www.artwalk.com.br/tenis-air-jordan-1-mid-masculino-dq842-6-104/p",
@@ -24216,79 +23162,6 @@
       ]
     },
     {
-      "id": "2036524",
-      "titulo": "Shorts Jordan Sport Woven Masculino",
-      "url": "https://www.artwalk.com.br/shorts-jordan-sport-masculino-fn584-2-366/p",
-      "ref": "FN584-2-366",
-      "tipo": "/Roupas/Masculino/Bermudas e Shorts/ Shorts",
-      "tags": [],
-      "publicado": "2023-12-06T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/538840/FN584-2-366-1-800x1000.jpg?v=638586350579730000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/538939/FN584-2-366-2-800x1000.jpg?v=638586351163030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/539038/FN584-2-366-3-800x1000.jpg?v=638586351652900000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/539137/FN584-2-366-4-800x1000.jpg?v=638586352132670000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGGG",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2036531",
       "titulo": "Tênis Jordan Tatum 2 Masculino",
       "url": "https://www.artwalk.com.br/tenis-jordan-tatum-2-masculino-hj442-0-303/p",
@@ -25068,72 +23941,6 @@
           "t": "PP",
           "p": 249.99,
           "c": 329.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2036599",
-      "titulo": "Shorts Jordan Brooklin Fleece Masculino",
-      "url": "https://www.artwalk.com.br/shorts-jordan-masculino-fv728-7-410/p",
-      "ref": "FV728-7-410",
-      "tipo": "/Roupas/Masculino/Bermudas e Shorts/ Shorts",
-      "tags": [],
-      "publicado": "2024-07-11T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/556597/FV728-7-410-1-AW-800x1000.jpg?v=638635778471500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/556737/FV728-7-410-2-AW-800x1000.jpg?v=638635780311670000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/556872/FV728-7-410-3-AW-800x1000.jpg?v=638635781194500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/557007/FV728-7-410-4-AW-800x1000.jpg?v=638635781909170000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 149.99,
-          "c": 299.99,
           "x": null,
           "a": false
         }
@@ -26409,198 +25216,6 @@
       ]
     },
     {
-      "id": "2038272",
-      "titulo": "Tênis Jordan Luka 3 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-luka-3-masculino-fq128-4-400/p",
-      "ref": "FQ128-4-400",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-07-11T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/568204/FQ128-4-400-1-AW-800x1000.jpg?v=638670142288900000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/568205/FQ128-4-400-2-AW-800x1000.jpg?v=638670142414670000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/568206/FQ128-4-400-3-AW-800x1000.jpg?v=638670142516970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/568207/FQ128-4-400-4-AW-800x1000.jpg?v=638670142623770000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34.5",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35.5",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "50",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "51",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2038273",
       "titulo": "Chinelo Jordan Jumpman S Masculino",
       "url": "https://www.artwalk.com.br/chinelo-jordan-jumpman-s-masculino-fq159-8-020/p",
@@ -27481,198 +26096,6 @@
           "t": "51",
           "p": 599.99,
           "c": 1199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2038294",
-      "titulo": "Tênis Jordan Tatum 3 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-tatum-3-masculino-fz659-8-002/p",
-      "ref": "FZ659-8-002",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-10-03T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/564823/FZ659-8-002-1-AW-800x1000.jpg?v=638664983387070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/564824/FZ659-8-002-2-AW-800x1000.jpg?v=638664983493500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/564825/FZ659-8-002-3-AW-800x1000.jpg?v=638664983646530000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/564826/FZ659-8-002-4-AW-800x1000.jpg?v=638664983878470000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "50",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "51",
-          "p": 649.99,
-          "c": 1299.99,
           "x": null,
           "a": false
         }
@@ -29784,51 +28207,6 @@
       ]
     },
     {
-      "id": "2040423",
-      "titulo": "Tênis Jordan Luka 3 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-luka-3-masculino-fq128-4-003/p",
-      "ref": "FQ128-4-003",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-07-11T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/573923/FQ128-4-003-1-AW-800x1000.jpg?v=638757544558370000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573924/FQ128-4-003-2-AW-800x1000.jpg?v=638757544646030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573925/FQ128-4-003-3-AW-800x1000.jpg?v=638757544726800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573926/FQ128-4-003-4-AW-800x1000.jpg?v=638757544811600000"
-      ],
-      "variantes": [
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2040424",
       "titulo": "Camiseta Air Jordan Crew Masculina",
       "url": "https://www.artwalk.com.br/camiseta-air-jordan-masculina-dm318-2-691/p",
@@ -29873,235 +28251,6 @@
       ]
     },
     {
-      "id": "2040431",
-      "titulo": "Blusão Jordan Brooklin Fleece Masculino",
-      "url": "https://www.artwalk.com.br/blusao-jordan-masculino-fv728-1-691/p",
-      "ref": "FV728-1-691",
-      "tipo": "/Roupas/Masculino/Blusões/ Blusões",
-      "tags": [],
-      "publicado": "2024-12-26T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/572187/FV728-1-691-1-AW-800x1000.jpg?v=638755646159270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/572188/FV728-1-691-2-AW-800x1000.jpg?v=638755646159270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/572189/FV728-1-691-3-AW-800x1000.jpg?v=638755646159270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/572190/FV728-1-691-4-AW-800x1000.jpg?v=638755646159400000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 219.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 219.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 219.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 219.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2040444",
-      "titulo": "Tênis Jordan Flight Court Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-flight-court-masculino-hf325-5-002/p",
-      "ref": "HF325-5-002",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-26T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/573050/HF325-5-002-1-AW-800x1000.jpg?v=638745275984430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573051/HF325-5-002-2-AW-800x1000.jpg?v=638745276083430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573052/HF325-5-002-3-AW-800x1000.jpg?v=638745276162030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573053/HF325-5-002-4-AW-800x1000.jpg?v=638745276238370000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2040445",
-      "titulo": "Tênis Jordan Flight Court Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-flight-court-masculino-hf325-5-005/p",
-      "ref": "HF325-5-005",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-26T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/573058/HF325-5-005-1-AW-800x1000.jpg?v=638828525913970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573059/HF325-5-005-2-AW-800x1000.jpg?v=638828525913970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573060/HF325-5-005-3-AW-800x1000.jpg?v=638828525913970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573061/HF325-5-005-4-AW-800x1000.jpg?v=638828525914130000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2040446",
-      "titulo": "Tênis Jordan Flight Court Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-flight-court-masculino-hf325-5-300/p",
-      "ref": "HF325-5-300",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-26T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/574443/HF325-5-300-1-AW-800X1000.jpg?v=638768020542900000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/574444/HF325-5-300-2-AW-800X1000.jpg?v=638768020841170000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/574445/HF325-5-300-3-AW-800X1000.jpg?v=638768020961030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/574446/HF325-5-300-4-AW-800X1000.jpg?v=638768021134370000"
-      ],
-      "variantes": [
-        {
-          "t": "39",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2040447",
       "titulo": "Chinelo Jordan Franchise Slide Masculino",
       "url": "https://www.artwalk.com.br/chinelo-jordan-franchise-slide-masculino-hf326-3-001/p",
@@ -30127,8 +28276,8 @@
           "t": "39.5",
           "p": 249.99,
           "c": 249.99,
-          "x": 237.49,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40.5",
@@ -30391,58 +28540,6 @@
       ]
     },
     {
-      "id": "2040463",
-      "titulo": "Tênis Jordan Tatum 3 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-tatum-3-masculino-hv588-2-100/p",
-      "ref": "HV588-2-100",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-26T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/574781/HV588-2-100-1-AW-800x1000.jpg?v=638778157962070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/574782/HV588-2-100-2-AW-800x1000.jpg?v=638778158059100000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/574783/HV588-2-100-3-AW-800x1000.jpg?v=638778158156430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/574784/HV588-2-100-4-AW-800x1000.jpg?v=638778158245000000"
-      ],
-      "variantes": [
-        {
-          "t": "40",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2040464",
       "titulo": "Tênis Air Jordan 1 Low Masculino",
       "url": "https://www.artwalk.com.br/tenis-air-jordan-1-low-masculino-hv596-8-001/p",
@@ -30496,72 +28593,6 @@
           "t": "44",
           "p": 1200.0,
           "c": 1200.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2040465",
-      "titulo": "Tênis Jordan Spizike Low Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-spizike-low-masculino-hv596-9-003/p",
-      "ref": "HV596-9-003",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2025-12-09T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/573769/HV596-9-003-1-AW-800x1000.jpg?v=638755692402270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573770/HV596-9-003-2-AW-800x1000.jpg?v=638755692517130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573771/HV596-9-003-3-AW-800x1000.jpg?v=638755692630800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573772/HV596-9-003-4-AW-800x1000.jpg?v=638755693782470000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 799.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 1499.99,
           "x": null,
           "a": false
         }
@@ -30808,58 +28839,6 @@
       ]
     },
     {
-      "id": "2042271",
-      "titulo": "Tênis Jordan Zion 4 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-zion-4-masculino-fb180-2-400/p",
-      "ref": "FB180-2-400",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-26T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/578942/FB180-2-400-1-AW-800X1000.jpg?v=638839482361030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578943/FB180-2-400-2-AW-800X1000.jpg?v=638839482440570000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578944/FB180-2-400-3-AW-800X1000.jpg?v=638839482527070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578945/FB180-2-400-4-AW-800X1000.jpg?v=638839482632070000"
-      ],
-      "variantes": [
-        {
-          "t": "41",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2042276",
       "titulo": "Tênis Air Jordan Spizine Low Masculino",
       "url": "https://www.artwalk.com.br/tenis-jordan-spizike-low-masculino-fq175-9-140/p",
@@ -31052,65 +29031,6 @@
           "t": "P",
           "p": 399.99,
           "c": 399.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2042284",
-      "titulo": "Tênis Jordan Luka 4 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-navigator-masculino-hf082-3-300/p",
-      "ref": "HF082-3-300",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2025-04-01T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/578830/HF082-3-300-1-AW-800X1000.jpg?v=638835467551130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578831/HF082-3-300-2-AW-800X1000.jpg?v=638835467551130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578832/HF082-3-300-3-AW-800X1000.jpg?v=638835467551300000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578833/HF082-3-300-4-AW-800X1000.jpg?v=638835467551300000"
-      ],
-      "variantes": [
-        {
-          "t": "39",
-          "p": 719.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 719.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 719.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 719.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 719.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 719.99,
-          "c": 1199.99,
           "x": null,
           "a": false
         }
@@ -31353,51 +29273,6 @@
       ]
     },
     {
-      "id": "2042300",
-      "titulo": "Tênis Jordan Tatum 3 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-tatum-3-masculino-hv587-8-401/p",
-      "ref": "HV587-8-401",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2025-05-02T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/577392/HV587-8-401-1-AW-800x1000.jpg?v=638817859120830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577393/HV587-8-401-2-AW-800x1000.jpg?v=638817859206030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577394/HV587-8-401-3-AW-800x1000.jpg?v=638817859290270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577395/HV587-8-401-4-AW-800x1000.jpg?v=638817859387770000"
-      ],
-      "variantes": [
-        {
-          "t": "40",
-          "p": 839.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 839.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 839.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 839.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2042303",
       "titulo": "Tênis Air Jordan 1 Low Masculino",
       "url": "https://www.artwalk.com.br/tenis-air-jordan-1-low-masculino-ib805-8-110/p",
@@ -31562,110 +29437,6 @@
           "t": "P",
           "p": 199.99,
           "c": 399.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2042465",
-      "titulo": "Blusão Jordan Brooklin Fleece Masculino",
-      "url": "https://www.artwalk.com.br/blusao-jordan-brooklin-fleece-masculino-fv728-3-257/p",
-      "ref": "FV728-3-257",
-      "tipo": "/Roupas/Masculino/Blusões/ Blusões",
-      "tags": [],
-      "publicado": "2025-04-01T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/576331/FV728-3-257-1-AW-800x1000.jpg?v=638799168285070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576332/FV728-3-257-2-AW-800x1000.jpg?v=638799168368800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576333/FV728-3-257-3-AW-800x1000.jpg?v=638799168479100000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576334/FV728-3-257-4-AW-800x1000.jpg?v=638799168576230000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 279.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 279.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 279.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 279.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 279.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2042466",
-      "titulo": "Shorts Jordan Brooklin Fleece Masculino",
-      "url": "https://www.artwalk.com.br/shorts-jordan-brooklin-fleece-masculino-fv728-7-133/p",
-      "ref": "FV728-7-133",
-      "tipo": "/Roupas/Masculino/Bermudas e Shorts/ Shorts",
-      "tags": [],
-      "publicado": "2024-07-11T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/576289/FV728-7-133-1-AW-800X1000.jpg?v=638798169782230000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576290/FV728-7-133-2-AW-800X1000.jpg?v=638798169885070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576291/FV728-7-133-3-AW-800X1000.jpg?v=638798169972970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576292/FV728-7-133-4-AW-800X1000.jpg?v=638798170083130000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 239.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 239.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 239.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 239.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 239.99,
-          "c": 299.99,
           "x": null,
           "a": false
         }
@@ -37083,6 +34854,57 @@
           "c": 249.99,
           "x": null,
           "a": false
+        }
+      ]
+    },
+    {
+      "id": "2046575",
+      "titulo": "Camiseta Jordan Brand Sneakers Crew Masculina",
+      "url": "https://www.artwalk.com.br/camiseta-jordan-brand-sneakers-crew-masculina-if310-7-010/p",
+      "ref": "IF310-7-010",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2026-11-10T10:07:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/589864/IF310-7-010-1-AW-800x1000.jpg?v=639045384602600000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/589865/IF310-7-010-2-AW-800x1000.jpg?v=639045384602900000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/589866/IF310-7-010-3-AW-800x1000.jpg?v=639045384603070000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 299.99,
+          "c": 299.99,
+          "x": 284.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 299.99,
+          "c": 299.99,
+          "x": 284.99,
+          "a": true
+        },
+        {
+          "t": "GGG",
+          "p": 299.99,
+          "c": 299.99,
+          "x": 284.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 299.99,
+          "c": 299.99,
+          "x": 284.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 299.99,
+          "c": 299.99,
+          "x": 284.99,
+          "a": true
         }
       ]
     },

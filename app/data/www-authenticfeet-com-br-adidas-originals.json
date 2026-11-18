@@ -2,7 +2,7 @@
   "marca": "Adidas Originals",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-18T11:50:18Z",
+  "atualizado": "2026-11-18T15:47:44Z",
   "produtos": [
     {
       "id": "28560",
@@ -514,8 +514,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 900.0,
-          "c": 900.0,
+          "p": 309.99,
+          "c": 899.99,
           "x": null,
           "a": false
         },
@@ -528,8 +528,8 @@
         },
         {
           "t": "39",
-          "p": 900.0,
-          "c": 900.0,
+          "p": 309.99,
+          "c": 899.99,
           "x": null,
           "a": false
         },
@@ -549,8 +549,8 @@
         },
         {
           "t": "42",
-          "p": 309.99,
-          "c": 899.99,
+          "p": 900.0,
+          "c": 900.0,
           "x": null,
           "a": false
         },
@@ -688,22 +688,22 @@
         },
         {
           "t": "39",
-          "p": 280.0,
-          "c": 280.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
           "p": 109.99,
           "c": 279.99,
           "x": null,
           "a": false
         },
         {
-          "t": "41",
+          "t": "40",
           "p": 280.0,
           "c": 280.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 109.99,
+          "c": 279.99,
           "x": null,
           "a": false
         },
@@ -716,8 +716,8 @@
         },
         {
           "t": "43",
-          "p": 109.99,
-          "c": 279.99,
+          "p": 280.0,
+          "c": 280.0,
           "x": null,
           "a": false
         },
@@ -4347,8 +4347,8 @@
         },
         {
           "t": "35",
-          "p": 299.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "x": null,
           "a": false
         },
@@ -4368,8 +4368,8 @@
         },
         {
           "t": "38",
-          "p": 299.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "x": null,
           "a": false
         },
@@ -4419,121 +4419,6 @@
           "t": "45",
           "p": 500.0,
           "c": 500.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "49152",
-      "titulo": "Tênis adidas Campus 80s Cheshire Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-campus-80s-cheshire-masculino-gx202-6-600/p",
-      "ref": "GX202-6-600",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2023-03-30T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/400179/GX202-6-600-1.jpg?v=638417035486470000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/401127/GX202-6-600-2.jpg?v=638417043289430000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/402329/GX202-6-600-3.jpg?v=638417048457600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/403373/GX202-6-600-4.jpg?v=638417052858830000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 259.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 259.99,
-          "c": 699.99,
           "x": null,
           "a": false
         }
