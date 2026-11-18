@@ -2,8 +2,62 @@
   "marca": "THESAINT",
   "loja": "Site THESAINT",
   "site": "thesaint.com.br",
-  "atualizado": "2026-11-17T23:46:06Z",
+  "atualizado": "2026-11-18T11:54:45Z",
   "produtos": [
+    {
+      "id": "10183400456483",
+      "titulo": "SHORTS THESAINT GOTHIC",
+      "url": "https://thesaint.com.br/products/shorts-thesaint-gothic",
+      "ref": "",
+      "tipo": "TECIDO PLANO",
+      "tags": [
+        "outlet",
+        "outlet_shorts_e_bermudas",
+        "sale",
+        "TECIDO PLANO",
+        "VERÃO 25/26"
+      ],
+      "publicado": "2026-11-18T01:01:50-03:00",
+      "imagens": [],
+      "variantes": [
+        {
+          "t": "G / BLACK",
+          "p": 234.00,
+          "c": 468.00,
+          "a": true
+        },
+        {
+          "t": "PP / BLACK",
+          "p": 234.00,
+          "c": 468.00,
+          "a": true
+        },
+        {
+          "t": "P / BLACK",
+          "p": 234.00,
+          "c": 468.00,
+          "a": true
+        },
+        {
+          "t": "M / BLACK",
+          "p": 234.00,
+          "c": 468.00,
+          "a": true
+        },
+        {
+          "t": "GG / BLACK",
+          "p": 234.00,
+          "c": 468.00,
+          "a": false
+        },
+        {
+          "t": "XGG / BLACK",
+          "p": 234.00,
+          "c": 468.00,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "10183376863523",
       "titulo": "T-SHIRT OVERSIZED TSMC- BRANCO",
@@ -11629,7 +11683,7 @@
           "t": "GG / OFF WHITE",
           "p": 164.00,
           "c": 328.00,
-          "a": false
+          "a": true
         },
         {
           "t": "M / OFF WHITE",
@@ -14405,65 +14459,6 @@
           "t": "GG / BLACK",
           "p": 114.00,
           "c": 228.00,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "10183372734755",
-      "titulo": "T-SHIRT COMFORT MAFIA CLUB",
-      "url": "https://thesaint.com.br/products/t-shirt-comfort-mafia-club-orange",
-      "ref": "",
-      "tipo": "Em processo de integração",
-      "tags": [
-        "Comfort",
-        "GERAL",
-        "outlet",
-        "outlet_tshirts_e_regatas",
-        "X VERÃO 25"
-      ],
-      "publicado": "2026-10-14T14:19:11-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0959/2016/1059/files/product_image_1_28a03b0c-dd26-4270-9054-07fb77f4c2b6.jpg?v=1793247251",
-        "https://cdn.shopify.com/s/files/1/0959/2016/1059/files/product_image_2_b9ba26c4-7e76-4c18-b2da-14a6790fcbff.jpg?v=1793247252",
-        "https://cdn.shopify.com/s/files/1/0959/2016/1059/files/product_image_3_d878c25c-6a6f-4baa-a082-5fcdd0f4ebc5.jpg?v=1793247251",
-        "https://cdn.shopify.com/s/files/1/0959/2016/1059/files/product_image_4_ba752474-1004-465b-9f96-45b54f85ab6e.jpg?v=1793247251"
-      ],
-      "variantes": [
-        {
-          "t": "GG / LARANJA",
-          "p": 79.00,
-          "c": 158.00,
-          "a": false
-        },
-        {
-          "t": "G / LARANJA",
-          "p": 79.00,
-          "c": 158.00,
-          "a": false
-        },
-        {
-          "t": "M / LARANJA",
-          "p": 79.00,
-          "c": 158.00,
-          "a": false
-        },
-        {
-          "t": "XGG / LARANJA",
-          "p": 79.00,
-          "c": 158.00,
-          "a": false
-        },
-        {
-          "t": "PP / LARANJA",
-          "p": 79.00,
-          "c": 158.00,
-          "a": true
-        },
-        {
-          "t": "P / LARANJA",
-          "p": 79.00,
-          "c": 158.00,
           "a": false
         }
       ]
