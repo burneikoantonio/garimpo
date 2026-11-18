@@ -2,7 +2,7 @@
   "marca": "Mad Enlatados",
   "loja": "Site Mad Enlatados",
   "site": "madenlatados.com.br",
-  "atualizado": "2026-11-18T15:52:33Z",
+  "atualizado": "2026-11-18T19:53:35Z",
   "produtos": [
     {
       "id": "7721420783679",
@@ -1001,7 +1001,7 @@
           "t": "GG",
           "p": 167.30,
           "c": 239.00,
-          "a": true
+          "a": false
         },
         {
           "t": "XG",
@@ -4510,58 +4510,6 @@
       ]
     },
     {
-      "id": "8197739741247",
-      "titulo": "BLUSA MOLETOM - MADSON CHINA (PRETO)",
-      "url": "https://madenlatados.com.br/products/blusa-moletom-madson-china-preto",
-      "ref": "",
-      "tipo": "",
-      "tags": [],
-      "publicado": "2026-08-18T17:00:37-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0567/5850/1439/files/MG_9224_copiar.png?v=1781040724",
-        "https://cdn.shopify.com/s/files/1/0567/5850/1439/files/IMG_9239.heic?v=1781040700",
-        "https://cdn.shopify.com/s/files/1/0567/5850/1439/files/IMG_9243.heic?v=1781040700"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 207.60,
-          "c": 519.00,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 207.60,
-          "c": 519.00,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 207.60,
-          "c": 519.00,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 207.60,
-          "c": 519.00,
-          "a": false
-        },
-        {
-          "t": "XG",
-          "p": 207.60,
-          "c": 519.00,
-          "a": false
-        },
-        {
-          "t": "XXG",
-          "p": 207.60,
-          "c": 519.00,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "8197739806783",
       "titulo": "BLUSA MOLETOM - MADSON CHINA (OFF-WHITE)",
       "url": "https://madenlatados.com.br/products/blusa-moletom-madson-china-off-white",
@@ -7143,29 +7091,6 @@
           "t": "XGG",
           "p": 440.30,
           "c": 629.00,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "8109914062911",
-      "titulo": "BOLSA SACOLA PLISSADA (PRETO)",
-      "url": "https://madenlatados.com.br/products/bolsa-sacola-plissada-preto",
-      "ref": "",
-      "tipo": "",
-      "tags": [],
-      "publicado": "2026-03-18T19:30:06-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0567/5850/1439/files/MG_4963copiar.jpg?v=1773863032",
-        "https://cdn.shopify.com/s/files/1/0567/5850/1439/files/L11-D-MAD-JU4REZ.png?v=1773863090",
-        "https://cdn.shopify.com/s/files/1/0567/5850/1439/files/L11-A-MAD-JU4REZ_4e8d1265-e23b-4e03-8d3b-4757885380ee.png?v=1773863090",
-        "https://cdn.shopify.com/s/files/1/0567/5850/1439/files/L11-C-MAD-JU4REZ.png?v=1773863081"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 173.40,
-          "c": 289.00,
           "a": true
         }
       ]

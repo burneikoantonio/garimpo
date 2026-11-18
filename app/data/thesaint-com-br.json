@@ -2,7 +2,7 @@
   "marca": "THESAINT",
   "loja": "Site THESAINT",
   "site": "thesaint.com.br",
-  "atualizado": "2026-11-18T15:52:24Z",
+  "atualizado": "2026-11-18T19:53:24Z",
   "produtos": [
     {
       "id": "10183400456483",
@@ -217,12 +217,6 @@
       ],
       "variantes": [
         {
-          "t": "M / BLACK",
-          "p": 124.00,
-          "c": 248.00,
-          "a": false
-        },
-        {
           "t": "PP / BLACK",
           "p": 124.00,
           "c": 248.00,
@@ -230,6 +224,12 @@
         },
         {
           "t": "P / BLACK",
+          "p": 124.00,
+          "c": 248.00,
+          "a": false
+        },
+        {
+          "t": "M / BLACK",
           "p": 124.00,
           "c": 248.00,
           "a": false
@@ -281,18 +281,6 @@
           "a": false
         },
         {
-          "t": "48 / BLACK",
-          "p": 249.00,
-          "c": 498.00,
-          "a": true
-        },
-        {
-          "t": "44 / BLACK",
-          "p": 249.00,
-          "c": 498.00,
-          "a": false
-        },
-        {
           "t": "40 / BLACK",
           "p": 249.00,
           "c": 498.00,
@@ -305,10 +293,22 @@
           "a": false
         },
         {
+          "t": "44 / BLACK",
+          "p": 249.00,
+          "c": 498.00,
+          "a": false
+        },
+        {
           "t": "46 / BLACK",
           "p": 249.00,
           "c": 498.00,
           "a": false
+        },
+        {
+          "t": "48 / BLACK",
+          "p": 249.00,
+          "c": 498.00,
+          "a": true
         }
       ]
     },
@@ -790,7 +790,7 @@
       "variantes": [
         {
           "t": "PP / GRAY",
-          "p": 249.00,
+          "p": 199.20,
           "c": 498.00,
           "a": true
         },
@@ -802,19 +802,19 @@
         },
         {
           "t": "M / GRAY",
-          "p": 249.00,
+          "p": 199.20,
           "c": 498.00,
           "a": true
         },
         {
           "t": "G / GRAY",
-          "p": 249.00,
+          "p": 199.20,
           "c": 498.00,
           "a": true
         },
         {
           "t": "GG / GRAY",
-          "p": 249.00,
+          "p": 199.20,
           "c": 498.00,
           "a": true
         }
@@ -3637,18 +3637,6 @@
       ],
       "variantes": [
         {
-          "t": "XGG / STONED RED",
-          "p": 184.00,
-          "c": 368.00,
-          "a": true
-        },
-        {
-          "t": "GG / STONED RED",
-          "p": 134.00,
-          "c": 268.00,
-          "a": false
-        },
-        {
           "t": "PP / STONED RED",
           "p": 184.00,
           "c": 368.00,
@@ -3671,6 +3659,18 @@
           "p": 184.00,
           "c": 368.00,
           "a": false
+        },
+        {
+          "t": "GG / STONED RED",
+          "p": 134.00,
+          "c": 268.00,
+          "a": false
+        },
+        {
+          "t": "XGG / STONED RED",
+          "p": 184.00,
+          "c": 368.00,
+          "a": true
         }
       ]
     },
@@ -6252,13 +6252,13 @@
       ],
       "variantes": [
         {
-          "t": "GG / LIGHT GREEN",
+          "t": "PP / LIGHT GREEN",
           "p": 114.00,
           "c": 228.00,
-          "a": true
+          "a": false
         },
         {
-          "t": "G / LIGHT GREEN",
+          "t": "P / LIGHT GREEN",
           "p": 114.00,
           "c": 228.00,
           "a": true
@@ -6270,19 +6270,19 @@
           "a": true
         },
         {
-          "t": "P / LIGHT GREEN",
+          "t": "G / LIGHT GREEN",
+          "p": 114.00,
+          "c": 228.00,
+          "a": true
+        },
+        {
+          "t": "GG / LIGHT GREEN",
           "p": 114.00,
           "c": 228.00,
           "a": true
         },
         {
           "t": "XGG / LIGHT GREEN",
-          "p": 114.00,
-          "c": 228.00,
-          "a": false
-        },
-        {
-          "t": "PP / LIGHT GREEN",
           "p": 114.00,
           "c": 228.00,
           "a": false
@@ -6626,7 +6626,7 @@
           "t": "GG / OFF WHITE",
           "p": 228.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },

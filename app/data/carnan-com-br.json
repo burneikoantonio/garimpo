@@ -2,7 +2,7 @@
   "marca": "Carnan",
   "loja": "Site Carnan",
   "site": "carnan.com.br",
-  "atualizado": "2026-11-18T15:51:51Z",
+  "atualizado": "2026-11-18T19:52:51Z",
   "produtos": [
     {
       "id": "15491882156328",
@@ -114,7 +114,7 @@
           "t": "G/L",
           "p": 218.70,
           "c": 729.00,
-          "a": true
+          "a": false
         },
         {
           "t": "GG/XL",
@@ -297,7 +297,7 @@
           "t": "3G/XXL",
           "p": 139.60,
           "c": 349.00,
-          "a": true
+          "a": false
         },
         {
           "t": "4G/XXXL",
@@ -1667,7 +1667,7 @@
           "t": "Default Title",
           "p": 179.40,
           "c": 299.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -2070,7 +2070,7 @@
           "t": "Default Title",
           "p": 221.40,
           "c": 369.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -3295,7 +3295,7 @@
           "t": "3G/XXL",
           "p": 365.40,
           "c": 609.00,
-          "a": true
+          "a": false
         },
         {
           "t": "4G/XXXL",

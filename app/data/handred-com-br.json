@@ -2,7 +2,7 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-18T15:52:36Z",
+  "atualizado": "2026-11-18T19:53:38Z",
   "produtos": [
     {
       "id": "10687092555957",
@@ -373,7 +373,7 @@
           "t": "CAMELO / G",
           "p": 547.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "CAMELO / GG",
@@ -714,37 +714,37 @@
       "variantes": [
         {
           "t": "MARINHO / XXP",
-          "p": 298.80,
+          "p": 224.10,
           "c": 747.00,
           "a": false
         },
         {
           "t": "MARINHO / PP",
-          "p": 298.80,
+          "p": 224.10,
           "c": 747.00,
           "a": false
         },
         {
           "t": "MARINHO / P",
-          "p": 298.80,
+          "p": 224.10,
           "c": 747.00,
           "a": false
         },
         {
           "t": "MARINHO / M",
-          "p": 298.80,
+          "p": 224.10,
           "c": 747.00,
           "a": false
         },
         {
           "t": "MARINHO / G",
-          "p": 298.80,
+          "p": 224.10,
           "c": 747.00,
           "a": false
         },
         {
           "t": "MARINHO / GG",
-          "p": 298.80,
+          "p": 224.10,
           "c": 747.00,
           "a": false
         }
@@ -1798,13 +1798,13 @@
           "t": "OFF WHITE / P",
           "p": 626.78,
           "c": 847.00,
-          "a": true
+          "a": false
         },
         {
           "t": "OFF WHITE / M",
           "p": 626.78,
           "c": 847.00,
-          "a": true
+          "a": false
         },
         {
           "t": "OFF WHITE / G",
@@ -3293,7 +3293,7 @@
     },
     {
       "id": "10529806254261",
-      "titulo": "Bermuda Algodão Cargo",
+      "titulo": "Bermuda Algodao Cargo",
       "url": "https://handred.com.br/products/bermuda-algodao-cargo-verde-musgo",
       "ref": "",
       "tipo": "Bermudas",
@@ -3994,6 +3994,7 @@
       "tags": [
         "AKASHICA",
         "ROUPAS",
+        "SALE",
         "SALEINVERNO",
         "SHOP",
         "VERTUDO",
@@ -4010,13 +4011,13 @@
       "variantes": [
         {
           "t": "PRETO / O1",
-          "p": 1948.50,
+          "p": 1558.80,
           "c": 3897.00,
           "a": false
         },
         {
           "t": "PRETO / O2",
-          "p": 1948.50,
+          "p": 1558.80,
           "c": 3897.00,
           "a": false
         }
@@ -4791,6 +4792,7 @@
       "tags": [
         "BAILA",
         "ROUPAS",
+        "SALE",
         "Sale de verão",
         "SALEINVERNO",
         "SHOP",
