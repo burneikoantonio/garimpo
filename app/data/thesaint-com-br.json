@@ -2,8 +2,63 @@
   "marca": "THESAINT",
   "loja": "Site THESAINT",
   "site": "thesaint.com.br",
-  "atualizado": "2026-11-18T23:46:31Z",
+  "atualizado": "2026-11-19T11:52:55Z",
   "produtos": [
+    {
+      "id": "10183398162723",
+      "titulo": "T-SHIRT WIDE SHADOW",
+      "url": "https://thesaint.com.br/products/t-shirt-wide-shadow",
+      "ref": "",
+      "tipo": "TECIDO MALHA",
+      "tags": [
+        "boxy",
+        "INVERNO 26",
+        "outlet",
+        "outlet_tshirts_e_regatas",
+        "sale",
+        "TECIDO MALHA"
+      ],
+      "publicado": "2026-11-19T01:00:53-03:00",
+      "imagens": [],
+      "variantes": [
+        {
+          "t": "PP / OFF WHITE",
+          "p": 124.00,
+          "c": 248.00,
+          "a": false
+        },
+        {
+          "t": "P / OFF WHITE",
+          "p": 124.00,
+          "c": 248.00,
+          "a": true
+        },
+        {
+          "t": "XGG / OFF WHITE",
+          "p": 124.00,
+          "c": 248.00,
+          "a": false
+        },
+        {
+          "t": "M / OFF WHITE",
+          "p": 124.00,
+          "c": 248.00,
+          "a": false
+        },
+        {
+          "t": "G / OFF WHITE",
+          "p": 124.00,
+          "c": 248.00,
+          "a": false
+        },
+        {
+          "t": "GG / OFF WHITE",
+          "p": 124.00,
+          "c": 248.00,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "10183400456483",
       "titulo": "SHORTS THESAINT GOTHIC",
@@ -10108,7 +10163,7 @@
           "t": "G / STONED BLACK",
           "p": 164.00,
           "c": 328.00,
-          "a": true
+          "a": false
         },
         {
           "t": "XGG / STONED BLACK",
@@ -14401,65 +14456,6 @@
           "p": 164.00,
           "c": 328.00,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "10183354745123",
-      "titulo": "T-SHIRT COMFORT MAIN PLAYERS",
-      "url": "https://thesaint.com.br/products/t-shirt-comfort-main-players",
-      "ref": "",
-      "tipo": "MALHA",
-      "tags": [
-        "Comfort",
-        "MALHA",
-        "outlet",
-        "outlet_tshirts_e_regatas",
-        "X VERÃO 25"
-      ],
-      "publicado": "2026-10-14T14:19:12-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0959/2016/1059/files/product_image_1_9c407500-4cd7-434b-83f5-adb12e54b3c7.jpg?v=1778893017",
-        "https://cdn.shopify.com/s/files/1/0959/2016/1059/files/product_image_2_0d962e9d-7b83-47e6-919c-b164c53e36be.jpg?v=1778893017",
-        "https://cdn.shopify.com/s/files/1/0959/2016/1059/files/product_image_3_f868598e-3b3f-494b-95f9-3fa812e75b51.jpg?v=1778893017",
-        "https://cdn.shopify.com/s/files/1/0959/2016/1059/files/product_image_4_736ba0bb-cfed-49d7-a020-182535bd939c.jpg?v=1778893017"
-      ],
-      "variantes": [
-        {
-          "t": "P / BLACK",
-          "p": 114.00,
-          "c": 228.00,
-          "a": false
-        },
-        {
-          "t": "PP / BLACK",
-          "p": 114.00,
-          "c": 228.00,
-          "a": false
-        },
-        {
-          "t": "XGG / BLACK",
-          "p": 114.00,
-          "c": 228.00,
-          "a": true
-        },
-        {
-          "t": "M / BLACK",
-          "p": 114.00,
-          "c": 228.00,
-          "a": false
-        },
-        {
-          "t": "G / BLACK",
-          "p": 114.00,
-          "c": 228.00,
-          "a": false
-        },
-        {
-          "t": "GG / BLACK",
-          "p": 114.00,
-          "c": 228.00,
-          "a": false
         }
       ]
     }

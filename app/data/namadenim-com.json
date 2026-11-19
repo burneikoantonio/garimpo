@@ -2,8 +2,941 @@
   "marca": "Nama Denim",
   "loja": "Site Nama Denim",
   "site": "namadenim.com",
-  "atualizado": "2026-11-18T23:46:42Z",
+  "atualizado": "2026-11-19T11:53:09Z",
   "produtos": [
+    {
+      "id": "15510952378646",
+      "titulo": "18135 AIJ 24254 *",
+      "url": "https://namadenim.com/products/18135-aij-24255",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:35:28+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18135-AIJ-24254-wave.jpg?v=1795077235",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18135-AIJ-24254-flat.jpg?v=1795077235"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510951231766",
+      "titulo": "18135 AIJ 24254",
+      "url": "https://namadenim.com/products/18135-aij-24254",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:34:10+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18135-AIJ-24254-wave.jpg?v=1795077235",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18135-AIJ-24254-flat.jpg?v=1795077235"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510946545942",
+      "titulo": "18129 lime *",
+      "url": "https://namadenim.com/products/18129-lime-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:31:03+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18129wavelime.jpg?v=1795076999",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18129flatlime.jpg?v=1795077004"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510945235222",
+      "titulo": "18129 lime",
+      "url": "https://namadenim.com/products/18129-lime",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:30:15+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18129wavelime.jpg?v=1795076999",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18129flatlime.jpg?v=1795077004"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510943170838",
+      "titulo": "18129 blue *",
+      "url": "https://namadenim.com/products/18129-blue-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:28:54+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18129-light-blue-Selvedge-wave.jpg?v=1795076806",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18129-light-blue-Selvedge-flat.jpg?v=1795076810"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510939009302",
+      "titulo": "18129 blue",
+      "url": "https://namadenim.com/products/18129-blue",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:27:48+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18129-light-blue-Selvedge-wave.jpg?v=1795076806",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18129-light-blue-Selvedge-flat.jpg?v=1795076810"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510936682774",
+      "titulo": "18128 Y 7370 *",
+      "url": "https://namadenim.com/products/18128-y-7371",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:24:10+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-Y-7307v1-wave.jpg?v=1795076527",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-Y-7307v1-flat.jpg?v=1795076532"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510934618390",
+      "titulo": "18128 Y 7370",
+      "url": "https://namadenim.com/products/18128-y-7370",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:22:17+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-Y-7307v1-wave.jpg?v=1795076527",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-Y-7307v1-flat.jpg?v=1795076532"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510931374358",
+      "titulo": "18128 SP 6345 r *",
+      "url": "https://namadenim.com/products/18128-sp-6345-r-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:20:42+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-sp-6345-r-wave.jpg?v=1795076030",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-sp-6345-r-flat.jpg?v=1795076035"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510921117974",
+      "titulo": "18128 SP 6345 r",
+      "url": "https://namadenim.com/products/18128-sp-6345-r",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:14:00+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-sp-6345-r-wave.jpg?v=1795076030",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-sp-6345-r-flat.jpg?v=1795076035"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510915416342",
+      "titulo": "18128 ka 7307 *",
+      "url": "https://namadenim.com/products/18128-ka-7307",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:09:26+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-ka-7307-2-wave.jpg?v=1795075623",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-ka-7307-2-flat.jpg?v=1795075628"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510914957590",
+      "titulo": "18128 ka 7307",
+      "url": "https://namadenim.com/products/18128-ka7307",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:07:15+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-ka-7307-2-wave.jpg?v=1795075623",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18128-ka-7307-2-flat.jpg?v=1795075628"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510912467222",
+      "titulo": "18135 - KDA - 10305 *",
+      "url": "https://namadenim.com/products/18135-kda-10306",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:03:59+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18135-KDA10305-wave_2.jpg?v=1795075386",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18135-KDA10305-flat_2.jpg?v=1795075390"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510910959894",
+      "titulo": "18135 - KDA - 10305",
+      "url": "https://namadenim.com/products/18135-kda-10305",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T17:03:19+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18135-KDA10305-wave_2.jpg?v=1795075386",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18135-KDA10305-flat_2.jpg?v=1795075390"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510906011926",
+      "titulo": "18140 - Christmas Selvedge *",
+      "url": "https://namadenim.com/products/18140-christmas-selvedge-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:58:34+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18140-wave.jpg?v=1795074564",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18140-flat.jpg?v=1795074569"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510897590550",
+      "titulo": "18140 - Christmas Selvedge",
+      "url": "https://namadenim.com/products/18140-christmas-selvedge",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:49:39+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18140-wave.jpg?v=1795074564",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/18140-flat.jpg?v=1795074569"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510892773654",
+      "titulo": "13.2oz KURABO DENIM KDC26 - 1920’s Throwback Replica Selvedge *",
+      "url": "https://namadenim.com/products/13-2oz-kurabo-denim-kdc26-1920-s-throwback-replica-selvedge-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:47:20+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-26_wave.jpg?v=1795074375",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-26_flat.jpg?v=1795074377"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510890905878",
+      "titulo": "13.2oz KURABO DENIM KDC26 - 1920’s Throwback Replica Selvedge",
+      "url": "https://namadenim.com/products/13-2oz-kurabo-denim-kdc26-1920-s-throwback-replica-selvedge",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:46:23+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-26_wave.jpg?v=1795074375",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-26_flat.jpg?v=1795074377"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510885138710",
+      "titulo": "14oz KURABO DENIM GP44 - 1940s Throwback Replica Selvedge *",
+      "url": "https://namadenim.com/products/14oz-kurabo-denim-gp44-1940s-throwback-replica-selvedge-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:44:26+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-GP-44-wave.jpg?v=1795074204",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-GP-44-flat.jpg?v=1795074207"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510883402006",
+      "titulo": "14oz KURABO DENIM GP44 - 1940s Throwback Replica Selvedge",
+      "url": "https://namadenim.com/products/14oz-kurabo-denim-gp44-1940s-throwback-replica-selvedge",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:43:41+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-GP-44-wave.jpg?v=1795074204",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-GP-44-flat.jpg?v=1795074207"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510880551190",
+      "titulo": "13.5oz KURABO KDC44 — 1940s Throwback Replica Selvedge *",
+      "url": "https://namadenim.com/products/13-5oz-kurabo-kdc44-1940s-throwback-replica-selvedge-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:41:38+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-44-wave.jpg?v=1795074004",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-44-flat.jpg?v=1795074007"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510877077782",
+      "titulo": "13.5oz KURABO KDC44 — 1940s Throwback Replica Selvedge",
+      "url": "https://namadenim.com/products/13-5oz-kurabo-kdc44-1940s-throwback-replica-selvedge",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:40:13+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-44-wave.jpg?v=1795074004",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-44-flat.jpg?v=1795074007"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510866723094",
+      "titulo": "15oz KURABO KDB55 Vintage Black Slub Denim *",
+      "url": "https://namadenim.com/products/15oz-kurabo-kdb55-vintage-black-slub-denim-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:37:59+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDB-55-wave.jpg?v=1795073115",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDB-55-flat.jpg?v=1795073118"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510853386518",
+      "titulo": "15oz KURABO KDB55 Vintage Black Slub Denim",
+      "url": "https://namadenim.com/products/15oz-kurabo-kdb55-vintage-black-slub-denim",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:25:33+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDB-55-wave.jpg?v=1795073115",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDB-55-flat.jpg?v=1795073118"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510851780886",
+      "titulo": "12.5oz KDC 5681 Easy Stretch *",
+      "url": "https://namadenim.com/products/12-5oz-kdc-5681-easy-stretch-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:23:43+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-5681-wave.jpg?v=1795072927",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-5681-flat.jpg?v=1795072929"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510846996758",
+      "titulo": "12.5oz KDC 5681 Easy Stretch",
+      "url": "https://namadenim.com/products/12-5oz-kdc-5681-easy-stretch",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T16:22:25+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-5681-wave.jpg?v=1795072927",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDC-5681-flat.jpg?v=1795072929"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510828384534",
+      "titulo": "13oz KURABO KDX418 *",
+      "url": "https://namadenim.com/products/13oz-kurabo-kdx418-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jacket",
+        "Japanese denim",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T15:59:23+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDX-418-wave.jpg?v=1795071413",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDX-418-flat.jpg?v=1795071416"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510828056854",
+      "titulo": "13oz KURABO KDX418",
+      "url": "https://namadenim.com/products/13oz-kurabo-kdx418",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jeans",
+        "CUSTOM MADE JEANS",
+        "cyoj",
+        "denim",
+        "fabric",
+        "indigo",
+        "jeans",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T15:57:40+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDX-418-wave.jpg?v=1795071413",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-KDX-418-flat.jpg?v=1795071416"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510827630870",
+      "titulo": "12.5oz KURABO GP26 - 1920’s Throwback Replica Selvedge *",
+      "url": "https://namadenim.com/products/12-5oz-kurabo-gp26-1920-s-throwback-replica-selvedge-1",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "craft your own jacket",
+        "cyoj",
+        "denim",
+        "fabric",
+        "jacket",
+        "Jackets",
+        "selvedge",
+        "tailor made"
+      ],
+      "publicado": "2026-11-19T15:53:47+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-GP-26-wave.jpg?v=1795071101",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-GP-26-flat.jpg?v=1795071101"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 350.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15510826975510",
+      "titulo": "12.5oz KURABO GP26 - 1920’s Throwback Replica Selvedge",
+      "url": "https://namadenim.com/products/12-5oz-kurabo-gp26-1920-s-throwback-replica-selvedge",
+      "ref": "",
+      "tipo": "Fabric",
+      "tags": [
+        "cyoj",
+        "fabric"
+      ],
+      "publicado": "2026-11-19T15:52:26+09:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-GP-26-wave.jpg?v=1795071101",
+        "https://cdn.shopify.com/s/files/1/0265/9741/files/25535-GP-26-flat.jpg?v=1795071101"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 330.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "15488138969366",
       "titulo": "WS001 WIDE STRAIGHT - 11oz INDIGO SNOW NEP",

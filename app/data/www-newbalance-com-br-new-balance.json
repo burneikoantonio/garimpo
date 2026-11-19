@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Site New Balance",
   "site": "www.newbalance.com.br",
-  "atualizado": "2026-11-18T23:43:24Z",
+  "atualizado": "2026-11-19T11:50:14Z",
   "produtos": [
     {
       "id": "1100319",
@@ -604,8 +604,8 @@
           "t": "43",
           "p": 599.99,
           "c": 599.99,
-          "x": null,
-          "a": false
+          "x": 599.99,
+          "a": true
         },
         {
           "t": "44",
@@ -2546,6 +2546,110 @@
       ]
     },
     {
+      "id": "1282455",
+      "titulo": "Shorts Athletics Small Logo 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-athletics-small-logo-5--masculino-1282455/p",
+      "ref": "MS41511B_BK_1282455",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2025-02-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182361/MS41511B_BK.jpg?v=638840390712570000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182362/MS41511B_BK.jpg?v=638840390712730000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182363/MS41511B_BK.jpg?v=638840390712730000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182364/MS41511B_BK.jpg?v=638840390712730000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1282456",
+      "titulo": "Shorts Athletics Small Logo 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-athletics-small-logo-5--masculino-1282456/p",
+      "ref": "MS41511B_AHH_1282456",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2025-02-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182380/MS41511B_AHH.jpg?v=638857676727200000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182381/MS41511B_AHH.jpg?v=638857676727200000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182382/MS41511B_AHH.jpg?v=638857676727200000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182383/MS41511B_AHH.jpg?v=638857676727200000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 269.99,
+          "c": 269.99,
+          "x": 269.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 269.99,
+          "c": 269.99,
+          "x": 269.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 269.99,
+          "c": 269.99,
+          "x": 269.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 269.99,
+          "c": 269.99,
+          "x": 269.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 269.99,
+          "c": 269.99,
+          "x": 269.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1282457",
       "titulo": "Shorts Athletics Small Logo 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-athletics-small-logo-5--masculino-1282457/p",
@@ -3475,15 +3579,15 @@
           "t": "39",
           "p": 349.99,
           "c": 349.99,
-          "x": 349.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40",
           "p": 349.99,
           "c": 349.99,
-          "x": 349.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "41",
@@ -3541,15 +3645,15 @@
           "t": "39",
           "p": 329.99,
           "c": 399.99,
-          "x": 329.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40",
           "p": 329.99,
           "c": 399.99,
-          "x": 329.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "41",
@@ -3896,8 +4000,8 @@
           "t": "40",
           "p": 399.99,
           "c": 549.99,
-          "x": null,
-          "a": false
+          "x": 399.99,
+          "a": true
         },
         {
           "t": "41",
@@ -11072,7 +11176,7 @@
           "p": 499.99,
           "c": 499.99,
           "x": 499.99,
-          "a": true
+          "a": false
         },
         {
           "t": "37",
@@ -11757,8 +11861,8 @@
           "t": "40",
           "p": 399.99,
           "c": 549.99,
-          "x": null,
-          "a": false
+          "x": 399.99,
+          "a": true
         },
         {
           "t": "41",
@@ -12397,8 +12501,8 @@
           "t": "40",
           "p": 449.99,
           "c": 449.99,
-          "x": null,
-          "a": false
+          "x": 449.99,
+          "a": true
         },
         {
           "t": "41",
@@ -12492,100 +12596,6 @@
           "p": 449.99,
           "c": 449.99,
           "x": 449.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1350237",
-      "titulo": "Tênis New Balance 480 Low Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-480-low-unisex-1350237/p",
-      "ref": "BB480L_U480L1V6_1350237",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-02-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/223783/BB480L_U480L1V6.jpg?v=639190293444800000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/223784/BB480L_U480L1V6.jpg?v=639190293486400000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/223785/BB480L_U480L1V6.jpg?v=639190293515770000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/223786/BB480L_U480L1V6.jpg?v=639190293544230000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
           "a": true
         }
       ]
@@ -13785,6 +13795,58 @@
       ]
     },
     {
+      "id": "1355715",
+      "titulo": "Casaco Essentials (Sem Felpa) Masculino",
+      "url": "https://www.newbalance.com.br/casaco-essentials--sem-felpa--masculino-1355715/p",
+      "ref": "MT41510B_AAV_1355715",
+      "tipo": "/Confecção/Casaco/ ",
+      "tags": [],
+      "publicado": "2026-03-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/215609/MT41510B_AAV.jpg?v=639148159009800000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/215610/MT41510B_AAV.jpg?v=639148159051000000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/215611/MT41510B_AAV.jpg?v=639148159090500000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/215612/MT41510B_AAV.jpg?v=639148159132600000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 199.99,
+          "c": 329.99,
+          "x": 199.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 199.99,
+          "c": 329.99,
+          "x": 199.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 199.99,
+          "c": 329.99,
+          "x": 199.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 199.99,
+          "c": 329.99,
+          "x": 199.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 199.99,
+          "c": 329.99,
+          "x": 199.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1355736",
       "titulo": "Casaco Com Capuz Athletics Small Logo Masculino",
       "url": "https://www.newbalance.com.br/casaco-com-capuz-athletics-small-logo-masculino-1355736/p",
@@ -14045,58 +14107,6 @@
       ]
     },
     {
-      "id": "1355857",
-      "titulo": "Casaco Com Capuz Reimagined (Sem Felpa) Masculino",
-      "url": "https://www.newbalance.com.br/casaco-com-capuz-reimagined--sem-felpa--masculino-1355857/p",
-      "ref": "MT61L713B_AA3_1355857",
-      "tipo": "/Confecção/Casaco Com Capuz/ ",
-      "tags": [],
-      "publicado": "2026-04-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/217656/MT61L713B_AA3.jpg?v=639149633731970000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/217657/MT61L713B_AA3.jpg?v=639149633775100000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/217658/MT61L713B_AA3.jpg?v=639149633815530000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/217659/MT61L713B_AA3.jpg?v=639149633857330000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 369.99,
-          "c": 369.99,
-          "x": 369.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 369.99,
-          "c": 369.99,
-          "x": 369.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 369.99,
-          "c": 369.99,
-          "x": 369.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 369.99,
-          "c": 369.99,
-          "x": 369.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 369.99,
-          "c": 369.99,
-          "x": 369.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1355879",
       "titulo": "Calça Reimagined Jogger (Sem Felpa) Masculina",
       "url": "https://www.newbalance.com.br/calca-reimagined-jogger--sem-felpa--masculina-1355879/p",
@@ -14213,58 +14223,6 @@
         "https://newbrasil.vteximg.com.br/arquivos/ids/217587/MJ6126S5B_BK.jpg?v=639172321600800000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/217588/MJ6126S5B_BK.jpg?v=639172321600800000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/217589/MJ6126S5B_BK.jpg?v=639172321600800000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1356089",
-      "titulo": "Jaqueta Corta Vento Fast Days Masculino",
-      "url": "https://www.newbalance.com.br/jaqueta-corta-vento-fast-days-masculino-1356089/p",
-      "ref": "MJ6126S5B_AFG_1356089",
-      "tipo": "/Confecção/Jaqueta Corta Vento/ ",
-      "tags": [],
-      "publicado": "2026-03-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220441/MJ6126S5B_AFG.jpg?v=639184203763730000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220442/MJ6126S5B_AFG.jpg?v=639184203805870000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220443/MJ6126S5B_AFG.jpg?v=639184203834500000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220444/MJ6126S5B_AFG.jpg?v=639184203902270000"
       ],
       "variantes": [
         {
@@ -14756,110 +14714,6 @@
           "p": 389.99,
           "c": 389.99,
           "x": 389.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1356259",
-      "titulo": "Shorts Athletics Stretch Woven 7\" Masculino",
-      "url": "https://www.newbalance.com.br/shorts-athletics-stretch-woven-7--masculino-1356259/p",
-      "ref": "MB6174CD_BK_1356259",
-      "tipo": "/Confecção/Shorts/ ",
-      "tags": [],
-      "publicado": "2026-02-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203074/MB6174CD_BK.jpg?v=639077945350030000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203075/MB6174CD_BK.jpg?v=639077945380100000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203076/MB6174CD_BK.jpg?v=639077945410400000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203077/MB6174CD_BK.jpg?v=639077945452670000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1356260",
-      "titulo": "Shorts Athletics Stretch Woven 7\" Masculino",
-      "url": "https://www.newbalance.com.br/shorts-athletics-stretch-woven-7--masculino-1356260/p",
-      "ref": "MB6174CD_YST_1356260",
-      "tipo": "/Confecção/Shorts/ ",
-      "tags": [],
-      "publicado": "2026-02-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203081/MB6174CD_YST.jpg?v=639077946157000000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203082/MB6174CD_YST.jpg?v=639077946187200000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203083/MB6174CD_YST.jpg?v=639077946228930000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203084/MB6174CD_YST.jpg?v=639077946259570000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
           "a": true
         }
       ]
@@ -15635,58 +15489,6 @@
       ]
     },
     {
-      "id": "1356527",
-      "titulo": "Jaqueta Corta Vento Packable Rc Masculino",
-      "url": "https://www.newbalance.com.br/jaqueta-corta-vento-packable-rc-masculino-1356527/p",
-      "ref": "MJ61U1I9_GYM_1356527",
-      "tipo": "/Confecção/Jaqueta Corta Vento/ ",
-      "tags": [],
-      "publicado": "2026-03-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/226317/MJ61U1I9_GYM.jpg?v=639207797465470000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/226318/MJ61U1I9_GYM.jpg?v=639207797508130000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/226319/MJ61U1I9_GYM.jpg?v=639207797550900000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/226320/MJ61U1I9_GYM.jpg?v=639207797589500000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1356543",
       "titulo": "Shorts Rc Essential 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-rc-essential-5--masculino-1356543/p",
@@ -16021,8 +15823,8 @@
           "t": "36",
           "p": 749.99,
           "c": 749.99,
-          "x": null,
-          "a": false
+          "x": 749.99,
+          "a": true
         },
         {
           "t": "37",
@@ -16035,8 +15837,8 @@
           "t": "38",
           "p": 749.99,
           "c": 749.99,
-          "x": null,
-          "a": false
+          "x": 749.99,
+          "a": true
         },
         {
           "t": "39",
@@ -16535,15 +16337,15 @@
           "t": "G",
           "p": 189.99,
           "c": 399.99,
-          "x": null,
-          "a": false
+          "x": 189.99,
+          "a": true
         },
         {
           "t": "GG",
           "p": 189.99,
           "c": 399.99,
-          "x": null,
-          "a": false
+          "x": 189.99,
+          "a": true
         },
         {
           "t": "M",
@@ -16558,71 +16360,6 @@
           "c": 399.99,
           "x": 189.99,
           "a": true
-        },
-        {
-          "t": "PP",
-          "p": 189.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "1362050",
-      "titulo": "Casaco Viagem Spfc 2026 Masculino",
-      "url": "https://www.newbalance.com.br/casaco-viagem-spfc-2026-masculino-1362050/p",
-      "ref": "MT831846_OFF_1362050",
-      "tipo": "/Confecção/Casaco/ ",
-      "tags": [],
-      "publicado": "2026-01-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/219011/MT831846_OFF.jpg?v=639166947698800000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/219012/MT831846_OFF.jpg?v=639166947729530000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/219013/MT831846_OFF.jpg?v=639166947771870000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 189.99,
-          "c": 399.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "3GG",
-          "p": 189.99,
-          "c": 399.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 189.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 189.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 189.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 189.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
         },
         {
           "t": "PP",
@@ -16948,15 +16685,15 @@
           "t": "40",
           "p": 749.99,
           "c": 749.99,
-          "x": 749.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "41",
           "p": 749.99,
           "c": 749.99,
-          "x": 749.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "42",
@@ -16970,7 +16707,7 @@
           "p": 749.99,
           "c": 749.99,
           "x": 749.99,
-          "a": false
+          "a": true
         },
         {
           "t": "44",
@@ -17410,8 +17147,8 @@
           "t": "G",
           "p": 149.99,
           "c": 199.99,
-          "x": 149.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "GG",
@@ -17516,6 +17253,65 @@
       ]
     },
     {
+      "id": "1385190",
+      "titulo": "Calção Away Spfc 2026 Masculino",
+      "url": "https://www.newbalance.com.br/calcao-away-spfc-2026-masculino-1385190/p",
+      "ref": "MS831821_PVB_1385190",
+      "tipo": "/Confecção/Calção/ ",
+      "tags": [],
+      "publicado": "2026-04-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/219529/MS831821_PVB.jpg?v=639174913311900000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/219530/MS831821_PVB.jpg?v=639174913351200000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/219531/MS831821_PVB.jpg?v=639174913380700000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/219532/MS831821_PVB.jpg?v=639174913410230000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "3GG",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "4GG",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1385245",
       "titulo": "Calção Home Spfc 2026 Masculino",
       "url": "https://www.newbalance.com.br/calcao-home-spfc-2026-masculino-1385245/p",
@@ -17534,8 +17330,8 @@
           "t": "2GG",
           "p": 149.99,
           "c": 249.99,
-          "x": null,
-          "a": false
+          "x": 149.99,
+          "a": true
         },
         {
           "t": "3GG",
@@ -17555,8 +17351,8 @@
           "t": "G",
           "p": 149.99,
           "c": 249.99,
-          "x": null,
-          "a": false
+          "x": 149.99,
+          "a": true
         },
         {
           "t": "GG",
@@ -22608,15 +22404,15 @@
           "t": "41",
           "p": 799.99,
           "c": 999.99,
-          "x": null,
-          "a": false
+          "x": 799.99,
+          "a": true
         },
         {
           "t": "42",
           "p": 799.99,
           "c": 999.99,
-          "x": null,
-          "a": false
+          "x": 799.99,
+          "a": true
         },
         {
           "t": "43",
@@ -27441,7 +27237,7 @@
           "p": 799.99,
           "c": 799.99,
           "x": 799.99,
-          "a": true
+          "a": false
         },
         {
           "t": "36",
@@ -27871,6 +27667,79 @@
       ]
     },
     {
+      "id": "1396108",
+      "titulo": "Calção Away Grêmio 2026 Masculino",
+      "url": "https://www.newbalance.com.br/calcao-away-gremio-2026-masculino-1396108/p",
+      "ref": "MS831832_OWA_1396108",
+      "tipo": "/Confecção/Calção/ ",
+      "tags": [],
+      "publicado": "2026-03-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220482/MS831832_OWA.jpg?v=639184405866270000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220483/MS831832_OWA.jpg?v=639184405906730000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220484/MS831832_OWA.jpg?v=639184405936230000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220485/MS831832_OWA.jpg?v=639184405975570000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "3GG",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "4GG",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "PP",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1396182",
       "titulo": "Tênis New Balance 5030 Unissex",
       "url": "https://www.newbalance.com.br/tenis-new-balance-5030-unissex-1396182/p",
@@ -27982,7 +27851,7 @@
         {
           "t": "34",
           "p": 699.99,
-          "c": 899.99,
+          "c": 849.99,
           "x": null,
           "a": false
         },
@@ -28165,6 +28034,100 @@
         "https://newbrasil.vteximg.com.br/arquivos/ids/237263/U5030_U50304F7.jpg?v=639282787885300000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/237264/U5030_U50304F7.jpg?v=639282787923330000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/237265/U5030_U50304F7.jpg?v=639282787950400000"
+      ],
+      "variantes": [
+        {
+          "t": "34",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "35",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "36",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "37",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "38",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "39",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "40",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "41",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "42",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "43",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        },
+        {
+          "t": "44",
+          "p": 699.99,
+          "c": 849.99,
+          "x": 699.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1396256",
+      "titulo": "Tênis New Balance 5030 Unissex",
+      "url": "https://www.newbalance.com.br/tenis-new-balance-5030-unissex-1396256/p",
+      "ref": "U5030_U50305E4_1396256",
+      "tipo": "/Calçado/Tênis/ ",
+      "tags": [],
+      "publicado": "2026-08-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236263/U5030_U50305E4.jpg?v=639275151547100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236264/U5030_U50305E4.jpg?v=639275151590170000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236265/U5030_U50305E4.jpg?v=639275151634500000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236266/U5030_U50305E4.jpg?v=639275151660300000"
       ],
       "variantes": [
         {
@@ -29239,6 +29202,72 @@
       ]
     },
     {
+      "id": "1396367",
+      "titulo": "Tênis New Balance 603 Unisex",
+      "url": "https://www.newbalance.com.br/tenis-new-balance-603-unisex-1396367/p",
+      "ref": "U603_M6038PY_1396367",
+      "tipo": "/Calçado/Tênis/ ",
+      "tags": [],
+      "publicado": "2026-08-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/228009/U603_M6038PY.jpg?v=639222247206830000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/228010/U603_M6038PY.jpg?v=639222247247800000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/228011/U603_M6038PY.jpg?v=639222247277030000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/228012/U603_M6038PY.jpg?v=639222247316400000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 749.99,
+          "c": 749.99,
+          "x": 749.99,
+          "a": true
+        },
+        {
+          "t": "39",
+          "p": 749.99,
+          "c": 749.99,
+          "x": 749.99,
+          "a": true
+        },
+        {
+          "t": "40",
+          "p": 749.99,
+          "c": 749.99,
+          "x": 749.99,
+          "a": true
+        },
+        {
+          "t": "41",
+          "p": 749.99,
+          "c": 749.99,
+          "x": 749.99,
+          "a": true
+        },
+        {
+          "t": "42",
+          "p": 749.99,
+          "c": 749.99,
+          "x": 749.99,
+          "a": true
+        },
+        {
+          "t": "43",
+          "p": 749.99,
+          "c": 749.99,
+          "x": 749.99,
+          "a": true
+        },
+        {
+          "t": "44",
+          "p": 749.99,
+          "c": 749.99,
+          "x": 749.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1396371",
       "titulo": "Tênis New Balance 603 Unissex",
       "url": "https://www.newbalance.com.br/tenis-new-balance-603-unissex-1396371/p",
@@ -29452,8 +29481,8 @@
           "t": "38",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1299.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "39",
@@ -29473,15 +29502,15 @@
           "t": "41",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1299.99,
+          "a": true
         },
         {
           "t": "42",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1299.99,
+          "a": true
         },
         {
           "t": "43",
@@ -29801,7 +29830,7 @@
           "p": 1299.99,
           "c": 1299.99,
           "x": 1299.99,
-          "a": true
+          "a": false
         },
         {
           "t": "35",
@@ -29829,7 +29858,7 @@
           "p": 1299.99,
           "c": 1299.99,
           "x": 1299.99,
-          "a": true
+          "a": false
         },
         {
           "t": "39",
@@ -30507,8 +30536,8 @@
           "t": "38",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1299.99,
+          "a": true
         },
         {
           "t": "39",
@@ -30782,8 +30811,8 @@
           "t": "37",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1299.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "38",
@@ -30888,6 +30917,110 @@
       ]
     },
     {
+      "id": "1400069",
+      "titulo": "Casaco Com Capuz Made Usa Masculino",
+      "url": "https://www.newbalance.com.br/casaco-com-capuz-made-usa-masculino-1400069/p",
+      "ref": "MT43546_MHN_1400069",
+      "tipo": "/Confecção/Casaco Com Capuz/ ",
+      "tags": [],
+      "publicado": "2026-08-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227370/MT43546_MHN.jpg?v=639214654932930000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227371/MT43546_MHN.jpg?v=639214654974100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227372/MT43546_MHN.jpg?v=639214655022530000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227373/MT43546_MHN.jpg?v=639214655059100000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1400070",
+      "titulo": "Casaco Com Capuz Made Usa Masculino",
+      "url": "https://www.newbalance.com.br/casaco-com-capuz-made-usa-masculino-1400070/p",
+      "ref": "MT43546_RLT_1400070",
+      "tipo": "/Confecção/Casaco Com Capuz/ ",
+      "tags": [],
+      "publicado": "2026-08-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227338/MT43546_RLT.jpg?v=639214646790770000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227339/MT43546_RLT.jpg?v=639214646824370000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227340/MT43546_RLT.jpg?v=639214646867300000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227341/MT43546_RLT.jpg?v=639214646898270000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1400310",
       "titulo": "Shorts Sport Legacy 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-sport-legacy-5--masculino-1400310/p",
@@ -30934,6 +31067,110 @@
           "t": "P",
           "p": 289.99,
           "c": 449.99,
+          "x": 289.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1400311",
+      "titulo": "Shorts Sport Legacy 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-sport-legacy-5--masculino-1400311/p",
+      "ref": "MB6176MR_AA9_1400311",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/240625/MB6176MR_AA9.jpg?v=639306300288730000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/240626/MB6176MR_AA9.jpg?v=639306300316700000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/240627/MB6176MR_AA9.jpg?v=639306300358230000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/240628/MB6176MR_AA9.jpg?v=639306300386570000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1400357",
+      "titulo": "Shorts Trackside Woven 7\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-trackside-woven-7--masculino-1400357/p",
+      "ref": "MB62U39T_BK_1400357",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221087/MB62U39T_BK.jpg?v=639187096456670000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221088/MB62U39T_BK.jpg?v=639187096498830000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221089/MB62U39T_BK.jpg?v=639187096529730000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221090/MB62U39T_BK.jpg?v=639187096560200000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 289.99,
+          "c": 419.99,
+          "x": 289.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 289.99,
+          "c": 419.99,
+          "x": 289.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 289.99,
+          "c": 419.99,
+          "x": 289.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 289.99,
+          "c": 419.99,
+          "x": 289.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 289.99,
+          "c": 419.99,
           "x": 289.99,
           "a": true
         }
@@ -31994,6 +32231,58 @@
       ]
     },
     {
+      "id": "1403728",
+      "titulo": "Shorts Athletics Small Logo 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-athletics-small-logo-5--masculino-1403728/p",
+      "ref": "MS41511B_AGA_1403728",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2026-09-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236350/MS41511B_AGA.jpg?v=639275945679970000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236351/MS41511B_AGA.jpg?v=639275945707800000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236352/MS41511B_AGA.jpg?v=639275945755230000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236353/MS41511B_AGA.jpg?v=639275945796200000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1403729",
       "titulo": "Shorts Athletics Small Logo 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-athletics-small-logo-5--masculino-1403729/p",
@@ -32239,7 +32528,7 @@
           "p": 499.99,
           "c": 499.99,
           "x": 499.99,
-          "a": false
+          "a": true
         },
         {
           "t": "39",
@@ -32335,53 +32624,99 @@
       ]
     },
     {
-      "id": "1404525",
-      "titulo": "Shorts Sport Essentials 7\" Masculino",
-      "url": "https://www.newbalance.com.br/shorts-sport-essentials-7--masculino-1404525/p",
-      "ref": "MS41232BR_BK_1404525",
+      "id": "1404521",
+      "titulo": "Shorts Sport Essentials 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-sport-essentials-5--masculino-1404521/p",
+      "ref": "MS41227BR_ATD_1404521",
       "tipo": "/Confecção/Shorts/ ",
       "tags": [],
       "publicado": "2026-07-01T00:00:00Z",
       "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/233675/MS41232BR_BK.jpg?v=639246956647800000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/233676/MS41232BR_BK.jpg?v=639246956680630000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/233677/MS41232BR_BK.jpg?v=639246956712230000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/233678/MS41232BR_BK.jpg?v=639246956755100000"
+        "https://newbrasil.vteximg.com.br/arquivos/ids/228340/MS41227BR_ATD.jpg?v=639223506632500000"
       ],
       "variantes": [
         {
           "t": "2GG",
-          "p": 119.99,
-          "c": 189.99,
-          "x": 119.99,
+          "p": 179.99,
+          "c": 179.99,
+          "x": 179.99,
           "a": true
         },
         {
           "t": "G",
-          "p": 119.99,
-          "c": 189.99,
-          "x": 119.99,
+          "p": 179.99,
+          "c": 179.99,
+          "x": 179.99,
           "a": true
         },
         {
           "t": "GG",
-          "p": 119.99,
-          "c": 189.99,
-          "x": 119.99,
+          "p": 179.99,
+          "c": 179.99,
+          "x": 179.99,
           "a": true
         },
         {
           "t": "M",
-          "p": 119.99,
-          "c": 189.99,
-          "x": 119.99,
+          "p": 179.99,
+          "c": 179.99,
+          "x": 179.99,
           "a": true
         },
         {
           "t": "P",
-          "p": 119.99,
+          "p": 179.99,
+          "c": 179.99,
+          "x": 179.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1404526",
+      "titulo": "Shorts Sport Essentials 7\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-sport-essentials-7--masculino-1404526/p",
+      "ref": "MS41232BR_ATD_1404526",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/229494/MS41232BR_ATD.jpg?v=639227463900330000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 189.99,
           "c": 189.99,
-          "x": 119.99,
+          "x": 189.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 189.99,
+          "c": 189.99,
+          "x": 189.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 189.99,
+          "c": 189.99,
+          "x": 189.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 189.99,
+          "c": 189.99,
+          "x": 189.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 189.99,
+          "c": 189.99,
+          "x": 189.99,
           "a": true
         }
       ]
@@ -32642,8 +32977,8 @@
           "t": "40",
           "p": 1199.99,
           "c": 1199.99,
-          "x": null,
-          "a": false
+          "x": 1199.99,
+          "a": true
         },
         {
           "t": "41",
@@ -33547,6 +33882,72 @@
         "https://newbrasil.vteximg.com.br/arquivos/ids/240217/U992_U992AR.jpg?v=639288790697600000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/240218/U992_U992AR.jpg?v=639288790697770000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/240219/U992_U992AR.jpg?v=639288790697770000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 1899.99,
+          "c": 1899.99,
+          "x": 1899.99,
+          "a": true
+        },
+        {
+          "t": "39",
+          "p": 1899.99,
+          "c": 1899.99,
+          "x": 1899.99,
+          "a": true
+        },
+        {
+          "t": "40",
+          "p": 1899.99,
+          "c": 1899.99,
+          "x": 1899.99,
+          "a": true
+        },
+        {
+          "t": "41",
+          "p": 1899.99,
+          "c": 1899.99,
+          "x": 1899.99,
+          "a": true
+        },
+        {
+          "t": "42",
+          "p": 1899.99,
+          "c": 1899.99,
+          "x": 1899.99,
+          "a": true
+        },
+        {
+          "t": "43",
+          "p": 1899.99,
+          "c": 1899.99,
+          "x": 1899.99,
+          "a": true
+        },
+        {
+          "t": "44",
+          "p": 1899.99,
+          "c": 1899.99,
+          "x": 1899.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1418220",
+      "titulo": "Tênis New Balance 992 Unissex",
+      "url": "https://www.newbalance.com.br/tenis-new-balance-992-unissex-1418220/p",
+      "ref": "U992_U992PK_1418220",
+      "tipo": "/Calçado/Tênis/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/234942/U992_U992PK.jpg?v=639253319436100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/234943/U992_U992PK.jpg?v=639253319436100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/234944/U992_U992PK.jpg?v=639253319436100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/234945/U992_U992PK.jpg?v=639253319436230000"
       ],
       "variantes": [
         {
