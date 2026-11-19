@@ -2,8 +2,31 @@
   "marca": "Blck Brasil",
   "loja": "Site Blck Brasil",
   "site": "blckbrasil.com.br",
-  "atualizado": "2026-11-19T15:55:41Z",
+  "atualizado": "2026-11-19T20:00:35Z",
   "produtos": [
+    {
+      "id": "11068546220343",
+      "titulo": "Bucket Hat Preto e Branco Effect",
+      "url": "https://blckbrasil.com.br/products/bucket-hat-preto-e-branco-effect",
+      "ref": "",
+      "tipo": "",
+      "tags": [
+        "Chapéus",
+        "VESTUÁRIO"
+      ],
+      "publicado": "2026-11-19T13:01:03-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/BUCKET01_c6287124-4db8-46bb-a211-691437d82b6b.jpg?v=1793993044"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 89.90,
+          "c": 89.90,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "10965231632695",
       "titulo": "Boné Kids Snapback Basic Preto Logo Branco",
@@ -243,31 +266,6 @@
       ]
     },
     {
-      "id": "10831989080375",
-      "titulo": "Boné Snapback Amarelo Tiger Verde",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-amarelo-tiger-verde-1",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "COPA",
-        "LIVE"
-      ],
-      "publicado": "2026-11-18T08:31:48-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B06_406ccfa4-d453-4400-8562-fb00bdcc92fe.jpg?v=1770821481",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B06-2_65b29d67-7b93-4a3d-bd8a-055a196c31b3.jpg?v=1770821481",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B06-3_c17ff894-fb26-44ea-a8bf-47d57ff44304.jpg?v=1770821481"
-      ],
-      "variantes": [
-        {
-          "t": "Amarelo / Único",
-          "p": 87.00,
-          "c": 219.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10893054214455",
       "titulo": "Boné Kids Snapback Preto Basic Caramelo",
       "url": "https://blckbrasil.com.br/products/bone-kids-snapback-preto-basic-caramelo",
@@ -389,31 +387,6 @@
       "variantes": [
         {
           "t": "Verde / Kids",
-          "p": 67.00,
-          "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10872997708087",
-      "titulo": "Boné Kids Snapback Azul Royal For You Head",
-      "url": "https://blckbrasil.com.br/products/bone-kids-snapback-azul-royal-for-you-head",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "CAIXA",
-        "LIVE"
-      ],
-      "publicado": "2026-11-18T01:39:47-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B28_07cdc916-c338-4ec8-9ad4-9325f8e4be8b.jpg?v=1784130962",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B28-2_597edb7e-edb4-4383-b6e3-c976d9e08638.jpg?v=1784130962",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B28-3_c0b028d7-441c-4d65-9d46-7e6ba5a9733f.jpg?v=1784130962"
-      ],
-      "variantes": [
-        {
-          "t": "Azul / Kids",
           "p": 67.00,
           "c": 199.90,
           "a": true
@@ -780,52 +753,6 @@
           "t": "GG / Amarela",
           "p": 67.00,
           "c": 189.90,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "10874282311991",
-      "titulo": "Jaqueta College Preta BLCK BR",
-      "url": "https://blckbrasil.com.br/products/jaqueta-college-preta-blck-br",
-      "ref": "",
-      "tipo": "Casacos e jaquetas",
-      "tags": [
-        "Blusas e Jaquetas",
-        "INVERNO",
-        "LIVE",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-17T17:24:54-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/college1.jpg?v=1784228306",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/college4.jpg?v=1784228306",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/college2.jpg?v=1784228306",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/college6.jpg?v=1784228305"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 297.00,
-          "c": 799.90,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 297.00,
-          "c": 799.90,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 297.00,
-          "c": 799.90,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 297.00,
-          "c": 799.90,
           "a": false
         }
       ]
@@ -1603,7 +1530,7 @@
           "t": "G",
           "p": 47.00,
           "c": 119.90,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -4796,78 +4723,6 @@
           "t": "Off-White",
           "p": 179.90,
           "c": 179.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11023552315703",
-      "titulo": "Boné Snapback Suede Basic Verde Musgo",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-basic-verde-musgo",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "ADS"
-      ],
-      "publicado": "2026-10-20T09:35:34-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3_5e3a5577-200a-4ec9-8695-68edcfeeeb0d.jpg?v=1792499662",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3-2_61b9c19b-3a85-4977-804f-647233c1388b.jpg?v=1792499662",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3-3_6398e7a4-db77-445d-81e1-71ec28157104.jpg?v=1792499662"
-      ],
-      "variantes": [
-        {
-          "t": "Verde",
-          "p": 179.90,
-          "c": 179.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11023539896631",
-      "titulo": "Boné Snapback Off White Basic Verde",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-basic-verde",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE"
-      ],
-      "publicado": "2026-10-20T09:35:34-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B1_37323167-4c3e-430a-8879-8460e636e008.jpg?v=1792499631",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B1-2_c9cc6e47-01db-4db0-a059-5f114d3447d3.jpg?v=1792499631",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B1-3_47319c0c-3b9c-44e1-91aa-40335bbde4ac.jpg?v=1792499631"
-      ],
-      "variantes": [
-        {
-          "t": "Off-White",
-          "p": 127.00,
-          "c": 149.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11023539863863",
-      "titulo": "Boné Snapback Marrom Basic Off White",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-marrom-basic-off-white",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE"
-      ],
-      "publicado": "2026-10-20T09:35:34-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B2_e939c390-9a50-4458-864c-0809baaef351.jpg?v=1792499598",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B2-2_5e9a2d54-ecf7-4987-9796-8f9bd50c3b62.jpg?v=1792499598",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B2-3_45b63209-cb9e-4a32-9f2c-5bf8df3dab5e.jpg?v=1792499598"
-      ],
-      "variantes": [
-        {
-          "t": "Marrom",
-          "p": 127.00,
-          "c": 149.90,
           "a": true
         }
       ]

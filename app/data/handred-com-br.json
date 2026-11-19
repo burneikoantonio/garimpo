@@ -2,7 +2,7 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-19T15:54:22Z",
+  "atualizado": "2026-11-19T19:59:16Z",
   "produtos": [
     {
       "id": "10687092490421",
@@ -2740,7 +2740,7 @@
           "t": "OFF WHITE / P",
           "p": 626.78,
           "c": 847.00,
-          "a": false
+          "a": true
         },
         {
           "t": "OFF WHITE / M",
@@ -5003,6 +5003,7 @@
         "CALÇAS",
         "PREVENDAINV26",
         "ROUPAS",
+        "SALE",
         "SHOP",
         "ULTIMOSCLASSICOS",
         "VERTUDO"
@@ -5016,32 +5017,32 @@
       "variantes": [
         {
           "t": "AZUL ESCURO / PP",
-          "p": 987.00,
-          "c": 0,
+          "p": 394.80,
+          "c": 987.00,
           "a": false
         },
         {
           "t": "AZUL ESCURO / P",
-          "p": 987.00,
-          "c": 0,
+          "p": 394.80,
+          "c": 987.00,
           "a": false
         },
         {
           "t": "AZUL ESCURO / M",
-          "p": 987.00,
-          "c": 0,
+          "p": 394.80,
+          "c": 987.00,
           "a": true
         },
         {
           "t": "AZUL ESCURO / G",
-          "p": 987.00,
-          "c": 0,
+          "p": 394.80,
+          "c": 987.00,
           "a": false
         },
         {
           "t": "AZUL ESCURO / GG",
-          "p": 987.00,
-          "c": 0,
+          "p": 394.80,
+          "c": 987.00,
           "a": false
         }
       ]

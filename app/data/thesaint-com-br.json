@@ -2,7 +2,7 @@
   "marca": "THESAINT",
   "loja": "Site THESAINT",
   "site": "thesaint.com.br",
-  "atualizado": "2026-11-19T15:54:08Z",
+  "atualizado": "2026-11-19T19:59:01Z",
   "produtos": [
     {
       "id": "10183398162723",
@@ -491,6 +491,8 @@
         "moda urbana",
         "modelagens",
         "new_in",
+        "outlet",
+        "outlet_tshirts_e_regatas",
         "oversized",
         "preta",
         "shop_all",
@@ -507,38 +509,38 @@
       "variantes": [
         {
           "t": "PP / BLACK",
-          "p": 398.00,
-          "c": 0,
+          "p": 199.00,
+          "c": 398.00,
           "a": true
         },
         {
           "t": "P / BLACK",
-          "p": 398.00,
-          "c": 0,
+          "p": 199.00,
+          "c": 398.00,
           "a": true
         },
         {
           "t": "M / BLACK",
-          "p": 398.00,
-          "c": 0,
+          "p": 199.00,
+          "c": 398.00,
           "a": true
         },
         {
           "t": "G / BLACK",
-          "p": 398.00,
-          "c": 0,
+          "p": 199.00,
+          "c": 398.00,
           "a": true
         },
         {
           "t": "GG / BLACK",
-          "p": 398.00,
-          "c": 0,
+          "p": 199.00,
+          "c": 398.00,
           "a": true
         },
         {
           "t": "XGG / BLACK",
-          "p": 398.00,
-          "c": 0,
+          "p": 199.00,
+          "c": 398.00,
           "a": true
         }
       ]
@@ -1717,6 +1719,7 @@
       "tipo": "TECIDO PLANO",
       "tags": [
         "outlet",
+        "outlet_calcas",
         "sale",
         "TECIDO PLANO",
         "VERÃO 25/26"
@@ -2763,7 +2766,7 @@
           "t": "G / OFF WHITE",
           "p": 114.00,
           "c": 228.00,
-          "a": false
+          "a": true
         },
         {
           "t": "PP / OFF WHITE",
@@ -3082,6 +3085,7 @@
         "moda urbana",
         "modelagem boxy",
         "outlet",
+        "outlet_tshirts_e_regatas",
         "preto",
         "sale",
         "streetwear",
@@ -3512,7 +3516,7 @@
           "t": "G / OFF WHITE",
           "p": 114.00,
           "c": 228.00,
-          "a": false
+          "a": true
         },
         {
           "t": "GG / OFF WHITE",
@@ -4551,6 +4555,7 @@
       "tipo": "MALHA",
       "tags": [
         "outlet",
+        "outlet_tshirts_e_regatas",
         "sale"
       ],
       "publicado": "2026-10-14T14:24:01-03:00",
@@ -4579,18 +4584,6 @@
           "a": false
         },
         {
-          "t": "G / BLACK",
-          "p": 129.50,
-          "c": 259.00,
-          "a": false
-        },
-        {
-          "t": "M / BLACK",
-          "p": 129.50,
-          "c": 259.00,
-          "a": false
-        },
-        {
           "t": "M / OFF WHITE",
           "p": 129.50,
           "c": 259.00,
@@ -4603,31 +4596,7 @@
           "a": false
         },
         {
-          "t": "XGG / BLACK",
-          "p": 129.50,
-          "c": 259.00,
-          "a": false
-        },
-        {
           "t": "PP / OFF WHITE",
-          "p": 129.50,
-          "c": 259.00,
-          "a": false
-        },
-        {
-          "t": "GG / BLACK",
-          "p": 129.50,
-          "c": 259.00,
-          "a": false
-        },
-        {
-          "t": "P / BLACK",
-          "p": 129.50,
-          "c": 259.00,
-          "a": false
-        },
-        {
-          "t": "PP / BLACK",
           "p": 129.50,
           "c": 259.00,
           "a": false
@@ -6495,7 +6464,7 @@
           "t": "XGG / STONED BROWN",
           "p": 149.00,
           "c": 298.00,
-          "a": false
+          "a": true
         },
         {
           "t": "GG / STONED BROWN",
@@ -7372,7 +7341,7 @@
           "t": "M / STONED GREEN",
           "p": 149.00,
           "c": 298.00,
-          "a": false
+          "a": true
         },
         {
           "t": "PP / STONED GREEN",
@@ -7990,7 +7959,7 @@
           "t": "P / BLACK",
           "p": 134.00,
           "c": 268.00,
-          "a": false
+          "a": true
         },
         {
           "t": "M / BLACK",
@@ -8890,7 +8859,7 @@
           "t": "XGG / STONED GRAY",
           "p": 184.00,
           "c": 368.00,
-          "a": false
+          "a": true
         },
         {
           "t": "P / STONED GRAY",
@@ -11513,7 +11482,7 @@
           "t": "M / GRAY",
           "p": 149.00,
           "c": 298.00,
-          "a": false
+          "a": true
         },
         {
           "t": "G / GRAY",

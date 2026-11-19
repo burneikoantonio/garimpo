@@ -2,7 +2,7 @@
   "marca": "Jordan",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-19T15:47:31Z",
+  "atualizado": "2026-11-19T19:53:32Z",
   "produtos": [
     {
       "id": "2004377",
@@ -1051,15 +1051,15 @@
         },
         {
           "t": "39",
-          "p": 629.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
         {
           "t": "39.5",
-          "p": 629.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
@@ -1093,8 +1093,8 @@
         },
         {
           "t": "42.5",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 629.99,
+          "c": 799.99,
           "x": null,
           "a": false
         },
@@ -1107,15 +1107,15 @@
         },
         {
           "t": "43.5",
-          "p": 629.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
         {
           "t": "44",
-          "p": 629.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
@@ -1388,8 +1388,8 @@
         },
         {
           "t": "41",
-          "p": 679.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
@@ -1524,8 +1524,8 @@
         },
         {
           "t": "43.5",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 374.99,
+          "c": 499.99,
           "x": null,
           "a": false
         },
@@ -2108,8 +2108,8 @@
         },
         {
           "t": "GGGGG",
-          "p": 129.99,
-          "c": 199.99,
+          "p": 200.0,
+          "c": 200.0,
           "x": null,
           "a": false
         },
@@ -2259,8 +2259,8 @@
         },
         {
           "t": "43",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 374.99,
+          "c": 499.99,
           "x": null,
           "a": false
         },
@@ -2294,8 +2294,8 @@
         },
         {
           "t": "48",
-          "p": 374.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "x": null,
           "a": false
         }
@@ -4293,6 +4293,72 @@
       ]
     },
     {
+      "id": "2022637",
+      "titulo": "Camiseta Jordan Jumpman Classics Masculina",
+      "url": "https://www.artwalk.com.br/camiseta-jordan-jumpman-classics-masculina-cv340-5-091/p",
+      "ref": "CV340-5-091",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2024-04-17T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/233702/Camiseta-Jordan-Jumpman-Classics-Masculina-Cinza.jpg?v=637562571714230000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/233703/Camiseta-Jordan-Jumpman-Classics-Masculina-Cinza-2.jpg?v=637562571810800000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/233704/Camiseta-Jordan-Jumpman-Classics-Masculina-Cinza-3.jpg?v=637562571907770000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/233705/Camiseta-Jordan-Jumpman-Classics-Masculina-Cinza-4.jpg?v=637562572010970000"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 39.99,
+          "c": 179.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 39.99,
+          "c": 179.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 39.99,
+          "c": 179.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 39.99,
+          "c": 179.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 39.99,
+          "c": 179.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 39.99,
+          "c": 179.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGG",
+          "p": 39.99,
+          "c": 179.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2022664",
       "titulo": "Blusão Air Jordan Jumpman Masculino",
       "url": "https://www.artwalk.com.br/blusao-air-jordan-jumpman-masculino-ck668-4-687/p",
@@ -4359,6 +4425,71 @@
           "t": "GGGGG",
           "p": 309.99,
           "c": 309.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2022679",
+      "titulo": "Jaqueta Jordan Jumpman Classics Masculina",
+      "url": "https://www.artwalk.com.br/jaqueta-jordan-jumpman-classics-masculina-cv233-1-011/p",
+      "ref": "CV233-1-011",
+      "tipo": "/Roupas/Masculino/Jaquetas/ Jaquetas",
+      "tags": [],
+      "publicado": "2024-04-17T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/233291/Jaqueta-Jordan-Jumpman-Classics-Masculina-Preto.jpg?v=637553906810030000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/233292/Jaqueta-Jordan-Jumpman-Classics-Masculina-Preto-2.jpg?v=637553907020870000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/233293/Jaqueta-Jordan-Jumpman-Classics-Masculina-Preto-3.jpg?v=637553907192500000"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 99.99,
+          "c": 449.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 99.99,
+          "c": 449.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 99.99,
+          "c": 449.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 99.99,
+          "c": 449.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 99.99,
+          "c": 449.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 99.99,
+          "c": 449.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGG",
+          "p": 99.99,
+          "c": 449.99,
           "x": null,
           "a": false
         }
@@ -5623,22 +5754,22 @@
         },
         {
           "t": "34.5",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 299.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
         {
           "t": "35",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 299.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
         {
           "t": "35.5",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 299.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
@@ -5651,15 +5782,15 @@
         },
         {
           "t": "37",
-          "p": 299.99,
-          "c": 699.99,
+          "p": 700.0,
+          "c": 700.0,
           "x": null,
           "a": false
         },
         {
           "t": "37.5",
-          "p": 299.99,
-          "c": 699.99,
+          "p": 700.0,
+          "c": 700.0,
           "x": null,
           "a": false
         },
@@ -8240,8 +8371,8 @@
         },
         {
           "t": "GGG",
-          "p": 229.99,
-          "c": 449.99,
+          "p": 450.0,
+          "c": 450.0,
           "x": null,
           "a": false
         },
@@ -8249,107 +8380,6 @@
           "t": "GGGG",
           "p": 450.0,
           "c": 450.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2024967",
-      "titulo": "Tênis Jordan Zoom Separate Masculino",
-      "url": "https://www.artwalk.com.br/tenis-jordan-zoom-separate-masculino-dh024-9-400/p",
-      "ref": "DH024-9-400",
-      "tipo": "/Tênis/Masculino/Jordan/ Tênis",
-      "tags": [],
-      "publicado": "2021-09-20T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/414909/DH024-9-400-1.jpg?v=638249629809630000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/415216/DH024-9-400-2.jpg?v=638249632142200000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/415522/DH024-9-400-3.jpg?v=638249633961830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/415817/DH024-9-400-4.jpg?v=638249636168670000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 399.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 399.99,
-          "c": 699.99,
           "x": null,
           "a": false
         }
@@ -12576,22 +12606,22 @@
       "variantes": [
         {
           "t": "42",
-          "p": 1080.0,
-          "c": 1080.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
           "p": 849.99,
           "c": 1079.99,
           "x": null,
           "a": false
         },
         {
-          "t": "43",
+          "t": "38",
           "p": 1080.0,
           "c": 1080.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 849.99,
+          "c": 1079.99,
           "x": null,
           "a": false
         },
@@ -12625,8 +12655,8 @@
         },
         {
           "t": "39.5",
-          "p": 849.99,
-          "c": 1079.99,
+          "p": 1080.0,
+          "c": 1080.0,
           "x": null,
           "a": false
         },
@@ -12674,15 +12704,15 @@
         },
         {
           "t": "47",
-          "p": 849.99,
-          "c": 1079.99,
+          "p": 1080.0,
+          "c": 1080.0,
           "x": null,
           "a": false
         },
         {
           "t": "45",
-          "p": 1080.0,
-          "c": 1080.0,
+          "p": 849.99,
+          "c": 1079.99,
           "x": null,
           "a": false
         },
@@ -12716,8 +12746,8 @@
         },
         {
           "t": "35",
-          "p": 1080.0,
-          "c": 1080.0,
+          "p": 849.99,
+          "c": 1079.99,
           "x": null,
           "a": false
         },
@@ -12832,8 +12862,8 @@
       "variantes": [
         {
           "t": "34",
-          "p": 1900.0,
-          "c": 1900.0,
+          "p": 1009.99,
+          "c": 1899.99,
           "x": null,
           "a": false
         },
@@ -12860,8 +12890,8 @@
         },
         {
           "t": "37",
-          "p": 1900.0,
-          "c": 1900.0,
+          "p": 1009.99,
+          "c": 1899.99,
           "x": null,
           "a": false
         },
@@ -12909,15 +12939,15 @@
         },
         {
           "t": "41",
-          "p": 1009.99,
-          "c": 1899.99,
+          "p": 1900.0,
+          "c": 1900.0,
           "x": null,
           "a": false
         },
         {
           "t": "42",
-          "p": 1900.0,
-          "c": 1900.0,
+          "p": 1009.99,
+          "c": 1899.99,
           "x": null,
           "a": false
         },
@@ -13937,8 +13967,8 @@
         },
         {
           "t": "48",
-          "p": 1600.0,
-          "c": 1600.0,
+          "p": 639.99,
+          "c": 1599.99,
           "x": null,
           "a": false
         }
@@ -14492,15 +14522,15 @@
         },
         {
           "t": "P",
-          "p": 330.0,
-          "c": 330.0,
+          "p": 159.99,
+          "c": 329.99,
           "x": null,
           "a": false
         },
         {
           "t": "M",
-          "p": 159.99,
-          "c": 329.99,
+          "p": 330.0,
+          "c": 330.0,
           "x": null,
           "a": false
         },
@@ -14520,8 +14550,8 @@
         },
         {
           "t": "GGG",
-          "p": 330.0,
-          "c": 330.0,
+          "p": 159.99,
+          "c": 329.99,
           "x": null,
           "a": false
         },
@@ -15371,8 +15401,8 @@
         },
         {
           "t": "GGG",
-          "p": 300.0,
-          "c": 300.0,
+          "p": 149.99,
+          "c": 299.99,
           "x": null,
           "a": false
         },
@@ -15688,8 +15718,8 @@
         },
         {
           "t": "36",
-          "p": 799.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -15814,8 +15844,8 @@
         },
         {
           "t": "49",
-          "p": 799.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -16389,8 +16419,8 @@
         },
         {
           "t": "43.5",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 839.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -16417,8 +16447,8 @@
         },
         {
           "t": "47",
-          "p": 839.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -18758,15 +18788,15 @@
         },
         {
           "t": "43",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 1299.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
         {
           "t": "44",
-          "p": 1299.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -18962,8 +18992,8 @@
         },
         {
           "t": "43",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 669.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -19162,8 +19192,8 @@
       "variantes": [
         {
           "t": "42",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 1099.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -19183,8 +19213,8 @@
         },
         {
           "t": "45",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 1099.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -19197,8 +19227,8 @@
         },
         {
           "t": "39",
-          "p": 1099.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -19308,8 +19338,8 @@
       "variantes": [
         {
           "t": "42",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 1099.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -19322,8 +19352,8 @@
         },
         {
           "t": "44",
-          "p": 1099.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -19711,15 +19741,15 @@
       "variantes": [
         {
           "t": "39",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 879.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "40",
-          "p": 879.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -19753,8 +19783,8 @@
         },
         {
           "t": "45",
-          "p": 879.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         }
@@ -19777,8 +19807,8 @@
       "variantes": [
         {
           "t": "39",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -20288,8 +20318,8 @@
         },
         {
           "t": "45",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 969.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -20302,8 +20332,8 @@
         },
         {
           "t": "39",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 969.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -25398,15 +25428,15 @@
       "variantes": [
         {
           "t": "34",
-          "p": 1199.99,
-          "c": 1199.99,
+          "p": 1200.0,
+          "c": 1200.0,
           "x": null,
           "a": false
         },
         {
           "t": "34.5",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 1199.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -25475,8 +25505,8 @@
         },
         {
           "t": "40.5",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 1199.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -25496,8 +25526,8 @@
         },
         {
           "t": "42.5",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 1199.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -29991,8 +30021,8 @@
         },
         {
           "t": "40",
-          "p": 1299.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -32625,8 +32655,8 @@
           "t": "40",
           "p": 699.99,
           "c": 1199.99,
-          "x": 699.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40.5",
@@ -34085,37 +34115,6 @@
       ]
     },
     {
-      "id": "2043840",
-      "titulo": "Boné Jordan Club Unissex",
-      "url": "https://www.artwalk.com.br/bone-jordan-club-unissex-hq196-3-238/p",
-      "ref": "HQ196-3-238",
-      "tipo": "/Acessórios/Bones e Buckets/Jordan/ Bonés",
-      "tags": [],
-      "publicado": "2024-10-03T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/582618/HQ196-3-238-1-AW-800x1000.jpg?v=638930468440500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/582619/HQ196-3-238-2-AW-800x1000.jpg?v=638930468440500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/582620/HQ196-3-238-3-AW-800x1000.jpg?v=638930468440670000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/582621/HQ196-3-238-4-AW-800x1000.jpg?v=638930468440670000"
-      ],
-      "variantes": [
-        {
-          "t": "G a GG",
-          "p": 129.99,
-          "c": 179.99,
-          "x": 129.99,
-          "a": true
-        },
-        {
-          "t": "P a M",
-          "p": 129.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2043848",
       "titulo": "Tênis Air Jordan 5 Retro OG Masculino",
       "url": "https://www.artwalk.com.br/tenis-air-jordan-5-retro-masculino-hq797-8-101/p",
@@ -35501,8 +35500,8 @@
           "t": "42",
           "p": 799.99,
           "c": 1099.99,
-          "x": null,
-          "a": false
+          "x": 799.99,
+          "a": true
         },
         {
           "t": "43",
@@ -35943,15 +35942,15 @@
           "t": "40.5",
           "p": 189.99,
           "c": 249.99,
-          "x": null,
-          "a": false
+          "x": 189.99,
+          "a": true
         },
         {
           "t": "42",
           "p": 189.99,
           "c": 249.99,
-          "x": 189.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -37413,8 +37412,8 @@
           "t": "G",
           "p": 149.99,
           "c": 299.99,
-          "x": null,
-          "a": false
+          "x": 149.99,
+          "a": true
         },
         {
           "t": "GG",
@@ -44086,6 +44085,96 @@
           "p": 379.99,
           "c": 379.99,
           "x": 360.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "2049536",
+      "titulo": "Calça Jordan Paris Saint Germain Tricot Masculina",
+      "url": "https://www.artwalk.com.br/calca-jordan-paris-saint-germain-tricot-masculina-io110-2-355/p",
+      "ref": "IO110-2-355",
+      "tipo": "/Roupas/Masculino/Calças/ Calças",
+      "tags": [],
+      "publicado": "2026-09-23T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/689701/IO110-2-355-1-800x1000.jpg?v=639307117270370000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/689702/IO110-2-355-2-800x1000.jpg?v=639307117270670000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/689703/IO110-2-355-3-800x1000.jpg?v=639307117270670000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/689704/IO110-2-355-4-800x1000.jpg?v=639307117270670000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 499.99,
+          "c": 499.99,
+          "x": 474.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 499.99,
+          "c": 499.99,
+          "x": 474.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 499.99,
+          "c": 499.99,
+          "x": 474.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 499.99,
+          "c": 499.99,
+          "x": 474.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "2050035",
+      "titulo": "Chinelo Jordan Franchise Slide Masculino",
+      "url": "https://www.artwalk.com.br/chinelo-jordan-franchise-slide-masculino-hf326-3-007/p",
+      "ref": "HF326-3-007",
+      "tipo": "/Chinelos e Sandálias/Masculino/Jordan/ Chinelos",
+      "tags": [],
+      "publicado": "2026-11-10T20:19:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/689677/HF326-3-007-1-800x1000.jpg?v=639307116714470000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/689678/HF326-3-007-2-800x1000.jpg?v=639307116714800000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/689679/HF326-3-007-3-800x1000.jpg?v=639307116714800000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/689680/HF326-3-007-4-800x1000.jpg?v=639307116714800000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 179.99,
+          "c": 179.99,
+          "x": 170.99,
+          "a": true
+        },
+        {
+          "t": "39.5",
+          "p": 179.99,
+          "c": 179.99,
+          "x": 170.99,
+          "a": true
+        },
+        {
+          "t": "40.5",
+          "p": 179.99,
+          "c": 179.99,
+          "x": 170.99,
+          "a": true
+        },
+        {
+          "t": "42",
+          "p": 179.99,
+          "c": 179.99,
+          "x": 170.99,
           "a": true
         }
       ]

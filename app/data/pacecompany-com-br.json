@@ -2,8 +2,150 @@
   "marca": "PACE",
   "loja": "Site PACE",
   "site": "pacecompany.com.br",
-  "atualizado": "2026-11-19T15:53:36Z",
+  "atualizado": "2026-11-19T19:58:38Z",
   "produtos": [
+    {
+      "id": "8854174105837",
+      "titulo": "DK BRACELET GREEN JADE - GOLD",
+      "url": "https://pacecompany.com.br/products/dk-bracelet-jaspe",
+      "ref": "",
+      "tipo": "Acessórios",
+      "tags": [
+        "ALL",
+        "tag:new"
+      ],
+      "publicado": "2026-11-19T15:19:46-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_004_f6238792-54fe-43a2-8c67-db68e4e79fd2.jpg?v=1790973841",
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_005_db78d3b0-3166-4f92-a51b-0454d235b2dd.jpg?v=1790973840",
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_006_4843e41b-80e9-4871-bd13-a66e444b5bdb.jpg?v=1790973841"
+      ],
+      "variantes": [
+        {
+          "t": "S",
+          "p": 599.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "L",
+          "p": 599.00,
+          "c": 0,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "8854173876461",
+      "titulo": "DK BRACELET TIGER'S EYE - GOLD",
+      "url": "https://pacecompany.com.br/products/dk-bracelet-tiger-gold",
+      "ref": "",
+      "tipo": "Acessórios",
+      "tags": [
+        "acessórios",
+        "ALL"
+      ],
+      "publicado": "2026-11-19T15:19:10-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_010_0463e3f5-bdcc-425e-9431-b31ebab9b170.jpg?v=1790973888",
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_011_402b6fa7-e4a1-4262-84bc-ad842eb441ec.jpg?v=1790973888",
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_012_66e743be-8ec9-40b8-b480-46201055ed4b.jpg?v=1790973888"
+      ],
+      "variantes": [
+        {
+          "t": "S",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "L",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15406266450157",
+      "titulo": "DK BRACELET BLACK TOURMALINE - GOLD",
+      "url": "https://pacecompany.com.br/products/dk-bracelet-black-tourmaline-gold",
+      "ref": "",
+      "tipo": "Acessórios",
+      "tags": [],
+      "publicado": "2026-11-19T15:17:48-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_013_2d330ab6-5144-4a9f-979e-218da8d8fb9f.jpg?v=1790973686",
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_014_eebd57ca-aa8d-4191-a363-36bdf4715f2f.jpg?v=1790973686",
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_015_44c03eda-e53c-4548-8e2a-61b038270abb.jpg?v=1790973686"
+      ],
+      "variantes": [
+        {
+          "t": "S",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "L",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15406284275949",
+      "titulo": "DK BRACELET HEMATITE - SILVER",
+      "url": "https://pacecompany.com.br/products/dk-bracelet-hematite-silver",
+      "ref": "",
+      "tipo": "Acessórios",
+      "tags": [],
+      "publicado": "2026-11-19T15:16:44-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_016_79db39f0-8914-4ae0-a028-5eee04b6eea7.jpg?v=1790973803",
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_017_94c11754-4972-4ce9-a99e-2737c9d91dac.jpg?v=1790973803",
+        "https://cdn.shopify.com/s/files/1/0107/6769/5968/files/PACE_018_cffdd06f-ef56-4418-8931-3b5ca4507c98.jpg?v=1790973803"
+      ],
+      "variantes": [
+        {
+          "t": "S",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "L",
+          "p": 599.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "10231794827501",
       "titulo": "5 POCKETSTIN - BLACK",
