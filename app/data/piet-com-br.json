@@ -2,8 +2,414 @@
   "marca": "Piet",
   "loja": "Site Piet",
   "site": "piet.com.br",
-  "atualizado": "2026-11-19T19:58:37Z",
+  "atualizado": "2026-11-19T23:39:37Z",
   "produtos": [
+    {
+      "id": "15513457393893",
+      "titulo": "Boné Piet + A.MAR - Preto",
+      "url": "https://piet.com.br/products/bone-dad-hat-piet-a-mar-preto",
+      "ref": "",
+      "tipo": "Bonés",
+      "tags": [
+        "A.mar"
+      ],
+      "publicado": "2026-11-19T17:06:47-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA008-1.jpg?v=1794592086",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA008-3.jpg?v=1794592086",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA008-2.jpg?v=1794592087"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 249.90,
+          "c": 249.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15513458376933",
+      "titulo": "Boné Piet + A.MAR - Marinho",
+      "url": "https://piet.com.br/products/bone-dad-hat-piet-a-mar-marinho",
+      "ref": "",
+      "tipo": "Bonés",
+      "tags": [
+        "A.mar"
+      ],
+      "publicado": "2026-11-19T17:06:37-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA009-1.jpg?v=1794592025",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA009-2.jpg?v=1794592025",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA009-3.jpg?v=1794592025"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 249.90,
+          "c": 249.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15513460015333",
+      "titulo": "Moletom Piet + A.MAR - Marinho",
+      "url": "https://piet.com.br/products/moletom-piet-a-mar-marinho",
+      "ref": "",
+      "tipo": "Moletons",
+      "tags": [
+        "A.mar"
+      ],
+      "publicado": "2026-11-19T17:06:27-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA005-1.jpg?v=1794591921",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA005-2.jpg?v=1794591921",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA005-3.jpg?v=1794591921",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA005-5.jpg?v=1794591921"
+      ],
+      "variantes": [
+        {
+          "t": "P | S",
+          "p": 599.90,
+          "c": 599.90,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 599.90,
+          "c": 599.90,
+          "a": true
+        },
+        {
+          "t": "G | L",
+          "p": 599.90,
+          "c": 599.90,
+          "a": false
+        },
+        {
+          "t": "XG | XL",
+          "p": 599.90,
+          "c": 599.90,
+          "a": false
+        },
+        {
+          "t": "2XG | 2XL",
+          "p": 599.90,
+          "c": 599.90,
+          "a": false
+        },
+        {
+          "t": "3XG | 3XL",
+          "p": 599.90,
+          "c": 599.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15513444778213",
+      "titulo": "Camiseta Manga Longa UV Piet + A.MAR - Branco",
+      "url": "https://piet.com.br/products/camiseta-manga-longa-uv-piet-a-mar-branco",
+      "ref": "",
+      "tipo": "Camisetas",
+      "tags": [],
+      "publicado": "2026-11-19T17:06:23-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA010-1.jpg?v=1794592232",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA010-2.jpg?v=1794592231",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA010-3_188cfd2e-6b75-4a56-9f9b-e79c260fb25a.jpg?v=1794592232",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA010-4_d92e084e-3d46-47ee-82c8-d5376a830e32.jpg?v=1794592231"
+      ],
+      "variantes": [
+        {
+          "t": "P | S",
+          "p": 299.90,
+          "c": 299.90,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 299.90,
+          "c": 299.90,
+          "a": true
+        },
+        {
+          "t": "G | L",
+          "p": 299.90,
+          "c": 299.90,
+          "a": false
+        },
+        {
+          "t": "XG | XL",
+          "p": 299.90,
+          "c": 299.90,
+          "a": false
+        },
+        {
+          "t": "2XG | 2XL",
+          "p": 299.90,
+          "c": 299.90,
+          "a": false
+        },
+        {
+          "t": "3XG | 3XL",
+          "p": 299.90,
+          "c": 299.90,
+          "a": false
+        },
+        {
+          "t": "4XG | 4XL",
+          "p": 299.90,
+          "c": 299.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15513443270885",
+      "titulo": "Camisa Piet + A.MAR - Verde",
+      "url": "https://piet.com.br/products/camisa-manga-longa-piet-a-mar-verde",
+      "ref": "",
+      "tipo": "Camisas",
+      "tags": [],
+      "publicado": "2026-11-19T17:06:08-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA006-1.jpg?v=1794592327",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA006-2.jpg?v=1794592327",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA006-3.jpg?v=1794592327",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA006-6.jpg?v=1794592327"
+      ],
+      "variantes": [
+        {
+          "t": "P | S",
+          "p": 599.90,
+          "c": 599.90,
+          "a": true
+        },
+        {
+          "t": "M | M",
+          "p": 599.90,
+          "c": 599.90,
+          "a": true
+        },
+        {
+          "t": "G | L",
+          "p": 599.90,
+          "c": 599.90,
+          "a": true
+        },
+        {
+          "t": "XG | XL",
+          "p": 599.90,
+          "c": 599.90,
+          "a": false
+        },
+        {
+          "t": "2XG | 2XL",
+          "p": 599.90,
+          "c": 599.90,
+          "a": false
+        },
+        {
+          "t": "3XG | 3XL",
+          "p": 599.90,
+          "c": 599.90,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "15513452740837",
+      "titulo": "Camiseta Piet + A.MAR - Bone White",
+      "url": "https://piet.com.br/products/camiseta-com-bolso-piet-a-mar-bone-white",
+      "ref": "",
+      "tipo": "Camisetas",
+      "tags": [
+        "A.mar"
+      ],
+      "publicado": "2026-11-19T17:05:04-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA001-1.jpg?v=1794592144",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA001-2.jpg?v=1794592144",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA001-3.jpg?v=1794592144",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA001-4.jpg?v=1794592144"
+      ],
+      "variantes": [
+        {
+          "t": "P | S",
+          "p": 279.90,
+          "c": 279.90,
+          "a": true
+        },
+        {
+          "t": "M | M",
+          "p": 279.90,
+          "c": 279.90,
+          "a": true
+        },
+        {
+          "t": "G | L",
+          "p": 279.90,
+          "c": 279.90,
+          "a": true
+        },
+        {
+          "t": "XG | XL",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        },
+        {
+          "t": "2XG | 2XL",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        },
+        {
+          "t": "3XG | 3XL",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        },
+        {
+          "t": "4XG | 4XL",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "15513462866149",
+      "titulo": "Camiseta Piet + A.MAR - Marinho",
+      "url": "https://piet.com.br/products/camiseta-com-bolso-piet-a-mar-marinho",
+      "ref": "",
+      "tipo": "Camisetas",
+      "tags": [],
+      "publicado": "2026-11-19T17:04:51-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA014-1_9e73443e-2962-4d4b-9201-c36e07aad9a2.jpg?v=1794591804",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA014-2.jpg?v=1794591804",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA014-4_1c26fa9b-9681-4531-b42e-1e82359b9bf5.jpg?v=1794591804",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/SS26AMA014-6_2535e30b-df40-4afb-9d4b-c4f58f0f7be8.jpg?v=1794591804"
+      ],
+      "variantes": [
+        {
+          "t": "PP | XS",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        },
+        {
+          "t": "P | S",
+          "p": 279.90,
+          "c": 279.90,
+          "a": true
+        },
+        {
+          "t": "M | M",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        },
+        {
+          "t": "G | L",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        },
+        {
+          "t": "XG | XL",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        },
+        {
+          "t": "2XG | 2XL",
+          "p": 279.90,
+          "c": 279.90,
+          "a": true
+        },
+        {
+          "t": "3XG | 3XL",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        },
+        {
+          "t": "4XG | 4XL",
+          "p": 279.90,
+          "c": 279.90,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "15513467191525",
+      "titulo": "Camiseta Manga Longa Piet + A.MAR- Marinho",
+      "url": "https://piet.com.br/products/camiseta-manga-longa-piet-a-mar-marinho",
+      "ref": "",
+      "tipo": "",
+      "tags": [],
+      "publicado": "2026-11-19T17:04:33-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/piet-online_0000_piet-catalogo12463.jpg?v=1795094620",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/piet-online_0001_piet-catalogo12465.jpg?v=1795094620",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/piet-online_0002_piet-catalogo12469.jpg?v=1795094620",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/piet-online_0003_piet-catalogo12473.jpg?v=1795094620"
+      ],
+      "variantes": [
+        {
+          "t": "PP | XS",
+          "p": 299.90,
+          "c": 299.90,
+          "a": false
+        },
+        {
+          "t": "P | S",
+          "p": 299.90,
+          "c": 299.90,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 299.90,
+          "c": 299.90,
+          "a": true
+        },
+        {
+          "t": "G | L",
+          "p": 299.90,
+          "c": 299.90,
+          "a": true
+        },
+        {
+          "t": "XG | XL",
+          "p": 299.90,
+          "c": 299.90,
+          "a": true
+        },
+        {
+          "t": "2XG | 2XL",
+          "p": 299.90,
+          "c": 299.90,
+          "a": false
+        },
+        {
+          "t": "3XG | 3XL",
+          "p": 299.90,
+          "c": 299.90,
+          "a": true
+        },
+        {
+          "t": "4XG | 4XL",
+          "p": 299.90,
+          "c": 299.90,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "9789253812453",
       "titulo": "Piet F.C. Cap - Pink",
@@ -3201,7 +3607,7 @@
           "t": "G | L",
           "p": 139.95,
           "c": 279.90,
-          "a": true
+          "a": false
         },
         {
           "t": "XG | XL",

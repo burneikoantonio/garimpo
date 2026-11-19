@@ -2,8 +2,68 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-19T19:59:16Z",
+  "atualizado": "2026-11-19T23:40:18Z",
   "produtos": [
+    {
+      "id": "10405765644469",
+      "titulo": "Blazer Linho Alfaiataria",
+      "url": "https://handred.com.br/products/blazer-linho-alfaiataria-6",
+      "ref": "",
+      "tipo": "Overtops",
+      "tags": [
+        "OVERTOPS",
+        "PREVENDAINV26",
+        "ROUPAS",
+        "SALEINVERNO",
+        "SHOP",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-19T17:30:21-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/BLAZERLINHOALFAIATARIAVERDEFLORESTA_CALCALINHOVINCOVERDEFLORESTA_711.webp?v=1775500281",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/BLAZERLINHOALFAIATARIAVERDEFLORESTA_CALCALINHOVINCOVERDEFLORESTA_716.webp?v=1775500281",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/BLAZERLINHOALFAIATARIAVERDEFLORESTA_CALCALINHOVINCOVERDEFLORESTA_714.webp?v=1775500281",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/BLAZERLINHOALFAIATARIAVERDEFLORESTA_CALCALINHOVINCOVERDEFLORESTA_713.webp?v=1775500281"
+      ],
+      "variantes": [
+        {
+          "t": "VERDE FLORESTA / XXP",
+          "p": 854.80,
+          "c": 2137.00,
+          "a": false
+        },
+        {
+          "t": "VERDE FLORESTA / PP",
+          "p": 854.80,
+          "c": 2137.00,
+          "a": false
+        },
+        {
+          "t": "VERDE FLORESTA / P",
+          "p": 854.80,
+          "c": 2137.00,
+          "a": true
+        },
+        {
+          "t": "VERDE FLORESTA / M",
+          "p": 854.80,
+          "c": 2137.00,
+          "a": false
+        },
+        {
+          "t": "VERDE FLORESTA / G",
+          "p": 854.80,
+          "c": 2137.00,
+          "a": false
+        },
+        {
+          "t": "VERDE FLORESTA / GG",
+          "p": 854.80,
+          "c": 2137.00,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "10687092490421",
       "titulo": "Camisa Linho MC",
@@ -5031,7 +5091,7 @@
           "t": "AZUL ESCURO / M",
           "p": 394.80,
           "c": 987.00,
-          "a": true
+          "a": false
         },
         {
           "t": "AZUL ESCURO / G",
@@ -6072,7 +6132,7 @@
           "t": "CRU / P",
           "p": 1587.00,
           "c": 1127.00,
-          "a": true
+          "a": false
         },
         {
           "t": "CRU / M",

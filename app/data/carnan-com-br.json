@@ -2,7 +2,7 @@
   "marca": "Carnan",
   "loja": "Site Carnan",
   "site": "carnan.com.br",
-  "atualizado": "2026-11-19T19:58:37Z",
+  "atualizado": "2026-11-19T23:39:37Z",
   "produtos": [
     {
       "id": "10399600345384",
@@ -465,7 +465,7 @@
           "t": "M/M",
           "p": 377.40,
           "c": 629.00,
-          "a": false
+          "a": true
         },
         {
           "t": "G/L",
@@ -1490,7 +1490,7 @@
           "t": "M/M",
           "p": 293.40,
           "c": 489.00,
-          "a": true
+          "a": false
         },
         {
           "t": "G/L",
