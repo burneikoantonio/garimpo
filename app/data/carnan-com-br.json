@@ -2,26 +2,8 @@
   "marca": "Carnan",
   "loja": "Site Carnan",
   "site": "carnan.com.br",
-  "atualizado": "2026-11-19T11:52:24Z",
+  "atualizado": "2026-11-19T15:53:35Z",
   "produtos": [
-    {
-      "id": "15491882156328",
-      "titulo": "teste",
-      "url": "https://carnan.com.br/products/teste-1",
-      "ref": "",
-      "tipo": "",
-      "tags": [],
-      "publicado": "2026-11-16T14:55:48-03:00",
-      "imagens": [],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 1.00,
-          "c": 0,
-          "a": true
-        }
-      ]
-    },
     {
       "id": "10264290787624",
       "titulo": "Plaid Mix Tank",
@@ -57,7 +39,7 @@
           "t": "M/M",
           "p": 207.60,
           "c": 519.00,
-          "a": true
+          "a": false
         },
         {
           "t": "G/L",
@@ -738,7 +720,7 @@
           "t": "G/L",
           "p": 539.70,
           "c": 1799.00,
-          "a": true
+          "a": false
         },
         {
           "t": "GG/XL",
@@ -926,7 +908,7 @@
           "t": "P/S",
           "p": 111.60,
           "c": 279.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M/M",

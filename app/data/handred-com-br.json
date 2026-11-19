@@ -2,8 +2,67 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-19T11:53:10Z",
+  "atualizado": "2026-11-19T15:54:22Z",
   "produtos": [
+    {
+      "id": "10687092490421",
+      "titulo": "Camisa Linho MC",
+      "url": "https://handred.com.br/products/camisa-linho-mc-4",
+      "ref": "",
+      "tipo": "Camisas",
+      "tags": [
+        "CAMISAS",
+        "NOVIDADES",
+        "ROUPAS",
+        "SHOP",
+        "VERAO27",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-19T11:42:21-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISALINHOMANGACURTACAMELO_CALCAJEANS_564.webp?v=1795099240",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISALINHOMANGACURTACAMELO_CALCAJEANS_565.webp?v=1795099241",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISA_LINHO_MANGA_CURTA_CAMELO_CALCA_JEANS_567.webp?v=1795100208"
+      ],
+      "variantes": [
+        {
+          "t": "CAMELO / XXP",
+          "p": 1037.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "CAMELO / PP",
+          "p": 1037.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "CAMELO / P",
+          "p": 1037.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "CAMELO / M",
+          "p": 1037.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "CAMELO / G",
+          "p": 1037.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "CAMELO / GG",
+          "p": 1037.00,
+          "c": 0,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "10331408662709",
       "titulo": "Vestido Longo Drapeado Devorê",
