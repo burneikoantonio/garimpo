@@ -2,7 +2,7 @@
   "marca": "Insider",
   "loja": "Site Insider",
   "site": "insiderstore.com.br",
-  "atualizado": "2026-11-20T19:32:54Z",
+  "atualizado": "2026-11-20T20:04:27Z",
   "produtos": [
     {
       "id": "8904268513429",
@@ -1757,36 +1757,6 @@
           "a": false
         },
         {
-          "t": "Midnight Blue / P",
-          "p": 139.00,
-          "c": 139.00,
-          "a": false
-        },
-        {
-          "t": "Midnight Blue / M",
-          "p": 139.00,
-          "c": 139.00,
-          "a": true
-        },
-        {
-          "t": "Midnight Blue / G",
-          "p": 139.00,
-          "c": 139.00,
-          "a": true
-        },
-        {
-          "t": "Midnight Blue / GG",
-          "p": 139.00,
-          "c": 139.00,
-          "a": true
-        },
-        {
-          "t": "Midnight Blue / XGG",
-          "p": 139.00,
-          "c": 139.00,
-          "a": false
-        },
-        {
           "t": "Purple Cloud / P",
           "p": 139.00,
           "c": 139.00,
@@ -1845,6 +1815,36 @@
           "p": 139.00,
           "c": 139.00,
           "a": true
+        },
+        {
+          "t": "Midnight Blue / P",
+          "p": 139.00,
+          "c": 139.00,
+          "a": false
+        },
+        {
+          "t": "Midnight Blue / M",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Midnight Blue / G",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Midnight Blue / GG",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Midnight Blue / XGG",
+          "p": 139.00,
+          "c": 139.00,
+          "a": false
         }
       ]
     },
@@ -4460,30 +4460,6 @@
           "a": false
         },
         {
-          "t": "Clay Red / P",
-          "p": 499.00,
-          "c": 499.00,
-          "a": false
-        },
-        {
-          "t": "Clay Red / M",
-          "p": 499.00,
-          "c": 499.00,
-          "a": false
-        },
-        {
-          "t": "Clay Red / G",
-          "p": 499.00,
-          "c": 499.00,
-          "a": false
-        },
-        {
-          "t": "Clay Red / GG",
-          "p": 499.00,
-          "c": 499.00,
-          "a": false
-        },
-        {
           "t": "Off White / P",
           "p": 499.00,
           "c": 499.00,
@@ -4551,6 +4527,30 @@
         },
         {
           "t": "Bright Red / GG",
+          "p": 499.00,
+          "c": 499.00,
+          "a": false
+        },
+        {
+          "t": "Clay Red / P",
+          "p": 499.00,
+          "c": 499.00,
+          "a": false
+        },
+        {
+          "t": "Clay Red / M",
+          "p": 499.00,
+          "c": 499.00,
+          "a": false
+        },
+        {
+          "t": "Clay Red / G",
+          "p": 499.00,
+          "c": 499.00,
+          "a": false
+        },
+        {
+          "t": "Clay Red / GG",
           "p": 499.00,
           "c": 499.00,
           "a": false
@@ -6235,36 +6235,6 @@
           "a": false
         },
         {
-          "t": "Midnight Blue / P",
-          "p": 139.00,
-          "c": 139.00,
-          "a": false
-        },
-        {
-          "t": "Midnight Blue / M",
-          "p": 139.00,
-          "c": 139.00,
-          "a": true
-        },
-        {
-          "t": "Midnight Blue / G",
-          "p": 139.00,
-          "c": 139.00,
-          "a": true
-        },
-        {
-          "t": "Midnight Blue / GG",
-          "p": 139.00,
-          "c": 139.00,
-          "a": true
-        },
-        {
-          "t": "Midnight Blue / XGG",
-          "p": 139.00,
-          "c": 139.00,
-          "a": false
-        },
-        {
           "t": "Purple Cloud / P",
           "p": 139.00,
           "c": 139.00,
@@ -6323,6 +6293,36 @@
           "p": 139.00,
           "c": 139.00,
           "a": true
+        },
+        {
+          "t": "Midnight Blue / P",
+          "p": 139.00,
+          "c": 139.00,
+          "a": false
+        },
+        {
+          "t": "Midnight Blue / M",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Midnight Blue / G",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Midnight Blue / GG",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Midnight Blue / XGG",
+          "p": 139.00,
+          "c": 139.00,
+          "a": false
         }
       ]
     },
@@ -6952,7 +6952,7 @@
           "t": "Blue Ash / XGG",
           "p": 149.00,
           "c": 249.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Nori Green / PP",
@@ -21253,7 +21253,7 @@
           "t": "Branco / PP",
           "p": 37.00,
           "c": 69.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Branco / XGG",
@@ -23506,42 +23506,6 @@
           "a": true
         },
         {
-          "t": "Preto / G",
-          "p": 279.00,
-          "c": 279.00,
-          "a": false
-        },
-        {
-          "t": "Preto / M",
-          "p": 279.00,
-          "c": 279.00,
-          "a": false
-        },
-        {
-          "t": "Preto / XGG",
-          "p": 279.00,
-          "c": 279.00,
-          "a": false
-        },
-        {
-          "t": "Preto / P",
-          "p": 279.00,
-          "c": 279.00,
-          "a": false
-        },
-        {
-          "t": "Preto / GG",
-          "p": 279.00,
-          "c": 279.00,
-          "a": false
-        },
-        {
-          "t": "Preto / PP",
-          "p": 279.00,
-          "c": 279.00,
-          "a": false
-        },
-        {
           "t": "Off White / G",
           "p": 279.00,
           "c": 279.00,
@@ -23573,6 +23537,42 @@
         },
         {
           "t": "Off White / PP",
+          "p": 279.00,
+          "c": 279.00,
+          "a": false
+        },
+        {
+          "t": "Preto / G",
+          "p": 279.00,
+          "c": 279.00,
+          "a": false
+        },
+        {
+          "t": "Preto / M",
+          "p": 279.00,
+          "c": 279.00,
+          "a": false
+        },
+        {
+          "t": "Preto / XGG",
+          "p": 279.00,
+          "c": 279.00,
+          "a": false
+        },
+        {
+          "t": "Preto / P",
+          "p": 279.00,
+          "c": 279.00,
+          "a": false
+        },
+        {
+          "t": "Preto / GG",
+          "p": 279.00,
+          "c": 279.00,
+          "a": false
+        },
+        {
+          "t": "Preto / PP",
           "p": 279.00,
           "c": 279.00,
           "a": false
@@ -88015,7 +88015,7 @@
           "t": "Branco / PP",
           "p": 61.00,
           "c": 69.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Branco / P",

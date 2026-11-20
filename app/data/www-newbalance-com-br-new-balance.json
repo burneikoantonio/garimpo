@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Site New Balance",
   "site": "www.newbalance.com.br",
-  "atualizado": "2026-11-20T19:21:52Z",
+  "atualizado": "2026-11-20T19:54:50Z",
   "produtos": [
     {
       "id": "1100319",
@@ -2491,7 +2491,7 @@
           "t": "M",
           "p": 269.99,
           "c": 269.99,
-          "x": 269.99,
+          "x": null,
           "a": false
         },
         {
@@ -5541,8 +5541,8 @@
           "t": "42",
           "p": 999.99,
           "c": 2299.99,
-          "x": null,
-          "a": false
+          "x": 999.99,
+          "a": true
         },
         {
           "t": "43",
@@ -7682,8 +7682,8 @@
           "t": "47",
           "p": 1199.99,
           "c": 1199.99,
-          "x": 1199.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "48",
