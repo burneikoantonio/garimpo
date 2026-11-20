@@ -2,7 +2,7 @@
   "marca": "Adidas Originals",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-19T23:34:40Z",
+  "atualizado": "2026-11-20T11:47:20Z",
   "produtos": [
     {
       "id": "28560",
@@ -4347,8 +4347,8 @@
         },
         {
           "t": "35",
-          "p": 299.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "x": null,
           "a": false
         },
@@ -4375,8 +4375,8 @@
         },
         {
           "t": "39",
-          "p": 299.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "x": null,
           "a": false
         },
@@ -19055,8 +19055,8 @@
           "t": "Camiseta adidas Originals Masculina",
           "p": 89.99,
           "c": 179.99,
-          "x": null,
-          "a": false
+          "x": 89.99,
+          "a": true
         },
         {
           "t": "Camiseta adidas Originals Masculina",
