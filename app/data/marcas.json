@@ -1,5 +1,5 @@
 {
-  "atualizado": "20/11/2026 12:52",
+  "atualizado": "20/11/2026 16:05",
   "marcas": [
     {
       "nome": "Carnan",
@@ -58,7 +58,8 @@
       "arquivos": [
         "data/www-artwalk-com-br-adidas-originals.json",
         "data/www-authenticfeet-com-br-adidas-originals.json",
-        "data/www-overboard-com-br-adidas-originals.json"
+        "data/www-overboard-com-br-adidas-originals.json",
+        "data/www-ostore-com-br-adidas-originals.json"
       ]
     },
     {
@@ -74,6 +75,18 @@
       ]
     },
     {
+      "nome": "Nike",
+      "site": "",
+      "relacao": "segue",
+      "obs": "Via Artwalk, Authentic Feet e Overboard (lojas.txt): Air Max, Air Force, Dunk, SB, ACG",
+      "liberada": "",
+      "arquivos": [
+        "data/www-artwalk-com-br-nike.json",
+        "data/www-authenticfeet-com-br-nike.json",
+        "data/www-overboard-com-br-nike.json"
+      ]
+    },
+    {
       "nome": "New Balance",
       "site": "",
       "relacao": "segue",
@@ -82,7 +95,8 @@
       "arquivos": [
         "data/www-newbalance-com-br-new-balance.json",
         "data/www-artwalk-com-br-new-balance.json",
-        "data/www-authenticfeet-com-br-new-balance.json"
+        "data/www-authenticfeet-com-br-new-balance.json",
+        "data/www-ostore-com-br-new-balance.json"
       ]
     },
     {
@@ -269,6 +283,18 @@
       "liberada": "2026-11-15",
       "arquivos": [
         "data/blckbrasil-com-br.json"
+      ]
+    },
+    {
+      "nome": "ASICS",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Gel-Kayano, GEL-NYC e GT-2160, os tênis retrô do momento (Artwalk, Authentic Feet e OStore)",
+      "liberada": "2026-11-20",
+      "arquivos": [
+        "data/www-artwalk-com-br-asics.json",
+        "data/www-authenticfeet-com-br-asics.json",
+        "data/www-ostore-com-br-asics.json"
       ]
     }
   ]
