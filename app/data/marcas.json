@@ -1,5 +1,5 @@
 {
-  "atualizado": "20/11/2026 17:04",
+  "atualizado": "20/11/2026 17:33",
   "marcas": [
     {
       "nome": "Carnan",
@@ -59,7 +59,8 @@
         "data/www-artwalk-com-br-adidas-originals.json",
         "data/www-authenticfeet-com-br-adidas-originals.json",
         "data/www-overboard-com-br-adidas-originals.json",
-        "data/www-ostore-com-br-adidas-originals.json"
+        "data/www-ostore-com-br-adidas-originals.json",
+        "extra/youridstore-adidas-originals.json"
       ]
     },
     {
@@ -71,7 +72,8 @@
       "arquivos": [
         "data/www-artwalk-com-br-jordan.json",
         "data/www-authenticfeet-com-br-jordan.json",
-        "data/www-overboard-com-br-jordan.json"
+        "data/www-overboard-com-br-jordan.json",
+        "extra/youridstore-jordan.json"
       ]
     },
     {
@@ -83,7 +85,8 @@
       "arquivos": [
         "data/www-artwalk-com-br-nike.json",
         "data/www-authenticfeet-com-br-nike.json",
-        "data/www-overboard-com-br-nike.json"
+        "data/www-overboard-com-br-nike.json",
+        "extra/youridstore-nike.json"
       ]
     },
     {
@@ -96,7 +99,8 @@
         "data/www-newbalance-com-br-new-balance.json",
         "data/www-artwalk-com-br-new-balance.json",
         "data/www-authenticfeet-com-br-new-balance.json",
-        "data/www-ostore-com-br-new-balance.json"
+        "data/www-ostore-com-br-new-balance.json",
+        "extra/youridstore-new-balance.json"
       ]
     },
     {
@@ -294,7 +298,8 @@
       "arquivos": [
         "data/www-artwalk-com-br-asics.json",
         "data/www-authenticfeet-com-br-asics.json",
-        "data/www-ostore-com-br-asics.json"
+        "data/www-ostore-com-br-asics.json",
+        "extra/youridstore-asics.json"
       ]
     },
     {
@@ -305,7 +310,8 @@
       "liberada": "2026-11-20",
       "arquivos": [
         "data/www-authenticfeet-com-br-puma.json",
-        "data/www-artwalk-com-br-puma.json"
+        "data/www-artwalk-com-br-puma.json",
+        "extra/youridstore-puma.json"
       ]
     },
     {
@@ -316,7 +322,8 @@
       "liberada": "2026-11-20",
       "arquivos": [
         "data/www-authenticfeet-com-br-vans.json",
-        "data/www-artwalk-com-br-vans.json"
+        "data/www-artwalk-com-br-vans.json",
+        "extra/youridstore-vans.json"
       ]
     },
     {
@@ -326,7 +333,8 @@
       "obs": "Tênis suíços de corrida que viraram moda, linha Cloud (Authentic Feet)",
       "liberada": "2026-11-20",
       "arquivos": [
-        "data/www-authenticfeet-com-br-on.json"
+        "data/www-authenticfeet-com-br-on.json",
+        "extra/youridstore-on.json"
       ]
     },
     {
@@ -338,6 +346,36 @@
       "arquivos": [
         "data/www-authenticfeet-com-br-mizuno.json",
         "data/www-artwalk-com-br-mizuno.json"
+      ]
+    },
+    {
+      "nome": "Converse",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Chuck 70 e collabs, com muito desconto na Your ID",
+      "liberada": "2026-11-20",
+      "arquivos": [
+        "extra/youridstore-converse.json"
+      ]
+    },
+    {
+      "nome": "Pleasures",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Streetwear de Los Angeles com estampas de banda (Your ID)",
+      "liberada": "2026-11-20",
+      "arquivos": [
+        "extra/youridstore-pleasures.json"
+      ]
+    },
+    {
+      "nome": "Market",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Streetwear de Los Angeles (ex-Chinatown Market), camisetas e moletons gráficos (Your ID)",
+      "liberada": "2026-11-20",
+      "arquivos": [
+        "extra/youridstore-market.json"
       ]
     }
   ]
