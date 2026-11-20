@@ -1,5 +1,5 @@
 {
-  "atualizado": "20/11/2026 16:05",
+  "atualizado": "20/11/2026 16:32",
   "marcas": [
     {
       "nome": "Carnan",
@@ -295,6 +295,49 @@
         "data/www-artwalk-com-br-asics.json",
         "data/www-authenticfeet-com-br-asics.json",
         "data/www-ostore-com-br-asics.json"
+      ]
+    },
+    {
+      "nome": "Puma",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Speedcat, Palermo e Suede, com muito desconto na Black Friday (Authentic Feet e Artwalk)",
+      "liberada": "2026-11-20",
+      "arquivos": [
+        "data/www-authenticfeet-com-br-puma.json",
+        "data/www-artwalk-com-br-puma.json"
+      ]
+    },
+    {
+      "nome": "Vans",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Old Skool e Knu Skool, clássicos do skate (Authentic Feet e Artwalk)",
+      "liberada": "2026-11-20",
+      "arquivos": [
+        "data/www-authenticfeet-com-br-vans.json",
+        "data/www-artwalk-com-br-vans.json"
+      ]
+    },
+    {
+      "nome": "On",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Tênis suíços de corrida que viraram moda, linha Cloud (Authentic Feet)",
+      "liberada": "2026-11-20",
+      "arquivos": [
+        "data/www-authenticfeet-com-br-on.json"
+      ]
+    },
+    {
+      "nome": "Mizuno",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Wave Prophecy e MXR, o visual futurista dos anos 2000 (Authentic Feet e Artwalk)",
+      "liberada": "2026-11-20",
+      "arquivos": [
+        "data/www-authenticfeet-com-br-mizuno.json",
+        "data/www-artwalk-com-br-mizuno.json"
       ]
     }
   ]
