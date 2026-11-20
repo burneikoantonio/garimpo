@@ -108,6 +108,16 @@ done | jq -s 'add' > "$TMP/cambio.json" && jq -e '.EUR' "$TMP/cambio.json" >/dev
 echo "→ Regras das lojas (Pix e frete grátis)"
 ruby lojas_info.rb 2>&1 | sed "s/^/  /" || true
 
+# ---------- 1c. Lojas lidas pelo navegador do Mac (ex.: Your ID), salvas em extra/ ----------
+# o robô não consegue abrir essas lojas; a tarefa diária do Mac grava extra/<loja>-<marca>.json e aqui elas entram no catálogo
+for arquivo in extra/*.json; do
+  [ -f "$arquivo" ] || continue
+  marca=$(jq -r ".marca" "$arquivo")
+  registrar_historico "$arquivo"
+  printf "%s\t%s\n" "$marca" "$arquivo" >> "$TMP/arquivos.tsv"
+  echo "✓ $(jq -r .loja "$arquivo") / $marca: $(jq ".produtos | length" "$arquivo") produtos (lidos pelo Mac em $(jq -r .atualizado "$arquivo" | cut -c1-10))"
+done
+
 # ---------- 2. Sites oficiais (Shopify) ----------
 grep -v '^#' marcas.txt | while IFS='|' read -r nome site rel obs liberar; do
   nome=$(trim "$nome"); site=$(trim "$site"); rel=$(trim "$rel"); obs=$(trim "$obs"); liberar=$(trim "$liberar")
