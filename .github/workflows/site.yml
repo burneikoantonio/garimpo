@@ -25,7 +25,10 @@ jobs:
       name: github-pages
       url: ${{ steps.site.outputs.page_url }}
     steps:
+      # pega o main mais novo (não o do push): se o robô salvou preços enquanto este esperava na fila, eles entram
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/upload-pages-artifact@v3
         with:
           path: app
