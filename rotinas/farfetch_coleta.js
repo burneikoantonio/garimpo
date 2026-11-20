@@ -8,8 +8,8 @@
 window.__FF = window.__FF || {};
 window.PAGINAS = [
   // promoção da Black Friday (mais 20% automático). Fora da promoção essas páginas somem e são ignoradas.
-  ...[1, 2, 3, 4, 5, 6, 7].map(p => `/br/promotions/men/black-friday?price=0-2000&category=135968&page=${p}`),
-  ...[1, 2, 3, 4, 5, 6, 7, 8].map(p => `/br/promotions/men/black-friday?price=0-1500&category=136330&page=${p}`),
+  ...[...Array(12)].map((_, i) => `/br/promotions/men/black-friday?price=0-2000&category=135968&page=${i + 1}`),
+  ...[...Array(14)].map((_, i) => `/br/promotions/men/black-friday?price=0-1500&category=136330&page=${i + 1}`),
   // sale normal
   ...[1, 2, 3, 4].map(p => `/br/shopping/men/sale/shoes-2/items.aspx?price=0-2000&page=${p}`),
   ...[1, 2, 3, 4].map(p => `/br/shopping/men/sale/clothing-2/items.aspx?price=0-1500&page=${p}`),
@@ -59,8 +59,8 @@ window.ffEscolher = () => {
   const off = x => x.de ? 1 - x.por / x.de : 0;
   const escolhe = (lista, lim, n, max) => { const pm = {}; return lista.filter(x => !FORA.test(x.marca) && !RUIM.test(x.nome) && x.por > 0 && x.por <= lim).sort((a, b) => off(b) - off(a) || a.por - b.por).filter(x => (pm[x.marca] = (pm[x.marca] || 0) + 1) <= (/diesel/i.test(x.marca) ? 8 : max)).slice(0, n); };
   const v = Object.values(__FF);
-  const ten = escolhe(v.filter(x => x.cat === 'shoes' && /sneaker|trainer|runner/i.test(x.nome) && off(x) >= 0.35), 2000, 70, 4);
-  const rou = escolhe(v.filter(x => x.cat === 'clothing' && off(x) >= 0.4), 1500, 110, 4);
+  const ten = escolhe(v.filter(x => x.cat === 'shoes' && /sneaker|trainer|runner/i.test(x.nome) && off(x) >= 0.35), 2000, 100, 5);
+  const rou = escolhe(v.filter(x => x.cat === 'clothing' && off(x) >= 0.4), 1500, 160, 5);
   window.__SEL = [...ten, ...rou];
   return [ten.length, rou.length];
 };
