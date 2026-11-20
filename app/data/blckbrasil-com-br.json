@@ -2,8 +2,33 @@
   "marca": "Blck Brasil",
   "loja": "Site Blck Brasil",
   "site": "blckbrasil.com.br",
-  "atualizado": "2026-11-20T20:33:04Z",
+  "atualizado": "2026-11-20T23:51:50Z",
   "produtos": [
+    {
+      "id": "8278315041079",
+      "titulo": "Boné Snapback Black to Red",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-black-to-red",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "LIVE"
+      ],
+      "publicado": "2026-11-20T19:39:07-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/btr1.jpg?v=1794171500",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/btr2.jpg?v=1794171625",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_ago3__63_dfef6bc4-1118-438f-b700-85500e8fd39b.jpg?v=1693253643",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/840b5058-11a4-11ed-95e4-060a967aa101.jpg?v=1693253689"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / UN",
+          "p": 147.00,
+          "c": 189.90,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "10911962136887",
       "titulo": "Boné Snapback Suede Vermelho Yin-Yang",
@@ -48,31 +73,6 @@
           "t": "Cinza",
           "p": 179.90,
           "c": 179.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "8278315041079",
-      "titulo": "Boné Snapback Black to Red",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-black-to-red",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE"
-      ],
-      "publicado": "2026-11-20T15:08:39-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/btr1.jpg?v=1794171500",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/btr2.jpg?v=1794171625",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_ago3__63_dfef6bc4-1118-438f-b700-85500e8fd39b.jpg?v=1693253643",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/840b5058-11a4-11ed-95e4-060a967aa101.jpg?v=1693253689"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / UN",
-          "p": 147.00,
-          "c": 189.90,
           "a": true
         }
       ]
@@ -181,7 +181,7 @@
           "t": "P / Vermelha",
           "p": 67.00,
           "c": 159.90,
-          "a": true
+          "a": false
         },
         {
           "t": "M / Vermelha",
@@ -349,7 +349,7 @@
           "t": "M",
           "p": 37.00,
           "c": 199.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G",
@@ -439,13 +439,13 @@
           "t": "M",
           "p": 37.00,
           "c": 199.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G",
           "p": 37.00,
           "c": 199.90,
-          "a": true
+          "a": false
         },
         {
           "t": "GG",
@@ -759,29 +759,6 @@
       ]
     },
     {
-      "id": "11098734625079",
-      "titulo": "Necessaire Preta Royalty",
-      "url": "https://blckbrasil.com.br/products/necessaire-preta-royalty",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "Bolsas e Mochilas",
-        "LIVE"
-      ],
-      "publicado": "2026-11-20T01:23:34-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/a080fa28-44c5-11f1-8860-ead11fb7b62b_3ea7d03a-7058-4852-8311-821a67d7f81f.jpg?v=1795148393"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 27.00,
-          "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10280712372535",
       "titulo": "Relógio BLCK Vermelho Splash Born Raised",
       "url": "https://blckbrasil.com.br/products/relogio-blck-vermelho-splash-born-raised",
@@ -824,28 +801,6 @@
           "t": "Default Title",
           "p": 27.00,
           "c": 89.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11035077050679",
-      "titulo": "Boné Snapback Branco Resping",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-branco-resping-1",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [],
-      "publicado": "2026-11-20T00:28:38-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B60_2210beb6-88ee-4b3e-8408-5a70056c1c88.jpg?v=1793049521",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B60-2_b8f0d8b3-abb1-4900-86d5-d019c0850a66.jpg?v=1793052765",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B60-3_671894c0-9c56-4081-9cd9-0058eafdfeb7.jpg?v=1793052765"
-      ],
-      "variantes": [
-        {
-          "t": "Branco",
-          "p": 239.90,
-          "c": 239.90,
           "a": true
         }
       ]
@@ -941,31 +896,6 @@
           "t": "Off-White",
           "p": 157.00,
           "c": 249.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10981435146551",
-      "titulo": "Boné Snapback Preto Verniz Hand Laranja",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-verniz-hand-laranja",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE"
-      ],
-      "publicado": "2026-11-20T00:28:37-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Abr5__20_4a0c2271-c697-4664-95b0-baacb4885816.jpg?v=1714408750",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Abr5__21_d53d5e59-bb1d-488e-b6d0-95ed05a251f1.jpg?v=1714408754",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Abr5__23_d5b5ce74-a209-4c0c-a8bc-7d0af7022ffa.jpg?v=1714408760",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Abr5__22_08dd8e6f-1beb-4244-82a6-d2b2c85ea33b.jpg?v=1714408757"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 117.00,
-          "c": 219.90,
           "a": true
         }
       ]
@@ -2389,30 +2319,6 @@
       ]
     },
     {
-      "id": "10886024855863",
-      "titulo": "Boné Snapback Preto Basic Verde Bandeira",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-basic-verde-bandeira",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE"
-      ],
-      "publicado": "2026-11-18T17:57:12-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B51_cce556fc-39d5-4131-9d7c-735ae6351072.jpg?v=1784634427",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B51-2_1a313c2c-86f3-4d6a-92b3-e1ce7cbe3833.jpg?v=1784634427",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B51-3_d4b8876a-11a8-4b92-8401-2be9f3246948.jpg?v=1784634427"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 87.00,
-          "c": 159.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10947087532343",
       "titulo": "Boné Snapback Follow New Zig Zag White",
       "url": "https://blckbrasil.com.br/products/bone-snapback-follow-new-zig-zag-white",
@@ -2641,36 +2547,6 @@
           "p": 57.00,
           "c": 199.90,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "11094751609143",
-      "titulo": "Blusa Moletom Preto Royale Metal",
-      "url": "https://blckbrasil.com.br/products/blusa-moletom-preto-royale-metal",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "Blusas e Jaquetas",
-        "LIVE",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-18T01:33:22-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/MT01.jpg?v=1794975290"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 97.00,
-          "c": 399.90,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 97.00,
-          "c": 399.90,
-          "a": false
         }
       ]
     },
@@ -3988,30 +3864,6 @@
       ]
     },
     {
-      "id": "11068548874551",
-      "titulo": "Shoulder Bag Preta e Branca Effect",
-      "url": "https://blckbrasil.com.br/products/shoulder-bag-preta-e-branca-effect",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "ACESSÓRIOS",
-        "Bolsas e Mochilas",
-        "LIVE"
-      ],
-      "publicado": "2026-11-12T12:40:28-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/BAG01_569788c6-1fb9-4009-97a0-7564206e0c5b.jpg?v=1793993376"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 37.00,
-          "c": 179.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10871119610167",
       "titulo": "Gorro Branco BLCK Wings Preto",
       "url": "https://blckbrasil.com.br/products/gorro-branco-blck-wings-preto",
@@ -4744,49 +4596,6 @@
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Ch02-2_bb3d1948-a634-4ff0-b231-77b03147434c.jpg?v=1760559098",
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Ch02_40f19d95-a747-40b2-98f3-db5a0d8c3cd0.jpg?v=1760559098"
-      ],
-      "variantes": [
-        {
-          "t": "37/38",
-          "p": 27.00,
-          "c": 119.90,
-          "a": true
-        },
-        {
-          "t": "39/40",
-          "p": 27.00,
-          "c": 119.90,
-          "a": false
-        },
-        {
-          "t": "41/42",
-          "p": 27.00,
-          "c": 119.90,
-          "a": false
-        },
-        {
-          "t": "43/44",
-          "p": 27.00,
-          "c": 119.90,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "10302273421623",
-      "titulo": "Chinelo Tradicional Preto B Branco Blck",
-      "url": "https://blckbrasil.com.br/products/chinelo-tradicional-preto-b-branco-blck",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "CALÇADOS",
-        "LIVE",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-08T15:41:23-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Ch01-2_f3dfb973-1f31-44cb-a3c0-b41e8082238d.jpg?v=1760559094",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Ch01_b76d9e5d-8bcf-4453-a40c-523ca2a0fe66.jpg?v=1760559095"
       ],
       "variantes": [
         {

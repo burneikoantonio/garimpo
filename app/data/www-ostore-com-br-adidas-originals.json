@@ -2,7 +2,7 @@
   "marca": "Adidas Originals",
   "loja": "OStore",
   "site": "www.ostore.com.br",
-  "atualizado": "2026-11-20T20:28:55Z",
+  "atualizado": "2026-11-20T23:47:35Z",
   "produtos": [
     {
       "id": "118",
@@ -52,6 +52,49 @@
           "c": 229.99,
           "x": null,
           "a": false
+        }
+      ]
+    },
+    {
+      "id": "1917",
+      "titulo": "Camiseta Adidas Estampada Adicolor",
+      "url": "https://www.ostore.com.br/camiseta-adidas-estampada-adicolor-0017101009/p",
+      "ref": "0017101009",
+      "tipo": "/Infantil/Camiseta/ ",
+      "tags": [],
+      "publicado": "2021-06-16T12:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/212876/0017101009-0-.jpg?v=637699047694670000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/212877/0017101009-1-.jpg?v=637699047941730000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 69.9,
+          "c": 99.99,
+          "x": 69.9,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 69.9,
+          "c": 99.99,
+          "x": 69.9,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 69.9,
+          "c": 99.99,
+          "x": 69.9,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 69.9,
+          "c": 99.99,
+          "x": 69.9,
+          "a": true
         }
       ]
     },
@@ -192,6 +235,96 @@
       ]
     },
     {
+      "id": "2294",
+      "titulo": "Camiseta Adidas Estampada Camo",
+      "url": "https://www.ostore.com.br/camiseta-adidas-estampada-camo-0012227000/p",
+      "ref": "0012227000",
+      "tipo": "/Infantil/Camiseta/ ",
+      "tags": [],
+      "publicado": "2021-10-26T12:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/213431/0012227000-0-.jpg?v=637708606882400000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 49.99,
+          "c": 119.9,
+          "x": 49.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 49.99,
+          "c": 119.9,
+          "x": 49.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 49.99,
+          "c": 119.9,
+          "x": 49.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 49.99,
+          "c": 119.9,
+          "x": 49.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "2421",
+      "titulo": "Bucket Adidas Trefoil Blue",
+      "url": "https://www.ostore.com.br/bucket-adidas-trefoil-blue-0012220006/p",
+      "ref": "0012220006",
+      "tipo": "/Acessórios/Masculino/Chapéus/ ",
+      "tags": [],
+      "publicado": "2023-03-29T21:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218229/bucket-adidas-trefoil-blue-azul-hd9710-0.jpg?v=638157028230570000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218230/bucket-adidas-trefoil-blue-azul-hd9710-1.jpg?v=638157028329900000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218231/bucket-adidas-trefoil-blue-azul-hd9710-2.jpg?v=638157028521330000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218232/bucket-adidas-trefoil-blue-azul-hd9710-3.jpg?v=638157028597170000"
+      ],
+      "variantes": [
+        {
+          "t": "UNICO",
+          "p": 129.99,
+          "c": 199.99,
+          "x": 129.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "250",
+      "titulo": "Mochila Adidas Towning Preta",
+      "url": "https://www.ostore.com.br/mochila-adidas-towning-preta-0016932003/p",
+      "ref": "0016932003",
+      "tipo": "/Acessórios/Masculino/Mochilas/ ",
+      "tags": [],
+      "publicado": "2020-05-05T03:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/205323/0016932003-0-.jpg?v=637275645496970000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/205324/0016932003-1-.jpg?v=637275645740400000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/205325/0016932003-2-.jpg?v=637275646025400000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/205326/0016932003-3-.jpg?v=637275646254400000"
+      ],
+      "variantes": [
+        {
+          "t": "PRETO",
+          "p": 269.99,
+          "c": 269.99,
+          "x": 269.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "252",
       "titulo": "Mochila Adidas Classic Casual",
       "url": "https://www.ostore.com.br/mochila-adidas-classic-casual-0016932007/p",
@@ -211,51 +344,6 @@
           "c": 179.99,
           "x": null,
           "a": false
-        }
-      ]
-    },
-    {
-      "id": "2555",
-      "titulo": "Camiseta Adidas Loungewear Adicolor Trefoil",
-      "url": "https://www.ostore.com.br/camiseta-adidas-loungewear-adicolor-trefoil-0012201019/p",
-      "ref": "0012201019",
-      "tipo": "/Masculino/Camisetas/Manga Curta/ ",
-      "tags": [],
-      "publicado": "2022-03-25T12:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/214584/camiseta-adidas-HE9444-0.jpg?v=637837464980400000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/214585/camiseta-adidas-HE9444-1.jpg?v=637837465175900000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/214586/camiseta-adidas-HE9444-2.jpg?v=637837465301430000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/214587/camiseta-adidas-HE9444-3.jpg?v=637837465402900000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 99.99,
-          "c": 149.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 99.99,
-          "c": 149.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 99.99,
-          "c": 149.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 99.99,
-          "c": 149.99,
-          "x": 99.99,
-          "a": true
         }
       ]
     },
@@ -392,50 +480,6 @@
       ]
     },
     {
-      "id": "2645",
-      "titulo": "Moletom Adidas Capuz Classics Trefoil",
-      "url": "https://www.ostore.com.br/moletom-adidas-capuz-classics-trefoil-0017212000/p",
-      "ref": "0017212000",
-      "tipo": "/Feminino/Moletom/Fechado/ ",
-      "tags": [],
-      "publicado": "2022-05-10T03:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/215147/moletom-adidas-adicolor-classic-trefoil-H06667-0.jpg?v=637879595484970000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/215148/moletom-adidas-adicolor-classic-trefoil-H06667-1.jpg?v=637879595777830000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/215149/moletom-adidas-adicolor-classic-trefoil-H06667-2.jpg?v=637879595939000000"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 279.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 279.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 279.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 279.99,
-          "c": 399.99,
-          "x": 279.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "2651",
       "titulo": "Jaqueta Adidas Estampada Y2K azul",
       "url": "https://www.ostore.com.br/jaqueta-adidas-estampada-y2k-azul-0017214002/p",
@@ -504,25 +548,25 @@
       ]
     },
     {
-      "id": "2803",
-      "titulo": "Mochila Adidas Camo Classic",
-      "url": "https://www.ostore.com.br/mochila-adidas-camo-classic-0012232002/p",
-      "ref": "0012232002",
+      "id": "2805",
+      "titulo": "Mochila Adidas Adicolor Classic",
+      "url": "https://www.ostore.com.br/mochila-adidas-adicolor-classic-0012232001/p",
+      "ref": "0012232001",
       "tipo": "/Acessórios/Feminino/Mochilas/ ",
       "tags": [],
-      "publicado": "2022-08-03T15:00:00Z",
+      "publicado": "2022-08-02T15:00:00Z",
       "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/215996/mochila-adidas-camo-classic-HC9517-1.jpg?v=637950595239400000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/215995/mochila-adidas-camo-classic-HC9517-0.jpg?v=637950594326000000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/215997/mochila-adidas-camo-classic-HC9517-2.jpg?v=637950595515700000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/215998/mochila-adidas-camo-classic-HC9517-3.jpg?v=637950595655870000"
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/216006/mochila-adidas-adicolor-classic-H37065-1.jpg?v=637950607505600000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/216005/mochila-adidas-adicolor-classic-H37065-0.jpg?v=637950606549430000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/216007/mochila-adidas-adicolor-classic-H37065-2.jpg?v=637950607673130000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/216008/mochila-adidas-adicolor-classic-H37065-3.jpg?v=637950607797670000"
       ],
       "variantes": [
         {
           "t": "PRETO",
-          "p": 269.99,
-          "c": 269.99,
-          "x": 269.99,
+          "p": 219.99,
+          "c": 219.99,
+          "x": 219.99,
           "a": true
         }
       ]
@@ -730,110 +774,6 @@
       ]
     },
     {
-      "id": "3229",
-      "titulo": "Chinelo Adidas Adilette Lite",
-      "url": "https://www.ostore.com.br/chinelo-adidas-adilette-lite-0017117007/p",
-      "ref": "0017117007",
-      "tipo": "/Sneakers/Masculino/Chinelos/ ",
-      "tags": [],
-      "publicado": "2023-03-01T21:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/217801/chinelo-adidas-adilette-lite-branco-FU8297-0.jpg?v=638132719476130000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/217802/chinelo-adidas-adilette-lite-branco-FU8297-1.jpg?v=638132719703370000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/217803/chinelo-adidas-adilette-lite-branco-FU8297-2.jpg?v=638132719915200000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/217804/chinelo-adidas-adilette-lite-branco-FU8297-3.jpg?v=638132720132430000"
-      ],
-      "variantes": [
-        {
-          "t": "34/35",
-          "p": 139.99,
-          "c": 199.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36/37",
-          "p": 139.99,
-          "c": 199.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38/39",
-          "p": 139.99,
-          "c": 199.9,
-          "x": 139.99,
-          "a": true
-        },
-        {
-          "t": "40/41",
-          "p": 139.99,
-          "c": 199.9,
-          "x": 139.99,
-          "a": true
-        },
-        {
-          "t": "42/43",
-          "p": 139.99,
-          "c": 199.9,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "3258",
-      "titulo": "Chinelo Adidas Adillete Ayoon",
-      "url": "https://www.ostore.com.br/chinelo-adidas-adillete-ayoon-0017313002/p",
-      "ref": "0017313002",
-      "tipo": "/Sneakers/Feminino/Chinelos/ ",
-      "tags": [],
-      "publicado": "2023-03-21T21:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218020/chinelo-adidas-adillete-ayoon-verde-fz6411-0.jpg?v=638150280695630000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218021/chinelo-adidas-adillete-ayoon-verde-fz6411-1.jpg?v=638150280859200000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218022/chinelo-adidas-adillete-ayoon-verde-fz6411-2.jpg?v=638150280931000000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218023/chinelo-adidas-adillete-ayoon-verde-fz6411-3.jpg?v=638150281002330000"
-      ],
-      "variantes": [
-        {
-          "t": "34/35",
-          "p": 199.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36/37",
-          "p": 199.99,
-          "c": 299.99,
-          "x": 199.99,
-          "a": true
-        },
-        {
-          "t": "38/39",
-          "p": 199.99,
-          "c": 299.99,
-          "x": 199.99,
-          "a": true
-        },
-        {
-          "t": "40/41",
-          "p": 199.99,
-          "c": 299.99,
-          "x": 199.99,
-          "a": true
-        },
-        {
-          "t": "42/43",
-          "p": 199.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "3313",
       "titulo": "Tênis Adidas Adi2000",
       "url": "https://www.ostore.com.br/tenis-adidas-adi2000-0012317045/p",
@@ -893,95 +833,6 @@
       ]
     },
     {
-      "id": "3315",
-      "titulo": "Camiseta Adidas Estampada Revike",
-      "url": "https://www.ostore.com.br/camiseta-adidas-estampada-revike-0017301010/p",
-      "ref": "0017301010",
-      "tipo": "/Masculino/Camisetas/Manga Curta/ ",
-      "tags": [],
-      "publicado": "2023-04-10T18:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218411/camiseta-adidas-estampa-revike-branca-trefoil-roxo-HR8591-0.png?v=638167366899330000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218412/camiseta-adidas-estampa-revike-branca-trefoil-roxo-HR8591-1.png?v=638167367016900000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218413/camiseta-adidas-estampa-revike-branca-trefoil-roxo-HR8591-2.png?v=638167367115700000"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 139.99,
-          "c": 199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 139.99,
-          "c": 199.99,
-          "x": 139.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 139.99,
-          "c": 199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 139.99,
-          "c": 199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "3322",
-      "titulo": "Moletom Adidas Adicolor Trefoil",
-      "url": "https://www.ostore.com.br/moletom-adidas-adicolor-trefoil-0017326008/p",
-      "ref": "0017326008",
-      "tipo": "/Feminino/Moletom/Fechado/ ",
-      "tags": [],
-      "publicado": "2023-04-11T18:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218443/moletom-adidas-trefoil-hoody-maglil-classic-roxo-lilas-IA4881-0.png?v=638168260180070000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218444/moletom-adidas-trefoil-hoody-maglil-classic-roxo-lilas-IA4881-1.png?v=638168260320300000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218445/moletom-adidas-trefoil-hoody-maglil-classic-roxo-lilas-IA4881-2.png?v=638168260417570000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218446/moletom-adidas-trefoil-hoody-maglil-classic-roxo-lilas-IA4881-3.png?v=638168260538970000"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 299.99,
-          "c": 449.99,
-          "x": 299.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 299.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 299.99,
-          "c": 449.99,
-          "x": 299.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 299.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "3333",
       "titulo": "Moletom Adidas Adicolor Classics Cut Line Crew",
       "url": "https://www.ostore.com.br/moletom-adidas-adicolor-classics-cut-line-crew-0017324000/p",
@@ -1027,6 +878,51 @@
       ]
     },
     {
+      "id": "3352",
+      "titulo": "Moletinho Adidas Essentials com cânhamo",
+      "url": "https://www.ostore.com.br/moletinho-adidas-essentials-com-canhamo-0017326010/p",
+      "ref": "0017326010",
+      "tipo": "/Feminino/Moletom/Fechado/ ",
+      "tags": [],
+      "publicado": "2023-04-21T06:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218601/moletinho-sueter-adidas-essentials-canhamo-hemp-preto-IC1824-0.png?v=638176070476100000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218602/moletinho-sueter-adidas-essentials-canhamo-hemp-preto-IC1824-1.png?v=638176070622530000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218603/moletinho-sueter-adidas-essentials-canhamo-hemp-preto-IC1824-2.png?v=638176070762370000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/218604/moletinho-sueter-adidas-essentials-canhamo-hemp-preto-IC1824-3.png?v=638176070943930000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 299.99,
+          "c": 429.99,
+          "x": 299.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 299.99,
+          "c": 429.99,
+          "x": 299.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 299.99,
+          "c": 429.99,
+          "x": 299.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 299.99,
+          "c": 429.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "3361",
       "titulo": "Moletom Adidas Adicolor Classics Trefoil",
       "url": "https://www.ostore.com.br/moletom-adidas-adicolor-classics-trefoil-0017312010/p",
@@ -1067,6 +963,30 @@
           "p": 349.9,
           "c": 449.99,
           "x": 349.9,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "3454",
+      "titulo": "Mochila Adidas Classic Animal Print",
+      "url": "https://www.ostore.com.br/mochila-adidas-classic-animal-print-0017332004/p",
+      "ref": "0017332004",
+      "tipo": "/Acessórios/Masculino/Mochilas/ ",
+      "tags": [],
+      "publicado": "2023-05-27T03:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219061/mochila-adidas-classic-animal-print-backpack-rosa-azul-verde-ij5635-0.png?v=638207193274570000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219062/mochila-adidas-classic-animal-print-backpack-rosa-azul-verde-ij5635-1.png?v=638207193395000000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219063/mochila-adidas-classic-animal-print-backpack-rosa-azul-verde-ij5635-2.png?v=638207193648330000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219064/mochila-adidas-classic-animal-print-backpack-rosa-azul-verde-ij5635-3.png?v=638207193885970000"
+      ],
+      "variantes": [
+        {
+          "t": "UNICO",
+          "p": 299.9,
+          "c": 299.9,
+          "x": 299.9,
           "a": true
         }
       ]
@@ -1264,30 +1184,6 @@
           "c": 259.9,
           "x": null,
           "a": false
-        }
-      ]
-    },
-    {
-      "id": "3503",
-      "titulo": "Mochila Adidas Seasonal Sportwear",
-      "url": "https://www.ostore.com.br/mochila-adidas-seasonal-sportwear-0017332007/p",
-      "ref": "0017332007",
-      "tipo": "/Acessórios/Masculino/Mochilas/ ",
-      "tags": [],
-      "publicado": "2023-06-15T03:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219261/mochila-adidas-essentials-seasonal-sportswear-backpack-preta-hy0732-0.png?v=638223519385700000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219262/mochila-adidas-essentials-seasonal-sportswear-backpack-preta-hy0732-1.png?v=638223519478900000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219263/mochila-adidas-essentials-seasonal-sportswear-backpack-preta-hy0732-2.png?v=638223519570230000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219264/mochila-adidas-essentials-seasonal-sportswear-backpack-preta-hy0732-3.png?v=638223519656400000"
-      ],
-      "variantes": [
-        {
-          "t": "UNICO",
-          "p": 279.9,
-          "c": 279.9,
-          "x": 279.9,
-          "a": true
         }
       ]
     },
@@ -1605,46 +1501,46 @@
       ]
     },
     {
-      "id": "3599",
-      "titulo": "Bermuda Adidas Solid CLX",
-      "url": "https://www.ostore.com.br/bermuda-adidas-solid-clx-0012436002/p",
-      "ref": "0012436002",
+      "id": "3598",
+      "titulo": "Bermuda Adidas Brand Love CLX",
+      "url": "https://www.ostore.com.br/bermuda-adidas-brand-love-clx-0012436000/p",
+      "ref": "0012436000",
       "tipo": "/Masculino/Bermudas/Passeio (casual)/ ",
       "tags": [],
-      "publicado": "2023-08-02T06:00:00Z",
+      "publicado": "2023-08-02T00:00:00Z",
       "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219797/shorts-adidas-solid-clx-bege-salmao-rosa-ic4018-0.jpg?v=638265017859970000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219798/shorts-adidas-solid-clx-bege-salmao-rosa-ic4018-1.jpg?v=638265018001230000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219799/shorts-adidas-solid-clx-bege-salmao-rosa-ic4018-2.jpg?v=638265018375300000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219800/shorts-adidas-solid-clx-bege-salmao-rosa-ic4018-3.jpg?v=638265018500070000"
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219793/shorts-adidas-brand-love-clx-verde-lima-il3988-0.jpg?v=638265016112700000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219794/shorts-adidas-brand-love-clx-verde-lima-il3988-1.jpg?v=638265016250630000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219795/shorts-adidas-brand-love-clx-verde-lima-il3988-2.jpg?v=638265016384330000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219796/shorts-adidas-brand-love-clx-verde-lima-il3988-3.jpg?v=638265016512670000"
       ],
       "variantes": [
         {
           "t": "P",
-          "p": 179.99,
-          "c": 229.9,
-          "x": null,
-          "a": false
+          "p": 229.99,
+          "c": 319.9,
+          "x": 229.99,
+          "a": true
         },
         {
           "t": "M",
-          "p": 179.99,
-          "c": 229.9,
-          "x": 179.99,
+          "p": 229.99,
+          "c": 319.9,
+          "x": 229.99,
           "a": true
         },
         {
           "t": "G",
-          "p": 179.99,
-          "c": 229.9,
-          "x": 179.99,
+          "p": 229.99,
+          "c": 319.9,
+          "x": 229.99,
           "a": true
         },
         {
           "t": "GG",
-          "p": 179.99,
-          "c": 229.9,
-          "x": 179.99,
+          "p": 229.99,
+          "c": 319.9,
+          "x": 229.99,
           "a": true
         }
       ]
@@ -1857,6 +1753,117 @@
       ]
     },
     {
+      "id": "3608",
+      "titulo": "Camiseta Adidas Essentials Single Jersey",
+      "url": "https://www.ostore.com.br/camiseta-adidas-essentials-single-jersey-0012401000/p",
+      "ref": "0012401000",
+      "tipo": "/Feminino/Blusas/Manga Curta/ ",
+      "tags": [],
+      "publicado": "2023-08-02T06:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219838/camiseta-adidas-essentials-single-jersey-cinza-ij8578-0.jpg?v=638265149060900000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219839/camiseta-adidas-essentials-single-jersey-cinza-ij8578-1.jpg?v=638265149287230000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219840/camiseta-adidas-essentials-single-jersey-cinza-ij8578-2.jpg?v=638265149482970000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219841/camiseta-adidas-essentials-single-jersey-cinza-ij8578-3.jpg?v=638265149773770000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 119.99,
+          "c": 169.9,
+          "x": 119.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 119.99,
+          "c": 169.9,
+          "x": 119.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 119.99,
+          "c": 169.9,
+          "x": 119.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 119.99,
+          "c": 169.9,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "3624",
+      "titulo": "Meia Adidas Sportwear Low-Cut",
+      "url": "https://www.ostore.com.br/meia-adidas-sportwear-lowcut-0012431000/p",
+      "ref": "0012431000",
+      "tipo": "/Acessórios/Masculino/Meias/Curta/ ",
+      "tags": [],
+      "publicado": "2023-08-07T15:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/219946/meia-adidas-sportwear-low-cut-colorido-IC1339-0.jpg?v=638270298040730000"
+      ],
+      "variantes": [
+        {
+          "t": "UNICO",
+          "p": 79.9,
+          "c": 79.9,
+          "x": 79.9,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "3664",
+      "titulo": "Camiseta Adidas Essentials Single Jersey",
+      "url": "https://www.ostore.com.br/camiseta-adidas-essentials-single-jersey-0012401011/p",
+      "ref": "0012401011",
+      "tipo": "/Feminino/Blusas/Manga Curta/ ",
+      "tags": [],
+      "publicado": "2023-08-29T09:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220140/camiseta-adidas-single-jersey-azul-ij8576-0.jpg?v=638288451787100000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220141/camiseta-adidas-single-jersey-azul-ij8576-1.jpg?v=638288452012500000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220142/camiseta-adidas-single-jersey-azul-ij8576-2.jpg?v=638288452244900000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220143/camiseta-adidas-single-jersey-azul-ij8576-2.jpg?v=638288452256600000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 129.99,
+          "c": 169.9,
+          "x": 129.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 129.99,
+          "c": 169.9,
+          "x": 129.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 129.99,
+          "c": 169.9,
+          "x": 129.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 129.99,
+          "c": 169.9,
+          "x": 129.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "3665",
       "titulo": "Camiseta Adidas Essentials Single Jersey",
       "url": "https://www.ostore.com.br/camiseta-adidas-essentials-single-jersey-0012401012/p",
@@ -1902,6 +1909,43 @@
       ]
     },
     {
+      "id": "3669",
+      "titulo": "Camiseta Adidas Adicolor Classics Trefoil",
+      "url": "https://www.ostore.com.br/camiseta-adidas-adicolor-classics-trefoil-0012401017/p",
+      "ref": "0012401017",
+      "tipo": "/Feminino/Blusas/Manga Curta/ ",
+      "tags": [],
+      "publicado": "2023-08-29T09:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220163/camiseta-adidas-adicolor-classics-trefoil-branco-im4494-0.jpg?v=638289077905200000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220164/camiseta-adidas-adicolor-classics-trefoil-branco-im4494-1.jpg?v=638289078082400000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220165/camiseta-adidas-adicolor-classics-trefoil-branco-im4494-2.jpg?v=638289078296770000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 139.99,
+          "c": 179.9,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 139.99,
+          "c": 179.9,
+          "x": 139.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 139.99,
+          "c": 179.9,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "3673",
       "titulo": "Camiseta Adidas Badge Of Sport",
       "url": "https://www.ostore.com.br/camiseta-adidas-badge-of-sport-0012401013/p",
@@ -1941,6 +1985,50 @@
           "p": 159.99,
           "c": 199.9,
           "x": 159.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "3674",
+      "titulo": "Camiseta Adidas Badge Of Sport",
+      "url": "https://www.ostore.com.br/camiseta-adidas-badge-of-sport-0012401014/p",
+      "ref": "0012401014",
+      "tipo": "/Feminino/Blusas/Manga Curta/ ",
+      "tags": [],
+      "publicado": "2023-09-01T03:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220171/camiseta-adidas-badge-of-sport-branco-in7976-0.jpg?v=638290833075700000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220172/camiseta-adidas-badge-of-sport-branco-in7976-1.jpg?v=638290833538330000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/220173/camiseta-adidas-badge-of-sport-branco-in7976-2.jpg?v=638290833854700000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 179.99,
+          "c": 229.9,
+          "x": 179.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 179.99,
+          "c": 229.9,
+          "x": 179.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 179.99,
+          "c": 229.9,
+          "x": 179.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 179.99,
+          "c": 229.9,
+          "x": 179.99,
           "a": true
         }
       ]
@@ -2218,56 +2306,6 @@
       ]
     },
     {
-      "id": "3902",
-      "titulo": "Camiseta Adidas Adicolor Trefoil",
-      "url": "https://www.ostore.com.br/camiseta-adidas-adicolor-trefoil-0012401028/p",
-      "ref": "0012401028",
-      "tipo": "/Feminino/Blusas/Manga Curta/ ",
-      "tags": [],
-      "publicado": "2024-01-05T06:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221237/camiseta-adidas-adicolor-trefoil-roso-ir79982-0.jpg?v=638399870939000000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221238/camiseta-adidas-adicolor-trefoil-roso-ir79982-1.jpg?v=638399871098730000"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 139.99,
-          "c": 179.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 139.99,
-          "c": 179.9,
-          "x": 139.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 139.99,
-          "c": 179.9,
-          "x": 139.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 139.99,
-          "c": 179.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "2G",
-          "p": 139.99,
-          "c": 179.9,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "3909",
       "titulo": "Tênis Adidas Campus 00s",
       "url": "https://www.ostore.com.br/tenis-adidas-campus-00s-0017417000/p",
@@ -2351,47 +2389,47 @@
       ]
     },
     {
-      "id": "3958",
-      "titulo": "Moletom Adidas Adicolor Classics Trefoil",
-      "url": "https://www.ostore.com.br/moletom-adidas-adicolor-classics-trefoil-0017412000/p",
-      "ref": "0017412000",
-      "tipo": "/Feminino/Moletom/Fechado/ ",
+      "id": "3959",
+      "titulo": "Calça Adidas Três Listras Adicolor",
+      "url": "https://www.ostore.com.br/calca-adidas-tres-listras-adicolor-0017408000/p",
+      "ref": "0017408000",
+      "tipo": "/Feminino/Calças/Passeio (casual)/ ",
       "tags": [],
-      "publicado": "2024-02-23T00:00:00Z",
+      "publicado": "2024-02-23T03:00:00Z",
       "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221486/moletom-adidas-careca-trefoil-classic-preto-IM4500-0.jpg?v=638442270644730000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221487/moletom-adidas-careca-trefoil-classic-preto-IM4500-1.jpg?v=638442270761900000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221488/moletom-adidas-careca-trefoil-classic-preto-IM4500-2.jpg?v=638442270895330000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221489/moletom-adidas-careca-trefoil-classic-preto-IM4500-3.jpg?v=638442271012370000"
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221490/calca-adidas-3-stripes-preta-IU2353-0.jpg?v=638442272250800000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221491/calca-adidas-3-stripes-preta-IU2353-1.jpg?v=638442272355370000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221492/calca-adidas-3-stripes-preta-IU2353-2.jpg?v=638442272479600000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221493/calca-adidas-3-stripes-preta-IU2353-3.jpg?v=638442272589130000"
       ],
       "variantes": [
         {
           "t": "P",
-          "p": 359.9,
-          "c": 419.9,
-          "x": 359.9,
-          "a": true
+          "p": 429.9,
+          "c": 429.9,
+          "x": null,
+          "a": false
         },
         {
           "t": "M",
-          "p": 359.9,
-          "c": 419.9,
+          "p": 429.9,
+          "c": 429.9,
           "x": null,
           "a": false
         },
         {
           "t": "G",
-          "p": 359.9,
-          "c": 419.9,
-          "x": 359.9,
+          "p": 429.9,
+          "c": 429.9,
+          "x": 429.9,
           "a": true
         },
         {
           "t": "GG",
-          "p": 359.9,
-          "c": 419.9,
-          "x": null,
-          "a": false
+          "p": 429.9,
+          "c": 429.9,
+          "x": 429.9,
+          "a": true
         }
       ]
     },
@@ -2434,6 +2472,50 @@
           "t": "GG",
           "p": 139.99,
           "c": 179.9,
+          "x": 139.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "3961",
+      "titulo": "Camiseta Adidas Adicolor Trefoil",
+      "url": "https://www.ostore.com.br/camiseta-adidas-adicolor-trefoil-0017401001/p",
+      "ref": "0017401001",
+      "tipo": "/Feminino/Blusas/Manga Curta/ ",
+      "tags": [],
+      "publicado": "2024-02-23T06:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221479/camiseta-adidas-adicolor-trefoil-preta-IU2364-0.jpg?v=638442265006300000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221480/camiseta-adidas-adicolor-trefoil-preta-IU2364-1.jpg?v=638442265122200000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/221481/camiseta-adidas-adicolor-trefoil-preta-IU2364-2.jpg?v=638442265250070000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 139.99,
+          "c": 169.9,
+          "x": 139.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 139.99,
+          "c": 169.9,
+          "x": 139.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 139.99,
+          "c": 169.9,
+          "x": 139.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 139.99,
+          "c": 169.9,
           "x": 139.99,
           "a": true
         }
@@ -2955,6 +3037,49 @@
       ]
     },
     {
+      "id": "4165",
+      "titulo": "Jaqueta Adidas Adicolor Firebird",
+      "url": "https://www.ostore.com.br/jaqueta-adidas-adicolor-firebird-0017414004/p",
+      "ref": "0017414004",
+      "tipo": "/Feminino/Jaqueta/Básica/ ",
+      "tags": [],
+      "publicado": "2024-06-06T15:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/222261/jaqueta-adidas-firebird-preto-branco-ij7058-0.jpg?v=638531214484200000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/222262/jaqueta-adidas-firebird-preto-branco-ij7058-1.jpg?v=638531214612200000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 399.99,
+          "c": 539.9,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 399.99,
+          "c": 539.9,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 399.99,
+          "c": 539.9,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 399.99,
+          "c": 539.9,
+          "x": 399.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "4166",
       "titulo": "Moletinho Adidas Adicolor Classic",
       "url": "https://www.ostore.com.br/moletinho-adidas-adicolor-classic-0017412001/p",
@@ -3034,49 +3159,6 @@
         {
           "t": "GG",
           "p": 429.9,
-          "c": 479.9,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "4168",
-      "titulo": "Moletom Adidas Adicolor Classics 3-Stripes",
-      "url": "https://www.ostore.com.br/moletom-adidas-adicolor-classics-3stripes-0012412003/p",
-      "ref": "0012412003",
-      "tipo": "/Feminino/Moletom/Fechado/ ",
-      "tags": [],
-      "publicado": "2024-06-06T03:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/222278/moletom-adidas-adicolor-trefoil-preto-im2088-0.jpg?v=638539740816670000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/222279/moletom-adidas-adicolor-trefoil-preto-im2088-1.jpg?v=638539741588230000"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 379.99,
-          "c": 479.9,
-          "x": 379.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 379.99,
-          "c": 479.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 379.99,
-          "c": 479.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 379.99,
           "c": 479.9,
           "x": null,
           "a": false
@@ -3498,6 +3580,51 @@
           "t": "GG",
           "p": 399.9,
           "c": 479.9,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "4257",
+      "titulo": "Camiseta Adidas Trefoil Adicolor",
+      "url": "https://www.ostore.com.br/camiseta-adidas-trefoil-adicolor-0017401020/p",
+      "ref": "0017401020",
+      "tipo": "/Masculino/Camisetas/Manga Curta/ ",
+      "tags": [],
+      "publicado": "2024-08-13T06:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/222594/Camiseta-Adidas-Trefoil-Adicolor-JJ7862-0.jpg?v=638590889679500000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/222595/Camiseta-Adidas-Trefoil-Adicolor-JJ7862-1.jpg?v=638590889888400000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/222596/Camiseta-Adidas-Trefoil-Adicolor-JJ7862-2.jpg?v=638590889979700000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/222597/Camiseta-Adidas-Trefoil-Adicolor-JJ7862-3.jpg?v=638590890072830000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 119.99,
+          "c": 149.9,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 119.99,
+          "c": 149.9,
+          "x": 119.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 119.99,
+          "c": 149.9,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 119.99,
+          "c": 149.9,
           "x": null,
           "a": false
         }
@@ -4161,49 +4288,6 @@
           "p": 139.99,
           "c": 199.99,
           "x": 139.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "4436",
-      "titulo": "Calça Adidas Adicolor Classics Firebird",
-      "url": "https://www.ostore.com.br/calca-adidas-adicolor-classics-firebird-0012508000/p",
-      "ref": "0012508000",
-      "tipo": "/Feminino/Blusas/Manga Curta/ ",
-      "tags": [],
-      "publicado": "2024-11-19T00:00:00Z",
-      "imagens": [
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/223470/calca-adidas-firebird-bege-classic-IY9894-0.jpg?v=638675553117730000",
-        "https://ostoresneakers.vteximg.com.br/arquivos/ids/223471/calca-adidas-firebird-bege-classic-IY9894-1.jpg?v=638675553195570000"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 299.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 299.99,
-          "c": 299.99,
-          "x": 299.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 299.99,
-          "c": 299.99,
-          "x": 299.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 299.99,
-          "c": 299.99,
-          "x": 299.99,
           "a": true
         }
       ]

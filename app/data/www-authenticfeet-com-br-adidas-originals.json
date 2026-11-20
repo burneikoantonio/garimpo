@@ -2,7 +2,7 @@
   "marca": "Adidas Originals",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-20T20:19:20Z",
+  "atualizado": "2026-11-20T23:38:33Z",
   "produtos": [
     {
       "id": "28560",
@@ -573,8 +573,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 900.0,
-          "c": 900.0,
+          "p": 309.99,
+          "c": 899.99,
           "x": null,
           "a": false
         },
@@ -601,8 +601,8 @@
         },
         {
           "t": "41",
-          "p": 900.0,
-          "c": 900.0,
+          "p": 309.99,
+          "c": 899.99,
           "x": null,
           "a": false
         },
@@ -615,22 +615,22 @@
         },
         {
           "t": "43",
-          "p": 309.99,
-          "c": 899.99,
+          "p": 900.0,
+          "c": 900.0,
           "x": null,
           "a": false
         },
         {
           "t": "44",
-          "p": 309.99,
-          "c": 899.99,
+          "p": 900.0,
+          "c": 900.0,
           "x": null,
           "a": false
         },
         {
           "t": "45",
-          "p": 309.99,
-          "c": 899.99,
+          "p": 900.0,
+          "c": 900.0,
           "x": null,
           "a": false
         }
@@ -740,15 +740,15 @@
         },
         {
           "t": "38",
-          "p": 280.0,
-          "c": 280.0,
+          "p": 109.99,
+          "c": 279.99,
           "x": null,
           "a": false
         },
         {
           "t": "39",
-          "p": 280.0,
-          "c": 280.0,
+          "p": 109.99,
+          "c": 279.99,
           "x": null,
           "a": false
         },
@@ -789,8 +789,8 @@
         },
         {
           "t": "45",
-          "p": 280.0,
-          "c": 280.0,
+          "p": 109.99,
+          "c": 279.99,
           "x": null,
           "a": false
         }
@@ -1684,65 +1684,6 @@
           "t": "GGG",
           "p": 59.99,
           "c": 79.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "37781",
-      "titulo": "Shorts adidas Trefoil Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-trefoil-masculino-h3772-9-001/p",
-      "ref": "H3772-9-001",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2021-06-30T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/247370/Shorts-adidas-Trefoil-Masculino-Preto.jpg?v=637722441248600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/247371/Shorts-adidas-Trefoil-Masculino-Preto-1.jpg?v=637722441360770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/247372/Shorts-adidas-Trefoil-Masculino-Preto-2.jpg?v=637722441450600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/247373/Shorts-adidas-Trefoil-Masculino-Preto-3.jpg?v=637722441537130000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 109.99,
-          "c": 139.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 109.99,
-          "c": 139.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 109.99,
-          "c": 139.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 109.99,
-          "c": 139.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 109.99,
-          "c": 139.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 109.99,
-          "c": 139.99,
           "x": null,
           "a": false
         }
@@ -3916,63 +3857,6 @@
       ]
     },
     {
-      "id": "41318",
-      "titulo": "Shorts adidas Waffle Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-waffle-masculino-hp042-3-001/p",
-      "ref": "HP042-3-001",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2022-03-22T03:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/255413/Shorts-adidas-Waffle-Masculino-Preto.jpg?v=637852970878370000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/255414/Shorts-adidas-Waffle-Masculino-Preto-2.jpg?v=637852970987070000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 99.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 99.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 99.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 99.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 99.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 99.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "41535",
       "titulo": "Tênis adidas Top Ten Rb Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-adidas-top-ten-rb-masculino-gx075-5-001/p",
@@ -4696,65 +4580,6 @@
       ]
     },
     {
-      "id": "41664",
-      "titulo": "Shorts adidas Adv Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-adv-masculino-hf476-7-001/p",
-      "ref": "HF476-7-001",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2022-04-20T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/465521/HF476-7-001-1-AF-800x1000.jpg?v=638587407631730000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/467752/HF476-7-001-2-AF-800x1000.jpg?v=638587428002900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/469677/HF476-7-001-3-AF-800x1000.jpg?v=638587439690400000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/471120/HF476-7-001-4-AF-800x1000.jpg?v=638587449167900000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 89.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 89.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 89.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 89.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 89.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 89.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "41693",
       "titulo": "Tênis adidas Superstar",
       "url": "https://www.authenticfeet.com.br/tenis-adidas-superstar-gv761-5-100/p",
@@ -5038,65 +4863,6 @@
           "t": "GGG",
           "p": 129.99,
           "c": 349.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "41737",
-      "titulo": "Shorts adidas Wafle Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-wafle-masculino-hp042-2-200/p",
-      "ref": "HP042-2-200",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2022-10-26T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/335378/HP042-2-200-1.jpg?v=638210576949330000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/339210/HP042-2-200-2.jpg?v=638210632426770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/342784/HP042-2-200-3.jpg?v=638210648324970000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/344202/HP042-2-200-4.jpg?v=638210654256400000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 199.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 199.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 199.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 199.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 199.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 199.99,
-          "c": 399.99,
           "x": null,
           "a": false
         }
@@ -5713,72 +5479,6 @@
       ]
     },
     {
-      "id": "44263",
-      "titulo": "Calça adidas 3-Stripes Masculino",
-      "url": "https://www.authenticfeet.com.br/calca-adidas-3-stripes-masculino-gk899-5-001/p",
-      "ref": "GK899-5-001",
-      "tipo": "/Roupas/Masculino/Calças/ Calças",
-      "tags": [],
-      "publicado": "2022-06-13T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/274093/GK899-5-001-1.jpg?v=637986750295870000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/274177/GK899-5-001-2.jpg?v=637986753741830000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/274257/GK899-5-001-3.jpg?v=637986756919430000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/274324/GK899-5-001-4.jpg?v=637986758615100000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 139.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 139.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 139.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 139.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 139.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 139.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 139.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "44301",
       "titulo": "Camiseta adidas Clr Masculina",
       "url": "https://www.authenticfeet.com.br/camiseta-adidas-clr-masculina-hr574-3-100/p",
@@ -6205,65 +5905,6 @@
         {
           "t": "GGGG",
           "p": 129.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "44390",
-      "titulo": "Shorts adidas 3-Stripes Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-3-stripes-masculino-hk738-9-400/p",
-      "ref": "HK738-9-400",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2022-06-13T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/463768/HK738-9-400-1-AF-800x1000.jpg?v=638587401223430000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/466008/HK738-9-400-2-AF-800x1000.jpg?v=638587421425570000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/468207/HK738-9-400-3-AF-800x1000.jpg?v=638587433088730000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/470073/HK738-9-400-4-AF-800x1000.jpg?v=638587444013830000"
-      ],
-      "variantes": [
-        {
-          "t": "GG",
-          "p": 79.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 79.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 79.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 79.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 79.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 79.99,
           "c": 299.99,
           "x": null,
           "a": false
@@ -7373,71 +7014,6 @@
       ]
     },
     {
-      "id": "46746",
-      "titulo": "Shorts adidas 3-Stripes Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-3-stripes-masculino-hk732-8-001/p",
-      "ref": "HK732-8-001",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2022-08-25T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/287979/HK732-8-001-1.jpg?v=638066332713900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/288215/HK732-8-001-2.jpg?v=638066333386900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/288535/HK732-8-001-3.jpg?v=638066333899800000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 69.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 69.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 69.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 69.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 69.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 69.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 69.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "47189",
       "titulo": "Shorts adidas Sportswear Masculino",
       "url": "https://www.authenticfeet.com.br/shorts-adidas-sportswear-masculino-hg207-0-001/p",
@@ -7496,122 +7072,6 @@
       ]
     },
     {
-      "id": "47242",
-      "titulo": "Blusão adidas Camo Masculino",
-      "url": "https://www.authenticfeet.com.br/blusao-adidas-camo-masculino-hk280-2-001/p",
-      "ref": "HK280-2-001",
-      "tipo": "/Roupas/Masculino/Blusões/ Jaquetas",
-      "tags": [],
-      "publicado": "2022-10-14T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310211/HK280-2-001-1.jpg?v=638161523308670000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310328/HK280-2-001-2.jpg?v=638161523622170000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310546/HK280-2-001-3.jpg?v=638161524292170000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 189.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 189.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 189.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 189.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 189.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 189.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "47244",
-      "titulo": "Shorts adidas Camo Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-camo-masculino-hk281-2-001/p",
-      "ref": "HK281-2-001",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2022-10-14T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310228/HK281-2-001-1.jpg?v=638161523375430000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310358/HK281-2-001-2.jpg?v=638161523677500000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310566/HK281-2-001-3.jpg?v=638161524344700000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 119.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "47245",
       "titulo": "Shorts adidas 3-Stripes Masculino",
       "url": "https://www.authenticfeet.com.br/shorts-adidas-3-stripes-masculino-hk739-0-001/p",
@@ -7663,236 +7123,6 @@
           "t": "GGG",
           "p": 119.99,
           "c": 299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "47250",
-      "titulo": "Tênis adidas Nizza Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-nizza-masculino-cq233-2-001/p",
-      "ref": "CQ233-2-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2022-10-19T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310277/CQ233-2-001-1.jpg?v=638161523518000000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310409/CQ233-2-001-2.jpg?v=638161523785200000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310581/CQ233-2-001-3.jpg?v=638161524393430000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310720/CQ233-2-001-4.jpg?v=638161525113570000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 149.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "47251",
-      "titulo": "Tênis adidas Nizza Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-nizza-masculino-cq233-3-001/p",
-      "ref": "CQ233-3-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2022-10-19T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310304/CQ233-3-001-1.jpg?v=638161523575230000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310437/CQ233-3-001-2.jpg?v=638161523838970000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310605/CQ233-3-001-3.jpg?v=638161524448170000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/310748/CQ233-3-001-4.jpg?v=638161525171070000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 199.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 199.99,
-          "c": 499.99,
           "x": null,
           "a": false
         }
@@ -8123,121 +7353,6 @@
           "t": "46",
           "p": 399.99,
           "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "47267",
-      "titulo": "Tênis adidas Ozelia Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-ozelia-masculino-h0425-1-001/p",
-      "ref": "H0425-1-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2022-10-19T03:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/325493/H0425-1-001-1.jpg?v=638173318018270000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/325694/H0425-1-001-2.jpg?v=638173327286800000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/325882/H0425-1-001-3.jpg?v=638173327894630000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/326066/H0425-1-001-4.jpg?v=638173328510400000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 499.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 499.99,
-          "c": 699.99,
           "x": null,
           "a": false
         }
@@ -8905,65 +8020,6 @@
           "t": "GGGG",
           "p": 129.99,
           "c": 299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "47715",
-      "titulo": "Shorts adidas Adventure Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-adventure-masculino-ic234-8-001/p",
-      "ref": "IC234-8-001",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2022-11-28T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/463950/IC234-8-001-1-AF-800x1000.jpg?v=638587401858830000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/466190/IC234-8-001-2-AF-800x1000.jpg?v=638587422109470000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/468345/IC234-8-001-3-AF-800x1000.jpg?v=638587433698030000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/470168/IC234-8-001-4-AF-800x1000.jpg?v=638587444516700000"
-      ],
-      "variantes": [
-        {
-          "t": "M",
-          "p": 159.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 159.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 159.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 159.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 159.99,
-          "c": 379.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 159.99,
-          "c": 379.99,
           "x": null,
           "a": false
         }
@@ -9816,8 +8872,8 @@
         },
         {
           "t": "GG",
-          "p": 249.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "x": null,
           "a": false
         },
@@ -10487,8 +9543,8 @@
         },
         {
           "t": "39",
-          "p": 699.99,
-          "c": 1199.99,
+          "p": 1200.0,
+          "c": 1200.0,
           "x": null,
           "a": false
         },
@@ -10696,15 +9752,15 @@
         },
         {
           "t": "36",
-          "p": 569.99,
-          "c": 1199.99,
+          "p": 1200.0,
+          "c": 1200.0,
           "x": null,
           "a": false
         },
         {
           "t": "37",
-          "p": 569.99,
-          "c": 1199.99,
+          "p": 1200.0,
+          "c": 1200.0,
           "x": null,
           "a": false
         },
@@ -10717,8 +9773,8 @@
         },
         {
           "t": "39",
-          "p": 569.99,
-          "c": 1199.99,
+          "p": 1200.0,
+          "c": 1200.0,
           "x": null,
           "a": false
         },
@@ -10731,8 +9787,8 @@
         },
         {
           "t": "41",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 569.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -11306,8 +10362,8 @@
         },
         {
           "t": "35",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 299.99,
+          "c": 499.99,
           "x": null,
           "a": false
         },
@@ -11348,8 +10404,8 @@
         },
         {
           "t": "41",
-          "p": 299.99,
-          "c": 499.99,
+          "p": 500.0,
+          "c": 500.0,
           "x": null,
           "a": false
         },
@@ -11369,8 +10425,8 @@
         },
         {
           "t": "44",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 299.99,
+          "c": 499.99,
           "x": null,
           "a": false
         },
@@ -15114,8 +14170,8 @@
         },
         {
           "t": "GGG",
-          "p": 350.0,
-          "c": 350.0,
+          "p": 239.99,
+          "c": 349.99,
           "x": null,
           "a": false
         }
@@ -15740,8 +14796,8 @@
         },
         {
           "t": "46",
-          "p": 579.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         }
@@ -16202,121 +15258,6 @@
           "t": "46",
           "p": 399.99,
           "c": 599.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "49715",
-      "titulo": "Tênis adidas ADI2000 Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-adi2000-masculino-gx463-4-001/p",
-      "ref": "GX463-4-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2023-11-13T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497018/GX463-4-001-1-AF-800x1000.jpg?v=638784423457000000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497019/GX463-4-001-2-AF-800x1000.jpg?v=638784423538100000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497020/GX463-4-001-3-AF-800x1000.jpg?v=638784423630770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497021/GX463-4-001-4-AF-800x1000.jpg?v=638784423737170000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 639.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 639.99,
-          "c": 799.99,
           "x": null,
           "a": false
         }
@@ -20201,121 +19142,6 @@
       ]
     },
     {
-      "id": "52939",
-      "titulo": "Tênis adidas Adimatic Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-adimatic-masculino-id393-8-001/p",
-      "ref": "ID393-8-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2024-02-02T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/501035/ID393-8-001-1-AF-800x1000.jpg?v=638865542180700000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/501036/ID393-8-001-2-AF-800x1000.jpg?v=638865542252430000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/501037/ID393-8-001-3-AF-800x1000.jpg?v=638865542327100000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/501038/ID393-8-001-4-AF-800x1000.jpg?v=638865542395470000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "33",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 379.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "52952",
       "titulo": "Tênis adidas Samba XLG Unissex",
       "url": "https://www.authenticfeet.com.br/tenis-adidas-samba-xlg-unissex-ie137-7-100/p",
@@ -22680,79 +21506,6 @@
       ]
     },
     {
-      "id": "53063",
-      "titulo": "Shorts adidas Fbird Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-fbird-masculino-im942-2-400/p",
-      "ref": "IM942-2-400",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2024-02-02T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/465095/IM942-2-400-1-AF-800x1000.jpg?v=638587406031830000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/467335/IM942-2-400-2-AF-800x1000.jpg?v=638587426411900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/469387/IM942-2-400-3-AF-800x1000.jpg?v=638587438344530000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/470917/IM942-2-400-4-AF-800x1000.jpg?v=638587448052700000"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 200.0,
-          "c": 200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 200.0,
-          "c": 200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 200.0,
-          "c": 200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 200.0,
-          "c": 200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 200.0,
-          "c": 200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 200.0,
-          "c": 200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGGG",
-          "p": 200.0,
-          "c": 200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 200.0,
-          "c": 200.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "53074",
       "titulo": "Camiseta adidas Leisure Note Masculina",
       "url": "https://www.authenticfeet.com.br/camiseta-adidas-leisure-note-masculina-is021-4-100/p",
@@ -22792,51 +21545,6 @@
           "t": "GG",
           "p": 99.99,
           "c": 249.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "53084",
-      "titulo": "Shorts adidas Adibreak Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-adibreak-masculino-iu237-2-400/p",
-      "ref": "IU237-2-400",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2024-02-02T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/465103/IU237-2-400-1-AF-800x1000.jpg?v=638587406062270000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/467343/IU237-2-400-2-AF-800x1000.jpg?v=638587426438400000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/469395/IU237-2-400-3-AF-800x1000.jpg?v=638587438379530000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/470925/IU237-2-400-4-AF-800x1000.jpg?v=638587448085470000"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 169.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 169.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 169.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 169.99,
-          "c": 349.99,
           "x": null,
           "a": false
         }
@@ -23484,72 +22192,6 @@
           "t": "44",
           "p": 189.99,
           "c": 599.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "53208",
-      "titulo": "Tênis adidas Ozmillen Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-ozmillen-masculino-id583-0-001/p",
-      "ref": "ID583-0-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2024-02-07T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/426741/ID583-0-001-1.jpg?v=638531858747870000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/426838/ID583-0-001-2.jpg?v=638531862889300000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/426935/ID583-0-001-3.jpg?v=638531863600930000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/427032/ID583-0-001-4.jpg?v=638531864120070000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 499.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 499.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 499.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 499.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 499.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 499.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 499.99,
-          "c": 799.99,
           "x": null,
           "a": false
         }
@@ -26678,121 +25320,6 @@
       ]
     },
     {
-      "id": "54031",
-      "titulo": "Tênis Adidas Adi2000 Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-adi2000-masculino-if882-3-001/p",
-      "ref": "IF882-3-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2023-12-20T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497048/IF882-3-001-1-AF-800x1000.jpg?v=638784440260130000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497049/IF882-3-001-2-AF-800x1000.jpg?v=638784440371600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497050/IF882-3-001-3-AF-800x1000.jpg?v=638784440505700000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497051/IF882-3-001-4-AF-800x1000.jpg?v=638784440653800000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 399.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "54367",
       "titulo": "Tênis adidas Ozmillen Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-adidas-ozmillen-masculino-ji333-1-600/p",
@@ -27591,236 +26118,6 @@
         {
           "t": "46",
           "p": 439.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "54446",
-      "titulo": "Tênis adidas ADI2000 Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-adi2000-masculino-id209-7-001/p",
-      "ref": "ID209-7-001",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2024-05-03T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497025/ID209-7-001-1-AF-800x1000.jpg?v=638784427899900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497026/ID209-7-001-2-AF-800x1000.jpg?v=638784428160430000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497027/ID209-7-001-3-AF-800x1000.jpg?v=638784428270900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497028/ID209-7-001-4-AF-800x1000.jpg?v=638784428368200000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 599.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "54447",
-      "titulo": "Tênis adidas ADI2000 Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-adidas-adi2000-masculino-id210-3-100/p",
-      "ref": "ID210-3-100",
-      "tipo": "/Tênis/Masculino/adidas/ Tênis",
-      "tags": [],
-      "publicado": "2024-05-03T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/501960/ID210-3-100-1-AF-800X1000.jpg?v=638878525591900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/501961/ID210-3-100-2-AF-800X1000.jpg?v=638878525738900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/501962/ID210-3-100-3-AF-800X1000.jpg?v=638878526048500000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/501963/ID210-3-100-4-AF-800X1000.jpg?v=638878526500170000"
-      ],
-      "variantes": [
-        {
-          "t": "33",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 679.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 679.99,
           "c": 799.99,
           "x": null,
           "a": false
@@ -30349,86 +28646,6 @@
       ]
     },
     {
-      "id": "54639",
-      "titulo": "Shorts adidas Sprinter Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-sprinter-masculino-iz241-4-300/p",
-      "ref": "IZ241-4-300",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2024-05-03T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/481307/IZ241-4-300-1-AF-800X1000.jpg?v=638617661899930000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/481308/IZ241-4-300-2-AF-800X1000.jpg?v=638617662014830000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/481309/IZ241-4-300-3-AF-800X1000.jpg?v=638617662141800000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/481310/IZ241-4-300-4-AF-800X1000.jpg?v=638617662254900000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGGG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PPP",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "54652",
       "titulo": "Tênis adidas Samba OG Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-adidas-samba-og-masculino-ji200-3-100/p",
@@ -31195,65 +29412,6 @@
       ]
     },
     {
-      "id": "55488",
-      "titulo": "Camiseta adidas 3-Stripes Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-adidas-3-stripes-masculino-iz258-0-001/p",
-      "ref": "IZ258-0-001",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2024-07-17T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/476946/IZ258-0-001-1-AF-800X1000.jpg?v=638594066658500000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/477036/IZ258-0-001-2-AF-800X1000.jpg?v=638594067471330000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/477119/IZ258-0-001-3-AF-800X1000.jpg?v=638594068218930000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/477201/IZ258-0-001-4-AF-800X1000.jpg?v=638594068728230000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "55499",
       "titulo": "Camiseta adidas Graphic Masculina",
       "url": "https://www.authenticfeet.com.br/camiseta-adidas-graphic-masculina-iy207-7-500/p",
@@ -31441,65 +29599,6 @@
           "c": 179.99,
           "x": 89.99,
           "a": true
-        },
-        {
-          "t": "PP",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "55510",
-      "titulo": "Camiseta adidas Graphic Masculino",
-      "url": "https://www.authenticfeet.com.br/camiseta-adidas-graphic-masculino-iz483-9-100/p",
-      "ref": "IZ483-9-100",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2024-07-17T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/498207/IZ483-9-100-1-AF-800X1000.jpg?v=638814732831100000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/498208/IZ483-9-100-2-AF-800X1000.jpg?v=638814732909530000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/498209/IZ483-9-100-3-AF-800X1000.jpg?v=638814733014500000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/498210/IZ483-9-100-4-AF-800X1000.jpg?v=638814733104670000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 89.99,
-          "c": 179.99,
-          "x": null,
-          "a": false
         },
         {
           "t": "PP",
@@ -42329,65 +40428,6 @@
       ]
     },
     {
-      "id": "63464",
-      "titulo": "Jaqueta adidas Classic Track Top Masculina",
-      "url": "https://www.authenticfeet.com.br/jaqueta-adidas-classic-track-top-masculina-ke352-7-001/p",
-      "ref": "KE352-7-001",
-      "tipo": "/Roupas/Masculino/Jaquetas/ Jaquetas",
-      "tags": [],
-      "publicado": "2025-11-24T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509569/KE352-7-001-1-800x1000.jpg?v=639245754811570000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509570/KE352-7-001-2-800x1000.jpg?v=639245754811600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509571/KE352-7-001-3-800x1000.jpg?v=639245754811670000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509572/KE352-7-001-4-800x1000.jpg?v=639245754811700000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 449.99,
-          "c": 449.99,
-          "x": 427.49,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 449.99,
-          "c": 449.99,
-          "x": 427.49,
-          "a": true
-        },
-        {
-          "t": "GGG",
-          "p": 449.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 449.99,
-          "c": 449.99,
-          "x": 427.49,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 449.99,
-          "c": 449.99,
-          "x": 427.49,
-          "a": true
-        },
-        {
-          "t": "PP",
-          "p": 449.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "63465",
       "titulo": "Calça adidas Classic Track Masculina",
       "url": "https://www.authenticfeet.com.br/calca-adidas-classic-track-masculina-ke353-0-001/p",
@@ -43080,30 +41120,6 @@
           "p": 99.99,
           "c": 179.99,
           "x": 99.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "63975",
-      "titulo": "Camisa adidas Polo Premium Essentials Masculina",
-      "url": "https://www.authenticfeet.com.br/camisa-adidas-polo-premium-essentials-masculina-kd657-0-100/p",
-      "ref": "KD657-0-100",
-      "tipo": "/Roupas/Masculino/Camisas/ Camisa",
-      "tags": [],
-      "publicado": "2025-12-13T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/532423/KD657-0-100-1-800x1000.jpg?v=639095523673400000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/532424/KD657-0-100-2-800x1000.jpg?v=639095523673400000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/532425/KD657-0-100-3-800x1000.jpg?v=639095523673400000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/532426/KD657-0-100-4-800x1000.jpg?v=639095523673400000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 219.99,
-          "c": 349.99,
-          "x": 219.99,
           "a": true
         }
       ]
@@ -44503,8 +42519,8 @@
           "t": "G",
           "p": 149.99,
           "c": 249.99,
-          "x": 149.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "GG",
@@ -44982,65 +42998,6 @@
           "t": "PP",
           "p": 129.99,
           "c": 229.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "65540",
-      "titulo": "Jaqueta adidas Moletom 3 stripes Masculina",
-      "url": "https://www.authenticfeet.com.br/jaqueta-adidas-moletom-3-stripes-masculino-jx154-6-001/p",
-      "ref": "JX154-6-001",
-      "tipo": "/Roupas/Masculino/Jaquetas/ Jaquetas",
-      "tags": [],
-      "publicado": "2026-04-30T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/547835/JX154-6-001-1-800x1000.jpg?v=639138689675600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/547836/JX154-6-001-2-800x1000.jpg?v=639138689675770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/547837/JX154-6-001-3-800x1000.jpg?v=639138689675770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/547838/JX154-6-001-4-800x1000.jpg?v=639138689675770000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 329.99,
-          "c": 499.99,
-          "x": 329.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 329.99,
-          "c": 499.99,
-          "x": 329.99,
-          "a": true
-        },
-        {
-          "t": "GGG",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 329.99,
-          "c": 499.99,
-          "x": 329.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 329.99,
-          "c": 499.99,
-          "x": 329.99,
-          "a": true
-        },
-        {
-          "t": "PP",
-          "p": 329.99,
-          "c": 499.99,
           "x": null,
           "a": false
         }
