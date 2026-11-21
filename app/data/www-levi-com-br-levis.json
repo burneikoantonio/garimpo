@@ -2,7 +2,7 @@
   "marca": "Levi's",
   "loja": "Site Levi's",
   "site": "www.levi.com.br",
-  "atualizado": "2026-11-21T15:39:07Z",
+  "atualizado": "2026-11-21T19:42:32Z",
   "produtos": [
     {
       "id": "10121",
@@ -752,8 +752,8 @@
           "t": "40X34",
           "p": 299.95,
           "c": 599.9,
-          "x": 299.95,
-          "a": true
+          "x": null,
+          "a": false
         }
       ]
     },

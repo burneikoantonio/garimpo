@@ -2,8 +2,105 @@
   "marca": "Blck Brasil",
   "loja": "Site Blck Brasil",
   "site": "blckbrasil.com.br",
-  "atualizado": "2026-11-21T15:49:51Z",
+  "atualizado": "2026-11-21T19:52:42Z",
   "produtos": [
+    {
+      "id": "10372621599031",
+      "titulo": "Short Preto BLCK Royalty",
+      "url": "https://blckbrasil.com.br/products/short-preto-blck-royalty",
+      "ref": "",
+      "tipo": "",
+      "tags": [
+        "LIVE",
+        "SHORTS",
+        "VESTUÁRIO"
+      ],
+      "publicado": "2026-11-21T15:59:32-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOPRETO2_7a837205-d6d8-410a-a7c5-5644ce7ea7dc.jpg?v=1766032528",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOPRETO3_42169b27-ade4-4614-bcac-402af0c4364a.jpg?v=1766032529",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOPRETO4_a9c275ab-6f34-4af3-be7d-5d107aee5733.jpg?v=1766032529",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO1_08d79c7c-bafc-42c8-909e-198b14329de3.jpg?v=1766032529"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 37.00,
+          "c": 199.90,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 37.00,
+          "c": 199.90,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 37.00,
+          "c": 199.90,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 37.00,
+          "c": 199.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10860065554743",
+      "titulo": "Boné Snapback Azul Marinho World Wide",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-azul-marinho-world-wide",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "ATC",
+        "CAIXA",
+        "LIVE",
+        "SEPARAR"
+      ],
+      "publicado": "2026-11-21T15:58:28-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B09_ef8f9f8f-029b-4742-920a-2744aad82063.jpg?v=1783468342",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B09-2_163920c0-7824-4f80-828a-a317eb4acc39.jpg?v=1783468343",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B09-3_470d05eb-92bd-459b-8f87-07b1b8b6191c.jpg?v=1783468342"
+      ],
+      "variantes": [
+        {
+          "t": "Azul Marinho / Único",
+          "p": 97.00,
+          "c": 199.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11071892422967",
+      "titulo": "Bucket Hat Off White Halftone Purple",
+      "url": "https://blckbrasil.com.br/products/bucket-hat-off-white-halftone-purple",
+      "ref": "",
+      "tipo": "",
+      "tags": [
+        "Chapéus",
+        "LIVE",
+        "PRODUZIR",
+        "VESTUÁRIO"
+      ],
+      "publicado": "2026-11-21T15:54:58-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/bk04_7c4f2517-5bc9-443d-8d7c-71173f26c1d3.jpg?v=1794159651"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 27.00,
+          "c": 89.90,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "9984604897591",
       "titulo": "Boné Snapback Black Logo Holografic Gold",
@@ -11,7 +108,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "INFLUENCER"
+        "INFLUENCER",
+        "SEPARAR"
       ],
       "publicado": "2026-11-21T12:18:53-03:00",
       "imagens": [
@@ -62,7 +160,8 @@
       "tipo": "Chapéus",
       "tags": [
         "CRIABH",
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-21T00:19:37-03:00",
       "imagens": [
@@ -86,7 +185,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T19:39:07-03:00",
       "imagens": [
@@ -135,7 +235,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS"
+        "ADS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T16:23:39-03:00",
       "imagens": [
@@ -436,7 +537,7 @@
           "t": "GG",
           "p": 37.00,
           "c": 199.90,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -476,51 +577,6 @@
           "p": 37.00,
           "c": 199.90,
           "a": true
-        },
-        {
-          "t": "GG",
-          "p": 37.00,
-          "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10372621599031",
-      "titulo": "Short Preto BLCK Royalty",
-      "url": "https://blckbrasil.com.br/products/short-preto-blck-royalty",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "LIVE",
-        "SHORTS",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-20T01:44:51-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOPRETO2_7a837205-d6d8-410a-a7c5-5644ce7ea7dc.jpg?v=1766032528",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOPRETO3_42169b27-ade4-4614-bcac-402af0c4364a.jpg?v=1766032529",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOPRETO4_a9c275ab-6f34-4af3-be7d-5d107aee5733.jpg?v=1766032529",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO1_08d79c7c-bafc-42c8-909e-198b14329de3.jpg?v=1766032529"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 37.00,
-          "c": 199.90,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 37.00,
-          "c": 199.90,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 37.00,
-          "c": 199.90,
-          "a": false
         },
         {
           "t": "GG",
@@ -611,48 +667,6 @@
           "t": "GG / Preta",
           "p": 47.00,
           "c": 179.90,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "10874129940791",
-      "titulo": "Camiseta Amarela New Wings Icon",
-      "url": "https://blckbrasil.com.br/products/camiseta-amarela-new-wings-icon",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [
-        "LIVE",
-        "TSHIRT",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-20T01:26:31-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/amarela-newwings.jpg?v=1784214358"
-      ],
-      "variantes": [
-        {
-          "t": "P / Amarela",
-          "p": 47.00,
-          "c": 165.90,
-          "a": true
-        },
-        {
-          "t": "M / Amarela",
-          "p": 47.00,
-          "c": 165.90,
-          "a": false
-        },
-        {
-          "t": "G / Amarela",
-          "p": 47.00,
-          "c": 165.90,
-          "a": false
-        },
-        {
-          "t": "GG / Amarela",
-          "p": 47.00,
-          "c": 165.90,
           "a": false
         }
       ]
@@ -791,29 +805,6 @@
       ]
     },
     {
-      "id": "10280712372535",
-      "titulo": "Relógio BLCK Vermelho Splash Born Raised",
-      "url": "https://blckbrasil.com.br/products/relogio-blck-vermelho-splash-born-raised",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "ACESSÓRIOS",
-        "LIVE"
-      ],
-      "publicado": "2026-11-20T01:15:28-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/R01_cca1a975-a653-49fe-99a8-fabeea2c3d65.jpg?v=1758141040"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 47.00,
-          "c": 319.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10870607249719",
       "titulo": "Bucket Hat Amarelo e Preto BLCK 01",
       "url": "https://blckbrasil.com.br/products/bucket-hat-amarelo-e-preto-blck-01",
@@ -866,7 +857,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -890,7 +882,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -914,7 +907,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -940,7 +934,8 @@
       "tipo": "Chapéus",
       "tags": [
         "CRIABH",
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -965,7 +960,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -990,7 +986,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -1015,7 +1012,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -1040,7 +1038,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -1083,38 +1082,14 @@
       ]
     },
     {
-      "id": "10831989080375",
-      "titulo": "Boné Snapback Amarelo Tiger Verde",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-amarelo-tiger-verde-1",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "COPA",
-        "LIVE"
-      ],
-      "publicado": "2026-11-20T00:28:37-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B06_406ccfa4-d453-4400-8562-fb00bdcc92fe.jpg?v=1770821481",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B06-2_65b29d67-7b93-4a3d-bd8a-055a196c31b3.jpg?v=1770821481",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B06-3_c17ff894-fb26-44ea-a8bf-47d57ff44304.jpg?v=1770821481"
-      ],
-      "variantes": [
-        {
-          "t": "Amarelo / Único",
-          "p": 87.00,
-          "c": 219.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10800644817207",
       "titulo": "Boné Snapback Vermelho Patch",
       "url": "https://blckbrasil.com.br/products/bone-snapback-vermelho-patch",
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -1160,7 +1135,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-preto-resping-1",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-20T00:28:33-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B49_cee5b21d-9bc0-4870-8a14-74558544d790.jpg?v=1793049522",
@@ -1183,7 +1160,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:33-03:00",
       "imagens": [
@@ -1208,7 +1186,8 @@
       "tipo": "Chapéus",
       "tags": [
         "CRIABH",
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:33-03:00",
       "imagens": [
@@ -1258,7 +1237,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:33-03:00",
       "imagens": [
@@ -1282,7 +1262,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:33-03:00",
       "imagens": [
@@ -1305,7 +1286,9 @@
       "url": "https://blckbrasil.com.br/products/bone-azul-logo-contour-splash",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-20T00:28:33-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B1_e983f7fd-8c9e-4b6b-88e8-2ce9d96459f0.jpg?v=1794849295",
@@ -1329,7 +1312,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:28:32-03:00",
       "imagens": [
@@ -1354,7 +1338,8 @@
       "tipo": "Chapéus",
       "tags": [
         "BLACK",
-        "CLÁSSICOS"
+        "CLÁSSICOS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-20T00:02:05-03:00",
       "imagens": [
@@ -1378,7 +1363,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:19-03:00",
       "imagens": [
@@ -1403,7 +1389,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:18-03:00",
       "imagens": [
@@ -1428,6 +1415,7 @@
       "tipo": "Chapéus",
       "tags": [
         "BLACK",
+        "SEPARAR",
         "TESTE"
       ],
       "publicado": "2026-11-19T23:55:18-03:00",
@@ -1452,7 +1440,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:18-03:00",
       "imagens": [
@@ -1477,7 +1466,8 @@
       "tipo": "Chapéus",
       "tags": [
         "BLACK",
-        "CREATOR"
+        "CREATOR",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:18-03:00",
       "imagens": [
@@ -1502,7 +1492,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:18-03:00",
       "imagens": [
@@ -1527,6 +1518,7 @@
       "tipo": "Chapéus",
       "tags": [
         "BLACK",
+        "SEPARAR",
         "TESTE"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
@@ -1552,6 +1544,7 @@
       "tipo": "Chapéus",
       "tags": [
         "BLACK",
+        "SEPARAR",
         "TESTE"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
@@ -1576,7 +1569,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1600,7 +1594,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1624,7 +1619,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1648,7 +1644,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1672,7 +1669,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1696,7 +1694,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1720,7 +1719,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1746,7 +1746,8 @@
       "tipo": "Chapéus",
       "tags": [
         "2K26",
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1771,7 +1772,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1795,7 +1797,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1819,7 +1822,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1844,7 +1848,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1869,7 +1874,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1894,7 +1900,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1919,7 +1926,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1941,7 +1949,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
       "imagens": [
@@ -1966,6 +1975,7 @@
       "tipo": "Chapéus",
       "tags": [
         "BLACK",
+        "SEPARAR",
         "TESTE"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
@@ -1991,6 +2001,7 @@
       "tipo": "Chapéus",
       "tags": [
         "BLACK",
+        "SEPARAR",
         "TESTE"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
@@ -2015,7 +2026,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
       "imagens": [
@@ -2039,7 +2051,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
       "imagens": [
@@ -2063,7 +2076,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2088,6 +2102,7 @@
       "tipo": "Chapéus",
       "tags": [
         "BLACK",
+        "SEPARAR",
         "TESTE"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
@@ -2112,7 +2127,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2137,7 +2153,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2162,7 +2179,8 @@
       "tipo": "Chapéus",
       "tags": [
         "BLACK",
-        "INFLUENCER"
+        "INFLUENCER",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2186,7 +2204,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2211,7 +2230,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2225,32 +2245,6 @@
           "t": "Vinho / Único",
           "p": 219.90,
           "c": 219.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10860065554743",
-      "titulo": "Boné Snapback Azul Marinho World Wide",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-azul-marinho-world-wide",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "ATC",
-        "CAIXA",
-        "LIVE"
-      ],
-      "publicado": "2026-11-19T23:27:37-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B09_ef8f9f8f-029b-4742-920a-2744aad82063.jpg?v=1783468342",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B09-2_163920c0-7824-4f80-828a-a317eb4acc39.jpg?v=1783468343",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B09-3_470d05eb-92bd-459b-8f87-07b1b8b6191c.jpg?v=1783468342"
-      ],
-      "variantes": [
-        {
-          "t": "Azul Marinho / Único",
-          "p": 97.00,
-          "c": 199.90,
           "a": true
         }
       ]
@@ -2285,7 +2279,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-vinho-resping",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-19T21:27:19-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B40_a842cce7-050c-46fe-aeaa-b787b58af5cd.jpg?v=1793049522",
@@ -2308,7 +2304,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-18T15:35:07-03:00",
       "imagens": [
@@ -2321,31 +2318,6 @@
           "t": "Branco / Único",
           "p": 137.00,
           "c": 219.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10893054214455",
-      "titulo": "Boné Kids Snapback Preto Basic Caramelo",
-      "url": "https://blckbrasil.com.br/products/bone-kids-snapback-preto-basic-caramelo",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "CAIXA",
-        "LIVE"
-      ],
-      "publicado": "2026-11-18T01:39:49-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B87_e12ca4a3-03bb-4009-8a3a-941ad5e37d8d.jpg?v=1785275392",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B87-2_3533acac-3746-4ac4-86b8-a299cb54b805.jpg?v=1785275392",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B87-3_7cccf400-e63f-45c4-bc9b-eb2530379fc9.jpg?v=1785275392"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Kids",
-          "p": 67.00,
-          "c": 159.90,
           "a": true
         }
       ]
@@ -2594,49 +2566,6 @@
       ]
     },
     {
-      "id": "10914462499127",
-      "titulo": "Camiseta Oversized Amarela Resping",
-      "url": "https://blckbrasil.com.br/products/camiseta-oversized-amarela-resping",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [
-        "LIVE",
-        "OVERSIZED",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-18T00:42:10-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/OVERRESPING-AMARELA-MCKP.jpg?v=1786647536",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/OVERRESPING-AMARELA.jpg?v=1786647536"
-      ],
-      "variantes": [
-        {
-          "t": "P / Amarela",
-          "p": 67.00,
-          "c": 189.90,
-          "a": true
-        },
-        {
-          "t": "M / Amarela",
-          "p": 67.00,
-          "c": 189.90,
-          "a": false
-        },
-        {
-          "t": "G / Amarela",
-          "p": 67.00,
-          "c": 189.90,
-          "a": false
-        },
-        {
-          "t": "GG / Amarela",
-          "p": 67.00,
-          "c": 189.90,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "10498683437367",
       "titulo": "Boné Snapback Off White Cotelê Preto",
       "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-cotele-preto",
@@ -2644,7 +2573,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-17T12:01:12-03:00",
       "imagens": [
@@ -2669,7 +2599,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-17T12:01:11-03:00",
       "imagens": [
@@ -2694,7 +2625,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-17T12:01:10-03:00",
       "imagens": [
@@ -2719,7 +2651,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-17T12:01:09-03:00",
       "imagens": [
@@ -2745,7 +2678,8 @@
       "tags": [
         "ADS",
         "ANCÔRAS",
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-17T12:01:08-03:00",
       "imagens": [
@@ -2770,7 +2704,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-17T12:01:08-03:00",
       "imagens": [
@@ -2796,7 +2731,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-17T12:01:06-03:00",
       "imagens": [
@@ -2843,7 +2779,8 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-16T15:07:58-03:00",
       "imagens": [
@@ -2976,7 +2913,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-preto-logo-contour-splash",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-16T14:16:38-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B4-1_af25cc61-15c1-4a5c-8c14-f9b9ebab0c75.jpg?v=1758636913",
@@ -2999,7 +2938,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-basic-suede-marrom-escuro-2-0",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-16T13:40:28-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B35_526dfb19-12e9-471b-8af6-399160c07fcb.jpg?v=1794848017",
@@ -3021,7 +2962,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-suede-all-black-2-1",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-16T13:40:18-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B41_67353821-93c5-4607-8a5a-70d8b1267acb.jpg?v=1750707474",
@@ -3043,7 +2986,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-basic-suede-marrom-2-0",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-16T13:40:07-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B36_25c3aaa8-9c81-4377-ab61-4686f680db24.jpg?v=1794847973",
@@ -3065,7 +3010,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-suede-azul-marinho-2-1",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-16T13:39:38-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B38_f3562449-f7f0-4ffc-a872-62a6dfadff2b.jpg?v=1750706629",
@@ -3087,7 +3034,9 @@
       "url": "https://blckbrasil.com.br/products/bone-preto-strapback-follow-laranja",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-16T13:39:08-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Nov1__51_b51b516f-a7ba-4995-96d3-2f16fdc38c74.jpg?v=1701725817",
@@ -3109,7 +3058,9 @@
       "url": "https://blckbrasil.com.br/products/bone-bege-strapback-follow-logo-vermelho",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-16T13:39:08-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Nov1__10_5603ae60-1dd2-435f-9a5d-13a1a8cc5f8a.jpg?v=1699306625",
@@ -3204,48 +3155,6 @@
       ]
     },
     {
-      "id": "11091244515639",
-      "titulo": "Camiseta Preta Holding",
-      "url": "https://blckbrasil.com.br/products/camiseta-preta-holding",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "LIVE",
-        "TSHIRT",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-16T13:39:01-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/preta-holding.jpg?v=1794846670"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 47.00,
-          "c": 119.90,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 47.00,
-          "c": 119.90,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 47.00,
-          "c": 119.90,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 47.00,
-          "c": 119.90,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "11091244646711",
       "titulo": "Camiseta Rosa Brushed Red",
       "url": "https://blckbrasil.com.br/products/camiseta-rosa-brushed-red",
@@ -3266,42 +3175,6 @@
           "p": 47.00,
           "c": 119.90,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "11091244777783",
-      "titulo": "Camiseta Branca Brushed Blue",
-      "url": "https://blckbrasil.com.br/products/camiseta-branca-brushed-blue",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "LIVE",
-        "TSHIRT",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-16T13:38:59-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/brushed-azul.jpg?v=1794846273"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 47.00,
-          "c": 119.90,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 47.00,
-          "c": 119.90,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 47.00,
-          "c": 119.90,
-          "a": false
         }
       ]
     },
@@ -3371,7 +3244,9 @@
       "url": "https://blckbrasil.com.br/products/bone-strapback-follow-preto-logo-azul",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-16T13:38:58-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/products/nov208_196efc7e-76d4-4221-839d-9679ae4db3b5.jpg?v=1681147211",
@@ -3929,7 +3804,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-12T03:52:44-03:00",
       "imagens": [
@@ -3955,7 +3831,8 @@
       "tags": [
         "ADS",
         "ANCÔRAS",
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-12T03:51:47-03:00",
       "imagens": [
@@ -3981,7 +3858,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T17:12:18-03:00",
       "imagens": [
@@ -4008,7 +3886,8 @@
       "tags": [
         "ADS",
         "ANCÔRAS",
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T04:22:13-03:00",
       "imagens": [
@@ -4035,7 +3914,8 @@
       "tags": [
         "ADS",
         "ANCÔRAS",
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T04:22:12-03:00",
       "imagens": [
@@ -4060,7 +3940,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -4086,7 +3967,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -4111,7 +3993,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -4137,7 +4020,8 @@
       "tags": [
         "ADS",
         "ANCÔRAS",
-        "BLACK"
+        "BLACK",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -4162,7 +4046,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -4187,7 +4072,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -4213,7 +4099,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T04:22:07-03:00",
       "imagens": [
@@ -4239,7 +4126,8 @@
       "tags": [
         "ADS",
         "ANCÔRAS",
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-11T03:14:28-03:00",
       "imagens": [
@@ -4263,7 +4151,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-10T13:53:08-03:00",
       "imagens": [
@@ -4286,7 +4175,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-trucker-laser-preto-logo-branco",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-11-10T13:53:07-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B2_6928f96e-a86a-421a-8813-b62a9b421568.jpg?v=1776343730",
@@ -4309,7 +4200,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-10T13:53:07-03:00",
       "imagens": [
@@ -4334,7 +4226,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-10T13:53:03-03:00",
       "imagens": [
@@ -4472,7 +4365,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-09T11:26:33-03:00",
       "imagens": [
@@ -4572,31 +4466,6 @@
       "publicado": "2026-11-08T14:42:23-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/bk03_ab83ec28-66f1-4830-87b9-668208b871de.jpg?v=1794159654"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 27.00,
-          "c": 89.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11071892422967",
-      "titulo": "Bucket Hat Off White Halftone Purple",
-      "url": "https://blckbrasil.com.br/products/bucket-hat-off-white-halftone-purple",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "Chapéus",
-        "LIVE",
-        "PRODUZIR",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-08T14:42:23-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/bk04_7c4f2517-5bc9-443d-8d7c-71173f26c1d3.jpg?v=1794159651"
       ],
       "variantes": [
         {
@@ -5140,48 +5009,6 @@
       ]
     },
     {
-      "id": "10502133350711",
-      "titulo": "Camiseta Oversized Verde Trend",
-      "url": "https://blckbrasil.com.br/products/camiseta-oversized-verde",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [
-        "LIVE",
-        "OVERSIZED",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-06T01:23:07-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/oververde.jpg?v=1776263310"
-      ],
-      "variantes": [
-        {
-          "t": "P / Verde",
-          "p": 67.00,
-          "c": 159.90,
-          "a": false
-        },
-        {
-          "t": "M / Verde",
-          "p": 67.00,
-          "c": 159.90,
-          "a": false
-        },
-        {
-          "t": "G / Verde",
-          "p": 67.00,
-          "c": 159.90,
-          "a": true
-        },
-        {
-          "t": "GG / Verde",
-          "p": 67.00,
-          "c": 159.90,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "10978987901239",
       "titulo": "Boné Snapback Off White Halftone Black",
       "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-halftone-black",
@@ -5263,7 +5090,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-04T15:33:14-03:00",
       "imagens": [
@@ -5287,7 +5115,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-04T15:33:14-03:00",
       "imagens": [
@@ -5311,7 +5140,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-11-04T15:33:14-03:00",
       "imagens": [
@@ -5336,7 +5166,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-04T15:11:18-03:00",
       "imagens": [
@@ -5361,7 +5192,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-04T15:11:08-03:00",
       "imagens": [
@@ -5386,7 +5218,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-04T15:10:31-03:00",
       "imagens": [
@@ -5411,7 +5244,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-04T15:10:24-03:00",
       "imagens": [
@@ -5436,7 +5270,8 @@
       "tipo": "Chapéus",
       "tags": [
         "LIVE",
-        "Oriental"
+        "Oriental",
+        "SEPARAR"
       ],
       "publicado": "2026-11-04T15:10:08-03:00",
       "imagens": [
@@ -5571,7 +5406,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-10-30T03:12:47-03:00",
       "imagens": [
@@ -5800,30 +5636,6 @@
       "publicado": "2026-10-29T11:47:51-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/WhatsAppImage2026-06-22at18.06.55.jpg?v=1782164019"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 39.90,
-          "c": 39.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10797200277815",
-      "titulo": "Pulseira da Estrutura",
-      "url": "https://blckbrasil.com.br/products/pulseira-estrutura-preta-thiago-brava",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "ACESSÓRIOS",
-        "BRAVA",
-        "COLLAB"
-      ],
-      "publicado": "2026-10-29T11:45:23-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/WhatsAppImage2026-06-22at18.03.26.jpg?v=1782164046"
       ],
       "variantes": [
         {
@@ -6076,7 +5888,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-preto-listrado-aba-couro",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "SEPARAR"
+      ],
       "publicado": "2026-10-26T19:18:05-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B83_7bc03c1e-f3db-4027-a5ce-69f47660b91d.jpg?v=1793049522",
@@ -6099,7 +5913,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-10-26T19:09:09-03:00",
       "imagens": [
@@ -6245,7 +6060,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS"
+        "ADS",
+        "SEPARAR"
       ],
       "publicado": "2026-10-20T12:44:33-03:00",
       "imagens": [
@@ -6269,7 +6085,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS"
+        "ADS",
+        "SEPARAR"
       ],
       "publicado": "2026-10-20T12:44:18-03:00",
       "imagens": [
@@ -6293,7 +6110,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-10-19T14:35:43-03:00",
       "imagens": [
@@ -6317,7 +6135,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-10-19T14:34:59-03:00",
       "imagens": [
@@ -6341,7 +6160,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS"
+        "ADS",
+        "SEPARAR"
       ],
       "publicado": "2026-10-19T14:34:57-03:00",
       "imagens": [
@@ -6365,7 +6185,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS"
+        "ADS",
+        "SEPARAR"
       ],
       "publicado": "2026-10-19T14:34:57-03:00",
       "imagens": [
@@ -6618,7 +6439,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-10-16T15:24:02-03:00",
       "imagens": [
@@ -6642,7 +6464,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-10-16T15:21:50-03:00",
       "imagens": [
@@ -6666,7 +6489,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-10-16T15:21:15-03:00",
       "imagens": [
@@ -6691,7 +6515,8 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS"
+        "ANCÔRAS",
+        "SEPARAR"
       ],
       "publicado": "2026-10-16T15:20:27-03:00",
       "imagens": [
@@ -6740,7 +6565,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-10-13T19:24:50-03:00",
       "imagens": [
@@ -6752,31 +6578,6 @@
       "variantes": [
         {
           "t": "Preto",
-          "p": 97.00,
-          "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11014809452855",
-      "titulo": "Boné Snapback All White No Signal",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-all-white-no-signal",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE"
-      ],
-      "publicado": "2026-10-13T19:24:50-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25_f662628d-4a63-49e7-a98e-f35900607428.jpg?v=1791929180",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25-2_50708815-8c23-49f3-8ae6-9081a7d9e582.jpg?v=1791929180",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25-3_f5992999-168c-4120-bb5e-8da114d44326.jpg?v=1791929180",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25-4_c70219dd-8520-4f64-a1ac-eb4da623443e.jpg?v=1791929180"
-      ],
-      "variantes": [
-        {
-          "t": "Branco",
           "p": 97.00,
           "c": 199.90,
           "a": true
@@ -7066,7 +6867,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "LIVE",
+        "SEPARAR"
       ],
       "publicado": "2026-10-05T18:31:19-03:00",
       "imagens": [
@@ -8410,7 +8212,7 @@
           "t": "GG / Amarela",
           "p": 47.00,
           "c": 149.90,
-          "a": true
+          "a": false
         }
       ]
     },

@@ -2,7 +2,7 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-21T15:48:37Z",
+  "atualizado": "2026-11-21T19:51:25Z",
   "produtos": [
     {
       "id": "10405765644469",
@@ -1315,7 +1315,7 @@
           "t": "VERDE FLORESTA / G",
           "p": 1348.50,
           "c": 2697.00,
-          "a": true
+          "a": false
         },
         {
           "t": "VERDE FLORESTA / GG",
@@ -3652,7 +3652,7 @@
           "t": "ESTAMPADO / OV 0",
           "p": 1477.78,
           "c": 1997.00,
-          "a": true
+          "a": false
         },
         {
           "t": "ESTAMPADO / OV 1",
@@ -4507,7 +4507,7 @@
           "t": "AZUL JEANS / PP",
           "p": 987.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "AZUL JEANS / P",
