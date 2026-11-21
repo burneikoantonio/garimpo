@@ -2,7 +2,7 @@
   "marca": "Levi's",
   "loja": "Site Levi's",
   "site": "www.levi.com.br",
-  "atualizado": "2026-11-20T23:41:08Z",
+  "atualizado": "2026-11-21T11:39:08Z",
   "produtos": [
     {
       "id": "10121",
@@ -846,8 +846,8 @@
           "t": " 28X32 USA | 36 BR",
           "p": 369.9,
           "c": 369.9,
-          "x": 369.9,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": " 30X32 USA | 38 BR",
@@ -3891,93 +3891,6 @@
           "c": 379.9,
           "x": null,
           "a": false
-        }
-      ]
-    },
-    {
-      "id": "8064",
-      "titulo": "Calça Jeans Levi's® 514® Straight com Lavagem Média",
-      "url": "https://www.levi.com.br/calca-jeans-levis-514-straight-0051412851285/p",
-      "ref": "005141285",
-      "tipo": "/Masculino/Roupas/Jeans/ ",
-      "tags": [],
-      "publicado": "2026-05-29T00:00:00Z",
-      "imagens": [
-        "https://lojalevis.vteximg.com.br/arquivos/ids/440940/005141285_1.jpg?v=637660442546430000",
-        "https://lojalevis.vteximg.com.br/arquivos/ids/442766/005141285_2.jpg?v=637660452240900000",
-        "https://lojalevis.vteximg.com.br/arquivos/ids/444444/005141285_3.jpg?v=637660460647000000",
-        "https://lojalevis.vteximg.com.br/arquivos/ids/447828/005141285_thumb.jpg?v=637660477196970000"
-      ],
-      "variantes": [
-        {
-          "t": "40X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "33X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "32X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "30X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "28X34",
-          "p": 249.95,
-          "c": 499.9,
-          "x": 249.95,
-          "a": true
         }
       ]
     },

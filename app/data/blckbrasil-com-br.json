@@ -2,8 +2,33 @@
   "marca": "Blck Brasil",
   "loja": "Site Blck Brasil",
   "site": "blckbrasil.com.br",
-  "atualizado": "2026-11-20T23:51:50Z",
+  "atualizado": "2026-11-21T11:47:51Z",
   "produtos": [
+    {
+      "id": "10433707671863",
+      "titulo": "Boné Snapback Preto Spider",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-spider",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "CRIABH",
+        "LIVE"
+      ],
+      "publicado": "2026-11-21T00:19:37-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45_87064881-59a1-489d-be0c-9918ddeade8e.jpg?v=1766173923",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-2_315bd562-bfcc-4e7f-8b96-e6350906d79e.jpg?v=1766173923",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-3_e68b6c90-e4bd-4686-ae92-a9f9976d513c.jpg?v=1766173923"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / Único",
+          "p": 197.00,
+          "c": 319.90,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "8278315041079",
       "titulo": "Boné Snapback Black to Red",
@@ -801,31 +826,6 @@
           "t": "Default Title",
           "p": 27.00,
           "c": 89.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10433707671863",
-      "titulo": "Boné Snapback Preto Spider",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-spider",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "CRIABH",
-        "LIVE"
-      ],
-      "publicado": "2026-11-20T00:28:38-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45_87064881-59a1-489d-be0c-9918ddeade8e.jpg?v=1766173923",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-2_315bd562-bfcc-4e7f-8b96-e6350906d79e.jpg?v=1766173923",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-3_e68b6c90-e4bd-4686-ae92-a9f9976d513c.jpg?v=1766173923"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 197.00,
-          "c": 319.90,
           "a": true
         }
       ]
@@ -2343,31 +2343,6 @@
       ]
     },
     {
-      "id": "8220393603383",
-      "titulo": "Boné Snapback Azul Marinho Basic",
-      "url": "https://blckbrasil.com.br/products/bone-azul-marinho-snapback-basic",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "ADS",
-        "LIVE"
-      ],
-      "publicado": "2026-11-18T13:49:24-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25_eab559d6-a815-44f4-b1f5-fe25bb4b60a2.jpg?v=1750087230",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25-2_28047ed5-52fd-46be-8b83-f308c75882d9.jpg?v=1750087230",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25-3_22464ee0-0bb5-4bb4-9b80-8b67d54677c4.jpg?v=1750087230"
-      ],
-      "variantes": [
-        {
-          "t": "Azul / UN",
-          "p": 127.00,
-          "c": 149.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10893054214455",
       "titulo": "Boné Kids Snapback Preto Basic Caramelo",
       "url": "https://blckbrasil.com.br/products/bone-kids-snapback-preto-basic-caramelo",
@@ -3373,7 +3348,7 @@
           "t": "M",
           "p": 47.00,
           "c": 119.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G",
@@ -3859,31 +3834,6 @@
           "t": "Default Title",
           "p": 27.00,
           "c": 119.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10871119610167",
-      "titulo": "Gorro Branco BLCK Wings Preto",
-      "url": "https://blckbrasil.com.br/products/gorro-branco-blck-wings-preto",
-      "ref": "",
-      "tipo": "Gorros",
-      "tags": [
-        "INVERNO",
-        "LIVE",
-        "Toucas",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-12T12:40:27-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/T03_8a1f7324-a2fa-4f68-8aac-e8f10d518a3c.jpg?v=1784061888"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 27.00,
-          "c": 89.90,
           "a": true
         }
       ]
