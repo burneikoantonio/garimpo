@@ -2,7 +2,7 @@
   "marca": "Nike",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-21T11:43:16Z",
+  "atualizado": "2026-11-21T15:44:11Z",
   "produtos": [
     {
       "id": "17458",
@@ -646,8 +646,8 @@
           "t": "41",
           "p": 649.99,
           "c": 999.99,
-          "x": 649.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "42",
@@ -1027,8 +1027,8 @@
         },
         {
           "t": "38",
-          "p": 214.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -1041,8 +1041,8 @@
         },
         {
           "t": "40",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 214.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -1069,8 +1069,8 @@
         },
         {
           "t": "44",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 214.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -2562,8 +2562,8 @@
         },
         {
           "t": "GGGG",
-          "p": 79.99,
-          "c": 309.99,
+          "p": 310.0,
+          "c": 310.0,
           "x": null,
           "a": false
         }
@@ -3013,8 +3013,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 549.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -3041,8 +3041,8 @@
         },
         {
           "t": "41",
-          "p": 549.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -3365,8 +3365,8 @@
         },
         {
           "t": "GGGGG",
-          "p": 180.0,
-          "c": 180.0,
+          "p": 39.99,
+          "c": 179.99,
           "x": null,
           "a": false
         }
@@ -4212,8 +4212,8 @@
         },
         {
           "t": "39",
-          "p": 589.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -4226,8 +4226,8 @@
         },
         {
           "t": "41",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 589.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -4247,8 +4247,8 @@
         },
         {
           "t": "44",
-          "p": 589.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -4261,15 +4261,15 @@
         },
         {
           "t": "46",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 589.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "47",
-          "p": 589.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -4788,6 +4788,30 @@
       ]
     },
     {
+      "id": "38048",
+      "titulo": "Pochete Nike Sportswear Essentials",
+      "url": "https://www.authenticfeet.com.br/bolsa-nike-sportswear-essentials-cv106-4-011/p",
+      "ref": "CV106-4-011",
+      "tipo": "/Acessorios/Masculino/Bolsas e Mochilas/ Pochetes",
+      "tags": [],
+      "publicado": "2021-04-06T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/244298/Bolsa-Nike-Sportswear-Essentials-Preto.jpg?v=637632728024530000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/244299/Bolsa-Nike-Sportswear-Essentials-Preto-2.jpg?v=637632728304500000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/244300/Bolsa-Nike-Sportswear-Essentials-Preto-3.jpg?v=637632728530470000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/244301/Bolsa-Nike-Sportswear-Essentials-Preto-4.jpg?v=637632728748000000"
+      ],
+      "variantes": [
+        {
+          "t": "ÚNICO",
+          "p": 29.99,
+          "c": 219.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "38052",
       "titulo": "Camiseta Nike Sportswear Club Masculina",
       "url": "https://www.authenticfeet.com.br/camiseta-nike-club-masculina-ar499-7-736/p",
@@ -4875,8 +4899,8 @@
       "variantes": [
         {
           "t": "PP",
-          "p": 79.99,
-          "c": 399.99,
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         },
@@ -4910,8 +4934,8 @@
         },
         {
           "t": "GGG",
-          "p": 79.99,
-          "c": 399.99,
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         },
@@ -5279,22 +5303,22 @@
         },
         {
           "t": "45",
-          "p": 509.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
           "p": 730.0,
           "c": 730.0,
           "x": null,
           "a": false
         },
         {
-          "t": "47",
+          "t": "46",
           "p": 509.99,
           "c": 729.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 730.0,
+          "c": 730.0,
           "x": null,
           "a": false
         },
@@ -5965,6 +5989,79 @@
           "t": "GGGGG",
           "p": 39.99,
           "c": 179.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "38460",
+      "titulo": "Camiseta Nike Sportswear Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-nike-sportswear-masculina-dd351-5-100/p",
+      "ref": "DD351-5-100",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2021-10-13T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/247874/Camiseta-Nike-Sportswear-Masculina-Branca.jpg?v=637725965277330000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/247875/Camiseta-Nike-Sportswear-Masculina-Branca-2.jpg?v=637725965428330000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/247876/Camiseta-Nike-Sportswear-Masculina-Branca-3.jpg?v=637725965513100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/247877/Camiseta-Nike-Sportswear-Masculina-Branca-4.jpg?v=637725965711030000"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 199.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 199.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 199.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 199.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 199.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 199.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGG",
+          "p": 199.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGGG",
+          "p": 199.99,
+          "c": 199.99,
           "x": null,
           "a": false
         }
@@ -6780,6 +6877,77 @@
           "t": "48",
           "p": 249.99,
           "c": 729.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "38809",
+      "titulo": "Regata Nike Sportswear Masculina",
+      "url": "https://www.authenticfeet.com.br/regata-nike-sportswear-masculina-ar499-1-101/p",
+      "ref": "AR499-1-101",
+      "tipo": "/Roupas/Masculino/Regatas/ Regatas",
+      "tags": [],
+      "publicado": "2018-12-18T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/453682/AR499-1-101-1-AF-800x1000.jpg?v=638586595494370000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/455346/AR499-1-101-2-AF-800x1000.jpg?v=638890436042700000"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 59.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 59.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 59.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 59.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 59.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 59.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGG",
+          "p": 59.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGGG",
+          "p": 59.99,
+          "c": 149.99,
           "x": null,
           "a": false
         }
@@ -9241,8 +9409,8 @@
         },
         {
           "t": "39",
-          "p": 399.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -9255,8 +9423,8 @@
         },
         {
           "t": "40",
-          "p": 399.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -9297,8 +9465,8 @@
         },
         {
           "t": "43.5",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 399.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -9318,8 +9486,8 @@
         },
         {
           "t": "46",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 399.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -9332,8 +9500,8 @@
         },
         {
           "t": "48",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 399.99,
+          "c": 999.99,
           "x": null,
           "a": false
         }
@@ -10399,22 +10567,22 @@
         },
         {
           "t": "39.5",
+          "p": 599.99,
+          "c": 1299.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
           "p": 1300.0,
           "c": 1300.0,
           "x": null,
           "a": false
         },
         {
-          "t": "40",
-          "p": 599.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
           "t": "40.5",
-          "p": 599.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -10427,8 +10595,8 @@
         },
         {
           "t": "42",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 599.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -10441,8 +10609,8 @@
         },
         {
           "t": "43",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 599.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -10483,8 +10651,8 @@
         },
         {
           "t": "48",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 599.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         }
@@ -15395,8 +15563,8 @@
         },
         {
           "t": "37.5",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 649.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -15416,8 +15584,8 @@
         },
         {
           "t": "39.5",
-          "p": 649.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -15451,8 +15619,8 @@
         },
         {
           "t": "42.5",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 649.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -21161,8 +21329,8 @@
         },
         {
           "t": "GGG",
-          "p": 280.0,
-          "c": 280.0,
+          "p": 279.99,
+          "c": 279.99,
           "x": null,
           "a": false
         },
@@ -21605,6 +21773,79 @@
         "https://authenticfeet.vteximg.com.br/arquivos/ids/391498/FB137-4-100-2.jpg?v=638376652204870000",
         "https://authenticfeet.vteximg.com.br/arquivos/ids/391499/FB137-4-100-3.jpg?v=638376652284730000",
         "https://authenticfeet.vteximg.com.br/arquivos/ids/391500/FB137-4-100-4.jpg?v=638376652361130000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 599.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 599.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 599.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 599.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 599.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 599.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 599.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 599.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "51640",
+      "titulo": "Tênis Nike Air Force 1 Mid Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1-mid-masculino-fb137-4-101/p",
+      "ref": "FB137-4-101",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2023-09-11T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/391503/FB137-4-101-1.jpg?v=638376653556070000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/391504/FB137-4-101-2.jpg?v=638376653641100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/391505/FB137-4-101-3.jpg?v=638376653750270000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/391506/FB137-4-101-4.jpg?v=638376653827900000"
       ],
       "variantes": [
         {
@@ -22461,8 +22702,8 @@
         },
         {
           "t": "G",
-          "p": 224.99,
-          "c": 449.99,
+          "p": 450.0,
+          "c": 450.0,
           "x": null,
           "a": false
         },
@@ -23503,6 +23744,79 @@
       ]
     },
     {
+      "id": "52235",
+      "titulo": "Tênis Nike Air Force 1 07 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nke-air-force-1--07-masculino-fj414-6-102/p",
+      "ref": "FJ414-6-102",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2023-12-06T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/405550/FJ414-6-102-1.jpg?v=638422321814100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/405598/FJ414-6-102-2.jpg?v=638422322144770000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/405646/FJ414-6-102-3.jpg?v=638422322474730000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/405690/FJ414-6-102-4.jpg?v=638422322784500000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "52236",
       "titulo": "Tênis Nike Air Force 1 ´07 LV8 Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1--07-lv8-masculino-fj416-0-002/p",
@@ -24502,8 +24816,8 @@
         },
         {
           "t": "39.5",
-          "p": 2000.0,
-          "c": 2000.0,
+          "p": 1399.99,
+          "c": 1999.99,
           "x": null,
           "a": false
         },
@@ -24516,15 +24830,15 @@
         },
         {
           "t": "48",
-          "p": 2000.0,
-          "c": 2000.0,
+          "p": 1399.99,
+          "c": 1999.99,
           "x": null,
           "a": false
         },
         {
           "t": "38",
-          "p": 2000.0,
-          "c": 2000.0,
+          "p": 1399.99,
+          "c": 1999.99,
           "x": null,
           "a": false
         },
@@ -24558,8 +24872,8 @@
         },
         {
           "t": "40",
-          "p": 1399.99,
-          "c": 1999.99,
+          "p": 2000.0,
+          "c": 2000.0,
           "x": null,
           "a": false
         },
@@ -24579,8 +24893,8 @@
         },
         {
           "t": "43.5",
-          "p": 1399.99,
-          "c": 1999.99,
+          "p": 2000.0,
+          "c": 2000.0,
           "x": null,
           "a": false
         },
@@ -25980,8 +26294,8 @@
         },
         {
           "t": "37.5",
-          "p": 399.99,
-          "c": 399.99,
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         },
@@ -26057,8 +26371,8 @@
         },
         {
           "t": "44",
-          "p": 400.0,
-          "c": 400.0,
+          "p": 399.99,
+          "c": 399.99,
           "x": null,
           "a": false
         },
@@ -26085,8 +26399,8 @@
         },
         {
           "t": "48",
-          "p": 399.99,
-          "c": 399.99,
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         }
@@ -26871,8 +27185,8 @@
         },
         {
           "t": "GG",
-          "p": 280.0,
-          "c": 280.0,
+          "p": 279.99,
+          "c": 279.99,
           "x": null,
           "a": false
         },
@@ -26885,8 +27199,8 @@
         },
         {
           "t": "GGGG",
-          "p": 279.99,
-          "c": 279.99,
+          "p": 280.0,
+          "c": 280.0,
           "x": null,
           "a": false
         },
@@ -32962,6 +33276,177 @@
       ]
     },
     {
+      "id": "55365",
+      "titulo": "Tênis Nike Air Force 1 07 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1--07-lv8-masculino-fq871-3-100/p",
+      "ref": "FQ871-3-100",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2026-01-06T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/440431/FQ871-3-100-1.jpg?v=638574465839670000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/440632/FQ871-3-100-2.jpg?v=639020209444800000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/440825/FQ871-3-100-3.jpg?v=639020209445100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/441011/FQ871-3-100-4.jpg?v=639020209445100000"
+      ],
+      "variantes": [
+        {
+          "t": "37",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37.5",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39.5",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40.5",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42.5",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43.5",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "46",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "49",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "50",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "51",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "52",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "53",
+          "p": 539.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "55366",
       "titulo": "Tênis Nike Air Force 1 ´07 LV8 Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1--07-lv8-masculino-fq871-3-200/p",
@@ -34063,8 +34548,8 @@
         },
         {
           "t": "M",
-          "p": 280.0,
-          "c": 280.0,
+          "p": 279.99,
+          "c": 279.99,
           "x": null,
           "a": false
         },
@@ -35319,6 +35804,142 @@
         {
           "t": "48",
           "p": 519.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "56604",
+      "titulo": "Tênis Nike Air Force 1 ´07 LV8 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1--07-lv8-masculino-fq871-4-300/p",
+      "ref": "FQ871-4-300",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2024-07-11T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483351/FQ871-4-300-1-AF-800x1000.jpg?v=638634142146970000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483352/FQ871-4-300-2-AF-800x1000.jpg?v=638634142307800000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483353/FQ871-4-300-3-AF-800x1000.jpg?v=638634142525000000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483354/FQ871-4-300-4-AF-800x1000.jpg?v=638634142631300000"
+      ],
+      "variantes": [
+        {
+          "t": "37",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "46",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 449.99,
           "c": 899.99,
           "x": null,
           "a": false
@@ -36749,6 +37370,142 @@
           "t": "48",
           "p": 399.99,
           "c": 799.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "56836",
+      "titulo": "Tênis Nike Air Force 1 ´07 LV8 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1--07-lv8-masculino-fq871-4-004/p",
+      "ref": "FQ871-4-004",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2024-07-11T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483729/FQ871-4-004-1-AF-800x1000.jpg?v=638646880456970000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483730/FQ871-4-004-2-AF-800x1000.jpg?v=638646880562370000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483731/FQ871-4-004-3-AF-800x1000.jpg?v=638646880672800000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483732/FQ871-4-004-4-AF-800x1000.jpg?v=638646880793270000"
+      ],
+      "variantes": [
+        {
+          "t": "37",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43.5",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "46",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 449.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 449.99,
+          "c": 899.99,
           "x": null,
           "a": false
         }
@@ -38193,8 +38950,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 649.99,
-          "c": 649.99,
+          "p": 650.0,
+          "c": 650.0,
           "x": null,
           "a": false
         },
@@ -38221,8 +38978,8 @@
         },
         {
           "t": "39.5",
-          "p": 649.99,
-          "c": 649.99,
+          "p": 650.0,
+          "c": 650.0,
           "x": null,
           "a": false
         },
@@ -38263,8 +39020,8 @@
         },
         {
           "t": "43",
-          "p": 649.99,
-          "c": 649.99,
+          "p": 650.0,
+          "c": 650.0,
           "x": null,
           "a": false
         },
@@ -38291,8 +39048,8 @@
         },
         {
           "t": "46",
-          "p": 650.0,
-          "c": 650.0,
+          "p": 649.99,
+          "c": 649.99,
           "x": null,
           "a": false
         },
@@ -38305,8 +39062,8 @@
         },
         {
           "t": "48",
-          "p": 649.99,
-          "c": 649.99,
+          "p": 650.0,
+          "c": 650.0,
           "x": null,
           "a": false
         }
@@ -41520,170 +42277,6 @@
       ]
     },
     {
-      "id": "57140",
-      "titulo": "Tênis Nike C1ty Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-nike-c1ty-masculino-fz386-3-200/p",
-      "ref": "FZ386-3-200",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2024-10-03T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/492806/FZ386-3-200-1-AF-800x1000.jpg?v=638696207450300000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/492807/FZ386-3-200-2-AF-800x1000.jpg?v=638696209221600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/492808/FZ386-3-200-3-AF-800x1000.jpg?v=638696209490270000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/492809/FZ386-3-200-4-AF-800x1000.jpg?v=638696210145970000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34.5",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35.5",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 369.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "57142",
       "titulo": "Tênis Nike Dunk Low Retro Se Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-dunk-low-retro-se-masculino-fz305-2-001/p",
@@ -42381,72 +42974,6 @@
       ]
     },
     {
-      "id": "58481",
-      "titulo": "Tênis Nike Shox TL Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-nike-shox-tl-masculino-av359-5-102/p",
-      "ref": "AV359-5-102",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-24T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/505628/AV359-5-102-1-AF-800x1000.jpg?v=638980333405900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/505629/AV359-5-102-2-AF-800x1000.jpg?v=638980333406070000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/505630/AV359-5-102-3-AF-800x1000.jpg?v=638980333406070000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/505631/AV359-5-102-4-AF-800x1000.jpg?v=638980333406070000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 909.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "58489",
       "titulo": "Tênis Nike Air Max Plus Og Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-air-max-plus-og-masculino-dx075-5-001/p",
@@ -42989,6 +43516,65 @@
       ]
     },
     {
+      "id": "58516",
+      "titulo": "Tênis Nike Air Force 1 07 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1-07-masculino-hf288-6-100/p",
+      "ref": "HF288-6-100",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-24T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496006/HF288-6-100-1-AF-800x1000.jpg?v=638762811843830000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496007/HF288-6-100-2-AF-800x1000.jpg?v=638762811925870000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496008/HF288-6-100-3-AF-800x1000.jpg?v=638762812012700000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496009/HF288-6-100-4-AF-800x1000.jpg?v=638762812108500000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 559.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 559.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 559.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 559.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 559.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 559.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "58523",
       "titulo": "Tênis Nike Dunk Low Retro Se Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-dunk-low-retro-se-masculino-hf314-1-200/p",
@@ -43510,6 +44096,131 @@
       ]
     },
     {
+      "id": "58555",
+      "titulo": "Tênis Nike Air Force 1 07 LV8 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1-07-lv8-masculino-hm948-3-100/p",
+      "ref": "HM948-3-100",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-24T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/493920/HM948-3-100-1-AF-800x1000.jpg?v=638732625358130000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/493921/HM948-3-100-2-AF-800x1000.jpg?v=638732625446000000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/493922/HM948-3-100-3-AF-800x1000.jpg?v=638732625605100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/493923/HM948-3-100-4-AF-800x1000.jpg?v=638732625725200000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 569.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 569.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 569.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 569.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 569.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 569.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "58556",
+      "titulo": "Tênis Nike Air Force 1 07 LV8 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1-07-lv8-masculino-hm948-3-300/p",
+      "ref": "HM948-3-300",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-24T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/493668/HM948-3-300-1-AF-800x1000.jpg?v=638721261991630000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/493669/HM948-3-300-2-AF-800x1000.jpg?v=638721262100000000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/493670/HM948-3-300-3-AF-800x1000.jpg?v=638721262209430000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/493671/HM948-3-300-4-AF-800x1000.jpg?v=638721264520730000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 399.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 399.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 399.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 399.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 399.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 399.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 399.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "58561",
       "titulo": "Tênis Nike Vomero Roam Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-vomero-roam-masculino-hv429-4-009/p",
@@ -43909,58 +44620,6 @@
       ]
     },
     {
-      "id": "58690",
-      "titulo": "Chinelo Nike Calm Slide Masculino",
-      "url": "https://www.authenticfeet.com.br/chinelo-nike-calm-slide-masculino-fd411-6-301/p",
-      "ref": "FD411-6-301",
-      "tipo": "/Chinelos e Sandálias/Masculino/Nike/ Chinelos",
-      "tags": [],
-      "publicado": "2024-03-19T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/493788/FD411-6-301-1-AF-800x1000.jpg?v=639047788704300000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/493789/FD411-6-301-2-AF-800x1000.jpg?v=639047788704300000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/493790/FD411-6-301-3-AF-800x1000.jpg?v=639047788704300000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/493791/FD411-6-301-4-AF-800x1000.jpg?v=639047788704300000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 149.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 149.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 149.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 149.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 149.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "58694",
       "titulo": "Shorts Nike Club Flow Masculino",
       "url": "https://www.authenticfeet.com.br/shorts-nike-club-flow-masculino-fn330-7-025/p",
@@ -44329,51 +44988,6 @@
           "t": "P",
           "p": 99.99,
           "c": 249.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "58730",
-      "titulo": "Blusão Nike Air Flc Masculino",
-      "url": "https://www.authenticfeet.com.br/blusao-nike-air-flc-feminino-hj027-3-010/p",
-      "ref": "HJ027-3-010",
-      "tipo": "/Roupas/Masculino/Blusões/ Blusões",
-      "tags": [],
-      "publicado": "2024-12-27T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/495980/HJ027-3-010-1-AF-800X1000.jpg?v=638798027109830000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/495981/HJ027-3-010-2-AF-800X1000.jpg?v=638798027110000000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/495982/HJ027-3-010-3-AF-800X1000.jpg?v=638798027110000000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/495983/HJ027-3-010-4-AF-800X1000.jpg?v=638798027110000000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 249.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 249.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 249.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 249.99,
-          "c": 499.99,
           "x": null,
           "a": false
         }
@@ -45037,8 +45651,8 @@
           "t": "40",
           "p": 599.99,
           "c": 899.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40.5",
@@ -46005,65 +46619,6 @@
           "c": 1399.99,
           "x": 1329.99,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "60293",
-      "titulo": "Tênis Nike Shox TL Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-nike-shox-tl-masculino-av359-5-300/p",
-      "ref": "AV359-5-300",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-24T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/499503/AV359-5-300-1-AF-800X1000.jpg?v=638841520605830000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/499504/AV359-5-300-2-AF-800X1000.jpg?v=638841520683370000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/499505/AV359-5-300-3-AF-800X1000.jpg?v=638841520761270000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/499506/AV359-5-300-4-AF-800X1000.jpg?v=638841520856170000"
-      ],
-      "variantes": [
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
         }
       ]
     },
@@ -47371,6 +47926,79 @@
       ]
     },
     {
+      "id": "60332",
+      "titulo": "Tênis Nike Air Force 1 Low Canvas Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1-low-canvas-masculino-hv120-4-300/p",
+      "ref": "HV120-4-300",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2025-03-31T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/499349/HV120-4-300-1-AF-800X1000.jpg?v=638839575523000000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/499350/HV120-4-300-2-AF-800X1000.jpg?v=638839575607100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/499351/HV120-4-300-3-AF-800X1000.jpg?v=638839575697330000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/499352/HV120-4-300-4-AF-800X1000.jpg?v=638839575796000000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 549.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "60336",
       "titulo": "Tênis Nike Air Force 1´07 Unissex",
       "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1-07-unissex-hj533-6-700/p",
@@ -48361,51 +48989,6 @@
           "t": "P",
           "p": 489.99,
           "c": 699.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "60398",
-      "titulo": "Shorts Nike Club Flow Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-nike-club-flow-masculino-fn330-7-222/p",
-      "ref": "FN330-7-222",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2023-12-06T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497454/FN330-7-222-1-AF-800X1000.jpg?v=638900223439900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497455/FN330-7-222-2-AF-800X1000.jpg?v=638900223439900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497456/FN330-7-222-3-AF-800X1000.jpg?v=638900223439900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/497457/FN330-7-222-4-AF-800X1000.jpg?v=638900223439900000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 179.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 179.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 179.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 179.99,
-          "c": 299.99,
           "x": null,
           "a": false
         }
@@ -49672,142 +50255,6 @@
           "t": "P",
           "p": 279.99,
           "c": 699.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "61681",
-      "titulo": "Tênis Nike P-6000 Style Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-nike-p-6000-style-masculino-ib298-6-003/p",
-      "ref": "IB298-6-003",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2025-06-30T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/503415/IB298-6-003-1-AF-800x1000.jpg?v=639228512172770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/503416/IB298-6-003-2-AF-800x1000.jpg?v=639228512172800000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/503417/IB298-6-003-3-AF-800x1000.jpg?v=639228512172830000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/503418/IB298-6-003-4-AF-800x1000.jpg?v=639228512172870000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 699.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 699.99,
-          "c": 899.99,
           "x": null,
           "a": false
         }
@@ -51388,6 +51835,142 @@
       ]
     },
     {
+      "id": "61938",
+      "titulo": "Tênis Nike Air Max Plus Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-max-plus-masculino-dm003-2-021/p",
+      "ref": "DM003-2-021",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2022-05-25T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/504978/DM003-2-021-1-AF-800x1000.jpg?v=638944918299900000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/504979/DM003-2-021-2-AF-800x1000.jpg?v=638944918370470000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/504980/DM003-2-021-3-AF-800x1000.jpg?v=638944918677430000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/504981/DM003-2-021-4-AF-800x1000.jpg?v=638944918803800000"
+      ],
+      "variantes": [
+        {
+          "t": "37",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37.5",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39.5",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40.5",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42.5",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43.5",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "46",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "61939",
       "titulo": "Tênis Nike Air Max Plus Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-air-max-plus-masculino-dm003-2-022/p",
@@ -52477,6 +53060,72 @@
         },
         {
           "t": "48",
+          "p": 899.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "62021",
+      "titulo": "Tênis Nike Air Force 1 ´07 LV8 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1-07-lv8-masculino-hq203-7-101/p",
+      "ref": "HQ203-7-101",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2025-03-31T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/502235/HQ203-7-101-1-AF-800X1000.jpg?v=639012500830400000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/502236/HQ203-7-101-2-AF-800X1000.jpg?v=639012500830400000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/502237/HQ203-7-101-3-AF-800X1000.jpg?v=639012500830400000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/502238/HQ203-7-101-4-AF-800X1000.jpg?v=639012500830570000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 899.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 899.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 899.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 899.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 899.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 899.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
           "p": 899.99,
           "c": 899.99,
           "x": null,
@@ -53725,6 +54374,72 @@
       ]
     },
     {
+      "id": "62752",
+      "titulo": "Tênis Nike Air Force 1 ´07 Lv8 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1--07-lv8-masculino-ih122-1-001/p",
+      "ref": "IH122-1-001",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2025-09-22T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/613353/IH122-1-001-1-800x1000.jpg?v=639286477052030000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/613354/IH122-1-001-2-800x1000.jpg?v=639286477052230000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/613355/IH122-1-001-3-800x1000.jpg?v=639286477052300000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/613356/IH122-1-001-4-800x1000.jpg?v=639286477052330000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 549.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 549.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 549.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 549.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 549.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 549.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 549.99,
+          "c": 899.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "62761",
       "titulo": "Tênis Nike Initiator Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-initiator-masculino-39405-5-101/p",
@@ -54063,6 +54778,79 @@
           "t": "45",
           "p": 839.99,
           "c": 1299.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "62767",
+      "titulo": "Tênis Nike Shox TL Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-shox-tl-masculino-av359-5-302/p",
+      "ref": "AV359-5-302",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-24T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/519845/AV359-5-302-1-AF-800x1000.jpg?v=639053108922430000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/519846/nike-shox-tl-verde-01.jpg?v=639053108922600000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/519847/AV359-5-302-2-AF-800x1000.jpg?v=639053108922600000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/519848/AV359-5-302-3-AF-800x1000.jpg?v=639053108922600000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 899.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 899.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 899.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 899.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 899.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 899.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 899.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 899.99,
+          "c": 1399.99,
           "x": null,
           "a": false
         }
@@ -56044,79 +56832,6 @@
       ]
     },
     {
-      "id": "63870",
-      "titulo": "Shorts Nike Club Flow Masculino",
-      "url": "https://www.authenticfeet.com.br/shorts-nike-club-flow-masculino-fn330-7-480/p",
-      "ref": "FN330-7-480",
-      "tipo": "/Roupas/Masculino/Shorts e Bermudas/ Shorts",
-      "tags": [],
-      "publicado": "2023-12-06T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509506/FN330-7-480-1-AF-800x1000.jpg?v=639027012101900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509507/FN330-7-480-2-AF-800x1000.jpg?v=639027012101900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509508/FN330-7-480-3-AF-800x1000.jpg?v=639027012101900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509509/FN330-7-480-4-AF-800x1000.jpg?v=639027012102070000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGGG",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 149.99,
-          "c": 299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "64259",
       "titulo": "Tênis Nike Air Max Plus VII Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-air-max-plus-vii-masculino-hq219-7-700/p",
@@ -56994,79 +57709,6 @@
       ]
     },
     {
-      "id": "64295",
-      "titulo": "Tênis Nike Shox R4 Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-nike-shox-r4-masculino-hq198-8-300/p",
-      "ref": "HQ198-8-300",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-24T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/551576/HQ198-8-300-1-800x1000.jpg?v=639149896200000000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/551577/HQ198-8-300-2-AF-800x1000.jpg?v=639149896200170000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/551578/HQ198-8-300-3-AF-800x1000.jpg?v=639149896200300000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/551579/HQ198-8-300-4-AF-800x1000.jpg?v=639149896200300000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "64304",
       "titulo": "Tênis Nike Ava X Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-ava-x-masculino-hm969-7-700/p",
@@ -57489,6 +58131,72 @@
         "https://authenticfeet.vteximg.com.br/arquivos/ids/515324/DM003-2-032-2-AF-800x1000.jpg?v=639050418077130000",
         "https://authenticfeet.vteximg.com.br/arquivos/ids/515325/DM003-2-032-3-AF-800x1000.jpg?v=639050418077300000",
         "https://authenticfeet.vteximg.com.br/arquivos/ids/515326/DM003-2-032-4-AF-800x1000.jpg?v=639050418077300000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 909.99,
+          "c": 1399.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "64317",
+      "titulo": "Tênis Nike Air Max Plus Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-max-plus-masculino-dm003-2-034/p",
+      "ref": "DM003-2-034",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2022-05-25T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/511363/DM003-2-034-1-AF-800x1000.jpg?v=639044540267730000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/511364/DM003-2-034-2-AF-800x1000.jpg?v=639044540268030000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/511365/DM003-2-034-3-AF-800x1000.jpg?v=639044540268030000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/511366/DM003-2-034-4-AF-800x1000.jpg?v=639044540268030000"
       ],
       "variantes": [
         {
@@ -58631,6 +59339,72 @@
         "https://authenticfeet.vteximg.com.br/arquivos/ids/530351/IB683-6-001-2-AF-800x1000.jpg?v=639086577514700000",
         "https://authenticfeet.vteximg.com.br/arquivos/ids/530352/IB683-6-001-3-AF-800x1000.jpg?v=639086577514870000",
         "https://authenticfeet.vteximg.com.br/arquivos/ids/530353/IB683-6-001-4-AF-800x1000.jpg?v=639086577514870000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "64367",
+      "titulo": "Tênis Nike Air Force 1 Retro Valentine's Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-nike-air-force-1-retro-valentine-s-masculino-ib683-6-600/p",
+      "ref": "IB683-6-600",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2025-12-23T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/525844/IB683-6-600-1-800x1000.jpg?v=639065801109970000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/525845/IB683-6-600-2-800x1000.jpg?v=639065801110100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/525846/IB683-6-600-3-800x1000.jpg?v=639065801110270000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/525847/IB683-6-600-4-800x1000.jpg?v=639065801110270000"
       ],
       "variantes": [
         {
@@ -61630,8 +62404,8 @@
           "t": "39",
           "p": 899.99,
           "c": 1399.99,
-          "x": 899.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "39.5",
@@ -61930,8 +62704,8 @@
           "t": "41",
           "p": 649.99,
           "c": 899.99,
-          "x": 649.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "42",
@@ -63388,8 +64162,8 @@
           "t": "40",
           "p": 599.99,
           "c": 999.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40.5",
@@ -66069,65 +66843,6 @@
           "t": "52",
           "p": 519.99,
           "c": 799.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "65431",
-      "titulo": "Tênis Nike V5 RNR Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-nike-v5-rnr-masculino-ii629-2-006/p",
-      "ref": "II629-2-006",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2026-03-23T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/546029/II629-2-006-1-800X1000.jpg?v=639137837465800000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/546030/II629-2-006-2-800X1000.jpg?v=639137837465970000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/546031/II629-2-006-3-800X1000.jpg?v=639137837465970000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/546032/II629-2-006-4-800X1000.jpg?v=639137837465970000"
-      ],
-      "variantes": [
-        {
-          "t": "39",
-          "p": 649.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 649.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 649.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 649.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 649.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 649.99,
-          "c": 649.99,
           "x": null,
           "a": false
         }

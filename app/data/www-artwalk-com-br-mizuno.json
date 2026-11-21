@@ -2,7 +2,7 @@
   "marca": "Mizuno",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-21T11:45:56Z",
+  "atualizado": "2026-11-21T15:47:42Z",
   "produtos": [
     {
       "id": "2034626",
@@ -1146,8 +1146,8 @@
           "t": "40",
           "p": 549.99,
           "c": 1099.99,
-          "x": null,
-          "a": false
+          "x": 549.99,
+          "a": true
         },
         {
           "t": "41",
