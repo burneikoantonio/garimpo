@@ -2,30 +2,48 @@
   "marca": "Blck Brasil",
   "loja": "Site Blck Brasil",
   "site": "blckbrasil.com.br",
-  "atualizado": "2026-11-21T23:43:25Z",
+  "atualizado": "2026-11-22T11:48:00Z",
   "produtos": [
     {
-      "id": "10860065554743",
-      "titulo": "Boné Snapback Azul Marinho World Wide",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-azul-marinho-world-wide",
+      "id": "10372621631799",
+      "titulo": "Short Branco BLCK Royalty",
+      "url": "https://blckbrasil.com.br/products/short-branco-blck-royalty",
       "ref": "",
-      "tipo": "Chapéus",
+      "tipo": "",
       "tags": [
-        "ATC",
-        "CAIXA",
         "LIVE",
-        "SEPARAR"
+        "SHORTS",
+        "VESTUÁRIO"
       ],
-      "publicado": "2026-11-21T15:58:28-03:00",
+      "publicado": "2026-11-22T01:35:17-03:00",
       "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B09_ef8f9f8f-029b-4742-920a-2744aad82063.jpg?v=1783468342",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B09-2_163920c0-7824-4f80-828a-a317eb4acc39.jpg?v=1783468343",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B09-3_470d05eb-92bd-459b-8f87-07b1b8b6191c.jpg?v=1783468342"
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO2_276a91c9-ea09-42a6-813f-5b7951ebf585.jpg?v=1766032531",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO3_1019ab4c-e9a3-4109-ac60-9346ebdf7308.jpg?v=1766032532",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO4_fce65a93-094c-475e-9cdc-8f06b48b229f.jpg?v=1766032592",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO1_6563564e-ed3b-471b-8101-a0ca3f51b7d9.jpg?v=1766032531"
       ],
       "variantes": [
         {
-          "t": "Azul Marinho / Único",
-          "p": 97.00,
+          "t": "P",
+          "p": 37.00,
+          "c": 199.90,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 37.00,
+          "c": 199.90,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 37.00,
+          "c": 199.90,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 37.00,
           "c": 199.90,
           "a": true
         }
@@ -83,32 +101,6 @@
       ]
     },
     {
-      "id": "10433707671863",
-      "titulo": "Boné Snapback Preto Spider",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-spider",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "CRIABH",
-        "LIVE",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-21T00:19:37-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45_87064881-59a1-489d-be0c-9918ddeade8e.jpg?v=1766173923",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-2_315bd562-bfcc-4e7f-8b96-e6350906d79e.jpg?v=1766173923",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-3_e68b6c90-e4bd-4686-ae92-a9f9976d513c.jpg?v=1766173923"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 197.00,
-          "c": 319.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10911962136887",
       "titulo": "Boné Snapback Suede Vermelho Yin-Yang",
       "url": "https://blckbrasil.com.br/products/bone-snapback-suede-vermelho-yin-yang",
@@ -128,31 +120,6 @@
           "t": "Vermelho / Único",
           "p": 239.90,
           "c": 239.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11023552250167",
-      "titulo": "Boné Snapback Suede Basic Cinza",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-basic-cinza",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "ADS",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-20T16:23:39-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B38_aeec98d7-ef29-4c6d-8f07-6fb0c979cae7.jpg?v=1792429064",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B38-2_99f913fc-bc94-42ad-992b-dbac212753cc.jpg?v=1792431150",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B38-3_28d2145e-8c13-4f23-ac7c-c19b83691cfc.jpg?v=1792431150"
-      ],
-      "variantes": [
-        {
-          "t": "Cinza",
-          "p": 179.90,
-          "c": 179.90,
           "a": true
         }
       ]
@@ -183,7 +150,7 @@
           "t": "M / Preta",
           "p": 67.00,
           "c": 159.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G / Preta",
@@ -267,7 +234,7 @@
           "t": "M / Vermelha",
           "p": 67.00,
           "c": 159.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G / Vermelha",
@@ -417,51 +384,6 @@
           "p": 37.00,
           "c": 199.90,
           "a": false
-        }
-      ]
-    },
-    {
-      "id": "10372621631799",
-      "titulo": "Short Branco BLCK Royalty",
-      "url": "https://blckbrasil.com.br/products/short-branco-blck-royalty",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "LIVE",
-        "SHORTS",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-20T01:44:51-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO2_276a91c9-ea09-42a6-813f-5b7951ebf585.jpg?v=1766032531",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO3_1019ab4c-e9a3-4109-ac60-9346ebdf7308.jpg?v=1766032532",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO4_fce65a93-094c-475e-9cdc-8f06b48b229f.jpg?v=1766032592",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/QUADRADOBRANCO1_6563564e-ed3b-471b-8101-a0ca3f51b7d9.jpg?v=1766032531"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 37.00,
-          "c": 199.90,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 37.00,
-          "c": 199.90,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 37.00,
-          "c": 199.90,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 37.00,
-          "c": 199.90,
-          "a": true
         }
       ]
     },
@@ -2155,31 +2077,6 @@
           "t": "Vinho",
           "p": 239.90,
           "c": 239.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10947087532343",
-      "titulo": "Boné Snapback Follow New Zig Zag White",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-follow-new-zig-zag-white",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-18T15:35:07-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B82_bb5a6b2a-2670-4ff8-a9d6-70ae5d63e587.jpg?v=1788224201",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B82-2_184e4ecd-6281-43d3-8112-1ff048eaaee2.jpg?v=1788226312",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B82-3_e115df4a-8261-4863-b0d6-4b171c5629c1.jpg?v=1788226312"
-      ],
-      "variantes": [
-        {
-          "t": "Branco / Único",
-          "p": 137.00,
-          "c": 219.90,
           "a": true
         }
       ]

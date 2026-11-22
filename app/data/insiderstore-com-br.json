@@ -2,7 +2,7 @@
   "marca": "Insider",
   "loja": "Site Insider",
   "site": "insiderstore.com.br",
-  "atualizado": "2026-11-21T23:43:23Z",
+  "atualizado": "2026-11-22T11:47:58Z",
   "produtos": [
     {
       "id": "15525693948053",
@@ -237,6 +237,7 @@
         "excluir",
         "excluir-feed",
         "excluirfeed",
+        "Low stock",
         "produto-oficial"
       ],
       "publicado": "2026-11-19T19:26:43-03:00",
@@ -3200,7 +3201,7 @@
           "t": "Comfy Brown / M",
           "p": 189.00,
           "c": 189.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Comfy Brown / G",
@@ -3806,7 +3807,7 @@
           "t": "Space Blue / M",
           "p": 409.00,
           "c": 409.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Space Blue / G",
@@ -3842,13 +3843,13 @@
           "t": "Winewood / M",
           "p": 409.00,
           "c": 409.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Winewood / G",
           "p": 409.00,
           "c": 409.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Winewood / GG",
@@ -3890,7 +3891,7 @@
           "t": "Soft Peach / P",
           "p": 499.00,
           "c": 499.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Soft Peach / M",
@@ -4286,7 +4287,7 @@
           "t": "Earth Brown / GG",
           "p": 279.00,
           "c": 279.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Earth Brown / XGG",
@@ -4557,7 +4558,7 @@
           "t": "Navy / G",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Navy / GG",
@@ -4611,13 +4612,13 @@
           "t": "Preta / M",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / G",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -4629,13 +4630,13 @@
           "t": "Preta / GG",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / XGG",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / PP",
@@ -4767,31 +4768,31 @@
           "t": "Blueish / P",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / M",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / G",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / GG",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / XGG",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -4917,7 +4918,7 @@
           "t": "Ocean Blue / PP",
           "p": 519.00,
           "c": 519.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Ocean Blue / P",
@@ -4935,7 +4936,7 @@
           "t": "Ocean Blue / G",
           "p": 519.00,
           "c": 519.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Ocean Blue / GG",
@@ -5007,7 +5008,7 @@
           "t": "Glacial Blue / G",
           "p": 519.00,
           "c": 519.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Glacial Blue / GG",
@@ -5277,7 +5278,7 @@
           "t": "Nori Green / GG",
           "p": 659.00,
           "c": 659.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -5572,7 +5573,7 @@
           "t": "Honey Mustard / G",
           "p": 899.00,
           "c": 899.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Honey Mustard / GG",
@@ -5833,7 +5834,7 @@
           "t": "Mineral Orange / GG",
           "p": 139.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Mineral Orange / XGG",
@@ -5845,7 +5846,7 @@
           "t": "Midnight Blue / P",
           "p": 139.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Midnight Blue / M",
@@ -5869,7 +5870,7 @@
           "t": "Midnight Blue / XGG",
           "p": 139.00,
           "c": 139.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -5922,7 +5923,7 @@
           "t": "Navy / G",
           "p": 156.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Navy / GG",
@@ -5976,13 +5977,13 @@
           "t": "Preta / M",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / G",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -5994,13 +5995,13 @@
           "t": "Preta / GG",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / XGG",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / PP",
@@ -6132,31 +6133,31 @@
           "t": "Blueish / P",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / M",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / G",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / GG",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / XGG",
           "p": 179.00,
           "c": 189.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -7152,7 +7153,7 @@
           "t": "Nori Green / M",
           "p": 104.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -7170,7 +7171,7 @@
           "t": "Nori Green / XGG",
           "p": 104.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / PP",
@@ -7182,7 +7183,7 @@
           "t": "Beetroot / P",
           "p": 104.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -7278,7 +7279,7 @@
           "t": "Maple Brown / XGG",
           "p": 104.00,
           "c": 169.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -7337,7 +7338,7 @@
           "t": "Carmenere / GG",
           "p": 104.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -7349,7 +7350,7 @@
           "t": "Preta / PP",
           "p": 99.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -7547,7 +7548,7 @@
           "t": "Beetroot / P",
           "p": 99.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / M",
@@ -7571,7 +7572,7 @@
           "t": "Beetroot / XGG",
           "p": 99.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / XXGG",
@@ -7589,7 +7590,7 @@
           "t": "Flame Red / P",
           "p": 104.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Flame Red / M",
@@ -8105,7 +8106,7 @@
           "t": "Honey Brown / P",
           "p": 149.00,
           "c": 198.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Honey Brown / M",
@@ -8362,7 +8363,7 @@
           "t": "Preto / P",
           "p": 199.00,
           "c": 259.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Preto / M",
@@ -8409,8 +8410,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 348.30,
-          "c": 525.00,
+          "p": 235.20,
+          "c": 315.00,
           "a": true
         }
       ]
@@ -10061,7 +10062,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 670.38,
+          "p": 627.13,
           "c": 825.00,
           "a": true
         }
@@ -10107,7 +10108,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 433.85,
+          "p": 405.86,
           "c": 495.00,
           "a": true
         }
@@ -10281,7 +10282,7 @@
           "t": "Preto / G",
           "p": 319.00,
           "c": 319.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preto / GG",
@@ -10335,7 +10336,7 @@
           "t": "Cold Blue / GG",
           "p": 319.00,
           "c": 319.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -10371,7 +10372,7 @@
           "t": "Mountain Brown / P",
           "p": 329.00,
           "c": 329.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Mountain Brown / M",
@@ -10383,7 +10384,7 @@
           "t": "Mountain Brown / G",
           "p": 329.00,
           "c": 329.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Mountain Brown / GG",
@@ -10401,7 +10402,7 @@
           "t": "Preto / M",
           "p": 329.00,
           "c": 329.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Preto / G",
@@ -10431,7 +10432,7 @@
           "t": "Cold Blue / G",
           "p": 329.00,
           "c": 329.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Cold Blue / GG",
@@ -11375,7 +11376,7 @@
           "t": "Preto / XXGG",
           "p": 109.00,
           "c": 139.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -11553,7 +11554,7 @@
           "t": "Flame Red / M",
           "p": 83.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Flame Red / G",
@@ -11748,7 +11749,7 @@
           "t": "Ivory / G",
           "p": 299.00,
           "c": 299.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Ivory / GG",
@@ -12003,7 +12004,7 @@
           "t": "Mist Green / M",
           "p": 165.00,
           "c": 275.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Mist Green / G",
@@ -14900,7 +14901,7 @@
           "t": "Mineral Orange / GG",
           "p": 139.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Mineral Orange / XGG",
@@ -14912,7 +14913,7 @@
           "t": "Midnight Blue / P",
           "p": 139.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Midnight Blue / M",
@@ -14936,7 +14937,7 @@
           "t": "Midnight Blue / XGG",
           "p": 139.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Grape / P",
@@ -15186,7 +15187,7 @@
           "t": "Nori Green / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -15216,7 +15217,7 @@
           "t": "Carmenere / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -15234,7 +15235,7 @@
           "t": "Carmenere / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -15282,7 +15283,7 @@
           "t": "Azul / XXGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G4",
@@ -15426,7 +15427,7 @@
           "t": "Evergreen / G",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -15981,7 +15982,7 @@
       "ref": "",
       "tipo": "Kit",
       "tags": [
-        "__lblCust:FLASH PROMO|topright|#A20016|white",
+        "__lblCust:Best Seller|topright|black|white",
         "aerolook",
         "all-masculino",
         "camiseta-viscose",
@@ -15993,7 +15994,6 @@
         "dia-dos-namorados",
         "encorpado",
         "fit-regular",
-        "flash-promo",
         "gramatura-4",
         "homem",
         "kit-camisetas-masculinas",
@@ -17593,7 +17593,7 @@
           "t": "Mineral Orange / GG",
           "p": 135.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Mineral Orange / XGG",
@@ -17605,7 +17605,7 @@
           "t": "Midnight Blue / P",
           "p": 139.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Midnight Blue / M",
@@ -17629,7 +17629,7 @@
           "t": "Midnight Blue / XGG",
           "p": 139.00,
           "c": 139.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -18505,7 +18505,7 @@
           "t": "Carmenere / P",
           "p": 199.00,
           "c": 199.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -18523,7 +18523,7 @@
           "t": "Carmenere / GG",
           "p": 199.00,
           "c": 199.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -18725,7 +18725,7 @@
           "t": "Preta / PP",
           "p": 92.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / PP",
@@ -19585,7 +19585,7 @@
           "t": "Preto / XXGG",
           "p": 76.00,
           "c": 139.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -20591,7 +20591,7 @@
           "t": "Nori Green / XGG",
           "p": 92.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Dark Powder / XGG",
@@ -20645,7 +20645,7 @@
           "t": "Maple Brown / XGG",
           "p": 92.00,
           "c": 169.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -21283,7 +21283,7 @@
           "t": "Nori Green / XGG",
           "p": 131.00,
           "c": 239.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / PP",
@@ -21544,7 +21544,7 @@
           "t": "Preto / PP",
           "p": 21.00,
           "c": 39.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Preto / XGG",
@@ -22354,7 +22354,7 @@
           "t": "Eletric Blue / XGG",
           "p": 101.00,
           "c": 185.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Eletric Blue / PP",
@@ -22504,7 +22504,7 @@
           "t": "Cold Gray / XGG",
           "p": 24.00,
           "c": 45.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Faded Purple / XGG",
@@ -23659,7 +23659,7 @@
       "variantes": [
         {
           "t": "Tobacco / P",
-          "p": 215.00,
+          "p": 229.00,
           "c": 309.00,
           "a": false
         },
@@ -23671,7 +23671,7 @@
         },
         {
           "t": "Blue Ash / M",
-          "p": 215.00,
+          "p": 229.00,
           "c": 309.00,
           "a": false
         },
@@ -23683,7 +23683,7 @@
         },
         {
           "t": "Blue Ash / G",
-          "p": 215.00,
+          "p": 225.00,
           "c": 309.00,
           "a": false
         },
@@ -23701,13 +23701,13 @@
         },
         {
           "t": "Blue Ash / XGG",
-          "p": 215.00,
+          "p": 225.00,
           "c": 309.00,
           "a": false
         },
         {
           "t": "Preta / XGG",
-          "p": 229.00,
+          "p": 215.00,
           "c": 309.00,
           "a": false
         },
@@ -23725,13 +23725,13 @@
         },
         {
           "t": "Preta / PP",
-          "p": 229.00,
+          "p": 225.00,
           "c": 309.00,
           "a": false
         },
         {
           "t": "Preta / P",
-          "p": 215.00,
+          "p": 229.00,
           "c": 309.00,
           "a": false
         },
@@ -23755,7 +23755,7 @@
         },
         {
           "t": "Nori Green / P",
-          "p": 229.00,
+          "p": 219.00,
           "c": 309.00,
           "a": false
         },
@@ -23779,7 +23779,7 @@
         },
         {
           "t": "Cream / PP",
-          "p": 219.00,
+          "p": 225.00,
           "c": 309.00,
           "a": false
         },
@@ -23797,13 +23797,13 @@
         },
         {
           "t": "Quicksand / G",
-          "p": 215.00,
+          "p": 229.00,
           "c": 309.00,
           "a": false
         },
         {
           "t": "Quicksand / GG",
-          "p": 215.00,
+          "p": 219.00,
           "c": 309.00,
           "a": false
         },
@@ -24000,7 +24000,7 @@
           "t": "Smooth Beige / M",
           "p": 199.00,
           "c": 199.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Smooth Beige / GG",
@@ -24166,7 +24166,7 @@
           "t": "Preto / PP",
           "p": 59.00,
           "c": 59.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preto / P",
@@ -24202,7 +24202,7 @@
           "t": "Smooth Beige / PP",
           "p": 59.00,
           "c": 59.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Smooth Beige / P",
@@ -24319,7 +24319,7 @@
           "t": "Preto / GG",
           "p": 189.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preto / XGG",
@@ -24385,7 +24385,7 @@
           "t": "Smooth Beige / G",
           "p": 179.00,
           "c": 189.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Smooth Beige / GG",
@@ -24557,7 +24557,7 @@
           "t": "Comfy Brown / M",
           "p": 189.00,
           "c": 189.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Comfy Brown / G",
@@ -25226,7 +25226,7 @@
           "t": "Nori Green / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -25244,7 +25244,7 @@
           "t": "Nori Green / XGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Dark Powder / P",
@@ -25286,7 +25286,7 @@
           "t": "Beetroot / P",
           "p": 169.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -25418,7 +25418,7 @@
           "t": "Maple Brown / XGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -25853,7 +25853,7 @@
           "t": "Nori Green / GG",
           "p": 154.00,
           "c": 175.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -25883,7 +25883,7 @@
           "t": "Carmenere / P",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -25901,7 +25901,7 @@
           "t": "Carmenere / GG",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -25949,7 +25949,7 @@
           "t": "Azul / XXGG",
           "p": 154.00,
           "c": 175.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G4",
@@ -26093,7 +26093,7 @@
           "t": "Evergreen / G",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -26305,7 +26305,7 @@
           "t": "Carmenere / P",
           "p": 99.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -26323,7 +26323,7 @@
           "t": "Carmenere / GG",
           "p": 99.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -26389,7 +26389,7 @@
           "t": "Nori Green / GG",
           "p": 104.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -26823,7 +26823,7 @@
           "t": "Branco / P",
           "p": 149.00,
           "c": 149.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Branco / M",
@@ -27379,7 +27379,7 @@
           "t": "Honey Mustard / G",
           "p": 899.00,
           "c": 899.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Honey Mustard / GG",
@@ -27678,7 +27678,7 @@
           "t": "Nori Green / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -27708,7 +27708,7 @@
           "t": "Carmenere / P",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -27726,7 +27726,7 @@
           "t": "Carmenere / GG",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -27774,7 +27774,7 @@
           "t": "Azul / XXGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G4",
@@ -27918,7 +27918,7 @@
           "t": "Evergreen / G",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -28138,7 +28138,7 @@
           "t": "Nori Green / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -28156,7 +28156,7 @@
           "t": "Nori Green / XGG",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Dark Powder / P",
@@ -28198,7 +28198,7 @@
           "t": "Beetroot / P",
           "p": 149.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -28330,7 +28330,7 @@
           "t": "Maple Brown / XGG",
           "p": 149.00,
           "c": 169.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -28836,7 +28836,7 @@
           "t": "Nori Green / XGG",
           "p": 143.00,
           "c": 239.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Maple Brown / PP",
@@ -29255,7 +29255,7 @@
           "t": "Nori Green / GG",
           "p": 175.00,
           "c": 175.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -29285,7 +29285,7 @@
           "t": "Carmenere / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -29303,7 +29303,7 @@
           "t": "Carmenere / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -29351,7 +29351,7 @@
           "t": "Azul / XXGG",
           "p": 129.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G4",
@@ -29537,7 +29537,7 @@
           "t": "Evergreen / G",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -30168,7 +30168,7 @@
           "t": "Amazon Green / P",
           "p": 459.00,
           "c": 459.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Amazon Green / M",
@@ -30180,7 +30180,7 @@
           "t": "Amazon Green / G",
           "p": 415.00,
           "c": 459.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Amazon Green / GG",
@@ -30587,7 +30587,7 @@
           "t": "Preto / GG",
           "p": 299.00,
           "c": 329.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preto / XGG",
@@ -30812,7 +30812,7 @@
           "t": "Preta / PP",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -30920,7 +30920,7 @@
           "t": "Carmenere / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -31118,7 +31118,7 @@
           "t": "Beetroot / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / M",
@@ -31142,7 +31142,7 @@
           "t": "Beetroot / XGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / XXGG",
@@ -31160,7 +31160,7 @@
           "t": "Flame Red / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Flame Red / M",
@@ -32486,7 +32486,7 @@
           "t": "Flame Red / M",
           "p": 155.00,
           "c": 155.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Flame Red / G",
@@ -33570,7 +33570,7 @@
           "t": "Preto / PP",
           "p": 39.00,
           "c": 39.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Preto / XGG",
@@ -33690,7 +33690,7 @@
           "t": "Lavender Blue / M",
           "p": 39.00,
           "c": 39.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Lavender Blue / G",
@@ -33900,7 +33900,7 @@
           "t": "Faded Beige / M",
           "p": 29.00,
           "c": 39.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Faded Beige / G",
@@ -33954,7 +33954,7 @@
           "t": "Cocoa Brown / G",
           "p": 39.00,
           "c": 39.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Branco / G",
@@ -34842,7 +34842,7 @@
       "ref": "",
       "tipo": "Kit",
       "tags": [
-        "__lblCust:FLASH PROMO|topright|#A20016|white",
+        "__lblCust:Best Seller|topright|black|white",
         "aerolook",
         "all-feminino",
         "BF-2023",
@@ -34852,7 +34852,6 @@
         "descontokit",
         "dia-dos-namorados",
         "especial-promo",
-        "flash-promo",
         "flash_promo_fevereiro",
         "kit-feminino",
         "kit:daily-t-shirt-feminina:1|daily-t-shirt-feminina:1|daily-t-shirt-feminina:1",
@@ -34881,7 +34880,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 391.84,
+          "p": 422.33,
           "c": 567.00,
           "a": true
         }
@@ -34961,7 +34960,7 @@
           "t": "Vulcano / M",
           "p": 275.00,
           "c": 275.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Vulcano / G",
@@ -35099,7 +35098,7 @@
           "t": "Navy / XXGG",
           "p": 275.00,
           "c": 279.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Rain Forest / PP",
@@ -35345,7 +35344,7 @@
           "t": "Preto / PP",
           "p": 39.00,
           "c": 39.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Branco / GG",
@@ -35429,7 +35428,7 @@
           "t": "Lavender Blue / M",
           "p": 39.00,
           "c": 39.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Lavender Blue / G",
@@ -35657,7 +35656,7 @@
           "t": "Faded Beige / M",
           "p": 39.00,
           "c": 39.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Faded Beige / GG",
@@ -35693,7 +35692,7 @@
           "t": "Cocoa Brown / G",
           "p": 39.00,
           "c": 39.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Cocoa Brown / GG",
@@ -35914,7 +35913,7 @@
           "t": "Mist Green / M",
           "p": 275.00,
           "c": 275.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Mist Green / G",
@@ -37649,7 +37648,7 @@
           "t": "Faded Brown / M",
           "p": 179.00,
           "c": 209.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Faded Brown / G",
@@ -37911,7 +37910,7 @@
           "t": "Nori Green / GG",
           "p": 595.00,
           "c": 659.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -38030,7 +38029,7 @@
           "t": "Earth Brown / GG",
           "p": 279.00,
           "c": 279.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Earth Brown / XGG",
@@ -39244,7 +39243,7 @@
           "t": "Marinho / GG",
           "p": 239.00,
           "c": 399.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Marinho / XGG",
@@ -39418,25 +39417,25 @@
           "t": "Branco / P",
           "p": 149.00,
           "c": 149.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Branco / M",
           "p": 149.00,
           "c": 149.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Branco / G",
           "p": 149.00,
           "c": 149.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Branco / GG",
           "p": 149.00,
           "c": 149.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preto / P",
@@ -40679,7 +40678,7 @@
           "t": "Cactus Green / M",
           "p": 309.00,
           "c": 359.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Cactus Green / G",
@@ -40727,7 +40726,7 @@
           "t": "Brown Moss / M",
           "p": 309.00,
           "c": 359.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Brown Moss / G",
@@ -40787,7 +40786,7 @@
           "t": "Marinho / GG",
           "p": 319.00,
           "c": 359.00,
-          "a": false
+          "a": true
         },
         {
           "t": "New Khaki / P",
@@ -41031,7 +41030,7 @@
           "t": "Amazon Green / M",
           "p": 195.00,
           "c": 229.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Amazon Green / G",
@@ -41049,7 +41048,7 @@
           "t": "Bloody Mary / P",
           "p": 159.00,
           "c": 229.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Bloody Mary / M",
@@ -41061,7 +41060,7 @@
           "t": "Bloody Mary / G",
           "p": 159.00,
           "c": 229.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Bloody Mary / GG",
@@ -41359,7 +41358,7 @@
           "t": "Earth Brown / GG",
           "p": 279.00,
           "c": 279.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Earth Brown / XGG",
@@ -41821,7 +41820,7 @@
           "t": "Faded Beige / M",
           "p": 19.00,
           "c": 39.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Faded Beige / G",
@@ -41917,7 +41916,7 @@
           "t": "Cocoa Brown / G",
           "p": 35.00,
           "c": 39.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Cocoa Brown / GG",
@@ -41986,7 +41985,7 @@
           "t": "Preto / P",
           "p": 45.00,
           "c": 45.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Preto / M",
@@ -42058,7 +42057,7 @@
           "t": "Cold Gray / XGG",
           "p": 45.00,
           "c": 45.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Cold Gray / GG",
@@ -42325,7 +42324,7 @@
           "t": "Preto / PP",
           "p": 35.00,
           "c": 39.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Preto / XGG",
@@ -42385,7 +42384,7 @@
           "t": "Lavender Blue / M",
           "p": 39.00,
           "c": 39.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Lavender Blue / G",
@@ -44053,7 +44052,7 @@
           "t": "Nori Green / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -44071,7 +44070,7 @@
           "t": "Nori Green / XGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / PP",
@@ -44119,7 +44118,7 @@
           "t": "Beetroot / P",
           "p": 169.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -44227,7 +44226,7 @@
           "t": "Vulcano / M",
           "p": 279.00,
           "c": 275.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Vulcano / G",
@@ -44413,7 +44412,7 @@
           "t": "Green Root / P",
           "p": 199.00,
           "c": 199.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Green Root / M",
@@ -44749,7 +44748,7 @@
           "t": "Earth Brown / GG",
           "p": 279.00,
           "c": 279.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Earth Brown / XGG",
@@ -45113,7 +45112,7 @@
           "t": "Nori Green / GG",
           "p": 595.00,
           "c": 659.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -45504,7 +45503,7 @@
           "t": "Space Blue / M",
           "p": 409.00,
           "c": 409.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Space Blue / G",
@@ -45540,13 +45539,13 @@
           "t": "Winewood / M",
           "p": 409.00,
           "c": 409.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Winewood / G",
           "p": 409.00,
           "c": 409.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Winewood / GG",
@@ -45826,7 +45825,7 @@
           "t": "Green Root / P",
           "p": 169.00,
           "c": 199.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Green Root / M",
@@ -46308,7 +46307,7 @@
           "t": "Nori Green / GG",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -46326,7 +46325,7 @@
           "t": "Carmenere / P",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -46344,7 +46343,7 @@
           "t": "Carmenere / GG",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -46392,7 +46391,7 @@
           "t": "Azul / XXGG",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "New Navy / PP",
@@ -46500,7 +46499,7 @@
           "t": "Evergreen / G",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -47087,7 +47086,7 @@
           "t": "Nori Green / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -47105,7 +47104,7 @@
           "t": "Nori Green / XGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / PP",
@@ -47153,7 +47152,7 @@
           "t": "Beetroot / P",
           "p": 169.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -47792,7 +47791,7 @@
           "t": "Earth Brown / GG",
           "p": 279.00,
           "c": 279.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Earth Brown / XGG",
@@ -49459,7 +49458,7 @@
           "t": "Nori Green / XGG",
           "p": 239.00,
           "c": 219.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / PP",
@@ -49624,13 +49623,13 @@
           "t": "Rust Brown / M",
           "p": 175.00,
           "c": 349.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Rust Brown / G",
           "p": 175.00,
           "c": 349.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Rust Brown / GG",
@@ -49749,7 +49748,7 @@
           "t": "Preta / PP",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -49851,7 +49850,7 @@
           "t": "Carmenere / GG",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -49983,7 +49982,7 @@
           "t": "Beetroot / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / M",
@@ -50007,7 +50006,7 @@
           "t": "Beetroot / XGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Flame Red / PP",
@@ -50019,7 +50018,7 @@
           "t": "Flame Red / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Flame Red / M",
@@ -50784,7 +50783,7 @@
           "t": "Nori Green / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -50802,7 +50801,7 @@
           "t": "Carmenere / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -50820,7 +50819,7 @@
           "t": "Carmenere / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -50868,7 +50867,7 @@
           "t": "Azul / XXGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Off White / PP",
@@ -50958,7 +50957,7 @@
           "t": "Evergreen / G",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -51268,7 +51267,7 @@
           "t": "Gray Brown / GG",
           "p": 349.00,
           "c": 349.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Gray Brown / XGG",
@@ -51424,7 +51423,7 @@
           "t": "Preto / M",
           "p": 149.00,
           "c": 299.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preto / P",
@@ -51466,7 +51465,7 @@
           "t": "Gray Brown / M",
           "p": 179.00,
           "c": 299.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Gray Brown / G",
@@ -51882,7 +51881,7 @@
           "t": "Carmenere / P",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / PP",
@@ -53940,7 +53939,7 @@
           "t": "Nori Green / XGG",
           "p": 239.00,
           "c": 239.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / PP",
@@ -54210,7 +54209,7 @@
           "t": "Nori Green / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -54276,7 +54275,7 @@
           "t": "Evergreen / G",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -54551,7 +54550,7 @@
           "t": "Nori Green / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -54569,7 +54568,7 @@
           "t": "Nori Green / XGG",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / PP",
@@ -54617,7 +54616,7 @@
           "t": "Beetroot / P",
           "p": 149.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -55593,7 +55592,7 @@
           "t": "Nori Green / XGG",
           "p": 239.00,
           "c": 239.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / PP",
@@ -55929,7 +55928,7 @@
           "t": "Nori Green / M",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -55947,7 +55946,7 @@
           "t": "Nori Green / XGG",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / PP",
@@ -55995,7 +55994,7 @@
           "t": "Beetroot / P",
           "p": 149.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -56283,7 +56282,7 @@
           "t": "Nori Green / GG",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -56301,7 +56300,7 @@
           "t": "Carmenere / P",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -56319,7 +56318,7 @@
           "t": "Carmenere / GG",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -56367,7 +56366,7 @@
           "t": "Azul / XXGG",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "New Navy / PP",
@@ -56583,7 +56582,7 @@
           "t": "Evergreen / G",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -57534,7 +57533,7 @@
           "t": "Preta / PP",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -57612,7 +57611,7 @@
           "t": "Beetroot / P",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / M",
@@ -57636,7 +57635,7 @@
           "t": "Beetroot / XGG",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / XXGG",
@@ -57707,7 +57706,7 @@
           "t": "Preta / PP",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -57785,7 +57784,7 @@
           "t": "Beetroot / P",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / M",
@@ -57809,7 +57808,7 @@
           "t": "Beetroot / XGG",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / XXGG",
@@ -58138,7 +58137,7 @@
           "t": "Nori Green / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -58156,7 +58155,7 @@
           "t": "Carmenere / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -58168,7 +58167,7 @@
           "t": "Carmenere / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -58216,7 +58215,7 @@
           "t": "Azul / XXGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Off White / PP",
@@ -58318,7 +58317,7 @@
           "t": "Evergreen / G",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -58780,7 +58779,7 @@
           "t": "Nori Green / XGG",
           "p": 219.00,
           "c": 219.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / PP",
@@ -59096,7 +59095,7 @@
           "t": "Nori Green / GG",
           "p": 169.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -59114,7 +59113,7 @@
           "t": "Carmenere / P",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -59132,7 +59131,7 @@
           "t": "Carmenere / GG",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -59180,7 +59179,7 @@
           "t": "Azul / XXGG",
           "p": 169.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "New Navy / PP",
@@ -59396,7 +59395,7 @@
           "t": "Evergreen / G",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -59604,7 +59603,7 @@
           "t": "Nori Green / P",
           "p": 81.00,
           "c": 135.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Nori Green / M",
@@ -59640,13 +59639,13 @@
           "t": "Off White / P",
           "p": 99.00,
           "c": 135.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Off White / M",
           "p": 81.00,
           "c": 135.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Off White / G",
@@ -59877,7 +59876,7 @@
           "t": "Nori Green / GG",
           "p": 104.00,
           "c": 179.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Off White / P",
@@ -60782,7 +60781,7 @@
           "t": "Nori Green / M",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -60800,7 +60799,7 @@
           "t": "Nori Green / XGG",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / PP",
@@ -60848,7 +60847,7 @@
           "t": "Beetroot / P",
           "p": 149.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -61170,7 +61169,7 @@
           "t": "Nori Green / GG",
           "p": 595.00,
           "c": 659.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -62076,7 +62075,7 @@
           "t": "Nori Green / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -62094,7 +62093,7 @@
           "t": "Nori Green / XGG",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / PP",
@@ -62142,7 +62141,7 @@
           "t": "Beetroot / P",
           "p": 149.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -62946,7 +62945,7 @@
           "t": "Preta / PP",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -63012,7 +63011,7 @@
           "t": "Carmenere / GG",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -63216,7 +63215,7 @@
           "t": "Flame Red / P",
           "p": 169.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Flame Red / M",
@@ -63258,7 +63257,7 @@
           "t": "Beetroot / P",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / M",
@@ -63282,7 +63281,7 @@
           "t": "Beetroot / XGG",
           "p": 155.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / XXGG",
@@ -63480,7 +63479,7 @@
           "t": "Nori Green / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -63498,7 +63497,7 @@
           "t": "Carmenere / P",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -63516,7 +63515,7 @@
           "t": "Carmenere / GG",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -63564,7 +63563,7 @@
           "t": "Azul / XXGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "New Navy / PP",
@@ -63983,7 +63982,7 @@
           "t": "Nori Green / M",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -64001,7 +64000,7 @@
           "t": "Nori Green / XGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / PP",
@@ -64049,7 +64048,7 @@
           "t": "Beetroot / P",
           "p": 169.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -64280,7 +64279,7 @@
         },
         {
           "t": "Preto / GG",
-          "p": 399.00,
+          "p": 379.00,
           "c": 489.00,
           "a": true
         },
@@ -64298,13 +64297,13 @@
         },
         {
           "t": "Off White / P",
-          "p": 399.00,
+          "p": 379.00,
           "c": 489.00,
           "a": true
         },
         {
           "t": "Off White / M",
-          "p": 379.00,
+          "p": 395.00,
           "c": 489.00,
           "a": true
         },
@@ -64724,7 +64723,7 @@
           "t": "Nori Green / GG",
           "p": 169.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -64742,7 +64741,7 @@
           "t": "Carmenere / P",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -64760,7 +64759,7 @@
           "t": "Carmenere / GG",
           "p": 145.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -64808,7 +64807,7 @@
           "t": "Azul / XXGG",
           "p": 169.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "New Navy / PP",
@@ -65842,7 +65841,7 @@
           "t": "Rust Brown / P",
           "p": 65.00,
           "c": 69.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Rust Brown / GG",
@@ -66003,7 +66002,7 @@
           "t": "Foliage Green / M",
           "p": 89.00,
           "c": 129.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Foliage Green / G",
@@ -66201,7 +66200,7 @@
           "t": "Nori Green / XGG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / PP",
@@ -66219,7 +66218,7 @@
           "t": "Nori Green / M",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -66375,7 +66374,7 @@
           "t": "Carmenere / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -66393,7 +66392,7 @@
           "t": "Carmenere / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -66501,7 +66500,7 @@
           "t": "Nori Green / GG",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -67197,7 +67196,7 @@
           "t": "Mineral Blue / G",
           "p": 104.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Mineral Blue / P",
@@ -67767,7 +67766,7 @@
           "t": "Earth Brown / GG",
           "p": 189.00,
           "c": 279.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Earth Brown / XGG",
@@ -68631,7 +68630,7 @@
         },
         {
           "t": "Azul Marinho / M",
-          "p": 139.00,
+          "p": 129.00,
           "c": 139.00,
           "a": true
         },
@@ -68649,7 +68648,7 @@
         },
         {
           "t": "Azul Marinho / XGG",
-          "p": 139.00,
+          "p": 129.00,
           "c": 139.00,
           "a": true
         },
@@ -68661,13 +68660,13 @@
         },
         {
           "t": "Milk / PP",
-          "p": 139.00,
+          "p": 125.00,
           "c": 139.00,
           "a": true
         },
         {
           "t": "Milk / P",
-          "p": 119.00,
+          "p": 139.00,
           "c": 139.00,
           "a": true
         },
@@ -68679,7 +68678,7 @@
         },
         {
           "t": "Milk / G",
-          "p": 125.00,
+          "p": 135.00,
           "c": 139.00,
           "a": true
         },
@@ -68691,7 +68690,7 @@
         },
         {
           "t": "Milk / XGG",
-          "p": 139.00,
+          "p": 125.00,
           "c": 139.00,
           "a": true
         },
@@ -68709,7 +68708,7 @@
         },
         {
           "t": "Nori Green / P",
-          "p": 125.00,
+          "p": 139.00,
           "c": 139.00,
           "a": true
         },
@@ -68733,19 +68732,19 @@
         },
         {
           "t": "Nori Green / XGG",
-          "p": 125.00,
+          "p": 139.00,
           "c": 139.00,
           "a": true
         },
         {
           "t": "Nori Green / XXGG",
-          "p": 139.00,
+          "p": 129.00,
           "c": 139.00,
           "a": true
         },
         {
           "t": "Flame Red / PP",
-          "p": 139.00,
+          "p": 129.00,
           "c": 139.00,
           "a": true
         },
@@ -68757,19 +68756,19 @@
         },
         {
           "t": "Flame Red / M",
-          "p": 135.00,
+          "p": 139.00,
           "c": 139.00,
           "a": false
         },
         {
           "t": "Flame Red / G",
-          "p": 135.00,
+          "p": 139.00,
           "c": 139.00,
           "a": false
         },
         {
           "t": "Flame Red / GG",
-          "p": 119.00,
+          "p": 139.00,
           "c": 139.00,
           "a": false
         },
@@ -68793,19 +68792,19 @@
         },
         {
           "t": "Preto / P",
-          "p": 139.00,
+          "p": 129.00,
           "c": 139.00,
           "a": true
         },
         {
           "t": "Preto / M",
-          "p": 125.00,
+          "p": 135.00,
           "c": 139.00,
           "a": true
         },
         {
           "t": "Preto / G",
-          "p": 129.00,
+          "p": 139.00,
           "c": 139.00,
           "a": true
         },
@@ -68817,7 +68816,7 @@
         },
         {
           "t": "Preto / XGG",
-          "p": 139.00,
+          "p": 125.00,
           "c": 139.00,
           "a": true
         },
@@ -68825,7 +68824,7 @@
           "t": "Preto / XXGG",
           "p": 119.00,
           "c": 139.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -68998,7 +68997,7 @@
           "t": "Bege / GG / Gola V",
           "p": 145.00,
           "c": 145.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Bege / XGG / Gola V",
@@ -69287,7 +69286,7 @@
           "t": "Space Blue / M",
           "p": 369.00,
           "c": 409.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Space Blue / G",
@@ -69412,7 +69411,7 @@
           "t": "Navy / G",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Navy / GG",
@@ -69580,13 +69579,13 @@
           "t": "Preta / M",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / G",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -69598,13 +69597,13 @@
           "t": "Preta / GG",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / XGG",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / PP",
@@ -69622,31 +69621,31 @@
           "t": "Blueish / P",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / M",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / G",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / GG",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Blueish / XGG",
           "p": 184.00,
           "c": 189.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -69822,7 +69821,7 @@
           "t": "Mist Green / M",
           "p": 275.00,
           "c": 275.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Mist Green / G",
@@ -70162,7 +70161,7 @@
           "t": "Flame Red / M",
           "p": 104.00,
           "c": 155.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Flame Red / G",
@@ -70827,7 +70826,7 @@
           "t": "Flame Red / M",
           "p": 139.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Flame Red / G",
@@ -71367,7 +71366,7 @@
           "t": "Ocean Blue / PP",
           "p": 449.00,
           "c": 519.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Ocean Blue / P",
@@ -71385,7 +71384,7 @@
           "t": "Ocean Blue / G",
           "p": 449.00,
           "c": 519.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Ocean Blue / GG",
@@ -72077,25 +72076,25 @@
         },
         {
           "t": "Urban Brown / P",
-          "p": 265.00,
+          "p": 289.00,
           "c": 289.00,
           "a": false
         },
         {
           "t": "Urban Brown / M",
-          "p": 269.00,
+          "p": 265.00,
           "c": 289.00,
           "a": true
         },
         {
           "t": "Urban Brown / G",
-          "p": 269.00,
+          "p": 279.00,
           "c": 289.00,
           "a": true
         },
         {
           "t": "Urban Brown / GG",
-          "p": 265.00,
+          "p": 289.00,
           "c": 289.00,
           "a": true
         },
@@ -72113,25 +72112,25 @@
         },
         {
           "t": "Ocean Blue / P",
-          "p": 265.00,
+          "p": 269.00,
           "c": 289.00,
           "a": false
         },
         {
           "t": "Ocean Blue / M",
-          "p": 275.00,
+          "p": 269.00,
           "c": 289.00,
           "a": true
         },
         {
           "t": "Ocean Blue / G",
-          "p": 289.00,
+          "p": 265.00,
           "c": 289.00,
           "a": true
         },
         {
           "t": "Ocean Blue / GG",
-          "p": 289.00,
+          "p": 269.00,
           "c": 289.00,
           "a": true
         },
@@ -72149,25 +72148,25 @@
         },
         {
           "t": "Preto / P",
-          "p": 265.00,
+          "p": 279.00,
           "c": 289.00,
           "a": true
         },
         {
           "t": "Preto / M",
-          "p": 285.00,
+          "p": 289.00,
           "c": 289.00,
           "a": true
         },
         {
           "t": "Preto / G",
-          "p": 289.00,
+          "p": 279.00,
           "c": 289.00,
           "a": true
         },
         {
           "t": "Preto / GG",
-          "p": 289.00,
+          "p": 269.00,
           "c": 289.00,
           "a": true
         },
@@ -72317,7 +72316,7 @@
           "t": "Navy / XXGG",
           "p": 245.00,
           "c": 275.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Navy / P",
@@ -72443,7 +72442,7 @@
           "t": "Vulcano / M",
           "p": 245.00,
           "c": 275.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Vulcano / G",
@@ -73306,7 +73305,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 317.11,
+          "p": 307.73,
           "c": 372.00,
           "a": true
         }
@@ -73600,7 +73599,7 @@
           "t": "Green Root / P",
           "p": 179.00,
           "c": 199.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Green Root / M",
@@ -75222,13 +75221,13 @@
           "t": "Eletric Blue / G",
           "p": 185.00,
           "c": 185.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Eletric Blue / XGG",
           "p": 169.00,
           "c": 185.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Eletric Blue / GG",
@@ -76305,7 +76304,7 @@
           "t": "Bordeaux / XGG",
           "p": 85.00,
           "c": 219.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul Marinho / PP",
@@ -77908,7 +77907,7 @@
           "t": "Branca / 34 a 38",
           "p": 55.00,
           "c": 59.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Branca / 39 a 44",
@@ -78503,19 +78502,19 @@
         },
         {
           "t": "Woodsmoke / P",
-          "p": 155.00,
+          "p": 145.00,
           "c": 165.00,
           "a": true
         },
         {
           "t": "Woodsmoke / M",
-          "p": 155.00,
+          "p": 145.00,
           "c": 165.00,
           "a": true
         },
         {
           "t": "Woodsmoke / G",
-          "p": 165.00,
+          "p": 145.00,
           "c": 165.00,
           "a": false
         },
@@ -78855,7 +78854,7 @@
           "t": "Nori Green / GG",
           "p": 529.00,
           "c": 659.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -78969,7 +78968,7 @@
           "t": "Foliage Green / M",
           "p": 104.00,
           "c": 129.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Foliage Green / G",
@@ -79733,7 +79732,7 @@
           "t": "Cinnamon Pink / GG",
           "p": 104.00,
           "c": 119.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Cinnamon Pink / XGG",
@@ -80088,7 +80087,7 @@
           "t": "Preta / PP",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Preta / P",
@@ -80196,7 +80195,7 @@
           "t": "Carmenere / GG",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -80322,7 +80321,7 @@
           "t": "Beetroot / P",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / M",
@@ -80346,7 +80345,7 @@
           "t": "Beetroot / XGG",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / XXGG",
@@ -80364,7 +80363,7 @@
           "t": "Flame Red / P",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Flame Red / M",
@@ -81249,7 +81248,7 @@
           "t": "Beetroot / GG",
           "p": 39.00,
           "c": 65.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / XGG",
@@ -81374,217 +81373,217 @@
       "variantes": [
         {
           "t": "Indigo / P",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Indigo / M",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Indigo / G",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Indigo / GG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Indigo / XGG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Dark Powder / P",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Dark Powder / M",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Dark Powder / G",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Dark Powder / GG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Dark Powder / XGG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Dark Powder / PP",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Preta / P",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Preta / M",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Preta / G",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Preta / GG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Preta / XGG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Off White / P",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Off White / M",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Off White / G",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Off White / GG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Off White / XGG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Nori Green / P",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Nori Green / M",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Nori Green / G",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Nori Green / GG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Nori Green / XGG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Azul / P",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Azul / M",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Azul / G",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Azul / GG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Azul / XGG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Walnut Brown / P",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Walnut Brown / M",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         },
         {
           "t": "Walnut Brown / G",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Walnut Brown / GG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": false
         },
         {
           "t": "Walnut Brown / XGG",
-          "p": 156.80,
+          "p": 169.00,
           "c": 189.00,
           "a": true
         }
@@ -82165,7 +82164,7 @@
           "t": "Mineral Orange / GG",
           "p": 104.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Mineral Orange / XGG",
@@ -82177,7 +82176,7 @@
           "t": "Midnight Blue / P",
           "p": 104.00,
           "c": 139.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Midnight Blue / M",
@@ -82201,7 +82200,7 @@
           "t": "Midnight Blue / XGG",
           "p": 104.00,
           "c": 139.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -83339,7 +83338,7 @@
           "t": "Nori Green / XGG",
           "p": 199.00,
           "c": 239.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / PP",
@@ -83557,7 +83556,7 @@
           "t": "Soft Peach / P",
           "p": 494.00,
           "c": 499.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Soft Peach / M",
@@ -83761,7 +83760,7 @@
           "t": "Bright Red / G",
           "p": 494.00,
           "c": 499.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Bright Red / GG",
@@ -83954,7 +83953,7 @@
           "t": "Ivory / G",
           "p": 299.00,
           "c": 299.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Ivory / GG",
@@ -84469,7 +84468,7 @@
           "t": "Azul / GG",
           "p": 104.00,
           "c": 155.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Azul / XGG",
@@ -84846,19 +84845,19 @@
           "t": "Bege / P / Gola V",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Bege / M / Gola V",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Bege / G / Gola V",
           "p": 159.00,
           "c": 159.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Bege / GG / Gola V",
@@ -85245,7 +85244,7 @@
           "t": "Nori Green / M",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / G",
@@ -85263,7 +85262,7 @@
           "t": "Nori Green / XGG",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Beetroot / PP",
@@ -85275,7 +85274,7 @@
           "t": "Beetroot / P",
           "p": 135.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Beetroot / M",
@@ -85371,7 +85370,7 @@
           "t": "Maple Brown / XGG",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -85640,7 +85639,7 @@
           "t": "Nori Green / GG",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Nori Green / XGG",
@@ -85658,7 +85657,7 @@
           "t": "Carmenere / P",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / M",
@@ -85676,7 +85675,7 @@
           "t": "Carmenere / GG",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Carmenere / XGG",
@@ -85724,7 +85723,7 @@
           "t": "Azul / XXGG",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Off White / PP",
@@ -85826,7 +85825,7 @@
           "t": "Evergreen / G",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Evergreen / GG",
@@ -87546,7 +87545,7 @@
           "t": "Woodsmoke / G",
           "p": 61.00,
           "c": 69.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Woodsmoke / GG",
@@ -87750,7 +87749,7 @@
           "t": "Rust Brown / P",
           "p": 61.00,
           "c": 69.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Rust Brown / M",

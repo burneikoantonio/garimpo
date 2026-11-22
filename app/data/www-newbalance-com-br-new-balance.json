@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Site New Balance",
   "site": "www.newbalance.com.br",
-  "atualizado": "2026-11-21T23:32:30Z",
+  "atualizado": "2026-11-22T11:39:00Z",
   "produtos": [
     {
       "id": "1100319",
@@ -444,8 +444,8 @@
           "t": "43",
           "p": 399.99,
           "c": 399.99,
-          "x": 399.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "44",
@@ -849,6 +849,58 @@
           "c": 449.99,
           "x": 349.99,
           "a": true
+        }
+      ]
+    },
+    {
+      "id": "1177166",
+      "titulo": "Shorts Run Club - 7\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-run-club---7--masculino-1177166/p",
+      "ref": "MS41283_GT_1177166",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2024-01-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/213489/MS41283_GT.jpg?v=639186769319870000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/213490/MS41283_GT.jpg?v=639186769319870000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/213491/MS41283_GT.jpg?v=639186769319870000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/213492/MS41283_GT.jpg?v=639186769319870000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 349.99,
+          "c": 349.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 349.99,
+          "c": 349.99,
+          "x": 349.99,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 349.99,
+          "c": 349.99,
+          "x": 349.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 349.99,
+          "c": 349.99,
+          "x": 349.99,
+          "a": true
+        },
+        {
+          "t": "2GG",
+          "p": 349.99,
+          "c": 349.99,
+          "x": null,
+          "a": false
         }
       ]
     },
@@ -2400,6 +2452,58 @@
       ]
     },
     {
+      "id": "1282455",
+      "titulo": "Shorts Athletics Small Logo 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-athletics-small-logo-5--masculino-1282455/p",
+      "ref": "MS41511B_BK_1282455",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2025-02-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182361/MS41511B_BK.jpg?v=638840390712570000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182362/MS41511B_BK.jpg?v=638840390712730000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182363/MS41511B_BK.jpg?v=638840390712730000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/182364/MS41511B_BK.jpg?v=638840390712730000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 169.99,
+          "c": 269.99,
+          "x": 169.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1282456",
       "titulo": "Shorts Athletics Small Logo 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-athletics-small-logo-5--masculino-1282456/p",
@@ -2762,8 +2866,8 @@
           "t": "44",
           "p": 799.99,
           "c": 1599.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "45",
@@ -4598,8 +4702,8 @@
           "t": "42",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1299.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -8810,8 +8914,8 @@
           "t": "48",
           "p": 599.99,
           "c": 599.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         }
       ]
     },
@@ -10173,8 +10277,8 @@
           "t": "42",
           "p": 599.99,
           "c": 599.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -12927,8 +13031,8 @@
           "t": "41",
           "p": 499.99,
           "c": 499.99,
-          "x": null,
-          "a": false
+          "x": 499.99,
+          "a": true
         },
         {
           "t": "42",
@@ -13500,6 +13604,58 @@
         "https://newbrasil.vteximg.com.br/arquivos/ids/217587/MJ6126S5B_BK.jpg?v=639172321600800000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/217588/MJ6126S5B_BK.jpg?v=639172321600800000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/217589/MJ6126S5B_BK.jpg?v=639172321600800000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1356089",
+      "titulo": "Jaqueta Corta Vento Fast Days Masculino",
+      "url": "https://www.newbalance.com.br/jaqueta-corta-vento-fast-days-masculino-1356089/p",
+      "ref": "MJ6126S5B_AFG_1356089",
+      "tipo": "/Confecção/Jaqueta Corta Vento/ ",
+      "tags": [],
+      "publicado": "2026-03-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220441/MJ6126S5B_AFG.jpg?v=639184203763730000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220442/MJ6126S5B_AFG.jpg?v=639184203805870000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220443/MJ6126S5B_AFG.jpg?v=639184203834500000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220444/MJ6126S5B_AFG.jpg?v=639184203902270000"
       ],
       "variantes": [
         {
@@ -15710,129 +15866,6 @@
       ]
     },
     {
-      "id": "1362050",
-      "titulo": "Casaco Viagem Spfc 2026 Masculino",
-      "url": "https://www.newbalance.com.br/casaco-viagem-spfc-2026-masculino-1362050/p",
-      "ref": "MT831846_OFF_1362050",
-      "tipo": "/Confecção/Casaco/ ",
-      "tags": [],
-      "publicado": "2026-01-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/219011/MT831846_OFF.jpg?v=639166947698800000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/219012/MT831846_OFF.jpg?v=639166947729530000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/219013/MT831846_OFF.jpg?v=639166947771870000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 189.99,
-          "c": 399.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "3GG",
-          "p": 189.99,
-          "c": 399.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 189.99,
-          "c": 399.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 189.99,
-          "c": 399.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 189.99,
-          "c": 399.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 189.99,
-          "c": 399.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "PP",
-          "p": 189.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "1363744",
-      "titulo": "Calção Treino Spfc 2026 Masculino",
-      "url": "https://www.newbalance.com.br/calcao-treino-spfc-2026-masculino-1363744/p",
-      "ref": "MS831814_BKG_1363744",
-      "tipo": "/Confecção/Calção/ ",
-      "tags": [],
-      "publicado": "2026-01-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/219429/MS831814_BKG.jpg?v=639173261793670000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/219430/MS831814_BKG.jpg?v=639173261834970000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/219431/MS831814_BKG.jpg?v=639173261874570000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 119.99,
-          "c": 199.99,
-          "x": 119.99,
-          "a": true
-        },
-        {
-          "t": "3GG",
-          "p": 119.99,
-          "c": 199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 119.99,
-          "c": 199.99,
-          "x": 119.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 119.99,
-          "c": 199.99,
-          "x": 119.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 119.99,
-          "c": 199.99,
-          "x": 119.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 119.99,
-          "c": 199.99,
-          "x": 119.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1364142",
       "titulo": "Jaqueta Pré Jogo Spfc 2026 Masculina",
       "url": "https://www.newbalance.com.br/jaqueta-pre-jogo-spfc-2026-masculina-1364142/p",
@@ -16127,7 +16160,7 @@
           "p": 749.99,
           "c": 749.99,
           "x": 749.99,
-          "a": true
+          "a": false
         },
         {
           "t": "38",
@@ -16710,6 +16743,65 @@
           "p": 229.99,
           "c": 369.99,
           "x": 229.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1385190",
+      "titulo": "Calção Away Spfc 2026 Masculino",
+      "url": "https://www.newbalance.com.br/calcao-away-spfc-2026-masculino-1385190/p",
+      "ref": "MS831821_PVB_1385190",
+      "tipo": "/Confecção/Calção/ ",
+      "tags": [],
+      "publicado": "2026-04-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/219529/MS831821_PVB.jpg?v=639174913311900000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/219530/MS831821_PVB.jpg?v=639174913351200000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/219531/MS831821_PVB.jpg?v=639174913380700000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/219532/MS831821_PVB.jpg?v=639174913410230000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "3GG",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "4GG",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 149.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 149.99,
+          "c": 249.99,
+          "x": 149.99,
           "a": true
         }
       ]
@@ -21665,43 +21757,43 @@
           "t": "38",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "39",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "41",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "42",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "44",
@@ -24947,8 +25039,8 @@
           "t": "40",
           "p": 749.99,
           "c": 749.99,
-          "x": 749.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "41",
@@ -25184,8 +25276,8 @@
           "t": "41",
           "p": 749.99,
           "c": 749.99,
-          "x": null,
-          "a": false
+          "x": 749.99,
+          "a": true
         },
         {
           "t": "42",
@@ -25250,8 +25342,8 @@
           "t": "37",
           "p": 749.99,
           "c": 749.99,
-          "x": null,
-          "a": false
+          "x": 749.99,
+          "a": true
         },
         {
           "t": "38",
@@ -27063,7 +27155,7 @@
         {
           "t": "34",
           "p": 699.99,
-          "c": 899.99,
+          "c": 849.99,
           "x": null,
           "a": false
         },
@@ -28720,7 +28812,7 @@
           "p": 1299.99,
           "c": 1299.99,
           "x": 1299.99,
-          "a": true
+          "a": false
         },
         {
           "t": "38",
@@ -28994,15 +29086,15 @@
           "t": "36",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1299.99,
+          "a": true
         },
         {
           "t": "37",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1299.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "38",
@@ -29839,6 +29931,58 @@
       ]
     },
     {
+      "id": "1400310",
+      "titulo": "Shorts Sport Legacy 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-sport-legacy-5--masculino-1400310/p",
+      "ref": "MB6176MR_BKK_1400310",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227342/MB6176MR_BKK.jpg?v=639214648104430000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227343/MB6176MR_BKK.jpg?v=639214648158700000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227344/MB6176MR_BKK.jpg?v=639214648199430000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227345/MB6176MR_BKK.jpg?v=639214648237370000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 289.99,
+          "c": 449.99,
+          "x": 289.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 289.99,
+          "c": 449.99,
+          "x": 289.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 289.99,
+          "c": 449.99,
+          "x": 289.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 289.99,
+          "c": 449.99,
+          "x": 289.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 289.99,
+          "c": 449.99,
+          "x": 289.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1400311",
       "titulo": "Shorts Sport Legacy 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-sport-legacy-5--masculino-1400311/p",
@@ -29943,6 +30087,58 @@
       ]
     },
     {
+      "id": "1400806",
+      "titulo": "Jaqueta Corta Vento Packable Rc Masculino",
+      "url": "https://www.newbalance.com.br/jaqueta-corta-vento-packable-rc-masculino-1400806/p",
+      "ref": "MJ61U1I9_STS_1400806",
+      "tipo": "/Confecção/Jaqueta Corta Vento/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221600/MJ61U1I9_STS.jpg?v=639187267987330000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221601/MJ61U1I9_STS.jpg?v=639187268030330000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221602/MJ61U1I9_STS.jpg?v=639187268061800000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221603/MJ61U1I9_STS.jpg?v=639187268091400000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 849.99,
+          "c": 849.99,
+          "x": 849.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 849.99,
+          "c": 849.99,
+          "x": 849.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 849.99,
+          "c": 849.99,
+          "x": 849.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 849.99,
+          "c": 849.99,
+          "x": 849.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 849.99,
+          "c": 849.99,
+          "x": 849.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1401025",
       "titulo": "Shorts Rc Essential 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-rc-essential-5--masculino-1401025/p",
@@ -29995,6 +30191,55 @@
       ]
     },
     {
+      "id": "1402791",
+      "titulo": "Jaqueta Corta Vento Fast Days Masculino",
+      "url": "https://www.newbalance.com.br/jaqueta-corta-vento-fast-days-masculino-1402791/p",
+      "ref": "MJ6126S5B_STS_1402791",
+      "tipo": "/Confecção/Jaqueta Corta Vento/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/224061/MJ6126S5B_STS.jpg?v=639193038823770000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1402796",
       "titulo": "Shorts Fast Days 7\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-fast-days-7--masculino-1402796/p",
@@ -30004,6 +30249,55 @@
       "publicado": "2026-07-01T00:00:00Z",
       "imagens": [
         "https://newbrasil.vteximg.com.br/arquivos/ids/224062/MB61I9X6B_BK.jpg?v=639193039553730000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 249.99,
+          "c": 249.99,
+          "x": 249.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1402797",
+      "titulo": "Shorts Fast Days 7\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-fast-days-7--masculino-1402797/p",
+      "ref": "MB61I9X6B_STS_1402797",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/224059/MB61I9X6B_STS.jpg?v=639193037385670000"
       ],
       "variantes": [
         {
@@ -30743,6 +31037,58 @@
       ]
     },
     {
+      "id": "1403731",
+      "titulo": "Casaco Essentials (Sem Felpa) Masculino",
+      "url": "https://www.newbalance.com.br/casaco-essentials--sem-felpa--masculino-1403731/p",
+      "ref": "MT41510B_BK_1403731",
+      "tipo": "/Confecção/Casaco/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221881/MT41510B_BK.jpg?v=639189506483830000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221882/MT41510B_BK.jpg?v=639189506527400000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221883/MT41510B_BK.jpg?v=639189506569130000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/221884/MT41510B_BK.jpg?v=639189506599230000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 329.99,
+          "c": 329.99,
+          "x": 329.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 329.99,
+          "c": 329.99,
+          "x": 329.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 329.99,
+          "c": 329.99,
+          "x": 329.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 329.99,
+          "c": 329.99,
+          "x": 329.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 329.99,
+          "c": 329.99,
+          "x": 329.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1403732",
       "titulo": "Casaco Essentials (Sem Felpa) Masculino",
       "url": "https://www.newbalance.com.br/casaco-essentials--sem-felpa--masculino-1403732/p",
@@ -30931,54 +31277,51 @@
       ]
     },
     {
-      "id": "1404525",
-      "titulo": "Shorts Sport Essentials 7\" Masculino",
-      "url": "https://www.newbalance.com.br/shorts-sport-essentials-7--masculino-1404525/p",
-      "ref": "MS41232BR_BK_1404525",
+      "id": "1404521",
+      "titulo": "Shorts Sport Essentials 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-sport-essentials-5--masculino-1404521/p",
+      "ref": "MS41227BR_ATD_1404521",
       "tipo": "/Confecção/Shorts/ ",
       "tags": [],
       "publicado": "2026-07-01T00:00:00Z",
       "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/233675/MS41232BR_BK.jpg?v=639246956647800000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/233676/MS41232BR_BK.jpg?v=639246956680630000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/233677/MS41232BR_BK.jpg?v=639246956712230000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/233678/MS41232BR_BK.jpg?v=639246956755100000"
+        "https://newbrasil.vteximg.com.br/arquivos/ids/228340/MS41227BR_ATD.jpg?v=639223506632500000"
       ],
       "variantes": [
         {
           "t": "2GG",
-          "p": 119.99,
-          "c": 189.99,
-          "x": 119.99,
+          "p": 179.99,
+          "c": 179.99,
+          "x": 179.99,
           "a": true
         },
         {
           "t": "G",
-          "p": 119.99,
-          "c": 189.99,
-          "x": 119.99,
+          "p": 179.99,
+          "c": 179.99,
+          "x": 179.99,
           "a": true
         },
         {
           "t": "GG",
-          "p": 119.99,
-          "c": 189.99,
-          "x": 119.99,
+          "p": 179.99,
+          "c": 179.99,
+          "x": 179.99,
           "a": true
         },
         {
           "t": "M",
-          "p": 119.99,
-          "c": 189.99,
-          "x": 119.99,
+          "p": 179.99,
+          "c": 179.99,
+          "x": 179.99,
           "a": true
         },
         {
           "t": "P",
-          "p": 119.99,
-          "c": 189.99,
-          "x": 119.99,
-          "a": true
+          "p": 179.99,
+          "c": 179.99,
+          "x": null,
+          "a": false
         }
       ]
     },
@@ -31280,8 +31623,8 @@
           "t": "39",
           "p": 1199.99,
           "c": 1199.99,
-          "x": null,
-          "a": false
+          "x": 1199.99,
+          "a": true
         },
         {
           "t": "40",

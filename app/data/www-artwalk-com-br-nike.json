@@ -2,81 +2,8 @@
   "marca": "Nike",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-21T23:36:10Z",
+  "atualizado": "2026-11-22T11:41:58Z",
   "produtos": [
-    {
-      "id": "2011658",
-      "titulo": "Tênis Nike Air Max 270 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-270-masculino-ah805-0-401/p",
-      "ref": "AH805-0-401",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2017-12-15T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/203785/Tenis-Nike-Air-Max-270-Masculino-Azul.jpg?v=636602646133930000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/203786/Tenis-Nike-Air-Max-270-Masculino-Azul-2.jpg?v=636602646224630000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/203787/Tenis-Nike-Air-Max-270-Masculino-Azul-3.jpg?v=636602646318470000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/203788/Tenis-Nike-Air-Max-270-Masculino-Azul-4.jpg?v=636602646921970000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 179.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 179.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 600.0,
-          "c": 600.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 600.0,
-          "c": 600.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 600.0,
-          "c": 600.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 600.0,
-          "c": 600.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 600.0,
-          "c": 600.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 600.0,
-          "c": 600.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
     {
       "id": "2011829",
       "titulo": "Tênis Nike Air More Uptempo '96 Premium Masculino",
@@ -274,142 +201,6 @@
           "t": "48",
           "p": 649.99,
           "c": 899.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2014979",
-      "titulo": "Tênis Nike Air Max 270 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-270-masculino-ah805-0-026/p",
-      "ref": "AH805-0-026",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2025-02-20T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/573854/AH805-0-026-1-AW-800x1000.jpg?v=638756746656330000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573855/AH805-0-026-2-AW-800x1000.jpg?v=638756746754200000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573856/AH805-0-026-3-AW-800x1000.jpg?v=638756746840530000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/573857/AH805-0-026-4-AW-800x1000.jpg?v=638756746948900000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 299.99,
-          "c": 599.99,
           "x": null,
           "a": false
         }
@@ -950,309 +741,6 @@
       ]
     },
     {
-      "id": "2015575",
-      "titulo": "Tênis Nike Air Max 90 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-masculino-cd088-1-100/p",
-      "ref": "CD088-1-100",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2019-12-19T03:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/221797/Tenis-Nike-Air-Max-90-Masculino-Multicolor.jpg?v=637199731785830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/221798/Tenis-Nike-Air-Max-90-Masculino-Multicolor-2.jpg?v=637199731915230000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/221799/Tenis-Nike-Air-Max-90-Masculino-Multicolor-3.jpg?v=637199732070470000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/221800/Tenis-Nike-Air-Max-90-Masculino-Multicolor-4.jpg?v=637199732188370000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 329.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2015576",
-      "titulo": "Tênis Nike Air Max 90 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-masculino-cd088-1-101/p",
-      "ref": "CD088-1-101",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2019-12-19T03:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/221019/Tenis-Nike-Air-Max-90-Masculino-Multicolor.jpg?v=637175670542730000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/221020/Tenis-Nike-Air-Max-90-Masculino-Multicolor-2.jpg?v=637175670748170000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/221021/Tenis-Nike-Air-Max-90-Masculino-Multicolor-3.jpg?v=637175670924170000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/221022/Tenis-Nike-Air-Max-90-Masculino-Multicolor-4.jpg?v=637175671080870000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2015577",
-      "titulo": "Tênis Nike Air Max 90 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-masculino-cd088-1-102/p",
-      "ref": "CD088-1-102",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2019-12-19T03:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/220210/Tenis-Nike-Air-Max-90-Masculino-Multicolor.jpg?v=637153236531200000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/220211/Tenis-Nike-Air-Max-90-Masculino-Multicolor-2.jpg?v=637153236731870000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/220212/Tenis-Nike-Air-Max-90-Masculino-Multicolor-3.jpg?v=637153236933430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/220213/Tenis-Nike-Air-Max-90-Masculino-Multicolor-4.jpg?v=637153237161330000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2015578",
       "titulo": "Tênis Nike Air Max 90 Masculino",
       "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-masculino-cd088-1-103/p",
@@ -1347,107 +835,6 @@
         {
           "t": "48",
           "p": 299.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2015579",
-      "titulo": "Tênis Nike Air Max 90 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-masculino-cd088-1-104/p",
-      "ref": "CD088-1-104",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2019-12-19T03:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/221791/Tenis-Nike-Air-Max-90-Masculino-Multicolor.jpg?v=637199727957830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/221792/Tenis-Nike-Air-Max-90-Masculino-Multicolor-2.jpg?v=637199728059070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/221793/Tenis-Nike-Air-Max-90-Masculino-Multicolor-3.jpg?v=637199728160570000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/221794/Tenis-Nike-Air-Max-90-Masculino-Multicolor-4.jpg?v=637199728267100000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 349.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 349.99,
           "c": 499.99,
           "x": null,
           "a": false
@@ -1992,6 +1379,79 @@
       ]
     },
     {
+      "id": "2020921",
+      "titulo": "Tênis Nike PG 4 Masculino",
+      "url": "https://www.artwalk.com.br/tenis-nike-pg-4-masculino-cd507-9-101/p",
+      "ref": "CD507-9-101",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2019-12-19T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/225513/Tenis-Nike-PG-4-Masculino-Multicolor.jpg?v=637321717964770000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/225514/Tenis-Nike-PG-4-Masculino-Multicolor-2.jpg?v=637321718056930000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/225515/Tenis-Nike-PG-4-Masculino-Multicolor-3.jpg?v=637321718161100000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/225516/Tenis-Nike-PG-4-Masculino-Multicolor-4.jpg?v=637321718276300000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 359.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 359.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 359.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 359.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 359.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 359.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 359.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 359.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2020925",
       "titulo": "Tênis Nike Kd13 Masculino",
       "url": "https://www.artwalk.com.br/tenis-nike-kd13-masculino-ci994-8-004/p",
@@ -2145,6 +1605,86 @@
       ]
     },
     {
+      "id": "2020937",
+      "titulo": "Tênis Nike Skyve Max Masculino",
+      "url": "https://www.artwalk.com.br/tenis-nike-skyve-max-masculino-bq443-2-002/p",
+      "ref": "BQ443-2-002",
+      "tipo": "/Tênis/Masculino/Nike/ Tênis",
+      "tags": [],
+      "publicado": "2020-06-29T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/226612/Tenis-Nike-Skyve-Max-Masculino-Preto.jpg?v=637359710088500000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/226613/Tenis-Nike-Skyve-Max-Masculino-Preto-2.jpg?v=637359710211970000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/226614/Tenis-Nike-Skyve-Max-Masculino-Preto-3.jpg?v=637359710306100000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/226615/Tenis-Nike-Skyve-Max-Masculino-Preto-4.jpg?v=637359710416500000"
+      ],
+      "variantes": [
+        {
+          "t": "37",
+          "p": 600.0,
+          "c": 600.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 600.0,
+          "c": 600.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 600.0,
+          "c": 600.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 479.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 600.0,
+          "c": 600.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 600.0,
+          "c": 600.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 600.0,
+          "c": 600.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 600.0,
+          "c": 600.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 600.0,
+          "c": 600.0,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2020942",
       "titulo": "Tênis Nike Air Max ZM950 Masculino",
       "url": "https://www.artwalk.com.br/tenis-nike-air-max-zm950-masculino-cj670-0-001/p",
@@ -2168,8 +1708,8 @@
         },
         {
           "t": "38",
-          "p": 419.99,
-          "c": 899.99,
+          "p": 900.0,
+          "c": 900.0,
           "x": null,
           "a": false
         },
@@ -2231,8 +1771,8 @@
         },
         {
           "t": "39.5",
-          "p": 900.0,
-          "c": 900.0,
+          "p": 419.99,
+          "c": 899.99,
           "x": null,
           "a": false
         },
@@ -2403,8 +1943,8 @@
         },
         {
           "t": "GGG",
-          "p": 79.99,
-          "c": 349.99,
+          "p": 350.0,
+          "c": 350.0,
           "x": null,
           "a": false
         }
@@ -2727,8 +2267,8 @@
         },
         {
           "t": "43.5",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 419.99,
+          "c": 799.99,
           "x": null,
           "a": false
         },
@@ -2741,8 +2281,8 @@
         },
         {
           "t": "45",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 419.99,
+          "c": 799.99,
           "x": null,
           "a": false
         },
@@ -3276,100 +2816,6 @@
       ]
     },
     {
-      "id": "2021910",
-      "titulo": "Tênis Nike Air Max 95 SE Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-95-se-masculino-cw657-5-001/p",
-      "ref": "CW657-5-001",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2020-12-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/232716/Tenis-Nike-Air-Max-95-SE-Masculino-Cinza.jpg?v=637538367935400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/232717/Tenis-Nike-Air-Max-95-SE-Masculino-Cinza-2.jpg?v=637538368028670000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/232718/Tenis-Nike-Air-Max-95-SE-Masculino-Cinza-3.jpg?v=637538368129630000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/232719/Tenis-Nike-Air-Max-95-SE-Masculino-Cinza-4.jpg?v=637538368244470000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2021976",
       "titulo": "Tênis Nike Dunk Low Retro Masculino",
       "url": "https://www.artwalk.com.br/tenis-nike-dunk-low-retro-masculino-dd139-1-100/p",
@@ -3594,114 +3040,6 @@
           "t": "47",
           "p": 179.99,
           "c": 699.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2021990",
-      "titulo": "Tênis Nike Air Max 2090 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-2090-masculino-da935-7-100/p",
-      "ref": "DA935-7-100",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2020-12-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/230538/Tenis-Nike-Air-Max-2090-Masculino-Multicolor.jpg?v=637479574188400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/230539/Tenis-Nike-Air-Max-2090-Masculino-Multicolor-2.jpg?v=637479574294030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/230540/Tenis-Nike-Air-Max-2090-Masculino-Multicolor-3.jpg?v=637479574419200000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/230541/Tenis-Nike-Air-Max-2090-Masculino-Multicolor-4.jpg?v=637479574519330000"
-      ],
-      "variantes": [
-        {
-          "t": "35",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 579.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 579.99,
-          "c": 899.99,
           "x": null,
           "a": false
         }
@@ -4034,8 +3372,8 @@
         },
         {
           "t": "39",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 549.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -4090,8 +3428,8 @@
         },
         {
           "t": "47",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 549.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -4229,8 +3567,8 @@
         },
         {
           "t": "38",
-          "p": 619.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -4243,15 +3581,15 @@
         },
         {
           "t": "40",
-          "p": 619.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
         {
           "t": "41",
-          "p": 619.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -4285,8 +3623,8 @@
         },
         {
           "t": "46",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 619.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -4660,8 +3998,8 @@
       "variantes": [
         {
           "t": "P",
-          "p": 150.0,
-          "c": 150.0,
+          "p": 29.99,
+          "c": 149.99,
           "x": null,
           "a": false
         },
@@ -4812,7 +4150,7 @@
         },
         {
           "t": "43",
-          "p": 199.99,
+          "p": 849.99,
           "c": 849.99,
           "x": null,
           "a": false
@@ -4833,14 +4171,14 @@
         },
         {
           "t": "46",
-          "p": 199.99,
+          "p": 849.99,
           "c": 849.99,
           "x": null,
           "a": false
         },
         {
           "t": "47",
-          "p": 199.99,
+          "p": 849.99,
           "c": 849.99,
           "x": null,
           "a": false
@@ -5672,8 +5010,8 @@
         },
         {
           "t": "37",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 589.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -5709,107 +5047,6 @@
           "t": "43",
           "p": 1100.0,
           "c": 1100.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2023221",
-      "titulo": "Tênis Nike Air Max 95 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-95-masculino-dh825-6-100/p",
-      "ref": "DH825-6-100",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2021-06-26T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/237687/Tenis-Nike-Air-Max-95-Masculino-Multicolor.jpg?v=637647289285400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/237688/Tenis-Nike-Air-Max-95-Masculino-Multicolor-2.jpg?v=637647289700530000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/237689/Tenis-Nike-Air-Max-95-Masculino-Multicolor-3.jpg?v=637647289790300000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/237690/Tenis-Nike-Air-Max-95-Masculino-Multicolor-4.jpg?v=637647289878130000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 509.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 509.99,
-          "c": 599.99,
           "x": null,
           "a": false
         }
@@ -6208,107 +5445,6 @@
           "t": "GGGGG",
           "p": 109.99,
           "c": 179.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2023409",
-      "titulo": "Tênis Nike Air Max 90 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-masculino-db062-5-001/p",
-      "ref": "DB062-5-001",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2021-06-28T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/236093/Tenis-Nike-Air-Max-90-Masculino-Multicolor.jpg?v=637631656390970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/236094/Tenis-Nike-Air-Max-90-Masculino-Multicolor-2.jpg?v=637631656508230000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/236095/Tenis-Nike-Air-Max-90-Masculino-Multicolor-3.jpg?v=637631656606200000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/236096/Tenis-Nike-Air-Max-90-Masculino-Multicolor-4.jpg?v=637631656717470000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 599.99,
-          "c": 729.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 599.99,
-          "c": 729.99,
           "x": null,
           "a": false
         }
@@ -7029,8 +6165,8 @@
         },
         {
           "t": "46",
-          "p": 509.99,
-          "c": 729.99,
+          "p": 730.0,
+          "c": 730.0,
           "x": null,
           "a": false
         },
@@ -7232,107 +6368,6 @@
         {
           "t": "48",
           "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2023760",
-      "titulo": "Tênis Nike Air Max 95 Se Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-95-se-masculino-dh271-8-001/p",
-      "ref": "DH271-8-001",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2021-11-23T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/240825/Tenis-Nike-Air-Max-95-SE-Masculino-Azul.jpg?v=637732939084330000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/240826/Tenis-Nike-Air-Max-95-SE-Masculino-Azul-2.jpg?v=637732939157670000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/240827/Tenis-Nike-Air-Max-95-SE-Masculino-Azul-3.jpg?v=637732939239830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/240828/Tenis-Nike-Air-Max-95-SE-Masculino-Azul-4.jpg?v=637732939324000000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 599.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 999.99,
           "c": 999.99,
           "x": null,
           "a": false
@@ -7727,107 +6762,6 @@
           "t": "48",
           "p": 449.99,
           "c": 849.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2024284",
-      "titulo": "Tênis Nike Air Max 95 SE Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-95-se-masculino-dh475-5-001/p",
-      "ref": "DH475-5-001",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-03-24T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/244584/Tenis-Nike-Air-Max-95-SE-Masculino-Multicolor.jpg?v=637837456550400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/244585/Tenis-Nike-Air-Max-95-SE-Masculino-Multicolor-2.jpg?v=637837456649030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/244586/Tenis-Nike-Air-Max-95-SE-Masculino-Multicolor-3.jpg?v=637837456822630000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/244587/Tenis-Nike-Air-Max-95-SE-Masculino-Multicolor-4.jpg?v=637837456933870000"
-      ],
-      "variantes": [
-        {
-          "t": "41",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 599.99,
-          "c": 1199.99,
           "x": null,
           "a": false
         }
@@ -8717,414 +7651,6 @@
       ]
     },
     {
-      "id": "2025507",
-      "titulo": "Tênis Nike Air Max 90 SE Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-se-masculino-dm003-6-100/p",
-      "ref": "DM003-6-100",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-03-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/322290/DM003-6-100-1.jpg?v=638060297352000000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/326776/DM003-6-100-2.jpg?v=638060308365430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/332273/DM003-6-100-3.jpg?v=638060330122300000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/336085/DM003-6-100-4.jpg?v=638060338851570000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 469.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2025508",
-      "titulo": "Tênis Nike Air Max 97 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-97-masculino-dm002-7-100/p",
-      "ref": "DM002-7-100",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-03-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/248572/Tenis-Nike-Air-Max-97-Masculino-Cinza.jpg?v=637878944852830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/248573/Tenis-Nike-Air-Max-97-Masculino-Cinza-2.jpg?v=637878944945000000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/248574/Tenis-Nike-Air-Max-97-Masculino-Cinza-3.jpg?v=637878945053300000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/248575/Tenis-Nike-Air-Max-97-Masculino-Cinza-4.jpg?v=637878945161100000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 849.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2025560",
-      "titulo": "Tênis Nike Air Max 90 SE Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-se-masculino-dm003-6-400/p",
-      "ref": "DM003-6-400",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-03-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/408728/DM003-6-400-1.jpg?v=638234102981100000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/408729/DM003-6-400-2.jpg?v=638234103110270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/408730/DM003-6-400-3.jpg?v=638234103194100000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/408731/DM003-6-400-4.jpg?v=638234103283130000"
-      ],
-      "variantes": [
-        {
-          "t": "48",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 269.99,
-          "c": 949.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2025601",
       "titulo": "Blusão Nike Revival Masculino",
       "url": "https://www.artwalk.com.br/blusao-nike-revival-masculino-dm562-4-709/p",
@@ -9307,243 +7833,6 @@
           "t": "48",
           "p": 599.99,
           "c": 849.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2025646",
-      "titulo": "Tênis Nike Air Max 90 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-masculino-do890-2-001/p",
-      "ref": "DO890-2-001",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-03-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/248538/Tenis-Nike-Air-Max-90-Masculino-Branco.jpg?v=637878715112970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/248539/Tenis-Nike-Air-Max-90-Masculino-Branco-2.jpg?v=637878715220430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/248540/Tenis-Nike-Air-Max-90-Masculino-Branco-3.jpg?v=637878715322770000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/248541/Tenis-Nike-Air-Max-90-Masculino-Branco-4.jpg?v=637878715427100000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 379.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2025653",
-      "titulo": "Tênis Nike Air Max 2021 SE Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-2021-se-masculino-dn072-1-001/p",
-      "ref": "DN072-1-001",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-05-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/273253/Tenis-Nike-Air-Max-2021-SE-Masculino-Multicolor.jpg?v=637962553945170000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/273254/Tenis-Nike-Air-Max-2021-SE-Masculino-Multicolor-2.jpg?v=637962554071070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/273255/Tenis-Nike-Air-Max-2021-SE-Masculino-Multicolor-3.jpg?v=637962554196270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/273256/Tenis-Nike-Air-Max-2021-SE-Masculino-Multicolor-4.jpg?v=637962554339800000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 799.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 799.99,
-          "c": 1299.99,
           "x": null,
           "a": false
         }
@@ -9820,14 +8109,14 @@
         },
         {
           "t": "40",
-          "p": 899.99,
+          "p": 679.99,
           "c": 899.99,
           "x": null,
           "a": false
         },
         {
           "t": "41",
-          "p": 899.99,
+          "p": 679.99,
           "c": 899.99,
           "x": null,
           "a": false
@@ -9964,8 +8253,8 @@
       "variantes": [
         {
           "t": "40",
-          "p": 600.0,
-          "c": 600.0,
+          "p": 449.99,
+          "c": 599.99,
           "x": null,
           "a": false
         },
@@ -9985,8 +8274,8 @@
         },
         {
           "t": "43",
-          "p": 600.0,
-          "c": 600.0,
+          "p": 449.99,
+          "c": 599.99,
           "x": null,
           "a": false
         },
@@ -10020,8 +8309,8 @@
         },
         {
           "t": "48",
-          "p": 449.99,
-          "c": 599.99,
+          "p": 600.0,
+          "c": 600.0,
           "x": null,
           "a": false
         }
@@ -10158,278 +8447,6 @@
           "t": "48",
           "p": 499.99,
           "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2026953",
-      "titulo": "TÊNIS NIKE AIR MAX 90 M",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-masculino-dm002-9-101/p",
-      "ref": "DM002-9-101",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-05-23T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/269903/DM002-9-101-1.jpg?v=637940255037900000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/269959/DM002-9-101-2.jpg?v=637940255678330000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/270015/DM002-9-101-3.jpg?v=637940256999100000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/270071/DM002-9-101-4.jpg?v=637940257384000000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2026954",
-      "titulo": "Tênis Nike Air Max Plus Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-plus-masculino-dm003-2-003/p",
-      "ref": "DM003-2-003",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-05-23T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/272231/DM003-2-003-1.jpg?v=637951529305830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/272408/DM003-2-003-2.jpg?v=637951531216230000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/272542/DM003-2-003-3.jpg?v=637951532340270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/272689/DM003-2-003-4.jpg?v=637951533633130000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 1199.99,
-          "c": 1199.99,
           "x": null,
           "a": false
         }
@@ -11475,243 +9492,6 @@
       ]
     },
     {
-      "id": "2029005",
-      "titulo": "Tênis Nike Air Max 2021 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-2021-masculino-dh424-5-002/p",
-      "ref": "DH424-5-002",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-01-04T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/273751/DH424-5-002-1.jpg?v=637965172233200000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/273839/DH424-5-002-2.jpg?v=637965174290470000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/273927/DH424-5-002-3.jpg?v=637965174889470000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/274014/DH424-5-002-4.jpg?v=637965175566400000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 589.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 1200.0,
-          "c": 1200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 1200.0,
-          "c": 1200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 589.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 1200.0,
-          "c": 1200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 1200.0,
-          "c": 1200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 1200.0,
-          "c": 1200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 589.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 1200.0,
-          "c": 1200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 589.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 1200.0,
-          "c": 1200.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 589.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2029156",
-      "titulo": "TÊNIS NIKE AIR MAX 90 M",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-masculino-dm002-9-004/p",
-      "ref": "DM002-9-004",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-05-23T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/416852/DM002-9-004-1.jpg?v=638252040004670000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/417150/DM002-9-004-2.jpg?v=638252041843470000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/417427/DM002-9-004-3.jpg?v=638252043376530000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/417699/DM002-9-004-4.jpg?v=638252045060000000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 1000.0,
-          "c": 1000.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2029317",
       "titulo": "Tênis Nike Lebron XX Masculino",
       "url": "https://www.artwalk.com.br/tenis-nike-lebron-xx-masculino-dj542-3-001/p",
@@ -12218,142 +9998,6 @@
       ]
     },
     {
-      "id": "2029339",
-      "titulo": "Tênis Nike Air Max Plus Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-plus-masculino-dq398-3-001/p",
-      "ref": "DQ398-3-001",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-09-19T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/295052/DQ398-3-001-1.jpg?v=638031862606130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/295191/DQ398-3-001-2.jpg?v=638031863241370000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/295330/DQ398-3-001-3.jpg?v=638031864192430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/295469/DQ398-3-001-4.jpg?v=638031865943200000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 599.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2029341",
       "titulo": "Tênis Nike Air Max TW 1 Masculino",
       "url": "https://www.artwalk.com.br/tenis-nike-air-max-tw-1-masculino-dq398-4-002/p",
@@ -12506,8 +10150,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 599.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -12548,8 +10192,8 @@
         },
         {
           "t": "40.5",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 599.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -13015,8 +10659,8 @@
         },
         {
           "t": "40",
-          "p": 699.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -13085,8 +10729,8 @@
         },
         {
           "t": "47",
-          "p": 699.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -13273,8 +10917,8 @@
         },
         {
           "t": "40",
-          "p": 850.0,
-          "c": 850.0,
+          "p": 599.99,
+          "c": 849.99,
           "x": null,
           "a": false
         },
@@ -13329,8 +10973,8 @@
         },
         {
           "t": "48",
-          "p": 850.0,
-          "c": 850.0,
+          "p": 599.99,
+          "c": 849.99,
           "x": null,
           "a": false
         },
@@ -13765,8 +11409,8 @@
         },
         {
           "t": "40.5",
-          "p": 900.0,
-          "c": 900.0,
+          "p": 899.99,
+          "c": 899.99,
           "x": null,
           "a": false
         },
@@ -14248,229 +11892,6 @@
           "t": "37",
           "p": 649.99,
           "c": 1499.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2030201",
-      "titulo": "Tênis Nike Air Max Plus Se Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-plus-se-masculino-dz048-0-300/p",
-      "ref": "DZ048-0-300",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2024-04-17T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/364538/DZ048-0-300-1.jpg?v=638149443763930000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/364748/DZ048-0-300-2.jpg?v=638149444385600000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/364951/DZ048-0-300-3.jpg?v=638149445018870000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/365127/DZ048-0-300-4.jpg?v=638149445558770000"
-      ],
-      "variantes": [
-        {
-          "t": "42",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 849.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2030204",
-      "titulo": "Tênis Nike Air Max 90 Se Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-90-se-masculino-fb431-5-100/p",
-      "ref": "FB431-5-100",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2024-04-16T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/364570/FB431-5-100-1.jpg?v=638149443874930000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/364780/FB431-5-100-2.jpg?v=638149444495330000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/364983/FB431-5-100-3.jpg?v=638149445130870000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/365159/FB431-5-100-4.jpg?v=638149445666700000"
-      ],
-      "variantes": [
-        {
-          "t": "42",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 749.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 749.99,
-          "c": 999.99,
           "x": null,
           "a": false
         }
@@ -15236,8 +12657,8 @@
         },
         {
           "t": "44",
-          "p": 549.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -15257,8 +12678,8 @@
         },
         {
           "t": "39",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 549.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -15320,15 +12741,15 @@
         },
         {
           "t": "45",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 549.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "48",
-          "p": 549.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         }
@@ -15552,142 +12973,6 @@
           "t": "37.5",
           "p": 599.99,
           "c": 799.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2030855",
-      "titulo": "Tênis Nike Air Max Plus Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-plus-masculino-dm003-2-005/p",
-      "ref": "DM003-2-005",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-05-23T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/388325/DM003-2-005-1.jpg?v=638187211551430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/388783/DM003-2-005-2.jpg?v=638187212840430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/388846/DM003-2-005-3.jpg?v=638187212930000000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/389188/DM003-2-005-4.jpg?v=638187214060130000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 709.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 709.99,
-          "c": 1199.99,
           "x": null,
           "a": false
         }
@@ -16691,142 +13976,6 @@
       ]
     },
     {
-      "id": "2031509",
-      "titulo": "Tênis Nike Air Max TW Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-tw-masculino-dv772-1-001/p",
-      "ref": "DV772-1-001",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2023-04-28T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/427137/DV772-1-001-1.jpg?v=638252213857600000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/427517/DV772-1-001-2.jpg?v=638252215920700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/427893/DV772-1-001-3.jpg?v=638252218603700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/428236/DV772-1-001-4.jpg?v=638252221065970000"
-      ],
-      "variantes": [
-        {
-          "t": "39.5",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 479.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2031510",
       "titulo": "Tênis Nike Air Max TW Masculino",
       "url": "https://www.artwalk.com.br/tenis-nike-air-max-tw-masculino-dv772-1-100/p",
@@ -16850,8 +13999,8 @@
         },
         {
           "t": "43",
-          "p": 649.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -16871,8 +14020,8 @@
         },
         {
           "t": "40.5",
-          "p": 649.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -16885,8 +14034,8 @@
         },
         {
           "t": "41",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 649.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -16899,8 +14048,8 @@
         },
         {
           "t": "42.5",
-          "p": 649.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -16927,8 +14076,8 @@
         },
         {
           "t": "37.5",
-          "p": 649.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -17000,8 +14149,8 @@
         },
         {
           "t": "39",
-          "p": 749.99,
-          "c": 1499.99,
+          "p": 1500.0,
+          "c": 1500.0,
           "x": null,
           "a": false
         },
@@ -17028,8 +14177,8 @@
         },
         {
           "t": "41",
-          "p": 749.99,
-          "c": 1499.99,
+          "p": 1500.0,
+          "c": 1500.0,
           "x": null,
           "a": false
         },
@@ -18060,8 +15209,8 @@
       "variantes": [
         {
           "t": "43",
-          "p": 650.0,
-          "c": 650.0,
+          "p": 649.99,
+          "c": 649.99,
           "x": null,
           "a": false
         },
@@ -18081,8 +15230,8 @@
         },
         {
           "t": "44",
-          "p": 649.99,
-          "c": 649.99,
+          "p": 650.0,
+          "c": 650.0,
           "x": null,
           "a": false
         },
@@ -18095,8 +15244,8 @@
         },
         {
           "t": "38",
-          "p": 649.99,
-          "c": 649.99,
+          "p": 650.0,
+          "c": 650.0,
           "x": null,
           "a": false
         },
@@ -18123,8 +15272,8 @@
         },
         {
           "t": "40",
-          "p": 650.0,
-          "c": 650.0,
+          "p": 649.99,
+          "c": 649.99,
           "x": null,
           "a": false
         },
@@ -18144,8 +15293,8 @@
         },
         {
           "t": "37.5",
-          "p": 650.0,
-          "c": 650.0,
+          "p": 649.99,
+          "c": 649.99,
           "x": null,
           "a": false
         },
@@ -18807,93 +15956,6 @@
       ]
     },
     {
-      "id": "2032063",
-      "titulo": "Tênis Nike Air Max Plus SE Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-plus-se-masculino-dz265-5-001/p",
-      "ref": "DZ265-5-001",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2023-06-29T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/435023/DZ265-5-001-1.jpg?v=638277175221000000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/435277/DZ265-5-001-2.jpg?v=638277176830530000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/435531/DZ265-5-001-3.jpg?v=638277179920770000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/435785/DZ265-5-001-4.jpg?v=638277181347500000"
-      ],
-      "variantes": [
-        {
-          "t": "42",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2032086",
       "titulo": "Tênis Nike Air Max 90 Masculino",
       "url": "https://www.artwalk.com.br/tenis-air-max-90-masculino-dz352-2-003/p",
@@ -19325,8 +16387,8 @@
         },
         {
           "t": "42.5",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 629.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -19339,8 +16401,8 @@
         },
         {
           "t": "43.5",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 629.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -19381,8 +16443,8 @@
         },
         {
           "t": "37",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 629.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -19409,8 +16471,8 @@
         },
         {
           "t": "39.5",
-          "p": 629.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -20467,8 +17529,8 @@
         },
         {
           "t": "45",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 899.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -20488,8 +17550,8 @@
         },
         {
           "t": "40",
-          "p": 899.99,
-          "c": 1199.99,
+          "p": 1200.0,
+          "c": 1200.0,
           "x": null,
           "a": false
         },
@@ -21093,8 +18155,8 @@
         },
         {
           "t": "41",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 539.99,
+          "c": 799.99,
           "x": null,
           "a": false
         }
@@ -27462,8 +24524,8 @@
         },
         {
           "t": "39",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 1299.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -36235,65 +33297,6 @@
       ]
     },
     {
-      "id": "2040351",
-      "titulo": "Tênis Nike Air Max DN SE Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-dn-se-masculino-hf553-1-400/p",
-      "ref": "HF553-1-400",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-24T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/572741/HF553-1-400-1-AW-800x1000.jpg?v=638739389004870000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/572742/HF553-1-400-2-AW-800x1000.jpg?v=638739389067770000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/572743/HF553-1-400-3-AW-800x1000.jpg?v=638739389141130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/572744/HF553-1-400-4-AW-800x1000.jpg?v=638739389215070000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 839.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 839.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 839.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 839.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 839.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 839.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2040352",
       "titulo": "Calça Nike Utility Masculina",
       "url": "https://www.artwalk.com.br/calca-nike-utility-masculina-hj064-3-297/p",
@@ -39300,72 +36303,6 @@
       ]
     },
     {
-      "id": "2042134",
-      "titulo": "Tênis Nike Air Max DN8 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-dn8-masculino-fq786-0-800/p",
-      "ref": "FQ786-0-800",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-24T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/578839/FQ786-0-800-1-AW-800x1000.jpg?v=638835446058700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578840/FQ786-0-800-2-AW-800x1000.jpg?v=638835446153670000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578841/FQ786-0-800-3-AW-800x1000.jpg?v=638835446356800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578842/FQ786-0-800-4-AW-800x1000.jpg?v=638835446466470000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 749.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 749.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 749.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 749.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 749.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 749.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 749.99,
-          "c": 1499.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2042139",
       "titulo": "Tênis Nike Air More Uptempo Low Masculino",
       "url": "https://www.artwalk.com.br/tenis-nike-air-more-uptempo-low-masculino-fz305-5-100/p",
@@ -39631,7 +36568,7 @@
           "t": "43",
           "p": 599.99,
           "c": 899.99,
-          "x": null,
+          "x": 599.99,
           "a": false
         },
         {
@@ -40500,138 +37437,6 @@
           "t": "45",
           "p": 559.99,
           "c": 1399.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2042185",
-      "titulo": "Tênis Nike Air Max DN Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-dn-masculino-ib702-5-200/p",
-      "ref": "IB702-5-200",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2025-03-31T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/576696/IB702-5-200-1-AW-800x1000.jpg?v=638809298379130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576697/IB702-5-200-2-AW-800x1000.jpg?v=638809298494400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576698/IB702-5-200-3-AW-800x1000.jpg?v=638809298627930000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576699/IB702-5-200-4-AW-800x1000.jpg?v=638809298734830000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2042186",
-      "titulo": "Tênis Nike Air Max DN Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-dn-masculino-ib806-5-045/p",
-      "ref": "IB806-5-045",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2025-03-31T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/577216/IB806-5-045-1-AW-800x1000.jpg?v=638816390525970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577217/IB806-5-045-2-AW-800x1000.jpg?v=638816390609500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577218/IB806-5-045-3-AW-800x1000.jpg?v=638816390676900000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577219/IB806-5-045-4-AW-800x1000.jpg?v=638816390770670000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 649.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 649.99,
-          "c": 1299.99,
           "x": null,
           "a": false
         }
@@ -49153,72 +45958,6 @@
       ]
     },
     {
-      "id": "2046221",
-      "titulo": "Tênis Nike Air Max Plus Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-max-plus-masculino-dm003-2-034/p",
-      "ref": "DM003-2-034",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2022-05-23T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/590505/DM003-2-034-1-AW-800x1000.jpg?v=639047032024400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/590506/DM003-2-034-2-AW-800x1000.jpg?v=639047032025200000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/590507/DM003-2-034-3-AW-800x1000.jpg?v=639047032025330000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/590508/DM003-2-034-4-AW-800x1000.jpg?v=639047032025500000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 909.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 909.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 909.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 909.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 909.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 909.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 909.99,
-          "c": 1399.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2046222",
       "titulo": "Tênis Nike Air Max Plus Masculino",
       "url": "https://www.artwalk.com.br/tenis-nike-air-max-plus-masculino-dm003-2-035/p",
@@ -50050,8 +46789,8 @@
           "t": "40",
           "p": 699.99,
           "c": 999.99,
-          "x": 699.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "41",
@@ -50203,8 +46942,8 @@
           "t": "42",
           "p": 669.99,
           "c": 899.99,
-          "x": 669.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -53554,8 +50293,8 @@
           "t": "43",
           "p": 779.99,
           "c": 1199.99,
-          "x": 779.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "39.5",
@@ -55594,8 +52333,8 @@
           "t": "42",
           "p": 969.99,
           "c": 1499.99,
-          "x": 969.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "42.5",
@@ -62403,142 +59142,6 @@
         },
         {
           "t": "48",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2050000",
-      "titulo": "Tênis Nike Air Force 1 Low Kobe Masculino",
-      "url": "https://www.artwalk.com.br/tenis-nike-air-force-1-low-kobe-masculino-ib001-8-007/p",
-      "ref": "IB001-8-007",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2026-11-13T09:32:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/687816/IB001-8-007-1-800x1000.jpg?v=639301699365530000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/687817/IB001-8-007-2-800x1000.jpg?v=639301699365700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/687818/IB001-8-007-3-800x1000.jpg?v=639301699365830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/687819/IB001-8-007-4-800x1000.jpg?v=639301699365830000"
-      ],
-      "variantes": [
-        {
-          "t": "37.5",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 949.99,
-          "a": true
-        },
-        {
-          "t": "42.5",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
           "p": 999.99,
           "c": 999.99,
           "x": null,

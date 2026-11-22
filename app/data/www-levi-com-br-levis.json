@@ -2,7 +2,7 @@
   "marca": "Levi's",
   "loja": "Site Levi's",
   "site": "www.levi.com.br",
-  "atualizado": "2026-11-21T23:32:34Z",
+  "atualizado": "2026-11-22T11:39:03Z",
   "produtos": [
     {
       "id": "10121",
@@ -3913,8 +3913,8 @@
           "t": "30X34 USA | 38 BR",
           "p": 449.9,
           "c": 449.9,
-          "x": 449.9,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40X34 USA | 50 BR",
