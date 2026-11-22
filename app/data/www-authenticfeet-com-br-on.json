@@ -2,7 +2,7 @@
   "marca": "On",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-22T19:55:16Z",
+  "atualizado": "2026-11-22T23:43:41Z",
   "produtos": [
     {
       "id": "52077",
@@ -946,6 +946,72 @@
           "c": 1099.99,
           "x": 819.99,
           "a": true
+        }
+      ]
+    },
+    {
+      "id": "58110",
+      "titulo": "Tênis On Cloudsurfer 2 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-on-cloudsurfer-1-masculino-3mf10-1-100/p",
+      "ref": "3MF10-1-100",
+      "tipo": "/Tênis/Masculino/On/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-15T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496586/3MF10-1-100-1-AF-800x1000.jpg?v=638961333986930000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496587/3MF10-1-100-2-AF-800x1000.jpg?v=638961333986930000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496588/3MF10-1-100-3-AF-800x1000.jpg?v=638961333986930000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496589/3MF10-1-100-4-AF-800x1000.jpg?v=638961333986930000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": 719.99,
+          "a": true
+        },
+        {
+          "t": "42",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": 719.99,
+          "a": true
+        },
+        {
+          "t": "43",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
         }
       ]
     },

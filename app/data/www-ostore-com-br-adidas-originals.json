@@ -2,7 +2,7 @@
   "marca": "Adidas Originals",
   "loja": "OStore",
   "site": "www.ostore.com.br",
-  "atualizado": "2026-11-22T19:53:22Z",
+  "atualizado": "2026-11-22T23:42:06Z",
   "produtos": [
     {
       "id": "118",
@@ -6320,8 +6320,8 @@
           "t": "P",
           "p": 199.99,
           "c": 229.99,
-          "x": 199.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "M",
@@ -6782,8 +6782,8 @@
           "t": "44",
           "p": 799.99,
           "c": 799.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "45",
@@ -8353,8 +8353,8 @@
           "t": "G",
           "p": 349.99,
           "c": 349.99,
-          "x": 349.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "GG",

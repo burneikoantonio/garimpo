@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "OStore",
   "site": "www.ostore.com.br",
-  "atualizado": "2026-11-22T19:53:34Z",
+  "atualizado": "2026-11-22T23:42:14Z",
   "produtos": [
     {
       "id": "1873",
@@ -197,6 +197,65 @@
           "t": "43",
           "p": 399.9,
           "c": 429.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "1952",
+      "titulo": "Tênis New Balance 327 Paradise Pink",
+      "url": "https://www.ostore.com.br/tenis-new-balance-327-paradise-pink-0057117014/p",
+      "ref": "0057117014",
+      "tipo": "/Sneakers/Masculino/Sneakers/Cano Baixo/ ",
+      "tags": [],
+      "publicado": "2021-07-07T03:00:00Z",
+      "imagens": [
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/210439/0057117014-0-.jpg?v=637612744791400000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/210440/0057117014-1-.jpg?v=637612744892670000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/210441/0057117014-2-.jpg?v=637612745002500000",
+        "https://ostoresneakers.vteximg.com.br/arquivos/ids/210442/0057117014-3-.jpg?v=637612745142830000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 529.99,
+          "c": 529.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 529.99,
+          "c": 529.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 529.99,
+          "c": 529.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 529.99,
+          "c": 529.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 529.99,
+          "c": 529.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 529.99,
+          "c": 529.99,
           "x": null,
           "a": false
         }
@@ -6890,8 +6949,8 @@
           "t": "36",
           "p": 899.99,
           "c": 899.99,
-          "x": 899.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "37",
@@ -8078,8 +8137,8 @@
           "t": "40",
           "p": 999.99,
           "c": 999.99,
-          "x": 999.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "41",
@@ -8926,8 +8985,8 @@
           "t": "37",
           "p": 749.99,
           "c": 749.99,
-          "x": null,
-          "a": false
+          "x": 749.99,
+          "a": true
         },
         {
           "t": "38",
