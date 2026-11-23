@@ -2,8 +2,110 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-23T16:10:05Z",
+  "atualizado": "2026-11-23T20:07:03Z",
   "produtos": [
+    {
+      "id": "10688730235061",
+      "titulo": "Camisa Algodão Templo",
+      "url": "https://handred.com.br/products/camisa-algodao-templo-1",
+      "ref": "",
+      "tipo": "Camisas",
+      "tags": [
+        "CAMISAS",
+        "NOVIDADES",
+        "ROUPAS",
+        "SHOP",
+        "VERAO27",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-23T17:03:16-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISAALGODAOTEMPLOOFF_BERMUDAALGODAOAMPLAOFF_1006.webp?v=1795102169",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISAALGODAOTEMPLOOFF_BERMUDAALGODAOAMPLAOFF_1012.webp?v=1795102169",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISAALGODAOTEMPLOOFF_BERMUDAALGODAOAMPLAOFF_1008.webp?v=1795102169",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISAALGODAOTEMPLOOFF_BERMUDAALGODAOAMPLAOFF_1010.webp?v=1795102169"
+      ],
+      "variantes": [
+        {
+          "t": "OFF WHITE / OV 0",
+          "p": 997.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "OFF WHITE / OV 1",
+          "p": 997.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / OV 2",
+          "p": 997.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10684709077173",
+      "titulo": "Bermuda Algodão Ampla Branco",
+      "url": "https://handred.com.br/products/bermuda-algodao-ampla-branco",
+      "ref": "",
+      "tipo": "Bermudas",
+      "tags": [
+        "BERMUDAS",
+        "NOVIDADES",
+        "ROUPAS",
+        "SHOP",
+        "VERAO27",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-23T17:02:40-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/BERMUDAALGODAOAMPLAOFF_CAMISASEDAOVERMLYANAGI_938.webp?v=1794840386",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/BERMUDAALGODAOAMPLAOFF_CAMISASEDAOVERMLYANAGI_944.webp?v=1794840386",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/BERMUDA_ALGODAO_AMPLA_OFF_CAMISA_SEDA_OVER_ML_YANAGI_942.webp?v=1794840734",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/BERMUDA_ALGODAO_AMPLA_OFF_CAMISA_SEDA_OVER_ML_YANAGI_943_1.webp?v=1794840735"
+      ],
+      "variantes": [
+        {
+          "t": "OFF WHITE / XXP",
+          "p": 1197.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / PP",
+          "p": 1197.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "OFF WHITE / P",
+          "p": 1197.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / M",
+          "p": 1197.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "OFF WHITE / G",
+          "p": 1197.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "OFF WHITE / GG",
+          "p": 1197.00,
+          "c": 0,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "10405765644469",
       "titulo": "Blazer Linho Alfaiataria",
@@ -42,7 +144,7 @@
           "t": "VERDE FLORESTA / P",
           "p": 641.10,
           "c": 2137.00,
-          "a": true
+          "a": false
         },
         {
           "t": "VERDE FLORESTA / M",
@@ -651,7 +753,7 @@
           "t": "ESTAMPADO / GG",
           "p": 224.10,
           "c": 747.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -5330,7 +5432,7 @@
           "t": "AZUL JEANS / M",
           "p": 221.10,
           "c": 737.00,
-          "a": true
+          "a": false
         },
         {
           "t": "AZUL JEANS / G",

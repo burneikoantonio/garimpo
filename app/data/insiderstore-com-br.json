@@ -2,8 +2,369 @@
   "marca": "Insider",
   "loja": "Site Insider",
   "site": "insiderstore.com.br",
-  "atualizado": "2026-11-23T16:11:22Z",
+  "atualizado": "2026-11-23T20:08:16Z",
   "produtos": [
+    {
+      "id": "15544096718997",
+      "titulo": "Kit 5 Daily Light T-shirt",
+      "url": "https://insiderstore.com.br/products/kit-5-daily-light-t-shirt",
+      "ref": "",
+      "tipo": "Kit",
+      "tags": [
+        "esconder-busca-site",
+        "esconder-noindex",
+        "esconder-recomendacao-pdp",
+        "exclude-loja-fisica",
+        "exclude-recommend",
+        "excluir",
+        "excluir-feed",
+        "excluirfeed",
+        "produto-oficial"
+      ],
+      "publicado": "2026-11-23T17:06:42-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/Kit_5_Light_-_Preto_-_Marrom_-_Azul_-_Preto_-_Marrom.jpg?v=1795126271"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 299.00,
+          "c": 645.00,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10084170530965",
+      "titulo": "Daily Light T-shirt",
+      "url": "https://insiderstore.com.br/products/daily-light-t-shirt-masculino",
+      "ref": "",
+      "tipo": "T-Shirts",
+      "tags": [
+        "esconder-busca-site",
+        "esconder-noindex",
+        "esconder-recomendacao-pdp",
+        "exclude-loja-fisica",
+        "exclude-recommend",
+        "excluir",
+        "excluir-feed",
+        "excluirfeed",
+        "Low stock",
+        "produto-oficial"
+      ],
+      "publicado": "2026-11-23T16:54:46-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/01_crop_dailylight.jpg?v=1795040530",
+        "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/02_inteiro_dailylight.jpg?v=1795040530",
+        "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/03_crop_dailylight.jpg?v=1795040530",
+        "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/04_inteiro_dailylight.jpg?v=1795040530"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / PP",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Preto / P",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Preto / M",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Preto / G",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Preto / GG",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Preto / XGG",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Preto / G1",
+          "p": 89.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Marrom / PP",
+          "p": 89.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Marrom / P",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Marrom / M",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Marrom / G",
+          "p": 89.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Marrom / GG",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Marrom / XGG",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Marrom / G1",
+          "p": 89.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Azul Marinho / PP",
+          "p": 89.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Azul Marinho / P",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Azul Marinho / M",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Azul Marinho / G",
+          "p": 89.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Azul Marinho / GG",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Azul Marinho / XGG",
+          "p": 89.00,
+          "c": 129.00,
+          "a": true
+        },
+        {
+          "t": "Azul Marinho / G1",
+          "p": 89.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Branco / PP",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Branco / P",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Branco / M",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Branco / G",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Branco / GG",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Branco / XGG",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Branco / G1",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Off White / PP",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Off White / P",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Off White / M",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Off White / G",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Off White / GG",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Off White / XGG",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        },
+        {
+          "t": "Off White / G1",
+          "p": 129.00,
+          "c": 129.00,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "15520387629205",
+      "titulo": "Blusa de Alça The Perfect Support Top Feminino",
+      "url": "https://insiderstore.com.br/products/blusa-de-alca-the-perfect-support-top-feminino",
+      "ref": "",
+      "tipo": "",
+      "tags": [
+        "#WOMAN",
+        "__lblCust: LANÇAMENTOS |topright|black|white",
+        "all",
+        "all-feminino",
+        "all-insider",
+        "black-friday-mulher",
+        "GI-mulher",
+        "lançamento",
+        "lançamento-fem",
+        "linha-perfect",
+        "mais-vendidos-feminino",
+        "mulher",
+        "produto-oficial",
+        "top",
+        "tops-m"
+      ],
+      "publicado": "2026-11-23T15:37:44-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/1_THE_PERFECT_TOP_REGULAVEL_PRETO_2026_1.jpg?v=1795460732",
+        "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/1_THE_PERFECT_TOP_REGULAVEL_PRETO_2026.jpg?v=1794322204",
+        "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/2_THE_PERFECT_TOP_REGULAVEL_PRETO_2026.jpg?v=1794322204",
+        "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/3_THE_PERFECT_TOP_REGULAVEL_PRETO_2026.jpg?v=1794322204"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / PP",
+          "p": 189.00,
+          "c": 189.00,
+          "a": false
+        },
+        {
+          "t": "Preto / P",
+          "p": 189.00,
+          "c": 189.00,
+          "a": true
+        },
+        {
+          "t": "Preto / M",
+          "p": 189.00,
+          "c": 189.00,
+          "a": true
+        },
+        {
+          "t": "Preto / G",
+          "p": 189.00,
+          "c": 189.00,
+          "a": true
+        },
+        {
+          "t": "Preto / GG",
+          "p": 189.00,
+          "c": 189.00,
+          "a": true
+        },
+        {
+          "t": "Branco / PP",
+          "p": 189.00,
+          "c": 189.00,
+          "a": false
+        },
+        {
+          "t": "Branco / P",
+          "p": 189.00,
+          "c": 189.00,
+          "a": false
+        },
+        {
+          "t": "Branco / M",
+          "p": 189.00,
+          "c": 189.00,
+          "a": false
+        },
+        {
+          "t": "Branco / G",
+          "p": 189.00,
+          "c": 189.00,
+          "a": false
+        },
+        {
+          "t": "Branco / GG",
+          "p": 189.00,
+          "c": 189.00,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "15525693948053",
       "titulo": "Kit 3 Camisetas Básicas Tech Daily Feminina",
@@ -11,8 +372,10 @@
       "ref": "",
       "tipo": "Kit",
       "tags": [
+        "__lblCust:FLASH PROMO|topright|#A20016|white",
         "all-feminino",
         "black-friday-mulher",
+        "flash-promo-2",
         "GI-mulher",
         "kit-feminino",
         "kits",
@@ -28,7 +391,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 280.96,
+          "p": 262.08,
           "c": 417.00,
           "a": true
         }
@@ -41,7 +404,8 @@
       "ref": "",
       "tipo": "Kit",
       "tags": [
-        "__lblCust:Best Seller|topright|black|white",
+        "__lblCust:FLASH PROMO|topright|#A20016|white",
+        "flash-promo-2",
         "kit-camisetas-masculinas",
         "kits",
         "kits-daily-t-shirt",
@@ -56,7 +420,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 280.96,
+          "p": 262.08,
           "c": 417.00,
           "a": true
         }
@@ -228,6 +592,7 @@
       "ref": "",
       "tipo": "Kit",
       "tags": [
+        "esconder-busca-site",
         "esconder-noindex",
         "esconder-recomendacao-pdp",
         "exclude-loja-fisica",
@@ -244,7 +609,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 209.25,
+          "p": 199.18,
           "c": 387.00,
           "a": true
         }
@@ -258,16 +623,17 @@
       "tipo": "Body",
       "tags": [
         "__lblCust: LANÇAMENTOS |topright|black|white",
-        "esconder-busca-site",
-        "esconder-collections",
-        "esconder-noindex",
-        "esconder-recomendacao-pdp",
-        "exclude-recommend",
-        "excluir",
-        "excluir-feed",
-        "excluirfeed",
+        "all-feminino",
+        "all-insider",
+        "black-friday-mulher",
+        "GI-mulher",
         "lancamento-app",
-        "produto-oficial"
+        "lançamento",
+        "lançamento-fem",
+        "linha-perfect",
+        "mulher",
+        "produto-oficial",
+        "woman"
       ],
       "publicado": "2026-11-19T15:43:24-03:00",
       "imagens": [
@@ -439,6 +805,7 @@
         "excluir-feed",
         "excluirfeed",
         "lancamento-app",
+        "linha-perfect",
         "produto-oficial"
       ],
       "publicado": "2026-11-19T15:39:42-03:00",
@@ -1090,7 +1457,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 664.20,
+          "p": 565.20,
           "c": 818.00,
           "a": true
         }
@@ -3533,7 +3900,7 @@
           "t": "Space Blue / P",
           "p": 409.00,
           "c": 409.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Space Blue / M",
@@ -4650,7 +5017,7 @@
           "t": "Ocean Blue / PP",
           "p": 519.00,
           "c": 519.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Ocean Blue / P",
@@ -6843,13 +7210,13 @@
           "t": "Azul / P",
           "p": 99.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 99.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -7322,7 +7689,7 @@
           "t": "Flame Red / P",
           "p": 104.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Flame Red / M",
@@ -9218,7 +9585,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 496.94,
+          "p": 520.76,
           "c": 845.00,
           "a": true
         }
@@ -9280,7 +9647,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 496.94,
+          "p": 520.76,
           "c": 845.00,
           "a": true
         }
@@ -9441,7 +9808,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 931.10,
+          "p": 935.55,
           "c": 1690.00,
           "a": true
         }
@@ -9503,7 +9870,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 931.10,
+          "p": 935.55,
           "c": 1690.00,
           "a": true
         }
@@ -13792,7 +14159,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 310.72,
+          "p": 375.64,
           "c": 507.00,
           "a": true
         }
@@ -15902,7 +16269,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 310.72,
+          "p": 375.64,
           "c": 507.00,
           "a": true
         }
@@ -24448,7 +24815,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 615.60,
+          "p": 557.65,
           "c": 758.00,
           "a": true
         }
@@ -24917,13 +25284,13 @@
           "t": "Azul / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -26539,6 +26906,7 @@
         "IA-eligible",
         "lançamento",
         "lançamento-fem",
+        "linha-perfect",
         "mulher",
         "produto-oficial",
         "top-m",
@@ -26846,14 +27214,12 @@
       "ref": "",
       "tipo": "Casacos",
       "tags": [
-        "__lblCust:FLASH PROMO|topright|#A20016|white",
         "aerolook",
         "camadas-meio",
         "casaco-masculino",
         "colecao-lancamento",
         "combine-e-ganhe",
         "dia-dos-namorados",
-        "flash-promo",
         "future-knit",
         "homem",
         "IA-eligible",
@@ -26877,145 +27243,145 @@
       "variantes": [
         {
           "t": "Honey Mustard / PP",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Honey Mustard / P",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Honey Mustard / M",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Honey Mustard / G",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Honey Mustard / GG",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Honey Mustard / XGG",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Preto / PP",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Preto / P",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Preto / M",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Preto / G",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Preto / GG",
-          "p": 788.40,
+          "p": 949.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Preto / XGG",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Taupe / PP",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Taupe / P",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Taupe / M",
-          "p": 788.40,
+          "p": 949.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Taupe / G",
-          "p": 788.40,
+          "p": 949.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Taupe / GG",
-          "p": 788.40,
+          "p": 949.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Taupe / XGG",
-          "p": 788.40,
+          "p": 949.00,
           "c": 999.00,
           "a": true
         },
         {
           "t": "Acid Lime / PP",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Acid Lime / P",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Acid Lime / M",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Acid Lime / G",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Acid Lime / GG",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         },
         {
           "t": "Acid Lime / XGG",
-          "p": 788.40,
+          "p": 999.00,
           "c": 999.00,
           "a": false
         }
@@ -27028,7 +27394,6 @@
       "ref": "",
       "tipo": "Casacos",
       "tags": [
-        "__lblCust:FLASH PROMO|topright|#A20016|white",
         "aerolook",
         "all-feminino",
         "camadas-meio",
@@ -27036,7 +27401,6 @@
         "colecao-lancamento",
         "combine-e-ganhe",
         "dia-dos-namorados",
-        "flash-promo",
         "future-knit",
         "IA-eligible",
         "invernais",
@@ -27060,109 +27424,109 @@
       "variantes": [
         {
           "t": "Taupe / PP",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         },
         {
           "t": "Taupe / P",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         },
         {
           "t": "Taupe / M",
-          "p": 735.00,
+          "p": 855.00,
           "c": 899.00,
           "a": true
         },
         {
           "t": "Taupe / G",
-          "p": 735.00,
+          "p": 855.00,
           "c": 899.00,
           "a": true
         },
         {
           "t": "Taupe / GG",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         },
         {
           "t": "Taupe / XGG",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         },
         {
           "t": "Honey Mustard / PP",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         },
         {
           "t": "Honey Mustard / P",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": true
         },
         {
           "t": "Honey Mustard / M",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         },
         {
           "t": "Honey Mustard / G",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": true
         },
         {
           "t": "Honey Mustard / GG",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         },
         {
           "t": "Honey Mustard / XGG",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         },
         {
           "t": "Preto / PP",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         },
         {
           "t": "Preto / P",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": true
         },
         {
           "t": "Preto / M",
-          "p": 735.00,
+          "p": 855.00,
           "c": 899.00,
           "a": true
         },
         {
           "t": "Preto / G",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": true
         },
         {
           "t": "Preto / GG",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": true
         },
         {
           "t": "Preto / XGG",
-          "p": 735.00,
+          "p": 899.00,
           "c": 899.00,
           "a": false
         }
@@ -27833,13 +28197,13 @@
           "t": "Azul / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -28549,7 +28913,7 @@
           "t": "Nori Green / P",
           "p": 143.00,
           "c": 239.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Nori Green / M",
@@ -30897,7 +31261,7 @@
           "t": "Flame Red / P",
           "p": 169.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Flame Red / M",
@@ -33397,7 +33761,7 @@
           "t": "Branco / G",
           "p": 39.00,
           "c": 39.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Cold Gray / M",
@@ -34835,7 +35199,7 @@
           "t": "Navy / XXGG",
           "p": 275.00,
           "c": 279.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Rain Forest / PP",
@@ -35153,7 +35517,7 @@
           "t": "Branco / G",
           "p": 39.00,
           "c": 39.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Cold Gray / XGG",
@@ -39032,6 +39396,7 @@
         "lancamento-app",
         "lançamento",
         "lançamento-fem",
+        "linha-perfect",
         "mulher",
         "produto-oficial",
         "top-m",
@@ -39045,6 +39410,30 @@
         "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/04_ThePerfectTopHalterFeminino_inteiro.jpg?v=1775344841"
       ],
       "variantes": [
+        {
+          "t": "Mineral Blue / P",
+          "p": 149.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / M",
+          "p": 149.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / G",
+          "p": 149.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / GG",
+          "p": 149.00,
+          "c": 149.00,
+          "a": true
+        },
         {
           "t": "Preto / P",
           "p": 149.00,
@@ -39135,6 +39524,7 @@
         "lançamento",
         "lançamento-fem",
         "linha-casual-feminina",
+        "linha-perfect",
         "mulher",
         "produto-oficial",
         "secagem-rapida",
@@ -39150,6 +39540,30 @@
         "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/03_ThePerfectTopAsymmetricFem_crop.jpg?v=1773483615"
       ],
       "variantes": [
+        {
+          "t": "Mineral Blue / P",
+          "p": 149.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / M",
+          "p": 149.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / G",
+          "p": 149.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / GG",
+          "p": 149.00,
+          "c": 149.00,
+          "a": true
+        },
         {
           "t": "Branco / P",
           "p": 149.00,
@@ -39196,7 +39610,7 @@
           "t": "Preto / GG",
           "p": 135.00,
           "c": 149.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Rust Brown / P",
@@ -40803,7 +41217,7 @@
           "t": "Bloody Mary / GG",
           "p": 175.00,
           "c": 229.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Marinho / P",
@@ -40896,6 +41310,7 @@
         "lancamento-app",
         "lançamento",
         "lançamento-fem",
+        "linha-perfect",
         "mulher",
         "produto-oficial",
         "segundo-item-50off",
@@ -40911,6 +41326,30 @@
         "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/02_ThePerfectTopCroppedFem_crop.jpg?v=1775344878"
       ],
       "variantes": [
+        {
+          "t": "Mineral Blue / P",
+          "p": 119.00,
+          "c": 119.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / M",
+          "p": 119.00,
+          "c": 119.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / G",
+          "p": 119.00,
+          "c": 119.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / GG",
+          "p": 119.00,
+          "c": 119.00,
+          "a": true
+        },
         {
           "t": "Preto / P",
           "p": 99.00,
@@ -41482,7 +41921,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 585.33,
+          "p": 527.41,
           "c": 698.00,
           "a": true
         }
@@ -42097,7 +42536,7 @@
           "t": "Branco / G",
           "p": 39.00,
           "c": 39.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Branco / M",
@@ -42341,7 +42780,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 649.31,
+          "p": 592.23,
           "c": 768.00,
           "a": true
         }
@@ -43723,13 +44162,13 @@
           "t": "Azul / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -44370,7 +44809,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 612.94,
+          "p": 555.24,
           "c": 738.00,
           "a": true
         }
@@ -45234,7 +45673,7 @@
           "t": "Space Blue / P",
           "p": 409.00,
           "c": 409.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Space Blue / M",
@@ -46757,13 +47196,13 @@
           "t": "Azul / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -47197,7 +47636,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 819.16,
+          "p": 761.32,
           "c": 984.00,
           "a": true
         }
@@ -47413,6 +47852,30 @@
         {
           "t": "Bright Red / GG",
           "p": 139.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / P",
+          "p": 129.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / M",
+          "p": 129.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / G",
+          "p": 129.00,
+          "c": 149.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / GG",
+          "p": 129.00,
           "c": 149.00,
           "a": true
         }
@@ -49171,7 +49634,7 @@
           "t": "Nori Green / P",
           "p": 239.00,
           "c": 239.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Nori Green / M",
@@ -49755,7 +50218,7 @@
           "t": "Flame Red / P",
           "p": 169.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Flame Red / M",
@@ -53652,7 +54115,7 @@
           "t": "Nori Green / P",
           "p": 215.00,
           "c": 239.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Nori Green / M",
@@ -54221,13 +54684,13 @@
           "t": "Azul / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -55305,7 +55768,7 @@
           "t": "Nori Green / P",
           "p": 215.00,
           "c": 239.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Nori Green / M",
@@ -55599,13 +56062,13 @@
           "t": "Azul / P",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -58492,7 +58955,7 @@
           "t": "Nori Green / P",
           "p": 215.00,
           "c": 239.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Nori Green / M",
@@ -59358,7 +59821,7 @@
           "t": "Nori Green / GG",
           "p": 81.00,
           "c": 135.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Nori Green / XGG",
@@ -60452,13 +60915,13 @@
           "t": "Azul / P",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -61360,7 +61823,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 490.00,
+          "p": 435.00,
           "c": 548.00,
           "a": true
         }
@@ -61530,7 +61993,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 863.00,
+          "p": 808.00,
           "c": 908.00,
           "a": true
         }
@@ -61746,13 +62209,13 @@
           "t": "Azul / P",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 169.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -62952,7 +63415,7 @@
           "t": "Flame Red / P",
           "p": 169.00,
           "c": 159.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Flame Red / M",
@@ -63653,13 +64116,13 @@
           "t": "Azul / P",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -66021,13 +66484,13 @@
           "t": "Azul / P",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 159.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",
@@ -68887,6 +69350,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "__lblCust:FLASH PROMO|topright|#A20016|white",
         "aerolook",
         "all-feminino",
         "antibacteriano",
@@ -68902,6 +69366,7 @@
         "dia-dos-namorados",
         "especial-livelo",
         "fit-oversized",
+        "flash-promo",
         "gramatura-3",
         "gramatura-regular",
         "IA-eligible",
@@ -68937,109 +69402,109 @@
       "variantes": [
         {
           "t": "Olive Green / PP",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Olive Green / P",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Olive Green / M",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Olive Green / G",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Olive Green / GG",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Olive Green / XGG",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Preto / PP",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Preto / P",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": false
         },
         {
           "t": "Preto / M",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": false
         },
         {
           "t": "Preto / G",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Preto / GG",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Preto / XGG",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": false
         },
         {
           "t": "Space Blue / PP",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Space Blue / P",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Space Blue / M",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": false
         },
         {
           "t": "Space Blue / G",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Space Blue / GG",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": true
         },
         {
           "t": "Space Blue / XGG",
-          "p": 369.00,
+          "p": 314.00,
           "c": 409.00,
           "a": false
         }
@@ -70747,7 +71212,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 554.95,
+          "p": 497.38,
           "c": 654.00,
           "a": true
         }
@@ -71103,7 +71568,7 @@
           "t": "Ocean Blue / PP",
           "p": 449.00,
           "c": 519.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Ocean Blue / P",
@@ -72053,7 +72518,7 @@
           "t": "Navy / XXGG",
           "p": 245.00,
           "c": 275.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Navy / P",
@@ -73829,6 +74294,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "__lblCust:FLASH PROMO|topright|#A20016|white",
         "aerolook",
         "all-masculino",
         "antibacteriano",
@@ -73850,6 +74316,7 @@
         "dia-dos-pais",
         "dia-dos-pais-2024",
         "fit-slim",
+        "flash-promo",
         "gramatura-3",
         "gramatura-regular",
         "homem",
@@ -73890,31 +74357,31 @@
       "variantes": [
         {
           "t": "Washed Black / P",
-          "p": 449.00,
+          "p": 388.00,
           "c": 499.00,
           "a": true
         },
         {
           "t": "Washed Black / M",
-          "p": 449.00,
+          "p": 388.00,
           "c": 499.00,
           "a": true
         },
         {
           "t": "Washed Black / G",
-          "p": 449.00,
+          "p": 388.00,
           "c": 499.00,
           "a": true
         },
         {
           "t": "Washed Black / GG",
-          "p": 449.00,
+          "p": 388.00,
           "c": 499.00,
           "a": true
         },
         {
           "t": "Washed Black / XGG",
-          "p": 449.00,
+          "p": 388.00,
           "c": 499.00,
           "a": true
         }
@@ -79101,6 +79568,7 @@
         "IA-eligible",
         "insider-BGS",
         "lancamento-app",
+        "linha-perfect",
         "Low stock",
         "MAIS-VENDIDOS",
         "mais-vendidos-feminino",
@@ -79141,6 +79609,96 @@
         "https://cdn.shopify.com/s/files/1/0526/4123/5093/files/performance15400.jpg?v=1773682614"
       ],
       "variantes": [
+        {
+          "t": "Graphite Green / P",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Graphite Green / M",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Graphite Green / G",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Graphite Green / GG",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Graphite Green / PP",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Merlot Red / P",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Merlot Red / M",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Merlot Red / G",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Merlot Red / GG",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Merlot Red / PP",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / P",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / M",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / G",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / GG",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
+        {
+          "t": "Mineral Blue / PP",
+          "p": 139.00,
+          "c": 139.00,
+          "a": true
+        },
         {
           "t": "Branca / P",
           "p": 121.00,
@@ -80101,7 +80659,7 @@
           "t": "Flame Red / P",
           "p": 135.00,
           "c": 169.00,
-          "a": true
+          "a": false
         },
         {
           "t": "Flame Red / M",
@@ -84940,13 +85498,13 @@
           "t": "Azul / P",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / M",
           "p": 135.00,
           "c": 169.00,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / G",

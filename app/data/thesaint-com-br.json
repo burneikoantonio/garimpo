@@ -2,7 +2,7 @@
   "marca": "THESAINT",
   "loja": "Site THESAINT",
   "site": "thesaint.com.br",
-  "atualizado": "2026-11-23T16:09:45Z",
+  "atualizado": "2026-11-23T20:06:51Z",
   "produtos": [
     {
       "id": "10183376863523",
@@ -196,7 +196,7 @@
           "t": "XGG / BLACK",
           "p": 99.20,
           "c": 248.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -339,31 +339,31 @@
           "t": "PP / GRAY",
           "p": 368.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "P / GRAY",
           "p": 368.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "M / GRAY",
           "p": 368.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "G / GRAY",
           "p": 368.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "GG / GRAY",
           "p": 368.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -408,7 +408,7 @@
           "t": "P / BLACK",
           "p": 199.00,
           "c": 398.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M / BLACK",
@@ -432,7 +432,7 @@
           "t": "XGG / BLACK",
           "p": 199.00,
           "c": 398.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -542,7 +542,7 @@
           "t": "48 / BLACK",
           "p": 498.00,
           "c": 0,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -693,7 +693,7 @@
           "t": "PP / PRINTED",
           "p": 998.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "P / PRINTED",
@@ -2399,7 +2399,7 @@
           "t": "GG / BLACK",
           "p": 299.00,
           "c": 598.00,
-          "a": true
+          "a": false
         },
         {
           "t": "P / BLACK",
@@ -7250,7 +7250,7 @@
           "t": "P / STONED GREEN",
           "p": 149.00,
           "c": 298.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -8173,7 +8173,7 @@
           "t": "XGG / BLACK",
           "p": 164.00,
           "c": 328.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -11373,7 +11373,7 @@
           "t": "M / GRAY",
           "p": 149.00,
           "c": 298.00,
-          "a": true
+          "a": false
         },
         {
           "t": "G / GRAY",
@@ -14125,7 +14125,7 @@
           "t": "M / LARANJA",
           "p": 124.00,
           "c": 248.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -14427,7 +14427,7 @@
           "t": "PP / LARANJA",
           "p": 79.00,
           "c": 158.00,
-          "a": true
+          "a": false
         },
         {
           "t": "P / LARANJA",

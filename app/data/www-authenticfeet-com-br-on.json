@@ -2,7 +2,7 @@
   "marca": "On",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-23T16:08:35Z",
+  "atualizado": "2026-11-23T20:06:02Z",
   "produtos": [
     {
       "id": "52077",
@@ -2981,8 +2981,8 @@
           "t": "40",
           "p": 779.99,
           "c": 1299.99,
-          "x": 779.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "41",
@@ -3054,8 +3054,8 @@
           "t": "39",
           "p": 779.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 779.99,
+          "a": true
         },
         {
           "t": "40",

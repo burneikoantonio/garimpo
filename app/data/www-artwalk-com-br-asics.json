@@ -2,7 +2,7 @@
   "marca": "ASICS",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-23T16:05:43Z",
+  "atualizado": "2026-11-23T20:03:34Z",
   "produtos": [
     {
       "id": "2015900",
@@ -42,8 +42,8 @@
         },
         {
           "t": "41",
-          "p": 500.0,
-          "c": 500.0,
+          "p": 369.99,
+          "c": 499.99,
           "x": null,
           "a": false
         },
@@ -587,22 +587,22 @@
       "variantes": [
         {
           "t": "40",
-          "p": 900.0,
-          "c": 900.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
           "p": 899.99,
           "c": 899.99,
           "x": null,
           "a": false
         },
         {
-          "t": "41",
+          "t": "39",
           "p": 900.0,
           "c": 900.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 899.99,
+          "c": 899.99,
           "x": null,
           "a": false
         },
@@ -1598,8 +1598,8 @@
         },
         {
           "t": "43",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 999.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -1678,8 +1678,8 @@
         },
         {
           "t": "43",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 999.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -5350,7 +5350,7 @@
     },
     {
       "id": "2043676",
-      "titulo": "Tênis Asics Gel-Nyc Masculino",
+      "titulo": "Tênis Asics Gel-NYC Masculino",
       "url": "https://www.artwalk.com.br/tenis-asics-gel-nyc-masculino-03a73-9-020/p",
       "ref": "03A73-9-020",
       "tipo": "/Tênis/Masculino/ASICS/ Tênis",
@@ -5782,7 +5782,7 @@
     },
     {
       "id": "2043986",
-      "titulo": "Tênis Asics Gel-Nyc Masculino",
+      "titulo": "Tênis Asics Gel-NYC Masculino",
       "url": "https://www.artwalk.com.br/tenis-asics-gel-nyc-masculino-03a73-9-250/p",
       "ref": "03A73-9-250",
       "tipo": "/Tênis/Masculino/ASICS/ Tênis",
@@ -7029,7 +7029,7 @@
     },
     {
       "id": "2045511",
-      "titulo": "Tênis Asics Gel-Nyc 2.0 Masculino",
+      "titulo": "Tênis Asics Gel-Nyc 2.0 Unissex",
       "url": "https://www.artwalk.com.br/tenis-asics-gel-nyc-2-0-masculino-03a89-5-020/p",
       "ref": "03A89-5-020",
       "tipo": "/Tênis/Masculino/ASICS/ Tênis",
@@ -7137,7 +7137,7 @@
     },
     {
       "id": "2045512",
-      "titulo": "Tênis Asics Gel-Nyc 2.0 Masculino",
+      "titulo": "Tênis Asics Gel-Nyc 2.0 Unissex",
       "url": "https://www.artwalk.com.br/tenis-asics-gel-nyc-2-0-unissex-03a89-5-100/p",
       "ref": "03A89-5-100",
       "tipo": "/Tênis/Masculino/ASICS/ Tênis",
@@ -7245,7 +7245,7 @@
     },
     {
       "id": "2045513",
-      "titulo": "Tênis Asics Gel-Nyc 2.0 Masculino",
+      "titulo": "Tênis Asics Gel-Nyc 2.0 Unissex",
       "url": "https://www.artwalk.com.br/tenis-asics-gel-nyc-2-0-masculino-03a89-5-101/p",
       "ref": "03A89-5-101",
       "tipo": "/Tênis/Masculino/ASICS/ Tênis",
@@ -8116,7 +8116,7 @@
     },
     {
       "id": "2046839",
-      "titulo": "Tênis Asics Gel-Nyc 2.0 Masculino",
+      "titulo": "Tênis Asics Gel-Nyc 2.0 Unissex",
       "url": "https://www.artwalk.com.br/tenis-asics-gel-nyc-2-0-unissex-03a89-5-022/p",
       "ref": "03A89-5-022",
       "tipo": "/Tênis/Masculino/ASICS/ Tênis",
@@ -8225,7 +8225,7 @@
     {
       "id": "2046870",
       "titulo": "Tênis Asics Gel-Kinetic 2.0 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-asics-gel-kinetic-2-0-masculino-03a67-8-023/p",
+      "url": "https://www.artwalk.com.br/tenis-asics-gel-kinetic-2-0-unissex-03a67-8-023/p",
       "ref": "03A67-8-023",
       "tipo": "/Tênis/Masculino/ASICS/ Tênis",
       "tags": [],
@@ -8621,8 +8621,8 @@
           "t": "42",
           "p": 649.99,
           "c": 999.99,
-          "x": 649.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -9471,7 +9471,7 @@
           "t": "39",
           "p": 699.99,
           "c": 999.99,
-          "x": null,
+          "x": 699.99,
           "a": false
         }
       ]
@@ -9971,7 +9971,7 @@
     },
     {
       "id": "2048134",
-      "titulo": "Tênis Asics Gel-Nyc 2.0 Masculino",
+      "titulo": "Tênis Asics Gel-Nyc 2.0 Unissex",
       "url": "https://www.artwalk.com.br/tenis-asics-gel-nyc-2-0-masculino-03a89-5-104/p",
       "ref": "03A89-5-104",
       "tipo": "/Tênis/Masculino/ASICS/ Tênis",
@@ -10030,7 +10030,7 @@
     },
     {
       "id": "2048135",
-      "titulo": "Tênis Asics Gel-Nyc 2.0 Masculino",
+      "titulo": "Tênis Asics Gel-Nyc 2.0 Unissex",
       "url": "https://www.artwalk.com.br/tenis-asics-gel-nyc-2-0-masculino-03a89-5-300/p",
       "ref": "03A89-5-300",
       "tipo": "/Tênis/Masculino/ASICS/ Tênis",

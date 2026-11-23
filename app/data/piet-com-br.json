@@ -2,7 +2,7 @@
   "marca": "Piet",
   "loja": "Site Piet",
   "site": "piet.com.br",
-  "atualizado": "2026-11-23T16:09:19Z",
+  "atualizado": "2026-11-23T20:06:20Z",
   "produtos": [
     {
       "id": "15513457393893",
@@ -191,7 +191,7 @@
           "t": "M | M",
           "p": 599.90,
           "c": 599.90,
-          "a": false
+          "a": true
         },
         {
           "t": "G | L",
@@ -240,13 +240,13 @@
           "t": "P | S",
           "p": 279.90,
           "c": 279.90,
-          "a": true
+          "a": false
         },
         {
           "t": "M | M",
           "p": 279.90,
           "c": 279.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G | L",
@@ -311,7 +311,7 @@
           "t": "M | M",
           "p": 279.90,
           "c": 279.90,
-          "a": false
+          "a": true
         },
         {
           "t": "G | L",
@@ -376,7 +376,7 @@
           "t": "M",
           "p": 299.90,
           "c": 299.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G | L",
@@ -2363,7 +2363,7 @@
           "t": "40BR | 30US",
           "p": 414.95,
           "c": 829.90,
-          "a": true
+          "a": false
         },
         {
           "t": "42BR | 32US",
@@ -3077,7 +3077,7 @@
           "t": "G | L",
           "p": 349.95,
           "c": 699.90,
-          "a": false
+          "a": true
         },
         {
           "t": "XG | XL",
@@ -3089,7 +3089,7 @@
           "t": "2XG | 2XL",
           "p": 349.95,
           "c": 699.90,
-          "a": false
+          "a": true
         },
         {
           "t": "3XG | 3XL",
@@ -3695,7 +3695,7 @@
           "t": "3XG | 3XL",
           "p": 199.95,
           "c": 399.90,
-          "a": false
+          "a": true
         },
         {
           "t": "4XG | 4XL",
@@ -3814,8 +3814,8 @@
       ],
       "publicado": "2026-04-15T21:11:44-03:00",
       "imagens": [
-        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/First-rate-Imitators-Raw-Edge-T-shirt.webp?v=1793807080",
         "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/First-rate-Imitators-Raw-Edge-T-shirt-2.webp?v=1793807081",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/First-rate-Imitators-Raw-Edge-T-shirt.webp?v=1793807080",
         "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/First-rate-Imitators-Raw-Edge-T-shirt-3.webp?v=1793807082",
         "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/First-rate-Imitators-Raw-Edge-T-shirt-4.webp?v=1793807083"
       ],
@@ -5151,7 +5151,7 @@
           "t": "2XG | 2XL",
           "p": 174.95,
           "c": 349.90,
-          "a": false
+          "a": true
         },
         {
           "t": "3XG | 3XL",
@@ -5221,7 +5221,7 @@
           "t": "2XG",
           "p": 174.95,
           "c": 349.90,
-          "a": false
+          "a": true
         },
         {
           "t": "3XG | 3XL",
@@ -5780,7 +5780,7 @@
           "t": "XG | XL",
           "p": 269.90,
           "c": 549.90,
-          "a": false
+          "a": true
         },
         {
           "t": "2XG | 2XL",
@@ -5980,7 +5980,7 @@
           "t": "G | L",
           "p": 174.95,
           "c": 349.90,
-          "a": false
+          "a": true
         },
         {
           "t": "XG | XL",
@@ -6518,7 +6518,7 @@
           "t": "M",
           "p": 274.95,
           "c": 549.90,
-          "a": false
+          "a": true
         },
         {
           "t": "G | L",
