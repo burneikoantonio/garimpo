@@ -2,7 +2,7 @@
   "marca": "Piet",
   "loja": "Site Piet",
   "site": "piet.com.br",
-  "atualizado": "2026-11-23T11:54:53Z",
+  "atualizado": "2026-11-23T16:09:19Z",
   "produtos": [
     {
       "id": "15513457393893",
@@ -1917,7 +1917,7 @@
           "t": "2XG | 2XL",
           "p": 299.95,
           "c": 599.90,
-          "a": true
+          "a": false
         },
         {
           "t": "3XG | 3XL",
@@ -3009,7 +3009,7 @@
           "t": "G | L",
           "p": 349.95,
           "c": 699.90,
-          "a": true
+          "a": false
         },
         {
           "t": "XG | XL",
@@ -4307,7 +4307,7 @@
           "t": "M | M",
           "p": 399.95,
           "c": 799.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G | L",

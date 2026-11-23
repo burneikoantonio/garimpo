@@ -2,7 +2,7 @@
   "marca": "Mad Enlatados",
   "loja": "Site Mad Enlatados",
   "site": "madenlatados.com.br",
-  "atualizado": "2026-11-23T11:55:24Z",
+  "atualizado": "2026-11-23T16:10:00Z",
   "produtos": [
     {
       "id": "7721420783679",
@@ -1891,7 +1891,7 @@
           "t": "PP",
           "p": 455.20,
           "c": 569.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -4683,7 +4683,7 @@
           "t": "P",
           "p": 129.50,
           "c": 259.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
@@ -6985,7 +6985,7 @@
           "t": "XGG",
           "p": 370.30,
           "c": 529.00,
-          "a": true
+          "a": false
         }
       ]
     },
