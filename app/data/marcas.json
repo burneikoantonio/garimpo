@@ -1,5 +1,5 @@
 {
-  "atualizado": "23/11/2026 17:08",
+  "atualizado": "23/11/2026 20:32",
   "marcas": [
     {
       "nome": "Carnan",
@@ -74,6 +74,36 @@
         "data/www-authenticfeet-com-br-jordan.json",
         "data/www-overboard-com-br-jordan.json",
         "extra/youridstore-jordan.json"
+      ]
+    },
+    {
+      "nome": "Stüssy",
+      "site": "",
+      "relacao": "segue",
+      "obs": "Importado do site oficial (stussy.com), que entrega no Brasil por DHL com impostos cobrados no checkout",
+      "liberada": "",
+      "arquivos": [
+        "data/www-stussy-com-stssy.json"
+      ]
+    },
+    {
+      "nome": "Diesel",
+      "site": "",
+      "relacao": "segue",
+      "obs": "Loja própria no Brasil (br.diesel.com)",
+      "liberada": "",
+      "arquivos": [
+        "data/br-diesel-com-diesel.json"
+      ]
+    },
+    {
+      "nome": "Deus Ex Machina",
+      "site": "deusexmachina.com.br",
+      "relacao": "segue",
+      "obs": "Loja brasileira da marca australiana de surf e moto",
+      "liberada": "",
+      "arquivos": [
+        "data/deusexmachina-com-br.json"
       ]
     },
     {

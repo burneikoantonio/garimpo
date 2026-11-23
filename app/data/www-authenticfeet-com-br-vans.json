@@ -2,7 +2,7 @@
   "marca": "Vans",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-23T20:05:37Z",
+  "atualizado": "2026-11-23T23:29:24Z",
   "produtos": [
     {
       "id": "38683",
@@ -1082,8 +1082,8 @@
           "t": "36",
           "p": 379.99,
           "c": 379.99,
-          "x": 360.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "37",
@@ -13906,7 +13906,7 @@
           "t": "37",
           "p": 449.99,
           "c": 699.99,
-          "x": null,
+          "x": 449.99,
           "a": false
         },
         {
