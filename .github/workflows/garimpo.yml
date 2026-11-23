@@ -100,3 +100,12 @@ jobs:
         if: ${{ !cancelled() }}
         id: site
         uses: actions/deploy-pages@v5
+        continue-on-error: true   # o GitHub às vezes falha ao achar o pacote; tenta de novo abaixo
+
+      - name: Esperar antes da 2ª tentativa
+        if: ${{ steps.site.outcome == 'failure' }}
+        run: sleep 45
+
+      - name: Publicar no GitHub Pages (2ª tentativa)
+        if: ${{ steps.site.outcome == 'failure' }}
+        uses: actions/deploy-pages@v5
