@@ -41,18 +41,18 @@ jobs:
       name: github-pages
       url: ${{ steps.site.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Baixar preços das lojas
         if: ${{ !inputs.teste_push }}
         run: bash app/atualizar.sh
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
 
       - name: Recuperar preferências do celular (salvos e alertas de modelo)
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: .prefs
           key: prefs-${{ github.run_id }}
@@ -75,7 +75,7 @@ jobs:
 
       - name: Guardar preferências do celular para a próxima rodada
         if: ${{ always() && !inputs.canal_teste }}
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: .prefs
           key: prefs-${{ github.run_id }}
@@ -92,11 +92,11 @@ jobs:
 
       - name: Preparar o site
         if: ${{ !cancelled() }}
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: app
 
       - name: Publicar no GitHub Pages
         if: ${{ !cancelled() }}
         id: site
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

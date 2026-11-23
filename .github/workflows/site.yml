@@ -26,11 +26,11 @@ jobs:
       url: ${{ steps.site.outputs.page_url }}
     steps:
       # pega o main mais novo (não o do push): se o robô salvou preços enquanto este esperava na fila, eles entram
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: main
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: app
       - id: site
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
