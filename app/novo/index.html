@@ -469,6 +469,13 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 #abertura .marcas path { opacity: 0; animation: aparece .15s forwards; }
 @keyframes aparece { to { opacity: 1; } }
 
+/* animações de toque */
+.btn.toque::before { animation: pincelar .4s ease-out; transform-origin: left; }
+.desenhando i.contorno path, .marca-ativa.desenhando path { stroke-dasharray: 260; animation: tracar .45s ease-out both; }
+@keyframes tracar { from { stroke-dashoffset: 260; } to { stroke-dashoffset: 0; } }
+.chip:not([aria-pressed="true"]).desenhando i.contorno path, .size:not(.mine).desenhando i.contorno path { animation: none; }
+.heart .ic, .barra-ic .ic, .iconbtn .ic, .nav .ic { transform-origin: center; }
+.tremer { animation: tremer .5s ease-out !important; }
 </style>
 </head>
 <body>
@@ -478,7 +485,7 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 <div id="toast" class="toast" role="status" hidden></div>
 
 <script src="novo/icones.js"></script>
-<script src="core.js?v=1795482069"></script>
+<script src="core.js?v=1795482445"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -1839,7 +1846,7 @@ document.addEventListener('click', ev => {
     persist();
     // na tela da peça, redesenha a peça; na lista, só troca o coração (sem reordenar o feed debaixo do dedo)
     if (!document.getElementById('sheet').hidden) { const y = document.getElementById('sheet').scrollTop; p.ff ? abrirImportado(p.ffi) : openDetail(k); document.getElementById('sheet').scrollTop = y; }
-    else document.querySelectorAll(`.heart[data-curti="${CSS.escape(k)}"]`).forEach(h => { const on = !!S.curtidas[k]; h.classList.toggle('on', on); h.innerHTML = icone('salvos', 20, { cheio: on }); h.setAttribute('aria-pressed', on); h.setAttribute('aria-label', on ? 'Remover curtida' : 'Curtir'); });
+    else document.querySelectorAll(`.heart[data-curti="${CSS.escape(k)}"]`).forEach(h => { const on = !!S.curtidas[k]; h.classList.toggle('on', on); h.innerHTML = icone('salvos', 20, { cheio: on }); requestAnimationFrame(() => tremer(h)); h.setAttribute('aria-pressed', on); h.setAttribute('aria-label', on ? 'Remover curtida' : 'Curtir'); });
   }
   else if (d.unsave) { delete S.saved[d.unsave]; render(); }
   else if (d.follow) {
@@ -1941,9 +1948,34 @@ function decorar(raiz = document) {
   });
   raiz.querySelectorAll('.switch:not([data-dec])').forEach(el => { el.dataset.dec = 1; el.innerHTML = interruptor(); });
 }
-new MutationObserver(() => decorar()).observe(document.body, { childList: true, subtree: true });
-// tudo que é clicável treme ao toque
-document.addEventListener('click', ev => { const el = ev.target.closest('button, a'); if (el) tremer(el); }, true);
+// ---------- animação a cada toque ----------
+// quase todo toque redesenha a tela na hora; então o app lembra o botão tocado e anima o botão novo que entra no lugar
+let ULTIMO_TOQUE = null;
+function seletorDe(el) {
+  const ds = Object.entries(el.dataset).filter(([k]) => k !== 'dec');
+  if (!ds.length) return null;
+  return el.tagName.toLowerCase() + ds.map(([k, v]) => `[data-${k.replace(/[A-Z]/g, c => '-' + c.toLowerCase())}="${CSS.escape(v)}"]`).join('');
+}
+function reiniciar(el, cls) { el.classList.remove(cls); void el.getBoundingClientRect(); el.classList.add(cls); setTimeout(() => el.classList.remove(cls), 700); }
+function animarToque(el) {
+  if (!el || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  tremer(el);                                                                // tremida + linha "fervendo"
+  if (el.matches('.btn:not(.tertiary):not(.ghost)')) reiniciar(el, 'toque'); // pincelada se pinta da esquerda p/ direita
+  if (el.matches('.chip, .size, .btn.tertiary, .selo')) reiniciar(el, 'desenhando'); // quadrado/contorno torto se desenha
+  if (el.matches('.nav button')) { const m = el.querySelector('.marca-ativa'); if (m) reiniciar(m, 'desenhando'); }
+}
+new MutationObserver(() => {
+  decorar();
+  if (ULTIMO_TOQUE && Date.now() - ULTIMO_TOQUE.t < 800 && ULTIMO_TOQUE.sel) {
+    const novo = document.querySelector(ULTIMO_TOQUE.sel);
+    if (novo && novo !== ULTIMO_TOQUE.el && novo.isConnected) { ULTIMO_TOQUE = null; requestAnimationFrame(() => animarToque(novo)); }
+  }
+}).observe(document.body, { childList: true, subtree: true });
+document.addEventListener('click', ev => {
+  const el = ev.target.closest('button, a'); if (!el) return;
+  ULTIMO_TOQUE = { el, sel: seletorDe(el), t: Date.now() };
+  animarToque(el);
+}, true);
 aplicarTema();
 prefereClaro?.addEventListener?.('change', () => { if (S.tema === 'auto') aplicarTema(); });
 // links das notificações: #produto=<chave> abre a peça; #top10 abre o Top 10 da semana
