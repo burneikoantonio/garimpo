@@ -2,7 +2,7 @@
   "marca": "Puma",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-24T11:55:54Z",
+  "atualizado": "2026-11-24T16:05:27Z",
   "produtos": [
     {
       "id": "28661",
@@ -1152,49 +1152,6 @@
       ]
     },
     {
-      "id": "37848",
-      "titulo": "Camiseta Puma Logo Play Graphic Masculina",
-      "url": "https://www.authenticfeet.com.br/camiseta-puma-logo-play-graphic-masculina-53266-6-002/p",
-      "ref": "53266-6-002",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2021-07-05T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/453643/53266-6-002-1-AF-800x1000.jpg?v=638586595353600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/455307/53266-6-002-2-AF-800x1000.jpg?v=638586616075670000"
-      ],
-      "variantes": [
-        {
-          "t": "P",
-          "p": 150.0,
-          "c": 150.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 150.0,
-          "c": 150.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 150.0,
-          "c": 150.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 150.0,
-          "c": 150.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "37878",
       "titulo": "Blusa Puma Ess Big Logo Masculina",
       "url": "https://www.authenticfeet.com.br/blusa-puma-ess-big-logo-masculina-58668-8-001/p",
@@ -1279,6 +1236,56 @@
           "t": "GG",
           "p": 49.99,
           "c": 279.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "37882",
+      "titulo": "Calça Puma Ess Slim Masculina",
+      "url": "https://www.authenticfeet.com.br/calca-puma-ess-slim-masculina-58674-9-001/p",
+      "ref": "58674-9-001",
+      "tipo": "/Roupas/Masculino/Calças/ Calças",
+      "tags": [],
+      "publicado": "2021-07-05T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/313399/58674-9-001-1.jpg?v=638161539811530000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/313621/58674-9-001-2.jpg?v=638161540418600000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 270.0,
+          "c": 270.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 270.0,
+          "c": 270.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 270.0,
+          "c": 270.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 270.0,
+          "c": 270.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 270.0,
+          "c": 270.0,
           "x": null,
           "a": false
         }
@@ -1512,8 +1519,8 @@
         },
         {
           "t": "G",
-          "p": 150.0,
-          "c": 150.0,
+          "p": 69.99,
+          "c": 149.99,
           "x": null,
           "a": false
         },
@@ -2268,6 +2275,49 @@
           "t": "GG",
           "p": 149.99,
           "c": 299.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "39549",
+      "titulo": "Camiseta Puma Icon T7 Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-icon-t7-masculina-59986-9-052/p",
+      "ref": "59986-9-052",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2022-01-05T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/249388/Camiseta-Puma-Icon-T7-Masculina-Branca.jpg?v=637804623342970000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/249389/Camiseta-Puma-Icon-T7-Masculina-Branca-2.jpg?v=637804623477930000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 79.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 79.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 79.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 79.99,
+          "c": 149.99,
           "x": null,
           "a": false
         }
@@ -3083,8 +3133,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 430.0,
-          "c": 430.0,
+          "p": 199.99,
+          "c": 429.99,
           "x": null,
           "a": false
         },
@@ -3146,8 +3196,8 @@
         },
         {
           "t": "46",
-          "p": 430.0,
-          "c": 430.0,
+          "p": 199.99,
+          "c": 429.99,
           "x": null,
           "a": false
         }
@@ -4653,8 +4703,8 @@
         },
         {
           "t": "G",
-          "p": 79.99,
-          "c": 169.99,
+          "p": 170.0,
+          "c": 170.0,
           "x": null,
           "a": false
         },
@@ -6110,6 +6160,65 @@
       ]
     },
     {
+      "id": "50208",
+      "titulo": "Camiseta Puma Graphics Sportstyle Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-graphics-sportstyle-masculina-62274-1-002/p",
+      "ref": "62274-1-002",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480685/62274-1-002-1-AF-800x1000.jpg?v=638615993992670000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480686/62274-1-002-2-AF-800x1000.jpg?v=638615994096470000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480687/62274-1-002-3-AF-800x1000.jpg?v=638615994187600000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480688/62274-1-002-4-AF-800x1000.jpg?v=638615994288370000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 89.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 89.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 89.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 89.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 89.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 89.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "50209",
       "titulo": "Camiseta Puma Graphics Juicery Masculina",
       "url": "https://www.authenticfeet.com.br/camiseta-puma-graphics-juicery-masculina-62274-3-001/p",
@@ -6160,6 +6269,65 @@
         {
           "t": "GGG",
           "p": 89.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "50210",
+      "titulo": "Camiseta Puma Graphics Juicery Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-graphics-juicery-masculina-62274-3-002/p",
+      "ref": "62274-3-002",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480657/62274-3-002-1-AF-800x1000.jpg?v=638615943398400000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480658/62274-3-002-2-AF-800x1000.jpg?v=638615943573700000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480659/62274-3-002-3-AF-800x1000.jpg?v=638615944227500000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480660/62274-3-002-4-AF-800x1000.jpg?v=638615944696930000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 84.99,
           "c": 169.99,
           "x": null,
           "a": false
@@ -6218,6 +6386,63 @@
         {
           "t": "GGG",
           "p": 89.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "50212",
+      "titulo": "Camiseta Puma Graphics Le Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-graphics-le-masculina-62274-5-002/p",
+      "ref": "62274-5-002",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/452639/62274-5-002-1-AF-800x1000.jpg?v=638586591950430000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/454303/62274-5-002-2-AF-800x1000.jpg?v=638586612711670000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 109.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 109.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 109.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 109.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 109.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 109.99,
           "c": 169.99,
           "x": null,
           "a": false
@@ -6333,6 +6558,193 @@
           "t": "GGG",
           "p": 39.99,
           "c": 149.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "50217",
+      "titulo": "Camiseta Puma Elevated Embroidered Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-ess-elevated-embroidered-masculina-67597-3-006/p",
+      "ref": "67597-3-006",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480668/67597-3-006-1-AF-800x1000.jpg?v=638615965986700000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480669/67597-3-006-2-AF-800x1000.jpg?v=638615966105870000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 89.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 89.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 89.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 89.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 89.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 89.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "50219",
+      "titulo": "Camiseta Puma Better Essentials Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-better-essentials-masculina-67597-7-006/p",
+      "ref": "67597-7-006",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480682/67597-7-006-1-AF-800x1000.jpg?v=638615984227400000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480683/67597-7-006-2-AF-800x1000.jpg?v=638615984530400000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480684/67597-7-006-3-AF-800x1000.jpg?v=638615986117600000"
+      ],
+      "variantes": [
+        {
+          "t": "GGGG",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 84.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "50220",
+      "titulo": "Camiseta Puma Better Essentials Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-better-essentials-masculina-67597-7-085/p",
+      "ref": "67597-7-085",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480661/67597-7-085-1-AF-800x1000.jpg?v=638615947887000000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480662/67597-7-085-2-AF-800x1000.jpg?v=638615948084230000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480663/67597-7-085-3-AF-800x1000.jpg?v=638615948272400000"
+      ],
+      "variantes": [
+        {
+          "t": "GGGG",
+          "p": 74.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 74.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 74.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 74.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 74.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 74.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 74.99,
+          "c": 169.99,
           "x": null,
           "a": false
         }
@@ -7786,7 +8198,7 @@
     },
     {
       "id": "52669",
-      "titulo": "Tênis Puma Suede Xl Unissex",
+      "titulo": "Tênis Puma Suede XL Unissex",
       "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-011/p",
       "ref": "39520-5-011",
       "tipo": "/Tênis/Masculino/Puma/ Tênis",
@@ -7852,8 +8264,8 @@
     },
     {
       "id": "52670",
-      "titulo": "Tênis Puma Suede Xl Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-002/p",
+      "titulo": "Tênis Puma Suede XL Unissex",
+      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-002-1/p",
       "ref": "39520-5-002",
       "tipo": "/Tênis/Masculino/Puma/ Tênis",
       "tags": [],
@@ -7866,91 +8278,91 @@
       ],
       "variantes": [
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "43",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "42",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "41",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "40",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "38",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "34",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "35",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "36",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "37",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "39",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "44",
           "p": 599.99,
           "c": 599.99,
           "x": 569.99,
           "a": true
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "46",
           "p": 599.99,
           "c": 599.99,
           "x": null,
           "a": false
         },
         {
-          "t": "Tênis Puma Suede Xl Unissex",
+          "t": "45",
           "p": 599.99,
           "c": 599.99,
           "x": null,
@@ -9755,6 +10167,51 @@
       ]
     },
     {
+      "id": "53124",
+      "titulo": "Camiseta Puma Sports Jersey Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-sports-jersey-masculina-62136-8-001/p",
+      "ref": "62136-8-001",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2024-02-05T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/453328/62136-8-001-1-AF-800x1000.jpg?v=638586594279070000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/454992/62136-8-001-2-AF-800x1000.jpg?v=638942500392600000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/456347/62136-8-001-3-AF-800x1000.jpg?v=638942500392770000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/457025/62136-8-001-4-AF-800x1000.jpg?v=638942500392770000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "53125",
       "titulo": "Camiseta Puma Sports Jersey Masculina",
       "url": "https://www.authenticfeet.com.br/camiseta-puma-sports-jersey-masculina-62136-8-065/p",
@@ -9794,6 +10251,65 @@
           "t": "GG",
           "p": 199.99,
           "c": 399.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "53511",
+      "titulo": "Camiseta Puma Elevated Embroidered Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-ess-elevated-embroidered-masculinacamiseta-puma-ess-elevated-e-m-67597-3-085/p",
+      "ref": "67597-3-085",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480675/67597-3-085-1-AF-800x1000.jpg?v=638615974731300000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480676/67597-3-085-2-AF-800x1000.jpg?v=638615974828600000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480677/67597-3-085-3-AF-800x1000.jpg?v=638615974933700000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/480678/67597-3-085-4-AF-800x1000.jpg?v=638615975097200000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 39.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 39.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 39.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 39.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 39.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 39.99,
+          "c": 149.99,
           "x": null,
           "a": false
         }
@@ -12451,16 +12967,16 @@
     {
       "id": "59111",
       "titulo": "Tênis Puma Suede XL Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-053/p",
+      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-053-1/p",
       "ref": "39520-5-053",
       "tipo": "/Tênis/Masculino/Puma/ Tênis",
       "tags": [],
       "publicado": "2024-01-18T00:00:00Z",
       "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/496878/39520-5-053-1-Af-800x1000.jpg?v=638781870786670000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/496879/39520-5-053-2-Af-800x1000.jpg?v=638781870873570000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/496880/39520-5-053-3-Af-800x1000.jpg?v=638781870962370000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/496881/39520-5-053-4-Af-800x1000.jpg?v=638781871087100000"
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496878/39520-5-053-1-Af-800x1000.jpg?v=639311280440800000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496879/39520-5-053-2-Af-800x1000.jpg?v=639311280440870000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496880/39520-5-053-3-Af-800x1000.jpg?v=639311280440900000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/496881/39520-5-053-4-Af-800x1000.jpg?v=639311280440930000"
       ],
       "variantes": [
         {
@@ -12559,7 +13075,7 @@
     {
       "id": "59113",
       "titulo": "Tênis Puma Suede XL Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-054/p",
+      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-054-1/p",
       "ref": "39520-5-054",
       "tipo": "/Tênis/Masculino/Puma/ Tênis",
       "tags": [],
@@ -12667,7 +13183,7 @@
     {
       "id": "59114",
       "titulo": "Tênis Puma Suede XL Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-061/p",
+      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-061-1/p",
       "ref": "39520-5-061",
       "tipo": "/Tênis/Masculino/Puma/ Tênis",
       "tags": [],
@@ -12983,6 +13499,114 @@
           "t": "46",
           "p": 449.99,
           "c": 749.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "59146",
+      "titulo": "Tênis Puma Ca Pro Rain Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-puma-ca-pro-rain-masculino-40209-5-002/p",
+      "ref": "40209-5-002",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2025-01-08T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/506944/40209-5-002-1-800x1000.jpg?v=638977776957170000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/506945/40209-5-002-2-800x1000.jpg?v=638977777163730000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/506946/40209-5-002-3-800x1000.jpg?v=638977777270570000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/506947/40209-5-002-4-800x1000.jpg?v=638977777376600000"
+      ],
+      "variantes": [
+        {
+          "t": "34",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "35",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "36",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 249.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "46",
+          "p": 249.99,
+          "c": 599.99,
           "x": null,
           "a": false
         }
@@ -16730,7 +17354,7 @@
     {
       "id": "61891",
       "titulo": "Tênis Puma Suede XL Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-078/p",
+      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-078-1/p",
       "ref": "39520-5-078",
       "tipo": "/Tênis/Masculino/Puma/ Tênis",
       "tags": [],
@@ -17449,16 +18073,16 @@
     {
       "id": "62182",
       "titulo": "Tênis Puma Suede XL Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-069/p",
+      "url": "https://www.authenticfeet.com.br/tenis-puma-suede-xl-unissex-39520-5-069-1/p",
       "ref": "39520-5-069",
       "tipo": "/Tênis/Masculino/Puma/ Tênis",
       "tags": [],
       "publicado": "2024-01-18T00:00:00Z",
       "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509530/39520-5-069-1-AF-800x1000.jpg?v=639021789421430000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509531/39520-5-069-2-AF-800x1000.jpg?v=639021789497930000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509532/39520-5-069-3-AF-800x1000.jpg?v=639021789585270000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/509533/39520-5-069-4-AF-800x1000.jpg?v=639021789702700000"
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/509530/39520-5-069-1-AF-800x1000.jpg?v=639311280299530000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/509531/39520-5-069-2-AF-800x1000.jpg?v=639311280299570000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/509532/39520-5-069-3-AF-800x1000.jpg?v=639311280299600000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/509533/39520-5-069-4-AF-800x1000.jpg?v=639311280299670000"
       ],
       "variantes": [
         {
@@ -18704,121 +19328,6 @@
           "t": "47",
           "p": 749.99,
           "c": 749.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "64917",
-      "titulo": "Tênis Puma RS Surge Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-puma-rs-surge-unissex-40917-7-002/p",
-      "ref": "40917-7-002",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2026-01-23T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/557701/40917-7-002-1-800x1000.jpg?v=639178178092970000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/557702/40917-7-002-2-800x1000.jpg?v=639178178093130000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/557703/40917-7-002-3-800x1000.jpg?v=639178178093300000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/557704/40917-7-002-4-800x1000.jpg?v=639178178093300000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 759.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 759.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 759.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 759.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 759.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 759.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 759.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 759.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 759.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 799.99,
-          "c": 799.99,
           "x": null,
           "a": false
         }

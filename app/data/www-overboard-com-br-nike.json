@@ -2,7 +2,7 @@
   "marca": "Nike",
   "loja": "Overboard",
   "site": "www.overboard.com.br",
-  "atualizado": "2026-11-24T11:54:39Z",
+  "atualizado": "2026-11-24T16:04:08Z",
   "produtos": [
     {
       "id": "10020",
@@ -632,8 +632,8 @@
           "t": "44",
           "p": 399.99,
           "c": 449.99,
-          "x": 399.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "45",
@@ -11989,8 +11989,8 @@
           "t": "XG",
           "p": 139.99,
           "c": 139.99,
-          "x": null,
-          "a": false
+          "x": 139.99,
+          "a": true
         }
       ]
     },
@@ -14297,8 +14297,8 @@
           "t": "UNICO",
           "p": 179.99,
           "c": 179.99,
-          "x": 179.99,
-          "a": true
+          "x": null,
+          "a": false
         }
       ]
     },
