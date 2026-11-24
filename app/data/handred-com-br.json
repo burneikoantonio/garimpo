@@ -2,7 +2,7 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-23T23:54:25Z",
+  "atualizado": "2026-11-24T11:57:55Z",
   "produtos": [
     {
       "id": "10689170571445",
@@ -89,7 +89,7 @@
           "t": "ROSA / P",
           "p": 1260.00,
           "c": 4200.00,
-          "a": true
+          "a": false
         },
         {
           "t": "ROSA / M",
@@ -2012,7 +2012,7 @@
           "t": "PRETO / G",
           "p": 987.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "PRETO / GG",
@@ -4462,7 +4462,7 @@
           "t": "OFF WHITE / O2",
           "p": 2997.00,
           "c": 0,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -5545,7 +5545,7 @@
           "t": "AZUL JEANS / G",
           "p": 221.10,
           "c": 737.00,
-          "a": true
+          "a": false
         },
         {
           "t": "AZUL JEANS / GG",

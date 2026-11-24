@@ -2,7 +2,7 @@
   "marca": "ASICS",
   "loja": "OStore",
   "site": "www.ostore.com.br",
-  "atualizado": "2026-11-23T23:50:54Z",
+  "atualizado": "2026-11-24T11:55:12Z",
   "produtos": [
     {
       "id": "3659",
@@ -1903,8 +1903,8 @@
           "t": "39",
           "p": 1199.99,
           "c": 1199.99,
-          "x": 1199.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40",
