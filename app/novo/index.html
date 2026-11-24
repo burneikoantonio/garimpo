@@ -485,7 +485,7 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 <div id="toast" class="toast" role="status" hidden></div>
 
 <script src="novo/icones.js"></script>
-<script src="core.js?v=1795482445"></script>
+<script src="core.js?v=1795482674"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -1971,10 +1971,18 @@ new MutationObserver(() => {
     if (novo && novo !== ULTIMO_TOQUE.el && novo.isConnected) { ULTIMO_TOQUE = null; requestAnimationFrame(() => animarToque(novo)); }
   }
 }).observe(document.body, { childList: true, subtree: true });
+// botões que abrem ou fecham uma tela (coroa, sino, setinhas de voltar): a tela nova cobriria o ícone na hora,
+// então primeiro ele anima e só depois a ação acontece
+const ANIMA_ANTES = '[data-top10], [data-alerts], [data-close], .hdr .iconbtn, [data-look], [data-lookcarrinho]';
 document.addEventListener('click', ev => {
   const el = ev.target.closest('button, a'); if (!el) return;
+  if (el.__liberado) { el.__liberado = false; return; }   // 2º clique (o de verdade), depois da animação
   ULTIMO_TOQUE = { el, sel: seletorDe(el), t: Date.now() };
   animarToque(el);
+  if (el.matches(ANIMA_ANTES) && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    ev.preventDefault(); ev.stopImmediatePropagation();
+    setTimeout(() => { el.__liberado = true; el.click(); }, 320);
+  }
 }, true);
 aplicarTema();
 prefereClaro?.addEventListener?.('change', () => { if (S.tema === 'auto') aplicarTema(); });
