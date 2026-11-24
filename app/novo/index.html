@@ -7,10 +7,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Achei">
-<meta name="theme-color" content="#161616">
+<meta name="theme-color" content="#0d0d0d">
 <link rel="manifest" href="manifest.webmanifest?v=2">
-<link rel="apple-touch-icon" href="achei-180.png">
-<link rel="icon" type="image/png" href="achei-192.png">
+<link rel="apple-touch-icon" href="novo/icone-180.png">
+<link rel="icon" type="image/png" href="novo/icone-192.png">
 <title>Achei</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Lacquer&display=swap">
 <style>
@@ -359,6 +359,116 @@ button, input, select { letter-spacing: -0.03em; }
 /* reduzir movimento: nada anima */
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 
+/* ===== bloco 2: botões, chips, interruptores, card e página do produto ===== */
+/* botão principal: pincelada vermelha atrás do texto */
+.btn { position: relative; isolation: isolate; background: none !important; color: #fff; border-radius: 0; box-shadow: none; font-family: var(--font); font-size: 15px; justify-content: center; }
+.btn::before { content: ""; position: absolute; left: -6px; right: -6px; top: 14%; bottom: 6%; z-index: -1; background: var(--spray); transform: skewX(-14deg) rotate(-2deg); clip-path: polygon(0 18%, 4% 0, 100% 8%, 97% 100%, 2% 88%); }
+.btn:active::before { animation: pincelar .4s ease-out; transform-origin: left; }
+@keyframes pincelar { from { transform: skewX(-14deg) rotate(-2deg) scaleX(0); } to { transform: skewX(-14deg) rotate(-2deg) scaleX(1); } }
+/* secundário: contorno torto branco (vira vermelho ao tocar / ativo) */
+.btn.tertiary, .btn.ghost { color: var(--fg); }
+.btn.tertiary::before, .btn.ghost::before { display: none; }
+.btn.tertiary { box-shadow: none !important; }
+.btn.tertiary:hover { background: none; color: var(--fg); }
+.btn.ghost.sm, .btn.ghost { padding-inline: 4px; }
+i.contorno { position: absolute; inset: 0; pointer-events: none; font-style: normal; }
+i.contorno svg { width: 100%; height: 100%; overflow: visible; display: block; }
+.btn.tertiary i.contorno path { stroke: var(--fg); transition: stroke .15s; }
+.btn.tertiary:active i.contorno path, .btn.tertiary[aria-pressed="true"] i.contorno path { stroke: var(--spray); }
+.btn.tertiary > *:not(i.contorno), .btn > span { position: relative; }
+/* chips e tamanhos: só texto; o selecionado ganha o quadrado torto vermelho que se desenha */
+.chip, .size { position: relative; background: none !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; color: var(--helper); font-family: var(--font); }
+.chip[aria-pressed="true"], .size.mine { color: var(--fg); }
+.chip i.contorno, .size i.contorno { inset: -3px -6px; }
+.chip i.contorno path, .size i.contorno path { stroke-dasharray: 260; stroke-dashoffset: 260; transition: stroke-dashoffset .4s ease-out; }
+.chip[aria-pressed="true"] i.contorno path, .size.mine i.contorno path { stroke-dashoffset: 0; }
+.size.off { color: var(--layer2); text-decoration: line-through; }
+.sizes { gap: 10px 14px; }
+/* interruptor: trilho torto + caixinha que desliza */
+.switch { background: none !important; border: 0; padding: 0; width: 44px; height: 24px; box-shadow: none !important; flex: none; }
+.switch::before, .switch::after { display: none !important; }
+.switch svg { overflow: visible; display: block; }
+.switch .trilho { stroke: var(--fg); transition: stroke .2s; }
+.switch[aria-checked="true"] .trilho { stroke: var(--spray); }
+.switch .caixa { fill: var(--fg); transition: transform .25s cubic-bezier(.3,1.5,.5,1); }
+.switch[aria-checked="true"] .caixa { transform: translateX(18px); }
+/* campos e painéis: retos, sem cantos redondos */
+input, select, .panel, .notice, .field input, .search { border-radius: 0 !important; }
+/* ---------- card de produto: foto inteira + faixa preta inclinada por cima ---------- */
+.grid { gap: 8px; padding: 8px; background: transparent; }
+.tilewrap { background: transparent; }
+.tile { position: relative; background: transparent; border: 0; padding: 0; display: block; }
+.tile .ph { aspect-ratio: 3 / 4.4; margin: 0 !important; border-radius: 0 !important; width: 100% !important; }
+.tile .ph img { object-fit: contain; }
+.tile .body { position: absolute; left: 6px; right: 6px; bottom: 6px; z-index: 1; background: #0d0d0d; color: #f2f2f2; padding: 5px 7px; transform: rotate(-1.5deg); display: grid; gap: 1px; }
+.tile .body .brand { font-size: 10px; color: #8a8a8a; }
+.tile .body .pname { font-size: 11px; color: #f2f2f2; -webkit-line-clamp: 1; line-clamp: 1; }
+.tile .body .prices { gap: 6px; align-items: baseline; }
+.tile .body .now { font-size: 17px; color: #f2f2f2; letter-spacing: 0; }
+.tile .body .was { font-size: 11px; color: #8a8a8a; }
+.tile .body .pixline, .tile .body .scoreline, .tile .body .t2 { display: none !important; }
+/* etiqueta vermelha só para desconto ou queda (com os dois, só o desconto) */
+.tile .tags { top: 6px; left: -4px; }
+.tile .tags .tag { display: none; }
+.tile .tags .t-sale, .tile .tags .t-baixou { display: inline-block; background: var(--spray); color: #fff; font-size: 12px; padding: 1px 6px; transform: rotate(-4deg); border-radius: 0; }
+.tile .tags:has(.t-sale) .t-baixou { display: none; }
+.heart { top: 6px; right: 6px; width: 34px; height: 34px; color: #0d0d0d; }
+.naocurti { top: 44px; color: #0d0d0d; }
+/* ---------- página do produto ---------- */
+.resumo { display: flex; flex-wrap: wrap; gap: 8px 12px; margin: 12px 0 10px; }
+.selo { position: relative; padding: 4px 10px; font-size: 13px; color: var(--fg); }
+.selo b { color: var(--spray); font-weight: 400; }
+.selo i.contorno path { stroke: var(--fg); }
+.sanfona { border-top: 1px solid var(--border-strong); padding: 10px 0; }
+.sanfona > button { width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: 0; color: var(--fg); font: inherit; font-size: 15px; padding: 2px 0; }
+.sanfona .mais { font-size: 20px; transition: transform .2s; color: var(--spray); }
+.sanfona.aberta .mais { transform: rotate(45deg); }
+.sanfona .conteudo { display: none; margin-top: 8px; }
+.sanfona.aberta .conteudo { display: block; }
+.sanfona .conteudo > h3.section-h:first-child, .sanfona .conteudo > .panel > .range-val > strong:first-child { display: none; }
+.barra-fixa { position: sticky; bottom: 0; z-index: 5; background: var(--bg); border-top: 1px solid var(--border-strong); padding: 10px 14px calc(14px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; gap: 14px; }
+.barra-fixa .btn { flex: 1; height: 44px; }
+.barra-ic { background: none; border: 0; color: var(--fg); display: grid; justify-items: center; gap: 2px; font: inherit; font-size: 10px; padding: 0; }
+.barra-ic.ativo { color: var(--spray); }
+.bigprice .now { font-size: 30px; letter-spacing: 0; }
+.bigprice .off { background: var(--spray); color: #fff; padding: 1px 6px; transform: rotate(-4deg); display: inline-block; }
+/* sem círculos */
+.toast, .notice, .panel, .row, .thumb, .vitrine button, .gallery img { border-radius: 0 !important; }
+/* tremida ao toque */
+.tremer { animation: tremer .5s ease-out; }
+@keyframes tremer { 20% { transform: rotate(-9deg) scale(1.15); } 45% { transform: rotate(7deg) scale(1.08); } 70% { transform: rotate(-4deg); } }
+
+/* ===== bloco 3: logo, carregamento, telas vazias, abertura ===== */
+.logo-tag { font-size: 28px; margin: 6px 0 4px 6px; }
+/* carregamento: frase empilhada (1ª menor, 2ª maior e deslocada), inclinada e "fervendo" + ícone da aba se desenhando */
+.carregando { min-height: 70vh; display: grid; place-content: center; justify-items: center; gap: 28px; }
+.carregando .frase { display: grid; transform: rotate(-6deg); font-family: var(--font-tag); white-space: nowrap; text-shadow: 3px 3px 0 var(--spray); color: var(--fg); }
+.carregando .l1 { font-size: 26px; }
+.carregando .l2 { font-size: 44px; margin-left: 34px; line-height: 1; }
+.carregando .l2.so { margin-left: 0; }
+.carregando .desenhar { color: var(--fg); }
+.desenhar path { stroke-dasharray: 120; animation: desenhar 1.8s ease-in-out infinite; }
+@keyframes desenhar { 0% { stroke-dashoffset: 120; } 55%, 85% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+/* telas vazias */
+.vazio { display: grid; justify-items: center; text-align: center; gap: 10px; padding: 36px 24px; color: var(--fg); }
+.vazio .tagtitulo { font-size: 26px; }
+.vazio p { margin: 0; color: var(--fg2); font-size: 13px; max-width: 280px; }
+.vazio .btn { margin-top: 6px; }
+/* abertura: fundo branco, ~2 s */
+#abertura { position: fixed; inset: 0; z-index: 100; background: #f2f2f2; display: grid; place-items: center; transition: opacity .3s; }
+#abertura.saindo { opacity: 0; }
+#abertura > * { grid-area: 1 / 1; }
+#abertura .etq path { stroke-dasharray: 80; stroke-dashoffset: 80; animation: etq-desenha .6s ease-out forwards, some .2s .6s forwards; }
+@keyframes etq-desenha { to { stroke-dashoffset: 0; } }
+@keyframes some { to { opacity: 0; } }
+#abertura .nome { color: #0d0d0d; opacity: 0; animation: quique .5s .65s cubic-bezier(.3,1.6,.5,1) forwards; }
+#abertura .nome .tagtitulo { font-size: 64px; transform: rotate(-10deg) skewX(-8deg); letter-spacing: -2px; }
+#abertura .nome .tagtitulo::before { left: 5px; top: 5px; }
+@keyframes quique { 0% { opacity: 0; transform: scale(.3); } 100% { opacity: 1; transform: scale(1); } }
+#abertura .marcas { width: min(320px, 84vw); height: auto; pointer-events: none; }
+#abertura .marcas path { opacity: 0; animation: aparece .15s forwards; }
+@keyframes aparece { to { opacity: 1; } }
+
 </style>
 </head>
 <body>
@@ -368,7 +478,7 @@ button, input, select { letter-spacing: -0.03em; }
 <div id="toast" class="toast" role="status" hidden></div>
 
 <script src="novo/icones.js"></script>
-<script src="core.js?v=1795481575"></script>
+<script src="core.js?v=1795482069"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -556,7 +666,7 @@ function tile({ p, e }) {
   if (e.intl) tags.push('<span class="tag t-intl">INTERNACIONAL</span>');
   if (e.off >= 0.05) tags.push(`<span class="tag t-sale">-${Math.round(e.off * 100)}%</span>`);
   if (e.novo) tags.push('<span class="tag t-new">Novo</span>');
-  if (e.baixou) tags.push('<span class="tag t-ok">Baixou</span>');
+  if (e.baixou) tags.push('<span class="tag t-baixou">Baixou</span>');
   else if (e.justo?.nivel === 'abaixo') tags.push('<span class="tag t-ok">Preço bom</span>');
   // o coração fica por cima da foto, fora do botão da peça, para curtir sem abrir
   const curti = !!S.curtidas[p.key];
@@ -580,7 +690,7 @@ const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.n
 
 /* ---------- Telas ---------- */
 function viewOfertas() {
-  const cabeca = header('<span class="marca-app"><img src="logo-128.png" alt=""><b>Achei</b></span>', `<button class="iconbtn" data-sw="qBaixou" aria-label="Só o que baixou de preço" aria-pressed="${S.qBaixou}" style="font-size:18px;${S.qBaixou ? "background:var(--layer2)" : ""}">${icone('baixou', 20)}</button><button class="iconbtn" data-top10 aria-label="Top 10 da semana" >${icone('top10', 20)}</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
+  const cabeca = header('<span class="tagtitulo logo-tag" data-t="Achei"><span>Achei</span></span>', `<button class="iconbtn" data-sw="qBaixou" aria-label="Só o que baixou de preço" aria-pressed="${S.qBaixou}" style="font-size:18px;${S.qBaixou ? "background:var(--layer2)" : ""}">${icone('baixou', 20)}</button><button class="iconbtn" data-top10 aria-label="Top 10 da semana" >${icone('top10', 20)}</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
   const cats = `<div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>`;
   // com busca ou filtro: procura em todas as marcas e lojas, e compara as lojas
   if (buscando()) {
@@ -593,7 +703,7 @@ function viewOfertas() {
     if (S.qBaixou) items.sort((a, b) => baixouRecente(b.e).queda - baixouRecente(a.e).queda);   // maiores quedas primeiro
     return cabeca + painelBusca() + cats + (S.qLoja === 'Todas' ? comparador(items) : '') + `
       <div class="wrap"><p class="section-sub" style="margin:12px 0">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p></div>
-      ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
+      ${grid(items) || telaVazia('buscaVazia', 'Nenhuma peça com essa busca. Tente outra palavra, outra marca ou um preço maior.')}`;
   }
   const brands = activeBrands();
   const { items, hiddenSize } = feedList(p => brands.has(p.marca) && (S.cat === 'Tudo' || p.cat === S.cat));
@@ -611,7 +721,7 @@ function viewOfertas() {
     ${paraVoceBloco()}
     ${saleBloco()}
     ${cats}
-    ${grid(deals) || '<div class="wrap note"><span>Nenhuma oferta nesta categoria agora.</span></div>'}
+    ${grid(deals) || telaVazia('semPromocao')}
     <div class="wrap note">${hiddenSize ? `<span>${hiddenSize} peças ocultas por não ter seu tamanho disponível.</span>` : ''}<span>Fotos e preços vêm direto dos sites das marcas.</span></div>`;
 }
 
@@ -1197,6 +1307,48 @@ function abrirBoasVindas() {
   document.getElementById('sheet').scrollTop = y;
 }
 
+/* ---------- Abertura: etiqueta se desenha, "Achei" entra com quique e as marcações aparecem uma por uma ---------- */
+function abertura() {
+  if (sessionStorage.getItem('aberturaVista') || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  sessionStorage.setItem('aberturaVista', '1');
+  const k = (d, cor, i, w = 2.4) => `<path d="${d}" stroke="${cor}" stroke-width="${w}" style="animation-delay:${0.9 + i * 0.1}s"/>`;
+  const marcas = [
+    k('M70 168 C120 176,190 176,236 166', '#D7261E', 0, 3.2),       // sublinhado vermelho
+    k('M28 46 C34 30,52 26,64 34 M58 26 L66 34 L56 38', '#0d0d0d', 1),   // seta curva preta (alto, esquerda)
+    k('M236 196 L262 214 M252 214 L262 214 L260 204', '#D7261E', 2),    // seta vermelha (baixo, direita)
+    k('M238 28 L252 42 M252 28 L238 42', '#0d0d0d', 3),                  // X preto (alto, direita)
+    k('M36 200 L48 212 M48 200 L36 212', '#D7261E', 4),                  // X vermelho (baixo, esquerda)
+    k('M44 86 L36 86 L36 150 L44 150', '#0d0d0d', 5),                    // colchete esquerdo
+    k('M256 86 L264 86 L264 150 L256 150', '#0d0d0d', 6),                // colchete direito
+    k('M112 52 L106 38 M122 50 L122 34', '#D7261E', 7),                  // brilho vermelho
+    k('M182 50 L188 36 M192 54 L202 44', '#0d0d0d', 8),                  // brilho preto
+  ].join('');
+  document.body.insertAdjacentHTML('beforeend', `<div id="abertura" aria-hidden="true">
+    <svg class="etq" viewBox="0 0 24 24" width="90" height="90"><g filter="url(#trem0)"><path d="${TRACOS.ofertas[0]}" stroke="#0d0d0d" stroke-width="1.6" fill="none"/></g></svg>
+    <div class="nome"><span class="tagtitulo" data-t="Achei"><span>Achei</span></span></div>
+    <svg class="marcas" viewBox="0 0 300 240" fill="none" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#trem0)">${marcas}</g></svg>
+  </div>`);
+  setTimeout(() => { const a = document.getElementById('abertura'); a?.classList.add('saindo'); setTimeout(() => a?.remove(), 350); }, 2100);
+}
+
+/* ---------- Telas vazias: ilustração rabiscada + título em tag + texto + botão ---------- */
+const ACAO_VAZIA = { 'Ver ofertas': 'data-tab="ofertas"', 'Seguir mais marcas': 'data-tab="marcas"', 'Limpar busca': 'data-limpar', 'Tentar de novo': 'data-recarregar' };
+function telaVazia(chave, texto) {
+  const v = ILUSTRACOES[chave];
+  return `<div class="vazio">${ilustracao(chave)}<span class="tagtitulo" data-t="${esc(v.titulo)}"><span>${esc(v.titulo)}</span></span>
+    <p>${esc(texto || v.texto)}</p><button class="btn tertiary" ${ACAO_VAZIA[v.botao] || ''}>${esc(v.botao)}</button></div>`;
+}
+/* ---------- Carregamento: frase sorteada em tag + ícone da aba se desenhando ---------- */
+let FERVER = null;
+function telaCarregando() {
+  const [a, b] = FRASES_CARREGANDO[Math.floor(Math.random() * FRASES_CARREGANDO.length)];
+  const ic = { ofertas: 'ofertas', marcas: 'marcas', farfetch: 'importados', salvos: 'salvos', perfil: 'perfil' }[S.tab] || 'ofertas';
+  clearInterval(FERVER); let n = 0;
+  FERVER = setInterval(() => document.querySelectorAll('.carregando .trem').forEach(g => g.setAttribute('filter', `url(#trem${(++n) % 3})`)), 140);
+  return `<div class="carregando"><div class="frase trem">${b ? `<span class="l1">${esc(a)}</span><span class="l2">${esc(b)}</span>` : `<span class="l2 so">${esc(a)}</span>`}</div>
+    <div class="desenhar">${icone(ic, 56)}</div></div>`;
+}
+
 /* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
 function abrirTop10(slug = 'tenis') {
   ATUAL = { fn: abrirTop10, args: [slug] };
@@ -1211,7 +1363,7 @@ function abrirTop10(slug = 'tenis') {
         <span class="thumb"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></span>
         <span class="grow" style="display:grid;gap:2px"><span class="t2">${esc(p.marca)} · ${esc(e.lojas[0].loja)}</span><span class="t1">${esc(p.titulo)}</span>
           <span>${outra ? `<span class="tag t-gray" style="margin-right:4px">${esc(p.cat)}</span>` : ''}<span class="mono">${brl(e.price)}</span> ${e.de ? `<span class="mono was" style="font-size:12px">${brl(e.de)}</span>` : ''} <span class="tag t-sale">-${Math.round(e.off * 100)}%</span> <span class="mono" style="font-size:12px;color:var(--helper)">nota ${e.score}</span></span></span>
-      </button><button class="top-fora" data-topfora="${esc(p.key)}" data-slug="${atual.slug}" aria-label="Não curti ${esc(p.titulo)}: trocar por outra">${icone('fechar', 14)}<span>Não curti</span></button></div>`).join('') || '<p class="section-sub">Nenhuma peça com desconto nas suas marcas agora.</p>'}</div>
+      </button><button class="top-fora" data-topfora="${esc(p.key)}" data-slug="${atual.slug}" aria-label="Não curti ${esc(p.titulo)}: trocar por outra">${icone('fechar', 14)}<span>Não curti</span></button></div>`).join('') || telaVazia('topVazio', 'Ainda não há peças com desconto suficientes nas suas marcas.')}</div>
     </div>`);
 }
 /* ---------- Pix e frete grátis da loja (lidos do site pelo robô) ---------- */
@@ -1276,7 +1428,7 @@ function simulacaoBloco() {
   const itens = Object.keys(S.carrinho).map(k => DATA.produtos.find(x => x.key === k)).filter(Boolean)
     .map(p => ({ p, e: evaluate(p) }));
   if (!itens.length) return `<h2 class="section-h">Simular compra</h2>
-    <p class="section-sub">Na tela de uma peça, toque em <b>Simular compra</b>. Eu digo se vale levar agora, se é melhor esperar baixar e se tem peça parecida por menos.</p>`;
+    ${telaVazia('simularVazio', 'Na tela de uma peça, toque em Simular. Eu digo se vale levar agora, se é melhor esperar baixar e se tem parecida por menos.')}`;
   const ok = itens.filter(x => x.e.ok).map(x => ({ ...x, r: veredito(x.p, x.e) }));
   const total = ok.reduce((s, x) => s + x.e.price, 0);
   const valem = ok.filter(x => x.r.cor === 'good');
@@ -1359,7 +1511,7 @@ function viewSalvos() {
     <p class="section-sub">Com o alvo em "auto", o aviso chega quando o preço sair do comum: abaixo do preço justo, o menor já visto ou uma queda forte. Se preferir, escreva um valor.</p>
     <div class="list">${rows.join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta ainda. Abra uma peça e toque em Alerta.</p>'}</div>
     <h2 class="section-h">Curtidas</h2>
-    ${Object.keys(S.curtidas).length ? `<div class="rec-pics" style="grid-template-columns:repeat(4,1fr)">${Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k, c]) => { const p = acharPeca(k); return p ? `<button ${abrirAttr(p)} aria-label="${esc(c.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>` : ''; }).join('')}</div>` : '<p class="section-sub">Nada curtido ainda. Toque no coração das peças que combinam com você.</p>'}
+    ${Object.keys(S.curtidas).length ? `<div class="rec-pics" style="grid-template-columns:repeat(4,1fr)">${Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k, c]) => { const p = acharPeca(k); return p ? `<button ${abrirAttr(p)} aria-label="${esc(c.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>` : ''; }).join('')}</div>` : telaVazia('salvosVazio')}
   </div>`;
 }
 
@@ -1448,7 +1600,7 @@ function openAlerts() {
   const a = buildAlerts();
   showSheet(`<header class="hdr"><div class="wrap"><h1>Alertas</h1><button class="iconbtn" data-close aria-label="Fechar">${ICON.close}</button></div></header>
     <div class="wrap"><p class="section-sub" style="margin:16px 0 12px">Quedas de preço aparecem a partir da segunda atualização, quando há com o que comparar.</p>
-    <div class="list">${a.map(x => `<button class="row rowbtn" data-open="${esc(x.key)}"><span class="tag ${x.tag[0]}">${x.tag[1]}</span><div class="grow"><span class="t1">${esc(x.t)}</span></div></button>`).join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta no momento.</p>'}</div></div>`);
+    <div class="list">${a.map(x => `<button class="row rowbtn" data-open="${esc(x.key)}"><span class="tag ${x.tag[0]}">${x.tag[1]}</span><div class="grow"><span class="t1">${esc(x.t)}</span></div></button>`).join('') || telaVazia('semAlertas')}</div></div>`);
 }
 
 /* ---------- Detalhe ---------- */
@@ -1469,6 +1621,11 @@ function priceChart(h) {
   </svg>`;
 }
 
+// bloco que abre e fecha com "+" (página do produto)
+function sanfona(titulo, html, aberta = false) {
+  if (!html || !String(html).trim()) return '';
+  return `<div class="sanfona ${aberta ? 'aberta' : ''}"><button data-sanfona aria-expanded="${aberta}"><span>${esc(titulo)}</span><span class="mais">+</span></button><div class="conteudo">${html}</div></div>`;
+}
 function openDetail(key) {
   ATUAL = { fn: openDetail, args: [key] };
   const p = DATA.produtos.find(x => x.key === key); if (!p) return;
@@ -1507,8 +1664,23 @@ function openDetail(key) {
         <h2>${esc(p.titulo)}</h2>
         ${e.ok ? `<div class="bigprice"><span class="now mono">${brl(e.price)}</span>${e.de ? `<span class="was mono">${brl(e.de)}</span><span class="off mono">-${Math.round(e.off * 100)}%</span>` : ''}</div>` : '<p class="section-sub">Esgotado no seu tamanho</p>'}
       </div>
-      ${e.ok ? pagamentoHTML(e.lojas[0], e.price) : ''}
-      ${e.ok && e.justo ? (() => {
+      ${(() => {
+        // resumo em 3 selos: preço justo · nota (em vermelho) · histórico/queda
+        if (!e.ok) return '';
+        const selos = [];
+        if (e.justo) selos.push({ abaixo: 'Preço bom', media: 'Na média', acima: 'Acima do normal' }[e.justo.nivel]);
+        selos.push(`<b>Nota ${Math.max(1, Math.round(e.score / 10))}/10</b>`);
+        const lim = Date.now() - 30 * 864e5, h30 = (e.hist || []).filter(([d]) => new Date(d) >= lim).map(([, v]) => v);
+        const b = baixouRecente(e);
+        if (h30.length > 1 && e.price <= Math.min(...h30)) selos.push('Menor em 30 dias');
+        else if (b) selos.push(`Baixou ${brl(b.antes - e.price)}`);
+        else if (e.off > 0) selos.push(`-${Math.round(e.off * 100)}%`);
+        return `<div class="resumo">${selos.map(t => `<span class="selo">${t}</span>`).join('')}</div>`;
+      })()}
+      <div class="lbl" style="margin-bottom:8px">Tamanhos${p.group !== 'one' ? ' · marcado = seu tamanho' : ''}</div>
+      <div class="sizes">${sizes}</div>
+      ${sanfona('Pagamento e entrega', e.ok ? pagamentoHTML(e.lojas[0], e.price) : '', true)}
+      ${sanfona('Preço justo', e.ok && e.justo ? (() => {
         const j = e.justo, pct = Math.round(Math.abs(j.dif) * 100);
         const rotulo = { abaixo: ['t-ok', 'Preço bom'], media: ['t-gray', 'Preço na média'], acima: ['t-sale', 'Acima do normal'] }[j.nivel];
         const frase = j.nivel === 'media' ? 'está na média' : `está ${pct}% ${j.nivel === 'abaixo' ? 'abaixo' : 'acima'} disso`;
@@ -1517,15 +1689,13 @@ function openDetail(key) {
           <div class="justo-scale"><span></span><span></span><span></span><i style="left:${pos}%"></i></div>
           <div class="justo-legend"><span>Abaixo</span><span>Na média</span><span>Acima</span></div>
           <span class="t2" style="color:var(--fg2);font-size:13px">${esc(KIND_LABEL[p.kind])} da ${esc(p.marca)} estão saindo, em média, por <b class="mono">${brl(Math.round(j.preco))}</b> (${j.n} peças à venda agora). Esta, a ${brl(e.price)}, ${frase}.</span></div>`;
-      })() : ''}
-      <div class="lbl" style="margin-bottom:8px">Tamanhos${p.group !== 'one' ? ' · verde = seu tamanho' : ''}</div>
-      <div class="sizes">${sizes}</div>
-      ${e.ok ? `<h3 class="section-h">Nota de Oferta</h3><div class="panel">
+      })() : '')}
+      ${sanfona('Nota de oferta', e.ok ? `<h3 class="section-h">Nota de Oferta</h3><div class="panel">
         <div class="range-val"><span class="t2" style="color:var(--helper);font-size:12px">${e.temHist ? 'Com histórico' : 'Sem histórico ainda'} · calculada sobre ${e.max} pontos</span><span class="mono" style="font-size:24px;color:${e.score >= S.notaMin ? 'var(--good)' : 'var(--fg)'}">${e.score}<span style="font-size:13px;color:var(--helper)">/100</span></span></div>
         ${bars.map(b => `<div class="bar-row"><span>${b[0]}</span><span class="mono" style="color:var(--helper)">${Math.round(b[1])}/${b[2]}</span><span class="meter ${b[1] / b[2] > .6 ? 'hi' : ''}"><i style="width:${(b[1] / b[2]) * 100}%"></i></span></div>`).join('')}
-      </div>` : ''}
-      ${lojasBlock}
-      ${(() => {
+      </div>` : '')}
+      ${sanfona('Onde comprar', lojasBlock, true)}
+      ${sanfona('Mesmo modelo em outras lojas', (() => {
         // o mesmo modelo vendido em outras lojas (outras cores entram juntas)
         const chave = modeloChave(p);
         if (!chave) return '';
@@ -1538,19 +1708,17 @@ function openDetail(key) {
             <div class="grow"><span class="t1">${esc(x.loja)} ${seloLoja(L, i)}</span>
               <span class="t2">${x.n} ${x.n > 1 ? 'cores/opções' : 'opção'}${x.tam.size ? ` · seus tamanhos: ${tamTxt(x.tam)}` : ''}</span></div>
             <span class="mono" style="font-size:15px">${brl(x.min)}</span></button>`).join('')}</div>`;
-      })()}
-      ${intlBlock}
-      <h3 class="section-h">Histórico de preço</h3>
-      ${histBlock}
-      ${miniLook(p)}
-      <div class="acoes3">
-        <button class="btn ${saved ? '' : 'tertiary'}" data-save="${esc(key)}" aria-pressed="${saved}">${saved ? icone('alertas', 16) + ' Alerta ligado' : icone('alertas', 16) + ' Alerta'}</button>
-        <button class="btn ${curti ? '' : 'tertiary'}" data-curti="${esc(key)}" aria-pressed="${curti}" style="${curti ? 'background:var(--bad)' : ''}">${curti ? icone('salvos', 16, { cheio: true }) + ' Curtido' : icone('salvos', 16) + ' Curti'}</button>
-        <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener">${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato ' + icone('abrir', 14) : 'Ver na loja ' + icone('abrir', 14)}</a>
-      </div>
-      <button class="btn ${S.carrinho[key] ? '' : 'tertiary'}" data-carrinho="${esc(key)}" style="width:100%;justify-content:center;margin-top:1px">${S.carrinho[key] ? icone('simular', 16) + ' Na simulação de compra (tirar)' : icone('simular', 16) + ' Simular compra'}</button>
-      <p class="section-sub" style="margin-top:8px">Alerta avisa quando o preço sair do comum. Curti ensina o Achei a trazer mais peças e marcas assim.</p>
-      <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">${icone('fechar', 12)} Não curti: esconder esta e as iguais</button>
+      })())}
+      ${sanfona('Importar', intlBlock)}
+      ${sanfona('Histórico de preço', histBlock)}
+      ${sanfona('Combinar', miniLook(p))}
+      <button class="btn tertiary" data-ocultar="${esc(key)}" style="margin:16px 0 8px">Não curti: esconder esta e as iguais</button>
+    </div>
+    <div class="barra-fixa">
+      <button class="barra-ic ${saved ? 'ativo' : ''}" data-save="${esc(key)}" aria-pressed="${saved}" aria-label="${saved ? 'Alerta ligado' : 'Ligar alerta'}">${icone('alertas', 24)}<span>Alerta</span></button>
+      <button class="barra-ic ${curti ? 'ativo' : ''}" data-curti="${esc(key)}" aria-pressed="${curti}" aria-label="${curti ? 'Curtido' : 'Curtir'}">${icone('salvos', 24, { cheio: curti })}<span>Curtir</span></button>
+      <button class="barra-ic ${S.carrinho[key] ? 'ativo' : ''}" data-carrinho="${esc(key)}" aria-label="Simular compra">${icone('simular', 24)}<span>Simular</span></button>
+      <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener"><span>${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato' : 'Ver na loja'}</span></a>
     </div>`);
 }
 
@@ -1630,6 +1798,8 @@ document.addEventListener('click', ev => {
   else if (d.cat) { S.cat = d.cat; S.limit = 40; render(); }
   else if (d.qkind) { S.qKind = d.qkind; S.limit = 40; render(); }
   else if ('more' in d) { S.limit += 40; render(); }
+  else if (d.recarregar !== undefined) location.reload();
+  else if (d.sanfona !== undefined) { const sf = b.closest('.sanfona'); sf.classList.toggle('aberta'); b.setAttribute('aria-expanded', sf.classList.contains('aberta')); }
   else if (d.open) { navegar(openDetail, d.open); }
   else if ('alerts' in d) { openAlerts(); }
   else if ('close' in d) { voltar(); }
@@ -1762,6 +1932,18 @@ document.addEventListener('submit', ev => {
 });
 
 document.body.insertAdjacentHTML('afterbegin', FILTROS_SVG);   // linha tremida dos ícones e contornos
+// todo botão secundário, chip, tamanho e selo ganha o contorno torto; interruptores ganham o trilho torto
+function decorar(raiz = document) {
+  raiz.querySelectorAll('.btn.tertiary:not([data-dec]), .chip:not([data-dec]), .size:not([data-dec]), .selo:not([data-dec]), .mg-seguindo:not([data-dec])').forEach(el => {
+    el.dataset.dec = 1;
+    const ver = el.classList.contains('chip') || el.classList.contains('size');
+    el.insertAdjacentHTML('afterbegin', `<i class="contorno">${contornoTorto(ver ? '#D7261E' : 'currentColor', ver ? 2 : 1.8)}</i>`);
+  });
+  raiz.querySelectorAll('.switch:not([data-dec])').forEach(el => { el.dataset.dec = 1; el.innerHTML = interruptor(); });
+}
+new MutationObserver(() => decorar()).observe(document.body, { childList: true, subtree: true });
+// tudo que é clicável treme ao toque
+document.addEventListener('click', ev => { const el = ev.target.closest('button, a'); if (el) tremer(el); }, true);
 aplicarTema();
 prefereClaro?.addEventListener?.('change', () => { if (S.tema === 'auto') aplicarTema(); });
 // links das notificações: #produto=<chave> abre a peça; #top10 abre o Top 10 da semana
@@ -1772,14 +1954,17 @@ function abrirPorLink() {
   else return;
   history.replaceState(null, '', location.pathname);
 }
+document.getElementById('app').innerHTML = telaCarregando();
+abertura();
 load().then(() => {
+  clearInterval(FERVER);
   render();
   // link de notificação: abre a peça direto
   abrirPorLink();
   addEventListener('hashchange', abrirPorLink);
   if (PRIMEIRA_VEZ && document.getElementById('sheet').hidden) abrirBoasVindas();
 }).catch(err => {
-  document.getElementById('app').innerHTML = `<p class="loading">Não consegui carregar os dados (${esc(err.message)}).<br>Rode <code>./atualizar.sh</code> e abra pelo <code>./servidor.sh</code>.</p>`;
+  clearInterval(FERVER); document.getElementById('app').innerHTML = telaVazia('semConexao') + `<p class="loading" style="display:none">${esc(err.message)}</p>`;
 });
 </script>
 </body>
