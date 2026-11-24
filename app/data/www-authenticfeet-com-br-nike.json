@@ -2,7 +2,7 @@
   "marca": "Nike",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-24T20:01:45Z",
+  "atualizado": "2026-11-24T23:48:16Z",
   "produtos": [
     {
       "id": "17458",
@@ -1041,8 +1041,8 @@
         },
         {
           "t": "40",
-          "p": 214.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -1055,8 +1055,8 @@
         },
         {
           "t": "42",
-          "p": 214.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -1076,8 +1076,8 @@
         },
         {
           "t": "45",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 214.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -2963,8 +2963,8 @@
         },
         {
           "t": "39",
-          "p": 1000.0,
-          "c": 1000.0,
+          "p": 549.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
@@ -3252,8 +3252,8 @@
       "variantes": [
         {
           "t": "PP",
-          "p": 39.99,
-          "c": 179.99,
+          "p": 180.0,
+          "c": 180.0,
           "x": null,
           "a": false
         },
@@ -3273,8 +3273,8 @@
         },
         {
           "t": "G",
-          "p": 39.99,
-          "c": 179.99,
+          "p": 180.0,
+          "c": 180.0,
           "x": null,
           "a": false
         },
@@ -4040,8 +4040,8 @@
         },
         {
           "t": "38",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 589.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -4054,8 +4054,8 @@
         },
         {
           "t": "40",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 589.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
@@ -4096,8 +4096,8 @@
         },
         {
           "t": "46",
-          "p": 589.99,
-          "c": 1099.99,
+          "p": 1100.0,
+          "c": 1100.0,
           "x": null,
           "a": false
         },
@@ -4546,8 +4546,8 @@
         },
         {
           "t": "M",
-          "p": 79.99,
-          "c": 399.99,
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         },
@@ -4567,8 +4567,8 @@
         },
         {
           "t": "GGG",
-          "p": 79.99,
-          "c": 399.99,
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         },
@@ -5804,6 +5804,72 @@
       ]
     },
     {
+      "id": "38524",
+      "titulo": "Camiseta Nike Club Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-nike-club-masculina-ar499-7-734/p",
+      "ref": "AR499-7-734",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2020-06-29T03:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/247449/Camiseta-Nike-Club-Masculina-Salmao.jpg?v=637722517237230000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/247450/Camiseta-Nike-Club-Masculina-Salmao-2.jpg?v=637722517340200000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/247451/Camiseta-Nike-Club-Masculina-Salmao-3.jpg?v=637722517447230000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/247452/Camiseta-Nike-Club-Masculina-Salmao-4.jpg?v=637722517564030000"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 69.99,
+          "c": 99.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 69.99,
+          "c": 99.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 69.99,
+          "c": 99.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 69.99,
+          "c": 99.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 69.99,
+          "c": 99.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 69.99,
+          "c": 99.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGG",
+          "p": 69.99,
+          "c": 99.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "38706",
       "titulo": "Tênis Nike Dunk Low Retro Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-dunk-low-retro-masculino-dd139-1-004/p",
@@ -5869,142 +5935,6 @@
           "t": "44",
           "p": 749.99,
           "c": 749.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "38716",
-      "titulo": "Tênis Nike Quest 2 Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-nike-quest-2-masculino-ci378-7-008/p",
-      "ref": "CI378-7-008",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2021-12-03T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/356744/CI378-7-008-1.jpg?v=638273704420600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/358802/CI378-7-008-2.jpg?v=638273713099400000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/360785/CI378-7-008-3.jpg?v=638273721412500000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/362671/CI378-7-008-4.jpg?v=638273729343630000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37.5",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39.5",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43.5",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 49.99,
-          "c": 349.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 49.99,
-          "c": 349.99,
           "x": null,
           "a": false
         }
@@ -6682,6 +6612,78 @@
           "t": "48",
           "p": 679.99,
           "c": 899.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "39086",
+      "titulo": "Camiseta Nike Graphic Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-nike-graphic-masculina-dn517-2-063/p",
+      "ref": "DN517-2-063",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2021-12-13T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/249283/Camiseta-Nike-Graphic-Masculina-Cinza.jpg?v=637789866201670000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/249284/Camiseta-Nike-Graphic-Masculina-Cinza-2.jpg?v=637789866332430000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/249285/Camiseta-Nike-Graphic-Masculina-Cinza-3.jpg?v=637789866564630000"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 49.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 49.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 49.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 49.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 49.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 49.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGG",
+          "p": 49.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGGG",
+          "p": 49.99,
+          "c": 229.99,
           "x": null,
           "a": false
         }
@@ -7477,66 +7479,138 @@
       ]
     },
     {
-      "id": "41109",
-      "titulo": "Camiseta Nike KD Masculina",
-      "url": "https://www.authenticfeet.com.br/camiseta-nike-kd-masculina-dq187-7-379/p",
-      "ref": "DQ187-7-379",
+      "id": "41100",
+      "titulo": "Camiseta Nike Swoosh Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-nike-swoosh-masculina-dn524-3-010/p",
+      "ref": "DN524-3-010",
       "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
       "tags": [],
       "publicado": "2022-03-17T00:00:00Z",
       "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/335054/DQ187-7-379-1.jpg?v=638210575453130000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/338710/DQ187-7-379-2.jpg?v=638210631088530000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/341872/DQ187-7-379-3.jpg?v=638210645772800000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/343927/DQ187-7-379-4.jpg?v=638210652877130000"
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/255325/Camiseta-Nike-Swoosh-Masculina-Preto.jpg?v=637850390235900000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/255326/Camiseta-Nike-Swoosh-Masculina-Preto-2.jpg?v=637850390371300000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/255327/Camiseta-Nike-Swoosh-Masculina-Preto-3.jpg?v=637850390495030000"
       ],
       "variantes": [
         {
           "t": "GGG",
-          "p": 139.99,
-          "c": 279.99,
+          "p": 59.99,
+          "c": 119.99,
           "x": null,
           "a": false
         },
         {
           "t": "GGGG",
-          "p": 139.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGGG",
-          "p": 139.99,
-          "c": 279.99,
+          "p": 59.99,
+          "c": 119.99,
           "x": null,
           "a": false
         },
         {
           "t": "G",
-          "p": 139.99,
-          "c": 279.99,
+          "p": 59.99,
+          "c": 119.99,
           "x": null,
           "a": false
         },
         {
           "t": "M",
-          "p": 139.99,
-          "c": 279.99,
+          "p": 59.99,
+          "c": 119.99,
           "x": null,
           "a": false
         },
         {
           "t": "P",
-          "p": 139.99,
-          "c": 279.99,
+          "p": 59.99,
+          "c": 119.99,
           "x": null,
           "a": false
         },
         {
           "t": "GG",
-          "p": 139.99,
-          "c": 279.99,
+          "p": 59.99,
+          "c": 119.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 59.99,
+          "c": 119.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "41124",
+      "titulo": "Camiseta Nike DNA Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-nike-dna-masculina-dq102-1-355/p",
+      "ref": "DQ102-1-355",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2022-03-17T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/255011/Camiseta-Nike-DNA-Masculina-Verde-1.jpg?v=637847835120100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/255012/Camiseta-Nike-DNA-Masculina-Verde-2.jpg?v=637847835300300000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/255013/Camiseta-Nike-DNA-Masculina-Verde-3.jpg?v=637847835439530000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/255014/Camiseta-Nike-DNA-Masculina-Verde-4.jpg?v=637847835582830000"
+      ],
+      "variantes": [
+        {
+          "t": "GGG",
+          "p": 129.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGG",
+          "p": 129.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGGG",
+          "p": 129.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 129.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 129.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 129.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 129.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 129.99,
+          "c": 249.99,
           "x": null,
           "a": false
         }
@@ -7983,6 +8057,79 @@
           "t": "M",
           "p": 199.99,
           "c": 599.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "43539",
+      "titulo": "Camiseta Nike Fantasy Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-nike-fantasy-masculina-dr799-1-060/p",
+      "ref": "DR799-1-060",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2022-05-23T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/271567/Camiseta-Nike-Fantasy-Masculina-Cinza-1.jpg?v=637969515635270000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/271568/Camiseta-Nike-Fantasy-Masculina-Cinza-2.jpg?v=637969515703000000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/271569/Camiseta-Nike-Fantasy-Masculina-Cinza-3.jpg?v=637969567112700000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/271570/Camiseta-Nike-Fantasy-Masculina-Cinza-4.jpg?v=637969567361900000"
+      ],
+      "variantes": [
+        {
+          "t": "GGGG",
+          "p": 99.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGGGG",
+          "p": 99.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "PP",
+          "p": 99.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 99.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 99.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 99.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 99.99,
+          "c": 249.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GGG",
+          "p": 99.99,
+          "c": 249.99,
           "x": null,
           "a": false
         }
@@ -8680,79 +8827,6 @@
       ]
     },
     {
-      "id": "46923",
-      "titulo": "Camiseta Nike M90 Masculina",
-      "url": "https://www.authenticfeet.com.br/camiseta-nike-m90-masculina-dx104-9-010/p",
-      "ref": "DX104-9-010",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2022-09-20T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/282669/DX104-9-010-1.jpg?v=638036026487130000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/283014/DX104-9-010-2.jpg?v=638036027133830000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/283445/DX104-9-010-3.jpg?v=638036027857500000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/283839/DX104-9-010-4.jpg?v=638036028489070000"
-      ],
-      "variantes": [
-        {
-          "t": "PP",
-          "p": 149.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 149.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 149.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 149.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 149.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 149.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 149.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGGG",
-          "p": 149.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "46928",
       "titulo": "Camiseta Nike AF1 Masculino",
       "url": "https://www.authenticfeet.com.br/camiseta-nike-af1-masculina-dx107-9-252/p",
@@ -9122,8 +9196,8 @@
         },
         {
           "t": "37.5",
-          "p": 599.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -9199,8 +9273,8 @@
         },
         {
           "t": "44",
-          "p": 1300.0,
-          "c": 1300.0,
+          "p": 599.99,
+          "c": 1299.99,
           "x": null,
           "a": false
         },
@@ -11519,71 +11593,6 @@
           "t": "GGGG",
           "p": 79.99,
           "c": 79.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "48279",
-      "titulo": "Camiseta Nike Club Masculina",
-      "url": "https://www.authenticfeet.com.br/camiseta-nike-club-masculina-dz298-5-309/p",
-      "ref": "DZ298-5-309",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2022-12-09T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/452405/DZ298-5-309-1-AF-800x1000.jpg?v=638586591139100000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/454069/DZ298-5-309-2-AF-800x1000.jpg?v=638586611899700000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/455674/DZ298-5-309-3-AF-800x1000.jpg?v=638586617736300000"
-      ],
-      "variantes": [
-        {
-          "t": "GG",
-          "p": 89.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 89.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 89.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 89.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 89.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 89.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 89.99,
-          "c": 249.99,
           "x": null,
           "a": false
         }
@@ -14039,72 +14048,6 @@
           "t": "48",
           "p": 479.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "49250",
-      "titulo": "Camiseta Nike Club Masculina",
-      "url": "https://www.authenticfeet.com.br/camiseta-nike-club-masculina-dz298-5-386/p",
-      "ref": "DZ298-5-386",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2022-12-09T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/452508/DZ298-5-386-1-AF-800x1000.jpg?v=638586591494830000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/454172/DZ298-5-386-2-AF-800x1000.jpg?v=638586612255530000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/455765/DZ298-5-386-3-AF-800x1000.jpg?v=638586618103600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/456750/DZ298-5-386-4-AF-800x1000.jpg?v=638586623405270000"
-      ],
-      "variantes": [
-        {
-          "t": "GG",
-          "p": 99.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "G",
-          "p": 99.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 99.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 99.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 99.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 99.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 99.99,
-          "c": 249.99,
           "x": null,
           "a": false
         }
@@ -18934,71 +18877,6 @@
       ]
     },
     {
-      "id": "50511",
-      "titulo": "Camiseta Nike Club Masculina",
-      "url": "https://www.authenticfeet.com.br/camiseta-nike-club-masculina-fd135-8-100/p",
-      "ref": "FD135-8-100",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2023-06-29T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/452818/FD135-8-100-1-AF-800x1000.jpg?v=638586592570630000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/454482/FD135-8-100-2-AF-800x1000.jpg?v=638586613301100000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/455973/FD135-8-100-3-AF-800x1000.jpg?v=638586619045370000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 109.99,
-          "c": 229.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 109.99,
-          "c": 229.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 109.99,
-          "c": 229.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 109.99,
-          "c": 229.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 109.99,
-          "c": 229.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 109.99,
-          "c": 229.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 109.99,
-          "c": 229.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "50514",
       "titulo": "Tênis Nike Dunk Low Retro Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-dunk-low-retro-masculino-fd692-3-001/p",
@@ -19255,22 +19133,22 @@
       "variantes": [
         {
           "t": "G",
-          "p": 280.0,
-          "c": 280.0,
+          "p": 279.99,
+          "c": 279.99,
           "x": null,
           "a": false
         },
         {
           "t": "GG",
-          "p": 280.0,
-          "c": 280.0,
+          "p": 279.99,
+          "c": 279.99,
           "x": null,
           "a": false
         },
         {
           "t": "GGG",
-          "p": 279.99,
-          "c": 279.99,
+          "p": 280.0,
+          "c": 280.0,
           "x": null,
           "a": false
         },
@@ -20482,8 +20360,8 @@
       "variantes": [
         {
           "t": "M",
-          "p": 224.99,
-          "c": 449.99,
+          "p": 450.0,
+          "c": 450.0,
           "x": null,
           "a": false
         },
@@ -22596,15 +22474,15 @@
       "variantes": [
         {
           "t": "46",
-          "p": 2000.0,
-          "c": 2000.0,
+          "p": 1399.99,
+          "c": 1999.99,
           "x": null,
           "a": false
         },
         {
           "t": "37.5",
-          "p": 2000.0,
-          "c": 2000.0,
+          "p": 1399.99,
+          "c": 1999.99,
           "x": null,
           "a": false
         },
@@ -22624,8 +22502,8 @@
         },
         {
           "t": "48",
-          "p": 2000.0,
-          "c": 2000.0,
+          "p": 1399.99,
+          "c": 1999.99,
           "x": null,
           "a": false
         },
@@ -22687,8 +22565,8 @@
         },
         {
           "t": "43.5",
-          "p": 2000.0,
-          "c": 2000.0,
+          "p": 1399.99,
+          "c": 1999.99,
           "x": null,
           "a": false
         },
@@ -24092,8 +23970,8 @@
         },
         {
           "t": "43.5",
-          "p": 399.99,
-          "c": 399.99,
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         },
@@ -24106,8 +23984,8 @@
         },
         {
           "t": "45",
-          "p": 399.99,
-          "c": 399.99,
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         },
@@ -31890,72 +31768,6 @@
       ]
     },
     {
-      "id": "55426",
-      "titulo": "Camiseta Nike Essential Masculina",
-      "url": "https://www.authenticfeet.com.br/camiseta-nike-essential-masculina-fv772-6-247/p",
-      "ref": "FV772-6-247",
-      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
-      "tags": [],
-      "publicado": "2024-07-11T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/458948/FV772-6-247-1-AF-800x1000.jpg?v=638587229135400000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/460561/FV772-6-247-2-AF-800x1000.jpg?v=638587254123800000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/462018/FV772-6-247-3-AF-800x1000.jpg?v=638587261772670000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/462966/FV772-6-247-4-AF-800x1000.jpg?v=638587269023000000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 280.0,
-          "c": 280.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GG",
-          "p": 280.0,
-          "c": 280.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGG",
-          "p": 280.0,
-          "c": 280.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 279.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 280.0,
-          "c": 280.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "P",
-          "p": 279.99,
-          "c": 279.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "PP",
-          "p": 280.0,
-          "c": 280.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "55442",
       "titulo": "Camiseta Nike Club Masculina",
       "url": "https://www.authenticfeet.com.br/camiseta-nike-club-masculina-fz541-9-133/p",
@@ -36249,8 +36061,8 @@
         },
         {
           "t": "44",
-          "p": 650.0,
-          "c": 650.0,
+          "p": 649.99,
+          "c": 649.99,
           "x": null,
           "a": false
         },
@@ -49239,8 +49051,8 @@
           "t": "39",
           "p": 839.99,
           "c": 1399.99,
-          "x": null,
-          "a": false
+          "x": 839.99,
+          "a": true
         },
         {
           "t": "39.5",
@@ -51440,8 +51252,8 @@
           "t": "42",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -51527,65 +51339,6 @@
           "t": "44",
           "p": 549.99,
           "c": 899.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "62761",
-      "titulo": "Tênis Nike Initiator Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-nike-initiator-masculino-39405-5-101/p",
-      "ref": "39405-5-101",
-      "tipo": "/Tênis/Masculino/Nike/ Tênis",
-      "tags": [],
-      "publicado": "2025-09-22T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/507607/39405-5-101-1-800x1000.jpg?v=638990870017730000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/507608/39405-5-101-2-800x1000.jpg?v=638990870017900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/507609/39405-5-101-3-800x1000.jpg?v=638990870018030000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/507610/39405-5-101-4-800x1000.jpg?v=638990870018030000"
-      ],
-      "variantes": [
-        {
-          "t": "39",
-          "p": 519.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 519.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 519.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 519.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 519.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 519.99,
-          "c": 699.99,
           "x": null,
           "a": false
         }
@@ -52465,8 +52218,8 @@
           "t": "39",
           "p": 599.99,
           "c": 999.99,
-          "x": null,
-          "a": false
+          "x": 599.99,
+          "a": true
         },
         {
           "t": "40",
@@ -56803,8 +56556,8 @@
           "t": "42",
           "p": 549.99,
           "c": 799.99,
-          "x": null,
-          "a": false
+          "x": 549.99,
+          "a": true
         },
         {
           "t": "43",
@@ -57662,79 +57415,6 @@
         },
         {
           "t": "PPP",
-          "p": 699.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "64417",
-      "titulo": "Calça Nike DF 24.7 Is Masculina",
-      "url": "https://www.authenticfeet.com.br/calca-nike-df-24-7-is-masculina-hq697-0-502/p",
-      "ref": "HQ697-0-502",
-      "tipo": "/Roupas/Masculino/Calças/ Calças",
-      "tags": [],
-      "publicado": "2025-06-30T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/552618/HQ697-0-502-1-800x1000.jpg?v=639155017959600000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/552619/HQ697-0-502-2-800x1000.jpg?v=639155017959770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/552620/HQ697-0-502-3-800x1000.jpg?v=639155017959900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/552621/HQ697-0-502-4-800x1000.jpg?v=639155017959900000"
-      ],
-      "variantes": [
-        {
-          "t": "G",
-          "p": 699.99,
-          "c": 699.99,
-          "x": 664.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 699.99,
-          "c": 699.99,
-          "x": 664.99,
-          "a": true
-        },
-        {
-          "t": "GGG",
-          "p": 699.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGG",
-          "p": 699.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "GGGGG",
-          "p": 699.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "M",
-          "p": 699.99,
-          "c": 699.99,
-          "x": 664.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 699.99,
-          "c": 699.99,
-          "x": 664.99,
-          "a": true
-        },
-        {
-          "t": "PP",
           "p": 699.99,
           "c": 699.99,
           "x": null,
@@ -59046,6 +58726,51 @@
           "c": 549.99,
           "x": null,
           "a": false
+        }
+      ]
+    },
+    {
+      "id": "64478",
+      "titulo": "Camisa Nike Dri-Fit 24.7 Is Polo Masculina",
+      "url": "https://www.authenticfeet.com.br/camisa-nike-dri-fit-24-7-is-polo-masculina-if290-8-133/p",
+      "ref": "IF290-8-133",
+      "tipo": "/Roupas/Masculino/Camisas/ Camisa",
+      "tags": [],
+      "publicado": "2025-12-23T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/517344/IF290-8-133-1-AF-800x1000.jpg?v=639052247266200000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/517345/IF290-8-133-2-AF-800x1000.jpg?v=639052247266370000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/517346/IF290-8-133-3-AF-800x1000.jpg?v=639052247266370000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/517347/IF290-8-133-4-AF-800x1000.jpg?v=639052247266500000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 599.99,
+          "c": 599.99,
+          "x": 569.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 599.99,
+          "c": 599.99,
+          "x": 569.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 599.99,
+          "c": 599.99,
+          "x": 569.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 599.99,
+          "c": 599.99,
+          "x": 569.99,
+          "a": true
         }
       ]
     },
@@ -64239,78 +63964,6 @@
       ]
     },
     {
-      "id": "65427",
-      "titulo": "Calça Nike 24.7 PerfectStretch Masculina",
-      "url": "https://www.authenticfeet.com.br/calca-nike-24-7-perfectstretch-masculina-hq694-1-010/p",
-      "ref": "HQ694-1-010",
-      "tipo": "/Roupas/Masculino/Calças/ Calças",
-      "tags": [],
-      "publicado": "2026-04-07T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/544012/HQ694-1-010-1-800x1000.jpg?v=639135239484770000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/544013/HQ694-1-010-2-800x1000.jpg?v=639135239484930000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/544014/HQ694-1-010-3-800x1000.jpg?v=639135239484930000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 519.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 519.99,
-          "c": 799.99,
-          "x": 519.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 519.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 519.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 519.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 519.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "50",
-          "p": 519.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "52",
-          "p": 519.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "65431",
       "titulo": "Tênis Nike V5 RNR Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-nike-v5-rnr-masculino-ii629-2-006/p",
@@ -69180,8 +68833,8 @@
           "t": "40",
           "p": 1899.99,
           "c": 1899.99,
-          "x": null,
-          "a": false
+          "x": 1804.99,
+          "a": true
         },
         {
           "t": "41",
@@ -70111,6 +69764,51 @@
           "c": 299.99,
           "x": 284.99,
           "a": true
+        }
+      ]
+    },
+    {
+      "id": "67542",
+      "titulo": "Calça Nike Dri-Fit 24.7 Masculina",
+      "url": "https://www.authenticfeet.com.br/calca-nike-dri-fit-24-7-masculina-im363-1-010/p",
+      "ref": "IM363-1-010",
+      "tipo": "/Roupas/Masculino/Calças/ Calças",
+      "tags": [],
+      "publicado": "2026-06-23T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/625305/IM363-1-010-1-800x1000.jpg?v=639289599439200000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/625306/IM363-1-010-2-800x1000.jpg?v=639289599439270000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/625307/IM363-1-010-3-800x1000.jpg?v=639289599439330000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/625308/IM363-1-010-4-800x1000.jpg?v=639289599439400000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 799.99,
+          "c": 799.99,
+          "x": 759.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 799.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 799.99,
+          "c": 799.99,
+          "x": 759.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 799.99,
+          "c": 799.99,
+          "x": null,
+          "a": false
         }
       ]
     },

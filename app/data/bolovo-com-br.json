@@ -2,8 +2,63 @@
   "marca": "Bolovo",
   "loja": "Site Bolovo",
   "site": "bolovo.com.br",
-  "atualizado": "2026-11-24T20:05:58Z",
+  "atualizado": "2026-11-24T23:52:26Z",
   "produtos": [
+    {
+      "id": "15257255870768",
+      "titulo": "Hot Pants Dupla Face Biquíni Mystral",
+      "url": "https://bolovo.com.br/products/hot-pants-dupla-face-biquini-mystral-1006928365",
+      "ref": "",
+      "tipo": "",
+      "tags": [
+        "praia",
+        "Swimwear",
+        "Vermelho",
+        "Verão'24"
+      ],
+      "publicado": "2026-11-24T17:07:44-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/1d0f90eab63db427ff8798b26f93a145.jpg?v=1787944824"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 169.00,
+          "c": 169.00,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 169.00,
+          "c": 169.00,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 169.00,
+          "c": 169.00,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 169.00,
+          "c": 169.00,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 169.00,
+          "c": 169.00,
+          "a": true
+        },
+        {
+          "t": "XGG",
+          "p": 169.00,
+          "c": 169.00,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "15431576650032",
       "titulo": "Pochete Summer Jammin",
@@ -12,7 +67,9 @@
       "tipo": "",
       "tags": [
         "Adulto",
-        "Coleção Verão'27 Q3'26"
+        "Bags",
+        "Coleção Verão'27 Q3'26",
+        "Pochetes"
       ],
       "publicado": "2026-11-23T18:12:10-03:00",
       "imagens": [
@@ -495,7 +552,7 @@
       ],
       "variantes": [
         {
-          "t": "Verde / Único",
+          "t": "Verde",
           "p": 199.99,
           "c": 199.99,
           "a": true
@@ -525,7 +582,7 @@
       ],
       "variantes": [
         {
-          "t": "Marrom / Único",
+          "t": "Marrom",
           "p": 199.99,
           "c": 199.99,
           "a": true
@@ -1130,6 +1187,7 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Bags",
         "Coleção Verão'27 Q3'26"
       ],
       "publicado": "2026-11-18T06:43:05-03:00",
@@ -1360,7 +1418,9 @@
       "tipo": "",
       "tags": [
         "Adulto",
-        "Coleção Verão'27 Q3'26"
+        "Bags",
+        "Coleção Verão'27 Q3'26",
+        "Pochetes"
       ],
       "publicado": "2026-11-18T06:43:03-03:00",
       "imagens": [
@@ -1371,7 +1431,7 @@
       ],
       "variantes": [
         {
-          "t": "Verde / Único",
+          "t": "Verde",
           "p": 199.99,
           "c": 199.99,
           "a": true
@@ -1401,7 +1461,7 @@
       ],
       "variantes": [
         {
-          "t": "Preto / Único",
+          "t": "Preto",
           "p": 289.99,
           "c": 289.99,
           "a": true
@@ -2262,7 +2322,7 @@
       ],
       "variantes": [
         {
-          "t": "Marrom / Único",
+          "t": "Marrom",
           "p": 99.99,
           "c": 99.99,
           "a": true
@@ -2290,7 +2350,7 @@
       ],
       "variantes": [
         {
-          "t": "Verde / Único",
+          "t": "Único",
           "p": 99.99,
           "c": 99.99,
           "a": true
@@ -3649,7 +3709,7 @@
       ],
       "variantes": [
         {
-          "t": "Preto / Único",
+          "t": "Preto",
           "p": 20.00,
           "c": 20.00,
           "a": true
@@ -5756,7 +5816,7 @@
       ],
       "variantes": [
         {
-          "t": "Bege / Único",
+          "t": "Bege",
           "p": 299.99,
           "c": 299.99,
           "a": true
@@ -6531,7 +6591,7 @@
       ],
       "variantes": [
         {
-          "t": "Bege / Único",
+          "t": "Bege",
           "p": 129.99,
           "c": 129.99,
           "a": true
@@ -6605,7 +6665,7 @@
       ],
       "variantes": [
         {
-          "t": "Branco / Único",
+          "t": "Branco",
           "p": 1099.99,
           "c": 1099.99,
           "a": true
@@ -6653,7 +6713,7 @@
       ],
       "variantes": [
         {
-          "t": "Sem cor / Único",
+          "t": "preto",
           "p": 89.99,
           "c": 89.99,
           "a": true
@@ -6701,7 +6761,7 @@
       ],
       "variantes": [
         {
-          "t": "Sem cor / Único",
+          "t": "Sem cor",
           "p": 149.99,
           "c": 149.99,
           "a": true
@@ -13724,6 +13784,7 @@
       "tags": [
         "420",
         "Acessórios",
+        "Bags",
         "classicas blv",
         "Home Video'26",
         "Tabaqueira"
@@ -13752,6 +13813,7 @@
       "tipo": "",
       "tags": [
         "Acessórios",
+        "Bags",
         "classicas blv",
         "Club Days'24",
         "Tabaqueira"
@@ -13781,6 +13843,7 @@
       "tags": [
         "420",
         "Acessórios",
+        "Bags",
         "classicas blv",
         "Perene",
         "Tabaqueira",

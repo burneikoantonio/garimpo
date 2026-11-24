@@ -2,7 +2,7 @@
   "marca": "Adidas Originals",
   "loja": "Overboard",
   "site": "www.overboard.com.br",
-  "atualizado": "2026-11-24T19:57:28Z",
+  "atualizado": "2026-11-24T23:44:00Z",
   "produtos": [
     {
       "id": "13185",
@@ -267,8 +267,8 @@
           "t": "41",
           "p": 599.99,
           "c": 599.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "42",
