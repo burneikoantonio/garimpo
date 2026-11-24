@@ -115,6 +115,9 @@ img { max-width: 100%; display: block; }
 .tilewrap > .tile { flex: 1; }
 .heart { position: absolute; top: 6px; right: 6px; z-index: 2; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(22, 22, 22, .55); color: #fff; font-size: 19px; line-height: 1; display: grid; place-items: center; }
 .heart.on { background: var(--bad); }
+.naocurti { position: absolute; top: 48px; right: 6px; z-index: 2; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(22, 22, 22, .55); color: #fff; font-size: 15px; line-height: 1; display: grid; place-items: center; }
+.toast:has(.toast-btn) { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.toast-btn { background: none; border: 0; color: inherit; font-weight: 600; text-decoration: underline; padding: 4px 0; flex: none; }
 .ph { aspect-ratio: 4 / 5; width: 100%; max-width: 100%; position: relative; background: var(--photo); overflow: hidden; }
 .ph img { width: 100%; height: 100%; object-fit: cover; }
 .ph .tags { position: absolute; left: 8px; top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
@@ -282,7 +285,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1795476858"></script>
+<script src="core.js?v=1795478911"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -310,7 +313,7 @@ const img = (src, w = 600) => !src ? ''
 // atalhos para a sale de cada marca que você segue, aberta aqui mesmo com os dados do Achei
 function saleBloco() {
   const marcas = S.follow.filter(n => DATA.produtos.some(p => p.marca === n));
-  const itens = marcas.map(n => ({ n, q: DATA.produtos.filter(p => p.marca === n && !S.ocultas[p.key]).map(evaluate).filter(e => e.ok && e.off > 0).length }))
+  const itens = marcas.map(n => ({ n, q: DATA.produtos.filter(p => p.marca === n && !escondida(p)).map(evaluate).filter(e => e.ok && e.off > 0).length }))
     .sort((a, b) => b.q - a.q);
   if (!itens.length) return '';
   return `<div class="wrap ff">
@@ -360,7 +363,8 @@ const S = {
   dispensadas: store.get('dispensadas', []),
   carrinho: store.get('carrinho', {}),
   push: store.get('push', null),   // inscrição de notificações deste celular (endereço + chaves públicas)   // simulação de compra: chave -> { em }   // marcas sugeridas que você dispensou
-  ocultas: store.get('ocultas', {}),   // peças marcadas como "Não curti": chave -> { marca, kind }
+  ocultas: store.get('ocultas', {}),
+  gruposOcultos: store.get('gruposOcultos', {}),   // "Não curti" esconde o grupo: marca+tipo (tênis: marca+modelo) -> { em }   // peças marcadas como "Não curti": chave -> { marca, kind }
 };
 
 let DATA = { marcas: [], atualizado: '', produtos: [], hist: {} };
@@ -386,6 +390,64 @@ async function load() {
 }
 
 // o app aprende com o "Não curti": cada peça escondida da mesma marca e tipo empurra as parecidas para baixo no feed
+const escondida = p => !!(S.ocultas[p.key] || S.gruposOcultos[grupoDe(p)]);
+// esconde a peça e todas as iguais (mesma marca e tipo; tênis: mesmo modelo). Volta com "Desfazer".
+let DESFAZER = null;
+function esconderGrupo(p) {
+  const g = grupoDe(p);
+  const antes = { ocultas: S.ocultas, grupos: S.gruposOcultos };
+  S.ocultas = { ...S.ocultas, [p.key]: { marca: p.marca, kind: p.kind } };
+  if (g) S.gruposOcultos = { ...S.gruposOcultos, [g]: { em: Date.now() } };
+  const n = g ? DATA.produtos.filter(q => grupoDe(q) === g).length : 1;
+  DESFAZER = () => { S.ocultas = antes.ocultas; S.gruposOcultos = antes.grupos; };
+  persist();
+  toastAcao(n > 1 ? `Escondi ${n} peças: ${rotuloGrupo(g)}` : 'Escondi essa peça', 'Desfazer');
+}
+function toastAcao(msg, botao) {
+  const t = document.getElementById('toast');
+  t.innerHTML = `<span>${esc(msg)}</span><button class="toast-btn" data-desfazer>${esc(botao)}</button>`;
+  t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; DESFAZER = null; }, 6000);
+}
+/* ---------- Para você: peças parecidas com as que você curtiu ---------- */
+// parecido = mesmo tipo, mesma marca, mesmas cores e detalhes do nome (oversized, cargo, bordado...), com preço bom
+let PARA_VOCE = null;   // guarda a lista até as curtidas mudarem (é uma conta pesada)
+function paraVoce() {
+  const curt = Object.entries(S.curtidas).map(([k, c]) => acharPeca(k) || { key: k, marca: c.marca, kind: c.kind, titulo: c.titulo || '' });
+  const assinatura = Object.keys(S.curtidas).join(',') + '|' + Object.keys(S.gruposOcultos).length + '|' + Object.keys(S.ocultas).length;
+  if (PARA_VOCE && PARA_VOCE.assinatura === assinatura) return PARA_VOCE.lista;
+  const base = curt.map(c => { const e = avaliar(c); return { c, t: tracos(c), preco: e?.ok ? e.price : null }; });
+  const kinds = new Set(curt.map(c => c.kind)), marcas = new Set(curt.map(c => c.marca));
+  const porMarca = {};
+  const lista = base.length ? DATA.produtos.filter(q => (kinds.has(q.kind) || marcas.has(q.marca)) && !S.curtidas[q.key] && !escondida(q) && !S.dispensadas.includes(q.marca))
+    .map(q => ({ q, e: evaluate(q) })).filter(x => x.e.ok)
+    .map(x => {
+      const tq = tracos(x.q);
+      let melhor = -9;
+      for (const { c, t, preco } of base) {
+        const razao = preco ? x.e.price / preco : 1;
+        const sim = (x.q.kind === c.kind ? 2 : 0) + (x.q.marca === c.marca ? 2 : 0) + t.cores.filter(v => tq.cores.includes(v)).length
+          + 0.5 * t.estilo.filter(v => tq.estilo.includes(v)).length + (razao < 0.35 ? -2.5 : razao < 0.55 ? -1 : razao > 3 ? -1.5 : 0);
+        if (sim > melhor) melhor = sim;
+      }
+      return { ...x, sim: melhor };
+    })
+    .filter(x => x.sim >= 3)
+    .map(x => ({ ...x, s: x.sim + x.e.score / 40 + (x.e.off > 0 ? 1 : 0) }))
+    .sort((a, b) => b.s - a.s)
+    .filter(x => (porMarca[x.q.marca] = (porMarca[x.q.marca] || 0) + 1) <= 3).slice(0, 18) : [];
+  PARA_VOCE = { assinatura, lista };
+  return lista;
+}
+function paraVoceBloco() {
+  const n = Object.keys(S.curtidas).length;
+  if (!n) return `<div class="wrap"><div class="notice" style="margin:8px 0"><span>Curta peças com o ♡ e eu monto aqui uma faixa <b>Para você</b> com peças parecidas.</span></div></div>`;
+  const l = paraVoce();
+  if (!l.length) return '';
+  return `<div class="wrap"><h2 class="section-h" style="margin-top:8px">Para você</h2>
+    <p class="section-sub">Parecidas com as ${n} ${n > 1 ? 'peças que você curtiu' : 'peça que você curtiu'}: mesmo tipo, marcas e cores, com preço bom.</p>
+    <div class="vitrine">${l.map(x => `<button data-open="${esc(x.q.key)}" aria-label="${esc(x.q.titulo)}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt=""><span class="mono">${brl(x.e.price)}${x.e.off > 0 ? ` · -${Math.round(x.e.off * 100)}%` : ''}</span></button>`).join('')}</div></div>`;
+}
+
 function naoCurtiContagem() {
   const c = {};
   for (const o of Object.values(S.ocultas)) c[o.marca + '|' + o.kind] = (c[o.marca + '|' + o.kind] || 0) + 1;
@@ -403,7 +465,7 @@ const curtiPeso = p => { const e = estilo(); return Math.min(30, 10 * (e.mk[p.ma
 function feedList(filter) {
   const out = []; let hiddenSize = 0;
   for (const p of DATA.produtos) {
-    if (S.ocultas[p.key] || (filter && !filter(p))) continue;
+    if (escondida(p) || (filter && !filter(p))) continue;
     const e = evaluate(p);
     if (!e.ok) { if (e.avail.length) hiddenSize++; continue; }
     out.push({ p, e });
@@ -421,7 +483,7 @@ function tile({ p, e }) {
   else if (e.justo?.nivel === 'abaixo') tags.push('<span class="tag t-ok">Preço bom</span>');
   // o coração fica por cima da foto, fora do botão da peça, para curtir sem abrir
   const curti = !!S.curtidas[p.key];
-  return `<div class="tilewrap"><button class="heart ${curti ? 'on' : ''}" data-curti="${esc(p.key)}" aria-pressed="${curti}" aria-label="${curti ? 'Remover curtida' : 'Curtir'}">${curti ? '♥' : '♡'}</button><button class="tile" data-open="${esc(p.key)}">
+  return `<div class="tilewrap"><button class="heart ${curti ? 'on' : ''}" data-curti="${esc(p.key)}" aria-pressed="${curti}" aria-label="${curti ? 'Remover curtida' : 'Curtir'}">${curti ? '♥' : '♡'}</button><button class="naocurti" data-esconder="${esc(p.key)}" aria-label="Não curti: esconder esta e as iguais">✕</button><button class="tile" data-open="${esc(p.key)}">
     <div class="ph"><img loading="lazy" src="${esc(img(p.imagens[0], 540))}" alt=""><div class="tags">${tags.join('')}</div></div>
     <div class="body">
       <span class="brand">${esc(p.marca)}${p.relacao === 'sugerida' ? ' · sugerida' : ''}${e.lojas.length > 1 ? ` · ${e.lojas.length} lojas` : p.ofertas[0].loja.startsWith('Site ') ? '' : ` · ${esc(e.lojas[0].loja)}`}</span>
@@ -469,6 +531,7 @@ function viewOfertas() {
     <div class="wrap intro">
       <p>${deals.length} ofertas nos seus tamanhos (${esc(sizesText())}) em ${fontes} marcas · atualizado em ${esc(DATA.atualizado)}</p>
     </div>
+    ${paraVoceBloco()}
     ${saleBloco()}
     ${cats}
     ${grid(deals) || '<div class="wrap note"><span>Nenhuma oferta nesta categoria agora.</span></div>'}
@@ -571,7 +634,7 @@ function comparador(lista) {
 function fotosBonitas(m, n = 6) {
   const e = estilo(), todas = DATA.produtos.filter(p => p.marca === m.nome);
   return todas.map((p, i) => ({ p, ev: evaluate(p), i }))
-    .filter(x => x.ev.ok && x.p.imagens.length && !S.ocultas[x.p.key])
+    .filter(x => x.ev.ok && x.p.imagens.length && !escondida(x.p))
     .map(x => ({ ...x, s: 3 * (e.kind[x.p.kind] || 0) + 2 * (1 - x.i / todas.length) + (x.p.imagens.length > 1 ? 0.5 : 0) + (x.p.cat === 'Acessórios' ? -1.5 : 0) + (x.ev.novo ? 0.5 : 0) + (S.curtidas[x.p.key] ? 5 : 0) }))
     .sort((a, b) => b.s - a.s).slice(0, n);
 }
@@ -852,7 +915,7 @@ function sugestoesLook(base, kinds, n = 6) {
   const eb = avaliar(base), fam = familia(base), seguidas = new Set(S.follow);
   const curtidasMarca = new Set(Object.values(S.curtidas).map(c => c.marca));
   const porMarca = {};
-  return [...DATA.produtos, ...ffProdutos()].filter(q => kinds.includes(q.kind) && q.key !== base.key && !S.dispensadas.includes(q.marca) && !S.ocultas[q.key])
+  return [...DATA.produtos, ...ffProdutos()].filter(q => kinds.includes(q.kind) && q.key !== base.key && !S.dispensadas.includes(q.marca) && !escondida(q))
     .map(q => ({ q, e: avaliar(q) })).filter(x => x.e.ok)
     .map(x => {
       const preco = eb.ok ? x.e.price / eb.price : 1;
@@ -1045,7 +1108,7 @@ function abrirBoasVindas() {
 /* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
 function abrirTop10(slug = 'tenis') {
   ATUAL = { fn: abrirTop10, args: [slug] };
-  const tops = topPorCategoria(activeBrands(), new Set(Object.keys(S.ocultas)));
+  const tops = topPorCategoria(activeBrands(), new Set(DATA.produtos.filter(escondida).map(p => p.key)));
   const atual = tops.find(t => t.slug === slug) || tops[0], lista = atual.lista;
   showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top ${lista.length} ${esc(atual.cat)} da semana</h1></div></header>
     <div class="wrap">
@@ -1083,7 +1146,7 @@ function tracos(p) {
 }
 function parecidas(p, e, n = 3) {
   const a = tracos(p);
-  return DATA.produtos.filter(q => q.kind === p.kind && q.key !== p.key && !S.dispensadas.includes(q.marca) && !S.ocultas[q.key])
+  return DATA.produtos.filter(q => q.kind === p.kind && q.key !== p.key && !S.dispensadas.includes(q.marca) && !escondida(q))
     .map(q => {
       const b = tracos(q);
       const cor = a.cores.length ? a.cores.filter(c => b.cores.includes(c)).length / a.cores.length : 0.5;
@@ -1255,10 +1318,12 @@ function viewPerfil() {
       : '<p class="section-sub">Conferindo o canal…</p>')(conferirCanal()) : ''}
     <h2 class="section-h">Peças que você não curtiu</h2>
     ${(() => {
-      const n = Object.keys(S.ocultas).length;
-      if (!n) return '<p class="section-sub">Nenhuma ainda. Na tela de uma peça, toque em "Não curti" para escondê-la.</p>';
-      const menos = Object.entries(naoCurtiContagem()).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([k]) => { const [m, kd] = k.split('|'); return `${KIND_LABEL[kd]} da ${m}`; });
-      return `<p class="section-sub">${n} ${n > 1 ? 'peças escondidas' : 'peça escondida'}. Mostrando menos: ${esc(menos.join(', '))}.</p><button class="btn tertiary sm" data-restaurar>Mostrar todas de novo</button>`;
+      const gs = Object.entries(S.gruposOcultos).sort((x, y) => y[1].em - x[1].em);
+      if (!gs.length && !Object.keys(S.ocultas).length) return '<p class="section-sub">Nada escondido. Toque no ✕ da foto (ou "Não curti" na peça) para esconder ela e todas as iguais.</p>';
+      const total = DATA.produtos.filter(escondida).length;
+      return `<p class="section-sub">${total} ${total === 1 ? 'peça escondida' : 'peças escondidas'}. Toque num grupo para ele voltar.</p>
+        <div class="chips" style="flex-wrap:wrap">${gs.map(([g]) => `<button class="chip" data-voltargrupo="${esc(g)}">${esc(rotuloGrupo(g))} ↺</button>`).join('')}</div>
+        <button class="btn tertiary sm" data-restaurar style="margin-top:8px">Mostrar tudo de novo</button>`;
     })()}
     <h2 class="section-h">Marcas dispensadas</h2>
     ${S.dispensadas.length ? `<p class="section-sub">Não aparecem em Marcas novas nem nas Ofertas. Toque para trazer de volta.</p><div class="chips">${S.dispensadas.map(n => `<button class="chip" data-voltar="${esc(n)}">${esc(n)} ↺</button>`).join('')}</div>` : '<p class="section-sub">Nenhuma. Em Marcas novas, toque em "Dispensar marca" nas que não combinam com você.</p>'}
@@ -1346,7 +1411,7 @@ function openDetail(key) {
     <div class="wrap">
       ${p.imagens.length > 1 ? `<div class="gallery-count">${p.imagens.length} fotos · deslize para o lado</div>` : ''}
       <div class="detail-head">
-        <span class="brand">${esc(p.marca)} · ${KIND_LABEL[p.kind]}</span>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="brand">${esc(p.marca)} · ${KIND_LABEL[p.kind]}</span><button class="btn ghost sm" data-ocultar="${esc(key)}" style="height:28px;padding:0 8px;color:var(--helper);border:1px solid var(--border)">✕ Não curti</button></div>
         <h2>${esc(p.titulo)}</h2>
         ${e.ok ? `<div class="bigprice"><span class="now mono">${brl(e.price)}</span>${e.de ? `<span class="was mono">${brl(e.de)}</span><span class="off mono">-${Math.round(e.off * 100)}%</span>` : ''}</div>` : '<p class="section-sub">Esgotado no seu tamanho</p>'}
       </div>
@@ -1393,7 +1458,7 @@ function openDetail(key) {
       </div>
       <button class="btn ${S.carrinho[key] ? '' : 'tertiary'}" data-carrinho="${esc(key)}" style="width:100%;justify-content:center;margin-top:1px">${S.carrinho[key] ? '✓ Na simulação de compra (tirar)' : '🛒 Simular compra'}</button>
       <p class="section-sub" style="margin-top:8px">🔔 avisa quando o preço sair do comum. ♡ ensina o Achei a trazer mais peças e marcas assim.</p>
-      <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">Não curti: esconder esta peça</button>
+      <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">✕ Não curti: esconder esta e as iguais</button>
     </div>`);
 }
 
@@ -1420,11 +1485,11 @@ const VIEWS = { ofertas: viewOfertas, marcas: viewMarcas, farfetch: viewFarfetch
 // a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
 const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
 const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
-function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('dispensadas', S.dispensadas); store.set('carrinho', S.carrinho); store.set('push', S.push); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('gruposOcultos', S.gruposOcultos); store.set('dispensadas', S.dispensadas); store.set('carrinho', S.carrinho); store.set('push', S.push); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
 
 /* ---------- Sincronia com o robô: salvos, alertas de modelo e tamanhos vão por um canal privado do ntfy ---------- */
 // o robô lê "<seu canal>-prefs" depois de cada atualização; só o que importa para os avisos é enviado
-const prefsAtuais = () => JSON.stringify({ push: S.push || null, ocultas: Object.keys(S.ocultas), tamanhos: S.sizes, follow: S.follow, dispensadas: S.dispensadas, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
+const prefsAtuais = () => JSON.stringify({ push: S.push || null, ocultas: Object.keys(S.ocultas), grupos: Object.keys(S.gruposOcultos), tamanhos: S.sizes, follow: S.follow, dispensadas: S.dispensadas, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
 let syncT;
 function agendarSync() {
   if (!S.canal) return;
@@ -1529,20 +1594,28 @@ document.addEventListener('click', ev => {
   else if (d.topfora) {
     // Não curti no Top: esconde, aprende e a próxima melhor oferta entra no lugar
     const p = DATA.produtos.find(x => x.key === d.topfora); if (!p) return;
-    S.ocultas = { ...S.ocultas, [d.topfora]: { marca: p.marca, kind: p.kind } }; persist();
+    esconderGrupo(p);
     const antes = document.querySelectorAll('#sheet .top-linha').length;
     const y = document.getElementById('sheet').scrollTop; abrirTop10(d.slug); document.getElementById('sheet').scrollTop = y;
     const depois = document.querySelectorAll('#sheet .top-linha').length;
     toast(depois >= antes ? 'Tirei essa e coloquei outra no lugar' : 'Tirei essa. Não há mais ofertas boas para repor agora.');
   }
   else if (d.ocultar) {
-    const p = DATA.produtos.find(x => x.key === d.ocultar);
-    S.ocultas = { ...S.ocultas, [d.ocultar]: { marca: p.marca, kind: p.kind } };
-    voltar(); toast(`Escondida. Vou mostrar menos ${KIND_LABEL[p.kind].toLowerCase()} da ${p.marca}.`);
+    const p = DATA.produtos.find(x => x.key === d.ocultar); if (!p) return;
+    voltar(); esconderGrupo(p); render();
   }
+  else if (d.esconder) {
+    const p = DATA.produtos.find(x => x.key === d.esconder); if (!p) return;
+    esconderGrupo(p); render();
+  }
+  else if (d.desfazer !== undefined) {
+    if (DESFAZER) { DESFAZER(); DESFAZER = null; persist(); render(); }
+    document.getElementById('toast').hidden = true;
+  }
+  else if (d.voltargrupo) { const g = { ...S.gruposOcultos }; delete g[d.voltargrupo]; S.gruposOcultos = g; render(); toast(`${rotuloGrupo(d.voltargrupo)} voltaram`); }
   else if (d.delmodelo) { S.modelos = S.modelos.filter(m => m.id !== d.delmodelo); render(); }
   else if ('sync' in d) { sincronizar(prefsAtuais(), true); }
-  else if ('restaurar' in d) { S.ocultas = {}; render(); toast('Todas as peças escondidas voltaram'); }
+  else if ('restaurar' in d) { S.ocultas = {}; S.gruposOcultos = {}; render(); toast('Todas as peças escondidas voltaram'); }
   else if (d.busca) { S.tab = 'ofertas'; S.q = d.busca.replace(/^New Balance /, ''); S.qBrand = 'Todas'; S.qSale = false; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.fffaixa) { FFS.faixa = d.fffaixa; FFS.marca = 'Todas'; render(); }
   else if (d.fftipo) { FFS.tipo = d.fftipo; render(); }

@@ -212,4 +212,29 @@ function topPorCategoria(ativas, fora) {
   }
   return tops;
 }
-if (typeof module !== 'undefined') module.exports = { top10, topPorCategoria, buildData, evaluate, productHist, gerarAlertas, fits, classify, custoImportado, KIND_LABEL };
+// "Não curti" esconde o grupo inteiro de peças iguais:
+//   roupas e acessórios → mesma marca + mesmo tipo (ex.: todas as toucas da BLCK Brasil)
+//   tênis → mesma marca + mesmo modelo (ex.: todas as cores do Campus 00s), não todos os tênis da marca
+const SUBTIPOS = [['touca', /touca|gorro|beanie/, 'Toucas'], ['bucket', /bucket/, 'Buckets'], ['bone', /bon[eé]|\bcaps?\b|snapback|trucker|dad ?hat|aba (curva|reta)/, 'Bonés'],
+  ['regata', /regata|tank/, 'Regatas'], ['polo', /\bpolo\b/, 'Polos'], ['camiseta', /camiseta|t-shirt|\btees?\b|baby ?look/, 'Camisetas'], ['camisa', /camisa|\bshirt\b|overshirt/, 'Camisas'],
+  ['moletom', /moletom|hoodie|sweat|crewneck|blus[aã]o|su[eé]ter|tricot|knit|cardigan/, 'Moletons'], ['jaqueta', /jaqueta|jacket|corta.?vento|parka|windbreaker|colete|anorak|puffer/, 'Jaquetas'],
+  ['calca', /cal[cç]a|pants|jeans|jogger|trouser/, 'Calças'], ['bermuda', /bermuda|short/, 'Bermudas'], ['meia', /\bmeias?\b|socks?/, 'Meias'],
+  ['chinelo', /chinelo|slide|papete|sand[aá]lia/, 'Chinelos e slides']];
+const PALAVRAS_TENIS = /^(t[eê]nis|tenis|sneakers?|masculino|unissex|feminino|low|mid|high|og|retro|sp|se|x)$/;
+function grupoDe(p) {
+  const t = (p.titulo || '').toLowerCase();
+  if (p.kind === 'tenis') {
+    const marca = new Set(p.marca.toLowerCase().split(/\s+/));
+    const ws = t.normalize('NFD').replace(/[̀-ͯ]/g, '').split(/[^a-z0-9]+/).filter(w => w && !PALAVRAS_TENIS.test(w) && !marca.has(w) && w !== 'adidas' && w !== 'nike' && w !== 'air');
+    return ws.length ? `${p.marca}|tenis|${ws.slice(0, 2).join(' ')}` : null;
+  }
+  const s = SUBTIPOS.find(([, re]) => re.test(t));
+  return `${p.marca}|${s ? s[0] : p.kind}`;
+}
+function rotuloGrupo(g) {
+  const [marca, tipo, modelo] = g.split('|');
+  if (tipo === 'tenis') return `Tênis ${modelo} da ${marca}`;
+  const s = SUBTIPOS.find(x => x[0] === tipo);
+  return `${s ? s[2] : (KIND_LABEL[tipo] || tipo)} da ${marca}`;
+}
+if (typeof module !== 'undefined') module.exports = { grupoDe, rotuloGrupo, top10, topPorCategoria, buildData, evaluate, productHist, gerarAlertas, fits, classify, custoImportado, KIND_LABEL };
