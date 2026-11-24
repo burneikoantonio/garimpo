@@ -167,6 +167,19 @@ img { max-width: 100%; display: block; }
 .row .t2 { font-size: 12px; color: var(--helper); }
 .thumb { width: 64px; height: 80px; flex: none; background: var(--photo); border: 0; padding: 0; overflow: hidden; }
 .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.logo { flex: none; width: 44px; height: 44px; border-radius: 50%; background: #fff; display: grid; place-items: center; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+.logo img { width: 64%; height: 64%; object-fit: contain; }
+.logo.escuro { background: #161616; }
+.logo.txt { background: var(--fg); color: var(--bg); font-weight: 600; font-size: 11px; letter-spacing: .5px; text-transform: uppercase; text-align: center; line-height: 1.1; padding: 4px; }
+.logo.md { width: 52px; height: 52px; }
+.logo.lg { width: 64px; height: 64px; }
+.logo.lg.txt { font-size: 12px; }
+.marcas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
+.mg-card { position: relative; background: var(--layer); border-radius: 10px; }
+.mg-abre { width: 100%; display: grid; justify-items: center; gap: 6px; padding: 14px 6px 12px; background: none; border: 0; color: var(--fg); text-align: center; }
+.mg-nome { font-size: 13px; font-weight: 600; line-height: 1.2; }
+.mg-sub { font-size: 11px; color: var(--helper); }
+.mg-seguindo { position: absolute; top: 6px; right: 6px; width: 24px; height: 24px; border-radius: 50%; border: 0; background: var(--good); color: #fff; font-size: 12px; line-height: 1; }
 .avatar { width: 40px; height: 40px; flex: none; background: var(--layer2); display: grid; place-items: center; font-family: var(--mono); font-size: 13px; }
 .rowbtn { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--border); text-align: left; }
 .rowbtn:hover { background: var(--layer); }
@@ -285,7 +298,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1795478911"></script>
+<script src="core.js?v=1795479444"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -375,6 +388,7 @@ async function load() {
   const idx = await get('data/marcas.json');
   const hist = await get('data/historico.json').catch(() => ({}));
   const cambio = await get('data/cambio.json').catch(() => null);
+  LOGOS = await get('logos.json').catch(() => ({}));
   const lojasInfo = await get('data/lojas-info.json').catch(() => ({}));
   const fontes = idx.marcas.flatMap(m => (m.arquivos || []).map(a => ({ m, a })));
   const cats = await Promise.all(fontes.map(({ m, a }) => get(a).then(c => ({ m, c })).catch(() => null)));
@@ -645,6 +659,14 @@ function afinidade(m) {
   const tipos = Object.entries(e.kind).reduce((s, [k, v]) => s + v * ps.filter(p => p.kind === k).length / ps.length, 0);
   return 10 * (e.marca[m.nome] || 0) + 4 * tipos;
 }
+// logo da marca (app/logos/), num círculo; sem logo, o nome escrito em destaque
+let LOGOS = {};
+const slugMarca = n => n.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+function logoMarca(nome, cls = '') {
+  const l = LOGOS[slugMarca(nome)];
+  if (l) return `<span class="logo ${cls} ${l.bg === 'dark' ? 'escuro' : ''}"><img src="logos/${esc(l.f)}" alt="${esc(nome)}" loading="lazy"></span>`;
+  return `<span class="logo txt ${cls}">${esc(nome.length > 9 ? nome.split(/\s+/).map(w => w[0]).join('').slice(0, 3) : nome)}</span>`;
+}
 function cardMarca(m) {
   const fotos = fotosBonitas(m);
   const ps = DATA.produtos.filter(p => p.marca === m.nome).map(evaluate).filter(e => e.ok);
@@ -652,7 +674,7 @@ function cardMarca(m) {
   const max = sale.length ? Math.round(Math.max(...sale.map(e => e.off)) * 100) : 0;
   const nova = m.liberada && m.liberada === ultimaLeva(); // selo só para a leva mais recente
   return `<div class="rec">
-    <div class="rec-top"><div class="grow"><span class="rec-name">${esc(m.nome)} ${nova ? '<span class="tag t-new" style="margin-left:4px">Nova</span>' : ''}</span><span class="rec-why">${esc(m.obs.replace(/\s*\((lojas|site)[^)]*\)/i, ''))}</span>
+    <div class="rec-top">${logoMarca(m.nome, 'md')}<div class="grow"><span class="rec-name">${esc(m.nome)} ${nova ? '<span class="tag t-new" style="margin-left:4px">Nova</span>' : ''}</span><span class="rec-why">${esc(m.obs.replace(/\s*\((lojas|site)[^)]*\)/i, ''))}</span>
       <span class="t2" style="color:var(--helper);font-size:12px">${ps.length} peças nos seus tamanhos${sale.length ? ` · ${sale.length} em sale, até ${max}%` : ''}</span></div>
       <button class="btn sm" data-follow="${esc(m.nome)}">Seguir</button></div>
     ${fotos.length ? `<div class="vitrine">${fotos.map(x => `<button data-open="${esc(x.p.key)}" aria-label="${esc(x.p.titulo)}"><img loading="lazy" src="${esc(img(x.p.imagens[0], 300))}" alt=""><span class="mono">${brl(x.ev.price)}</span></button>`).join('')}</div>` : ''}
@@ -852,7 +874,14 @@ function viewMarcas() {
   const curtiu = Object.keys(S.curtidas).length;
   return header('Marcas') + `<div class="wrap">
     <h2 class="section-h">Suas marcas</h2>
-    <div class="list">${seg.map(row).join('')}</div>
+    <p class="section-sub">Toque numa marca para ver as ofertas dela. O ✓ deixa de seguir.</p>
+    <div class="marcas-grid">${seg.map(m => {
+      const s = m.arquivos?.length ? stats(m) : null;
+      const sel = !s ? '<span class="mg-sub">Sem conexão</span>' : s.sale ? `<span class="tag t-sale">até -${s.max}%</span>` : `<span class="mg-sub">${s.total} peças</span>`;
+      const abre = s ? `data-brand="${esc(m.nome)}"` : '';
+      return `<div class="mg-card"><button class="mg-abre" ${abre} aria-label="${esc(m.nome)}">${logoMarca(m.nome, 'lg')}<span class="mg-nome">${esc(m.nome)}</span>${sel}</button>
+        <button class="mg-seguindo" data-follow="${esc(m.nome)}" aria-label="Deixar de seguir ${esc(m.nome)}">✓</button></div>`;
+    }).join('')}</div>
     <h2 class="section-h">Marcas novas para você</h2>
     <p class="section-sub">${curtiu ? `Ordenadas pelo que você curtiu (${curtiu} ${curtiu > 1 ? 'peças' : 'peça'}). As fotos mostram as peças mais no seu estilo, não as de maior nota.` : 'Curta peças (♡) para eu ordenar estas marcas e as fotos pelo seu estilo.'} Toque em Seguir para levar a marca para cima.</p>
     ${novas.map(cardMarca).join('') || '<p class="section-sub" style="padding-block:16px">Você já segue todas as recomendações. Peça "reabastece as marcas novas" para eu buscar mais.</p>'}
