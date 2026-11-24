@@ -2,7 +2,7 @@
   "marca": "Puma",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-24T16:05:27Z",
+  "atualizado": "2026-11-24T20:03:44Z",
   "produtos": [
     {
       "id": "28661",
@@ -1152,6 +1152,49 @@
       ]
     },
     {
+      "id": "37848",
+      "titulo": "Camiseta Puma Logo Play Graphic Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-puma-logo-play-graphic-masculina-53266-6-002/p",
+      "ref": "53266-6-002",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2021-07-05T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/453643/53266-6-002-1-AF-800x1000.jpg?v=638586595353600000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/455307/53266-6-002-2-AF-800x1000.jpg?v=638586616075670000"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 150.0,
+          "c": 150.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 150.0,
+          "c": 150.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 79.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 150.0,
+          "c": 150.0,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "37878",
       "titulo": "Blusa Puma Ess Big Logo Masculina",
       "url": "https://www.authenticfeet.com.br/blusa-puma-ess-big-logo-masculina-58668-8-001/p",
@@ -1512,15 +1555,15 @@
         },
         {
           "t": "M",
-          "p": 150.0,
-          "c": 150.0,
+          "p": 69.99,
+          "c": 149.99,
           "x": null,
           "a": false
         },
         {
           "t": "G",
-          "p": 69.99,
-          "c": 149.99,
+          "p": 150.0,
+          "c": 150.0,
           "x": null,
           "a": false
         },
@@ -3133,8 +3176,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 199.99,
-          "c": 429.99,
+          "p": 430.0,
+          "c": 430.0,
           "x": null,
           "a": false
         },
@@ -3453,8 +3496,8 @@
         },
         {
           "t": "39",
-          "p": 550.0,
-          "c": 550.0,
+          "p": 269.99,
+          "c": 549.99,
           "x": null,
           "a": false
         },
@@ -3481,8 +3524,8 @@
         },
         {
           "t": "43",
-          "p": 550.0,
-          "c": 550.0,
+          "p": 269.99,
+          "c": 549.99,
           "x": null,
           "a": false
         },
