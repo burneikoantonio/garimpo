@@ -8,8 +8,8 @@ self.addEventListener('push', e => {
   try { d = e.data ? e.data.json() : {}; } catch (_) { d = { title: 'Achei', body: e.data ? e.data.text() : '' }; }
   e.waitUntil(self.registration.showNotification(d.title || 'Achei', {
     body: d.body || '',
-    icon: 'achei3-192.png',
-    badge: 'achei3-192.png',
+    icon: 'achei4-192.png',
+    badge: 'achei4-192.png',
     tag: d.tag || undefined,
     data: { url: d.url || './' },
   }));

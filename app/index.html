@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Achei">
 <meta name="theme-color" content="#0d0d0d">
-<link rel="manifest" href="manifest.webmanifest?v=3">
-<link rel="apple-touch-icon" href="achei3-180.png">
-<link rel="icon" type="image/png" href="achei3-192.png">
+<link rel="manifest" href="manifest.webmanifest?v=4">
+<link rel="apple-touch-icon" href="achei4-180.png">
+<link rel="icon" type="image/png" href="achei4-192.png">
 <title>Achei</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Lacquer&display=swap">
 <style>
@@ -484,7 +484,7 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 <div id="toast" class="toast" role="status" hidden></div>
 
 <script src="icones.js"></script>
-<script src="core.js?v=1795482883"></script>
+<script src="core.js?v=1795483213"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -1285,7 +1285,7 @@ async function desligarPush() {
 }
 async function testarPush() {
   const reg = await navigator.serviceWorker.ready;
-  await reg.showNotification('Achei', { body: 'Teste: as notificações do Achei estão funcionando neste celular.', icon: 'achei3-192.png', data: { url: './#top10' } });
+  await reg.showNotification('Achei', { body: 'Teste: as notificações do Achei estão funcionando neste celular.', icon: 'achei4-192.png', data: { url: './#top10' } });
 }
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
