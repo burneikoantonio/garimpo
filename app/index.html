@@ -6,12 +6,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Achei">
-<meta name="theme-color" content="#161616">
-<link rel="manifest" href="manifest.webmanifest?v=2">
-<link rel="apple-touch-icon" href="achei-180.png">
-<link rel="icon" type="image/png" href="achei-192.png">
+<meta name="theme-color" content="#0d0d0d">
+<link rel="manifest" href="manifest.webmanifest?v=3">
+<link rel="apple-touch-icon" href="achei3-180.png">
+<link rel="icon" type="image/png" href="achei3-192.png">
 <title>Achei</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Lacquer&display=swap">
 <style>
 /* Carbon g100: coluna de celular, cabeçalho fixo, grade de 2 colunas, barra de abas inferior */
 :root {
@@ -291,6 +291,191 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 #nl-badge-frame { display: none !important; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
+<style id="redesign">
+/* ===== Achei · visual novo (bloco 1: cores, fontes, ícones, navegação) — ver redesign/GUIA-REDESIGN-ACHEI.md ===== */
+:root {
+  color-scheme: dark;
+  --bg: #0d0d0d; --layer: #1c1c1c; --layer2: #3a3a3a;
+  --border: #1c1c1c; --border-strong: #3a3a3a;
+  --fg: #f2f2f2; --fg2: #bdbdbd; --helper: #8a8a8a;
+  --accent: #D7261E; --accent-hover: #b51f18; --accent-fg: #ffffff; --link: #f2f2f2;
+  --good: #f2f2f2; --warn: #bdbdbd; --bad: #D7261E;
+  --sale-bg: #D7261E; --sale-fg: #ffffff; --new-bg: #f2f2f2; --new-fg: #0d0d0d;
+  --ok-bg: #1c1c1c; --ok-fg: #f2f2f2; --sug-bg: #1c1c1c; --sug-fg: #f2f2f2;
+  --chart: #f2f2f2; --chart-fill: #D7261E; --c-produto: #f2f2f2;
+  --photo: #d9d9d6; --spray: #D7261E;
+  --font: "Lacquer", "Marker Felt", cursive; --mono: "Lacquer", "Marker Felt", cursive;
+  --font-tag: "Sedgwick Ave Display", cursive;
+}
+:root[data-tema="claro"] {
+  color-scheme: light;
+  --bg: #ffffff; --layer: #f2f2f2; --layer2: #e6e6e6; --border: #e6e6e6; --border-strong: #bdbdbd;
+  --fg: #0d0d0d; --fg2: #3a3a3a; --helper: #6b6b6b; --link: #0d0d0d;
+  --accent: #D7261E; --accent-hover: #b51f18; --accent-fg: #ffffff;
+  --good: #0d0d0d; --warn: #3a3a3a; --bad: #D7261E;
+  --sale-bg: #D7261E; --sale-fg: #ffffff; --new-bg: #0d0d0d; --new-fg: #ffffff;
+  --ok-bg: #f2f2f2; --ok-fg: #0d0d0d; --sug-bg: #f2f2f2; --sug-fg: #0d0d0d;
+  --chart: #0d0d0d; --chart-fill: #D7261E; --c-produto: #0d0d0d; --photo: #ececea;
+}
+body { font-family: var(--font); font-size: 13px; letter-spacing: -0.03em; line-height: 1.4; }
+button, input, select { letter-spacing: -0.03em; }
+.mono { font-variant-numeric: normal; letter-spacing: 0; }
+/* fotos sempre no fundo "vitrine" (roupa preta aparece no escuro) */
+.tile .ph, .gallery, .thumb, .vitrine button, .rec-pics button, .boneco { background: var(--photo) !important; }
+/* títulos em tag de muro: texto + sombra vermelha deslocada */
+.tagtitulo { font-family: var(--font-tag); font-weight: 400; letter-spacing: 0; position: relative; display: inline-block; white-space: nowrap; transform: rotate(-5deg); margin: 4px 0 6px 4px; font-size: 26px; line-height: 1.1; }
+.tagtitulo::before { content: attr(data-t); position: absolute; left: 3px; top: 3px; color: var(--spray); }
+.tagtitulo > span { position: relative; }
+.hdr h1 { overflow: visible; }
+.section-h { font-family: var(--font-tag); font-weight: 400; letter-spacing: 0; font-size: 20px; text-shadow: 2px 2px 0 var(--spray); }
+/* tudo de um destaque só: vermelho */
+.meter.hi i, .meter i { background: var(--spray); }
+.tag { border-radius: 0; }
+.t-ok, .t-gray, .t-intl, .t-sug { background: transparent; color: var(--fg2); box-shadow: inset 0 0 0 1px var(--layer2); }
+.pixline { color: var(--fg2); }
+/* ícones rabiscados */
+.iconbtn svg.ic, .nav svg.ic { width: auto; height: auto; stroke: none; }
+.iconbtn { color: var(--fg); }
+.heart { border-radius: 0 !important; background: transparent !important; color: #0d0d0d; }
+.heart.on { background: transparent !important; }
+.naocurti { border-radius: 0 !important; background: transparent !important; color: #0d0d0d; }
+/* barra de navegação: ícone + nome, ativa com quadrado torto vermelho */
+.nav { background: var(--bg); border-top: 1px solid var(--border); }
+.nav button { color: var(--helper); font-size: 11px; }
+.nav button .ic { opacity: .45; }
+.nav button[aria-current="page"] { color: var(--fg); }
+.nav button[aria-current="page"] .ic { opacity: 1; }
+.nav button[aria-current="page"]::before { display: none; }
+.nav .marca-ativa { position: absolute; inset: 6px 8px 4px; pointer-events: none; }
+.nav .marca-ativa svg { width: 100%; height: 100%; overflow: visible; }
+.nav .navdot { border-radius: 0; background: var(--spray); }
+/* sem círculos: logos das marcas num quadrado torto */
+.logo { border-radius: 0 !important; box-shadow: none !important; outline: 2px solid var(--fg); outline-offset: 0; transform: rotate(-2deg); }
+.logo.txt { font-family: var(--font-tag); font-weight: 400; text-transform: none; font-size: 12px; }
+.mg-card { border-radius: 0; }
+.mg-seguindo { width: auto; height: auto; border-radius: 0; background: none; color: var(--spray); font-size: 11px; padding: 2px 4px; top: 4px; right: 4px; }
+.top-linha .top-fora { color: var(--fg2); }
+/* reduzir movimento: nada anima */
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* ===== bloco 2: botões, chips, interruptores, card e página do produto ===== */
+/* botão principal: pincelada vermelha atrás do texto */
+.btn { position: relative; isolation: isolate; background: none !important; color: #fff; border-radius: 0; box-shadow: none; font-family: var(--font); font-size: 15px; justify-content: center; }
+.btn::before { content: ""; position: absolute; left: -6px; right: -6px; top: 14%; bottom: 6%; z-index: -1; background: var(--spray); transform: skewX(-14deg) rotate(-2deg); clip-path: polygon(0 18%, 4% 0, 100% 8%, 97% 100%, 2% 88%); }
+.btn:active::before { animation: pincelar .4s ease-out; transform-origin: left; }
+@keyframes pincelar { from { transform: skewX(-14deg) rotate(-2deg) scaleX(0); } to { transform: skewX(-14deg) rotate(-2deg) scaleX(1); } }
+/* secundário: contorno torto branco (vira vermelho ao tocar / ativo) */
+.btn.tertiary, .btn.ghost { color: var(--fg); }
+.btn.tertiary::before, .btn.ghost::before { display: none; }
+.btn.tertiary { box-shadow: none !important; }
+.btn.tertiary:hover { background: none; color: var(--fg); }
+.btn.ghost.sm, .btn.ghost { padding-inline: 4px; }
+i.contorno { position: absolute; inset: 0; pointer-events: none; font-style: normal; }
+i.contorno svg { width: 100%; height: 100%; overflow: visible; display: block; }
+.btn.tertiary i.contorno path { stroke: var(--fg); transition: stroke .15s; }
+.btn.tertiary:active i.contorno path, .btn.tertiary[aria-pressed="true"] i.contorno path { stroke: var(--spray); }
+.btn.tertiary > *:not(i.contorno), .btn > span { position: relative; }
+/* chips e tamanhos: só texto; o selecionado ganha o quadrado torto vermelho que se desenha */
+.chip, .size { position: relative; background: none !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; color: var(--helper); font-family: var(--font); }
+.chip[aria-pressed="true"], .size.mine { color: var(--fg); }
+.chip i.contorno, .size i.contorno { inset: -3px -6px; }
+.chip i.contorno path, .size i.contorno path { stroke-dasharray: 260; stroke-dashoffset: 260; transition: stroke-dashoffset .4s ease-out; }
+.chip[aria-pressed="true"] i.contorno path, .size.mine i.contorno path { stroke-dashoffset: 0; }
+.size.off { color: var(--layer2); text-decoration: line-through; }
+.sizes { gap: 10px 14px; }
+/* interruptor: trilho torto + caixinha que desliza */
+.switch { background: none !important; border: 0; padding: 0; width: 44px; height: 24px; box-shadow: none !important; flex: none; }
+.switch::before, .switch::after { display: none !important; }
+.switch svg { overflow: visible; display: block; }
+.switch .trilho { stroke: var(--fg); transition: stroke .2s; }
+.switch[aria-checked="true"] .trilho { stroke: var(--spray); }
+.switch .caixa { fill: var(--fg); transition: transform .25s cubic-bezier(.3,1.5,.5,1); }
+.switch[aria-checked="true"] .caixa { transform: translateX(18px); }
+/* campos e painéis: retos, sem cantos redondos */
+input, select, .panel, .notice, .field input, .search { border-radius: 0 !important; }
+/* ---------- card de produto: foto inteira + faixa preta inclinada por cima ---------- */
+.grid { gap: 8px; padding: 8px; background: transparent; }
+.tilewrap { background: transparent; }
+.tile { position: relative; background: transparent; border: 0; padding: 0; display: block; }
+.tile .ph { aspect-ratio: 3 / 4.4; margin: 0 !important; border-radius: 0 !important; width: 100% !important; }
+.tile .ph img { object-fit: contain; }
+.tile .body { position: absolute; left: 6px; right: 6px; bottom: 6px; z-index: 1; background: #0d0d0d; color: #f2f2f2; padding: 5px 7px; transform: rotate(-1.5deg); display: grid; gap: 1px; }
+.tile .body .brand { font-size: 10px; color: #8a8a8a; }
+.tile .body .pname { font-size: 11px; color: #f2f2f2; -webkit-line-clamp: 1; line-clamp: 1; }
+.tile .body .prices { gap: 6px; align-items: baseline; }
+.tile .body .now { font-size: 17px; color: #f2f2f2; letter-spacing: 0; }
+.tile .body .was { font-size: 11px; color: #8a8a8a; }
+.tile .body .pixline, .tile .body .scoreline, .tile .body .t2 { display: none !important; }
+/* etiqueta vermelha só para desconto ou queda (com os dois, só o desconto) */
+.tile .tags { top: 6px; left: -4px; }
+.tile .tags .tag { display: none; }
+.tile .tags .t-sale, .tile .tags .t-baixou { display: inline-block; background: var(--spray); color: #fff; font-size: 12px; padding: 1px 6px; transform: rotate(-4deg); border-radius: 0; }
+.tile .tags:has(.t-sale) .t-baixou { display: none; }
+.heart { top: 6px; right: 6px; width: 34px; height: 34px; color: #0d0d0d; }
+.naocurti { top: 44px; color: #0d0d0d; }
+/* ---------- página do produto ---------- */
+.resumo { display: flex; flex-wrap: wrap; gap: 8px 12px; margin: 12px 0 10px; }
+.selo { position: relative; padding: 4px 10px; font-size: 13px; color: var(--fg); }
+.selo b { color: var(--spray); font-weight: 400; }
+.selo i.contorno path { stroke: var(--fg); }
+.sanfona { border-top: 1px solid var(--border-strong); padding: 10px 0; }
+.sanfona > button { width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: 0; color: var(--fg); font: inherit; font-size: 15px; padding: 2px 0; }
+.sanfona .mais { font-size: 20px; transition: transform .2s; color: var(--spray); }
+.sanfona.aberta .mais { transform: rotate(45deg); }
+.sanfona .conteudo { display: none; margin-top: 8px; }
+.sanfona.aberta .conteudo { display: block; }
+.sanfona .conteudo > h3.section-h:first-child, .sanfona .conteudo > .panel > .range-val > strong:first-child { display: none; }
+.barra-fixa { position: sticky; bottom: 0; z-index: 5; background: var(--bg); border-top: 1px solid var(--border-strong); padding: 10px 14px calc(14px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; gap: 14px; }
+.barra-fixa .btn { flex: 1; height: 44px; }
+.barra-ic { background: none; border: 0; color: var(--fg); display: grid; justify-items: center; gap: 2px; font: inherit; font-size: 10px; padding: 0; }
+.barra-ic.ativo { color: var(--spray); }
+.bigprice .now { font-size: 30px; letter-spacing: 0; }
+.bigprice .off { background: var(--spray); color: #fff; padding: 1px 6px; transform: rotate(-4deg); display: inline-block; }
+/* sem círculos */
+.toast, .notice, .panel, .row, .thumb, .vitrine button, .gallery img { border-radius: 0 !important; }
+/* tremida ao toque */
+.tremer { animation: tremer .5s ease-out; }
+@keyframes tremer { 20% { transform: rotate(-9deg) scale(1.15); } 45% { transform: rotate(7deg) scale(1.08); } 70% { transform: rotate(-4deg); } }
+
+/* ===== bloco 3: logo, carregamento, telas vazias, abertura ===== */
+.logo-tag { font-size: 28px; margin: 6px 0 4px 6px; }
+/* carregamento: frase empilhada (1ª menor, 2ª maior e deslocada), inclinada e "fervendo" + ícone da aba se desenhando */
+.carregando { min-height: 70vh; display: grid; place-content: center; justify-items: center; gap: 28px; }
+.carregando .frase { display: grid; transform: rotate(-6deg); font-family: var(--font-tag); white-space: nowrap; text-shadow: 3px 3px 0 var(--spray); color: var(--fg); }
+.carregando .l1 { font-size: 26px; }
+.carregando .l2 { font-size: 44px; margin-left: 34px; line-height: 1; }
+.carregando .l2.so { margin-left: 0; }
+.carregando .desenhar { color: var(--fg); }
+.desenhar path { stroke-dasharray: 120; animation: desenhar 1.8s ease-in-out infinite; }
+@keyframes desenhar { 0% { stroke-dashoffset: 120; } 55%, 85% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+/* telas vazias */
+.vazio { display: grid; justify-items: center; text-align: center; gap: 10px; padding: 36px 24px; color: var(--fg); }
+.vazio .tagtitulo { font-size: 26px; }
+.vazio p { margin: 0; color: var(--fg2); font-size: 13px; max-width: 280px; }
+.vazio .btn { margin-top: 6px; }
+/* abertura: fundo branco, ~2 s */
+#abertura { position: fixed; inset: 0; z-index: 100; background: #f2f2f2; display: grid; place-items: center; transition: opacity .3s; }
+#abertura.saindo { opacity: 0; }
+#abertura > * { grid-area: 1 / 1; }
+#abertura .etq path { stroke-dasharray: 80; stroke-dashoffset: 80; animation: etq-desenha .6s ease-out forwards, some .2s .6s forwards; }
+@keyframes etq-desenha { to { stroke-dashoffset: 0; } }
+@keyframes some { to { opacity: 0; } }
+#abertura .nome { color: #0d0d0d; opacity: 0; animation: quique .5s .65s cubic-bezier(.3,1.6,.5,1) forwards; }
+#abertura .nome .tagtitulo { font-size: 64px; transform: rotate(-10deg) skewX(-8deg); letter-spacing: -2px; }
+#abertura .nome .tagtitulo::before { left: 5px; top: 5px; }
+@keyframes quique { 0% { opacity: 0; transform: scale(.3); } 100% { opacity: 1; transform: scale(1); } }
+#abertura .marcas { width: min(320px, 84vw); height: auto; pointer-events: none; }
+#abertura .marcas path { opacity: 0; animation: aparece .15s forwards; }
+@keyframes aparece { to { opacity: 1; } }
+
+/* animações de toque */
+.btn.toque::before { animation: pincelar .4s ease-out; transform-origin: left; }
+.desenhando i.contorno path, .marca-ativa.desenhando path { stroke-dasharray: 260; animation: tracar .45s ease-out both; }
+@keyframes tracar { from { stroke-dashoffset: 260; } to { stroke-dashoffset: 0; } }
+.chip:not([aria-pressed="true"]).desenhando i.contorno path, .size:not(.mine).desenhando i.contorno path { animation: none; }
+.heart .ic, .barra-ic .ic, .iconbtn .ic, .nav .ic { transform-origin: center; }
+.tremer { animation: tremer .5s ease-out !important; }
+</style>
 </head>
 <body>
 <div class="app" id="app"><p class="loading">Carregando catálogo…</p></div>
@@ -298,20 +483,14 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 <div id="sheet" class="sheet" hidden></div>
 <div id="toast" class="toast" role="status" hidden></div>
 
-<script src="core.js?v=1795482674"></script>
+<script src="icones.js"></script>
+<script src="core.js?v=1795482883"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
-  ofertas: '<svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg>',
-  buscar: '<svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>',
-  farfetch: '<svg viewBox="0 0 24 24"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 9v12"/></svg>',
-  novas: '<svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>',
-  marcas: '<svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>',
-  salvos: '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
-  perfil: '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.5-6.5 8-6.5s7 2 8 6.5"/></svg>',
-  bell: '<svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4z"/><path d="M10 21h4"/></svg>',
-  back: '<svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>',
-  close: '<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+  ofertas: icone('ofertas', 22), buscar: icone('buscar', 18), farfetch: icone('importados', 22), novas: icone('marcas', 22),
+  marcas: icone('marcas', 22), salvos: icone('salvos', 22), perfil: icone('perfil', 22),
+  bell: icone('alertas', 20), back: icone('voltar', 20), close: icone('fechar', 18),
 };
 
 /* ---------- Utilidades ---------- */
@@ -331,7 +510,7 @@ function saleBloco() {
   if (!itens.length) return '';
   return `<div class="wrap ff">
     <div class="ff-h"><span class="ff-t">Sale das suas marcas</span><span class="t2">nos seus tamanhos</span></div>
-    <div class="chips">${MODELOS.map(m => `<button class="chip ff-chip" data-busca="${esc(m)}" style="border-color:var(--link)">${esc(m)} ⌕</button>`).join('')}${itens.map(({ n, q }) => `<button class="chip ff-chip" data-salebrand="${esc(n)}">${q ? `${esc(n)} (${q})` : `${esc(n)}: sem sale agora`}</button>`).join('')}</div>
+    <div class="chips">${MODELOS.map(m => `<button class="chip ff-chip" data-busca="${esc(m)}" style="border-color:var(--link)">${esc(m)} ${icone('buscar', 12)}</button>`).join('')}${itens.map(({ n, q }) => `<button class="chip ff-chip" data-salebrand="${esc(n)}">${q ? `${esc(n)} (${q})` : `${esc(n)}: sem sale agora`}</button>`).join('')}</div>
   </div>`;
 }
 // modelos que você acompanha de perto: abrem a busca já filtrada
@@ -454,7 +633,7 @@ function paraVoce() {
 }
 function paraVoceBloco() {
   const n = Object.keys(S.curtidas).length;
-  if (!n) return `<div class="wrap"><div class="notice" style="margin:8px 0"><span>Curta peças com o ♡ e eu monto aqui uma faixa <b>Para você</b> com peças parecidas.</span></div></div>`;
+  if (!n) return `<div class="wrap"><div class="notice" style="margin:8px 0"><span>Curta peças no coração e eu monto aqui uma faixa <b>Para você</b> com peças parecidas.</span></div></div>`;
   const l = paraVoce();
   if (!l.length) return '';
   return `<div class="wrap"><h2 class="section-h" style="margin-top:8px">Para você</h2>
@@ -493,11 +672,11 @@ function tile({ p, e }) {
   if (e.intl) tags.push('<span class="tag t-intl">INTERNACIONAL</span>');
   if (e.off >= 0.05) tags.push(`<span class="tag t-sale">-${Math.round(e.off * 100)}%</span>`);
   if (e.novo) tags.push('<span class="tag t-new">Novo</span>');
-  if (e.baixou) tags.push('<span class="tag t-ok">Baixou</span>');
+  if (e.baixou) tags.push('<span class="tag t-baixou">Baixou</span>');
   else if (e.justo?.nivel === 'abaixo') tags.push('<span class="tag t-ok">Preço bom</span>');
   // o coração fica por cima da foto, fora do botão da peça, para curtir sem abrir
   const curti = !!S.curtidas[p.key];
-  return `<div class="tilewrap"><button class="heart ${curti ? 'on' : ''}" data-curti="${esc(p.key)}" aria-pressed="${curti}" aria-label="${curti ? 'Remover curtida' : 'Curtir'}">${curti ? '♥' : '♡'}</button><button class="naocurti" data-esconder="${esc(p.key)}" aria-label="Não curti: esconder esta e as iguais">✕</button><button class="tile" data-open="${esc(p.key)}">
+  return `<div class="tilewrap"><button class="heart ${curti ? 'on' : ''}" data-curti="${esc(p.key)}" aria-pressed="${curti}" aria-label="${curti ? 'Remover curtida' : 'Curtir'}">${icone('salvos', 20, { cheio: curti })}</button><button class="naocurti" data-esconder="${esc(p.key)}" aria-label="Não curti: esconder esta e as iguais">${icone('fechar', 14)}</button><button class="tile" data-open="${esc(p.key)}">
     <div class="ph"><img loading="lazy" src="${esc(img(p.imagens[0], 540))}" alt=""><div class="tags">${tags.join('')}</div></div>
     <div class="body">
       <span class="brand">${esc(p.marca)}${p.relacao === 'sugerida' ? ' · sugerida' : ''}${e.lojas.length > 1 ? ` · ${e.lojas.length} lojas` : p.ofertas[0].loja.startsWith('Site ') ? '' : ` · ${esc(e.lojas[0].loja)}`}</span>
@@ -507,7 +686,7 @@ function tile({ p, e }) {
       <span class="scoreline"><span class="meter ${e.score >= S.notaMin ? 'hi' : ''}"><i style="width:${e.score}%"></i></span><span class="score mono">Nota ${e.score}</span></span>
     </div></button></div>`;
 }
-const header = (title, extra = '') => `<header class="hdr"><div class="wrap"><h1>${title}</h1>${extra}</div></header>`;
+const header = (title, extra = '') => `<header class="hdr"><div class="wrap"><h1>${/</.test(title) ? title : `<span class="tagtitulo" data-t="${esc(title)}"><span>${esc(title)}</span></span>`}</h1>${extra}</div></header>`;
 function grid(items, moreKey) {
   if (!items.length) return '';
   const shown = items.slice(0, S.limit);
@@ -517,7 +696,7 @@ const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.n
 
 /* ---------- Telas ---------- */
 function viewOfertas() {
-  const cabeca = header('<span class="marca-app"><img src="logo-128.png" alt=""><b>Achei</b></span>', `<button class="iconbtn" data-sw="qBaixou" aria-label="Só o que baixou de preço" aria-pressed="${S.qBaixou}" style="font-size:18px;${S.qBaixou ? "background:var(--layer2)" : ""}">📉</button><button class="iconbtn" data-top10 aria-label="Top 10 da semana" style="font-size:18px">🏆</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
+  const cabeca = header('<span class="tagtitulo logo-tag" data-t="Achei"><span>Achei</span></span>', `<button class="iconbtn" data-sw="qBaixou" aria-label="Só o que baixou de preço" aria-pressed="${S.qBaixou}" style="font-size:18px;${S.qBaixou ? "background:var(--layer2)" : ""}">${icone('baixou', 20)}</button><button class="iconbtn" data-top10 aria-label="Top 10 da semana" >${icone('top10', 20)}</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
   const cats = `<div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>`;
   // com busca ou filtro: procura em todas as marcas e lojas, e compara as lojas
   if (buscando()) {
@@ -530,7 +709,7 @@ function viewOfertas() {
     if (S.qBaixou) items.sort((a, b) => baixouRecente(b.e).queda - baixouRecente(a.e).queda);   // maiores quedas primeiro
     return cabeca + painelBusca() + cats + (S.qLoja === 'Todas' ? comparador(items) : '') + `
       <div class="wrap"><p class="section-sub" style="margin:12px 0">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p></div>
-      ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
+      ${grid(items) || telaVazia('buscaVazia', 'Nenhuma peça com essa busca. Tente outra palavra, outra marca ou um preço maior.')}`;
   }
   const brands = activeBrands();
   const { items, hiddenSize } = feedList(p => brands.has(p.marca) && (S.cat === 'Tudo' || p.cat === S.cat));
@@ -548,7 +727,7 @@ function viewOfertas() {
     ${paraVoceBloco()}
     ${saleBloco()}
     ${cats}
-    ${grid(deals) || '<div class="wrap note"><span>Nenhuma oferta nesta categoria agora.</span></div>'}
+    ${grid(deals) || telaVazia('semPromocao')}
     <div class="wrap note">${hiddenSize ? `<span>${hiddenSize} peças ocultas por não ter seu tamanho disponível.</span>` : ''}<span>Fotos e preços vêm direto dos sites das marcas.</span></div>`;
 }
 
@@ -586,7 +765,7 @@ function painelBusca() {
   return `<div class="wrap busca">
     <label class="search"><span>${ICON.buscar}</span><input id="q" type="search" placeholder="Busque uma peça, modelo ou marca (ex.: 9060)" value="${esc(S.q)}" autocomplete="off" enterkeyhint="search"></label>
     <div class="busca-acoes">
-      <button class="chip" data-filtros aria-expanded="${S.filtrosAbertos}">Filtros${n ? ` (${n})` : ''} ${S.filtrosAbertos ? '▴' : '▾'}</button>
+      <button class="chip" data-filtros aria-expanded="${S.filtrosAbertos}">Filtros${n ? ` (${n})` : ''} <span style="display:inline-block;${S.filtrosAbertos ? 'transform:rotate(180deg)' : ''}">${icone('filtro', 12)}</span></button>
       ${buscando() ? '<button class="chip" data-limpar>Limpar busca</button>' : ''}
       ${seletorOrdem('sortOfertas')}
     </div>
@@ -678,7 +857,7 @@ function cardMarca(m) {
       <span class="t2" style="color:var(--helper);font-size:12px">${ps.length} peças nos seus tamanhos${sale.length ? ` · ${sale.length} em sale, até ${max}%` : ''}</span></div>
       <button class="btn sm" data-follow="${esc(m.nome)}">Seguir</button></div>
     ${fotos.length ? `<div class="vitrine">${fotos.map(x => `<button data-open="${esc(x.p.key)}" aria-label="${esc(x.p.titulo)}"><img loading="lazy" src="${esc(img(x.p.imagens[0], 300))}" alt=""><span class="mono">${brl(x.ev.price)}</span></button>`).join('')}</div>` : ''}
-    <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button><button data-dispensar="${esc(m.nome)}" style="color:var(--helper)">Dispensar marca ✕</button></div>
+    <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button><button data-dispensar="${esc(m.nome)}" style="color:var(--helper)">Dispensar marca ${icone('fechar', 10)}</button></div>
   </div>`;
 }
 
@@ -746,9 +925,9 @@ function abrirImportado(i) {
         const cp = comparaImportado(a), usd2 = v => 'US$ ' + Math.round(v);
         const melhor = cp.econ >= 0;
         const linhas = [
-          ['🇧🇷 Aqui no Brasil', 'Farfetch Brasil, entregue com frete e impostos', k.total, true],
-          ['🇺🇸 Na loja dos EUA', `${usd2(cp.euaUsd)} na etiqueta, sem frete nem imposto`, cp.euaUsd * cp.usd, false],
-          ['🇺🇸 Trazer dos EUA você mesmo', `${usd2(cp.euaUsd)} + frete ${usd2(FRETE_EUA_USD)} + IOF, imposto de importação e ICMS`, cp.trazerTotal, false],
+          ['Brasil · aqui', 'Farfetch Brasil, entregue com frete e impostos', k.total, true],
+          ['EUA · na loja', `${usd2(cp.euaUsd)} na etiqueta, sem frete nem imposto`, cp.euaUsd * cp.usd, false],
+          ['EUA · trazer você mesmo', `${usd2(cp.euaUsd)} + frete ${usd2(FRETE_EUA_USD)} + IOF, imposto de importação e ICMS`, cp.trazerTotal, false],
         ];
         const maxV = Math.max(...linhas.map(l => l[2]));
         return `<h3 class="section-h">Comparação final: Brasil × EUA</h3>
@@ -775,7 +954,7 @@ function abrirImportado(i) {
         <p class="section-sub" style="margin-top:8px">O preço nos EUA é uma estimativa a partir do preço sem impostos (a Farfetch não deixa abrir a loja americana daqui do Brasil). Para trazer você mesmo: dólar do dia R$ ${cp.usd.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}, frete estimado US$ ${FRETE_EUA_USD}, IOF 3,5%, imposto de importação 60% e ICMS 17%.</p>`;
       })()}
       ${(q => q ? miniLook(q) : '')(ffProdutos().find(x => x.ffi === i))}
-      <div class="actions" style="grid-template-columns:1fr 1fr">${(k => `<button class="btn ${S.curtidas[k] ? '' : 'tertiary'}" data-curti="${esc(k)}" aria-pressed="${!!S.curtidas[k]}" style="justify-content:center;${S.curtidas[k] ? 'background:var(--bad)' : ''}">${S.curtidas[k] ? '♥ Curtido' : '♡ Curti'}</button>`)(ffKey(a))}<a class="btn" href="${esc(a.url)}" target="_blank" rel="noopener">Ver na Farfetch ↗</a></div>
+      <div class="actions" style="grid-template-columns:1fr 1fr">${(k => `<button class="btn ${S.curtidas[k] ? '' : 'tertiary'}" data-curti="${esc(k)}" aria-pressed="${!!S.curtidas[k]}" style="justify-content:center;${S.curtidas[k] ? 'background:var(--bad)' : ''}">${S.curtidas[k] ? icone('salvos', 16, { cheio: true }) + ' Curtido' : icone('salvos', 16) + ' Curti'}</button>`)(ffKey(a))}<a class="btn" href="${esc(a.url)}" target="_blank" rel="noopener">Ver na Farfetch ${icone('abrir', 14)}</a></div>
     </div>`);
 }
 
@@ -806,14 +985,14 @@ function viewFarfetch() {
       <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-ffsale aria-checked="${FFS.sale}" aria-label="Só peças com desconto"></button></div>
       <p class="section-sub" style="margin:12px 0">${achados.length} ${achados.length === 1 ? 'peça' : 'peças'}</p>
     </div>
-    <div class="grid">${achados.map(a => `<div class="tilewrap">${(k => `<button class="heart ${S.curtidas[k] ? 'on' : ''}" data-curti="${esc(k)}" aria-pressed="${!!S.curtidas[k]}" aria-label="${S.curtidas[k] ? 'Remover curtida' : 'Curtir'}">${S.curtidas[k] ? '♥' : '♡'}</button>`)(ffKey(a))}<button class="tile" data-ffi="${FF.achados.indexOf(a)}">
+    <div class="grid">${achados.map(a => `<div class="tilewrap">${(k => `<button class="heart ${S.curtidas[k] ? 'on' : ''}" data-curti="${esc(k)}" aria-pressed="${!!S.curtidas[k]}" aria-label="${S.curtidas[k] ? 'Remover curtida' : 'Curtir'}">${icone('salvos', 20, { cheio: !!S.curtidas[k] })}</button>`)(ffKey(a))}<button class="tile" data-ffi="${FF.achados.indexOf(a)}">
       <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags">${a.off ? `<span class="tag t-sale">-${a.off}%</span>` : ''}${a.blackFriday ? '<span class="tag t-new">Black Friday</span>' : ''}<span class="tag ${faixaDe[a.marca] === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[faixaDe[a.marca]] || '')}</span></div></div>
       <div class="body"><span class="brand">${esc(a.marca)} · Farfetch</span><span class="pname">${esc(a.nome)}</span>
         <span class="prices">${a.de ? `<span class="was mono">${brl(a.de)}</span>` : ''}<span class="now mono">${brl(a.por)}</span></span>
         <span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">${brl(custoFarfetch(a.por).total)} com frete${a.tam ? ` · ${esc(a.tam)}` : ''}</span>
         ${(n => `<span class="scoreline"><span class="meter ${n >= 50 ? 'hi' : ''}"><i style="width:${n}%"></i></span><span class="score mono">Nota ${n}</span></span>`)(comparaImportado(a).nota)}</div></button></div>`).join('') || '<div class="wrap note"><span>Nenhuma peça com esses filtros.</span></div>'}</div>
     <div class="wrap"><h2 class="section-h">Marcas${FFS.faixa !== 'todas' ? ` · ${esc(FF.faixas[FFS.faixa])}` : ''}</h2>
-      <div class="list">${marcasNaFaixa.map(m => `<div class="row"><div class="grow"><span class="t1">${esc(m.nome)} <span class="tag ${m.faixa === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[m.faixa])}</span></span><span class="t2">${esc(m.frase)}${comAchado.has(m.nome) ? '' : ` · nada até ${brl(FF.limite)} agora`}</span></div><a class="btn ghost sm" href="${esc(buscaFF(m))}" target="_blank" rel="noopener">Farfetch ↗</a></div>`).join('')}</div>
+      <div class="list">${marcasNaFaixa.map(m => `<div class="row"><div class="grow"><span class="t1">${esc(m.nome)} <span class="tag ${m.faixa === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[m.faixa])}</span></span><span class="t2">${esc(m.frase)}${comAchado.has(m.nome) ? '' : ` · nada até ${brl(FF.limite)} agora`}</span></div><a class="btn ghost sm" href="${esc(buscaFF(m))}" target="_blank" rel="noopener">Farfetch ${icone('abrir', 12)}</a></div>`).join('')}</div>
     </div>
     ${stockxBloco()}`;
 }
@@ -874,16 +1053,16 @@ function viewMarcas() {
   const curtiu = Object.keys(S.curtidas).length;
   return header('Marcas') + `<div class="wrap">
     <h2 class="section-h">Suas marcas</h2>
-    <p class="section-sub">Toque numa marca para ver as ofertas dela. O ✓ deixa de seguir.</p>
+    <p class="section-sub">Toque numa marca para ver as ofertas dela. Toque em "seguindo" para deixar de seguir.</p>
     <div class="marcas-grid">${seg.map(m => {
       const s = m.arquivos?.length ? stats(m) : null;
       const sel = !s ? '<span class="mg-sub">Sem conexão</span>' : s.sale ? `<span class="tag t-sale">até -${s.max}%</span>` : `<span class="mg-sub">${s.total} peças</span>`;
       const abre = s ? `data-brand="${esc(m.nome)}"` : '';
       return `<div class="mg-card"><button class="mg-abre" ${abre} aria-label="${esc(m.nome)}">${logoMarca(m.nome, 'lg')}<span class="mg-nome">${esc(m.nome)}</span>${sel}</button>
-        <button class="mg-seguindo" data-follow="${esc(m.nome)}" aria-label="Deixar de seguir ${esc(m.nome)}">✓</button></div>`;
+        <button class="mg-seguindo" data-follow="${esc(m.nome)}" aria-label="Deixar de seguir ${esc(m.nome)}">seguindo</button></div>`;
     }).join('')}</div>
     <h2 class="section-h">Marcas novas para você</h2>
-    <p class="section-sub">${curtiu ? `Ordenadas pelo que você curtiu (${curtiu} ${curtiu > 1 ? 'peças' : 'peça'}). As fotos mostram as peças mais no seu estilo, não as de maior nota.` : 'Curta peças (♡) para eu ordenar estas marcas e as fotos pelo seu estilo.'} Toque em Seguir para levar a marca para cima.</p>
+    <p class="section-sub">${curtiu ? `Ordenadas pelo que você curtiu (${curtiu} ${curtiu > 1 ? 'peças' : 'peça'}). As fotos mostram as peças mais no seu estilo, não as de maior nota.` : 'Curta peças (no coração) para eu ordenar estas marcas e as fotos pelo seu estilo.'} Toque em Seguir para levar a marca para cima.</p>
     ${novas.map(cardMarca).join('') || '<p class="section-sub" style="padding-block:16px">Você já segue todas as recomendações. Peça "reabastece as marcas novas" para eu buscar mais.</p>'}
     <div class="note"><span>Marcas "sem conexão" não têm catálogo aberto em loja brasileira.</span></div>
   </div>`;
@@ -979,7 +1158,7 @@ function miniLook(base) {
       <div class="mini-lista">
         ${esc2.map(x => `<button class="mini-item" ${abrirAttr(x.q)}><span class="t2">${esc(x.q.marca)}${x.q.ff ? ' · Farfetch' : ''}</span><span class="mini-nome">${esc(x.q.titulo)}</span><span class="mono">${brl(x.e.price)}</span></button>`).join('')}
         <span class="t2" style="margin-top:4px">Look completo: <b class="mono">${brl(total)}</b></span>
-        <button class="btn tertiary sm" data-look="${esc(base.key)}" style="margin-top:6px;justify-content:center">👕 Trocar peças</button>
+        <button class="btn tertiary sm" data-look="${esc(base.key)}" style="margin-top:6px;justify-content:center">${icone('combinar', 16)} Trocar peças</button>
       </div>
     </div>`;
 }
@@ -1075,7 +1254,7 @@ function desenharLook() {
         <div class="vitrine look-ops">${v.ops.map((x, j) => `<button data-lookvaga="${i}" data-lookop="${j}" aria-pressed="${v.sel === j}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt="${esc(x.q.titulo)}"><span class="mono">${brl(x.e.price)}</span></button>`).join('')}
           <button data-lookvaga="${i}" data-lookop="-1" aria-pressed="${v.sel === -1}" class="look-sem"><span>Sem ${esc(v.nome.toLowerCase())}</span></button></div>
         ${v.sel >= 0 ? `<button class="btn ghost sm" ${abrirAttr(v.ops[v.sel].q)} style="padding:0;height:auto;margin-top:4px">${esc(v.ops[v.sel].q.marca)}${v.ops[v.sel].q.ff ? ' (Farfetch)' : ''} · ${esc(v.ops[v.sel].q.titulo)} ›</button>` : ''}`).join('')}
-      <div class="actions" style="grid-template-columns:1fr;margin-top:16px"><button class="btn" data-lookcarrinho>🛒 Simular a compra deste look</button></div>
+      <div class="actions" style="grid-template-columns:1fr;margin-top:16px"><button class="btn" data-lookcarrinho>${icone('simular', 16)} Simular a compra deste look</button></div>
       <p class="section-sub" style="margin-top:8px">Escolhi por cor (neutros combinam com tudo; peça colorida pede o resto neutro), estilo parecido e marcas que você curte ou segue. Toque nas fotos para trocar.</p>
     </div>`);
 }
@@ -1106,7 +1285,7 @@ async function desligarPush() {
 }
 async function testarPush() {
   const reg = await navigator.serviceWorker.ready;
-  await reg.showNotification('Achei', { body: 'Teste: as notificações do Achei estão funcionando neste celular.', icon: 'achei-192.png', data: { url: './#top10' } });
+  await reg.showNotification('Achei', { body: 'Teste: as notificações do Achei estão funcionando neste celular.', icon: 'achei3-192.png', data: { url: './#top10' } });
 }
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
@@ -1134,31 +1313,73 @@ function abrirBoasVindas() {
   document.getElementById('sheet').scrollTop = y;
 }
 
+/* ---------- Abertura: etiqueta se desenha, "Achei" entra com quique e as marcações aparecem uma por uma ---------- */
+function abertura() {
+  if (sessionStorage.getItem('aberturaVista') || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  sessionStorage.setItem('aberturaVista', '1');
+  const k = (d, cor, i, w = 2.4) => `<path d="${d}" stroke="${cor}" stroke-width="${w}" style="animation-delay:${0.9 + i * 0.1}s"/>`;
+  const marcas = [
+    k('M70 168 C120 176,190 176,236 166', '#D7261E', 0, 3.2),       // sublinhado vermelho
+    k('M28 46 C34 30,52 26,64 34 M58 26 L66 34 L56 38', '#0d0d0d', 1),   // seta curva preta (alto, esquerda)
+    k('M236 196 L262 214 M252 214 L262 214 L260 204', '#D7261E', 2),    // seta vermelha (baixo, direita)
+    k('M238 28 L252 42 M252 28 L238 42', '#0d0d0d', 3),                  // X preto (alto, direita)
+    k('M36 200 L48 212 M48 200 L36 212', '#D7261E', 4),                  // X vermelho (baixo, esquerda)
+    k('M44 86 L36 86 L36 150 L44 150', '#0d0d0d', 5),                    // colchete esquerdo
+    k('M256 86 L264 86 L264 150 L256 150', '#0d0d0d', 6),                // colchete direito
+    k('M112 52 L106 38 M122 50 L122 34', '#D7261E', 7),                  // brilho vermelho
+    k('M182 50 L188 36 M192 54 L202 44', '#0d0d0d', 8),                  // brilho preto
+  ].join('');
+  document.body.insertAdjacentHTML('beforeend', `<div id="abertura" aria-hidden="true">
+    <svg class="etq" viewBox="0 0 24 24" width="90" height="90"><g filter="url(#trem0)"><path d="${TRACOS.ofertas[0]}" stroke="#0d0d0d" stroke-width="1.6" fill="none"/></g></svg>
+    <div class="nome"><span class="tagtitulo" data-t="Achei"><span>Achei</span></span></div>
+    <svg class="marcas" viewBox="0 0 300 240" fill="none" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#trem0)">${marcas}</g></svg>
+  </div>`);
+  setTimeout(() => { const a = document.getElementById('abertura'); a?.classList.add('saindo'); setTimeout(() => a?.remove(), 350); }, 2100);
+}
+
+/* ---------- Telas vazias: ilustração rabiscada + título em tag + texto + botão ---------- */
+const ACAO_VAZIA = { 'Ver ofertas': 'data-tab="ofertas"', 'Seguir mais marcas': 'data-tab="marcas"', 'Limpar busca': 'data-limpar', 'Tentar de novo': 'data-recarregar' };
+function telaVazia(chave, texto) {
+  const v = ILUSTRACOES[chave];
+  return `<div class="vazio">${ilustracao(chave)}<span class="tagtitulo" data-t="${esc(v.titulo)}"><span>${esc(v.titulo)}</span></span>
+    <p>${esc(texto || v.texto)}</p><button class="btn tertiary" ${ACAO_VAZIA[v.botao] || ''}>${esc(v.botao)}</button></div>`;
+}
+/* ---------- Carregamento: frase sorteada em tag + ícone da aba se desenhando ---------- */
+let FERVER = null;
+function telaCarregando() {
+  const [a, b] = FRASES_CARREGANDO[Math.floor(Math.random() * FRASES_CARREGANDO.length)];
+  const ic = { ofertas: 'ofertas', marcas: 'marcas', farfetch: 'importados', salvos: 'salvos', perfil: 'perfil' }[S.tab] || 'ofertas';
+  clearInterval(FERVER); let n = 0;
+  FERVER = setInterval(() => document.querySelectorAll('.carregando .trem').forEach(g => g.setAttribute('filter', `url(#trem${(++n) % 3})`)), 140);
+  return `<div class="carregando"><div class="frase trem">${b ? `<span class="l1">${esc(a)}</span><span class="l2">${esc(b)}</span>` : `<span class="l2 so">${esc(a)}</span>`}</div>
+    <div class="desenhar">${icone(ic, 56)}</div></div>`;
+}
+
 /* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
 function abrirTop10(slug = 'tenis') {
   ATUAL = { fn: abrirTop10, args: [slug] };
   const tops = topPorCategoria(activeBrands(), new Set(DATA.produtos.filter(escondida).map(p => p.key)));
   const atual = tops.find(t => t.slug === slug) || tops[0], lista = atual.lista;
-  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">🏆 Top ${lista.length} ${esc(atual.cat)} da semana</h1></div></header>
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${icone('top10', 18)} Top ${lista.length} ${esc(atual.cat)} da semana</h1></div></header>
     <div class="wrap">
       <div class="chips" role="group" aria-label="Categoria" style="margin-top:12px">${tops.map(t => `<button class="chip" data-topcat="${t.slug}" aria-pressed="${t.slug === atual.slug}">${esc(t.cat)} (${t.lista.length})</button>`).join('')}</div>
-      <p class="section-sub">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10 por categoria; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), cresce até 20. Tocou em ✕, entra a próxima melhor. Atualiza a cada rodada do robô (8h e 18h).</p>
+      <p class="section-sub">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10 por categoria; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), cresce até 20. Tocou no X, entra a próxima melhor. Atualiza a cada rodada do robô (8h e 18h).</p>
       <div class="list">${lista.map(({ p, e, outra }, i) => `<div class="top-linha"><button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;background:none">
         <span class="mono" style="font-size:20px;width:28px;flex:none;color:var(--helper)">${i + 1}</span>
         <span class="thumb"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></span>
         <span class="grow" style="display:grid;gap:2px"><span class="t2">${esc(p.marca)} · ${esc(e.lojas[0].loja)}</span><span class="t1">${esc(p.titulo)}</span>
           <span>${outra ? `<span class="tag t-gray" style="margin-right:4px">${esc(p.cat)}</span>` : ''}<span class="mono">${brl(e.price)}</span> ${e.de ? `<span class="mono was" style="font-size:12px">${brl(e.de)}</span>` : ''} <span class="tag t-sale">-${Math.round(e.off * 100)}%</span> <span class="mono" style="font-size:12px;color:var(--helper)">nota ${e.score}</span></span></span>
-      </button><button class="top-fora" data-topfora="${esc(p.key)}" data-slug="${atual.slug}" aria-label="Não curti ${esc(p.titulo)}: trocar por outra">✕<span>Não curti</span></button></div>`).join('') || '<p class="section-sub">Nenhuma peça com desconto nas suas marcas agora.</p>'}</div>
+      </button><button class="top-fora" data-topfora="${esc(p.key)}" data-slug="${atual.slug}" aria-label="Não curti ${esc(p.titulo)}: trocar por outra">${icone('fechar', 14)}<span>Não curti</span></button></div>`).join('') || telaVazia('topVazio', 'Ainda não há peças com desconto suficientes nas suas marcas.')}</div>
     </div>`);
 }
 /* ---------- Pix e frete grátis da loja (lidos do site pelo robô) ---------- */
 function pagamentoHTML(l, preco) {
   const linhas = [];
-  if (l.pix) linhas.push(`<span>💠 No Pix: <b class="mono">${brl(l.pix)}</b> <span class="tag t-ok">-${Math.round((1 - l.pix / preco) * 100)}%</span></span>`);
-  if (l.freteGratis === 0) linhas.push('<span>🚚 Frete grátis</span>');
-  else if (l.freteGratis > 0) linhas.push(preco >= l.freteGratis ? `<span>🚚 <b>Frete grátis</b>: na ${esc(l.loja.replace(/^Site /, ''))} é a partir de ${brl(l.freteGratis)}, e esta peça já passa</span>`
-    : `<span>🚚 Frete grátis a partir de ${brl(l.freteGratis)} na ${esc(l.loja.replace(/^Site /, ''))} (faltam ${brl(l.freteGratis - preco)})</span>`);
-  if (l.freteObs) linhas.push(`<span>🚚 ${esc(l.freteObs)}</span>`);
+  if (l.pix) linhas.push(`<span>No Pix: <b class="mono">${brl(l.pix)}</b> <span class="tag t-ok">-${Math.round((1 - l.pix / preco) * 100)}%</span></span>`);
+  if (l.freteGratis === 0) linhas.push('<span>Frete grátis</span>');
+  else if (l.freteGratis > 0) linhas.push(preco >= l.freteGratis ? `<span><b>Frete grátis</b>: na ${esc(l.loja.replace(/^Site /, ''))} é a partir de ${brl(l.freteGratis)}, e esta peça já passa</span>`
+    : `<span>Frete grátis a partir de ${brl(l.freteGratis)} na ${esc(l.loja.replace(/^Site /, ''))} (faltam ${brl(l.freteGratis - preco)})</span>`);
+  if (l.freteObs) linhas.push(`<span>${esc(l.freteObs)}</span>`);
   return linhas.length ? `<div class="pagto">${linhas.join('')}</div>` : '';
 }
 
@@ -1213,7 +1434,7 @@ function simulacaoBloco() {
   const itens = Object.keys(S.carrinho).map(k => DATA.produtos.find(x => x.key === k)).filter(Boolean)
     .map(p => ({ p, e: evaluate(p) }));
   if (!itens.length) return `<h2 class="section-h">Simular compra</h2>
-    <p class="section-sub">Na tela de uma peça, toque em <b>🛒 Simular compra</b>. Eu digo se vale levar agora, se é melhor esperar baixar e se tem peça parecida por menos.</p>`;
+    ${telaVazia('simularVazio', 'Na tela de uma peça, toque em Simular. Eu digo se vale levar agora, se é melhor esperar baixar e se tem parecida por menos.')}`;
   const ok = itens.filter(x => x.e.ok).map(x => ({ ...x, r: veredito(x.p, x.e) }));
   const total = ok.reduce((s, x) => s + x.e.price, 0);
   const valem = ok.filter(x => x.r.cor === 'good');
@@ -1231,7 +1452,7 @@ function simulacaoBloco() {
       ${lojas.map(nome => {
         const its = ok.filter(x => x.e.lojas[0].loja === nome), l = its[0].e.lojas[0];
         const tot = its.reduce((s, x) => s + x.e.price, 0), totPix = its.reduce((s, x) => s + (x.e.lojas[0].pix || x.e.price), 0);
-        const frete = l.freteGratis === 0 ? 'frete grátis' : l.freteGratis > 0 ? (tot >= l.freteGratis ? 'frete grátis ✓' : `faltam ${brl(l.freteGratis - tot)} para frete grátis`) : 'frete à parte';
+        const frete = l.freteGratis === 0 ? 'frete grátis' : l.freteGratis > 0 ? (tot >= l.freteGratis ? 'frete grátis garantido' : `faltam ${brl(l.freteGratis - tot)} para frete grátis`) : 'frete à parte';
         return `<p class="t2" style="margin:0;font-size:12px;color:var(--helper)">${esc(nome.replace(/^Site /, ''))}: ${brl(tot)}${totPix < tot ? ` · <b>${brl(totPix)} no Pix</b>` : ''} · ${frete}</p>`;
       }).join('')}
     </div>
@@ -1242,7 +1463,7 @@ function simulacaoBloco() {
         <button class="thumb" data-open="${esc(p.key)}" aria-label="Abrir ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>
         <div class="grow" style="display:grid;gap:3px">
           <span class="t2">${esc(p.marca)} · ${esc(e.lojas[0].loja)}</span><span class="t1">${esc(p.titulo)}</span>
-          <span><span class="mono" style="font-size:15px">${brl(e.price)}</span> <b style="color:${cores[r.cor]};font-size:13px;margin-left:6px">● ${r.v}</b></span>
+          <span><span class="mono" style="font-size:15px">${brl(e.price)}</span> <b style="color:${cores[r.cor]};font-size:13px;margin-left:6px">${r.v}</b></span>
           ${r.motivos.length ? `<span class="t2" style="font-size:12px">${esc(r.motivos.join(' · '))}</span>` : ''}
           ${r.par.length ? `<span class="t2" style="font-size:12px;margin-top:4px">Parecidas por preço igual ou menor:</span>
           <div class="vitrine" style="margin:0;padding:0">${r.par.map(x => `<button data-open="${esc(x.q.key)}" aria-label="${esc(x.q.titulo)}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt=""><span class="mono">${brl(x.e.price)}</span></button>`).join('')}</div>` : ''}
@@ -1278,10 +1499,10 @@ function viewSalvos() {
     ${(() => {
       const ks = [...new Set([...Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k]) => k), ...Object.keys(S.saved)])]
         .map(k => acharPeca(k)).filter(p => p && vagaDe(p.kind));
-      return `<h2 class="section-h">Combinar roupas 👕</h2>
+      return `<h2 class="section-h">Combinar roupas</h2>
       ${ks.length ? `<p class="section-sub">Toque numa peça curtida ou salva e eu monto um look com ela.</p>
       <div class="vitrine">${ks.map(p => `<button data-look="${esc(p.key)}" aria-label="Combinar ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 300))}" alt=""><span>${esc(KIND_LABEL[p.kind])}</span></button>`).join('')}</div>`
-      : '<p class="section-sub">Curta (♡) ou salve peças e elas aparecem aqui para montar looks. Também dá para tocar em "👕 Combinar" na tela de qualquer peça.</p>'}`;
+      : '<p class="section-sub">Curta (no coração) ou salve peças e elas aparecem aqui para montar looks. Também dá para tocar em "Combinar" na tela de qualquer peça.</p>'}`;
     })()}
     <h2 class="section-h">Alertas de modelo</h2>
     <p class="section-sub">Ex.: "9060" até R$ 1.000. O robô avisa quando aparecer, nos seus tamanhos, em qualquer loja do app.</p>
@@ -1292,11 +1513,11 @@ function viewSalvos() {
       <div class="field"><label for="mMax">Até R$</label><input id="mMax" type="number" inputmode="numeric" placeholder="1000"></div>
       <div class="field"><button class="btn sm" type="submit" style="height:40px">Criar</button></div>
     </form>
-    <h2 class="section-h">Peças com alerta 🔔</h2>
+    <h2 class="section-h">Peças com alerta</h2>
     <p class="section-sub">Com o alvo em "auto", o aviso chega quando o preço sair do comum: abaixo do preço justo, o menor já visto ou uma queda forte. Se preferir, escreva um valor.</p>
-    <div class="list">${rows.join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta ainda. Abra uma peça e toque em 🔔 Alerta.</p>'}</div>
-    <h2 class="section-h">Curtidas ♥</h2>
-    ${Object.keys(S.curtidas).length ? `<div class="rec-pics" style="grid-template-columns:repeat(4,1fr)">${Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k, c]) => { const p = acharPeca(k); return p ? `<button ${abrirAttr(p)} aria-label="${esc(c.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>` : ''; }).join('')}</div>` : '<p class="section-sub">Nada curtido ainda. Toque em ♡ Curti nas peças que combinam com você.</p>'}
+    <div class="list">${rows.join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta ainda. Abra uma peça e toque em Alerta.</p>'}</div>
+    <h2 class="section-h">Curtidas</h2>
+    ${Object.keys(S.curtidas).length ? `<div class="rec-pics" style="grid-template-columns:repeat(4,1fr)">${Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k, c]) => { const p = acharPeca(k); return p ? `<button ${abrirAttr(p)} aria-label="${esc(c.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>` : ''; }).join('')}</div>` : telaVazia('salvosVazio')}
   </div>`;
 }
 
@@ -1317,10 +1538,10 @@ function viewPerfil() {
     <h2 class="section-h">Ofertas</h2>
     ${sw('withSuggested', 'Incluir marcas sugeridas', 'Sufgang, Disturb e outras recomendações', S.withSuggested)}
     <div class="field"><div class="range-val"><label for="notaMin">Nota mínima para destacar e avisar</label><span class="mono lbl">${S.notaMin}</span></div><input id="notaMin" type="range" min="40" max="90" step="5" value="${S.notaMin}"></div>
-    <h2 class="section-h">Seu estilo ♥</h2>
+    <h2 class="section-h">Seu estilo</h2>
     ${(() => {
       const e = estilo(), n = Object.keys(S.curtidas).length;
-      if (!n) return '<p class="section-sub">Curta peças (♡) para o Achei aprender seu estilo e trazer mais coisas parecidas.</p>';
+      if (!n) return '<p class="section-sub">Curta peças (no coração) para o Achei aprender seu estilo e trazer mais coisas parecidas.</p>';
       const top = (o, rot) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([k, v]) => `${rot(k)} (${v})`).join(', ');
       return `<p class="section-sub">${n} ${n > 1 ? 'peças curtidas' : 'peça curtida'}. Você curte mais: <b>${esc(top(e.kind, k => KIND_LABEL[k].toLowerCase()))}</b>, das marcas <b>${esc(top(e.marca, k => k))}</b>. Peças assim sobem no feed, e eu uso isso para escolher marcas novas e importados.</p>`;
     })()}
@@ -1334,7 +1555,7 @@ function viewPerfil() {
       if (st === 'bloqueado') return '<p class="section-sub">As notificações estão bloqueadas. No iPhone: Ajustes → Notificações → Achei → Permitir notificações.</p>';
       if (st === 'sem-suporte') return '<p class="section-sub">Este celular não aceita notificações de apps da web (no iPhone, precisa do iOS 16.4 ou mais novo).</p>';
       return `<p class="section-sub">Receba os avisos com o nome e o ícone do Achei. Ao tocar, abre o app direto na peça ou no Top.</p>
-        <button class="btn" data-push-ativar>🔔 Ativar notificações</button>
+        <button class="btn" data-push-ativar>${icone('alertas', 16)} Ativar notificações</button>
         ${S.canal ? '' : '<p class="section-sub" style="margin-top:6px">Precisa do seu canal (logo abaixo) preenchido, que é por onde o robô sabe para onde mandar.</p>'}`;
     })()}
 
@@ -1342,20 +1563,20 @@ function viewPerfil() {
     <p class="section-sub">Digite o mesmo canal que você assinou no app ntfy. Assim o robô sabe dos seus salvos, alertas de modelo e tamanhos.</p>
     <div class="field"><label for="canal">Seu canal do ntfy</label><input id="canal" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" value="${esc(S.canal)}" placeholder="garimpo-..." style="height:40px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 12px;font-size:16px"></div>
     ${S.canal ? `<p class="section-sub">${store.get('ultimoSyncEm') ? `Último envio: ${new Date(store.get('ultimoSyncEm')).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })}` : 'Ainda não enviado'} · <button class="btn ghost sm" style="height:auto;padding:0" data-sync>Enviar agora</button></p>` : ''}
-    ${S.canal ? (c => c === 'ok' ? '<div class="notice ok" style="margin-top:6px"><span>✓ <b>Canal confirmado:</b> é o mesmo que o robô usa.</span></div>'
-      : c === 'errado' ? '<div class="notice" style="margin-top:6px;border-left:3px solid var(--warn)"><span>⚠ <b>Este canal nunca recebeu nada do robô.</b> Confira letra por letra (o jeito mais seguro é copiar o nome no app ntfy e colar aqui).</span></div>'
+    ${S.canal ? (c => c === 'ok' ? '<div class="notice ok" style="margin-top:6px"><span><b>Canal confirmado:</b> é o mesmo que o robô usa.</span></div>'
+      : c === 'errado' ? '<div class="notice" style="margin-top:6px;border-left:3px solid var(--warn)"><span><b>Este canal nunca recebeu nada do robô.</b> Confira letra por letra (o jeito mais seguro é copiar o nome no app ntfy e colar aqui).</span></div>'
       : '<p class="section-sub">Conferindo o canal…</p>')(conferirCanal()) : ''}
     <h2 class="section-h">Peças que você não curtiu</h2>
     ${(() => {
       const gs = Object.entries(S.gruposOcultos).sort((x, y) => y[1].em - x[1].em);
-      if (!gs.length && !Object.keys(S.ocultas).length) return '<p class="section-sub">Nada escondido. Toque no ✕ da foto (ou "Não curti" na peça) para esconder ela e todas as iguais.</p>';
+      if (!gs.length && !Object.keys(S.ocultas).length) return '<p class="section-sub">Nada escondido. Toque no X da foto (ou "Não curti" na peça) para esconder ela e todas as iguais.</p>';
       const total = DATA.produtos.filter(escondida).length;
       return `<p class="section-sub">${total} ${total === 1 ? 'peça escondida' : 'peças escondidas'}. Toque num grupo para ele voltar.</p>
-        <div class="chips" style="flex-wrap:wrap">${gs.map(([g]) => `<button class="chip" data-voltargrupo="${esc(g)}">${esc(rotuloGrupo(g))} ↺</button>`).join('')}</div>
+        <div class="chips" style="flex-wrap:wrap">${gs.map(([g]) => `<button class="chip" data-voltargrupo="${esc(g)}">${esc(rotuloGrupo(g))} ${icone('voltar', 10)}</button>`).join('')}</div>
         <button class="btn tertiary sm" data-restaurar style="margin-top:8px">Mostrar tudo de novo</button>`;
     })()}
     <h2 class="section-h">Marcas dispensadas</h2>
-    ${S.dispensadas.length ? `<p class="section-sub">Não aparecem em Marcas novas nem nas Ofertas. Toque para trazer de volta.</p><div class="chips">${S.dispensadas.map(n => `<button class="chip" data-voltar="${esc(n)}">${esc(n)} ↺</button>`).join('')}</div>` : '<p class="section-sub">Nenhuma. Em Marcas novas, toque em "Dispensar marca" nas que não combinam com você.</p>'}
+    ${S.dispensadas.length ? `<p class="section-sub">Não aparecem em Marcas novas nem nas Ofertas. Toque para trazer de volta.</p><div class="chips">${S.dispensadas.map(n => `<button class="chip" data-voltar="${esc(n)}">${esc(n)} ${icone('voltar', 10)}</button>`).join('')}</div>` : '<p class="section-sub">Nenhuma. Em Marcas novas, toque em "Dispensar marca" nas que não combinam com você.</p>'}
     <h2 class="section-h">Como a nota é calculada</h2>
     <div class="notice"><span><b>Desconto</b> informado pela loja (até 45 pts), <b>preço comparado</b> à mediana de peças do mesmo tipo em todas as marcas (até 30) <b>histórico</b>: menor preço já registrado (até 15) e, quando a peça está em mais de uma loja, <b>comparação entre lojas</b> (até 25). O histórico começou em ${esc(DATA.atualizado.split(' ')[0])} e fica mais útil a cada atualização.</span></div>
     <h2 class="section-h">Ainda não disponível</h2>
@@ -1385,7 +1606,7 @@ function openAlerts() {
   const a = buildAlerts();
   showSheet(`<header class="hdr"><div class="wrap"><h1>Alertas</h1><button class="iconbtn" data-close aria-label="Fechar">${ICON.close}</button></div></header>
     <div class="wrap"><p class="section-sub" style="margin:16px 0 12px">Quedas de preço aparecem a partir da segunda atualização, quando há com o que comparar.</p>
-    <div class="list">${a.map(x => `<button class="row rowbtn" data-open="${esc(x.key)}"><span class="tag ${x.tag[0]}">${x.tag[1]}</span><div class="grow"><span class="t1">${esc(x.t)}</span></div></button>`).join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta no momento.</p>'}</div></div>`);
+    <div class="list">${a.map(x => `<button class="row rowbtn" data-open="${esc(x.key)}"><span class="tag ${x.tag[0]}">${x.tag[1]}</span><div class="grow"><span class="t1">${esc(x.t)}</span></div></button>`).join('') || telaVazia('semAlertas')}</div></div>`);
 }
 
 /* ---------- Detalhe ---------- */
@@ -1406,6 +1627,11 @@ function priceChart(h) {
   </svg>`;
 }
 
+// bloco que abre e fecha com "+" (página do produto)
+function sanfona(titulo, html, aberta = false) {
+  if (!html || !String(html).trim()) return '';
+  return `<div class="sanfona ${aberta ? 'aberta' : ''}"><button data-sanfona aria-expanded="${aberta}"><span>${esc(titulo)}</span><span class="mais">+</span></button><div class="conteudo">${html}</div></div>`;
+}
 function openDetail(key) {
   ATUAL = { fn: openDetail, args: [key] };
   const p = DATA.produtos.find(x => x.key === key); if (!p) return;
@@ -1432,7 +1658,7 @@ function openDetail(key) {
     </div>
     <div class="notice" style="background:var(--layer2)"><span>${e.intlDescartado ? `Não compensa importar: precisa sair ${S.minSave}% mais barato que no Brasil.` : brMin ? `Compensa: ${Math.round((1 - imp.price / brMin) * 100)}% mais barato que no Brasil.` : 'Não encontramos esta peça à venda no Brasil, então comparamos só com peças parecidas.'} Câmbio de ${esc(fmtDate(DATA.cambio?.data))}; frete e impostos são estimativas.</span></div></div>` : '';
   const lojasBlock = e.ok ? `<h3 class="section-h">Onde comprar${S.onlyMySize && p.group !== 'one' ? ' no seu tamanho' : ''}</h3>
-    <div class="list">${e.lojas.map((l, i) => `<div class="row"><div class="grow"><span class="t1">${esc(l.loja)} ${l.intl ? '<span class="tag t-intl">INTERNACIONAL</span> ' : ''}${i === 0 && e.lojas.length > 1 ? (e.lojas[1].price > l.price ? '<span class="tag t-ok">Mais barato</span>' : '<span class="tag t-gray">Mesmo preço</span>') : ''}</span>${l.de ? `<span class="t2 mono">de ${brl(l.de)}</span>` : ''}</div><span class="mono" style="font-size:15px">${brl(l.price)}</span><a class="btn ghost sm" href="${esc(l.url)}" target="_blank" rel="noopener">Abrir ↗</a></div>`).join('')}</div>` : '';
+    <div class="list">${e.lojas.map((l, i) => `<div class="row"><div class="grow"><span class="t1">${esc(l.loja)} ${l.intl ? '<span class="tag t-intl">INTERNACIONAL</span> ' : ''}${i === 0 && e.lojas.length > 1 ? (e.lojas[1].price > l.price ? '<span class="tag t-ok">Mais barato</span>' : '<span class="tag t-gray">Mesmo preço</span>') : ''}</span>${l.de ? `<span class="t2 mono">de ${brl(l.de)}</span>` : ''}</div><span class="mono" style="font-size:15px">${brl(l.price)}</span><a class="btn ghost sm" href="${esc(l.url)}" target="_blank" rel="noopener">Abrir ${icone('abrir', 12)}</a></div>`).join('')}</div>` : '';
   const histBlock = e.ok && e.hist.length > 1 ? `<div class="panel">${priceChart(e.hist)}</div>`
     : `<div class="notice"><span>O histórico deste item começou em ${esc(fmtDate(e.hist?.[0]?.[0]) || 'hoje')}. A cada atualização o gráfico ganha um ponto e a nota passa a considerar se é o menor preço já visto.</span></div>`;
   showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${esc(p.marca)}</h1></div></header>
@@ -1440,12 +1666,27 @@ function openDetail(key) {
     <div class="wrap">
       ${p.imagens.length > 1 ? `<div class="gallery-count">${p.imagens.length} fotos · deslize para o lado</div>` : ''}
       <div class="detail-head">
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="brand">${esc(p.marca)} · ${KIND_LABEL[p.kind]}</span><button class="btn ghost sm" data-ocultar="${esc(key)}" style="height:28px;padding:0 8px;color:var(--helper);border:1px solid var(--border)">✕ Não curti</button></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="brand">${esc(p.marca)} · ${KIND_LABEL[p.kind]}</span><button class="btn ghost sm" data-ocultar="${esc(key)}" style="height:28px;padding:0 8px;color:var(--helper);border:1px solid var(--border)">${icone('fechar', 12)} Não curti</button></div>
         <h2>${esc(p.titulo)}</h2>
         ${e.ok ? `<div class="bigprice"><span class="now mono">${brl(e.price)}</span>${e.de ? `<span class="was mono">${brl(e.de)}</span><span class="off mono">-${Math.round(e.off * 100)}%</span>` : ''}</div>` : '<p class="section-sub">Esgotado no seu tamanho</p>'}
       </div>
-      ${e.ok ? pagamentoHTML(e.lojas[0], e.price) : ''}
-      ${e.ok && e.justo ? (() => {
+      ${(() => {
+        // resumo em 3 selos: preço justo · nota (em vermelho) · histórico/queda
+        if (!e.ok) return '';
+        const selos = [];
+        if (e.justo) selos.push({ abaixo: 'Preço bom', media: 'Na média', acima: 'Acima do normal' }[e.justo.nivel]);
+        selos.push(`<b>Nota ${Math.max(1, Math.round(e.score / 10))}/10</b>`);
+        const lim = Date.now() - 30 * 864e5, h30 = (e.hist || []).filter(([d]) => new Date(d) >= lim).map(([, v]) => v);
+        const b = baixouRecente(e);
+        if (h30.length > 1 && e.price <= Math.min(...h30)) selos.push('Menor em 30 dias');
+        else if (b) selos.push(`Baixou ${brl(b.antes - e.price)}`);
+        else if (e.off > 0) selos.push(`-${Math.round(e.off * 100)}%`);
+        return `<div class="resumo">${selos.map(t => `<span class="selo">${t}</span>`).join('')}</div>`;
+      })()}
+      <div class="lbl" style="margin-bottom:8px">Tamanhos${p.group !== 'one' ? ' · marcado = seu tamanho' : ''}</div>
+      <div class="sizes">${sizes}</div>
+      ${sanfona('Pagamento e entrega', e.ok ? pagamentoHTML(e.lojas[0], e.price) : '', true)}
+      ${sanfona('Preço justo', e.ok && e.justo ? (() => {
         const j = e.justo, pct = Math.round(Math.abs(j.dif) * 100);
         const rotulo = { abaixo: ['t-ok', 'Preço bom'], media: ['t-gray', 'Preço na média'], acima: ['t-sale', 'Acima do normal'] }[j.nivel];
         const frase = j.nivel === 'media' ? 'está na média' : `está ${pct}% ${j.nivel === 'abaixo' ? 'abaixo' : 'acima'} disso`;
@@ -1454,15 +1695,13 @@ function openDetail(key) {
           <div class="justo-scale"><span></span><span></span><span></span><i style="left:${pos}%"></i></div>
           <div class="justo-legend"><span>Abaixo</span><span>Na média</span><span>Acima</span></div>
           <span class="t2" style="color:var(--fg2);font-size:13px">${esc(KIND_LABEL[p.kind])} da ${esc(p.marca)} estão saindo, em média, por <b class="mono">${brl(Math.round(j.preco))}</b> (${j.n} peças à venda agora). Esta, a ${brl(e.price)}, ${frase}.</span></div>`;
-      })() : ''}
-      <div class="lbl" style="margin-bottom:8px">Tamanhos${p.group !== 'one' ? ' · verde = seu tamanho' : ''}</div>
-      <div class="sizes">${sizes}</div>
-      ${e.ok ? `<h3 class="section-h">Nota de Oferta</h3><div class="panel">
+      })() : '')}
+      ${sanfona('Nota de oferta', e.ok ? `<h3 class="section-h">Nota de Oferta</h3><div class="panel">
         <div class="range-val"><span class="t2" style="color:var(--helper);font-size:12px">${e.temHist ? 'Com histórico' : 'Sem histórico ainda'} · calculada sobre ${e.max} pontos</span><span class="mono" style="font-size:24px;color:${e.score >= S.notaMin ? 'var(--good)' : 'var(--fg)'}">${e.score}<span style="font-size:13px;color:var(--helper)">/100</span></span></div>
         ${bars.map(b => `<div class="bar-row"><span>${b[0]}</span><span class="mono" style="color:var(--helper)">${Math.round(b[1])}/${b[2]}</span><span class="meter ${b[1] / b[2] > .6 ? 'hi' : ''}"><i style="width:${(b[1] / b[2]) * 100}%"></i></span></div>`).join('')}
-      </div>` : ''}
-      ${lojasBlock}
-      ${(() => {
+      </div>` : '')}
+      ${sanfona('Onde comprar', lojasBlock, true)}
+      ${sanfona('Mesmo modelo em outras lojas', (() => {
         // o mesmo modelo vendido em outras lojas (outras cores entram juntas)
         const chave = modeloChave(p);
         if (!chave) return '';
@@ -1475,19 +1714,17 @@ function openDetail(key) {
             <div class="grow"><span class="t1">${esc(x.loja)} ${seloLoja(L, i)}</span>
               <span class="t2">${x.n} ${x.n > 1 ? 'cores/opções' : 'opção'}${x.tam.size ? ` · seus tamanhos: ${tamTxt(x.tam)}` : ''}</span></div>
             <span class="mono" style="font-size:15px">${brl(x.min)}</span></button>`).join('')}</div>`;
-      })()}
-      ${intlBlock}
-      <h3 class="section-h">Histórico de preço</h3>
-      ${histBlock}
-      ${miniLook(p)}
-      <div class="acoes3">
-        <button class="btn ${saved ? '' : 'tertiary'}" data-save="${esc(key)}" aria-pressed="${saved}">${saved ? '🔔 Alerta ligado' : '🔔 Alerta'}</button>
-        <button class="btn ${curti ? '' : 'tertiary'}" data-curti="${esc(key)}" aria-pressed="${curti}" style="${curti ? 'background:var(--bad)' : ''}">${curti ? '♥ Curtido' : '♡ Curti'}</button>
-        <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener">${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato ↗' : 'Ver na loja ↗'}</a>
-      </div>
-      <button class="btn ${S.carrinho[key] ? '' : 'tertiary'}" data-carrinho="${esc(key)}" style="width:100%;justify-content:center;margin-top:1px">${S.carrinho[key] ? '✓ Na simulação de compra (tirar)' : '🛒 Simular compra'}</button>
-      <p class="section-sub" style="margin-top:8px">🔔 avisa quando o preço sair do comum. ♡ ensina o Achei a trazer mais peças e marcas assim.</p>
-      <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">✕ Não curti: esconder esta e as iguais</button>
+      })())}
+      ${sanfona('Importar', intlBlock)}
+      ${sanfona('Histórico de preço', histBlock)}
+      ${sanfona('Combinar', miniLook(p))}
+      <button class="btn tertiary" data-ocultar="${esc(key)}" style="margin:16px 0 8px">Não curti: esconder esta e as iguais</button>
+    </div>
+    <div class="barra-fixa">
+      <button class="barra-ic ${saved ? 'ativo' : ''}" data-save="${esc(key)}" aria-pressed="${saved}" aria-label="${saved ? 'Alerta ligado' : 'Ligar alerta'}">${icone('alertas', 24)}<span>Alerta</span></button>
+      <button class="barra-ic ${curti ? 'ativo' : ''}" data-curti="${esc(key)}" aria-pressed="${curti}" aria-label="${curti ? 'Curtido' : 'Curtir'}">${icone('salvos', 24, { cheio: curti })}<span>Curtir</span></button>
+      <button class="barra-ic ${S.carrinho[key] ? 'ativo' : ''}" data-carrinho="${esc(key)}" aria-label="Simular compra">${icone('simular', 24)}<span>Simular</span></button>
+      <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener"><span>${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato' : 'Ver na loja'}</span></a>
     </div>`);
 }
 
@@ -1554,7 +1791,7 @@ function render(keepFocus) {
   const caret = active === 'q' ? document.activeElement.selectionStart : null;
   document.getElementById('app').innerHTML = VIEWS[S.tab]();
   if (S.tab === 'marcas') store.set('novasVistas', ultimaLeva());
-  document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${ICON[k]}<span>${l}</span>${k === 'marcas' && temNovidade() ? '<i class="navdot"></i>' : ''}</button>`).join('');
+  document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${S.tab === k ? `<i class="marca-ativa">${contornoTorto('#D7261E', 2)}</i>` : ''}${ICON[k]}<span>${l}</span>${k === 'marcas' && temNovidade() ? '<i class="navdot"></i>' : ''}</button>`).join('');
   if (active) { const el = document.getElementById(active); if (el) { el.focus(); if (caret !== null) el.setSelectionRange(caret, caret); } }
   persist();
   if (BOAS_ABERTA) abrirBoasVindas();
@@ -1567,6 +1804,8 @@ document.addEventListener('click', ev => {
   else if (d.cat) { S.cat = d.cat; S.limit = 40; render(); }
   else if (d.qkind) { S.qKind = d.qkind; S.limit = 40; render(); }
   else if ('more' in d) { S.limit += 40; render(); }
+  else if (d.recarregar !== undefined) location.reload();
+  else if (d.sanfona !== undefined) { const sf = b.closest('.sanfona'); sf.classList.toggle('aberta'); b.setAttribute('aria-expanded', sf.classList.contains('aberta')); }
   else if (d.open) { navegar(openDetail, d.open); }
   else if ('alerts' in d) { openAlerts(); }
   else if ('close' in d) { voltar(); }
@@ -1606,7 +1845,7 @@ document.addEventListener('click', ev => {
     persist();
     // na tela da peça, redesenha a peça; na lista, só troca o coração (sem reordenar o feed debaixo do dedo)
     if (!document.getElementById('sheet').hidden) { const y = document.getElementById('sheet').scrollTop; p.ff ? abrirImportado(p.ffi) : openDetail(k); document.getElementById('sheet').scrollTop = y; }
-    else document.querySelectorAll(`.heart[data-curti="${CSS.escape(k)}"]`).forEach(h => { const on = !!S.curtidas[k]; h.classList.toggle('on', on); h.textContent = on ? '♥' : '♡'; h.setAttribute('aria-pressed', on); h.setAttribute('aria-label', on ? 'Remover curtida' : 'Curtir'); });
+    else document.querySelectorAll(`.heart[data-curti="${CSS.escape(k)}"]`).forEach(h => { const on = !!S.curtidas[k]; h.classList.toggle('on', on); h.innerHTML = icone('salvos', 20, { cheio: on }); requestAnimationFrame(() => tremer(h)); h.setAttribute('aria-pressed', on); h.setAttribute('aria-label', on ? 'Remover curtida' : 'Curtir'); });
   }
   else if (d.unsave) { delete S.saved[d.unsave]; render(); }
   else if (d.follow) {
@@ -1698,6 +1937,52 @@ document.addEventListener('submit', ev => {
   render(); toast(S.canal ? `Alerta criado: ${texto} até ${brl(max)}` : 'Alerta criado. Informe seu canal no Perfil para receber no celular.');
 });
 
+document.body.insertAdjacentHTML('afterbegin', FILTROS_SVG);   // linha tremida dos ícones e contornos
+// todo botão secundário, chip, tamanho e selo ganha o contorno torto; interruptores ganham o trilho torto
+function decorar(raiz = document) {
+  raiz.querySelectorAll('.btn.tertiary:not([data-dec]), .chip:not([data-dec]), .size:not([data-dec]), .selo:not([data-dec]), .mg-seguindo:not([data-dec])').forEach(el => {
+    el.dataset.dec = 1;
+    const ver = el.classList.contains('chip') || el.classList.contains('size');
+    el.insertAdjacentHTML('afterbegin', `<i class="contorno">${contornoTorto(ver ? '#D7261E' : 'currentColor', ver ? 2 : 1.8)}</i>`);
+  });
+  raiz.querySelectorAll('.switch:not([data-dec])').forEach(el => { el.dataset.dec = 1; el.innerHTML = interruptor(); });
+}
+// ---------- animação a cada toque ----------
+// quase todo toque redesenha a tela na hora; então o app lembra o botão tocado e anima o botão novo que entra no lugar
+let ULTIMO_TOQUE = null;
+function seletorDe(el) {
+  const ds = Object.entries(el.dataset).filter(([k]) => k !== 'dec');
+  if (!ds.length) return null;
+  return el.tagName.toLowerCase() + ds.map(([k, v]) => `[data-${k.replace(/[A-Z]/g, c => '-' + c.toLowerCase())}="${CSS.escape(v)}"]`).join('');
+}
+function reiniciar(el, cls) { el.classList.remove(cls); void el.getBoundingClientRect(); el.classList.add(cls); setTimeout(() => el.classList.remove(cls), 700); }
+function animarToque(el) {
+  if (!el || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  tremer(el);                                                                // tremida + linha "fervendo"
+  if (el.matches('.btn:not(.tertiary):not(.ghost)')) reiniciar(el, 'toque'); // pincelada se pinta da esquerda p/ direita
+  if (el.matches('.chip, .size, .btn.tertiary, .selo')) reiniciar(el, 'desenhando'); // quadrado/contorno torto se desenha
+  if (el.matches('.nav button')) { const m = el.querySelector('.marca-ativa'); if (m) reiniciar(m, 'desenhando'); }
+}
+new MutationObserver(() => {
+  decorar();
+  if (ULTIMO_TOQUE && Date.now() - ULTIMO_TOQUE.t < 800 && ULTIMO_TOQUE.sel) {
+    const novo = document.querySelector(ULTIMO_TOQUE.sel);
+    if (novo && novo !== ULTIMO_TOQUE.el && novo.isConnected) { ULTIMO_TOQUE = null; requestAnimationFrame(() => animarToque(novo)); }
+  }
+}).observe(document.body, { childList: true, subtree: true });
+// botões que abrem ou fecham uma tela (coroa, sino, setinhas de voltar): a tela nova cobriria o ícone na hora,
+// então primeiro ele anima e só depois a ação acontece
+const ANIMA_ANTES = '[data-top10], [data-alerts], [data-close], .hdr .iconbtn, [data-look], [data-lookcarrinho]';
+document.addEventListener('click', ev => {
+  const el = ev.target.closest('button, a'); if (!el) return;
+  if (el.__liberado) { el.__liberado = false; return; }   // 2º clique (o de verdade), depois da animação
+  ULTIMO_TOQUE = { el, sel: seletorDe(el), t: Date.now() };
+  animarToque(el);
+  if (el.matches(ANIMA_ANTES) && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    ev.preventDefault(); ev.stopImmediatePropagation();
+    setTimeout(() => { el.__liberado = true; el.click(); }, 320);
+  }
+}, true);
 aplicarTema();
 prefereClaro?.addEventListener?.('change', () => { if (S.tema === 'auto') aplicarTema(); });
 // links das notificações: #produto=<chave> abre a peça; #top10 abre o Top 10 da semana
@@ -1708,14 +1993,17 @@ function abrirPorLink() {
   else return;
   history.replaceState(null, '', location.pathname);
 }
+document.getElementById('app').innerHTML = telaCarregando();
+abertura();
 load().then(() => {
+  clearInterval(FERVER);
   render();
   // link de notificação: abre a peça direto
   abrirPorLink();
   addEventListener('hashchange', abrirPorLink);
   if (PRIMEIRA_VEZ && document.getElementById('sheet').hidden) abrirBoasVindas();
 }).catch(err => {
-  document.getElementById('app').innerHTML = `<p class="loading">Não consegui carregar os dados (${esc(err.message)}).<br>Rode <code>./atualizar.sh</code> e abra pelo <code>./servidor.sh</code>.</p>`;
+  clearInterval(FERVER); document.getElementById('app').innerHTML = telaVazia('semConexao') + `<p class="loading" style="display:none">${esc(err.message)}</p>`;
 });
 </script>
 </body>
