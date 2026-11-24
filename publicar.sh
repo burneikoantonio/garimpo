@@ -10,7 +10,7 @@ TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
 
 # o celular sempre baixa a versão nova das regras (evita cópia antiga em cache)
-sed -i "" -E "s/core\.js\?v=[0-9]+/core.js?v=$(date +%s)/" app/index.html
+for f in app/index.html app/novo/index.html; do [ -f "$f" ] && sed -i "" -E "s/core\.js\?v=[0-9]+/core.js?v=$(date +%s)/" "$f"; done
 
 base=$($GH api "repos/$REPO/git/ref/heads/main" --jq .object.sha)
 base_tree=$($GH api "repos/$REPO/git/commits/$base" --jq .tree.sha)

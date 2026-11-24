@@ -1,0 +1,153 @@
+/* =========================================================
+   ACHEI — novo visual (tokens + componentes)
+   Substitui o tema IBM/Carbon atual. Fontes (Google Fonts, licença OFL):
+   <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Lacquer&display=swap" rel="stylesheet">
+   ========================================================= */
+
+/* ---------- 1. CORES ---------- */
+:root {                         /* TEMA ESCURO = padrão */
+  --asfalto:  #0d0d0d;          /* fundo do app */
+  --grafite:  #1c1c1c;          /* barras, divisórias, cards de lista */
+  --concreto: #3a3a3a;          /* bordas inativas, hachuras */
+  --poeira:   #8a8a8a;          /* texto secundário, preço antigo */
+  --giz:      #f2f2f2;          /* texto principal, traço dos ícones */
+  --vitrine:  #d9d9d6;          /* fundo das fotos (roupa preta aparece) */
+  --spray:    #D7261E;          /* ÚNICA cor de destaque */
+
+  --bg: var(--asfalto);
+  --fg: var(--giz);
+  --fg2: #bdbdbd;
+  --muted: var(--poeira);
+  --line: var(--grafite);
+  --photo: var(--vitrine);
+  --accent: var(--spray);
+  --on-accent: #ffffff;
+
+  --font-tag: "Sedgwick Ave Display", cursive;   /* títulos, logo */
+  --font: "Lacquer", "Marker Felt", cursive;     /* TODO o resto do app */
+  --nav-h: 64px;
+}
+:root[data-tema="claro"] {      /* TEMA CLARO = opcional */
+  --bg: #ffffff;
+  --fg: #0d0d0d;
+  --fg2: #3a3a3a;
+  --muted: #6b6b6b;
+  --line: #e6e6e6;
+  --photo: #ececea;
+}
+
+/* ---------- 2. TIPOGRAFIA ---------- */
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font);
+  font-size: 13px;               /* "6 ajustada": menor que o normal e mais junta */
+  letter-spacing: -0.03em;
+  line-height: 1.4;
+}
+.t-desc  { font-size: 11px; color: var(--fg2); }  /* nunca abaixo de 11px: o spray embola */
+.t-marca { font-size: 10px; color: var(--muted); }
+.t-preco { font-size: 17px; letter-spacing: 0; }
+.t-antigo{ font-size: 11px; color: var(--muted); text-decoration: line-through; }
+
+/* Título em tag (A + D): texto + sombra vermelha deslocada.
+   Uso: <h1 class="tag" data-t="Importados"><span>Importados</span></h1> */
+.tag {
+  font-family: var(--font-tag); font-weight: 400; letter-spacing: 0;
+  position: relative; display: inline-block; white-space: nowrap;
+  transform: rotate(-5deg); margin: 4px 0 6px 4px;
+}
+.tag::before { content: attr(data-t); position: absolute; left: 3px; top: 3px; color: var(--spray); }
+.tag > span { position: relative; }
+
+/* ---------- 3. ETIQUETA (desconto / baixou) — SEMPRE vermelha ---------- */
+.etiqueta {
+  position: absolute; top: 6px; left: -4px; z-index: 2;
+  background: var(--spray); color: #fff;
+  font-size: 12px; padding: 1px 6px; transform: rotate(-4deg);
+}
+/* regra: se tiver desconto e queda ao mesmo tempo, mostrar só o desconto */
+
+/* ---------- 4. BOTÃO PRINCIPAL — "Pincelada" ---------- */
+.btn-pincel { position: relative; background: none; border: 0; color: #fff; font: inherit; font-size: 15px; padding: 6px 16px; cursor: pointer; }
+.btn-pincel::before {
+  content: ""; position: absolute; left: -6px; right: -6px; top: 14%; bottom: 6%;
+  background: var(--spray);
+  transform: skewX(-14deg) rotate(-2deg);
+  clip-path: polygon(0 18%, 4% 0, 100% 8%, 97% 100%, 2% 88%);
+}
+.btn-pincel > span { position: relative; }
+.btn-pincel:active::before, .btn-pincel.toque::before { animation: pincelar .4s ease-out; transform-origin: left; }
+@keyframes pincelar { from { transform: skewX(-14deg) rotate(-2deg) scaleX(0); } to { transform: skewX(-14deg) rotate(-2deg) scaleX(1); } }
+
+/* ---------- 5. BOTÃO SECUNDÁRIO — contorno torto branco, vira vermelho ao clicar ----------
+   O contorno é um SVG (ver icones-achei.js → contornoTorto()). Todos brancos (inclusive Remover/Limpar).
+   Ao tocar: traço fica vermelho e pisca de volta. "Seguindo" fica vermelho permanente. */
+.btn-sec { position: relative; background: none; border: 0; color: var(--fg); font: inherit; font-size: 13px; padding: 5px 12px; cursor: pointer; }
+.btn-sec > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.btn-sec > svg path { stroke: var(--fg); transition: stroke .15s; }
+.btn-sec.ativo > svg path, .btn-sec:active > svg path { stroke: var(--spray); }
+.btn-sec > span { position: relative; }
+
+/* ---------- 6. CHIPS e TAMANHOS — "quadrado torto" no selecionado ---------- */
+.chip { position: relative; background: none; border: 0; font: inherit; font-size: 13px; color: var(--muted); padding: 4px 9px; cursor: pointer; }
+.chip[aria-pressed="true"] { color: var(--fg); }
+.chip > svg { position: absolute; inset: -3px -6px; width: calc(100% + 12px); height: calc(100% + 6px); overflow: visible; pointer-events: none; }
+.chip > svg path { stroke: var(--spray); stroke-dasharray: 260; stroke-dashoffset: 260; transition: stroke-dashoffset .4s ease-out; }
+.chip[aria-pressed="true"] > svg path { stroke-dashoffset: 0; }
+.chip > span { position: relative; }
+
+/* ---------- 7. INTERRUPTOR — trilho torto + caixinha que desliza ---------- */
+.switch { background: none; border: 0; padding: 0; cursor: pointer; width: 44px; height: 24px; }
+.switch svg { overflow: visible; display: block; }
+.switch .trilho { stroke: var(--fg); transition: stroke .2s; }
+.switch[aria-checked="true"] .trilho { stroke: var(--spray); }
+.switch .caixa { fill: var(--fg); transition: transform .25s cubic-bezier(.3,1.5,.5,1); }
+.switch[aria-checked="true"] .caixa { transform: translateX(18px); }
+
+/* ---------- 8. BARRA DE NAVEGAÇÃO — ícone + nome, quadrado torto na ativa ---------- */
+.nav { display: flex; justify-content: space-around; background: var(--bg); border-top: 1px solid var(--line); height: var(--nav-h); }
+.nav button { position: relative; background: none; border: 0; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 6px 8px; min-width: 54px; color: var(--muted); font: inherit; font-size: 11px; }
+.nav button .ic { opacity: .45; }
+.nav button[aria-current="page"] { color: var(--fg); }
+.nav button[aria-current="page"] .ic { opacity: 1; }
+/* quadrado torto da aba ativa = mesmo SVG dos chips */
+
+/* ---------- 9. CARD DE PRODUTO — info na faixa preta SOBRE a foto ---------- */
+.card { position: relative; }
+.card .foto { position: relative; aspect-ratio: 3 / 4.4; background: var(--photo); overflow: hidden; }
+.card .foto img { width: 100%; height: 100%; object-fit: contain; }
+.card .faixa {
+  position: absolute; left: 6px; right: 6px; bottom: 6px;
+  background: var(--asfalto); color: var(--giz);   /* faixa sempre preta, nos dois temas */
+  padding: 5px 7px; transform: rotate(-1.5deg);
+}
+/* faixa: marca · nome · (preço antigo riscado) preço. Loja e histórico só na página do produto. */
+.card .curtir { position: absolute; top: 6px; right: 6px; z-index: 2; }
+
+/* ---------- 10. PÁGINA DO PRODUTO ---------- */
+.resumo { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }  /* 3 selos com quadrado torto */
+.sanfona { border-top: 1px solid var(--line); padding: 10px 0; }
+.sanfona > button { width: 100%; display: flex; justify-content: space-between; background: none; border: 0; color: var(--fg); font: inherit; font-size: 14px; padding: 0; }
+.sanfona .mais { transition: transform .2s; }
+.sanfona.aberta .mais { transform: rotate(45deg); }
+.sanfona .conteudo { display: none; margin-top: 8px; }
+.sanfona.aberta .conteudo { display: block; }
+.barra-fixa { position: sticky; bottom: 0; background: var(--bg); border-top: 1px solid var(--line); padding: 10px 12px 14px; display: flex; align-items: center; gap: 12px; }
+.barra-fixa .btn-pincel { flex: 1; }
+
+/* ---------- 11. ANIMAÇÕES ---------- */
+/* tremida ao tocar: ícones, botões, coração */
+.tremer { animation: tremer .5s ease-out; }
+@keyframes tremer {
+  20% { transform: rotate(-9deg) scale(1.15); }
+  45% { transform: rotate(7deg) scale(1.08); }
+  70% { transform: rotate(-4deg); }
+}
+/* desenhar traço (carregamento, telas vazias, chips) */
+.desenhar path { stroke-dasharray: 120; animation: desenhar 1.8s ease-in-out infinite; }
+@keyframes desenhar { 0% { stroke-dashoffset: 120; } 55%, 85% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+
+/* acessibilidade: com "reduzir movimento" ligado, nada anima */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

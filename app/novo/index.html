@@ -1,0 +1,1786 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<base href="../">  <!-- versão de teste do visual novo: usa os dados e arquivos do app principal -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Achei">
+<meta name="theme-color" content="#161616">
+<link rel="manifest" href="manifest.webmanifest?v=2">
+<link rel="apple-touch-icon" href="achei-180.png">
+<link rel="icon" type="image/png" href="achei-192.png">
+<title>Achei</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Lacquer&display=swap">
+<style>
+/* Carbon g100: coluna de celular, cabeçalho fixo, grade de 2 colunas, barra de abas inferior */
+:root {
+  color-scheme: dark;
+  --bg: #161616; --layer: #262626; --layer2: #393939;
+  --border: #393939; --border-strong: #6f6f6f;
+  --fg: #f4f4f4; --fg2: #c6c6c6; --helper: #a8a8a8;
+  --accent: #0f62fe; --accent-hover: #0353e9; --accent-fg: #ffffff; --chart: #78a9ff; --chart-fill: #0f62fe; --c-produto: #378ADD; --link: #78a9ff; --good: #42be65; --warn: #f1c21b; --bad: #fa4d56;
+  --sale-bg: #a2191f; --sale-fg: #ffd7d9; --new-bg: #0043ce; --new-fg: #d0e2ff;
+  --ok-bg: #044317; --ok-fg: #a7f0ba; --sug-bg: #491d8b; --sug-fg: #e8daff;
+  --font: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", Menlo, "Courier New", monospace;
+  --photo: #e8e6e1;   /* vitrine clara: fundo das fotos no tema escuro */
+  --col: 480px; --nav-h: 56px;
+}
+/* tema claro (Carbon White) */
+:root[data-tema="claro"] {
+  color-scheme: light;
+  --bg: #ffffff; --layer: #f4f4f4; --layer2: #e0e0e0;
+  --border: #e0e0e0; --border-strong: #8d8d8d;
+  --fg: #161616; --fg2: #525252; --helper: #6f6f6f;
+  --accent: #161616; --accent-hover: #393939; --accent-fg: #ffffff; --chart: #161616; --chart-fill: #161616; --c-produto: #161616;
+  --link: #161616; --good: #198038; --warn: #8e6a00; --bad: #da1e28;
+  --sale-bg: #ffd7d9; --sale-fg: #a2191f; --new-bg: #161616; --new-fg: #ffffff;
+  --ok-bg: #a7f0ba; --ok-fg: #044317; --sug-bg: #e8daff; --sug-fg: #491d8b;
+  --photo: #f4f4f4;
+}
+:root[data-tema="claro"] .marca-app img { filter: none; mix-blend-mode: multiply; }
+/* tema escuro: cada foto vira um quadro claro com cantos arredondados */
+:root:not([data-tema="claro"]) .tile .ph { margin: 6px 6px 0; width: auto; border-radius: 6px; }
+:root:not([data-tema="claro"]) .vitrine button, :root:not([data-tema="claro"]) .thumb, :root:not([data-tema="claro"]) .rec-pics button { border-radius: 6px; }
+/* o branco das fotos se mistura ao fundo do quadro */
+.ph img, .gallery img, .thumb img, .vitrine img, .rec-pics img { mix-blend-mode: multiply; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--fg); }
+body { font-family: var(--font); font-size: 14px; line-height: 1.43; letter-spacing: .16px; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+button, input, select { font: inherit; color: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--fg); outline-offset: -2px; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+.app { max-width: var(--col); margin: 0 auto; min-height: 100vh; border-inline: 1px solid var(--border); padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 24px); }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+.hdr { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--border); }
+.hdr .wrap { display: flex; align-items: center; gap: 12px; min-height: 48px; padding-block: 8px; }
+.hdr h1 { font-size: 20px; font-weight: 400; margin: 0; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hdr h1 b { font-weight: 600; }
+.marca-app { display: inline-flex; align-items: center; gap: 8px; }
+.marca-app img { width: 28px; height: 28px; filter: invert(1); mix-blend-mode: screen; }
+.iconbtn { width: 40px; height: 40px; display: grid; place-items: center; background: none; border: 0; position: relative; flex: none; }
+.iconbtn:hover { background: var(--layer); }
+.iconbtn svg { width: 20px; height: 20px; fill: none; stroke: var(--fg); stroke-width: 1.5; }
+.dot { position: absolute; top: 8px; right: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
+
+.intro { padding-block: 16px 12px; display: grid; gap: 2px; }
+.intro p { margin: 0; color: var(--helper); font-size: 12px; letter-spacing: .32px; }
+
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-block: 4px 12px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; height: 32px; padding: 0 16px; border: 1px solid var(--border-strong); background: transparent; border-radius: 16px; font-size: 13px; white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.ff { background: var(--layer); padding-block: 12px 0; margin-bottom: 12px; border-block: 1px solid var(--border); }
+.ff-h { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 8px; }
+.ff-t { font-size: 13px; font-weight: 600; letter-spacing: .32px; text-transform: uppercase; }
+.ff-h .t2 { font-size: 11px; color: var(--helper); }
+.ordem { display: flex; align-items: center; justify-content: flex-end; gap: 8px; padding-bottom: 12px; }
+.busca { display: grid; gap: 4px; padding-top: 8px; }
+.busca .search { margin-block: 4px 0; }
+.busca-acoes { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.busca-acoes .ordem { margin-left: auto; padding-bottom: 0; }
+.filtros { display: grid; gap: 4px; background: var(--layer); padding: 12px; margin-top: 4px; }
+.filtros .field select { background: var(--bg); }
+.comparador { margin-block: 8px 4px; }
+.comparador .rowbtn { padding-inline: 0; }
+.ordem label { font-size: 12px; color: var(--helper); }
+.ordem select { height: 32px; background: var(--layer); border: 0; border-bottom: 1px solid var(--border-strong); padding: 0 8px; font-size: 14px; max-width: 70%; }
+.ff-chip { display: inline-flex; align-items: center; text-decoration: none; color: var(--fg); background: var(--bg); }
+.acoes3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; margin-top: 16px; }
+.conv { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.conv .panel { gap: 2px; padding: 12px; }
+.barra { display: flex; height: 14px; overflow: hidden; border-radius: 4px; }
+.barra i { display: block; height: 100%; }
+.nota { display: grid; margin-top: 10px; font-size: 13px; }
+.nota > div { display: grid; grid-template-columns: 1fr auto 44px; gap: 8px; padding-block: 7px; border-bottom: 1px solid var(--border); align-items: center; }
+.nota > div > span:first-child { display: flex; align-items: center; gap: 8px; }
+.nota i { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+.nota .pct { color: var(--helper); text-align: right; font-size: 12px; }
+.nota .tot { font-weight: 600; border-bottom: 1px solid var(--border-strong); }
+.nota .imp { color: var(--fg); background: var(--layer); padding-inline: 8px; border-bottom: 0; }
+.acoes3 .btn { height: 52px; padding: 0 10px; justify-content: center; font-size: 13px; text-align: center; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-block: 1px solid var(--border); }
+.tile { background: var(--bg); border: 0; padding: 0; text-align: left; display: flex; flex-direction: column; min-width: 0; }
+.tile:hover { background: var(--layer); }
+.tilewrap { position: relative; display: flex; min-width: 0; background: var(--bg); }
+.tilewrap > .tile { flex: 1; }
+.heart { position: absolute; top: 6px; right: 6px; z-index: 2; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(22, 22, 22, .55); color: #fff; font-size: 19px; line-height: 1; display: grid; place-items: center; }
+.heart.on { background: var(--bad); }
+.naocurti { position: absolute; top: 48px; right: 6px; z-index: 2; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(22, 22, 22, .55); color: #fff; font-size: 15px; line-height: 1; display: grid; place-items: center; }
+.toast:has(.toast-btn) { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.toast-btn { background: none; border: 0; color: inherit; font-weight: 600; text-decoration: underline; padding: 4px 0; flex: none; }
+.ph { aspect-ratio: 4 / 5; width: 100%; max-width: 100%; position: relative; background: var(--photo); overflow: hidden; }
+.ph img { width: 100%; height: 100%; object-fit: cover; }
+.ph .tags { position: absolute; left: 8px; top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+.tile .body { padding: 10px 12px 16px; display: grid; gap: 2px; min-width: 0; }
+.brand { font-size: 11px; letter-spacing: .32px; color: var(--helper); text-transform: uppercase; }
+.pname { font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.8em; }
+.prices { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.was { font-size: 11px; color: var(--helper); text-decoration: line-through; }
+.now { font-size: 15px; font-weight: 500; }
+.off { font-size: 11px; color: var(--good); }
+.scoreline { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+.meter { flex: 1; height: 4px; background: var(--layer2); position: relative; }
+.meter i { position: absolute; inset: 0 auto 0 0; background: var(--fg2); }
+.meter.hi i { background: var(--good); }
+.score { font-size: 11px; }
+
+.tag { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; border-radius: 10px; font-size: 11px; font-weight: 500; letter-spacing: .32px; white-space: nowrap; }
+.t-sale { background: var(--sale-bg); color: var(--sale-fg); }
+.t-new { background: var(--new-bg); color: var(--new-fg); }
+.t-ok { background: var(--ok-bg); color: var(--ok-fg); }
+.t-sug { background: var(--sug-bg); color: var(--sug-fg); }
+.t-gray { background: var(--layer2); color: var(--fg2); }
+.t-intl { background: var(--sug-bg); color: var(--sug-fg); }
+.justo { margin-bottom: 16px; }
+.justo-scale { position: relative; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; height: 6px; }
+.justo-scale span:nth-child(1) { background: var(--good); }
+.justo-scale span:nth-child(2) { background: var(--layer2); }
+.justo-scale span:nth-child(3) { background: var(--bad); }
+.justo-scale i { position: absolute; top: -5px; width: 4px; height: 16px; background: var(--fg); transform: translateX(-50%); }
+.justo-legend { display: grid; grid-template-columns: 1fr 1fr 1fr; font-size: 11px; color: var(--helper); }
+.justo-legend span:nth-child(2) { text-align: center; }
+.justo-legend span:nth-child(3) { text-align: right; }
+.breakdown { display: grid; gap: 6px; font-size: 13px; }
+.breakdown div { display: flex; justify-content: space-between; gap: 12px; }
+.breakdown .mono { white-space: nowrap; }
+.breakdown .tot { border-top: 1px solid var(--border-strong); padding-top: 8px; font-weight: 600; }
+
+.more { display: flex; justify-content: center; padding-block: 16px; }
+.note { padding-block: 16px; color: var(--helper); font-size: 12px; display: grid; gap: 4px; }
+
+.section-h { font-size: 14px; font-weight: 600; margin: 0; padding-block: 24px 8px; }
+.section-sub { color: var(--helper); font-size: 12px; margin: -4px 0 8px; }
+.list { border-top: 1px solid var(--border); }
+.row { display: flex; gap: 12px; align-items: center; padding-block: 12px; border-bottom: 1px solid var(--border); min-width: 0; }
+.row .grow { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.row .t1 { font-size: 14px; }
+.row .t2 { font-size: 12px; color: var(--helper); }
+.thumb { width: 64px; height: 80px; flex: none; background: var(--photo); border: 0; padding: 0; overflow: hidden; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.logo { flex: none; width: 44px; height: 44px; border-radius: 50%; background: #fff; display: grid; place-items: center; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+.logo img { width: 64%; height: 64%; object-fit: contain; }
+.logo.escuro { background: #161616; }
+.logo.txt { background: var(--fg); color: var(--bg); font-weight: 600; font-size: 11px; letter-spacing: .5px; text-transform: uppercase; text-align: center; line-height: 1.1; padding: 4px; }
+.logo.md { width: 52px; height: 52px; }
+.logo.lg { width: 64px; height: 64px; }
+.logo.lg.txt { font-size: 12px; }
+.marcas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
+.mg-card { position: relative; background: var(--layer); border-radius: 10px; }
+.mg-abre { width: 100%; display: grid; justify-items: center; gap: 6px; padding: 14px 6px 12px; background: none; border: 0; color: var(--fg); text-align: center; }
+.mg-nome { font-size: 13px; font-weight: 600; line-height: 1.2; }
+.mg-sub { font-size: 11px; color: var(--helper); }
+.mg-seguindo { position: absolute; top: 6px; right: 6px; width: 24px; height: 24px; border-radius: 50%; border: 0; background: var(--good); color: #fff; font-size: 12px; line-height: 1; }
+.avatar { width: 40px; height: 40px; flex: none; background: var(--layer2); display: grid; place-items: center; font-family: var(--mono); font-size: 13px; }
+.rowbtn { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--border); text-align: left; }
+.rowbtn:hover { background: var(--layer); }
+
+.btn { height: 40px; padding: 0 16px; border: 0; background: var(--accent); color: var(--accent-fg); font-size: 14px; display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; text-decoration: none; }
+.btn:hover { background: var(--accent-hover); }
+.btn.ghost { background: transparent; color: var(--link); padding: 0 8px; }
+.btn.ghost:hover { background: var(--layer); }
+.btn.tertiary { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 1px var(--fg); }
+.btn.tertiary:hover { background: var(--fg); color: var(--bg); }
+.btn.sm { height: 32px; font-size: 13px; }
+
+.search { display: flex; align-items: center; gap: 8px; height: 48px; background: var(--layer); border-bottom: 1px solid var(--border-strong); padding: 0 12px; margin-block: 16px 12px; }
+.search svg { width: 18px; height: 18px; stroke: var(--helper); fill: none; stroke-width: 1.5; flex: none; }
+.search input { flex: 1; min-width: 0; height: 100%; background: none; border: 0; outline: 0; font-size: 16px; }
+.search input::placeholder { color: #6f6f6f; }
+.field { display: grid; gap: 8px; padding-block: 8px; min-width: 0; }
+.field label, .lbl { font-size: 12px; color: var(--fg2); letter-spacing: .32px; }
+.field select, .field input[type="number"] { height: 40px; background: var(--layer); border: 0; border-bottom: 1px solid var(--border-strong); padding: 0 12px; font-size: 16px; min-width: 0; width: 100%; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+input[type="range"] { width: 100%; accent-color: var(--accent); }
+.range-val { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+
+.toggle { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--border); }
+.toggle .grow { display: grid; gap: 2px; min-width: 0; }
+.toggle small { color: var(--helper); font-size: 12px; }
+.switch { width: 48px; height: 24px; border-radius: 12px; background: #8d8d8d; border: 0; position: relative; flex: none; transition: background .15s; }
+.switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: transform .15s; }
+.switch[aria-checked="true"] { background: #24a148; }
+.switch[aria-checked="true"]::after { transform: translateX(24px); }
+
+.nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 25; max-width: var(--col); margin: 0 auto; background: var(--layer); border-top: 1px solid var(--border); border-inline: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); display: grid; grid-template-columns: repeat(5, 1fr); }
+.nav .navdot { position: absolute; top: 8px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--bad); }
+.rec { padding-block: 16px; border-bottom: 1px solid var(--border); display: grid; gap: 10px; }
+.top-linha { display: flex; align-items: stretch; border-bottom: 1px solid var(--border); }
+.top-linha > .row { flex: 1; min-width: 0; border-bottom: 0 !important; }
+.top-fora { flex: none; width: 56px; display: grid; place-content: center; gap: 2px; background: none; border: 0; border-left: 1px solid var(--border); color: var(--helper); font-size: 18px; }
+.top-fora span { font-size: 9px; }
+.pixline { display: block; font-size: 11px; color: var(--good); margin-top: 2px; }
+.pagto { display: grid; gap: 6px; margin: -4px 0 16px; font-size: 13px; color: var(--fg2); }
+.mini-look { display: grid; grid-template-columns: 140px 1fr; gap: 12px; align-items: start; }
+.mini-fig .boneco { zoom: .54; width: 260px; margin: 0; }
+.mini-lista { display: grid; gap: 6px; min-width: 0; }
+.mini-item { display: grid; gap: 1px; text-align: left; background: var(--layer); border: 0; padding: 6px 8px; min-width: 0; }
+.mini-nome { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.boneco { width: min(260px, 72vw); margin: 8px auto 12px; padding: 12px 8px; background: var(--photo); border-radius: 8px; display: grid; justify-items: center; gap: 0; }
+.boneco img { display: block; object-fit: contain; mix-blend-mode: multiply; }
+.b-cabeca { height: 64px; width: 40%; display: grid; place-items: center; margin-bottom: -6px; position: relative; z-index: 2; }
+.b-cabeca img { width: 100%; height: 100%; }
+.b-rosto { width: 40px; height: 48px; border-radius: 50% 50% 46% 46%; background: #c9c4bb; display: block; }
+.b-tronco { position: relative; width: 100%; height: 190px; z-index: 1; }
+.b-tronco .b-fora { width: 100%; height: 100%; }
+.b-tronco .b-dentro { position: absolute; width: 34%; height: 40%; right: -14%; bottom: -4%; border-radius: 6px; background: var(--photo); box-shadow: 0 0 0 2px var(--photo), 0 2px 8px rgba(0,0,0,.15); mix-blend-mode: normal; padding: 4px; }
+.boneco img.recortada { mix-blend-mode: normal; }
+.b-pernas { width: 70%; height: 200px; margin-top: -10px; }
+.b-pernas img { width: 100%; height: 100%; }
+.b-pes { width: 62%; height: 70px; margin-top: -4px; }
+.b-pes img { width: 100%; height: 100%; }
+.b-vazio { display: grid; place-items: center; height: 100%; font-size: 11px; color: #8d8d8d; font-style: normal; border: 1px dashed #c6c6c6; border-radius: 6px; }
+.look-ops button[aria-pressed="true"] { outline: 2px solid var(--fg); outline-offset: -2px; }
+.look-ops .look-sem { display: grid; place-items: center; min-width: 90px; background: var(--layer); border: 0; color: var(--helper); font-size: 12px; padding: 8px; }
+.rec-top { display: flex; align-items: flex-start; gap: 12px; }
+.rec-top .grow { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.rec-name { font-size: 16px; font-weight: 600; }
+.rec-why { font-size: 13px; color: var(--fg2); }
+.rec-pics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.rec-pics button { border: 0; padding: 0; background: var(--photo); aspect-ratio: 4 / 5; overflow: hidden; }
+.rec-pics img { width: 100%; height: 100%; object-fit: cover; }
+.rec-links { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; }
+.vitrine { display: flex; gap: 4px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
+.vitrine::-webkit-scrollbar { display: none; }
+.vitrine button { flex: none; width: 38%; border: 0; padding: 0; background: var(--photo); aspect-ratio: 4 / 5; position: relative; overflow: hidden; scroll-snap-align: start; }
+.vitrine img { width: 100%; height: 100%; object-fit: cover; }
+.vitrine .mono { position: absolute; left: 6px; bottom: 6px; background: rgba(22,22,22,.75); color: #fff; font-size: 11px; padding: 2px 6px; }
+.rec-links a, .rec-links button { color: var(--link); background: none; border: 0; padding: 0; font-size: 13px; text-decoration: none; }
+.nav button { height: var(--nav-h); background: none; border: 0; display: grid; place-items: center; gap: 2px; padding-top: 6px; font-size: 11px; color: var(--helper); letter-spacing: .32px; position: relative; }
+.nav svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.nav button[aria-current="page"] { color: var(--fg); }
+.nav button[aria-current="page"]::before { content: ""; position: absolute; top: -1px; left: 20%; right: 20%; height: 2px; background: var(--accent); }
+
+.sheet { position: fixed; inset: 0; z-index: 40; max-width: var(--col); margin: 0 auto; background: var(--bg); overflow-y: auto; -webkit-overflow-scrolling: touch; border-inline: 1px solid var(--border); padding-top: env(safe-area-inset-top, 0px); padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 32px); }
+.sheet .hdr { top: 0; }
+.gallery { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; background: var(--photo); scrollbar-width: none; }
+.gallery::-webkit-scrollbar { display: none; }
+.gallery img { flex: none; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; scroll-snap-align: start; }
+.gallery-count { color: var(--helper); font-size: 11px; padding-top: 6px; }
+.detail-head { padding-block: 12px 16px; display: grid; gap: 4px; }
+.detail-head h2 { font-size: 22px; font-weight: 400; margin: 0; line-height: 1.27; text-wrap: balance; }
+.bigprice { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+.bigprice .now { font-size: 28px; font-weight: 400; }
+.sizes { display: flex; flex-wrap: wrap; gap: 6px; }
+.size { min-width: 40px; height: 32px; padding: 0 8px; display: inline-grid; place-items: center; border: 1px solid var(--border-strong); font-family: var(--mono); font-size: 12px; }
+.size.off { color: #6f6f6f; border-color: var(--border); text-decoration: line-through; }
+.size.mine { border-color: var(--good); color: var(--good); }
+.panel { background: var(--layer); padding: 16px; display: grid; gap: 12px; }
+.bar-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; font-size: 13px; }
+.bar-row .meter { grid-column: 1 / -1; }
+.chart { width: 100%; height: auto; display: block; }
+.chart text { fill: var(--helper); font-family: var(--mono); font-size: 10px; }
+.notice { border-left: 3px solid var(--warn); background: var(--layer); padding: 12px 16px; font-size: 13px; display: grid; gap: 4px; }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 16px; }
+.actions .btn { height: 56px; align-items: flex-start; padding-top: 12px; }
+
+.toast { position: fixed; z-index: 60; left: 16px; right: 16px; margin: 0 auto; max-width: calc(var(--col) - 32px); bottom: calc(var(--nav-h) + env(safe-area-inset-bottom, 0px) + 12px); background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 13px; border-left: 3px solid var(--good); }
+.loading { padding: 48px 16px; color: var(--helper); text-align: center; }
+
+@media (max-width: 500px) { .app, .nav, .sheet { border-inline: 0; } }
+/* selo "Powered by Netlify" (plano grátis) ficava por cima das abas Salvos e Perfil */
+#nl-badge-frame { display: none !important; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+<style id="redesign">
+/* ===== Achei · visual novo (bloco 1: cores, fontes, ícones, navegação) — ver redesign/GUIA-REDESIGN-ACHEI.md ===== */
+:root {
+  color-scheme: dark;
+  --bg: #0d0d0d; --layer: #1c1c1c; --layer2: #3a3a3a;
+  --border: #1c1c1c; --border-strong: #3a3a3a;
+  --fg: #f2f2f2; --fg2: #bdbdbd; --helper: #8a8a8a;
+  --accent: #D7261E; --accent-hover: #b51f18; --accent-fg: #ffffff; --link: #f2f2f2;
+  --good: #f2f2f2; --warn: #bdbdbd; --bad: #D7261E;
+  --sale-bg: #D7261E; --sale-fg: #ffffff; --new-bg: #f2f2f2; --new-fg: #0d0d0d;
+  --ok-bg: #1c1c1c; --ok-fg: #f2f2f2; --sug-bg: #1c1c1c; --sug-fg: #f2f2f2;
+  --chart: #f2f2f2; --chart-fill: #D7261E; --c-produto: #f2f2f2;
+  --photo: #d9d9d6; --spray: #D7261E;
+  --font: "Lacquer", "Marker Felt", cursive; --mono: "Lacquer", "Marker Felt", cursive;
+  --font-tag: "Sedgwick Ave Display", cursive;
+}
+:root[data-tema="claro"] {
+  color-scheme: light;
+  --bg: #ffffff; --layer: #f2f2f2; --layer2: #e6e6e6; --border: #e6e6e6; --border-strong: #bdbdbd;
+  --fg: #0d0d0d; --fg2: #3a3a3a; --helper: #6b6b6b; --link: #0d0d0d;
+  --accent: #D7261E; --accent-hover: #b51f18; --accent-fg: #ffffff;
+  --good: #0d0d0d; --warn: #3a3a3a; --bad: #D7261E;
+  --sale-bg: #D7261E; --sale-fg: #ffffff; --new-bg: #0d0d0d; --new-fg: #ffffff;
+  --ok-bg: #f2f2f2; --ok-fg: #0d0d0d; --sug-bg: #f2f2f2; --sug-fg: #0d0d0d;
+  --chart: #0d0d0d; --chart-fill: #D7261E; --c-produto: #0d0d0d; --photo: #ececea;
+}
+body { font-family: var(--font); font-size: 13px; letter-spacing: -0.03em; line-height: 1.4; }
+button, input, select { letter-spacing: -0.03em; }
+.mono { font-variant-numeric: normal; letter-spacing: 0; }
+/* fotos sempre no fundo "vitrine" (roupa preta aparece no escuro) */
+.tile .ph, .gallery, .thumb, .vitrine button, .rec-pics button, .boneco { background: var(--photo) !important; }
+/* títulos em tag de muro: texto + sombra vermelha deslocada */
+.tagtitulo { font-family: var(--font-tag); font-weight: 400; letter-spacing: 0; position: relative; display: inline-block; white-space: nowrap; transform: rotate(-5deg); margin: 4px 0 6px 4px; font-size: 26px; line-height: 1.1; }
+.tagtitulo::before { content: attr(data-t); position: absolute; left: 3px; top: 3px; color: var(--spray); }
+.tagtitulo > span { position: relative; }
+.hdr h1 { overflow: visible; }
+.section-h { font-family: var(--font-tag); font-weight: 400; letter-spacing: 0; font-size: 20px; text-shadow: 2px 2px 0 var(--spray); }
+/* tudo de um destaque só: vermelho */
+.meter.hi i, .meter i { background: var(--spray); }
+.tag { border-radius: 0; }
+.t-ok, .t-gray, .t-intl, .t-sug { background: transparent; color: var(--fg2); box-shadow: inset 0 0 0 1px var(--layer2); }
+.pixline { color: var(--fg2); }
+/* ícones rabiscados */
+.iconbtn svg.ic, .nav svg.ic { width: auto; height: auto; stroke: none; }
+.iconbtn { color: var(--fg); }
+.heart { border-radius: 0 !important; background: transparent !important; color: #0d0d0d; }
+.heart.on { background: transparent !important; }
+.naocurti { border-radius: 0 !important; background: transparent !important; color: #0d0d0d; }
+/* barra de navegação: ícone + nome, ativa com quadrado torto vermelho */
+.nav { background: var(--bg); border-top: 1px solid var(--border); }
+.nav button { color: var(--helper); font-size: 11px; }
+.nav button .ic { opacity: .45; }
+.nav button[aria-current="page"] { color: var(--fg); }
+.nav button[aria-current="page"] .ic { opacity: 1; }
+.nav button[aria-current="page"]::before { display: none; }
+.nav .marca-ativa { position: absolute; inset: 6px 8px 4px; pointer-events: none; }
+.nav .marca-ativa svg { width: 100%; height: 100%; overflow: visible; }
+.nav .navdot { border-radius: 0; background: var(--spray); }
+/* sem círculos: logos das marcas num quadrado torto */
+.logo { border-radius: 0 !important; box-shadow: none !important; outline: 2px solid var(--fg); outline-offset: 0; transform: rotate(-2deg); }
+.logo.txt { font-family: var(--font-tag); font-weight: 400; text-transform: none; font-size: 12px; }
+.mg-card { border-radius: 0; }
+.mg-seguindo { width: auto; height: auto; border-radius: 0; background: none; color: var(--spray); font-size: 11px; padding: 2px 4px; top: 4px; right: 4px; }
+.top-linha .top-fora { color: var(--fg2); }
+/* reduzir movimento: nada anima */
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+</style>
+</head>
+<body>
+<div class="app" id="app"><p class="loading">Carregando catálogo…</p></div>
+<nav class="nav" id="nav" aria-label="Navegação principal"></nav>
+<div id="sheet" class="sheet" hidden></div>
+<div id="toast" class="toast" role="status" hidden></div>
+
+<script src="novo/icones.js"></script>
+<script src="core.js?v=1795481575"></script>
+<script>
+/* ---------- Ícones ---------- */
+const ICON = {
+  ofertas: icone('ofertas', 22), buscar: icone('buscar', 18), farfetch: icone('importados', 22), novas: icone('marcas', 22),
+  marcas: icone('marcas', 22), salvos: icone('salvos', 22), perfil: icone('perfil', 22),
+  bell: icone('alertas', 20), back: icone('voltar', 20), close: icone('fechar', 18),
+};
+
+/* ---------- Utilidades ---------- */
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const brl = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 });
+const img = (src, w = 600) => !src ? ''
+  : src.includes('vteximg') ? src.replace(/\/ids\/(\d+)(-\d+-\d+)?\//, `/ids/$1-${w}-${Math.round(w * 1.25)}/`)
+  // Nuvemshop: o endereço salvo é a miniatura de 50px; tamanhos que existem: 240, 320, 480, 640
+  : src.includes('mitiendanube') ? src.replace(/-\d+-0\.(webp|jpg|png)/, `-${w > 480 ? 640 : 480}-0.$1`)
+  : src.includes('farfetch-contents') ? src.replace(/_\d+\.jpg$/, w > 480 ? '_1000.jpg' : '_480.jpg')
+  : src +(src.includes('?') ? '&' : '?') + 'width=' + w;
+// atalhos para a sale de cada marca que você segue, aberta aqui mesmo com os dados do Achei
+function saleBloco() {
+  const marcas = S.follow.filter(n => DATA.produtos.some(p => p.marca === n));
+  const itens = marcas.map(n => ({ n, q: DATA.produtos.filter(p => p.marca === n && !escondida(p)).map(evaluate).filter(e => e.ok && e.off > 0).length }))
+    .sort((a, b) => b.q - a.q);
+  if (!itens.length) return '';
+  return `<div class="wrap ff">
+    <div class="ff-h"><span class="ff-t">Sale das suas marcas</span><span class="t2">nos seus tamanhos</span></div>
+    <div class="chips">${MODELOS.map(m => `<button class="chip ff-chip" data-busca="${esc(m)}" style="border-color:var(--link)">${esc(m)} ${icone('buscar', 12)}</button>`).join('')}${itens.map(({ n, q }) => `<button class="chip ff-chip" data-salebrand="${esc(n)}">${q ? `${esc(n)} (${q})` : `${esc(n)}: sem sale agora`}</button>`).join('')}</div>
+  </div>`;
+}
+// modelos que você acompanha de perto: abrem a busca já filtrada
+const MODELOS = ['New Balance 9060'];
+// marcas que já eram "suas" antes de existir esta lista (para seguir sozinho as que entrarem depois)
+const SEGUE_ANTIGAS = ['Carnan', 'Piet', 'PACE', 'À La Garçonne', 'Carhartt WIP', 'Adidas Originals', 'Jordan'];
+
+/* ---------- Tema: claro (A) ou escuro com vitrine clara (B) ---------- */
+const prefereClaro = window.matchMedia ? matchMedia('(prefers-color-scheme: light)') : null;
+function aplicarTema() {
+  const tema = S.tema === 'auto' ? (prefereClaro?.matches ? 'claro' : 'escuro') : S.tema;
+  document.documentElement.dataset.tema = tema;
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', tema === 'claro' ? '#ffffff' : '#161616');
+  document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')?.setAttribute('content', tema === 'claro' ? 'default' : 'black-translucent');
+}
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('garimpo:' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('garimpo:' + k, JSON.stringify(v)); } catch (e) {} },
+};
+
+/* ---------- Estado ---------- */
+const DEFAULT_SIZES = { top: ['M'], bottom: ['40'], shoe: ['41'] };
+const SIZE_OPTS = { top: Object.keys(TOP_EQ), bottom: Object.keys(BOTTOM_EQ), shoe: ['37', '38', '39', '40', '41', '42', '43', '44', '45'] };
+// versões antigas guardavam um tamanho só por categoria
+const asList = v => (Array.isArray(v) ? v : [v]).map(String);
+// celular novo: ainda não salvou tamanhos nem marcas → mostra as boas-vindas para a pessoa escolher os dela
+const PRIMEIRA_VEZ = store.get('sizes', null) === null && store.get('follow', null) === null && !store.get('boasVindas', false);
+const loadSizes = () => { const s = store.get('sizes', DEFAULT_SIZES); return { top: asList(s.top), bottom: asList(s.bottom), shoe: asList(s.shoe) }; };
+const sizesText = () => [S.sizes.top, S.sizes.bottom, S.sizes.shoe].map(l => l.join('/')).join(' · ');
+const S = {
+  tab: (t => t === 'novas' ? 'marcas' : t === 'buscar' ? 'ofertas' : t)(store.get('tab', 'ofertas')), cat: 'Tudo', limit: 40,
+  q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, qBaixou: false, filtrosAbertos: false,
+  sizes: loadSizes(), onlyMySize: store.get('onlyMySize', true),
+  withSuggested: store.get('withSuggested', true), notaMin: store.get('notaMin', 70),
+  saved: store.get('saved', {}), follow: store.get('follow', null),
+  showIntl: store.get('showIntl', true), minSave: store.get('minSave', 20),
+  tema: store.get('tema', 'auto'),   // auto (segue o iPhone), claro ou escuro
+  sort: store.get('sort', 'nota'),
+  modelos: store.get('modelos', []),   // alertas de modelo: { id, texto, max }
+  curtidas: store.get('curtidas', {}),  // peças curtidas: chave -> { marca, kind, titulo, preco, em }
+  canal: store.get('canal', ''),       // canal do ntfy (o mesmo assinado no app ntfy)
+  dispensadas: store.get('dispensadas', []),
+  carrinho: store.get('carrinho', {}),
+  push: store.get('push', null),   // inscrição de notificações deste celular (endereço + chaves públicas)   // simulação de compra: chave -> { em }   // marcas sugeridas que você dispensou
+  ocultas: store.get('ocultas', {}),
+  gruposOcultos: store.get('gruposOcultos', {}),   // "Não curti" esconde o grupo: marca+tipo (tênis: marca+modelo) -> { em }   // peças marcadas como "Não curti": chave -> { marca, kind }
+};
+
+let DATA = { marcas: [], atualizado: '', produtos: [], hist: {} };
+
+/* ---------- Carregamento ---------- */
+async function load() {
+  const get = async u => { const r = await fetch(u, { cache: 'no-store' }); if (!r.ok) throw new Error(u); return r.json(); };
+  const idx = await get('data/marcas.json');
+  const hist = await get('data/historico.json').catch(() => ({}));
+  const cambio = await get('data/cambio.json').catch(() => null);
+  LOGOS = await get('logos.json').catch(() => ({}));
+  const lojasInfo = await get('data/lojas-info.json').catch(() => ({}));
+  const fontes = idx.marcas.flatMap(m => (m.arquivos || []).map(a => ({ m, a })));
+  const cats = await Promise.all(fontes.map(({ m, a }) => get(a).then(c => ({ m, c })).catch(() => null)));
+  const segue = idx.marcas.filter(m => m.relacao === 'segue').map(m => m.nome);
+  if (!S.follow) S.follow = PRIMEIRA_VEZ ? [] : [...segue];
+  // marca que passou a ser "sua" (ex.: New Balance) entra sozinha na lista de seguidas
+  const vistas = store.get('segueVistas', SEGUE_ANTIGAS);
+  if (!PRIMEIRA_VEZ) for (const n of segue) if (!vistas.includes(n) && !S.follow.includes(n)) S.follow.push(n);
+  store.set('segueVistas', segue);
+  DATA = buildData(idx, cats, hist, cambio, lojasInfo);
+  FF = await get("farfetch.json").catch(() => null);
+  SX = await get("stockx.json").catch(() => null);
+}
+
+// o app aprende com o "Não curti": cada peça escondida da mesma marca e tipo empurra as parecidas para baixo no feed
+const escondida = p => !!(S.ocultas[p.key] || S.gruposOcultos[grupoDe(p)]);
+// esconde a peça e todas as iguais (mesma marca e tipo; tênis: mesmo modelo). Volta com "Desfazer".
+let DESFAZER = null;
+function esconderGrupo(p) {
+  const g = grupoDe(p);
+  const antes = { ocultas: S.ocultas, grupos: S.gruposOcultos };
+  S.ocultas = { ...S.ocultas, [p.key]: { marca: p.marca, kind: p.kind } };
+  if (g) S.gruposOcultos = { ...S.gruposOcultos, [g]: { em: Date.now() } };
+  const n = g ? DATA.produtos.filter(q => grupoDe(q) === g).length : 1;
+  DESFAZER = () => { S.ocultas = antes.ocultas; S.gruposOcultos = antes.grupos; };
+  persist();
+  toastAcao(n > 1 ? `Escondi ${n} peças: ${rotuloGrupo(g)}` : 'Escondi essa peça', 'Desfazer');
+}
+function toastAcao(msg, botao) {
+  const t = document.getElementById('toast');
+  t.innerHTML = `<span>${esc(msg)}</span><button class="toast-btn" data-desfazer>${esc(botao)}</button>`;
+  t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; DESFAZER = null; }, 6000);
+}
+/* ---------- Para você: peças parecidas com as que você curtiu ---------- */
+// parecido = mesmo tipo, mesma marca, mesmas cores e detalhes do nome (oversized, cargo, bordado...), com preço bom
+let PARA_VOCE = null;   // guarda a lista até as curtidas mudarem (é uma conta pesada)
+function paraVoce() {
+  const curt = Object.entries(S.curtidas).map(([k, c]) => acharPeca(k) || { key: k, marca: c.marca, kind: c.kind, titulo: c.titulo || '' });
+  const assinatura = Object.keys(S.curtidas).join(',') + '|' + Object.keys(S.gruposOcultos).length + '|' + Object.keys(S.ocultas).length;
+  if (PARA_VOCE && PARA_VOCE.assinatura === assinatura) return PARA_VOCE.lista;
+  const base = curt.map(c => { const e = avaliar(c); return { c, t: tracos(c), preco: e?.ok ? e.price : null }; });
+  const kinds = new Set(curt.map(c => c.kind)), marcas = new Set(curt.map(c => c.marca));
+  const porMarca = {};
+  const lista = base.length ? DATA.produtos.filter(q => (kinds.has(q.kind) || marcas.has(q.marca)) && !S.curtidas[q.key] && !escondida(q) && !S.dispensadas.includes(q.marca))
+    .map(q => ({ q, e: evaluate(q) })).filter(x => x.e.ok)
+    .map(x => {
+      const tq = tracos(x.q);
+      let melhor = -9;
+      for (const { c, t, preco } of base) {
+        const razao = preco ? x.e.price / preco : 1;
+        const sim = (x.q.kind === c.kind ? 2 : 0) + (x.q.marca === c.marca ? 2 : 0) + t.cores.filter(v => tq.cores.includes(v)).length
+          + 0.5 * t.estilo.filter(v => tq.estilo.includes(v)).length + (razao < 0.35 ? -2.5 : razao < 0.55 ? -1 : razao > 3 ? -1.5 : 0);
+        if (sim > melhor) melhor = sim;
+      }
+      return { ...x, sim: melhor };
+    })
+    .filter(x => x.sim >= 3)
+    .map(x => ({ ...x, s: x.sim + x.e.score / 40 + (x.e.off > 0 ? 1 : 0) }))
+    .sort((a, b) => b.s - a.s)
+    .filter(x => (porMarca[x.q.marca] = (porMarca[x.q.marca] || 0) + 1) <= 3).slice(0, 18) : [];
+  PARA_VOCE = { assinatura, lista };
+  return lista;
+}
+function paraVoceBloco() {
+  const n = Object.keys(S.curtidas).length;
+  if (!n) return `<div class="wrap"><div class="notice" style="margin:8px 0"><span>Curta peças no coração e eu monto aqui uma faixa <b>Para você</b> com peças parecidas.</span></div></div>`;
+  const l = paraVoce();
+  if (!l.length) return '';
+  return `<div class="wrap"><h2 class="section-h" style="margin-top:8px">Para você</h2>
+    <p class="section-sub">Parecidas com as ${n} ${n > 1 ? 'peças que você curtiu' : 'peça que você curtiu'}: mesmo tipo, marcas e cores, com preço bom.</p>
+    <div class="vitrine">${l.map(x => `<button data-open="${esc(x.q.key)}" aria-label="${esc(x.q.titulo)}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt=""><span class="mono">${brl(x.e.price)}${x.e.off > 0 ? ` · -${Math.round(x.e.off * 100)}%` : ''}</span></button>`).join('')}</div></div>`;
+}
+
+function naoCurtiContagem() {
+  const c = {};
+  for (const o of Object.values(S.ocultas)) c[o.marca + '|' + o.kind] = (c[o.marca + '|' + o.kind] || 0) + 1;
+  return c;
+}
+const naoCurtiPeso = p => Math.min(40, 12 * (naoCurtiContagem()[p.marca + '|' + p.kind] || 0));
+// o "Curti" faz o contrário: peças da mesma marca e tipo sobem; o mesmo tipo em outras marcas sobe um pouco
+function estilo() {
+  const mk = {}, marca = {}, kind = {};
+  for (const c of Object.values(S.curtidas)) { mk[c.marca + '|' + c.kind] = (mk[c.marca + '|' + c.kind] || 0) + 1; marca[c.marca] = (marca[c.marca] || 0) + 1; kind[c.kind] = (kind[c.kind] || 0) + 1; }
+  return { mk, marca, kind };
+}
+const curtiPeso = p => { const e = estilo(); return Math.min(30, 10 * (e.mk[p.marca + '|' + p.kind] || 0)) + Math.min(12, 3 * (e.marca[p.marca] || 0)) + Math.min(9, 3 * (e.kind[p.kind] || 0)); };
+
+function feedList(filter) {
+  const out = []; let hiddenSize = 0;
+  for (const p of DATA.produtos) {
+    if (escondida(p) || (filter && !filter(p))) continue;
+    const e = evaluate(p);
+    if (!e.ok) { if (e.avail.length) hiddenSize++; continue; }
+    out.push({ p, e });
+  }
+  return { items: out.sort((a, b) => b.e.score - a.e.score || b.e.off - a.e.off), hiddenSize };
+}
+
+/* ---------- Componentes ---------- */
+function tile({ p, e }) {
+  const tags = [];
+  if (e.intl) tags.push('<span class="tag t-intl">INTERNACIONAL</span>');
+  if (e.off >= 0.05) tags.push(`<span class="tag t-sale">-${Math.round(e.off * 100)}%</span>`);
+  if (e.novo) tags.push('<span class="tag t-new">Novo</span>');
+  if (e.baixou) tags.push('<span class="tag t-ok">Baixou</span>');
+  else if (e.justo?.nivel === 'abaixo') tags.push('<span class="tag t-ok">Preço bom</span>');
+  // o coração fica por cima da foto, fora do botão da peça, para curtir sem abrir
+  const curti = !!S.curtidas[p.key];
+  return `<div class="tilewrap"><button class="heart ${curti ? 'on' : ''}" data-curti="${esc(p.key)}" aria-pressed="${curti}" aria-label="${curti ? 'Remover curtida' : 'Curtir'}">${icone('salvos', 20, { cheio: curti })}</button><button class="naocurti" data-esconder="${esc(p.key)}" aria-label="Não curti: esconder esta e as iguais">${icone('fechar', 14)}</button><button class="tile" data-open="${esc(p.key)}">
+    <div class="ph"><img loading="lazy" src="${esc(img(p.imagens[0], 540))}" alt=""><div class="tags">${tags.join('')}</div></div>
+    <div class="body">
+      <span class="brand">${esc(p.marca)}${p.relacao === 'sugerida' ? ' · sugerida' : ''}${e.lojas.length > 1 ? ` · ${e.lojas.length} lojas` : p.ofertas[0].loja.startsWith('Site ') ? '' : ` · ${esc(e.lojas[0].loja)}`}</span>
+      <span class="pname">${esc(p.titulo)}</span>
+      <span class="prices">${e.de ? `<span class="was mono">${brl(e.de)}</span>` : ''}<span class="now mono">${brl(e.price)}</span></span>
+      ${e.lojas?.[0]?.pix ? `<span class="mono pixline">${brl(e.lojas[0].pix)} no Pix</span>` : ''}
+      <span class="scoreline"><span class="meter ${e.score >= S.notaMin ? 'hi' : ''}"><i style="width:${e.score}%"></i></span><span class="score mono">Nota ${e.score}</span></span>
+    </div></button></div>`;
+}
+const header = (title, extra = '') => `<header class="hdr"><div class="wrap"><h1>${/</.test(title) ? title : `<span class="tagtitulo" data-t="${esc(title)}"><span>${esc(title)}</span></span>`}</h1>${extra}</div></header>`;
+function grid(items, moreKey) {
+  if (!items.length) return '';
+  const shown = items.slice(0, S.limit);
+  return `<div class="grid">${shown.map(tile).join('')}</div>${items.length > S.limit ? `<div class="more"><button class="btn tertiary sm" data-more>Mostrar mais (${items.length - S.limit})</button></div>` : ''}`;
+}
+const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.nome) || (S.withSuggested && m.relacao === 'sugerida' && !S.dispensadas.includes(m.nome))).map(m => m.nome));
+
+/* ---------- Telas ---------- */
+function viewOfertas() {
+  const cabeca = header('<span class="marca-app"><img src="logo-128.png" alt=""><b>Achei</b></span>', `<button class="iconbtn" data-sw="qBaixou" aria-label="Só o que baixou de preço" aria-pressed="${S.qBaixou}" style="font-size:18px;${S.qBaixou ? "background:var(--layer2)" : ""}">${icone('baixou', 20)}</button><button class="iconbtn" data-top10 aria-label="Top 10 da semana" >${icone('top10', 20)}</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
+  const cats = `<div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>`;
+  // com busca ou filtro: procura em todas as marcas e lojas, e compara as lojas
+  if (buscando()) {
+    const q = semAcento(S.q.trim()).split(/\s+/).filter(Boolean);
+    let { items, hiddenSize } = feedList(p =>
+      q.every(w => semAcento(p.marca + ' ' + p.titulo).includes(w)) &&
+      (S.cat === 'Tudo' || p.cat === S.cat) && (S.qKind === 'Tudo' || p.kind === S.qKind) &&
+      (S.qBrand === 'Todas' || p.marca === S.qBrand) && (S.qLoja === 'Todas' || p.ofertas.some(o => o.loja === S.qLoja)));
+    items = ordenar(items.filter(x => (S.qMax >= 3000 || x.e.price <= S.qMax) && (!S.qSale || x.e.off > 0) && (!S.qBaixou || baixouRecente(x.e))));
+    if (S.qBaixou) items.sort((a, b) => baixouRecente(b.e).queda - baixouRecente(a.e).queda);   // maiores quedas primeiro
+    return cabeca + painelBusca() + cats + (S.qLoja === 'Todas' ? comparador(items) : '') + `
+      <div class="wrap"><p class="section-sub" style="margin:12px 0">${items.length} ${items.length === 1 ? 'resultado' : 'resultados'}${hiddenSize ? ` · ${hiddenSize} ocultos sem seu tamanho` : ''}</p></div>
+      ${grid(items) || '<div class="wrap note"><span>Nada encontrado. Tente outra palavra, outra marca ou um preço maior.</span></div>'}`;
+  }
+  const brands = activeBrands();
+  const { items, hiddenSize } = feedList(p => brands.has(p.marca) && (S.cat === 'Tudo' || p.cat === S.cat));
+  // intercala marcas: cada peça seguinte da mesma marca perde 3 pontos na ordenação
+  const rank = {};
+  let deals = items.filter(x => x.e.off > 0 || x.e.score >= S.notaMin)
+    .map(x => ({ x, k: x.e.score - 3 * (rank[x.p.marca] = (rank[x.p.marca] ?? -1) + 1) - naoCurtiPeso(x.p) + curtiPeso(x.p) }))
+    .sort((a, b) => b.k - a.k).map(o => o.x);
+  if (S.sort !== 'nota') deals = ordenar(deals);
+  const fontes = DATA.marcas.filter(m => m.arquivos?.length && brands.has(m.nome)).length;
+  return cabeca + painelBusca() + `
+    <div class="wrap intro">
+      <p>${deals.length} ofertas nos seus tamanhos (${esc(sizesText())}) em ${fontes} marcas · atualizado em ${esc(DATA.atualizado)}</p>
+    </div>
+    ${paraVoceBloco()}
+    ${saleBloco()}
+    ${cats}
+    ${grid(deals) || '<div class="wrap note"><span>Nenhuma oferta nesta categoria agora.</span></div>'}
+    <div class="wrap note">${hiddenSize ? `<span>${hiddenSize} peças ocultas por não ter seu tamanho disponível.</span>` : ''}<span>Fotos e preços vêm direto dos sites das marcas.</span></div>`;
+}
+
+// ordenação escolhida pelo usuário (vale para Ofertas e Buscar)
+const ORDENS = { nota: 'Melhor nota', menor: 'Menor preço', maior: 'Maior preço', desconto: 'Maior desconto', novos: 'Mais novos', justo: 'Mais abaixo do preço justo' };
+function ordenar(lista) {
+  const f = {
+    nota: (a, b) => b.e.score - a.e.score,
+    menor: (a, b) => a.e.price - b.e.price,
+    maior: (a, b) => b.e.price - a.e.price,
+    desconto: (a, b) => b.e.off - a.e.off || b.e.score - a.e.score,
+    novos: (a, b) => String(b.p.publicado || '').localeCompare(String(a.p.publicado || '')),
+    justo: (a, b) => (a.e.justo?.dif ?? 9) - (b.e.justo?.dif ?? 9),
+  }[S.sort] || ((a, b) => b.e.score - a.e.score);
+  return [...lista].sort(f);
+}
+const seletorOrdem = id => `<div class="ordem"><label for="${id}">Ordenar por</label><select id="${id}" data-ordem>${Object.entries(ORDENS).map(([k, v]) => `<option value="${k}" ${S.sort === k ? 'selected' : ''}>${v}</option>`).join('')}</select></div>`;
+
+/* ---------- Busca e filtros (dentro de Ofertas) ---------- */
+// baixou de preço nos últimos 14 dias (mais amplo que os avisos: qualquer queda conta)
+function baixouRecente(e) {
+  if (!e.hist || e.hist.length < 2) return null;
+  const lim = Date.now() - 14 * 864e5;
+  const antes = e.hist.slice(0, -1).filter(([d]) => new Date(d) >= lim).map(([, v]) => v);
+  const max = antes.length ? Math.max(...antes) : 0;
+  return max > e.price ? { antes: max, queda: 1 - e.price / max } : null;
+}
+const filtrosAtivos = () => [S.qKind !== 'Tudo', S.qBrand !== 'Todas', S.qLoja !== 'Todas', S.qSale, S.qBaixou, S.qMax < 3000].filter(Boolean).length;
+const buscando = () => !!S.q.trim() || filtrosAtivos() > 0;
+function painelBusca() {
+  const marcas = ['Todas', ...DATA.marcas.filter(m => m.arquivos?.length).map(m => m.nome)];
+  const lojas = ['Todas', ...new Set(DATA.produtos.flatMap(p => p.ofertas.map(o => o.loja)))].sort((a, b) => a === 'Todas' ? -1 : b === 'Todas' ? 1 : a.localeCompare(b));
+  const kinds = ['Tudo', ...Object.keys(KIND_LABEL).filter(k => DATA.produtos.some(p => p.kind === k))];
+  const n = filtrosAtivos();
+  return `<div class="wrap busca">
+    <label class="search"><span>${ICON.buscar}</span><input id="q" type="search" placeholder="Busque uma peça, modelo ou marca (ex.: 9060)" value="${esc(S.q)}" autocomplete="off" enterkeyhint="search"></label>
+    <div class="busca-acoes">
+      <button class="chip" data-filtros aria-expanded="${S.filtrosAbertos}">Filtros${n ? ` (${n})` : ''} <span style="display:inline-block;${S.filtrosAbertos ? 'transform:rotate(180deg)' : ''}">${icone('filtro', 12)}</span></button>
+      ${buscando() ? '<button class="chip" data-limpar>Limpar busca</button>' : ''}
+      ${seletorOrdem('sortOfertas')}
+    </div>
+    ${S.filtrosAbertos ? `<div class="filtros">
+      <span class="lbl">Tipo de peça</span>
+      <div class="chips" role="group" aria-label="Tipo de peça">${kinds.map(k => `<button class="chip" data-qkind="${k}" aria-pressed="${S.qKind === k}">${k === 'Tudo' ? 'Tudo' : KIND_LABEL[k]}</button>`).join('')}</div>
+      <div class="field-row">
+        <div class="field"><label for="qBrand">Marca</label><select id="qBrand">${marcas.map(b => `<option ${b === S.qBrand ? 'selected' : ''}>${esc(b)}</option>`).join('')}</select></div>
+        <div class="field"><label for="qLoja">Loja</label><select id="qLoja">${lojas.map(b => `<option ${b === S.qLoja ? 'selected' : ''}>${esc(b)}</option>`).join('')}</select></div>
+      </div>
+      <div class="field"><div class="range-val"><label for="qMax">Preço até</label><span class="mono lbl">${S.qMax >= 3000 ? 'qualquer' : brl(S.qMax)}</span></div><input id="qMax" type="range" min="100" max="3000" step="50" value="${S.qMax}"></div>
+      <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-sw="qSale" aria-checked="${S.qSale}" aria-label="Só peças com desconto"></button></div>
+      <div class="toggle"><div class="grow"><span>Só o que baixou de preço</span><span class="t2" style="display:block;font-size:12px;color:var(--helper)">Qualquer queda nos últimos 14 dias, maiores quedas primeiro</span></div><button class="switch" role="switch" data-sw="qBaixou" aria-checked="${S.qBaixou}" aria-label="Só o que baixou de preço"></button></div>
+    </div>` : ''}
+  </div>`;
+}
+
+// modelo: o nome da peça sem a marca e sem palavras genéricas ("Tênis New Balance 9060 Unissex" → "9060")
+const GENERICAS = new Set(['tenis', 'tênis', 'unissex', 'unisex', 'masculino', 'masculina', 'feminino', 'feminina', 'de', 'da', 'do', 'com', 'e', 'em', 'the', 'men', 'mens', 'adulto']);
+function modeloChave(p) {
+  const marca = new Set(p.marca.toLowerCase().split(/\s+/));
+  return p.titulo.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').split(/[^a-z0-9]+/)
+    .filter(w => w && !GENERICAS.has(w) && !marca.has(w) && !(p.marca === 'Adidas Originals' && w === 'adidas')).sort().join(' ');
+}
+// comparador: para o que foi buscado, qual loja tem mais barato e quais dos seus tamanhos cada uma tem
+function porLoja(lista) {
+  const lojas = {};
+  for (const { p, e } of lista) for (const l of e.lojas) {
+    const o = p.ofertas.find(x => x.loja === l.loja);
+    const tam = (o?.variantes || []).filter(v => v.a && v.p >= 10 && fits(v.t, p.group) && p.group !== 'one').map(v => sizeLabel(v.t));
+    const L = (lojas[l.loja] ||= { loja: l.loja, min: Infinity, n: 0, tam: new Set(), melhor: null });
+    L.n++; tam.forEach(t => L.tam.add(t));
+    if (l.price < L.min) { L.min = l.price; L.melhor = p; }
+  }
+  return Object.values(lojas).sort((a, b) => a.min - b.min);
+}
+// ordem natural dos tamanhos: números primeiro, depois PP, P, M, G, GG, XGG
+const ordemTam = t => (isNaN(+t) ? 100 + ['PP', 'P', 'M', 'G', 'GG', 'XGG'].indexOf(t) : +t);
+const tamTxt = s => [...s].sort((m, n) => ordemTam(m) - ordemTam(n)).join(', ');
+const seloLoja = (L, i) => i !== 0 ? '' : L[1] && L[1].min === L[0].min ? '<span class="tag t-gray">Mesmo preço</span>' : '<span class="tag t-ok">Mais barato</span>';
+const semAcento = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+function comparador(lista) {
+  const L = porLoja(lista);
+  if (L.length < 2) return '';
+  const [a, b] = L, eco = Math.round((1 - a.min / L[L.length - 1].min) * 100);
+  return `<div class="wrap"><div class="panel comparador">
+    <strong>Onde está mais barato: "${esc(S.q.trim() || 'sua busca')}"</strong>
+    <span class="t2" style="color:var(--fg2);font-size:13px"><b>${esc(a.loja.replace(/^Site /, 'Site da '))}</b> tem a partir de <b class="mono">${brl(a.min)}</b>${eco > 0 ? `, ${eco}% menos que a loja mais cara` : ''}. Preços nos seus tamanhos; cores podem variar.</span>
+    <div class="list">${L.map((x, i) => `<button class="row rowbtn" data-loja="${esc(x.loja)}">
+      <div class="grow"><span class="t1">${esc(x.loja)} ${seloLoja(L, i)}</span>
+        <span class="t2">${x.n} ${x.n > 1 ? 'opções' : 'opção'}${x.tam.size ? ` · seus tamanhos: ${tamTxt(x.tam)}` : ''}</span></div>
+      <span class="mono" style="font-size:15px">${brl(x.min)}</span></button>`).join('')}</div>
+    <span class="t2" style="color:var(--helper);font-size:11px">Só lojas confiáveis: sites oficiais das marcas e grandes multimarcas. Toque numa loja para ver só as peças dela.</span>
+  </div></div>`;
+}
+
+/* ---------- Marcas novas: escolhidas e mostradas pelo seu estilo, não pela nota ---------- */
+// fotos de vitrine: peças do tipo que você curte primeiro, depois a ordem da própria loja (as marcas põem as melhores na frente)
+function fotosBonitas(m, n = 6) {
+  const e = estilo(), todas = DATA.produtos.filter(p => p.marca === m.nome);
+  return todas.map((p, i) => ({ p, ev: evaluate(p), i }))
+    .filter(x => x.ev.ok && x.p.imagens.length && !escondida(x.p))
+    .map(x => ({ ...x, s: 3 * (e.kind[x.p.kind] || 0) + 2 * (1 - x.i / todas.length) + (x.p.imagens.length > 1 ? 0.5 : 0) + (x.p.cat === 'Acessórios' ? -1.5 : 0) + (x.ev.novo ? 0.5 : 0) + (S.curtidas[x.p.key] ? 5 : 0) }))
+    .sort((a, b) => b.s - a.s).slice(0, n);
+}
+// afinidade da marca com o que você curtiu: mesma marca pesa muito; tipos de peça que você curte pesam pela quantidade
+function afinidade(m) {
+  const e = estilo(), ps = DATA.produtos.filter(p => p.marca === m.nome);
+  if (!ps.length) return 0;
+  const tipos = Object.entries(e.kind).reduce((s, [k, v]) => s + v * ps.filter(p => p.kind === k).length / ps.length, 0);
+  return 10 * (e.marca[m.nome] || 0) + 4 * tipos;
+}
+// logo da marca (app/logos/), num círculo; sem logo, o nome escrito em destaque
+let LOGOS = {};
+const slugMarca = n => n.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+function logoMarca(nome, cls = '') {
+  const l = LOGOS[slugMarca(nome)];
+  if (l) return `<span class="logo ${cls} ${l.bg === 'dark' ? 'escuro' : ''}"><img src="logos/${esc(l.f)}" alt="${esc(nome)}" loading="lazy"></span>`;
+  return `<span class="logo txt ${cls}">${esc(nome.length > 9 ? nome.split(/\s+/).map(w => w[0]).join('').slice(0, 3) : nome)}</span>`;
+}
+function cardMarca(m) {
+  const fotos = fotosBonitas(m);
+  const ps = DATA.produtos.filter(p => p.marca === m.nome).map(evaluate).filter(e => e.ok);
+  const sale = ps.filter(e => e.off > 0);
+  const max = sale.length ? Math.round(Math.max(...sale.map(e => e.off)) * 100) : 0;
+  const nova = m.liberada && m.liberada === ultimaLeva(); // selo só para a leva mais recente
+  return `<div class="rec">
+    <div class="rec-top">${logoMarca(m.nome, 'md')}<div class="grow"><span class="rec-name">${esc(m.nome)} ${nova ? '<span class="tag t-new" style="margin-left:4px">Nova</span>' : ''}</span><span class="rec-why">${esc(m.obs.replace(/\s*\((lojas|site)[^)]*\)/i, ''))}</span>
+      <span class="t2" style="color:var(--helper);font-size:12px">${ps.length} peças nos seus tamanhos${sale.length ? ` · ${sale.length} em sale, até ${max}%` : ''}</span></div>
+      <button class="btn sm" data-follow="${esc(m.nome)}">Seguir</button></div>
+    ${fotos.length ? `<div class="vitrine">${fotos.map(x => `<button data-open="${esc(x.p.key)}" aria-label="${esc(x.p.titulo)}"><img loading="lazy" src="${esc(img(x.p.imagens[0], 300))}" alt=""><span class="mono">${brl(x.ev.price)}</span></button>`).join('')}</div>` : ''}
+    <div class="rec-links"><button data-brand="${esc(m.nome)}">Ver todas as peças</button><button data-dispensar="${esc(m.nome)}" style="color:var(--helper)">Dispensar marca ${icone('fechar', 10)}</button></div>
+  </div>`;
+}
+
+/* ---------- Aba Farfetch: marcas e achados escolhidos à mão (o robô não consegue ler a Farfetch) ---------- */
+let FF = null, SX = null;
+// A Farfetch Brasil já embute o imposto de importação no preço e cobra o frete internacional à parte.
+// Separamos o total pago em produto, frete e impostos (estimativa com as alíquotas de farfetch.json).
+function custoFarfetch(preco) {
+  const c = FF?.custos || { freteBRL: 99, ii: 0.6, icms: 0.17 };
+  const total = preco + c.freteBRL;
+  const base = total * (1 - c.icms) / (1 + c.ii);            // valor aduaneiro: produto + frete, sem impostos
+  const frete = c.freteBRL * (1 - c.icms) / (1 + c.ii);
+  const produto = base - frete, ii = base * c.ii, icms = total - base - ii;
+  return { total, produto, frete, ii, icms, impostos: ii + icms, c };
+}
+// Comparação final: Brasil (Farfetch BR entregue) × EUA (preço da loja lá e o custo de trazer por conta própria).
+// O preço americano é estimado a partir do preço sem impostos (a Farfetch não deixa abrir a loja dos EUA daqui).
+const FRETE_EUA_USD = 30; // redirecionador/loja americana até o Brasil
+function comparaImportado(a) {
+  const k = custoFarfetch(a.por), usd = DATA.cambio?.USD || 5.5;
+  const euaUsd = k.produto / usd;
+  const euaCheioUsd = a.de ? custoFarfetch(a.de).produto / usd : euaUsd;
+  const trazer = custoImportado({ moeda: 'USD', frete: FRETE_EUA_USD }, euaUsd);
+  const trazerTotal = trazer ? trazer.total : k.total;
+  const econ = (trazerTotal - k.total) / trazerTotal;          // quanto a Farfetch BR economiza vs trazer você mesmo
+  const razao = k.total / (euaCheioUsd * usd);                  // total aqui ÷ preço cheio na loja americana
+  const pDesc = Math.min(40, (a.off || 0) * 40 / 70);
+  const pRota = Math.max(0, Math.min(30, econ * 100));
+  const pCheio = Math.max(0, Math.min(30, (1.5 - razao) * 30));
+  const nota = Math.round(pDesc + pRota + pCheio);
+  const veredito = nota >= 75 ? 'Ótima compra' : nota >= 50 ? 'Boa compra' : nota >= 30 ? 'Compra ok' : 'Só se gostar muito';
+  return { k, usd, euaUsd, euaCheioUsd, trazer, trazerTotal, econ, razao, nota, veredito, pts: [pDesc, pRota, pCheio] };
+}
+function abrirImportado(i) {
+  ATUAL = { fn: abrirImportado, args: [i] };
+  const a = FF.achados[i]; if (!a) return;
+  const k = custoFarfetch(a.por), usd = DATA.cambio?.USD;
+  const fmt2 = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const partes = [['Produto', k.produto, 'var(--c-produto)'], ['Frete', k.frete, '#888780'], [`Imposto de importação (${Math.round(k.c.ii * 100)}%)`, k.ii, '#EF9F27'], [`ICMS (${Math.round(k.c.icms * 100)}%)`, k.icms, '#D85A30']];
+  const pct = v => Math.round(v / k.total * 100);
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${esc(a.marca)} · Farfetch</h1></div></header>
+    <div class="gallery">${(a.imgs || [a.img]).map((u, n) => `<img src="${esc(img(u, 800))}" alt="${esc(a.nome)} – foto ${n + 1}" ${n ? 'loading="lazy"' : ''}>`).join('')}</div>
+    ${(a.imgs || []).length > 1 ? `<div class="wrap"><div class="gallery-count">${a.imgs.length} fotos · deslize para o lado</div></div>` : ''}
+    <div class="wrap">
+      <div class="detail-head"><span class="brand">${esc(a.marca)}</span><h2>${esc(a.nome)}</h2>
+        ${a.tam ? `<span class="t2" style="color:var(--helper);font-size:12px">Tamanhos disponíveis: ${esc(a.tam)}</span>` : ''}</div>
+      <div class="conv">
+        <div class="panel"><span class="t2" style="color:var(--helper);font-size:12px">1 · Só o produto</span><span class="mono" style="font-size:24px">${brl(Math.round(k.produto))}</span><span class="t2" style="color:var(--helper);font-size:12px">${usd ? `lá fora ≈ US$ ${Math.round(k.produto / usd)} × R$ ${usd.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : 'valor sem impostos'}</span></div>
+        <div class="panel"><span class="t2" style="color:var(--helper);font-size:12px">2 · Com frete e impostos</span><span class="mono" style="font-size:24px">${brl(Math.round(k.total))}</span><span class="t2" style="color:var(--helper);font-size:12px">o que chega na sua casa</span></div>
+      </div>
+      <h3 class="section-h">Para onde vai o dinheiro</h3>
+      <div class="barra">${partes.map(([, v, c]) => `<i style="width:${v / k.total * 100}%;background:${c}"></i>`).join('')}</div>
+      <div class="nota">
+        ${partes.map(([n, v, c]) => `<div><span><i style="background:${c}"></i>${esc(n)}</span><span class="mono">${fmt2(v)}</span><span class="mono pct">${pct(v)}%</span></div>`).join('')}
+        <div class="tot"><span>Total que você paga</span><span class="mono">${fmt2(k.total)}</span><span></span></div>
+        <div class="imp"><span>Impostos no total</span><span class="mono">${fmt2(k.impostos)}</span><span class="mono pct">${pct(k.impostos)}%</span></div>
+      </div>
+      <p class="section-sub" style="margin-top:8px">O preço da Farfetch (${brl(a.por)}) já vem com o imposto de importação embutido, e o frete internacional é ${brl(k.c.freteBRL)}. Os valores de produto e impostos são uma estimativa com as alíquotas atuais.</p>
+      ${a.de ? `<h3 class="section-h">Preço</h3>
+      <div class="panel"><div class="range-val"><span>Preço cheio</span><span class="mono was">${brl(a.de)}</span></div>
+        <div class="meter"><i style="width:100%;background:var(--layer2)"></i></div>
+        <div class="range-val"><span>Agora</span><span class="mono" style="color:var(--good)">${brl(a.por)} (-${a.off}%)</span></div>
+        <div class="meter hi"><i style="width:${a.por / a.de * 100}%"></i></div></div>` : ''}
+      ${(() => {
+        const cp = comparaImportado(a), usd2 = v => 'US$ ' + Math.round(v);
+        const melhor = cp.econ >= 0;
+        const linhas = [
+          ['Brasil · aqui', 'Farfetch Brasil, entregue com frete e impostos', k.total, true],
+          ['EUA · na loja', `${usd2(cp.euaUsd)} na etiqueta, sem frete nem imposto`, cp.euaUsd * cp.usd, false],
+          ['EUA · trazer você mesmo', `${usd2(cp.euaUsd)} + frete ${usd2(FRETE_EUA_USD)} + IOF, imposto de importação e ICMS`, cp.trazerTotal, false],
+        ];
+        const maxV = Math.max(...linhas.map(l => l[2]));
+        return `<h3 class="section-h">Comparação final: Brasil × EUA</h3>
+        <div class="panel">
+          ${linhas.map(([t, sub, v, br]) => `<div style="display:grid;gap:4px;margin-bottom:12px">
+            <div class="range-val"><span>${t}</span><span class="mono" style="font-weight:600">${brl(Math.round(v))}</span></div>
+            <div class="meter ${br ? 'hi' : ''}"><i style="width:${v / maxV * 100}%"></i></div>
+            <span class="t2" style="color:var(--helper);font-size:12px">${sub}</span></div>`).join('')}
+          ${a.de ? `<p class="t2" style="color:var(--helper);font-size:12px;margin:0">Preço cheio dessa peça nos EUA: ≈ ${usd2(cp.euaCheioUsd)} (${brl(Math.round(cp.euaCheioUsd * cp.usd))}). Com o desconto, o total aqui é <b>${Math.round(cp.razao * 100)}%</b> desse valor, já com frete e impostos.</p>` : ''}
+        </div>
+        <div class="panel" style="margin-top:12px;display:grid;gap:8px">
+          <div class="range-val"><span style="font-size:16px;font-weight:600">${cp.veredito}</span><span class="score mono" style="font-size:20px">Nota ${cp.nota}</span></div>
+          <div class="meter ${cp.nota >= 50 ? 'hi' : ''}"><i style="width:${cp.nota}%"></i></div>
+          <p class="t2" style="font-size:13px;margin:0">${melhor
+            ? `Comprar na Farfetch Brasil sai <b>${brl(Math.round(cp.trazerTotal - k.total))} mais barato</b> que trazer dos EUA por conta própria.`
+            : `Trazer dos EUA por conta própria sairia <b>${brl(Math.round(k.total - cp.trazerTotal))} mais barato</b> que a Farfetch Brasil.`}
+            Mas, por causa dos impostos, você paga cerca de <b>${(k.total / (cp.euaUsd * cp.usd)).toLocaleString('pt-BR', { maximumFractionDigits: 1 })}×</b> o preço da etiqueta americana.</p>
+          <div class="nota" style="margin-top:0">
+            <div><span>Desconto (${a.off || 0}%)</span><span class="mono">${Math.round(cp.pts[0])}</span><span class="mono pct">/40</span></div>
+            <div><span>Brasil × trazer dos EUA</span><span class="mono">${Math.round(cp.pts[1])}</span><span class="mono pct">/30</span></div>
+            <div><span>Total aqui × preço cheio nos EUA</span><span class="mono">${Math.round(cp.pts[2])}</span><span class="mono pct">/30</span></div>
+          </div>
+        </div>
+        <p class="section-sub" style="margin-top:8px">O preço nos EUA é uma estimativa a partir do preço sem impostos (a Farfetch não deixa abrir a loja americana daqui do Brasil). Para trazer você mesmo: dólar do dia R$ ${cp.usd.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}, frete estimado US$ ${FRETE_EUA_USD}, IOF 3,5%, imposto de importação 60% e ICMS 17%.</p>`;
+      })()}
+      ${(q => q ? miniLook(q) : '')(ffProdutos().find(x => x.ffi === i))}
+      <div class="actions" style="grid-template-columns:1fr 1fr">${(k => `<button class="btn ${S.curtidas[k] ? '' : 'tertiary'}" data-curti="${esc(k)}" aria-pressed="${!!S.curtidas[k]}" style="justify-content:center;${S.curtidas[k] ? 'background:var(--bad)' : ''}">${S.curtidas[k] ? icone('salvos', 16, { cheio: true }) + ' Curtido' : icone('salvos', 16) + ' Curti'}</button>`)(ffKey(a))}<a class="btn" href="${esc(a.url)}" target="_blank" rel="noopener">Ver na Farfetch ${icone('abrir', 14)}</a></div>
+    </div>`);
+}
+
+// filtros da aba Importados (não ficam salvos)
+const FFS = { faixa: 'todas', tipo: 'Tudo', marca: 'Todas', max: 2000, sale: false, ordem: 'desconto' };
+const tipoImportado = nome => /sneaker|sandal|loafer|boot|trainer|slide|mule/i.test(nome) ? 'Calçados' : /cap\b|beanie|hat\b|sunglasses|belt|bag|wallet|scarf/i.test(nome) ? 'Acessórios' : 'Roupas';
+function viewFarfetch() {
+  if (!FF) return header('Importados') + '<div class="wrap note"><span>Não consegui carregar os importados.</span></div>';
+  const quando = FF.escolhidosEm.split('-').reverse().slice(0, 2).join('/');
+  const faixaDe = Object.fromEntries(FF.marcas.map(m => [m.nome, m.faixa]));
+  const buscaFF = m => `https://www.farfetch.com/br/shopping/men/search/items.aspx?q=${encodeURIComponent(m.busca)}&price=0-${FF.limite}`;
+  const marcasNaFaixa = FF.marcas.filter(m => FFS.faixa === 'todas' || m.faixa === FFS.faixa);
+  let achados = FF.achados.filter(a => a.por <= FFS.max && (FFS.faixa === 'todas' || faixaDe[a.marca] === FFS.faixa)
+    && (FFS.tipo === 'Tudo' || tipoImportado(a.nome) === FFS.tipo) && (FFS.marca === 'Todas' || a.marca === FFS.marca) && (!FFS.sale || a.off > 0));
+  achados = [...achados].sort({ desconto: (a, b) => b.off - a.off || a.por - b.por, nota: (a, b) => comparaImportado(b).nota - comparaImportado(a).nota, menor: (a, b) => a.por - b.por, maior: (a, b) => b.por - a.por }[FFS.ordem]);
+  const comAchado = new Set(FF.achados.map(a => a.marca));
+  const chip = (attr, val, atual, rot) => `<button class="chip" data-${attr}="${esc(val)}" aria-pressed="${atual === val}">${esc(rot)}</button>`;
+  return header('Importados') + `
+    <div class="wrap">
+      <div class="notice" style="margin-top:16px"><span>Peças da Farfetch Brasil, em reais, <b>até ${brl(FF.limite)}</b>, ${FF.blackFriday ? `<b>${esc(FF.blackFriday)}</b> ` : ''}escolhidas por mim em <b>${esc(quando)}</b>. O robô não consegue acompanhar a Farfetch, então preço e estoque podem mudar. Para eu olhar de novo, peça <b>"atualiza os importados"</b>.</span></div>
+      <div class="chips" role="group" aria-label="Faixa" style="margin-top:12px">${chip('fffaixa', 'todas', FFS.faixa, 'Todas')}${Object.entries(FF.faixas).map(([k, v]) => chip('fffaixa', k, FFS.faixa, v)).join('')}</div>
+      <div class="chips" role="group" aria-label="Tipo">${['Tudo', 'Roupas', 'Calçados', 'Acessórios'].map(t => chip('fftipo', t, FFS.tipo, t)).join('')}</div>
+      <div class="field-row">
+        <div class="field"><label for="ffMarca">Marca</label><select id="ffMarca">${['Todas', ...[...comAchado].sort()].map(m => `<option ${m === FFS.marca ? 'selected' : ''}>${esc(m)}</option>`).join('')}</select></div>
+        <div class="field"><label for="ffOrdem">Ordenar</label><select id="ffOrdem">${Object.entries({ desconto: 'Maior desconto', nota: 'Melhor nota', menor: 'Menor preço', maior: 'Maior preço' }).map(([k, v]) => `<option value="${k}" ${FFS.ordem === k ? 'selected' : ''}>${v}</option>`).join('')}</select></div>
+      </div>
+      <div class="field"><div class="range-val"><label for="ffMax">Preço até</label><span class="mono lbl">${brl(FFS.max)}</span></div><input id="ffMax" type="range" min="100" max="${FF.limite}" step="50" value="${FFS.max}"></div>
+      <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-ffsale aria-checked="${FFS.sale}" aria-label="Só peças com desconto"></button></div>
+      <p class="section-sub" style="margin:12px 0">${achados.length} ${achados.length === 1 ? 'peça' : 'peças'}</p>
+    </div>
+    <div class="grid">${achados.map(a => `<div class="tilewrap">${(k => `<button class="heart ${S.curtidas[k] ? 'on' : ''}" data-curti="${esc(k)}" aria-pressed="${!!S.curtidas[k]}" aria-label="${S.curtidas[k] ? 'Remover curtida' : 'Curtir'}">${icone('salvos', 20, { cheio: !!S.curtidas[k] })}</button>`)(ffKey(a))}<button class="tile" data-ffi="${FF.achados.indexOf(a)}">
+      <div class="ph"><img loading="lazy" src="${esc(a.img)}" alt=""><div class="tags">${a.off ? `<span class="tag t-sale">-${a.off}%</span>` : ''}${a.blackFriday ? '<span class="tag t-new">Black Friday</span>' : ''}<span class="tag ${faixaDe[a.marca] === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[faixaDe[a.marca]] || '')}</span></div></div>
+      <div class="body"><span class="brand">${esc(a.marca)} · Farfetch</span><span class="pname">${esc(a.nome)}</span>
+        <span class="prices">${a.de ? `<span class="was mono">${brl(a.de)}</span>` : ''}<span class="now mono">${brl(a.por)}</span></span>
+        <span class="t2" style="color:var(--helper);font-size:11px;margin-top:4px">${brl(custoFarfetch(a.por).total)} com frete${a.tam ? ` · ${esc(a.tam)}` : ''}</span>
+        ${(n => `<span class="scoreline"><span class="meter ${n >= 50 ? 'hi' : ''}"><i style="width:${n}%"></i></span><span class="score mono">Nota ${n}</span></span>`)(comparaImportado(a).nota)}</div></button></div>`).join('') || '<div class="wrap note"><span>Nenhuma peça com esses filtros.</span></div>'}</div>
+    <div class="wrap"><h2 class="section-h">Marcas${FFS.faixa !== 'todas' ? ` · ${esc(FF.faixas[FFS.faixa])}` : ''}</h2>
+      <div class="list">${marcasNaFaixa.map(m => `<div class="row"><div class="grow"><span class="t1">${esc(m.nome)} <span class="tag ${m.faixa === 'luxo' ? 't-intl' : 't-gray'}">${esc(FF.faixas[m.faixa])}</span></span><span class="t2">${esc(m.frase)}${comAchado.has(m.nome) ? '' : ` · nada até ${brl(FF.limite)} agora`}</span></div><a class="btn ghost sm" href="${esc(buscaFF(m))}" target="_blank" rel="noopener">Farfetch ${icone('abrir', 12)}</a></div>`).join('')}</div>
+    </div>
+    ${stockxBloco()}`;
+}
+
+// StockX x Brasil: custo total para importar o tênis comparado ao menor preço dele nas lojas brasileiras
+function stockxBloco() {
+  if (!SX || !DATA.cambio?.USD) return '';
+  const linhas = SX.modelos.map(m => {
+    const custo = custoImportado({ moeda: 'USD', frete: SX.freteUsd }, m.ultimaVenda);
+    const re = new RegExp(m.busca.split(' ').join('.*'), 'i');
+    const br = DATA.produtos.filter(p => p.cat === 'Tênis' && re.test(p.titulo)).map(p => ({ p, e: evaluate(p) })).filter(x => x.e.ok && !x.e.intl).sort((a, b) => a.e.price - b.e.price)[0];
+    const dif = br ? custo.total / br.e.price - 1 : null;
+    const compensa = br && dif <= 0.05;
+    return { m, custo, br, dif, compensa };
+  });
+  const bons = linhas.filter(l => l.compensa).length;
+  return `<div class="wrap"><h2 class="section-h">StockX x Brasil</h2>
+    <p class="section-sub">Tênis que você acompanha: quanto sai trazer da StockX, com tudo incluído, comparado ao menor preço nas lojas brasileiras nos seus tamanhos.</p>
+    <div class="notice ${bons ? 'ok' : ''}" style="margin-bottom:12px"><span>${bons ? `${bons} ${bons > 1 ? 'modelos compensam' : 'modelo compensa'} importar agora.` : '<b>Nenhum compensa importar agora.</b> Com frete, IOF, imposto e ICMS, os modelos que também têm aqui saem mais caros que no Brasil. Os que não são vendidos no Brasil (Salomon, Yeezy) aparecem só com o custo total.'}</span></div>
+    ${linhas.map(({ m, custo, br, dif, compensa }) => `<div class="row" style="align-items:flex-start">
+      <a class="thumb" href="${esc(m.url)}" target="_blank" rel="noopener" style="background:#fff"><img loading="lazy" src="${esc(m.img)}" alt="" style="object-fit:contain"></a>
+      <div class="grow">
+        <span class="t1">${esc(m.modelo)}</span>
+        <span class="t2">StockX: último vendido US$ ${m.ultimaVenda} → <b class="mono">${brl(custo.total)}</b> com tudo</span>
+        <span class="t2">${br ? `Brasil: <b class="mono">${brl(br.e.price)}</b> ${br.e.lojas[0].loja.startsWith('Site ') ? `no site da ${esc(br.e.lojas[0].loja.slice(5))}` : `na ${esc(br.e.lojas[0].loja)}`}` : 'Sem esse modelo nas lojas brasileiras do app'}</span>
+        <span>${br ? `<span class="tag ${compensa ? 't-ok' : 't-sale'}">${compensa ? 'Compensa importar' : `Importar sai ${Math.round(dif * 100)}% mais caro`}</span>` : ''}</span>
+      </div></div>`).join('')}
+    <p class="section-sub" style="margin-top:12px">Conta: preço × dólar do dia (R$ ${DATA.cambio.USD.toFixed(2)}) + frete estimado US$ ${SX.freteUsd} + IOF 3,5% + imposto de importação 60% + ICMS 17%. Desde maio/2026, compras de até US$ 50 em sites do Remessa Conforme não pagam imposto federal (só ICMS), mas tênis da StockX costumam passar desse valor com o frete. Confira o total no checkout.</p>
+  </div>`;
+}
+
+function viewMarcas() {
+  const initials = n => n.split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  const stats = m => {
+    const ps = DATA.produtos.filter(p => p.marca === m.nome).map(p => evaluate(p)).filter(e => e.ok);
+    const sale = ps.filter(e => e.off > 0);
+    return { total: ps.length, sale: sale.length, max: sale.length ? Math.round(Math.max(...sale.map(e => e.off)) * 100) : 0 };
+  };
+  const row = m => {
+    const f = S.follow.includes(m.nome);
+    let sub, tag = '';
+    if (m.arquivos?.length) {
+      const s = stats(m);
+      const lojas = [...new Set(DATA.produtos.filter(p => p.marca === m.nome).flatMap(p => p.ofertas.map(o => o.loja)))];
+      sub = `${s.total} peças no seu tamanho · ${esc(m.site || lojas.join(', '))}`;
+      tag = s.sale ? `<span class="tag t-sale">Sale até ${s.max}%</span>` : '<span class="tag t-gray">Sem sale</span>';
+    } else { sub = esc(m.obs || 'Sem fonte de dados ainda'); tag = '<span class="tag t-gray">Sem conexão</span>'; }
+    return `<div class="row">
+      <span class="avatar">${esc(initials(m.nome))}</span>
+      <div class="grow">${m.arquivos?.length ? `<button class="btn ghost" style="padding:0;height:auto;color:var(--fg);justify-content:flex-start" data-brand="${esc(m.nome)}">${esc(m.nome)}</button>` : `<span class="t1">${esc(m.nome)}</span>`}<span class="t2">${sub}</span></div>
+      ${tag}
+      <button class="btn ${f ? 'ghost' : 'tertiary'} sm" data-follow="${esc(m.nome)}">${f ? 'Seguindo' : 'Seguir'}</button></div>`;
+  };
+  // suas marcas = as que você segue; as recomendadas que você ainda não segue aparecem como "marcas novas"
+  const seg = DATA.marcas.filter(m => S.follow.includes(m.nome));
+  const novas = DATA.marcas.filter(m => m.relacao === 'sugerida' && !S.follow.includes(m.nome) && !S.dispensadas.includes(m.nome) && m.arquivos?.length)
+    .map(m => ({ m, a: afinidade(m) })).sort((x, y) => y.a - x.a || String(y.m.liberada).localeCompare(String(x.m.liberada))).map(x => x.m);
+  const curtiu = Object.keys(S.curtidas).length;
+  return header('Marcas') + `<div class="wrap">
+    <h2 class="section-h">Suas marcas</h2>
+    <p class="section-sub">Toque numa marca para ver as ofertas dela. Toque em "seguindo" para deixar de seguir.</p>
+    <div class="marcas-grid">${seg.map(m => {
+      const s = m.arquivos?.length ? stats(m) : null;
+      const sel = !s ? '<span class="mg-sub">Sem conexão</span>' : s.sale ? `<span class="tag t-sale">até -${s.max}%</span>` : `<span class="mg-sub">${s.total} peças</span>`;
+      const abre = s ? `data-brand="${esc(m.nome)}"` : '';
+      return `<div class="mg-card"><button class="mg-abre" ${abre} aria-label="${esc(m.nome)}">${logoMarca(m.nome, 'lg')}<span class="mg-nome">${esc(m.nome)}</span>${sel}</button>
+        <button class="mg-seguindo" data-follow="${esc(m.nome)}" aria-label="Deixar de seguir ${esc(m.nome)}">seguindo</button></div>`;
+    }).join('')}</div>
+    <h2 class="section-h">Marcas novas para você</h2>
+    <p class="section-sub">${curtiu ? `Ordenadas pelo que você curtiu (${curtiu} ${curtiu > 1 ? 'peças' : 'peça'}). As fotos mostram as peças mais no seu estilo, não as de maior nota.` : 'Curta peças (no coração) para eu ordenar estas marcas e as fotos pelo seu estilo.'} Toque em Seguir para levar a marca para cima.</p>
+    ${novas.map(cardMarca).join('') || '<p class="section-sub" style="padding-block:16px">Você já segue todas as recomendações. Peça "reabastece as marcas novas" para eu buscar mais.</p>'}
+    <div class="note"><span>Marcas "sem conexão" não têm catálogo aberto em loja brasileira.</span></div>
+  </div>`;
+}
+
+function spark(h, w = 88, hgt = 28) {
+  if (h.length < 2) return `<span class="t2" style="font-size:10px">histórico começou ${esc(fmtDate(h[0]?.[0]))}</span>`;
+  const vals = h.map(([, v]) => v), min = Math.min(...vals), max = Math.max(...vals), r = max - min || 1;
+  const pts = vals.map((v, i) => [(i / (vals.length - 1)) * (w - 4) + 2, hgt - 3 - ((v - min) / r) * (hgt - 6)]);
+  const last = pts[pts.length - 1];
+  return `<svg width="${w}" height="${hgt}" viewBox="0 0 ${w} ${hgt}" aria-hidden="true"><polyline points="${pts.map(p => p.join(',')).join(' ')}" fill="none" stroke="#a8a8a8" stroke-width="1.25"/><circle cx="${last[0]}" cy="${last[1]}" r="2.5" fill="#42be65"/></svg>`;
+}
+const fmtDate = d => d ? d.split('-').reverse().slice(0, 2).join('/') : '';
+
+/* ---------- Combinar: monta um look em volta de uma peça curtida ou salva ---------- */
+// regras simples de moda masculina: neutros combinam com tudo; peça colorida pede o resto neutro; estilo parecido (street × alfaiataria)
+const NEUTRAS = new Set(['preto', 'branco', 'off', 'cinza', 'caqui', 'azul-escuro']);
+function coresLook(p) {
+  const t = p.titulo.toLowerCase();
+  const c = tracos(p).cores.map(x => x === 'azul' && /marinho|navy|indigo|jeans|denim|escuro/.test(t) ? 'azul-escuro' : x);
+  if (!c.length && /jeans|denim/.test(t)) c.push('azul-escuro');
+  return c;
+}
+const familia = p => {
+  const t = (p.titulo + ' ' + p.marca).toLowerCase();
+  if (/alfaiataria|linho|loafer|derby|mocassim|social|blazer|camisa|polo|pregas|seda|tricot|sapato/.test(t)) return 'classico';
+  if (/oversized|boxy|cargo|baggy|graphic|estamp|hoodie|moletom|jogger|track|chunky|9060|skate|tie.?dye|logo/.test(t)) return 'street';
+  return 'casual';
+};
+const VAGAS = {
+  top: [['baixo', 'Parte de baixo', ['calca', 'bermuda']], ['pe', 'Tênis', ['tenis']], ['cima', 'Por cima', ['jaqueta', 'moletom']], ['cabeca', 'Boné', ['bone']]],
+  baixo: [['top', 'Parte de cima', ['camiseta', 'camisa']], ['pe', 'Tênis', ['tenis']], ['cima', 'Por cima', ['jaqueta', 'moletom']], ['cabeca', 'Boné', ['bone']]],
+  pe: [['top', 'Parte de cima', ['camiseta', 'camisa', 'moletom']], ['baixo', 'Parte de baixo', ['calca', 'bermuda']], ['cima', 'Por cima', ['jaqueta']]],
+  cima: [['top', 'Por baixo', ['camiseta', 'camisa']], ['baixo', 'Parte de baixo', ['calca', 'bermuda']], ['pe', 'Tênis', ['tenis']]],
+  cabeca: [['top', 'Parte de cima', ['camiseta', 'camisa', 'moletom']], ['baixo', 'Parte de baixo', ['calca', 'bermuda']], ['pe', 'Tênis', ['tenis']]],
+};
+const vagaDe = k => ({ camiseta: 'top', camisa: 'top', calca: 'baixo', bermuda: 'baixo', tenis: 'pe', jaqueta: 'cima', moletom: 'top', bone: 'cabeca' })[k];
+function harmonia(base, q) {
+  const a = coresLook(base), b = coresLook(q);
+  if (!b.length) return 0.5;                                   // sem cor no nome: neutro provável
+  const bNeutra = b.every(c => NEUTRAS.has(c)), aNeutra = !a.length || a.every(c => NEUTRAS.has(c));
+  if (bNeutra) return 2;                                        // neutro com qualquer coisa
+  if (aNeutra) return 1.2;                                      // base neutra aceita uma cor de destaque
+  return b.some(c => a.includes(c)) ? 0.8 : -1;                 // duas cores fortes diferentes brigam
+}
+// peças da Farfetch viram "produtos" simples para entrar nos looks (como peça principal ou sugestão)
+let FFPRODS = null;
+const ffKey = a => 'ff:' + (a.url.match(/item-(\d+)/)?.[1] || a.nome);
+function ffProdutos() {
+  if (FFPRODS) return FFPRODS; if (!FF) return [];
+  FFPRODS = FF.achados.map((a, i) => ({ key: ffKey(a), ffi: i, marca: a.marca, titulo: a.nome, kind: classify({ tipo: '', titulo: a.nome, tags: [] }) || 'outro', imagens: a.imgs || [a.img], ff: true }));
+  return FFPRODS;
+}
+const acharPeca = k => DATA.produtos.find(x => x.key === k) || ffProdutos().find(x => x.key === k);
+function avaliar(q) { if (!q.ff) return evaluate(q); const a = FF.achados[q.ffi]; return { ok: true, price: a.por, score: comparaImportado(a).nota, off: (a.off || 0) / 100 }; }
+const abrirAttr = q => q.ff ? `data-ffi="${q.ffi}"` : `data-open="${esc(q.key)}"`;
+function sugestoesLook(base, kinds, n = 6) {
+  const eb = avaliar(base), fam = familia(base), seguidas = new Set(S.follow);
+  const curtidasMarca = new Set(Object.values(S.curtidas).map(c => c.marca));
+  const porMarca = {};
+  return [...DATA.produtos, ...ffProdutos()].filter(q => kinds.includes(q.kind) && q.key !== base.key && !S.dispensadas.includes(q.marca) && !escondida(q))
+    .map(q => ({ q, e: avaliar(q) })).filter(x => x.e.ok)
+    .map(x => {
+      const preco = eb.ok ? x.e.price / eb.price : 1;
+      const s = harmonia(base, x.q) * 2 + (familia(x.q) === fam ? 1.5 : familia(x.q) === 'casual' || fam === 'casual' ? 0.5 : -1)
+        + (curtidasMarca.has(x.q.marca) ? 1.5 : seguidas.has(x.q.marca) ? 1.2 : 0) + (S.curtidas[x.q.key] ? 2 : 0)
+        + x.e.score / 100 + (preco > 4 ? -1.5 : preco < 0.3 ? -2 : preco < 0.45 ? -0.8 : 0) + (x.q.marca === base.marca ? 0.3 : 0);
+      return { ...x, s };
+    })
+    .sort((a, b) => b.s - a.s)
+    .filter(x => (porMarca[x.q.marca] = (porMarca[x.q.marca] || 0) + 1) <= 2).slice(0, n);
+}
+let LOOK = null;   // { base, vagas: [{ id, nome, ops, sel }] }
+function montarLook(base) {
+  const vg = base && vagaDe(base.kind); if (!vg) return null;
+  // moletom ou jaqueta como peça principal: por cima só vai jaqueta (não esconde a sua peça)
+  const k2 = (id, kinds) => id === 'cima' && (base.kind === 'moletom' || base.kind === 'jaqueta') ? kinds.filter(k => k === 'jaqueta' && base.kind !== 'jaqueta') : kinds;
+  return { base, vagas: VAGAS[vg].map(([id, nome, kinds]) => ({ id, nome, ops: k2(id, kinds).length ? sugestoesLook(base, k2(id, kinds)) : [], sel: id === 'cima' && vg === 'top' ? -1 : 0 })).filter(v => v.ops.length) };
+}
+function abrirLook(key) {
+  const L = montarLook(acharPeca(key));
+  if (!L) { toast('Ainda não sei combinar esse tipo de peça'); return; }
+  LOOK = L; desenharLook();
+}
+// boneco pequeno na tela de cada peça, com o look sugerido
+function miniLook(base) {
+  const L = montarLook(base); if (!L || !L.vagas.length) return '';
+  const eb = avaliar(base), esc2 = L.vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel]);
+  const total = (eb.ok ? eb.price : 0) + esc2.reduce((s, x) => s + x.e.price, 0);
+  return `<h3 class="section-h">Um look com esta peça</h3>
+    <div class="mini-look">
+      <div class="mini-fig">${boneco(base, L.vagas)}</div>
+      <div class="mini-lista">
+        ${esc2.map(x => `<button class="mini-item" ${abrirAttr(x.q)}><span class="t2">${esc(x.q.marca)}${x.q.ff ? ' · Farfetch' : ''}</span><span class="mini-nome">${esc(x.q.titulo)}</span><span class="mono">${brl(x.e.price)}</span></button>`).join('')}
+        <span class="t2" style="margin-top:4px">Look completo: <b class="mono">${brl(total)}</b></span>
+        <button class="btn tertiary sm" data-look="${esc(base.key)}" style="margin-top:6px;justify-content:center">${icone('combinar', 16)} Trocar peças</button>
+      </div>
+    </div>`;
+}
+// recorta o fundo liso das fotos (preenchendo a partir das bordas) e corta a sobra, para a peça encaixar no corpo
+const RECORTES = new Map();
+function recortar(u) {
+  if (RECORTES.has(u)) return Promise.resolve(RECORTES.get(u));
+  return new Promise(ok => {
+    const im = new Image(); im.crossOrigin = 'anonymous';
+    im.onerror = () => ok(null);
+    im.onload = () => {
+      try {
+        const W = Math.min(360, im.naturalWidth), H = Math.round(im.naturalHeight * W / im.naturalWidth);
+        const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+        const cx = cv.getContext('2d', { willReadFrequently: true }); cx.drawImage(im, 0, 0, W, H);
+        const d = cx.getImageData(0, 0, W, H), px = d.data;
+        const at = (x, y) => (y * W + x) * 4;
+        const cantos = [[2, 2], [W - 3, 2], [2, H - 3], [W - 3, H - 3]].map(([x, y]) => at(x, y));
+        const bg = [0, 1, 2].map(c => cantos.reduce((s, i) => s + px[i + c], 0) / 4);
+        const longe = i => Math.hypot(px[i] - bg[0], px[i + 1] - bg[1], px[i + 2] - bg[2]);
+        const varia = Math.max(...cantos.map(i => longe(i)));   // cantos diferentes = fundo em degradê
+        const LIM = Math.min(60, 34 + varia);
+        const visto = new Uint8Array(W * H), fila = [];
+        for (let x = 0; x < W; x++) fila.push(x, (H - 1) * W + x);
+        for (let y = 0; y < H; y++) fila.push(y * W, y * W + W - 1);
+        let tirados = 0;
+        while (fila.length) {
+          const k = fila.pop(); if (visto[k]) continue; visto[k] = 1;
+          const i = k * 4; const dist = longe(i); if (dist > LIM) continue;
+          px[i + 3] = dist < LIM - 14 ? 0 : Math.round((dist - LIM + 14) / 14 * 255); tirados++;
+          const x = k % W, y = (k / W) | 0;
+          if (x > 0) fila.push(k - 1); if (x < W - 1) fila.push(k + 1); if (y > 0) fila.push(k - W); if (y < H - 1) fila.push(k + W);
+        }
+        if (tirados < W * H * 0.08) { RECORTES.set(u, null); return ok(null); }   // fundo não é liso (foto com modelo): deixa como está
+        let x0 = W, y0 = H, x1 = 0, y1 = 0;
+        // linhas/colunas só contam com um pouco de peça de verdade (ignora pontinhos soltos e sombras na borda)
+        const col = new Uint32Array(W), lin = new Uint32Array(H);
+        for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) if (px[at(x, y) + 3] > 40) { col[x]++; lin[y]++; }
+        const mc = Math.max(2, H * 0.015), ml = Math.max(2, W * 0.015);
+        for (let x = 0; x < W; x++) if (col[x] >= mc) { x0 = Math.min(x0, x); x1 = x; }
+        for (let y = 0; y < H; y++) if (lin[y] >= ml) { y0 = Math.min(y0, y); y1 = y; }
+        if (x1 <= x0 || y1 <= y0) { RECORTES.set(u, null); return ok(null); }
+        cx.putImageData(d, 0, 0);
+        const out = document.createElement('canvas'); out.width = x1 - x0 + 1; out.height = y1 - y0 + 1;
+        out.getContext('2d').drawImage(cv, x0, y0, out.width, out.height, 0, 0, out.width, out.height);
+        const url = out.toDataURL('image/png'); RECORTES.set(u, url); ok(url);
+      } catch (e) { RECORTES.set(u, null); ok(null); }
+    };
+    im.src = u;
+  });
+}
+function aplicarRecortes() {
+  document.querySelectorAll('.boneco img[data-recorte]').forEach(el => {
+    if (el.dataset.ok) return;
+    recortar(el.dataset.recorte).then(url => { el.dataset.ok = 1; if (url) { el.src = url; el.classList.add('recortada'); } });
+  });
+}
+// boneco em pé montado com as fotos reais: boné na cabeça, peça de cima no tronco (jaqueta por fora), calça nas pernas, tênis nos pés
+function boneco(base, vagas) {
+  const pos = { [vagaDe(base.kind)]: base };
+  for (const v of vagas) if (v.sel >= 0) { const q = v.ops[v.sel].q; pos[v.id === 'top' && pos.top ? 'top2' : v.id] = q; }
+  // quando a peça-base é moletom/jaqueta escolhida "por cima" e a vaga top também existe, a de cima vai por fora
+  if (pos.cima && vagaDe(pos.cima.kind) === 'top' && !pos.top) { pos.top = pos.cima; delete pos.cima; }
+  const foto = (q, cls) => { if (!q) return ''; const u = img(q.imagens[0], 400); return `<img class="${cls}" src="${esc(RECORTES.get(u) || u)}" data-recorte="${esc(u)}" alt="${esc(q.titulo)}">`; };
+  const dentro = pos.top2 || (pos.cima ? pos.top : null);
+  const fora = pos.cima || pos.top;
+  return `<div class="boneco" aria-label="Look montado">
+    <div class="b-cabeca">${pos.cabeca ? foto(pos.cabeca, 'b-bone') : '<i class="b-rosto"></i>'}</div>
+    <div class="b-tronco">${foto(fora, 'b-fora')}${dentro && dentro !== fora ? foto(dentro, 'b-dentro') : ''}</div>
+    <div class="b-pernas">${pos.baixo ? foto(pos.baixo, '') : '<i class="b-vazio">sem parte de baixo</i>'}</div>
+    <div class="b-pes">${pos.pe ? foto(pos.pe, '') : '<i class="b-vazio">sem tênis</i>'}</div>
+  </div>`;
+}
+function desenharLook() {
+  ATUAL = { fn: L => { LOOK = L; desenharLook(); }, args: [LOOK] };
+  const { base, vagas } = LOOK, eb = avaliar(base);
+  const escolhidas = vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel]);
+  const total = (eb.ok ? eb.price : 0) + escolhidas.reduce((s, x) => s + x.e.price, 0);
+  const cores = [...new Set([base, ...escolhidas.map(x => x.q)].flatMap(coresLook))];
+  const dica = familia(base) === 'street' ? 'Look streetwear: peças mais largas e tênis robusto.' : familia(base) === 'classico' ? 'Look mais arrumado: cortes retos e calçado limpo.' : 'Look casual: básico que funciona no dia a dia.';
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">Combinar</h1></div></header>
+    <div class="wrap">
+      <div class="row" style="align-items:center;border:0">
+        <button class="thumb" ${abrirAttr(base)}><img src="${esc(img(base.imagens[0], 200))}" alt=""></button>
+        <div class="grow"><span class="t2">Sua peça · ${esc(base.marca)}${base.ff ? ' · Farfetch' : ''}</span><span class="t1">${esc(base.titulo)}</span><span class="mono">${eb.ok ? brl(eb.price) : 'esgotada no seu tamanho'}</span></div>
+      </div>
+      ${boneco(base, vagas)}
+      <div class="panel" style="display:grid;gap:4px">
+        <div class="range-val"><span>Look completo (${escolhidas.length + 1} peças)</span><span class="mono" style="font-size:18px;font-weight:600">${brl(total)}</span></div>
+        <span class="t2" style="font-size:12px">${esc(dica)} Cores: ${esc(cores.length ? cores.map(c => c === 'off' ? 'off-white/bege' : c.replace('-', ' ')).join(', ') : 'neutras')}.</span>
+      </div>
+      ${vagas.map((v, i) => `<h3 class="section-h">${esc(v.nome)}</h3>
+        <div class="vitrine look-ops">${v.ops.map((x, j) => `<button data-lookvaga="${i}" data-lookop="${j}" aria-pressed="${v.sel === j}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt="${esc(x.q.titulo)}"><span class="mono">${brl(x.e.price)}</span></button>`).join('')}
+          <button data-lookvaga="${i}" data-lookop="-1" aria-pressed="${v.sel === -1}" class="look-sem"><span>Sem ${esc(v.nome.toLowerCase())}</span></button></div>
+        ${v.sel >= 0 ? `<button class="btn ghost sm" ${abrirAttr(v.ops[v.sel].q)} style="padding:0;height:auto;margin-top:4px">${esc(v.ops[v.sel].q.marca)}${v.ops[v.sel].q.ff ? ' (Farfetch)' : ''} · ${esc(v.ops[v.sel].q.titulo)} ›</button>` : ''}`).join('')}
+      <div class="actions" style="grid-template-columns:1fr;margin-top:16px"><button class="btn" data-lookcarrinho>${icone('simular', 16)} Simular a compra deste look</button></div>
+      <p class="section-sub" style="margin-top:8px">Escolhi por cor (neutros combinam com tudo; peça colorida pede o resto neutro), estilo parecido e marcas que você curte ou segue. Toque nas fotos para trocar.</p>
+    </div>`);
+}
+
+/* ---------- Notificações do próprio Achei (Web Push): o robô manda direto para o celular ---------- */
+const VAPID_PUBLICA = 'BBsbFVsD8hXdsXTuOWcw-g2bhCB17Wep_8cWBa-5086MoL_3cs8wPMXveLwALz5jvec9s8NlNzZVnuOr5LV3F2k';
+const naTelaInicial = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+function estadoPush() {
+  if (!('serviceWorker' in navigator) || !('PushManager' in window) || !('Notification' in window)) return naTelaInicial() ? 'sem-suporte' : 'instalar';
+  if (Notification.permission === 'denied') return 'bloqueado';
+  return S.push && Notification.permission === 'granted' ? 'ativo' : 'desligado';
+}
+const b64url = s => { const p = '='.repeat((4 - s.length % 4) % 4); const b = atob((s + p).replace(/-/g, '+').replace(/_/g, '/')); return Uint8Array.from(b, c => c.charCodeAt(0)); };
+async function ativarPush() {
+  try {
+    const perm = await Notification.requestPermission();
+    if (perm !== 'granted') { toast('Sem permissão: as notificações não foram ativadas'); render(); return; }
+    const reg = await navigator.serviceWorker.ready;
+    const sub = (await reg.pushManager.getSubscription()) || await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64url(VAPID_PUBLICA) });
+    S.push = sub.toJSON(); persist();
+    toast(S.canal ? 'Notificações ativadas. Os próximos avisos chegam pelo Achei.' : 'Ativadas. Preencha o canal no Perfil para o robô saber para onde mandar.');
+    render();
+  } catch (e) { toast('Não consegui ativar: ' + e.message); }
+}
+async function desligarPush() {
+  try { const reg = await navigator.serviceWorker.ready; const sub = await reg.pushManager.getSubscription(); if (sub) await sub.unsubscribe(); } catch (e) {}
+  S.push = null; persist(); toast('Notificações do Achei desativadas'); render();
+}
+async function testarPush() {
+  const reg = await navigator.serviceWorker.ready;
+  await reg.showNotification('Achei', { body: 'Teste: as notificações do Achei estão funcionando neste celular.', icon: 'achei-192.png', data: { url: './#top10' } });
+}
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+  // tocou numa notificação com o app já aberto: vai para a peça ou o Top
+  navigator.serviceWorker.addEventListener('message', ev => { if (ev.data?.abrir) { location.hash = new URL(ev.data.abrir).hash; } });
+}
+
+/* ---------- Boas-vindas: cada pessoa escolhe os próprios tamanhos e marcas ---------- */
+let BOAS_ABERTA = false;
+function abrirBoasVindas() {
+  BOAS_ABERTA = true;
+  const y = document.getElementById('sheet').scrollTop;
+  const marcas = DATA.marcas.filter(m => (m.arquivos || []).length).map(m => m.nome).sort((a, b) => a.localeCompare(b));
+  showSheet(`<header class="hdr"><div class="wrap"><h1 style="font-size:16px">Bem-vindo ao Achei</h1></div></header>
+    <div class="wrap">
+      <p class="section-sub" style="margin-top:12px">Escolha seus tamanhos e as marcas que você curte. Dá para mudar depois no Perfil.</p>
+      ${[['top', 'Camisetas, moletons e jaquetas'], ['bottom', 'Calças e bermudas'], ['shoe', 'Tênis']].map(([g, label]) => `
+        <div class="field"><span class="lbl">${label}</span>
+          <div class="sizes" role="group" aria-label="${label}">${SIZE_OPTS[g].map(o => `<button class="size ${S.sizes[g].includes(o) ? 'mine' : ''}" data-size="${g}:${o}" aria-pressed="${S.sizes[g].includes(o)}" style="background:none">${o}</button>`).join('')}</div>
+        </div>`).join('')}
+      <h2 class="section-h">Marcas que você quer seguir</h2>
+      <div class="chips" style="flex-wrap:wrap">${marcas.map(n => `<button class="chip" data-follow="${esc(n)}" aria-pressed="${S.follow.includes(n)}">${esc(n)}</button>`).join('')}</div>
+      <div class="actions" style="grid-template-columns:1fr;margin:20px 0"><button class="btn" data-boas-fim>Começar</button></div>
+    </div>`);
+  document.getElementById('sheet').scrollTop = y;
+}
+
+/* ---------- Top 10 da semana: a mesma lista que o robô manda no domingo ---------- */
+function abrirTop10(slug = 'tenis') {
+  ATUAL = { fn: abrirTop10, args: [slug] };
+  const tops = topPorCategoria(activeBrands(), new Set(DATA.produtos.filter(escondida).map(p => p.key)));
+  const atual = tops.find(t => t.slug === slug) || tops[0], lista = atual.lista;
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${icone('top10', 18)} Top ${lista.length} ${esc(atual.cat)} da semana</h1></div></header>
+    <div class="wrap">
+      <div class="chips" role="group" aria-label="Categoria" style="margin-top:12px">${tops.map(t => `<button class="chip" data-topcat="${t.slug}" aria-pressed="${t.slug === atual.slug}">${esc(t.cat)} (${t.lista.length})</button>`).join('')}</div>
+      <p class="section-sub">As melhores ofertas com desconto das suas marcas, nos seus tamanhos, no máximo 2 por marca. São 10 por categoria; quando há mais peças excelentes (nota 90+ e 30%+ de desconto), cresce até 20. Tocou no X, entra a próxima melhor. Atualiza a cada rodada do robô (8h e 18h).</p>
+      <div class="list">${lista.map(({ p, e, outra }, i) => `<div class="top-linha"><button class="row rowbtn" data-open="${esc(p.key)}" style="width:100%;text-align:left;border:0;background:none">
+        <span class="mono" style="font-size:20px;width:28px;flex:none;color:var(--helper)">${i + 1}</span>
+        <span class="thumb"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></span>
+        <span class="grow" style="display:grid;gap:2px"><span class="t2">${esc(p.marca)} · ${esc(e.lojas[0].loja)}</span><span class="t1">${esc(p.titulo)}</span>
+          <span>${outra ? `<span class="tag t-gray" style="margin-right:4px">${esc(p.cat)}</span>` : ''}<span class="mono">${brl(e.price)}</span> ${e.de ? `<span class="mono was" style="font-size:12px">${brl(e.de)}</span>` : ''} <span class="tag t-sale">-${Math.round(e.off * 100)}%</span> <span class="mono" style="font-size:12px;color:var(--helper)">nota ${e.score}</span></span></span>
+      </button><button class="top-fora" data-topfora="${esc(p.key)}" data-slug="${atual.slug}" aria-label="Não curti ${esc(p.titulo)}: trocar por outra">${icone('fechar', 14)}<span>Não curti</span></button></div>`).join('') || '<p class="section-sub">Nenhuma peça com desconto nas suas marcas agora.</p>'}</div>
+    </div>`);
+}
+/* ---------- Pix e frete grátis da loja (lidos do site pelo robô) ---------- */
+function pagamentoHTML(l, preco) {
+  const linhas = [];
+  if (l.pix) linhas.push(`<span>No Pix: <b class="mono">${brl(l.pix)}</b> <span class="tag t-ok">-${Math.round((1 - l.pix / preco) * 100)}%</span></span>`);
+  if (l.freteGratis === 0) linhas.push('<span>Frete grátis</span>');
+  else if (l.freteGratis > 0) linhas.push(preco >= l.freteGratis ? `<span><b>Frete grátis</b>: na ${esc(l.loja.replace(/^Site /, ''))} é a partir de ${brl(l.freteGratis)}, e esta peça já passa</span>`
+    : `<span>Frete grátis a partir de ${brl(l.freteGratis)} na ${esc(l.loja.replace(/^Site /, ''))} (faltam ${brl(l.freteGratis - preco)})</span>`);
+  if (l.freteObs) linhas.push(`<span>${esc(l.freteObs)}</span>`);
+  return linhas.length ? `<div class="pagto">${linhas.join('')}</div>` : '';
+}
+
+/* ---------- Simular compra: vale a pena levar agora? ---------- */
+// cores e detalhes do nome servem para achar peças parecidas no visual (não temos como comparar as fotos em si)
+const CORES = [['preto', /pret|black|onyx/], ['branco', /branc|white(?!.*off)/], ['off', /off.?white|bone white|creme|cream|gelo|ecru|natural|areia|sand|bege|beige|nude/],
+  ['cinza', /cinza|grey|gray|mescla|heather/], ['azul', /azul|blue|marinho|navy|indigo|royal|petr[oó]leo/], ['verde', /verde|green|oliva|olive|militar|menta/],
+  ['marrom', /marrom|brown|caramelo|chocolate|caf[eé]|mocha|telha|terracota/], ['vermelho', /vermelh|red|bord[oô]|vinho|burgundy|coral/],
+  ['rosa', /rosa|pink|p[eê]ssego|guava|goiaba|salm[aã]o|lilac/], ['amarelo', /amarel|yellow|mostarda|laranja|orange/], ['caqui', /caqui|khaki/], ['roxo', /roxo|purple|lil[aá]s/]];
+const ESTILO = /oversized|boxy|regular|slim|cargo|jogger|wide|ampla|reta|baggy|carpenter|capuz|hoodie|crewneck|zip|polo|xadrez|plaid|listr|stripe|bordad|embroider|estamp|print|graphic|logo|b[aá]sic|tie.?dye|veludo|nylon|ripstop|linho|couro|leather|su[eé]de|camur|tricot|knit|jeans|denim|sarja|twill|moletom|fleece|retr[oô]|vintage|estonad|washed|lavad/g;
+function tracos(p) {
+  const t = p.titulo.toLowerCase();
+  return { cores: CORES.filter(([, re]) => re.test(t)).map(([c]) => c), estilo: [...new Set(t.match(ESTILO) || [])] };
+}
+function parecidas(p, e, n = 3) {
+  const a = tracos(p);
+  return DATA.produtos.filter(q => q.kind === p.kind && q.key !== p.key && !S.dispensadas.includes(q.marca) && !escondida(q))
+    .map(q => {
+      const b = tracos(q);
+      const cor = a.cores.length ? a.cores.filter(c => b.cores.includes(c)).length / a.cores.length : 0.5;
+      const est = a.estilo.filter(w => b.estilo.includes(w)).length;
+      return { q, sim: cor * 2 + est + (q.marca === p.marca ? 0.5 : 0) + afinidadePeca(q), cor };
+    })
+    .filter(x => x.sim >= 1.5 && (a.cores.length === 0 || x.cor > 0))
+    .map(x => ({ ...x, e: evaluate(x.q) })).filter(x => x.e.ok && x.e.price <= e.price * 1.05 && x.e.price >= e.price * 0.6)
+    .sort((x, y) => y.sim - x.sim || x.e.price - y.e.price).slice(0, n);
+}
+const afinidadePeca = q => S.curtidas && Object.values(S.curtidas).some(c => c.marca === q.marca) ? 0.5 : 0;
+function veredito(p, e) {
+  const prev = e.hist.slice(0, -1).map(([, v]) => v);
+  const minAntes = prev.length ? Math.min(...prev) : null;
+  const marcaPs = DATA.produtos.filter(q => q.marca === p.marca).map(evaluate).filter(x => x.ok);
+  const marcaSale = marcaPs.length ? marcaPs.filter(x => x.off > 0).length / marcaPs.length : 0;
+  const par = parecidas(p, e);
+  const maisBarata = par.filter(x => x.sim >= 2.5 && x.e.price <= e.price * 0.85).sort((a, b) => a.e.price - b.e.price)[0];
+  const motivos = [];
+  if (e.off > 0) motivos.push(`${Math.round(e.off * 100)}% de desconto`);
+  if (e.justo?.nivel === 'abaixo') motivos.push(`${Math.round(-e.justo.dif * 100)}% abaixo do preço normal da marca`);
+  if (e.justo?.nivel === 'acima') motivos.push(`${Math.round(e.justo.dif * 100)}% acima do preço normal da marca`);
+  const caiu = minAntes && e.price < minAntes;   // menor preço que já registramos
+  if (caiu) motivos.push('menor preço já visto');
+  let v, cor, economia = 0;
+  if (minAntes && minAntes < e.price * 0.95) { v = 'Espere baixar'; cor = 'warn'; economia = e.price - minAntes; motivos.unshift(`já custou ${brl(minAntes)}`); }
+  else if (e.score >= S.notaMin || e.justo?.nivel === 'abaixo' || e.off >= 0.3 || caiu) { v = 'Vale a pena'; cor = 'good'; if (maisBarata) motivos.push(`ou uma parecida da ${maisBarata.q.marca} por ${brl(maisBarata.e.price)}`); }
+  else if (maisBarata) { v = 'Tem parecida mais barata'; cor = 'warn'; economia = e.price - maisBarata.e.price; motivos.push(`parecida da ${maisBarata.q.marca} por ${brl(maisBarata.e.price)}`); }
+  else if (e.off === 0 && marcaSale >= 0.25) { v = 'Espere a sale'; cor = 'warn'; motivos.push(`${Math.round(marcaSale * 100)}% das peças da ${p.marca} estão em sale agora; esta ainda não`); }
+  else if (e.justo?.nivel === 'acima') { v = 'Caro para a marca'; cor = 'bad'; }
+  else { v = 'Preço normal'; cor = 'helper'; motivos.push('sem desconto nem preço especial: compre se gostar muito'); }
+  return { v, cor, motivos, par, maisBarata, economia };
+}
+function simulacaoBloco() {
+  const itens = Object.keys(S.carrinho).map(k => DATA.produtos.find(x => x.key === k)).filter(Boolean)
+    .map(p => ({ p, e: evaluate(p) }));
+  if (!itens.length) return `<h2 class="section-h">Simular compra</h2>
+    <p class="section-sub">Na tela de uma peça, toque em <b>Simular compra</b>. Eu digo se vale levar agora, se é melhor esperar baixar e se tem peça parecida por menos.</p>`;
+  const ok = itens.filter(x => x.e.ok).map(x => ({ ...x, r: veredito(x.p, x.e) }));
+  const total = ok.reduce((s, x) => s + x.e.price, 0);
+  const valem = ok.filter(x => x.r.cor === 'good');
+  const economia = ok.reduce((s, x) => s + x.r.economia, 0);
+  const lojas = [...new Set(ok.map(x => x.e.lojas[0].loja))];
+  const cores = { good: 'var(--good)', warn: 'var(--warn)', bad: 'var(--bad)', helper: 'var(--helper)' };
+  const geral = !ok.length ? 'Nenhuma peça disponível no seu tamanho.'
+    : valem.length === ok.length ? `<b>Pode comprar tudo.</b> As ${ok.length} peças estão com preço bom.`
+    : valem.length ? `<b>Compre ${valem.length} de ${ok.length} agora</b> (${brl(valem.reduce((s, x) => s + x.e.price, 0))}). Nas outras, dá para economizar até <b>${brl(economia)}</b> esperando ou trocando por parecidas.`
+    : `<b>Melhor não comprar agora.</b> Esperando ou trocando por parecidas, dá para economizar até <b>${brl(economia)}</b>.`;
+  return `<h2 class="section-h">Simular compra</h2>
+    <div class="panel" style="display:grid;gap:8px">
+      <div class="range-val"><span>${ok.length} ${ok.length === 1 ? 'peça' : 'peças'} · ${lojas.length} ${lojas.length === 1 ? 'loja' : 'lojas'}</span><span class="mono" style="font-size:20px;font-weight:600">${brl(total)}</span></div>
+      <p class="t2" style="margin:0;font-size:13px">${geral}</p>
+      ${lojas.map(nome => {
+        const its = ok.filter(x => x.e.lojas[0].loja === nome), l = its[0].e.lojas[0];
+        const tot = its.reduce((s, x) => s + x.e.price, 0), totPix = its.reduce((s, x) => s + (x.e.lojas[0].pix || x.e.price), 0);
+        const frete = l.freteGratis === 0 ? 'frete grátis' : l.freteGratis > 0 ? (tot >= l.freteGratis ? 'frete grátis garantido' : `faltam ${brl(l.freteGratis - tot)} para frete grátis`) : 'frete à parte';
+        return `<p class="t2" style="margin:0;font-size:12px;color:var(--helper)">${esc(nome.replace(/^Site /, ''))}: ${brl(tot)}${totPix < tot ? ` · <b>${brl(totPix)} no Pix</b>` : ''} · ${frete}</p>`;
+      }).join('')}
+    </div>
+    <div class="list" style="margin-top:8px">${itens.map(({ p, e }) => {
+      if (!e.ok) return `<div class="row"><div class="grow"><span class="t1">${esc(p.titulo)}</span><span class="t2">Esgotado no seu tamanho</span></div><button class="btn ghost sm" data-carrinho="${esc(p.key)}">Tirar</button></div>`;
+      const r = veredito(p, e);
+      return `<div class="row" style="align-items:flex-start">
+        <button class="thumb" data-open="${esc(p.key)}" aria-label="Abrir ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>
+        <div class="grow" style="display:grid;gap:3px">
+          <span class="t2">${esc(p.marca)} · ${esc(e.lojas[0].loja)}</span><span class="t1">${esc(p.titulo)}</span>
+          <span><span class="mono" style="font-size:15px">${brl(e.price)}</span> <b style="color:${cores[r.cor]};font-size:13px;margin-left:6px">${r.v}</b></span>
+          ${r.motivos.length ? `<span class="t2" style="font-size:12px">${esc(r.motivos.join(' · '))}</span>` : ''}
+          ${r.par.length ? `<span class="t2" style="font-size:12px;margin-top:4px">Parecidas por preço igual ou menor:</span>
+          <div class="vitrine" style="margin:0;padding:0">${r.par.map(x => `<button data-open="${esc(x.q.key)}" aria-label="${esc(x.q.titulo)}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt=""><span class="mono">${brl(x.e.price)}</span></button>`).join('')}</div>` : ''}
+          <button class="btn ghost sm" data-carrinho="${esc(p.key)}" style="justify-self:start;padding:0;height:auto;color:var(--helper)">Tirar da simulação</button>
+        </div></div>`;
+    }).join('')}</div>
+    <button class="btn tertiary sm" data-limpar-carrinho style="margin-top:8px">Limpar simulação</button>`;
+}
+
+function viewSalvos() {
+  const keys = Object.keys(S.saved);
+  const rows = keys.map(k => {
+    const p = DATA.produtos.find(x => x.key === k);
+    if (!p) return `<div class="row"><div class="grow"><span class="t1">${esc(S.saved[k].titulo || k)}</span><span class="t2">Saiu do catálogo da marca</span></div><button class="btn ghost sm" data-unsave="${esc(k)}">Remover</button></div>`;
+    const e = evaluate(p); const alvo = S.saved[k].alvo;
+    const price = e.ok ? e.price : null; const hit = price && alvo && price <= alvo;
+    const incomum = price && !alvo && (e.justo?.nivel === 'abaixo' || (e.temHist && e.parts.historico >= 15));
+    return `<div class="row">
+      <button class="thumb" data-open="${esc(k)}" aria-label="Abrir ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>
+      <div class="grow">
+        <span class="t2">${esc(p.marca)}</span><span class="t1">${esc(p.titulo)}</span>
+        <span class="mono" style="font-size:15px">${price ? brl(price) : 'Esgotado no seu tamanho'} ${hit ? '<span class="tag t-ok">Abaixo do alvo</span>' : incomum ? '<span class="tag t-ok">Preço fora do comum</span>' : ''}</span>
+        <label class="t2" style="display:flex;align-items:center;gap:6px">Alvo R$ <input class="mono" data-alvo="${esc(k)}" type="number" inputmode="numeric" value="${alvo ?? ''}" placeholder="auto" style="width:84px;height:28px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 6px;font-size:16px"></label>
+      </div>
+      <div style="display:grid;gap:4px;justify-items:end">${spark(productHist(p))}</div>
+    </div>`;
+  });
+  // alertas de modelo: o que existe agora nos seus tamanhos dentro do preço
+  const achados = m => { const ws = m.texto.toLowerCase().split(/\s+/).filter(Boolean); return DATA.produtos.filter(p => ws.every(w => (p.marca + ' ' + p.titulo).toLowerCase().includes(w))).map(evaluate).filter(e => e.ok && e.price <= m.max).length; };
+  const semCanal = !S.canal ? `<div class="notice" style="margin-bottom:12px"><span>Para os avisos chegarem no celular, informe seu canal do ntfy no <b>Perfil</b>, em "Avisos no celular".</span></div>` : '';
+  return header('Salvos') + `<div class="wrap">
+    ${simulacaoBloco()}
+    ${(() => {
+      const ks = [...new Set([...Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k]) => k), ...Object.keys(S.saved)])]
+        .map(k => acharPeca(k)).filter(p => p && vagaDe(p.kind));
+      return `<h2 class="section-h">Combinar roupas</h2>
+      ${ks.length ? `<p class="section-sub">Toque numa peça curtida ou salva e eu monto um look com ela.</p>
+      <div class="vitrine">${ks.map(p => `<button data-look="${esc(p.key)}" aria-label="Combinar ${esc(p.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 300))}" alt=""><span>${esc(KIND_LABEL[p.kind])}</span></button>`).join('')}</div>`
+      : '<p class="section-sub">Curta (no coração) ou salve peças e elas aparecem aqui para montar looks. Também dá para tocar em "Combinar" na tela de qualquer peça.</p>'}`;
+    })()}
+    <h2 class="section-h">Alertas de modelo</h2>
+    <p class="section-sub">Ex.: "9060" até R$ 1.000. O robô avisa quando aparecer, nos seus tamanhos, em qualquer loja do app.</p>
+    ${semCanal}
+    <div class="list">${S.modelos.map(m => { const n = achados(m); return `<div class="row"><div class="grow"><span class="t1">${esc(m.texto)}</span><span class="t2">até ${brl(m.max)} · ${n ? `<b style="color:var(--good)">${n} ${n > 1 ? 'peças' : 'peça'} agora</b> <button class="btn ghost sm" style="height:auto;padding:0" data-busca="${esc(m.texto)}">ver</button>` : 'nada agora'}</span></div><button class="btn ghost sm" data-delmodelo="${esc(m.id)}">Remover</button></div>`; }).join('')}</div>
+    <form id="formModelo" class="field-row" style="grid-template-columns:1fr 110px auto;align-items:end;margin-top:8px">
+      <div class="field"><label for="mTexto">Modelo ou palavra</label><input id="mTexto" type="text" placeholder="ex.: samba og" style="height:40px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 12px;font-size:16px;min-width:0"></div>
+      <div class="field"><label for="mMax">Até R$</label><input id="mMax" type="number" inputmode="numeric" placeholder="1000"></div>
+      <div class="field"><button class="btn sm" type="submit" style="height:40px">Criar</button></div>
+    </form>
+    <h2 class="section-h">Peças com alerta</h2>
+    <p class="section-sub">Com o alvo em "auto", o aviso chega quando o preço sair do comum: abaixo do preço justo, o menor já visto ou uma queda forte. Se preferir, escreva um valor.</p>
+    <div class="list">${rows.join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta ainda. Abra uma peça e toque em Alerta.</p>'}</div>
+    <h2 class="section-h">Curtidas</h2>
+    ${Object.keys(S.curtidas).length ? `<div class="rec-pics" style="grid-template-columns:repeat(4,1fr)">${Object.entries(S.curtidas).sort((a, b) => b[1].em - a[1].em).map(([k, c]) => { const p = acharPeca(k); return p ? `<button ${abrirAttr(p)} aria-label="${esc(c.titulo)}"><img loading="lazy" src="${esc(img(p.imagens[0], 200))}" alt=""></button>` : ''; }).join('')}</div>` : '<p class="section-sub">Nada curtido ainda. Toque no coração das peças que combinam com você.</p>'}
+  </div>`;
+}
+
+function viewPerfil() {
+  const sel = (id, opts, val) => `<select id="${id}">${opts.map(o => `<option ${String(o) === String(val) ? 'selected' : ''}>${o}</option>`).join('')}</select>`;
+  const sw = (key, title, sub, val) => `<div class="toggle"><div class="grow"><span>${title}</span>${sub ? `<small>${sub}</small>` : ''}</div><button class="switch" role="switch" data-sw="${key}" aria-checked="${val}" aria-label="${title}"></button></div>`;
+  return header('Perfil') + `<div class="wrap">
+    <h2 class="section-h">Aparência</h2>
+    <div class="chips" role="group" aria-label="Aparência">${[['auto', 'Automático'], ['claro', 'Claro'], ['escuro', 'Escuro']].map(([k, l]) => `<button class="chip" data-tema="${k}" aria-pressed="${S.tema === k}">${l}</button>`).join('')}</div>
+    <p class="section-sub">Automático segue o modo claro ou escuro do seu iPhone.</p>
+    <h2 class="section-h">Seus tamanhos</h2>
+    <p class="section-sub">Toque para marcar um ou mais tamanhos em cada categoria</p>
+    ${[['top', 'Camisetas, moletons e jaquetas'], ['bottom', 'Calças e bermudas'], ['shoe', 'Tênis']].map(([g, label]) => `
+      <div class="field"><span class="lbl">${label}</span>
+        <div class="sizes" role="group" aria-label="${label}">${SIZE_OPTS[g].map(o => `<button class="size ${S.sizes[g].includes(o) ? 'mine' : ''}" data-size="${g}:${o}" aria-pressed="${S.sizes[g].includes(o)}" style="background:none">${o}</button>`).join('')}</div>
+      </div>`).join('')}
+    ${sw('onlyMySize', 'Mostrar só meu tamanho', 'Preço e disponibilidade calculados no seu tamanho', S.onlyMySize)}
+    <h2 class="section-h">Ofertas</h2>
+    ${sw('withSuggested', 'Incluir marcas sugeridas', 'Sufgang, Disturb e outras recomendações', S.withSuggested)}
+    <div class="field"><div class="range-val"><label for="notaMin">Nota mínima para destacar e avisar</label><span class="mono lbl">${S.notaMin}</span></div><input id="notaMin" type="range" min="40" max="90" step="5" value="${S.notaMin}"></div>
+    <h2 class="section-h">Seu estilo</h2>
+    ${(() => {
+      const e = estilo(), n = Object.keys(S.curtidas).length;
+      if (!n) return '<p class="section-sub">Curta peças (no coração) para o Achei aprender seu estilo e trazer mais coisas parecidas.</p>';
+      const top = (o, rot) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([k, v]) => `${rot(k)} (${v})`).join(', ');
+      return `<p class="section-sub">${n} ${n > 1 ? 'peças curtidas' : 'peça curtida'}. Você curte mais: <b>${esc(top(e.kind, k => KIND_LABEL[k].toLowerCase()))}</b>, das marcas <b>${esc(top(e.marca, k => k))}</b>. Peças assim sobem no feed, e eu uso isso para escolher marcas novas e importados.</p>`;
+    })()}
+    <h2 class="section-h">Notificações do Achei</h2>
+    ${(() => {
+      const st = estadoPush();
+      if (st === 'ativo' && !S.canal) return `<div class="notice" style="border-left:3px solid var(--warn)"><span><b>Falta um passo:</b> preencha <b>Seu canal do ntfy</b> logo abaixo. Sem ele, o robô não sabe para onde mandar as notificações.</span></div>`;
+      if (st === 'ativo') return `<div class="notice ok"><span><b>Ativadas neste celular.</b> Ao tocar num aviso, o Achei abre direto na peça.</span></div>
+        <div style="display:flex;gap:8px;margin-top:8px"><button class="btn tertiary sm" data-push-teste>Mandar um teste</button><button class="btn ghost sm" data-push-desligar style="color:var(--helper)">Desativar</button></div>`;
+      if (st === 'instalar') return '<p class="section-sub">Para receber notificações do próprio Achei, abra o app pelo ícone na tela de início (no iPhone, não funciona pelo Safari).</p>';
+      if (st === 'bloqueado') return '<p class="section-sub">As notificações estão bloqueadas. No iPhone: Ajustes → Notificações → Achei → Permitir notificações.</p>';
+      if (st === 'sem-suporte') return '<p class="section-sub">Este celular não aceita notificações de apps da web (no iPhone, precisa do iOS 16.4 ou mais novo).</p>';
+      return `<p class="section-sub">Receba os avisos com o nome e o ícone do Achei. Ao tocar, abre o app direto na peça ou no Top.</p>
+        <button class="btn" data-push-ativar>${icone('alertas', 16)} Ativar notificações</button>
+        ${S.canal ? '' : '<p class="section-sub" style="margin-top:6px">Precisa do seu canal (logo abaixo) preenchido, que é por onde o robô sabe para onde mandar.</p>'}`;
+    })()}
+
+    <h2 class="section-h">Avisos no celular</h2>
+    <p class="section-sub">Digite o mesmo canal que você assinou no app ntfy. Assim o robô sabe dos seus salvos, alertas de modelo e tamanhos.</p>
+    <div class="field"><label for="canal">Seu canal do ntfy</label><input id="canal" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" value="${esc(S.canal)}" placeholder="garimpo-..." style="height:40px;background:var(--layer);border:0;border-bottom:1px solid var(--border-strong);padding:0 12px;font-size:16px"></div>
+    ${S.canal ? `<p class="section-sub">${store.get('ultimoSyncEm') ? `Último envio: ${new Date(store.get('ultimoSyncEm')).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })}` : 'Ainda não enviado'} · <button class="btn ghost sm" style="height:auto;padding:0" data-sync>Enviar agora</button></p>` : ''}
+    ${S.canal ? (c => c === 'ok' ? '<div class="notice ok" style="margin-top:6px"><span><b>Canal confirmado:</b> é o mesmo que o robô usa.</span></div>'
+      : c === 'errado' ? '<div class="notice" style="margin-top:6px;border-left:3px solid var(--warn)"><span><b>Este canal nunca recebeu nada do robô.</b> Confira letra por letra (o jeito mais seguro é copiar o nome no app ntfy e colar aqui).</span></div>'
+      : '<p class="section-sub">Conferindo o canal…</p>')(conferirCanal()) : ''}
+    <h2 class="section-h">Peças que você não curtiu</h2>
+    ${(() => {
+      const gs = Object.entries(S.gruposOcultos).sort((x, y) => y[1].em - x[1].em);
+      if (!gs.length && !Object.keys(S.ocultas).length) return '<p class="section-sub">Nada escondido. Toque no X da foto (ou "Não curti" na peça) para esconder ela e todas as iguais.</p>';
+      const total = DATA.produtos.filter(escondida).length;
+      return `<p class="section-sub">${total} ${total === 1 ? 'peça escondida' : 'peças escondidas'}. Toque num grupo para ele voltar.</p>
+        <div class="chips" style="flex-wrap:wrap">${gs.map(([g]) => `<button class="chip" data-voltargrupo="${esc(g)}">${esc(rotuloGrupo(g))} ${icone('voltar', 10)}</button>`).join('')}</div>
+        <button class="btn tertiary sm" data-restaurar style="margin-top:8px">Mostrar tudo de novo</button>`;
+    })()}
+    <h2 class="section-h">Marcas dispensadas</h2>
+    ${S.dispensadas.length ? `<p class="section-sub">Não aparecem em Marcas novas nem nas Ofertas. Toque para trazer de volta.</p><div class="chips">${S.dispensadas.map(n => `<button class="chip" data-voltar="${esc(n)}">${esc(n)} ${icone('voltar', 10)}</button>`).join('')}</div>` : '<p class="section-sub">Nenhuma. Em Marcas novas, toque em "Dispensar marca" nas que não combinam com você.</p>'}
+    <h2 class="section-h">Como a nota é calculada</h2>
+    <div class="notice"><span><b>Desconto</b> informado pela loja (até 45 pts), <b>preço comparado</b> à mediana de peças do mesmo tipo em todas as marcas (até 30) <b>histórico</b>: menor preço já registrado (até 15) e, quando a peça está em mais de uma loja, <b>comparação entre lojas</b> (até 25). O histórico começou em ${esc(DATA.atualizado.split(' ')[0])} e fica mais útil a cada atualização.</span></div>
+    <h2 class="section-h">Ainda não disponível</h2>
+    <div class="notice"><span>Carhartt WIP, Maze e À La Garçonne: sem catálogo aberto em loja brasileira por enquanto.</span></div>
+  </div>`;
+}
+
+/* ---------- Alertas (gerados a partir do histórico) ---------- */
+function buildAlerts() {
+  const out = [];
+  for (const k of Object.keys(S.saved)) {
+    const p = DATA.produtos.find(x => x.key === k); if (!p) continue;
+    const e = evaluate(p); if (!e.ok) continue;
+    if (e.price <= S.saved[k].alvo) out.push({ tag: ['t-ok', 'Alvo'], t: `${p.titulo} está ${brl(e.price)}, abaixo do seu alvo`, key: k });
+    else if (e.baixou) out.push({ tag: ['t-sale', 'Baixou'], t: `${p.titulo} baixou para ${brl(e.price)}`, key: k });
+  }
+  const brands = activeBrands();
+  for (const p of DATA.produtos) {
+    if (!brands.has(p.marca) || S.saved[p.key]) continue;
+    const e = evaluate(p); if (!e.ok) continue;
+    if (e.baixou && e.score >= S.notaMin) out.push({ tag: ['t-sale', 'Baixou'], t: `${p.marca}: ${p.titulo} baixou para ${brl(e.price)}`, key: p.key });
+    else if (e.novo && S.follow.includes(p.marca)) out.push({ tag: ['t-new', 'Novo'], t: `${p.marca} lançou ${p.titulo}`, key: p.key });
+  }
+  return out.slice(0, 30);
+}
+function openAlerts() {
+  const a = buildAlerts();
+  showSheet(`<header class="hdr"><div class="wrap"><h1>Alertas</h1><button class="iconbtn" data-close aria-label="Fechar">${ICON.close}</button></div></header>
+    <div class="wrap"><p class="section-sub" style="margin:16px 0 12px">Quedas de preço aparecem a partir da segunda atualização, quando há com o que comparar.</p>
+    <div class="list">${a.map(x => `<button class="row rowbtn" data-open="${esc(x.key)}"><span class="tag ${x.tag[0]}">${x.tag[1]}</span><div class="grow"><span class="t1">${esc(x.t)}</span></div></button>`).join('') || '<p class="section-sub" style="padding-block:16px">Nenhum alerta no momento.</p>'}</div></div>`);
+}
+
+/* ---------- Detalhe ---------- */
+function priceChart(h) {
+  const vals = h.map(([, v]) => v);
+  const W = 360, H = 140, L = 48, R = 8, T = 12, B = 22;
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const lo = Math.floor(min * 0.95 / 10) * 10, hi = Math.ceil(max * 1.05 / 10) * 10;
+  const x = i => L + (i / (vals.length - 1)) * (W - L - R);
+  const y = v => T + (1 - (v - lo) / (hi - lo)) * (H - T - B);
+  const line = vals.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Histórico de preço">
+    ${[lo, hi].map(t => `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" style="stroke:var(--border)"/><text x="${L - 6}" y="${y(t) + 3}" text-anchor="end">${t}</text>`).join('')}
+    <polygon points="${x(0)},${H - B} ${line} ${x(vals.length - 1)},${H - B}" style="fill:var(--chart-fill)" fill-opacity=".18"/>
+    <polyline points="${line}" fill="none" style="stroke:var(--chart)" stroke-width="2"/>
+    <circle cx="${x(vals.length - 1)}" cy="${y(vals[vals.length - 1])}" r="4" style="fill:var(--fg)"/>
+    <text x="${L}" y="${H - 6}">${fmtDate(h[0][0])}</text><text x="${W - R}" y="${H - 6}" text-anchor="end">${fmtDate(h[h.length - 1][0])}</text>
+  </svg>`;
+}
+
+function openDetail(key) {
+  ATUAL = { fn: openDetail, args: [key] };
+  const p = DATA.produtos.find(x => x.key === key); if (!p) return;
+  const e = evaluate(p);
+  const saved = !!S.saved[key], curti = !!S.curtidas[key];
+  // tamanhos: disponível se existir em alguma loja
+  const tam = new Map();
+  for (const v of p.ofertas.flatMap(o => o.variantes)) { const l = sizeLabel(v.t); tam.set(l, { t: v.t, a: (tam.get(l)?.a || v.a) }); }
+  const sizes = [...tam.entries()].map(([l, v]) => `<span class="size ${!v.a ? 'off' : fits(v.t, p.group) && p.group !== 'one' ? 'mine' : ''}">${esc(l)}</span>`).join('');
+  const bars = e.ok ? [['Desconto da loja', e.parts.desconto, 45], [`Preço vs. ${KIND_LABEL[p.kind].toLowerCase()} parecidas (mediana ${brl(Math.round(e.med))})`, e.parts.parecidas, 30], ['Menor preço já registrado', e.parts.historico, 15], ...(e.lojas.length > 1 ? [['Comparação entre lojas', e.parts.lojas, 25]] : [])] : [];
+  const imp = e.ok && e.lojas.find(l => l.intl) || e.intlDescartado;
+  const brMin = e.ok ? e.lojas.find(l => !l.intl)?.price : null;
+  const fmt2 = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const sym = { EUR: '€', USD: 'US$', GBP: '£' };
+  const intlBlock = imp ? `<h3 class="section-h">Custo total para importar <span class="tag t-intl" style="margin-left:6px">INTERNACIONAL</span></h3>
+    <div class="panel"><div class="breakdown">
+      <div><span>Produto <span style="color:var(--helper)">${sym[imp.custo.moeda] || imp.custo.moeda} ${imp.custo.preco.toLocaleString('pt-BR')} × ${imp.custo.taxa.toFixed(2)}</span></span><span class="mono">${fmt2(imp.custo.produto)}</span></div>
+      <div><span>Frete estimado (${esc(imp.intl.envio === 'direto' ? 'a loja entrega no Brasil' : 'via redirecionador')})</span><span class="mono">${fmt2(imp.custo.frete)}</span></div>
+      <div><span>IOF do cartão (3,5%)</span><span class="mono">${fmt2(imp.custo.iof)}</span></div>
+      <div><span>Imposto de importação (60%)</span><span class="mono">${fmt2(imp.custo.ii)}</span></div>
+      <div><span>ICMS (17%)</span><span class="mono">${fmt2(imp.custo.icms)}</span></div>
+      <div class="tot"><span>Total estimado · ${esc(imp.loja)}</span><span class="mono">${fmt2(imp.custo.total)}</span></div>
+      ${brMin ? `<div style="color:var(--helper)"><span>Melhor preço no Brasil</span><span class="mono">${brl(brMin)}</span></div>` : ''}
+    </div>
+    <div class="notice" style="background:var(--layer2)"><span>${e.intlDescartado ? `Não compensa importar: precisa sair ${S.minSave}% mais barato que no Brasil.` : brMin ? `Compensa: ${Math.round((1 - imp.price / brMin) * 100)}% mais barato que no Brasil.` : 'Não encontramos esta peça à venda no Brasil, então comparamos só com peças parecidas.'} Câmbio de ${esc(fmtDate(DATA.cambio?.data))}; frete e impostos são estimativas.</span></div></div>` : '';
+  const lojasBlock = e.ok ? `<h3 class="section-h">Onde comprar${S.onlyMySize && p.group !== 'one' ? ' no seu tamanho' : ''}</h3>
+    <div class="list">${e.lojas.map((l, i) => `<div class="row"><div class="grow"><span class="t1">${esc(l.loja)} ${l.intl ? '<span class="tag t-intl">INTERNACIONAL</span> ' : ''}${i === 0 && e.lojas.length > 1 ? (e.lojas[1].price > l.price ? '<span class="tag t-ok">Mais barato</span>' : '<span class="tag t-gray">Mesmo preço</span>') : ''}</span>${l.de ? `<span class="t2 mono">de ${brl(l.de)}</span>` : ''}</div><span class="mono" style="font-size:15px">${brl(l.price)}</span><a class="btn ghost sm" href="${esc(l.url)}" target="_blank" rel="noopener">Abrir ${icone('abrir', 12)}</a></div>`).join('')}</div>` : '';
+  const histBlock = e.ok && e.hist.length > 1 ? `<div class="panel">${priceChart(e.hist)}</div>`
+    : `<div class="notice"><span>O histórico deste item começou em ${esc(fmtDate(e.hist?.[0]?.[0]) || 'hoje')}. A cada atualização o gráfico ganha um ponto e a nota passa a considerar se é o menor preço já visto.</span></div>`;
+  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${esc(p.marca)}</h1></div></header>
+    <div class="gallery">${p.imagens.map((s, i) => `<img src="${esc(img(s, 800))}" alt="${esc(p.titulo)} – foto ${i + 1}" ${i ? 'loading="lazy"' : ''}>`).join('')}</div>
+    <div class="wrap">
+      ${p.imagens.length > 1 ? `<div class="gallery-count">${p.imagens.length} fotos · deslize para o lado</div>` : ''}
+      <div class="detail-head">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="brand">${esc(p.marca)} · ${KIND_LABEL[p.kind]}</span><button class="btn ghost sm" data-ocultar="${esc(key)}" style="height:28px;padding:0 8px;color:var(--helper);border:1px solid var(--border)">${icone('fechar', 12)} Não curti</button></div>
+        <h2>${esc(p.titulo)}</h2>
+        ${e.ok ? `<div class="bigprice"><span class="now mono">${brl(e.price)}</span>${e.de ? `<span class="was mono">${brl(e.de)}</span><span class="off mono">-${Math.round(e.off * 100)}%</span>` : ''}</div>` : '<p class="section-sub">Esgotado no seu tamanho</p>'}
+      </div>
+      ${e.ok ? pagamentoHTML(e.lojas[0], e.price) : ''}
+      ${e.ok && e.justo ? (() => {
+        const j = e.justo, pct = Math.round(Math.abs(j.dif) * 100);
+        const rotulo = { abaixo: ['t-ok', 'Preço bom'], media: ['t-gray', 'Preço na média'], acima: ['t-sale', 'Acima do normal'] }[j.nivel];
+        const frase = j.nivel === 'media' ? 'está na média' : `está ${pct}% ${j.nivel === 'abaixo' ? 'abaixo' : 'acima'} disso`;
+        const pos = Math.max(4, Math.min(96, 50 + j.dif * 67));
+        return `<div class="panel justo"><div class="range-val"><strong>Preço justo</strong><span class="tag ${rotulo[0]}">${rotulo[1]}</span></div>
+          <div class="justo-scale"><span></span><span></span><span></span><i style="left:${pos}%"></i></div>
+          <div class="justo-legend"><span>Abaixo</span><span>Na média</span><span>Acima</span></div>
+          <span class="t2" style="color:var(--fg2);font-size:13px">${esc(KIND_LABEL[p.kind])} da ${esc(p.marca)} estão saindo, em média, por <b class="mono">${brl(Math.round(j.preco))}</b> (${j.n} peças à venda agora). Esta, a ${brl(e.price)}, ${frase}.</span></div>`;
+      })() : ''}
+      <div class="lbl" style="margin-bottom:8px">Tamanhos${p.group !== 'one' ? ' · verde = seu tamanho' : ''}</div>
+      <div class="sizes">${sizes}</div>
+      ${e.ok ? `<h3 class="section-h">Nota de Oferta</h3><div class="panel">
+        <div class="range-val"><span class="t2" style="color:var(--helper);font-size:12px">${e.temHist ? 'Com histórico' : 'Sem histórico ainda'} · calculada sobre ${e.max} pontos</span><span class="mono" style="font-size:24px;color:${e.score >= S.notaMin ? 'var(--good)' : 'var(--fg)'}">${e.score}<span style="font-size:13px;color:var(--helper)">/100</span></span></div>
+        ${bars.map(b => `<div class="bar-row"><span>${b[0]}</span><span class="mono" style="color:var(--helper)">${Math.round(b[1])}/${b[2]}</span><span class="meter ${b[1] / b[2] > .6 ? 'hi' : ''}"><i style="width:${(b[1] / b[2]) * 100}%"></i></span></div>`).join('')}
+      </div>` : ''}
+      ${lojasBlock}
+      ${(() => {
+        // o mesmo modelo vendido em outras lojas (outras cores entram juntas)
+        const chave = modeloChave(p);
+        if (!chave) return '';
+        const iguais = DATA.produtos.filter(x => x.marca === p.marca && modeloChave(x) === chave).map(x => ({ p: x, e: evaluate(x) })).filter(x => x.e.ok);
+        const L = porLoja(iguais);
+        if (L.length < 2) return '';
+        return `<h3 class="section-h">Mesmo modelo em outras lojas</h3>
+          <p class="section-sub">Menor preço de cada loja nos seus tamanhos. Cores podem variar.</p>
+          <div class="list">${L.map((x, i) => `<button class="row rowbtn" data-open="${esc(x.melhor.key)}">
+            <div class="grow"><span class="t1">${esc(x.loja)} ${seloLoja(L, i)}</span>
+              <span class="t2">${x.n} ${x.n > 1 ? 'cores/opções' : 'opção'}${x.tam.size ? ` · seus tamanhos: ${tamTxt(x.tam)}` : ''}</span></div>
+            <span class="mono" style="font-size:15px">${brl(x.min)}</span></button>`).join('')}</div>`;
+      })()}
+      ${intlBlock}
+      <h3 class="section-h">Histórico de preço</h3>
+      ${histBlock}
+      ${miniLook(p)}
+      <div class="acoes3">
+        <button class="btn ${saved ? '' : 'tertiary'}" data-save="${esc(key)}" aria-pressed="${saved}">${saved ? icone('alertas', 16) + ' Alerta ligado' : icone('alertas', 16) + ' Alerta'}</button>
+        <button class="btn ${curti ? '' : 'tertiary'}" data-curti="${esc(key)}" aria-pressed="${curti}" style="${curti ? 'background:var(--bad)' : ''}">${curti ? icone('salvos', 16, { cheio: true }) + ' Curtido' : icone('salvos', 16) + ' Curti'}</button>
+        <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener">${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato ' + icone('abrir', 14) : 'Ver na loja ' + icone('abrir', 14)}</a>
+      </div>
+      <button class="btn ${S.carrinho[key] ? '' : 'tertiary'}" data-carrinho="${esc(key)}" style="width:100%;justify-content:center;margin-top:1px">${S.carrinho[key] ? icone('simular', 16) + ' Na simulação de compra (tirar)' : icone('simular', 16) + ' Simular compra'}</button>
+      <p class="section-sub" style="margin-top:8px">Alerta avisa quando o preço sair do comum. Curti ensina o Achei a trazer mais peças e marcas assim.</p>
+      <button class="btn ghost" data-ocultar="${esc(key)}" style="margin-top:4px;color:var(--helper)">${icone('fechar', 12)} Não curti: esconder esta e as iguais</button>
+    </div>`);
+}
+
+// caminho entre telas: "voltar" leva à tela anterior (ex.: Top → peça → Top; peça → Combinar → peça)
+let ATUAL = null; const PILHA = [];
+function navegar(fn, ...args) {
+  const s = document.getElementById('sheet');
+  if (!s.hidden && ATUAL) PILHA.push({ ...ATUAL, y: s.scrollTop });
+  fn(...args);
+}
+function voltar() {
+  const ant = PILHA.pop();
+  if (!ant) { closeSheet(); render(); return; }
+  ant.fn(...ant.args); document.getElementById('sheet').scrollTop = ant.y;
+}
+function showSheet(html) { const s = document.getElementById('sheet'); s.innerHTML = html; s.hidden = false; s.scrollTop = 0; document.body.style.overflow = 'hidden'; aplicarRecortes(); }
+function closeSheet() { PILHA.length = 0; ATUAL = null; const s = document.getElementById('sheet'); s.hidden = true; s.innerHTML = ''; document.body.style.overflow = ''; }
+let toastT;
+function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2600); }
+
+/* ---------- Render ---------- */
+const TABS = [['ofertas', 'Ofertas'], ['marcas', 'Marcas'], ['farfetch', 'Importados'], ['salvos', 'Salvos'], ['perfil', 'Perfil']];
+const VIEWS = { ofertas: viewOfertas, marcas: viewMarcas, farfetch: viewFarfetch, salvos: viewSalvos, perfil: viewPerfil };
+// a aba Novas ganha um ponto vermelho quando entra uma leva que você ainda não abriu
+const ultimaLeva = () => DATA.marcas.filter(m => m.relacao === 'sugerida' && m.liberada).map(m => m.liberada).sort().pop() || '';
+const temNovidade = () => ultimaLeva() > store.get('novasVistas', '');
+function persist() { store.set('tab', S.tab); store.set('sizes', S.sizes); store.set('onlyMySize', S.onlyMySize); store.set('withSuggested', S.withSuggested); store.set('notaMin', S.notaMin); store.set('saved', S.saved); store.set('follow', S.follow); store.set('showIntl', S.showIntl); store.set('minSave', S.minSave); store.set('ocultas', S.ocultas); store.set('gruposOcultos', S.gruposOcultos); store.set('dispensadas', S.dispensadas); store.set('carrinho', S.carrinho); store.set('push', S.push); store.set('sort', S.sort); store.set('tema', S.tema); store.set('modelos', S.modelos); store.set('curtidas', S.curtidas); store.set('canal', S.canal); agendarSync(); }
+
+/* ---------- Sincronia com o robô: salvos, alertas de modelo e tamanhos vão por um canal privado do ntfy ---------- */
+// o robô lê "<seu canal>-prefs" depois de cada atualização; só o que importa para os avisos é enviado
+const prefsAtuais = () => JSON.stringify({ push: S.push || null, ocultas: Object.keys(S.ocultas), grupos: Object.keys(S.gruposOcultos), tamanhos: S.sizes, follow: S.follow, dispensadas: S.dispensadas, salvos: Object.fromEntries(Object.entries(S.saved).map(([k, v]) => [k, { titulo: v.titulo, alvo: v.alvo }])), modelos: S.modelos, curtidas: Object.fromEntries(Object.entries(S.curtidas).map(([k, v]) => [k, { marca: v.marca, kind: v.kind, titulo: v.titulo }])) });
+let syncT;
+function agendarSync() {
+  if (!S.canal) return;
+  const atual = prefsAtuais();
+  if (atual === store.get('ultimoSync', '')) return;
+  clearTimeout(syncT);
+  syncT = setTimeout(() => sincronizar(atual), 1500);
+}
+// confere se o canal digitado é o do robô: ele republica as preferências nesse canal a cada rodada
+const CANAL_OK = {};
+function conferirCanal() {
+  const c = S.canal; if (!c) return null;
+  if (CANAL_OK[c]) return CANAL_OK[c];
+  CANAL_OK[c] = 'conferindo';
+  fetch(`https://ntfy.sh/${encodeURIComponent(c)}-prefs/json?poll=1&since=all`).then(r => r.text()).then(t => {
+    const robo = t.split('\n').filter(Boolean).map(l => { try { return JSON.parse(l); } catch (e) { return null; } })
+      .some(m => m?.event === 'message' && /"pushes"/.test(m.message || ''));   // só o robô grava "pushes"
+    CANAL_OK[c] = robo ? 'ok' : 'errado'; if (S.tab === 'perfil') render();
+  }).catch(() => { delete CANAL_OK[c]; });
+  return 'conferindo';
+}
+async function sincronizar(atual = prefsAtuais(), avisar = false) {
+  if (!S.canal) return;
+  try {
+    const r = await fetch('https://ntfy.sh/', { method: 'POST', body: JSON.stringify({ topic: S.canal + '-prefs', message: JSON.stringify({ ...JSON.parse(atual), em: Date.now() }) }) });
+    if (!r.ok) throw new Error(r.status);
+    store.set('ultimoSync', atual); store.set('ultimoSyncEm', Date.now());
+    if (avisar) { toast('Enviado. O robô usa isso na próxima atualização.'); render(); }
+  } catch (e) { if (avisar) toast('Não consegui enviar agora. Tente de novo com internet.'); }
+}
+function render(keepFocus) {
+  const active = keepFocus && document.activeElement && document.activeElement.id;
+  const caret = active === 'q' ? document.activeElement.selectionStart : null;
+  document.getElementById('app').innerHTML = VIEWS[S.tab]();
+  if (S.tab === 'marcas') store.set('novasVistas', ultimaLeva());
+  document.getElementById('nav').innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${S.tab === k ? 'aria-current="page"' : ''}>${S.tab === k ? `<i class="marca-ativa">${contornoTorto('#D7261E', 2)}</i>` : ''}${ICON[k]}<span>${l}</span>${k === 'marcas' && temNovidade() ? '<i class="navdot"></i>' : ''}</button>`).join('');
+  if (active) { const el = document.getElementById(active); if (el) { el.focus(); if (caret !== null) el.setSelectionRange(caret, caret); } }
+  persist();
+  if (BOAS_ABERTA) abrirBoasVindas();
+}
+
+document.addEventListener('click', ev => {
+  const b = ev.target.closest('button'); if (!b) return;
+  const d = b.dataset;
+  if (d.tab) { S.tab = d.tab; S.limit = 40; closeSheet(); render(); window.scrollTo(0, 0); }
+  else if (d.cat) { S.cat = d.cat; S.limit = 40; render(); }
+  else if (d.qkind) { S.qKind = d.qkind; S.limit = 40; render(); }
+  else if ('more' in d) { S.limit += 40; render(); }
+  else if (d.open) { navegar(openDetail, d.open); }
+  else if ('alerts' in d) { openAlerts(); }
+  else if ('close' in d) { voltar(); }
+  else if (d.brand) { S.tab = 'ofertas'; S.qBrand = d.brand; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
+  else if (d.save) {
+    // alerta sem alvo: o robô avisa quando o preço sair do comum (abaixo do preço justo, menor já visto ou queda forte)
+    const k = d.save, p = DATA.produtos.find(x => x.key === k);
+    if (S.saved[k]) { delete S.saved[k]; toast('Alerta desligado'); }
+    else { S.saved[k] = { titulo: p.titulo, alvo: null }; toast(S.canal ? 'Alerta ligado. Aviso quando o preço sair do comum.' : 'Alerta ligado. Informe seu canal no Perfil para receber no celular.'); }
+    persist(); openDetail(k);
+  }
+  else if (d.look) navegar(abrirLook, d.look);
+  else if (d.lookvaga !== undefined && LOOK) { LOOK.vagas[+d.lookvaga].sel = +d.lookop; const y = document.getElementById('sheet').scrollTop; desenharLook(); document.getElementById('sheet').scrollTop = y; }
+  else if (d.lookcarrinho !== undefined && LOOK) {
+    const todas = [LOOK.base, ...LOOK.vagas.filter(v => v.sel >= 0).map(v => v.ops[v.sel].q)], ks = todas.filter(q => !q.ff).map(q => q.key);
+    S.carrinho = { ...S.carrinho, ...Object.fromEntries(ks.map(k => [k, { em: Date.now() }])) }; persist();
+    toast(`${ks.length} peças na simulação: veja em Salvos${todas.length > ks.length ? ' (as da Farfetch ficam de fora)' : ''}`);
+  }
+  else if (d.top10 !== undefined) navegar(abrirTop10);
+  else if (d.boasFim !== undefined) { BOAS_ABERTA = false; store.set('boasVindas', true); closeSheet(); render(); toast(S.follow.length ? `Seguindo ${S.follow.length} marcas` : 'Pronto! Siga marcas quando quiser em Marcas'); }
+  else if (d.topcat) abrirTop10(d.topcat);
+  else if (d.pushAtivar !== undefined) ativarPush();
+  else if (d.pushDesligar !== undefined) desligarPush();
+  else if (d.pushTeste !== undefined) testarPush();
+  else if (d.carrinho) {
+    const k = d.carrinho;
+    if (S.carrinho[k]) { const c = { ...S.carrinho }; delete c[k]; S.carrinho = c; toast('Saiu da simulação'); }
+    else { S.carrinho = { ...S.carrinho, [k]: { em: Date.now() } }; toast('Na simulação: veja em Salvos'); }
+    persist();
+    if (!document.getElementById('sheet').hidden && document.querySelector('#sheet [data-carrinho]')) openDetail(k); else render();
+  }
+  else if (d.limparCarrinho !== undefined) { S.carrinho = {}; render(); }
+  else if (d.curti) {
+    const k = d.curti, p = acharPeca(k); if (!p) return;
+    if (S.curtidas[k]) { delete S.curtidas[k]; toast('Curtida removida'); }
+    else { const e = avaliar(p); S.curtidas = { ...S.curtidas, [k]: { marca: p.marca, kind: p.kind, titulo: p.titulo, preco: e.ok ? e.price : null, em: Date.now() } }; toast(p.kind === 'outro' ? 'Curtido. Vou trazer mais peças assim.' : `Curtido. Vou trazer mais ${KIND_LABEL[p.kind].toLowerCase()} assim.`); }
+    persist();
+    // na tela da peça, redesenha a peça; na lista, só troca o coração (sem reordenar o feed debaixo do dedo)
+    if (!document.getElementById('sheet').hidden) { const y = document.getElementById('sheet').scrollTop; p.ff ? abrirImportado(p.ffi) : openDetail(k); document.getElementById('sheet').scrollTop = y; }
+    else document.querySelectorAll(`.heart[data-curti="${CSS.escape(k)}"]`).forEach(h => { const on = !!S.curtidas[k]; h.classList.toggle('on', on); h.innerHTML = icone('salvos', 20, { cheio: on }); h.setAttribute('aria-pressed', on); h.setAttribute('aria-label', on ? 'Remover curtida' : 'Curtir'); });
+  }
+  else if (d.unsave) { delete S.saved[d.unsave]; render(); }
+  else if (d.follow) {
+    const n = d.follow;
+    S.follow = S.follow.includes(n) ? S.follow.filter(x => x !== n) : [...S.follow, n];
+    toast(S.follow.includes(n) ? `Seguindo ${n}` : `Você deixou de seguir ${n}`); render();
+  }
+  else if (d.dispensar) {
+    const n = d.dispensar;
+    if (!S.dispensadas.includes(n)) S.dispensadas = [...S.dispensadas, n];
+    toast(`${n} dispensada. Para trazer de volta: Perfil → Marcas dispensadas`); render();
+  }
+  else if (d.voltar) { S.dispensadas = S.dispensadas.filter(x => x !== d.voltar); toast(`${d.voltar} voltou para Marcas novas`); render(); }
+  else if (d.topfora) {
+    // Não curti no Top: esconde, aprende e a próxima melhor oferta entra no lugar
+    const p = DATA.produtos.find(x => x.key === d.topfora); if (!p) return;
+    esconderGrupo(p);
+    const antes = document.querySelectorAll('#sheet .top-linha').length;
+    const y = document.getElementById('sheet').scrollTop; abrirTop10(d.slug); document.getElementById('sheet').scrollTop = y;
+    const depois = document.querySelectorAll('#sheet .top-linha').length;
+    toast(depois >= antes ? 'Tirei essa e coloquei outra no lugar' : 'Tirei essa. Não há mais ofertas boas para repor agora.');
+  }
+  else if (d.ocultar) {
+    const p = DATA.produtos.find(x => x.key === d.ocultar); if (!p) return;
+    voltar(); esconderGrupo(p); render();
+  }
+  else if (d.esconder) {
+    const p = DATA.produtos.find(x => x.key === d.esconder); if (!p) return;
+    esconderGrupo(p); render();
+  }
+  else if (d.desfazer !== undefined) {
+    if (DESFAZER) { DESFAZER(); DESFAZER = null; persist(); render(); }
+    document.getElementById('toast').hidden = true;
+  }
+  else if (d.voltargrupo) { const g = { ...S.gruposOcultos }; delete g[d.voltargrupo]; S.gruposOcultos = g; render(); toast(`${rotuloGrupo(d.voltargrupo)} voltaram`); }
+  else if (d.delmodelo) { S.modelos = S.modelos.filter(m => m.id !== d.delmodelo); render(); }
+  else if ('sync' in d) { sincronizar(prefsAtuais(), true); }
+  else if ('restaurar' in d) { S.ocultas = {}; S.gruposOcultos = {}; render(); toast('Todas as peças escondidas voltaram'); }
+  else if (d.busca) { S.tab = 'ofertas'; S.q = d.busca.replace(/^New Balance /, ''); S.qBrand = 'Todas'; S.qSale = false; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
+  else if (d.fffaixa) { FFS.faixa = d.fffaixa; FFS.marca = 'Todas'; render(); }
+  else if (d.fftipo) { FFS.tipo = d.fftipo; render(); }
+  else if ('ffsale' in d) { FFS.sale = !FFS.sale; render(); }
+  else if (d.tema) { S.tema = d.tema; aplicarTema(); render(); }
+  else if (d.ffi !== undefined) { navegar(abrirImportado, +d.ffi); }
+  else if ('filtros' in d) { S.filtrosAbertos = !S.filtrosAbertos; render(); }
+  else if ('limpar' in d) { Object.assign(S, { q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, qBaixou: false, limit: 40 }); render(); }
+  else if (d.loja) { S.qLoja = d.loja; S.limit = 40; render(); }
+  else if (d.salebrand) { S.tab = 'ofertas'; S.qBrand = d.salebrand; S.qSale = true; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
+  else if (d.sw) { S[d.sw] = !S[d.sw]; render(); }
+  else if (d.size) {
+    const [g, o] = d.size.split(':'); const atual = S.sizes[g];
+    if (atual.includes(o)) { if (atual.length > 1) S.sizes = { ...S.sizes, [g]: atual.filter(x => x !== o) }; else toast('Deixe pelo menos um tamanho marcado'); }
+    else S.sizes = { ...S.sizes, [g]: [...atual, o].sort((a, b) => SIZE_OPTS[g].indexOf(a) - SIZE_OPTS[g].indexOf(b)) };
+    render();
+  }
+});
+document.addEventListener('input', ev => {
+  const t = ev.target;
+  if (t.id === 'q') { S.q = t.value; S.limit = 40; render(true); return; }
+  const lbl = t.type === 'range' && t.closest('.field').querySelector('.lbl');
+  if (t.id === 'qMax') lbl.textContent = +t.value >= 3000 ? 'qualquer' : brl(+t.value);
+  else if (t.id === 'ffMax') lbl.textContent = brl(+t.value);
+  else if (t.id === 'notaMin') lbl.textContent = t.value;
+  else if (t.id === 'minSave') lbl.textContent = t.value + '%';
+});
+document.addEventListener('change', ev => {
+  const t = ev.target;
+  if (t.dataset.ordem !== undefined) S.sort = t.value;
+  else if (t.id === 'qBrand') S.qBrand = t.value;
+  else if (t.id === 'qLoja') S.qLoja = t.value;
+  else if (t.id === 'ffMarca') FFS.marca = t.value;
+  else if (t.id === 'ffOrdem') FFS.ordem = t.value;
+  else if (t.id === 'ffMax') FFS.max = +t.value;
+  else if (t.id === 'qMax') S.qMax = +t.value;
+  else if (t.id === 'notaMin') S.notaMin = +t.value;
+  else if (t.id === 'minSave') S.minSave = +t.value;
+  else if (t.id === 'canal') { S.canal = t.value.trim().toLowerCase(); store.set('ultimoSync', ''); if (S.canal) toast('Canal salvo'); }
+  else if (t.dataset.alvo) { const v = parseFloat(t.value); S.saved[t.dataset.alvo].alvo = v > 0 ? v : null; }
+  else return;
+  render();
+});
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !document.getElementById('sheet').hidden) { closeSheet(); render(); } });
+document.addEventListener('submit', ev => {
+  if (ev.target.id !== 'formModelo') return;
+  ev.preventDefault();
+  const texto = document.getElementById('mTexto').value.trim(), max = parseFloat(document.getElementById('mMax').value);
+  if (!texto || !(max > 0)) { toast('Escreva o modelo e o preço máximo'); return; }
+  S.modelos = [...S.modelos, { id: Date.now().toString(36), texto, max }];
+  render(); toast(S.canal ? `Alerta criado: ${texto} até ${brl(max)}` : 'Alerta criado. Informe seu canal no Perfil para receber no celular.');
+});
+
+document.body.insertAdjacentHTML('afterbegin', FILTROS_SVG);   // linha tremida dos ícones e contornos
+aplicarTema();
+prefereClaro?.addEventListener?.('change', () => { if (S.tema === 'auto') aplicarTema(); });
+// links das notificações: #produto=<chave> abre a peça; #top10 abre o Top 10 da semana
+function abrirPorLink() {
+  const m = location.hash.match(/^#produto=(.+)$/);
+  if (m) openDetail(decodeURIComponent(m[1]));
+  else if (/^#top10(-\w+)?$/.test(location.hash)) abrirTop10(location.hash.split('-')[1]);
+  else return;
+  history.replaceState(null, '', location.pathname);
+}
+load().then(() => {
+  render();
+  // link de notificação: abre a peça direto
+  abrirPorLink();
+  addEventListener('hashchange', abrirPorLink);
+  if (PRIMEIRA_VEZ && document.getElementById('sheet').hidden) abrirBoasVindas();
+}).catch(err => {
+  document.getElementById('app').innerHTML = `<p class="loading">Não consegui carregar os dados (${esc(err.message)}).<br>Rode <code>./atualizar.sh</code> e abra pelo <code>./servidor.sh</code>.</p>`;
+});
+</script>
+</body>
+</html>
