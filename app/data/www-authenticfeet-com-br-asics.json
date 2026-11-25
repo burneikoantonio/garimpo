@@ -2,7 +2,7 @@
   "marca": "ASICS",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-25T16:02:23Z",
+  "atualizado": "2026-11-25T19:56:16Z",
   "produtos": [
     {
       "id": "32218",
@@ -4277,8 +4277,8 @@
           "t": "42",
           "p": 439.99,
           "c": 1099.99,
-          "x": 439.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -4773,9 +4773,166 @@
       ]
     },
     {
+      "id": "61206",
+      "titulo": "Tênis Asics GEL-Cumulus 16 Unissex",
+      "url": "https://www.authenticfeet.com.br/tenis-asics-gel-cumulus-16-unissex-03a95-7-250/p",
+      "ref": "03A95-7-250",
+      "tipo": "/Tênis/Masculino/Asics/ Tênis",
+      "tags": [],
+      "publicado": "2025-05-21T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/639786/03A95-7-250-1-800X1000.jpg?v=639312294807970000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/639787/03A95-7-250-2-800X1000.jpg?v=639312294808030000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/639788/03A95-7-250-3-800X1000.jpg?v=639312294808100000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/639789/03A95-7-250-4-800X1000.jpg?v=639312294808170000"
+      ],
+      "variantes": [
+        {
+          "t": "33.5",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "34",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "35",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "35.5",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "36",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "36.5",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37.5",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39.5",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41.5",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42.5",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "46",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 499.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "61354",
       "titulo": "Tênis Asics Gel-Nyc 2055 Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-asics-gel-nyc-2055-masculino-03a54-2-023/p",
+      "url": "https://www.authenticfeet.com.br/tenis-asics-gel-nyc-2055-unissex-03a54-2-023/p",
       "ref": "03A54-2-023",
       "tipo": "/Tênis/Masculino/Asics/ Tênis",
       "tags": [],
@@ -5092,7 +5249,7 @@
     {
       "id": "61491",
       "titulo": "Tênis Asics Gel-1130 Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-asics-gel-1130-steel-masculino-03a60-9-021/p",
+      "url": "https://www.authenticfeet.com.br/tenis-asics-gel-1130-unissex-03a60-9-021/p",
       "ref": "03A60-9-021",
       "tipo": "/Tênis/Masculino/Asics/ Tênis",
       "tags": [],
@@ -6750,7 +6907,7 @@
     {
       "id": "61855",
       "titulo": "Tênis Asics Gel-Kayano 14 Masculino",
-      "url": "https://www.authenticfeet.com.br/tenis-asics-gel-kayano-14-feminino-03a74-0-750/p",
+      "url": "https://www.authenticfeet.com.br/tenis-asics-gel-kayano-14-masculino-03a74-0-750/p",
       "ref": "03A74-0-750",
       "tipo": "/Tênis/Masculino/Asics/ Tênis",
       "tags": [],
@@ -8530,7 +8687,7 @@
     {
       "id": "63683",
       "titulo": "Tênis Asics Gel-1130 Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-asics-gel-1130-steel-masculino-03a60-9-109/p",
+      "url": "https://www.authenticfeet.com.br/tenis-asics-gel-1130-unissex-03a60-9-109/p",
       "ref": "03A60-9-109",
       "tipo": "/Tênis/Masculino/Asics/ Tênis",
       "tags": [],

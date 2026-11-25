@@ -2,8 +2,76 @@
   "marca": "Deus Ex Machina",
   "loja": "Site Deus Ex Machina",
   "site": "deusexmachina.com.br",
-  "atualizado": "2026-11-25T12:04:02Z",
+  "atualizado": "2026-11-25T19:59:48Z",
   "produtos": [
+    {
+      "id": "10407857750064",
+      "titulo": "Vale-Presente Deus Ex Machina",
+      "url": "https://deusexmachina.com.br/products/vale-presente-deus-ex-machina",
+      "ref": "",
+      "tipo": "",
+      "tags": [],
+      "publicado": "2026-11-25T13:02:16-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0552/1709/4704/files/Vale-Compras-Deus-Ex-Machina.jpg?v=1795622199"
+      ],
+      "variantes": [
+        {
+          "t": "R$ 250",
+          "p": 250.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "R$ 500",
+          "p": 500.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "R$ 750",
+          "p": 750.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "R$ 1.000",
+          "p": 1000.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "R$ 1.250",
+          "p": 1250.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "R$ 1.500",
+          "p": 1500.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "R$2.000",
+          "p": 2000.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "R$2.500",
+          "p": 2500.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "R$3.000",
+          "p": 3000.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "7976450228272",
       "titulo": "Moto Jersey Swank Rally 26 - Cinza",
@@ -728,7 +796,7 @@
           "t": "G / CHUMBO",
           "p": 990.00,
           "c": 999.00,
-          "a": true
+          "a": false
         },
         {
           "t": "GG / CHUMBO",
@@ -7652,7 +7720,7 @@
           "t": "GG / KHAKI",
           "p": 1749.00,
           "c": 2499.00,
-          "a": true
+          "a": false
         },
         {
           "t": "GGG / KHAKI",
@@ -9014,7 +9082,7 @@
           "t": "40 / AZUL",
           "p": 299.70,
           "c": 999.00,
-          "a": true
+          "a": false
         },
         {
           "t": "42 / AZUL",
@@ -9191,7 +9259,7 @@
           "t": "G / BEGE",
           "p": 1199.00,
           "c": 1199.00,
-          "a": true
+          "a": false
         },
         {
           "t": "GG / BEGE",
@@ -10013,7 +10081,7 @@
           "t": "M / CHUMBO",
           "p": 279.30,
           "c": 399.00,
-          "a": true
+          "a": false
         },
         {
           "t": "G / CHUMBO",

@@ -2,8 +2,68 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-25T12:04:18Z",
+  "atualizado": "2026-11-25T20:00:05Z",
   "produtos": [
+    {
+      "id": "10196013777077",
+      "titulo": "Camisa Linho Bolso Quadriculada",
+      "url": "https://handred.com.br/products/camisa-linho-bolso-quadriculada",
+      "ref": "",
+      "tipo": "Camisas",
+      "tags": [
+        "CAMISAS",
+        "RECONSTRUÇÃO 25",
+        "ROUPAS",
+        "Sale de verão",
+        "SHOP",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-25T16:30:05-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISA_LINHO_BOLSO_QUADRICULADA_CALCA_ABAULADA_JEANSHANDRED_0223_copiar_1.webp?v=1754415109",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISA_LINHO_BOLSO_QUADRICULADAHANDRED_0236.webp?v=1754415109",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISA_LINHO_BOLSO_QUADRICULADAHANDRED_0238.webp?v=1754415109",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CAMISA_LINHO_BOLSO_QUADRICULADA_CALCA_ABAULADA_JEANSHANDRED_0230_copiar.webp?v=1754415109"
+      ],
+      "variantes": [
+        {
+          "t": "AMARELO / XXP",
+          "p": 202.50,
+          "c": 675.00,
+          "a": false
+        },
+        {
+          "t": "AMARELO / PP",
+          "p": 202.50,
+          "c": 675.00,
+          "a": false
+        },
+        {
+          "t": "AMARELO / P",
+          "p": 202.50,
+          "c": 675.00,
+          "a": true
+        },
+        {
+          "t": "AMARELO / M",
+          "p": 202.50,
+          "c": 675.00,
+          "a": false
+        },
+        {
+          "t": "AMARELO / G",
+          "p": 202.50,
+          "c": 675.00,
+          "a": false
+        },
+        {
+          "t": "AMARELO / GG",
+          "p": 202.50,
+          "c": 675.00,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "10331409711285",
       "titulo": "Calça Tafetá Max Pregas",
@@ -109,63 +169,6 @@
         },
         {
           "t": "ESTAMPADO / GG",
-          "p": 1260.00,
-          "c": 4200.00,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "10689170505909",
-      "titulo": "Blazer Box Shantung Fucsia",
-      "url": "https://handred.com.br/products/blazer-box-shantung-fucsia",
-      "ref": "",
-      "tipo": "Overtops",
-      "tags": [
-        "AKASHICA",
-        "OVERTOPS",
-        "ROUPAS",
-        "SALE",
-        "SHOP",
-        "VERTUDO"
-      ],
-      "publicado": "2026-11-23T17:40:53-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/2026_04_16_HANDRED_RFW_BACKSTAGE0540_76262305-e570-4bde-bd0b-8c8f5c647bbd.jpg?v=1795465915"
-      ],
-      "variantes": [
-        {
-          "t": "ROSA / XXP",
-          "p": 1260.00,
-          "c": 4200.00,
-          "a": false
-        },
-        {
-          "t": "ROSA / PP",
-          "p": 1260.00,
-          "c": 4200.00,
-          "a": false
-        },
-        {
-          "t": "ROSA / P",
-          "p": 1260.00,
-          "c": 4200.00,
-          "a": false
-        },
-        {
-          "t": "ROSA / M",
-          "p": 1260.00,
-          "c": 4200.00,
-          "a": true
-        },
-        {
-          "t": "ROSA / G",
-          "p": 1260.00,
-          "c": 4200.00,
-          "a": false
-        },
-        {
-          "t": "ROSA / GG",
           "p": 1260.00,
           "c": 4200.00,
           "a": false
@@ -1094,7 +1097,7 @@
           "t": "ESTAMPADO / GG",
           "p": 377.10,
           "c": 1257.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -1392,7 +1395,7 @@
           "t": "AZUL CHUMBO / P",
           "p": 4497.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "AZUL CHUMBO / M",
@@ -2703,7 +2706,7 @@
           "t": "AZUL / G",
           "p": 1137.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "AZUL / GG",
@@ -2805,7 +2808,7 @@
           "t": "OFF / O2",
           "p": 2247.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -3275,7 +3278,7 @@
           "t": "PRETO / P",
           "p": 2069.78,
           "c": 2797.00,
-          "a": true
+          "a": false
         },
         {
           "t": "PRETO / M",
@@ -3892,7 +3895,7 @@
           "t": "AMARELO / O2",
           "p": 759.98,
           "c": 1027.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -4175,7 +4178,7 @@
           "t": "MARROM / PP",
           "p": 537.98,
           "c": 727.00,
-          "a": true
+          "a": false
         },
         {
           "t": "MARROM / P",
@@ -4385,7 +4388,7 @@
           "t": "VERDE MUSGO / O1",
           "p": 715.58,
           "c": 967.00,
-          "a": true
+          "a": false
         },
         {
           "t": "VERDE MUSGO / O2",
@@ -6219,7 +6222,7 @@
           "t": "PRETO / G",
           "p": 2067.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "PRETO / GG",

@@ -2,8 +2,66 @@
   "marca": "Bolovo",
   "loja": "Site Bolovo",
   "site": "bolovo.com.br",
-  "atualizado": "2026-11-25T12:04:13Z",
+  "atualizado": "2026-11-25T20:00:00Z",
   "produtos": [
+    {
+      "id": "15414797599024",
+      "titulo": "Comodoro Shorts Bolovo 20 Anos",
+      "url": "https://bolovo.com.br/products/comodoro-shorts-bolovo-20-anos",
+      "ref": "",
+      "tipo": "",
+      "tags": [
+        "Adulto",
+        "Ativo",
+        "Coleção 20 Anos Q3'26",
+        "off white"
+      ],
+      "publicado": "2026-11-25T10:55:10-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/1_fe6ae9a4-f8e6-406d-8be4-24b0e989af52.png?v=1795614791",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/3_d66fb269-f992-4dd9-9d6c-512994bc4525.png?v=1795614792",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/2_56d564ed-4a83-4cd2-8a50-158675d003f8.png?v=1795614791",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/4_f86772a6-076a-46c5-bcf7-e68be5a72a75.png?v=1795614791"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 499.99,
+          "c": 499.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 499.99,
+          "c": 499.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 499.99,
+          "c": 499.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 499.99,
+          "c": 499.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 499.99,
+          "c": 499.99,
+          "a": true
+        },
+        {
+          "t": "XGG",
+          "p": 499.99,
+          "c": 499.99,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "15257255870768",
       "titulo": "Hot Pants Dupla Face Biquíni Mystral",
@@ -73,6 +131,7 @@
       ],
       "publicado": "2026-11-23T18:12:10-03:00",
       "imagens": [
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/Design_sem_nome_68.png?v=1795611806",
         "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/Design_sem_nome_66.png?v=1795468512"
       ],
       "variantes": [
@@ -103,19 +162,19 @@
       ],
       "variantes": [
         {
-          "t": "3-4",
+          "t": "3-4 Anos",
           "p": 169.99,
           "c": 169.99,
           "a": true
         },
         {
-          "t": "5-6",
+          "t": "5-6 Anos",
           "p": 169.99,
           "c": 169.99,
           "a": true
         },
         {
-          "t": "7-8",
+          "t": "7-8 Anos",
           "p": 169.99,
           "c": 169.99,
           "a": true
@@ -217,19 +276,19 @@
       ],
       "variantes": [
         {
-          "t": "P",
+          "t": "3-4 Anos",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "M",
+          "t": "5-6 Anos",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "G",
+          "t": "7-8 Anos",
           "p": 199.99,
           "c": 199.99,
           "a": true
@@ -607,25 +666,25 @@
       ],
       "variantes": [
         {
-          "t": "P / Verde",
+          "t": "P",
           "p": 429.99,
           "c": 429.99,
           "a": true
         },
         {
-          "t": "M / Verde",
+          "t": "M",
           "p": 429.99,
           "c": 429.99,
           "a": true
         },
         {
-          "t": "G / Verde",
+          "t": "G",
           "p": 429.99,
           "c": 429.99,
           "a": true
         },
         {
-          "t": "GG / Verde",
+          "t": "GG",
           "p": 429.99,
           "c": 429.99,
           "a": true
@@ -650,25 +709,25 @@
       ],
       "variantes": [
         {
-          "t": "P / Preto",
+          "t": "P",
           "p": 429.99,
           "c": 429.99,
           "a": true
         },
         {
-          "t": "M / Preto",
+          "t": "M",
           "p": 429.99,
           "c": 429.99,
           "a": true
         },
         {
-          "t": "G / Preto",
+          "t": "G",
           "p": 429.99,
           "c": 429.99,
           "a": true
         },
         {
-          "t": "GG / Preto",
+          "t": "GG",
           "p": 429.99,
           "c": 429.99,
           "a": true
@@ -962,37 +1021,37 @@
       ],
       "variantes": [
         {
-          "t": "Marrom / PP",
+          "t": "PP",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Marrom / P",
+          "t": "P",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Marrom / M",
+          "t": "M",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Marrom / G",
+          "t": "G",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Marrom / GG",
+          "t": "GG",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Marrom / XGG",
+          "t": "XGG",
           "p": 489.99,
           "c": 489.99,
           "a": true
@@ -1022,37 +1081,37 @@
       ],
       "variantes": [
         {
-          "t": "PP / Preto",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "P / Preto",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "M / Preto",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "G / Preto",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "GG / Preto",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "XGG / Preto",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": true
@@ -1082,37 +1141,37 @@
       ],
       "variantes": [
         {
-          "t": "PP / Off White",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "P / Off White",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "M / Off White",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "G / Off White",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "GG / Off White",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "XGG / Off White",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": true
@@ -1256,37 +1315,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 329.99,
           "c": 329.99,
           "a": false
@@ -1488,37 +1547,37 @@
       ],
       "variantes": [
         {
-          "t": "Marrom / PP",
+          "t": "PP",
           "p": 349.99,
           "c": 349.99,
           "a": false
         },
         {
-          "t": "Marrom / P",
+          "t": "P",
           "p": 349.99,
           "c": 349.99,
           "a": true
         },
         {
-          "t": "Marrom / M",
+          "t": "M",
           "p": 349.99,
           "c": 349.99,
           "a": true
         },
         {
-          "t": "Marrom / G",
+          "t": "G",
           "p": 349.99,
           "c": 349.99,
           "a": true
         },
         {
-          "t": "Marrom / GG",
+          "t": "GG",
           "p": 349.99,
           "c": 349.99,
           "a": true
         },
         {
-          "t": "Marrom / XGG",
+          "t": "XGG",
           "p": 349.99,
           "c": 349.99,
           "a": true
@@ -1854,37 +1913,37 @@
       ],
       "variantes": [
         {
-          "t": "Azul / PP",
+          "t": "PP",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Azul / P",
+          "t": "P",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Azul / M",
+          "t": "M",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Azul / G",
+          "t": "G",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Azul / GG",
+          "t": "GG",
           "p": 489.99,
           "c": 489.99,
           "a": true
         },
         {
-          "t": "Azul / XGG",
+          "t": "XGG",
           "p": 489.99,
           "c": 489.99,
           "a": true
@@ -2206,40 +2265,28 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
-          "p": 229.99,
-          "c": 229.99,
-          "a": false
-        },
-        {
-          "t": "Off White / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
-        },
-        {
-          "t": "Off White / XGG",
-          "p": 229.99,
-          "c": 229.99,
-          "a": false
         }
       ]
     },
@@ -2264,40 +2311,28 @@
       ],
       "variantes": [
         {
-          "t": "Marrom / PP",
-          "p": 229.99,
-          "c": 229.99,
-          "a": false
-        },
-        {
-          "t": "Marrom / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Marrom / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Marrom / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Marrom / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
-        },
-        {
-          "t": "Marrom / XGG",
-          "p": 229.99,
-          "c": 229.99,
-          "a": false
         }
       ]
     },
@@ -2582,37 +2617,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 289.99,
           "c": 289.99,
           "a": true
@@ -3024,37 +3059,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -3084,37 +3119,37 @@
       ],
       "variantes": [
         {
-          "t": "Branco / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Branco / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Branco / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Branco / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Branco / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Branco / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": false
@@ -4226,7 +4261,7 @@
           "t": "Preto / XGG",
           "p": 289.99,
           "c": 289.99,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -4250,37 +4285,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 289.99,
           "c": 289.99,
           "a": false
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 289.99,
           "c": 289.99,
           "a": false
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 289.99,
           "c": 289.99,
           "a": false
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 289.99,
           "c": 289.99,
           "a": false
@@ -4608,13 +4643,13 @@
           "t": "G",
           "p": 3490.00,
           "c": 3490.00,
-          "a": true
+          "a": false
         },
         {
           "t": "GG",
           "p": 3490.00,
           "c": 3490.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -9188,37 +9223,37 @@
       ],
       "variantes": [
         {
-          "t": "Colorido / PP",
+          "t": "PP",
           "p": 549.99,
           "c": 549.99,
           "a": false
         },
         {
-          "t": "Colorido / P",
+          "t": "P",
           "p": 549.99,
           "c": 549.99,
           "a": true
         },
         {
-          "t": "Colorido / M",
+          "t": "M",
           "p": 549.99,
           "c": 549.99,
           "a": true
         },
         {
-          "t": "Colorido / G",
+          "t": "G",
           "p": 549.99,
           "c": 549.99,
           "a": true
         },
         {
-          "t": "Colorido / GG",
+          "t": "GG",
           "p": 549.99,
           "c": 549.99,
           "a": true
         },
         {
-          "t": "Colorido / XGG",
+          "t": "XGG",
           "p": 549.99,
           "c": 549.99,
           "a": false
@@ -10061,7 +10096,7 @@
           "t": "Marrom / P",
           "p": 1149.99,
           "c": 1149.99,
-          "a": true
+          "a": false
         },
         {
           "t": "Marrom / M",
@@ -10469,7 +10504,7 @@
           "t": "P",
           "p": 329.99,
           "c": 329.99,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
@@ -10527,7 +10562,7 @@
           "t": "Vinho / P",
           "p": 329.99,
           "c": 329.99,
-          "a": false
+          "a": true
         },
         {
           "t": "Vinho / M",
@@ -10758,7 +10793,7 @@
           "t": "Off White / P",
           "p": 599.99,
           "c": 599.99,
-          "a": true
+          "a": false
         },
         {
           "t": "Off White / M",
@@ -11728,7 +11763,7 @@
           "t": "Azul / GG",
           "p": 999.99,
           "c": 999.99,
-          "a": false
+          "a": true
         },
         {
           "t": "Azul / XGG",
@@ -11931,37 +11966,37 @@
       ],
       "variantes": [
         {
-          "t": "Vermelho / PP",
+          "t": "PP",
           "p": 329.99,
           "c": 329.99,
           "a": false
         },
         {
-          "t": "Vermelho / P",
+          "t": "P",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Vermelho / M",
+          "t": "M",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Vermelho / G",
+          "t": "G",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Vermelho / GG",
+          "t": "GG",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Vermelho / XGG",
+          "t": "XGG",
           "p": 329.99,
           "c": 329.99,
           "a": false
@@ -11988,37 +12023,37 @@
       ],
       "variantes": [
         {
-          "t": "Verde / PP",
+          "t": "PP",
           "p": 329.99,
           "c": 329.99,
           "a": false
         },
         {
-          "t": "Verde / P",
+          "t": "P",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Verde / M",
+          "t": "M",
           "p": 329.99,
           "c": 329.99,
           "a": false
         },
         {
-          "t": "Verde / G",
+          "t": "G",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Verde / GG",
+          "t": "GG",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Verde / XGG",
+          "t": "XGG",
           "p": 329.99,
           "c": 329.99,
           "a": true
@@ -12047,37 +12082,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 329.99,
           "c": 329.99,
           "a": false
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 329.99,
           "c": 329.99,
           "a": true
@@ -12106,31 +12141,31 @@
       ],
       "variantes": [
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 329.99,
           "c": 329.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 329.99,
           "c": 329.99,
           "a": true
@@ -12642,7 +12677,7 @@
           "t": "Único",
           "p": 229.99,
           "c": 229.99,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -14490,7 +14525,7 @@
           "t": "Único",
           "p": 199.99,
           "c": 199.99,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -15843,7 +15878,7 @@
           "t": "PP",
           "p": 499.99,
           "c": 499.99,
-          "a": true
+          "a": false
         },
         {
           "t": "P",
@@ -19853,13 +19888,13 @@
           "t": "GG",
           "p": 229.99,
           "c": 229.99,
-          "a": false
+          "a": true
         },
         {
           "t": "XGG",
           "p": 229.99,
           "c": 229.99,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -20797,37 +20832,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 289.99,
           "c": 289.99,
           "a": true
@@ -20855,37 +20890,37 @@
       ],
       "variantes": [
         {
-          "t": "Marrom / PP",
+          "t": "PP",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Marrom / P",
+          "t": "P",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Marrom / M",
+          "t": "M",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Marrom / G",
+          "t": "G",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Marrom / GG",
+          "t": "GG",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Marrom / XGG",
+          "t": "XGG",
           "p": 289.99,
           "c": 289.99,
           "a": true
@@ -21256,31 +21291,31 @@
       ],
       "variantes": [
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 289.99,
           "c": 289.99,
           "a": true
@@ -21359,37 +21394,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -21705,37 +21740,37 @@
       ],
       "variantes": [
         {
-          "t": "Colorido / PP",
+          "t": "PP",
           "p": 269.99,
           "c": 269.99,
           "a": false
         },
         {
-          "t": "Colorido / P",
+          "t": "P",
           "p": 269.99,
           "c": 269.99,
           "a": false
         },
         {
-          "t": "Colorido / M",
+          "t": "M",
           "p": 269.99,
           "c": 269.99,
           "a": true
         },
         {
-          "t": "Colorido / G",
+          "t": "G",
           "p": 269.99,
           "c": 269.99,
           "a": true
         },
         {
-          "t": "Colorido / GG",
+          "t": "GG",
           "p": 269.99,
           "c": 269.99,
           "a": true
         },
         {
-          "t": "Colorido / XGG",
+          "t": "XGG",
           "p": 269.99,
           "c": 269.99,
           "a": false
@@ -21764,37 +21799,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": false
@@ -22058,37 +22093,37 @@
       ],
       "variantes": [
         {
-          "t": "Marrom / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Marrom / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Marrom / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Marrom / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Marrom / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Marrom / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -22116,37 +22151,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -22175,37 +22210,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": false
@@ -22232,37 +22267,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -22347,37 +22382,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -22404,37 +22439,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -22461,37 +22496,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -22639,37 +22674,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 199.99,
           "c": 199.99,
           "a": false
@@ -22698,37 +22733,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 199.99,
           "c": 199.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 199.99,
           "c": 199.99,
           "a": true
@@ -22947,37 +22982,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -23005,37 +23040,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -23064,31 +23099,31 @@
       ],
       "variantes": [
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -23116,37 +23151,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": true
@@ -23174,37 +23209,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": false
@@ -23232,37 +23267,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": false
@@ -23292,37 +23327,37 @@
       ],
       "variantes": [
         {
-          "t": "Listrado / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Listrado / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Listrado / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Listrado / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Listrado / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Listrado / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": false
@@ -23350,37 +23385,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": false
@@ -23408,37 +23443,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": false
@@ -23467,37 +23502,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": true
@@ -23526,37 +23561,37 @@
       ],
       "variantes": [
         {
-          "t": "Branco / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Branco / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Branco / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Branco / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Branco / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Branco / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": true
@@ -23642,37 +23677,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": false
@@ -23701,37 +23736,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": false
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": false
@@ -23760,37 +23795,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 299.99,
           "c": 299.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 299.99,
           "c": 299.99,
           "a": false
@@ -23992,37 +24027,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": false
@@ -24050,37 +24085,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": false
@@ -24108,37 +24143,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": false
@@ -24165,37 +24200,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": true
@@ -24555,37 +24590,37 @@
       ],
       "variantes": [
         {
-          "t": "Listrado / PP",
+          "t": "PP",
           "p": 499.99,
           "c": 499.99,
           "a": false
         },
         {
-          "t": "Listrado / P",
+          "t": "P",
           "p": 499.99,
           "c": 499.99,
           "a": true
         },
         {
-          "t": "Listrado / M",
+          "t": "M",
           "p": 499.99,
           "c": 499.99,
           "a": true
         },
         {
-          "t": "Listrado / G",
+          "t": "G",
           "p": 499.99,
           "c": 499.99,
           "a": true
         },
         {
-          "t": "Listrado / GG",
+          "t": "GG",
           "p": 499.99,
           "c": 499.99,
           "a": true
         },
         {
-          "t": "Listrado / XGG",
+          "t": "XGG",
           "p": 499.99,
           "c": 499.99,
           "a": true
@@ -24730,37 +24765,37 @@
       ],
       "variantes": [
         {
-          "t": "Estampada / PP",
+          "t": "PP",
           "p": 499.99,
           "c": 499.99,
           "a": false
         },
         {
-          "t": "Estampada / P",
+          "t": "P",
           "p": 499.99,
           "c": 499.99,
           "a": true
         },
         {
-          "t": "Estampada / M",
+          "t": "M",
           "p": 499.99,
           "c": 499.99,
           "a": false
         },
         {
-          "t": "Estampada / G",
+          "t": "G",
           "p": 499.99,
           "c": 499.99,
           "a": true
         },
         {
-          "t": "Estampada / GG",
+          "t": "GG",
           "p": 499.99,
           "c": 499.99,
           "a": true
         },
         {
-          "t": "Estampada / XGG",
+          "t": "XGG",
           "p": 499.99,
           "c": 499.99,
           "a": true
@@ -24841,37 +24876,37 @@
       ],
       "variantes": [
         {
-          "t": "Verde / PP",
+          "t": "PP",
           "p": 549.99,
           "c": 549.99,
           "a": false
         },
         {
-          "t": "Verde / P",
+          "t": "P",
           "p": 549.99,
           "c": 549.99,
           "a": true
         },
         {
-          "t": "Verde / M",
+          "t": "M",
           "p": 549.99,
           "c": 549.99,
           "a": false
         },
         {
-          "t": "Verde / G",
+          "t": "G",
           "p": 549.99,
           "c": 549.99,
           "a": false
         },
         {
-          "t": "Verde / GG",
+          "t": "GG",
           "p": 549.99,
           "c": 549.99,
           "a": false
         },
         {
-          "t": "Verde / XGG",
+          "t": "XGG",
           "p": 549.99,
           "c": 549.99,
           "a": false
@@ -25098,37 +25133,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 289.99,
           "c": 289.99,
           "a": true
@@ -25270,37 +25305,37 @@
       ],
       "variantes": [
         {
-          "t": "Preto / PP",
+          "t": "PP",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / P",
+          "t": "P",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / M",
+          "t": "M",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / G",
+          "t": "G",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / GG",
+          "t": "GG",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Preto / XGG",
+          "t": "XGG",
           "p": 289.99,
           "c": 289.99,
           "a": true
@@ -25330,37 +25365,37 @@
       ],
       "variantes": [
         {
-          "t": "Vinho / PP",
+          "t": "PP",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Vinho / P",
+          "t": "P",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Vinho / M",
+          "t": "M",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Vinho / G",
+          "t": "G",
           "p": 229.99,
           "c": 229.99,
           "a": true
         },
         {
-          "t": "Vinho / GG",
+          "t": "GG",
           "p": 229.99,
           "c": 229.99,
           "a": false
         },
         {
-          "t": "Vinho / XGG",
+          "t": "XGG",
           "p": 229.99,
           "c": 229.99,
           "a": false
@@ -25387,37 +25422,37 @@
       ],
       "variantes": [
         {
-          "t": "Off White / PP",
+          "t": "PP",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / P",
+          "t": "P",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / M",
+          "t": "M",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / G",
+          "t": "G",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / GG",
+          "t": "GG",
           "p": 289.99,
           "c": 289.99,
           "a": true
         },
         {
-          "t": "Off White / XGG",
+          "t": "XGG",
           "p": 289.99,
           "c": 289.99,
           "a": true

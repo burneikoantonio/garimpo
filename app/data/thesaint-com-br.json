@@ -2,7 +2,7 @@
   "marca": "THESAINT",
   "loja": "Site THESAINT",
   "site": "thesaint.com.br",
-  "atualizado": "2026-11-25T12:04:05Z",
+  "atualizado": "2026-11-25T19:59:51Z",
   "produtos": [
     {
       "id": "10183386562851",
@@ -391,32 +391,32 @@
       "variantes": [
         {
           "t": "PP / GRAY",
-          "p": 368.00,
-          "c": 0,
+          "p": 147.20,
+          "c": 368.00,
           "a": false
         },
         {
           "t": "P / GRAY",
-          "p": 368.00,
-          "c": 0,
+          "p": 147.20,
+          "c": 368.00,
           "a": false
         },
         {
           "t": "M / GRAY",
-          "p": 368.00,
-          "c": 0,
+          "p": 147.20,
+          "c": 368.00,
           "a": false
         },
         {
           "t": "G / GRAY",
-          "p": 368.00,
-          "c": 0,
+          "p": 147.20,
+          "c": 368.00,
           "a": false
         },
         {
           "t": "GG / GRAY",
-          "p": 368.00,
-          "c": 0,
+          "p": 147.20,
+          "c": 368.00,
           "a": false
         }
       ]
@@ -572,7 +572,7 @@
           "t": "38 / BLACK",
           "p": 498.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "40 / BLACK",
@@ -3461,7 +3461,7 @@
           "t": "G / OFF WHITE",
           "p": 91.20,
           "c": 228.00,
-          "a": true
+          "a": false
         },
         {
           "t": "GG / OFF WHITE",
@@ -7298,7 +7298,7 @@
           "t": "GG / STONED GREEN",
           "p": 119.20,
           "c": 298.00,
-          "a": true
+          "a": false
         },
         {
           "t": "P / STONED GREEN",
@@ -7904,7 +7904,7 @@
           "t": "P / BLACK",
           "p": 134.00,
           "c": 268.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M / BLACK",
@@ -9376,7 +9376,7 @@
           "t": "XGG / OFF WHITE",
           "p": 107.20,
           "c": 268.00,
-          "a": false
+          "a": true
         },
         {
           "t": "GG / OFF WHITE",
@@ -12731,7 +12731,7 @@
           "t": "GG / OFF WHITE",
           "p": 79.20,
           "c": 198.00,
-          "a": false
+          "a": true
         },
         {
           "t": "XGG / OFF WHITE",
@@ -13073,7 +13073,7 @@
           "t": "GG / BLACK",
           "p": 71.20,
           "c": 178.00,
-          "a": true
+          "a": false
         },
         {
           "t": "P / BLACK",
