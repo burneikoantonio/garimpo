@@ -2,7 +2,7 @@
   "marca": "Mizuno",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-25T12:02:41Z",
+  "atualizado": "2026-11-25T16:04:21Z",
   "produtos": [
     {
       "id": "52310",
@@ -2834,7 +2834,7 @@
       "ref": "10106-0-200",
       "tipo": "/Tênis/Masculino/Mizuno/ Tênis",
       "tags": [],
-      "publicado": "2026-06-30T00:00:00Z",
+      "publicado": "2024-12-27T00:00:00Z",
       "imagens": [
         "https://authenticfeet.vteximg.com.br/arquivos/ids/504955/10106-0-200-1-AF-800x1000.jpg?v=639014273989930000",
         "https://authenticfeet.vteximg.com.br/arquivos/ids/504956/10106-0-200-2-AF-800x1000.jpg?v=639014273990100000",
@@ -2874,8 +2874,8 @@
           "t": "43",
           "p": 299.99,
           "c": 799.99,
-          "x": null,
-          "a": false
+          "x": 299.99,
+          "a": true
         },
         {
           "t": "44",
@@ -2940,8 +2940,8 @@
           "t": "40",
           "p": 899.99,
           "c": 1799.99,
-          "x": null,
-          "a": false
+          "x": 899.99,
+          "a": true
         },
         {
           "t": "41",
@@ -2999,8 +2999,8 @@
           "t": "36",
           "p": 899.99,
           "c": 1799.99,
-          "x": 899.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "37",

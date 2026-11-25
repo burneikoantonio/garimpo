@@ -2,7 +2,7 @@
   "marca": "On",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-25T12:02:39Z",
+  "atualizado": "2026-11-25T16:04:19Z",
   "produtos": [
     {
       "id": "52077",
@@ -228,8 +228,8 @@
           "t": "40",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1299.99,
+          "a": true
         },
         {
           "t": "41",
@@ -249,8 +249,8 @@
           "t": "42",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1299.99,
+          "a": true
         },
         {
           "t": "44",
@@ -2658,63 +2658,63 @@
       ],
       "variantes": [
         {
-          "t": "38",
+          "t": "Tênis On Cloudtilt 1 Masculino",
           "p": 1299.99,
           "c": 1299.99,
           "x": null,
           "a": false
         },
         {
-          "t": "39",
+          "t": "Tênis On Cloudtilt 1 Masculino",
           "p": 1299.99,
           "c": 1299.99,
           "x": null,
           "a": false
         },
         {
-          "t": "40",
+          "t": "Tênis On Cloudtilt 1 Masculino",
           "p": 1299.99,
           "c": 1299.99,
           "x": null,
           "a": false
         },
         {
-          "t": "41",
+          "t": "Tênis On Cloudtilt 1 Masculino",
           "p": 1299.99,
           "c": 1299.99,
           "x": null,
           "a": false
         },
         {
-          "t": "42",
+          "t": "Tênis On Cloudtilt 1 Masculino",
           "p": 1299.99,
           "c": 1299.99,
           "x": null,
           "a": false
         },
         {
-          "t": "43",
+          "t": "Tênis On Cloudtilt 1 Masculino",
           "p": 1299.99,
           "c": 1299.99,
           "x": null,
           "a": false
         },
         {
-          "t": "44",
+          "t": "Tênis On Cloudtilt 1 Masculino",
           "p": 1299.99,
           "c": 1299.99,
           "x": 1299.99,
           "a": true
         },
         {
-          "t": "45",
+          "t": "Tênis On Cloudtilt 1 Masculino",
           "p": 1299.99,
           "c": 1299.99,
           "x": null,
           "a": false
         },
         {
-          "t": "46",
+          "t": "Tênis On Cloudtilt 1 Masculino",
           "p": 1299.99,
           "c": 1299.99,
           "x": null,
@@ -2995,8 +2995,8 @@
           "t": "42",
           "p": 779.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 779.99,
+          "a": true
         },
         {
           "t": "43",
@@ -3061,8 +3061,8 @@
           "t": "40",
           "p": 779.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 779.99,
+          "a": true
         },
         {
           "t": "41",
