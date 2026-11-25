@@ -2,7 +2,7 @@
   "marca": "Stüssy",
   "loja": "Site Stüssy",
   "site": "www.stussy.com",
-  "atualizado": "2026-11-24T23:51:25Z",
+  "atualizado": "2026-11-25T12:03:02Z",
   "intl": {
     "moeda": "USD",
     "frete": 20,
@@ -453,7 +453,7 @@
           "t": "NAVY / S",
           "p": 130.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "NAVY / M",
@@ -465,7 +465,7 @@
           "t": "NAVY / L",
           "p": 130.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "NAVY / XL",
@@ -1516,7 +1516,7 @@
           "t": "Majestic Blue / ONE SIZE",
           "p": 50.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -3646,7 +3646,7 @@
           "t": "Black / XXL",
           "p": 150.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -5043,13 +5043,13 @@
           "t": "Black / XL",
           "p": 130.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Black / XXL",
           "p": 130.00,
           "c": 0,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -5603,7 +5603,7 @@
           "t": "White / XL",
           "p": 55.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "White / XXL",
@@ -6260,7 +6260,7 @@
           "t": "Black / XS",
           "p": 45.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Black / S",
@@ -6933,7 +6933,7 @@
           "t": "Lemon / M",
           "p": 45.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Lemon / L",
@@ -7394,7 +7394,7 @@
           "t": "Sage / L",
           "p": 80.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Sage / XL",
@@ -7739,7 +7739,7 @@
           "t": "Ink / M",
           "p": 80.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Ink / L",
@@ -9028,7 +9028,7 @@
           "t": "White / L",
           "p": 45.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "White / XL",
@@ -9363,7 +9363,7 @@
           "t": "Indigo Stone Wash / 32",
           "p": 160.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Indigo Stone Wash / 34",
@@ -11511,7 +11511,7 @@
           "t": "Black / S",
           "p": 38.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Black / M",
@@ -12527,7 +12527,7 @@
           "t": "Clay / L",
           "p": 45.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Clay / XL",
@@ -12698,13 +12698,13 @@
           "t": "Black / M",
           "p": 150.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Black / L",
           "p": 150.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Black / XL",
@@ -13008,13 +13008,13 @@
           "t": "Brown Camo / L",
           "p": 55.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Brown Camo / XL",
           "p": 55.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Brown Camo / XXL",
@@ -13061,25 +13061,25 @@
           "t": "Sage Camo / M",
           "p": 55.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Sage Camo / L",
           "p": 55.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Sage Camo / XL",
           "p": 55.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Sage Camo / XXL",
           "p": 55.00,
           "c": 0,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -18529,7 +18529,7 @@
           "t": "Clay / L",
           "p": 45.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Clay / XL",
@@ -18704,7 +18704,7 @@
           "t": "Black / L",
           "p": 150.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Black / XL",
@@ -19809,7 +19809,7 @@
           "t": "Navy / M",
           "p": 150.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Navy / L",
@@ -22363,7 +22363,7 @@
           "t": "Black / XXL",
           "p": 110.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -23207,7 +23207,7 @@
           "t": "Faded Black / S",
           "p": 130.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Faded Black / M",
@@ -24963,7 +24963,7 @@
           "t": "Black / XL",
           "p": 475.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Black / XXL",
@@ -25031,7 +25031,7 @@
           "t": "Khaki / XL",
           "p": 475.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Khaki / XXL",
@@ -26872,7 +26872,7 @@
           "t": "Tan Leopard / ONE SIZE",
           "p": 70.00,
           "c": 0,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -29422,7 +29422,7 @@
           "t": "Washed Red / XL",
           "p": 50.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Washed Red / XXL",
@@ -31542,7 +31542,7 @@
           "t": "Faded Black / XS",
           "p": 140.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Faded Black / S",
@@ -35505,7 +35505,7 @@
           "t": "Raw Black Contrast Stitch / 30",
           "p": 160.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Raw Black Contrast Stitch / 32",
@@ -37185,7 +37185,7 @@
           "t": "Red / ONE SIZE",
           "p": 50.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -38174,7 +38174,7 @@
           "t": "Ash Heather / S",
           "p": 150.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Ash Heather / M",
@@ -39493,7 +39493,7 @@
           "t": "Grey Heather / L",
           "p": 160.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Grey Heather / XL",
@@ -42258,7 +42258,7 @@
           "t": "Navy / XXL",
           "p": 145.00,
           "c": 0,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -42726,7 +42726,7 @@
           "t": "Ash Heather / L",
           "p": 45.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Ash Heather / XL",
@@ -44132,7 +44132,7 @@
           "t": "Navy / XL",
           "p": 80.00,
           "c": 0,
-          "a": false
+          "a": true
         },
         {
           "t": "Navy / XXL",
@@ -45469,7 +45469,7 @@
           "t": "Navy / XL",
           "p": 125.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Navy / XXL",
@@ -48412,7 +48412,7 @@
           "t": "White / XL",
           "p": 55.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "White / XXL",
@@ -51174,7 +51174,7 @@
           "t": "Faded Black / XL",
           "p": 45.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Faded Black / XXL",
