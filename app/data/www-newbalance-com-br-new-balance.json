@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Site New Balance",
   "site": "www.newbalance.com.br",
-  "atualizado": "2026-11-25T19:49:47Z",
+  "atualizado": "2026-11-25T23:45:01Z",
   "produtos": [
     {
       "id": "1100319",
@@ -663,8 +663,8 @@
           "t": "43",
           "p": 399.99,
           "c": 549.99,
-          "x": 399.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "44",
@@ -2088,8 +2088,8 @@
           "t": "42",
           "p": 599.99,
           "c": 599.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -2707,7 +2707,7 @@
           "p": 399.99,
           "c": 549.99,
           "x": 399.99,
-          "a": false
+          "a": true
         },
         {
           "t": "39",
@@ -3540,100 +3540,6 @@
       ]
     },
     {
-      "id": "1322259",
-      "titulo": "Tênis New Balance 574v2 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-574v2-unisex-1322259/p",
-      "ref": "U574_U574NFA_1322259",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2025-09-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/223678/U574_U574NFA.jpg?v=639201546976030000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/223679/U574_U574NFA.jpg?v=639201546976370000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/223680/U574_U574NFA.jpg?v=639201546976570000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/223681/U574_U574NFA.jpg?v=639201546976800000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1323090",
       "titulo": "Tênis New Balance 373v2 Masculino",
       "url": "https://www.newbalance.com.br/tenis-new-balance-373v2-masculino-1323090/p",
@@ -3648,100 +3554,6 @@
         "https://newbrasil.vteximg.com.br/arquivos/ids/189067/ML373_ML373FLC.jpg?v=638874917074400000"
       ],
       "variantes": [
-        {
-          "t": "38",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1323547",
-      "titulo": "Tênis New Balance 370v1 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-370v1-unisex-1323547/p",
-      "ref": "370_U370BIT_1323547",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2025-07-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/189050/370_U370BIT.jpg?v=639282767460600000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/189051/370_U370BIT.jpg?v=639282767460670000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/189052/370_U370BIT.jpg?v=639282767460700000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/189053/370_U370BIT.jpg?v=639282767460770000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
         {
           "t": "38",
           "p": 499.99,
@@ -5162,7 +4974,7 @@
           "p": 799.99,
           "c": 999.99,
           "x": 799.99,
-          "a": false
+          "a": true
         },
         {
           "t": "42",
@@ -5444,7 +5256,7 @@
           "p": 799.99,
           "c": 999.99,
           "x": 799.99,
-          "a": true
+          "a": false
         },
         {
           "t": "42",
@@ -8803,34 +8615,6 @@
       ],
       "variantes": [
         {
-          "t": "34",
-          "p": 599.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 599.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 599.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 599.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
           "t": "38",
           "p": 599.99,
           "c": 899.99,
@@ -9137,8 +8921,8 @@
           "t": "46",
           "p": 599.99,
           "c": 599.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "47",
@@ -14214,57 +13998,6 @@
       ]
     },
     {
-      "id": "1356113",
-      "titulo": "Shorts Fast Days 7\" Masculino",
-      "url": "https://www.newbalance.com.br/shorts-fast-days-7--masculino-1356113/p",
-      "ref": "MB61I9X6B_GYM_1356113",
-      "tipo": "/Confecção/Shorts/ ",
-      "tags": [],
-      "publicado": "2026-03-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220438/MB61I9X6B_GYM.jpg?v=639184202719170000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220439/MB61I9X6B_GYM.jpg?v=639184202754730000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220440/MB61I9X6B_GYM.jpg?v=639184202797700000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 149.99,
-          "c": 249.99,
-          "x": 149.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 149.99,
-          "c": 249.99,
-          "x": 149.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 149.99,
-          "c": 249.99,
-          "x": 149.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 149.99,
-          "c": 249.99,
-          "x": 149.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 149.99,
-          "c": 249.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "1356119",
       "titulo": "Camiseta Athletics Graphic Masculina",
       "url": "https://www.newbalance.com.br/camiseta-athletics-graphic-masculina-1356119/p",
@@ -15414,7 +15147,7 @@
           "p": 749.99,
           "c": 749.99,
           "x": 749.99,
-          "a": true
+          "a": false
         },
         {
           "t": "42",
@@ -15747,100 +15480,6 @@
           "p": 249.99,
           "c": 249.99,
           "x": 249.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1357238",
-      "titulo": "Tênis New Balance 740 Unissex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-740-unissex-1357238/p",
-      "ref": "U740_U740WM2_1357238",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-01-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/237611/U740_U740WM2.jpg?v=639306200872600000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/237612/U740_U740WM2.jpg?v=639306200872600000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/237613/U740_U740WM2.jpg?v=639306200872770000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/237614/U740_U740WM2.jpg?v=639306200872770000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 749.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 749.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 749.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 749.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
           "a": true
         }
       ]
@@ -17224,6 +16863,72 @@
           "c": 369.99,
           "x": 369.99,
           "a": true
+        }
+      ]
+    },
+    {
+      "id": "1383031",
+      "titulo": "Calção Treino Grêmio 2026 Masculino",
+      "url": "https://www.newbalance.com.br/calcao-treino-gremio-2026-masculino-1383031/p",
+      "ref": "MS831827_GCC_1383031",
+      "tipo": "/Confecção/Calção/ ",
+      "tags": [],
+      "publicado": "2026-03-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/224074/MS831827_GCC.jpg?v=639195596327930000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/224075/MS831827_GCC.jpg?v=639195596362300000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/224076/MS831827_GCC.jpg?v=639195596394630000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/224077/MS831827_GCC.jpg?v=639195596428900000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 149.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "3GG",
+          "p": 149.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 149.99,
+          "c": 199.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 149.99,
+          "c": 199.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 149.99,
+          "c": 199.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 149.99,
+          "c": 199.99,
+          "x": 149.99,
+          "a": true
+        },
+        {
+          "t": "PP",
+          "p": 149.99,
+          "c": 199.99,
+          "x": null,
+          "a": false
         }
       ]
     },
@@ -19127,100 +18832,6 @@
       ]
     },
     {
-      "id": "1393262",
-      "titulo": "Tênis New Balance 574v2 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-574v2-unisex-1393262/p",
-      "ref": "U574_U5748V4_1393262",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-07-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228106/U574_U5748V4.jpg?v=639282854648630000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228107/U574_U5748V4.jpg?v=639282854648630000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228108/U574_U5748V4.jpg?v=639282854648830000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228109/U574_U5748V4.jpg?v=639282854648930000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 599.99,
-          "c": 599.99,
-          "x": 599.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1393266",
       "titulo": "Tênis New Balance 574v2 Unisex",
       "url": "https://www.newbalance.com.br/tenis-new-balance-574v2-unisex-1393266/p",
@@ -19498,100 +19109,6 @@
           "p": 449.99,
           "c": 449.99,
           "x": 449.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1393369",
-      "titulo": "Tênis New Balance 471 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-471-unisex-1393369/p",
-      "ref": "U471V1_U4716IU_1393369",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-07-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/222093/U471V1_U4716IU.jpg?v=639282759167800000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/222094/U471V1_U4716IU.jpg?v=639282759167800000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/222095/U471V1_U4716IU.jpg?v=639282759167800000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/222096/U471V1_U4716IU.jpg?v=639282759167800000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
           "a": true
         }
       ]
@@ -19879,100 +19396,6 @@
       ]
     },
     {
-      "id": "1393396",
-      "titulo": "Tênis New Balance 471 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-471-unisex-1393396/p",
-      "ref": "U471V1_U4712AW_1393396",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-08-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228112/U471V1_U4712AW.jpg?v=639282758132130000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228113/U471V1_U4712AW.jpg?v=639282758132130000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228114/U471V1_U4712AW.jpg?v=639282758132130000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228115/U471V1_U4712AW.jpg?v=639282758132130000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 499.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 499.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 499.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 499.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 499.99,
-          "c": 499.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 499.99,
-          "c": 499.99,
-          "x": 499.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1393575",
       "titulo": "Tênis New Balance 370v1 Unisex",
       "url": "https://www.newbalance.com.br/tenis-new-balance-370v1-unisex-1393575/p",
@@ -20062,194 +19485,6 @@
           "p": 429.99,
           "c": 499.99,
           "x": 429.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1393578",
-      "titulo": "Tênis New Balance 370v1 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-370v1-unisex-1393578/p",
-      "ref": "370_U3707Y7_1393578",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-08-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228090/370_U3707Y7.jpg?v=639282766289200000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228091/370_U3707Y7.jpg?v=639282766289400000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228092/370_U3707Y7.jpg?v=639282766289870000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228093/370_U3707Y7.jpg?v=639282766290270000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1393604",
-      "titulo": "Tênis New Balance Bb80 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-bb80-unisex-1393604/p",
-      "ref": "BB80_U0808DR_1393604",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-08-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228033/BB80_U0808DR.jpg?v=639222262016770000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228034/BB80_U0808DR.jpg?v=639222262058630000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228035/BB80_U0808DR.jpg?v=639222262098130000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228036/BB80_U0808DR.jpg?v=639222262132330000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 399.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 399.99,
-          "c": 399.99,
-          "x": 399.99,
           "a": true
         }
       ]
@@ -20636,100 +19871,6 @@
           "p": 399.99,
           "c": 499.99,
           "x": 399.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1393641",
-      "titulo": "Tênis New Balance 370v1 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-370v1-unisex-1393641/p",
-      "ref": "370_U37079Z_1393641",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-08-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228043/370_U37079Z.jpg?v=639282766399470000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228044/370_U37079Z.jpg?v=639282766399500000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228045/370_U37079Z.jpg?v=639282766399570000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228046/370_U37079Z.jpg?v=639282766399630000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 549.99,
-          "c": 549.99,
-          "x": 549.99,
           "a": true
         }
       ]
@@ -22205,8 +21346,8 @@
           "t": "47",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "48",
@@ -22932,15 +22073,15 @@
           "t": "42",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "44",
@@ -26925,100 +26066,6 @@
       ]
     },
     {
-      "id": "1395938",
-      "titulo": "Tênis New Balance 2010 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-2010-unisex-1395938/p",
-      "ref": "U2010_U201079X_1395938",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-07-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220902/U2010_U201079X.jpg?v=639185363105400000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220903/U2010_U201079X.jpg?v=639185363105400000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220904/U2010_U201079X.jpg?v=639185363105400000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/220905/U2010_U201079X.jpg?v=639185363105400000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1395941",
       "titulo": "Tênis New Balance 2010 Unisex",
       "url": "https://www.newbalance.com.br/tenis-new-balance-2010-unisex-1395941/p",
@@ -27283,100 +26330,6 @@
           "c": 799.99,
           "x": 799.99,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "1396044",
-      "titulo": "Tênis New Balance 204l Unissex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-204l-unissex-1396044/p",
-      "ref": "U204L_U204LCMB_1396044",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-09-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235065/U204L_U204LCMB.jpg?v=639277765841630000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235066/U204L_U204LCMB.jpg?v=639277765841630000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235067/U204L_U204LCMB.jpg?v=639277765841630000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235068/U204L_U204LCMB.jpg?v=639277765841630000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 799.99,
-          "x": 799.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
         }
       ]
     },
@@ -27811,100 +26764,6 @@
           "p": 249.99,
           "c": 249.99,
           "x": 249.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1396182",
-      "titulo": "Tênis New Balance 5030 Unissex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-5030-unissex-1396182/p",
-      "ref": "U5030_U50301UW_1396182",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-07-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/229920/U5030_U50301UW.jpg?v=639231683840270000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/229921/U5030_U50301UW.jpg?v=639231683840270000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/229922/U5030_U50301UW.jpg?v=639231683840400000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/229923/U5030_U50301UW.jpg?v=639231683840400000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 849.99,
-          "c": 849.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 849.99,
-          "c": 849.99,
-          "x": 849.99,
           "a": true
         }
       ]
@@ -28380,100 +27239,6 @@
       ]
     },
     {
-      "id": "1396291",
-      "titulo": "Tênis New Balance 950 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-950-unisex-1396291/p",
-      "ref": "U950_U9509MT_1396291",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-07-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/225547/U950_U9509MT.jpg?v=639203260662600000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/225548/U950_U9509MT.jpg?v=639203260662770000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/225549/U950_U9509MT.jpg?v=639203260662930000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/225550/U950_U9509MT.jpg?v=639203260663070000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1396297",
       "titulo": "Tênis New Balance 950 Unisex",
       "url": "https://www.newbalance.com.br/tenis-new-balance-950-unisex-1396297/p",
@@ -28486,100 +27251,6 @@
         "https://newbrasil.vteximg.com.br/arquivos/ids/228168/U950_U9502SW.jpg?v=639222336864200000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/228169/U950_U9502SW.jpg?v=639222336906700000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/228170/U950_U9502SW.jpg?v=639222336946930000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 749.99,
-          "c": 899.99,
-          "x": 749.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1396300",
-      "titulo": "Tênis New Balance 950 Unisex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-950-unisex-1396300/p",
-      "ref": "U950_U9507BL_1396300",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-07-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228161/U950_U9507BL.jpg?v=639222335337200000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228162/U950_U9507BL.jpg?v=639222335375630000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228163/U950_U9507BL.jpg?v=639222335406270000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/228164/U950_U9507BL.jpg?v=639222335438500000"
       ],
       "variantes": [
         {
@@ -29015,173 +27686,6 @@
       ]
     },
     {
-      "id": "1396330",
-      "titulo": "Tênis New Balance 603 Unissex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-603-unissex-1396330/p",
-      "ref": "U603_W60318X_1396330",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-08-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/232001/U603_W60318X.jpg?v=639240680468600000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/232002/U603_W60318X.jpg?v=639240680519130000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/232003/U603_W60318X.jpg?v=639240680578970000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/232004/U603_W60318X.jpg?v=639240680634230000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 749.99,
-          "c": 749.99,
-          "x": 749.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 749.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "1396360",
-      "titulo": "Tênis New Balance 880r Unissex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-880r-unissex-1396360/p",
-      "ref": "U880R_U880R2QR_1396360",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-07-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235638/U880R_U880R2QR.jpg?v=639282856218970000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235639/U880R_U880R2QR.jpg?v=639282856218970000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235640/U880R_U880R2QR.jpg?v=639282856219100000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235641/U880R_U880R2QR.jpg?v=639282856219100000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "35",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "36",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "37",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "38",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1396361",
       "titulo": "Tênis New Balance 880r Unisex",
       "url": "https://www.newbalance.com.br/tenis-new-balance-880r-unisex-1396361/p",
@@ -29496,7 +28000,7 @@
           "t": "38",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1299.99,
+          "x": null,
           "a": false
         },
         {
@@ -30422,8 +28926,8 @@
           "t": "34",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1299.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "35",
@@ -32390,58 +30894,6 @@
       ]
     },
     {
-      "id": "1404520",
-      "titulo": "Shorts Sport Essentials 5\" Masculino",
-      "url": "https://www.newbalance.com.br/shorts-sport-essentials-5--masculino-1404520/p",
-      "ref": "MS41227BR_BK_1404520",
-      "tipo": "/Confecção/Shorts/ ",
-      "tags": [],
-      "publicado": "2026-07-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/241014/MS41227BR_BK.jpg?v=639310584990700000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/241015/MS41227BR_BK.jpg?v=639310585033470000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/241016/MS41227BR_BK.jpg?v=639310585061500000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/241017/MS41227BR_BK.jpg?v=639310585089700000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 109.99,
-          "c": 179.99,
-          "x": 109.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 109.99,
-          "c": 179.99,
-          "x": 109.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 109.99,
-          "c": 179.99,
-          "x": 109.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 109.99,
-          "c": 179.99,
-          "x": 109.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 109.99,
-          "c": 179.99,
-          "x": 109.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1404521",
       "titulo": "Shorts Sport Essentials 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-sport-essentials-5--masculino-1404521/p",
@@ -32595,58 +31047,6 @@
       ]
     },
     {
-      "id": "1404528",
-      "titulo": "Shorts Sport Essentials 7\" Masculino",
-      "url": "https://www.newbalance.com.br/shorts-sport-essentials-7--masculino-1404528/p",
-      "ref": "MS41232BR_OFG_1404528",
-      "tipo": "/Confecção/Shorts/ ",
-      "tags": [],
-      "publicado": "2026-09-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/241114/MS41232BR_OFG.jpg?v=639310601927970000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/241115/MS41232BR_OFG.jpg?v=639310601966070000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/241116/MS41232BR_OFG.jpg?v=639310602005230000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/241117/MS41232BR_OFG.jpg?v=639310602033400000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 189.99,
-          "c": 189.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 189.99,
-          "c": 189.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 189.99,
-          "c": 189.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 189.99,
-          "c": 189.99,
-          "x": 189.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 189.99,
-          "c": 189.99,
-          "x": 189.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1404532",
       "titulo": "Shorts Sport Essentials 2 In 1 - 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-sport-essentials-2-in-1---5--masculino-1404532/p",
@@ -32695,100 +31095,6 @@
           "c": 229.99,
           "x": 229.99,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "1404563",
-      "titulo": "Tênis New Balance 983 Unissex",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-983-unissex-1404563/p",
-      "ref": "U983_U9835HT_1404563",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-09-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235770/U983_U9835HT.jpg?v=639264545165430000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235771/U983_U9835HT.jpg?v=639264545165500000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235772/U983_U9835HT.jpg?v=639264545165500000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235773/U983_U9835HT.jpg?v=639264545165530000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": 1199.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": 1199.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": 1199.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": 1199.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": 1199.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": 1199.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 1199.99,
-          "c": 1199.99,
-          "x": 1199.99,
-          "a": false
         }
       ]
     },

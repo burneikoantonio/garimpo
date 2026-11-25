@@ -2,7 +2,7 @@
   "marca": "Stüssy",
   "loja": "Site Stüssy",
   "site": "www.stussy.com",
-  "atualizado": "2026-11-25T19:58:55Z",
+  "atualizado": "2026-11-25T23:54:07Z",
   "intl": {
     "moeda": "USD",
     "frete": 20,
@@ -5045,7 +5045,7 @@
           "t": "Black / XXL",
           "p": 130.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -7389,7 +7389,7 @@
           "t": "Sage / L",
           "p": 80.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Sage / XL",
@@ -12692,7 +12692,7 @@
           "t": "Black / L",
           "p": 150.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Black / XL",
@@ -16689,6 +16689,90 @@
       ]
     },
     {
+      "id": "7766121513056",
+      "titulo": "CUT OUT LEATHER TRUCKER",
+      "url": "https://www.stussy.com/products/1311251-cut-out-leather-trucker-black",
+      "ref": "",
+      "tipo": "Headwear",
+      "tags": [
+        "COLORSWATCHES",
+        "HEADWEARCOLLECTION",
+        "NEWCOLLECTION",
+        "product-family:1311251",
+        "UNISEX"
+      ],
+      "publicado": "2026-11-25T15:32:21-08:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1311251_BLAC_1.jpg?v=1794603301",
+        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1311251_BLAC_2.jpg?v=1794603301",
+        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1311251_BLAC_3.jpg?v=1794603301"
+      ],
+      "variantes": [
+        {
+          "t": "Black / ONE SIZE",
+          "p": 55.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "7766121676896",
+      "titulo": "CUT OUT LEATHER TRUCKER",
+      "url": "https://www.stussy.com/products/1311251-cut-out-leather-trucker-brown",
+      "ref": "",
+      "tipo": "Headwear",
+      "tags": [
+        "COLORSWATCHES",
+        "HEADWEARCOLLECTION",
+        "NEWCOLLECTION",
+        "product-family:1311251",
+        "UNISEX"
+      ],
+      "publicado": "2026-11-25T15:32:22-08:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1311251_BROW_1.jpg?v=1794603337",
+        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1311251_BROW_2.jpg?v=1794603337",
+        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1311251_BROW_3.jpg?v=1794603337"
+      ],
+      "variantes": [
+        {
+          "t": "Brown / ONE SIZE",
+          "p": 55.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "7766121709664",
+      "titulo": "CUT OUT LEATHER TRUCKER",
+      "url": "https://www.stussy.com/products/1311251-cut-out-leather-trucker-eggplant",
+      "ref": "",
+      "tipo": "Headwear",
+      "tags": [
+        "COLORSWATCHES",
+        "HEADWEARCOLLECTION",
+        "NEWCOLLECTION",
+        "product-family:1311251",
+        "UNISEX"
+      ],
+      "publicado": "2026-11-25T15:32:23-08:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1311251_EGGP_1.jpg?v=1794603374",
+        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1311251_EGGP_2.jpg?v=1794603374",
+        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1311251_EGGP_3.jpg?v=1794603374"
+      ],
+      "variantes": [
+        {
+          "t": "Eggplant / ONE SIZE",
+          "p": 55.00,
+          "c": 0,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "7354885341280",
       "titulo": "DAX PRINTED SHIRT",
       "url": "https://www.stussy.com/products/1110375-dax-printed-shirt-brown",
@@ -18569,7 +18653,7 @@
           "t": "White / L",
           "p": 45.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "White / XL",
@@ -25742,7 +25826,7 @@
           "t": "Faded Black / S",
           "p": 45.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Faded Black / M",
@@ -39447,7 +39531,7 @@
           "t": "Grey Heather / L",
           "p": 160.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "Grey Heather / XL",
@@ -39473,6 +39557,7 @@
         "11-15-22-copy-update",
         "138692",
         "2-4-22-LAUNCH",
+        "ACCESSORIESCOLLECTION",
         "ALL",
         "ALL ACCESSORIES",
         "ALL ACCSSORIES",
@@ -48351,7 +48436,7 @@
           "t": "White / M",
           "p": 55.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "White / L",
@@ -53722,108 +53807,6 @@
           "p": 130.00,
           "c": 0,
           "a": false
-        }
-      ]
-    },
-    {
-      "id": "7354948714592",
-      "titulo": "WAVES SKULLCAP",
-      "url": "https://www.stussy.com/products/1321240-waves-skullcap-black",
-      "ref": "",
-      "tipo": "HEADWEAR",
-      "tags": [
-        "10-13-25-PROMO",
-        "9-21-26-ENABLE",
-        "ACCESSORIES",
-        "BEANIESCOLLECTION",
-        "bis-active",
-        "COLORSWATCHES",
-        "DRAFT-SP26-D1",
-        "HEADWEARCOLLECTION",
-        "HO25-DELIVERY-1",
-        "ONE-SIZE",
-        "product-family:1321240",
-        "TP-BUILD-PT3"
-      ],
-      "publicado": "2026-09-21T11:45:24-07:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1321240_BLAC_1_6be4a171-c6a8-43dc-840e-9054f6ff9981.jpg?v=1760661072",
-        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1321240_BLAC_2_69b54cb0-7c97-42d7-8ebd-226c725ebeef.jpg?v=1760661072"
-      ],
-      "variantes": [
-        {
-          "t": "Black / ONE SIZE",
-          "p": 50.00,
-          "c": 0,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "7354949730400",
-      "titulo": "WAVES SKULLCAP",
-      "url": "https://www.stussy.com/products/1321240-waves-skullcap-brown",
-      "ref": "",
-      "tipo": "HEADWEAR",
-      "tags": [
-        "10-13-25-PROMO",
-        "9-21-26-ENABLE",
-        "ACCESSORIES",
-        "BEANIESCOLLECTION",
-        "bis-active",
-        "COLORSWATCHES",
-        "DRAFT-SP26-D1",
-        "HEADWEARCOLLECTION",
-        "HO25-DELIVERY-1",
-        "ONE-SIZE",
-        "product-family:1321240",
-        "TP-BUILD-PT3"
-      ],
-      "publicado": "2026-09-21T11:45:25-07:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1321240_BROW_1.jpg?v=1760661074",
-        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1321240_BROW_2.jpg?v=1760661074"
-      ],
-      "variantes": [
-        {
-          "t": "Brown / ONE SIZE",
-          "p": 50.00,
-          "c": 0,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "7354950582368",
-      "titulo": "WAVES SKULLCAP",
-      "url": "https://www.stussy.com/products/1321240-waves-skullcap-charcoal",
-      "ref": "",
-      "tipo": "HEADWEAR",
-      "tags": [
-        "10-13-25-PROMO",
-        "9-21-26-ENABLE",
-        "ACCESSORIES",
-        "BEANIESCOLLECTION",
-        "bis-active",
-        "COLORSWATCHES",
-        "DRAFT-SP26-D1",
-        "HEADWEARCOLLECTION",
-        "HO25-DELIVERY-1",
-        "ONE-SIZE",
-        "product-family:1321240",
-        "TP-BUILD-PT3"
-      ],
-      "publicado": "2026-09-21T11:45:26-07:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1321240_CHAR_1_69f745b2-b844-4695-a192-b417e722b8e7.jpg?v=1760660657",
-        "https://cdn.shopify.com/s/files/1/0087/6193/3920/files/1321240_CHAR_2_941aa6b9-9e0f-402a-b0f6-ef0909beef7d.jpg?v=1760660657"
-      ],
-      "variantes": [
-        {
-          "t": "Charcoal / ONE SIZE",
-          "p": 50.00,
-          "c": 0,
-          "a": true
         }
       ]
     }

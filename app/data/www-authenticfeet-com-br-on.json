@@ -2,7 +2,7 @@
   "marca": "On",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-25T19:58:30Z",
+  "atualizado": "2026-11-25T23:53:46Z",
   "produtos": [
     {
       "id": "52077",
@@ -221,8 +221,8 @@
           "t": "39",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1299.99,
+          "a": true
         },
         {
           "t": "40",
@@ -329,10 +329,10 @@
       "tags": [],
       "publicado": "2024-02-06T00:00:00Z",
       "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/499427/O0234-8-300-1-AF-800x1000.jpg?v=639023547142700000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/499428/O0234-8-300-2-AF-800x1000.jpg?v=639023547142700000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/499429/O0234-8-300-3-AF-800x1000.jpg?v=639023547142700000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/499430/O0234-8-300-4-AF-800x1000.jpg?v=639023547142700000"
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/640628/O0234-8-300-1-AF-800x1000.jpg?v=639312416870400000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/640629/O0234-8-300-2-AF-800x1000.jpg?v=639312416870470000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/640630/O0234-8-300-3-AF-800x1000.jpg?v=639312416870530000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/640631/O0234-8-300-4-AF-800x1000.jpg?v=639312416870600000"
       ],
       "variantes": [
         {
@@ -386,6 +386,20 @@
         },
         {
           "t": "38",
+          "p": 779.99,
+          "c": 1299.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39.5",
+          "p": 779.99,
+          "c": 1299.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41.5",
           "p": 779.99,
           "c": 1299.99,
           "x": null,
@@ -1012,6 +1026,72 @@
           "c": 1199.99,
           "x": null,
           "a": false
+        }
+      ]
+    },
+    {
+      "id": "58112",
+      "titulo": "Tênis On Cloudsurfer 2 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-on-cloudsurfer-2-masculino-3mf10-1-002/p",
+      "ref": "3MF10-1-002",
+      "tipo": "/Tênis/Masculino/On/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-15T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/520611/3MF10-1-002-1-AF-800x1000.jpg?v=639053133081800000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/520612/on-cloudsurfer-2-cinza-01.jpg?v=639053133081800000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/520613/3MF10-1-002-2-AF-800x1000.jpg?v=639053133081930000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/520614/3MF10-1-002-3-AF-800x1000.jpg?v=639053133081930000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 719.99,
+          "c": 1199.99,
+          "x": 719.99,
+          "a": true
         }
       ]
     },
@@ -3054,8 +3134,8 @@
           "t": "39",
           "p": 779.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 779.99,
+          "a": true
         },
         {
           "t": "40",
