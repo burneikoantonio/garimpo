@@ -1,5 +1,5 @@
 {
-  "atualizado": "26/11/2026 09:02",
+  "atualizado": "26/11/2026 13:07",
   "marcas": [
     {
       "nome": "Carnan",
@@ -7,7 +7,9 @@
       "relacao": "segue",
       "obs": "",
       "liberada": "",
-      "arquivos": []
+      "arquivos": [
+        "data/carnan-com-br.json"
+      ]
     },
     {
       "nome": "Piet",
@@ -15,7 +17,9 @@
       "relacao": "segue",
       "obs": "",
       "liberada": "",
-      "arquivos": []
+      "arquivos": [
+        "data/piet-com-br.json"
+      ]
     },
     {
       "nome": "PACE",
@@ -23,7 +27,9 @@
       "relacao": "segue",
       "obs": "",
       "liberada": "",
-      "arquivos": []
+      "arquivos": [
+        "data/pacecompany-com-br.json"
+      ]
     },
     {
       "nome": "À La Garçonne",
@@ -76,7 +82,9 @@
       "relacao": "segue",
       "obs": "Importado do site oficial (stussy.com), que entrega no Brasil por DHL com impostos cobrados no checkout",
       "liberada": "",
-      "arquivos": []
+      "arquivos": [
+        "data/www-stussy-com-stssy.json"
+      ]
     },
     {
       "nome": "Diesel",
@@ -94,7 +102,9 @@
       "relacao": "segue",
       "obs": "Loja brasileira da marca australiana de surf e moto",
       "liberada": "",
-      "arquivos": []
+      "arquivos": [
+        "data/deusexmachina-com-br.json"
+      ]
     },
     {
       "nome": "Nike",
@@ -145,7 +155,9 @@
       "relacao": "sugerida",
       "obs": "Streetwear de SP, camisetas e moletons pesados",
       "liberada": "2026-11-13",
-      "arquivos": []
+      "arquivos": [
+        "data/sufgang-com-br.json"
+      ]
     },
     {
       "nome": "Disturb",
@@ -153,7 +165,9 @@
       "relacao": "sugerida",
       "obs": "Streetwear com collabs (Diadora, Pepsi) e muita sale",
       "liberada": "2026-11-13",
-      "arquivos": []
+      "arquivos": [
+        "data/disturb-com-br.json"
+      ]
     },
     {
       "nome": "THESAINT",
@@ -161,7 +175,9 @@
       "relacao": "sugerida",
       "obs": "Streetwear de SP, referência entre boleiros e artistas",
       "liberada": "2026-11-14",
-      "arquivos": []
+      "arquivos": [
+        "data/thesaint-com-br.json"
+      ]
     },
     {
       "nome": "Overcome",
@@ -169,7 +185,9 @@
       "relacao": "sugerida",
       "obs": "Streetwear, moletons e calças cargo",
       "liberada": "2026-11-14",
-      "arquivos": []
+      "arquivos": [
+        "data/www-overcome-com-br.json"
+      ]
     },
     {
       "nome": "Bolovo",
@@ -177,7 +195,9 @@
       "relacao": "sugerida",
       "obs": "Casual e workwear paulistano, peças duráveis",
       "liberada": "2026-11-14",
-      "arquivos": []
+      "arquivos": [
+        "data/bolovo-com-br.json"
+      ]
     },
     {
       "nome": "Osklen",
@@ -195,7 +215,9 @@
       "relacao": "sugerida",
       "obs": "Streetwear paulistano de estampas provocativas",
       "liberada": "2026-11-14",
-      "arquivos": []
+      "arquivos": [
+        "data/madenlatados-com-br.json"
+      ]
     },
     {
       "nome": "Nama Denim",
@@ -203,7 +225,9 @@
       "relacao": "sugerida",
       "obs": "Jeans selvedge premium feito no Brasil",
       "liberada": "2026-11-14",
-      "arquivos": []
+      "arquivos": [
+        "data/namadenim-com.json"
+      ]
     },
     {
       "nome": "Levi's",
@@ -221,7 +245,9 @@
       "relacao": "sugerida",
       "obs": "Autoral brasileira, alfaiataria leve em linho e seda, no clima de João Pimenta",
       "liberada": "2026-11-14",
-      "arquivos": []
+      "arquivos": [
+        "data/handred-com-br.json"
+      ]
     },
     {
       "nome": "Korova",
@@ -259,7 +285,9 @@
       "relacao": "sugerida",
       "obs": "Moletons, flanelas e peças de inverno com cara de marca independente",
       "liberada": "2026-11-15",
-      "arquivos": []
+      "arquivos": [
+        "data/amenbreak-com-br.json"
+      ]
     },
     {
       "nome": "Dendezeiro",
@@ -267,7 +295,9 @@
       "relacao": "sugerida",
       "obs": "Moda autoral de Salvador, destaque no Rio Fashion Week",
       "liberada": "2026-11-15",
-      "arquivos": []
+      "arquivos": [
+        "data/dendezeiro-com-br.json"
+      ]
     },
     {
       "nome": "Insider",
@@ -275,7 +305,9 @@
       "relacao": "sugerida",
       "obs": "Básicos de tecido tecnológico, bom para o dia a dia",
       "liberada": "2026-11-15",
-      "arquivos": []
+      "arquivos": [
+        "data/insiderstore-com-br.json"
+      ]
     },
     {
       "nome": "Blck Brasil",
@@ -283,7 +315,9 @@
       "relacao": "sugerida",
       "obs": "Bonés e acessórios streetwear",
       "liberada": "2026-11-15",
-      "arquivos": []
+      "arquivos": [
+        "data/blckbrasil-com-br.json"
+      ]
     },
     {
       "nome": "ASICS",

@@ -2,8 +2,57 @@
   "marca": "Blck Brasil",
   "loja": "Site Blck Brasil",
   "site": "blckbrasil.com.br",
-  "atualizado": "2026-11-25T23:56:34Z",
+  "atualizado": "2026-11-26T16:07:16Z",
   "produtos": [
+    {
+      "id": "10498683404599",
+      "titulo": "Boné Snapback Off White Cotelê Marrom Café",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-cotele-marrom-cafe",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "ADS",
+        "MARATONA"
+      ],
+      "publicado": "2026-11-26T12:57:25-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B03_3d7125b4-8100-4323-a463-e2f576c17964.jpg?v=1776127102",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B03-2_f98d0c77-bd32-4c88-a49e-cee4c49d9abb.jpg?v=1776127102",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B03-3_61c4567b-0f10-40be-bcb9-64bf5c80ef2d.jpg?v=1776127102"
+      ],
+      "variantes": [
+        {
+          "t": "Off-White / Único",
+          "p": 115.00,
+          "c": 219.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10437770805559",
+      "titulo": "Boné Dad Hat Salmão Basic Metal Prata",
+      "url": "https://blckbrasil.com.br/products/bone-dad-hat-salmao-basic-metal-prata",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "MARATONA"
+      ],
+      "publicado": "2026-11-26T12:05:38-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45_b445c8bc-634f-41a3-8491-0df6d4b9f589.jpg?v=1772107757",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-2_22bad135-4f00-47a6-bbb5-c78b88a5f22e.jpg?v=1772107757",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-3_a123f135-234e-4dff-8421-5fc165323179.jpg?v=1772107757"
+      ],
+      "variantes": [
+        {
+          "t": "Laranja / Único",
+          "p": 25.00,
+          "c": 129.90,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "10890953064759",
       "titulo": "Boné Dad Hat Preto Authentic Brand",
@@ -13,6 +62,7 @@
       "tags": [
         "APLIQUE",
         "DTF",
+        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-11-25T13:49:07-03:00",
@@ -24,7 +74,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 119.90,
+          "p": 25.00,
           "c": 119.90,
           "a": true
         }
@@ -39,6 +89,7 @@
       "tags": [
         "APLIQUE",
         "DTF",
+        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-11-25T13:47:45-03:00",
@@ -50,32 +101,8 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 119.90,
+          "p": 25.00,
           "c": 119.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10437770805559",
-      "titulo": "Boné Dad Hat Salmão Basic Metal Prata",
-      "url": "https://blckbrasil.com.br/products/bone-dad-hat-salmao-basic-metal-prata",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE"
-      ],
-      "publicado": "2026-11-25T12:35:52-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45_b445c8bc-634f-41a3-8491-0df6d4b9f589.jpg?v=1772107757",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-2_22bad135-4f00-47a6-bbb5-c78b88a5f22e.jpg?v=1772107757",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-3_a123f135-234e-4dff-8421-5fc165323179.jpg?v=1772107757"
-      ],
-      "variantes": [
-        {
-          "t": "Laranja / Único",
-          "p": 67.00,
-          "c": 129.90,
           "a": true
         }
       ]
@@ -86,7 +113,9 @@
       "url": "https://blckbrasil.com.br/products/case-cap-basic-preta",
       "ref": "",
       "tipo": "",
-      "tags": [],
+      "tags": [
+        "MARATONA"
+      ],
       "publicado": "2026-11-24T16:30:18-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bag01_3b8a1506-4c30-4e79-9110-16d8c63f37a2.jpg?v=1750722598",
@@ -95,7 +124,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 399.90,
+          "p": 195.00,
           "c": 399.90,
           "a": true
         }
@@ -175,8 +204,7 @@
       "tipo": "Chapéus",
       "tags": [
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-24T13:41:48-03:00",
       "imagens": [
@@ -187,7 +215,7 @@
       "variantes": [
         {
           "t": "Vermelho / Único",
-          "p": 187.00,
+          "p": 115.00,
           "c": 239.90,
           "a": true
         }
@@ -201,8 +229,7 @@
       "tipo": "Chapéus",
       "tags": [
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-24T13:41:30-03:00",
       "imagens": [
@@ -213,7 +240,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 187.00,
+          "p": 115.00,
           "c": 239.90,
           "a": true
         }
@@ -227,8 +254,7 @@
       "tipo": "Chapéus",
       "tags": [
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-24T13:41:09-03:00",
       "imagens": [
@@ -239,7 +265,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 187.00,
+          "p": 115.00,
           "c": 239.90,
           "a": true
         }
@@ -253,8 +279,7 @@
       "tipo": "Chapéus",
       "tags": [
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-24T13:40:59-03:00",
       "imagens": [
@@ -265,7 +290,7 @@
       "variantes": [
         {
           "t": "Azul Marinho / Único",
-          "p": 187.00,
+          "p": 115.00,
           "c": 239.90,
           "a": true
         }
@@ -297,63 +322,13 @@
       ]
     },
     {
-      "id": "10913389183287",
-      "titulo": "Boné Snapback Preto Discover",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-discover",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "COLLAB",
-        "DISCOVER"
-      ],
-      "publicado": "2026-11-24T13:08:39-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B16_6941b60a-a631-44d7-a2b8-61ae21f633a9.jpg?v=1786555746",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B16-2_d6b8b20a-2551-44e3-b73b-d9d2cd88445f.jpg?v=1786555746",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B16-3_314263da-a7ed-40e1-9021-635808711b5a.jpg?v=1786555745"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 129.90,
-          "c": 129.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "9994756784439",
-      "titulo": "Boné Dad Hat Destroyed Preto",
-      "url": "https://blckbrasil.com.br/products/bone-dad-hat-destroyed-preto",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [],
-      "publicado": "2026-11-24T13:08:08-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/BONE-01_753f2a25-bad4-4cad-9ea7-9d60575cb80d.jpg?v=1734971096",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/BONE-02_4cabdf1c-47a7-4274-bd77-236b5050049a.jpg?v=1734971098",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/BONE-03_75c49feb-d601-4c35-ba38-2926804becff.jpg?v=1734971101"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 209.90,
-          "c": 209.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10285547356471",
       "titulo": "Boné Snapback Trucker Laser Off White Logo Preto",
       "url": "https://blckbrasil.com.br/products/bone-snapback-trucker-laser-off-white-logo-preto",
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "L03",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T08:47:39-03:00",
       "imagens": [
@@ -364,7 +339,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 157.00,
+          "p": 115.00,
           "c": 249.90,
           "a": true
         }
@@ -377,11 +352,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T08:47:39-03:00",
       "imagens": [
@@ -393,7 +364,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 167.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -406,9 +377,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T08:47:38-03:00",
       "imagens": [
@@ -419,35 +388,8 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 187.00,
+          "p": 115.00,
           "c": 239.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10498683404599",
-      "titulo": "Boné Snapback Off White Cotelê Marrom Café",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-cotele-marrom-cafe",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "BLACK",
-        "L02",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-24T08:47:38-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B03_3d7125b4-8100-4323-a463-e2f576c17964.jpg?v=1776127102",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B03-2_f98d0c77-bd32-4c88-a49e-cee4c49d9abb.jpg?v=1776127102",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B03-3_61c4567b-0f10-40be-bcb9-64bf5c80ef2d.jpg?v=1776127102"
-      ],
-      "variantes": [
-        {
-          "t": "Off-White / Único",
-          "p": 167.00,
-          "c": 219.90,
           "a": true
         }
       ]
@@ -707,7 +649,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:31:54-03:00",
       "imagens": [
@@ -716,31 +658,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 67.00,
-          "c": 279.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11105792360759",
-      "titulo": "Relógio BLCK White Fire",
-      "url": "https://blckbrasil.com.br/products/relogio-blck-white-fire",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "ACESSÓRIOS",
-        "LIVE"
-      ],
-      "publicado": "2026-11-24T04:31:53-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/relogio-redondo-b-traco-branco.jpg?v=1795505424"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 67.00,
-          "c": 279.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -753,7 +672,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:31:52-03:00",
       "imagens": [
@@ -762,8 +681,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 67.00,
-          "c": 279.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -776,7 +695,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:31:52-03:00",
       "imagens": [
@@ -785,8 +704,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 67.00,
-          "c": 279.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -799,7 +718,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:31:51-03:00",
       "imagens": [
@@ -808,8 +727,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 67.00,
-          "c": 279.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -822,7 +741,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:31:51-03:00",
       "imagens": [
@@ -831,8 +750,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 67.00,
-          "c": 279.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -845,7 +764,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:14:04-03:00",
       "imagens": [
@@ -854,8 +773,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 87.00,
-          "c": 319.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -868,7 +787,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:14:04-03:00",
       "imagens": [
@@ -877,8 +796,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 87.00,
-          "c": 319.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -891,7 +810,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:14:04-03:00",
       "imagens": [
@@ -900,31 +819,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 87.00,
-          "c": 319.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11105791607095",
-      "titulo": "Relógio Branco Just BLCK",
-      "url": "https://blckbrasil.com.br/products/relogio-branco-just-blck",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "ACESSÓRIOS",
-        "LIVE"
-      ],
-      "publicado": "2026-11-24T04:14:04-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/relogio-b-branco.jpg?v=1795504212"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 87.00,
-          "c": 319.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -937,7 +833,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:14:03-03:00",
       "imagens": [
@@ -946,33 +842,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 87.00,
-          "c": 319.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11105794720055",
-      "titulo": "Relógio BLCK Basic All Black",
-      "url": "https://blckbrasil.com.br/products/relogio-blck-basic-all-black",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "ACESSÓRIOS",
-        "LIVE"
-      ],
-      "publicado": "2026-11-24T04:14:02-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/03025744-04f5-11f0-a0c1-46caa8443547_42fb7dae-a312-4f1d-85d1-47f59cfd9983.jpg?v=1795439092",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/02d3c582-04f5-11f0-a0c1-46caa8443547_058ca864-78fa-417a-8bd6-d4f281907217.jpg?v=1795439092",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/0347a7ea-04f5-11f0-a0c1-46caa8443547_5bd029b7-016d-4f7d-aa5e-77fd5d82eea8.jpg?v=1795439092"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 67.00,
-          "c": 279.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -985,7 +856,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:14:02-03:00",
       "imagens": [
@@ -994,8 +865,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 87.00,
-          "c": 319.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -1008,7 +879,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-24T04:14:02-03:00",
       "imagens": [
@@ -1017,8 +888,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 87.00,
-          "c": 319.90,
+          "p": 55.00,
+          "c": 299.90,
           "a": true
         }
       ]
@@ -1056,7 +927,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -1067,69 +938,27 @@
       "variantes": [
         {
           "t": "P",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": true
         },
         {
           "t": "M",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": true
         },
         {
           "t": "G",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": true
         },
         {
           "t": "GG",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "10502133547319",
-      "titulo": "Camiseta Oversized Vermelha Trend",
-      "url": "https://blckbrasil.com.br/products/camiseta-oversized-vermelha-trend",
-      "ref": "",
-      "tipo": "Camiseta",
-      "tags": [
-        "LIVE",
-        "OVERSIZED",
-        "VESTUÁRIO"
-      ],
-      "publicado": "2026-11-20T12:29:39-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/oververmelha.jpg?v=1776263308"
-      ],
-      "variantes": [
-        {
-          "t": "P / Vermelha",
-          "p": 67.00,
-          "c": 159.90,
-          "a": false
-        },
-        {
-          "t": "M / Vermelha",
-          "p": 67.00,
-          "c": 159.90,
-          "a": false
-        },
-        {
-          "t": "G / Vermelha",
-          "p": 67.00,
-          "c": 159.90,
-          "a": true
-        },
-        {
-          "t": "GG / Vermelha",
-          "p": 67.00,
-          "c": 159.90,
-          "a": false
         }
       ]
     },
@@ -1140,7 +969,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
         "PRODUZIR",
         "TREND"
@@ -1154,7 +982,7 @@
       "variantes": [
         {
           "t": "Azul Marinho / Único",
-          "p": 87.00,
+          "p": 85.00,
           "c": 179.90,
           "a": true
         }
@@ -1192,7 +1020,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -1204,25 +1032,25 @@
       "variantes": [
         {
           "t": "P / Vermelha",
-          "p": 67.00,
+          "p": 75.00,
           "c": 169.90,
           "a": true
         },
         {
           "t": "M / Vermelha",
-          "p": 67.00,
+          "p": 75.00,
           "c": 169.90,
           "a": false
         },
         {
           "t": "G / Vermelha",
-          "p": 67.00,
+          "p": 75.00,
           "c": 169.90,
           "a": false
         },
         {
           "t": "GG / Vermelha",
-          "p": 67.00,
+          "p": 75.00,
           "c": 169.90,
           "a": false
         }
@@ -1235,7 +1063,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -1246,25 +1074,25 @@
       "variantes": [
         {
           "t": "P / Branca",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": false
         },
         {
           "t": "M / Branca",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": true
         },
         {
           "t": "G / Branca",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": false
         },
         {
           "t": "GG / Branca",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": false
         }
@@ -1277,7 +1105,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -1291,25 +1119,25 @@
       "variantes": [
         {
           "t": "P / Amarela",
-          "p": 67.00,
+          "p": 75.00,
           "c": 219.90,
           "a": true
         },
         {
           "t": "M / Amarela",
-          "p": 67.00,
+          "p": 75.00,
           "c": 219.90,
           "a": false
         },
         {
           "t": "G / Amarela",
-          "p": 67.00,
+          "p": 75.00,
           "c": 219.90,
           "a": false
         },
         {
           "t": "GG / Amarela",
-          "p": 67.00,
+          "p": 75.00,
           "c": 219.90,
           "a": false
         }
@@ -1340,43 +1168,14 @@
       ]
     },
     {
-      "id": "11035137999159",
-      "titulo": "Boné Snapback Off White Halloween Spooky Pumpkin",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-halloween-spooky-pumpkin",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "BAU",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-20T00:28:37-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B65_a06bb169-a6c2-4567-803b-7d12a40ecd00.jpg?v=1793049520",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B65-2_1c640b90-f4f1-4aa7-9983-d16aefbdf85b.jpg?v=1793053990",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B65-3_0109c071-9821-4bee-a010-a9eb050eadc8.jpg?v=1793053990"
-      ],
-      "variantes": [
-        {
-          "t": "Off-White",
-          "p": 120.00,
-          "c": 249.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10911903908151",
       "titulo": "Boné Snapback Preto Indestructible",
       "url": "https://blckbrasil.com.br/products/bone-snapback-preto-indestructible",
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -1387,7 +1186,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 127.00,
+          "p": 115.00,
           "c": 189.90,
           "a": true
         }
@@ -1400,10 +1199,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -1414,7 +1211,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 127.00,
+          "p": 115.00,
           "c": 189.90,
           "a": true
         }
@@ -1427,10 +1224,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-20T00:28:37-03:00",
       "imagens": [
@@ -1441,30 +1236,8 @@
       "variantes": [
         {
           "t": "Azul Marinho / Único",
-          "p": 127.00,
+          "p": 115.00,
           "c": 189.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11076004217143",
-      "titulo": "Boné Snapback Branco Racing Azul",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-branco-racing-azul",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [],
-      "publicado": "2026-11-20T00:28:33-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B61_e3b4d1ad-be7d-4f9c-829f-2875594330da.jpg?v=1794284205",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B61-2_3d0bc530-aee2-4ff0-95e1-c2df9ee62289.jpg?v=1794284205",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B61-3_f4616564-8b6b-415c-984e-0d43473c2d05.jpg?v=1794284205"
-      ],
-      "variantes": [
-        {
-          "t": "Branco",
-          "p": 249.90,
-          "c": 249.90,
           "a": true
         }
       ]
@@ -1476,10 +1249,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-20T00:28:33-03:00",
       "imagens": [
@@ -1490,7 +1261,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 127.00,
+          "p": 115.00,
           "c": 189.90,
           "a": true
         }
@@ -1503,10 +1274,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-20T00:28:32-03:00",
       "imagens": [
@@ -1517,7 +1286,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 127.00,
+          "p": 115.00,
           "c": 189.90,
           "a": true
         }
@@ -1530,9 +1299,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-20T00:02:05-03:00",
       "imagens": [
@@ -1543,7 +1310,7 @@
       "variantes": [
         {
           "t": "Off White / Único",
-          "p": 137.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -1556,9 +1323,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:18-03:00",
       "imagens": [
@@ -1569,7 +1334,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 117.00,
+          "p": 105.00,
           "c": 159.90,
           "a": true
         }
@@ -1582,10 +1347,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR",
-        "TESTE"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:18-03:00",
       "imagens": [
@@ -1596,7 +1358,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 117.00,
+          "p": 105.00,
           "c": 159.90,
           "a": true
         }
@@ -1609,10 +1371,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "CREATOR",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:18-03:00",
       "imagens": [
@@ -1624,7 +1383,7 @@
       "variantes": [
         {
           "t": "Azul / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -1637,12 +1396,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L02",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:18-03:00",
       "imagens": [
@@ -1653,7 +1407,7 @@
       "variantes": [
         {
           "t": "Vinho / Único",
-          "p": 187.00,
+          "p": 115.00,
           "c": 249.90,
           "a": true
         }
@@ -1666,11 +1420,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "L03",
-        "MARATONA",
-        "SEPARAR",
-        "TESTE"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1681,7 +1431,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 117.00,
+          "p": 105.00,
           "c": 159.90,
           "a": true
         }
@@ -1694,10 +1444,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR",
-        "TESTE"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1708,7 +1455,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -1721,10 +1468,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "L02",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1735,7 +1479,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 137.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -1748,9 +1492,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1761,7 +1503,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 137.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -1774,9 +1516,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1787,7 +1527,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 167.00,
+          "p": 115.00,
           "c": 229.90,
           "a": true
         }
@@ -1800,9 +1540,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1813,7 +1551,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 137.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -1826,9 +1564,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1839,7 +1575,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 137.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -1852,9 +1588,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1866,7 +1600,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 127.00,
+          "p": 115.00,
           "c": 179.90,
           "a": true
         }
@@ -1879,10 +1613,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "2K26",
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1894,7 +1625,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 127.00,
+          "p": 115.00,
           "c": 179.90,
           "a": true
         }
@@ -1907,9 +1638,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1920,7 +1649,7 @@
       "variantes": [
         {
           "t": "Branco / UN",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -1933,9 +1662,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1946,7 +1673,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 137.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -1959,10 +1686,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "L01",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -1974,7 +1698,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 110.00,
+          "p": 115.00,
           "c": 179.90,
           "a": true
         }
@@ -1987,9 +1711,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -2001,7 +1723,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2014,13 +1736,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L01",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -2032,7 +1748,7 @@
       "variantes": [
         {
           "t": "Único / Marrom",
-          "p": 110.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2045,12 +1761,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L01",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -2062,7 +1773,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 110.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2075,10 +1786,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BAU",
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:17-03:00",
       "imagens": [
@@ -2087,7 +1795,7 @@
       "variantes": [
         {
           "t": "Preto / UN",
-          "p": 120.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2100,10 +1808,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "L03",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
       "imagens": [
@@ -2114,7 +1819,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 117.00,
+          "p": 105.00,
           "c": 159.90,
           "a": true
         }
@@ -2127,11 +1832,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "L01",
-        "MARATONA",
-        "SEPARAR",
-        "TESTE"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
       "imagens": [
@@ -2142,7 +1843,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 110.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2155,10 +1856,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR",
-        "TESTE"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
       "imagens": [
@@ -2169,7 +1867,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2182,12 +1880,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L02",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
       "imagens": [
@@ -2198,7 +1891,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 219.90,
           "a": true
         }
@@ -2211,10 +1904,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "L02",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:13-03:00",
       "imagens": [
@@ -2225,7 +1915,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 167.00,
+          "p": 115.00,
           "c": 229.90,
           "a": true
         }
@@ -2238,9 +1928,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2251,7 +1939,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 249.90,
           "a": true
         }
@@ -2264,10 +1952,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "L02",
-        "MARATONA",
-        "SEPARAR"
+        "ADS",
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2278,7 +1964,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2291,9 +1977,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2305,7 +1989,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2318,9 +2002,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2331,7 +2013,7 @@
       "variantes": [
         {
           "t": "Marrom / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2344,10 +2026,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "INFLUENCER",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2358,7 +2037,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 187.00,
+          "p": 115.00,
           "c": 229.90,
           "a": true
         }
@@ -2371,9 +2050,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2385,7 +2062,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 137.00,
+          "p": 115.00,
           "c": 219.90,
           "a": true
         }
@@ -2398,9 +2075,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-19T23:55:12-03:00",
       "imagens": [
@@ -2412,7 +2087,7 @@
       "variantes": [
         {
           "t": "Vinho / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 219.90,
           "a": true
         }
@@ -2529,11 +2204,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L01",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-17T12:01:12-03:00",
       "imagens": [
@@ -2544,7 +2215,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 110.00,
+          "p": 115.00,
           "c": 219.90,
           "a": true
         }
@@ -2558,11 +2229,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L02",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-17T12:01:11-03:00",
       "imagens": [
@@ -2573,7 +2240,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 249.90,
           "a": true
         }
@@ -2587,11 +2254,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-17T12:01:10-03:00",
       "imagens": [
@@ -2602,7 +2265,7 @@
       "variantes": [
         {
           "t": "Vinho / Único",
-          "p": 137.00,
+          "p": 115.00,
           "c": 249.90,
           "a": true
         }
@@ -2615,12 +2278,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L01",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-17T12:01:09-03:00",
       "imagens": [
@@ -2631,38 +2289,8 @@
       "variantes": [
         {
           "t": "Preto / UN",
-          "p": 110.00,
+          "p": 115.00,
           "c": 239.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "8218407010615",
-      "titulo": "Boné Snapback Preto Aba Degradê Azul Royal",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-aba-degrade-azul-royal",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L03",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-17T12:01:08-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/products/bone-snapback-preto-aba-degrade-azul-royal-1_166d2d8f-f807-430f-ae33-9c823f15780c.jpg?v=1681322722",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/products/bone-snapback-preto-aba-degrade-azul-royal-2_dc7cecf2-ef40-403b-8028-30f0e334b8e4.jpg?v=1681322726",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/products/bone-snapback-preto-aba-degrade-azul-royal-3_45ec0896-0e27-4e52-a005-b4a354ec1ddf.jpg?v=1681322730"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / UN",
-          "p": 187.00,
-          "c": 219.90,
           "a": true
         }
       ]
@@ -2674,11 +2302,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-17T12:01:08-03:00",
       "imagens": [
@@ -2690,7 +2314,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2703,13 +2327,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L02",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-17T12:01:06-03:00",
       "imagens": [
@@ -2720,7 +2338,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 157.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -2734,9 +2352,7 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-16T15:07:58-03:00",
       "imagens": [
@@ -2747,7 +2363,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 97.00,
+          "p": 95.00,
           "c": 219.90,
           "a": true
         }
@@ -2759,7 +2375,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-all-black-fire-shine",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "MARATONA"
+      ],
       "publicado": "2026-11-16T15:06:13-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B06_ce187752-90ad-4bfe-b294-57190741a42e.jpg?v=1794852195",
@@ -2769,87 +2387,8 @@
       "variantes": [
         {
           "t": "Preto",
-          "p": 209.90,
+          "p": 115.00,
           "c": 209.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10411346231607",
-      "titulo": "Boné Snapback Preto Logo Contour Splash Degradê",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-logo-contour-splash-degrade",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "BAU",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-16T14:16:47-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B11_af96c562-44b3-4420-8275-b4db0cad3af0.jpg?v=1769609569",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B11-2_0afdd971-5a90-40e0-9bc1-181085a9eb10.jpg?v=1769609569",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B11-3_f911b8f9-e820-4503-a3b3-f2259fd426fc.jpg?v=1769609569"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 120.00,
-          "c": 209.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10405564088631",
-      "titulo": "Boné Snapback Preto Logo Contour Splash",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-logo-contour-splash",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "BAU",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-16T14:16:38-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B4-1_af25cc61-15c1-4a5c-8c14-f9b9ebab0c75.jpg?v=1758636913",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B4-2_febb563c-a287-4792-8ae3-fc0e483c7942.jpg?v=1758636913",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B4-3_2ed14b91-eeb7-42e0-9e0f-e407a173b1e2.jpg?v=1758636913",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B4-4.jpg?v=1758636913"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 120.00,
-          "c": 209.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "8216272896311",
-      "titulo": "Boné Snapback Basic Suede Marrom Escuro 2.0",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-basic-suede-marrom-escuro-2-0",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "BAU",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-16T13:40:28-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B35_526dfb19-12e9-471b-8af6-399160c07fcb.jpg?v=1794848017",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B35-2_df9b5de5-4353-48f2-8144-9bb1af8b9527.jpg?v=1794848017",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B35-3_1cf48fe3-dc9f-42a6-b2aa-5a1de8dc0efa.jpg?v=1794848017"
-      ],
-      "variantes": [
-        {
-          "t": "Marrom / UN",
-          "p": 120.00,
-          "c": 229.90,
           "a": true
         }
       ]
@@ -2861,9 +2400,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BAU",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-16T13:39:08-03:00",
       "imagens": [
@@ -2874,7 +2411,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 120.00,
+          "p": 115.00,
           "c": 209.90,
           "a": true
         }
@@ -2887,9 +2424,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "BAU",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-16T13:39:08-03:00",
       "imagens": [
@@ -2900,7 +2435,7 @@
       "variantes": [
         {
           "t": "Bege / Único",
-          "p": 120.00,
+          "p": 115.00,
           "c": 209.90,
           "a": true
         }
@@ -2913,7 +2448,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -2924,19 +2459,19 @@
       "variantes": [
         {
           "t": "P",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": false
         },
         {
           "t": "M",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": true
         }
@@ -2949,7 +2484,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -2960,7 +2495,7 @@
       "variantes": [
         {
           "t": "M",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": true
         }
@@ -2973,7 +2508,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -2984,19 +2519,19 @@
       "variantes": [
         {
           "t": "P",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": false
         },
         {
           "t": "M",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": false
         },
         {
           "t": "G",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": true
         }
@@ -3009,7 +2544,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -3020,7 +2555,7 @@
       "variantes": [
         {
           "t": "G",
-          "p": 47.00,
+          "p": 55.00,
           "c": 119.90,
           "a": true
         }
@@ -3033,7 +2568,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -3046,7 +2580,7 @@
       "variantes": [
         {
           "t": "Caramelo / Único",
-          "p": 97.00,
+          "p": 85.00,
           "c": 159.90,
           "a": true
         }
@@ -3059,8 +2593,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "L03",
-        "LIVE",
         "MARATONA",
         "PRODUZIR",
         "TREND"
@@ -3074,7 +2606,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 87.00,
+          "p": 85.00,
           "c": 179.90,
           "a": true
         }
@@ -3125,31 +2657,6 @@
       ]
     },
     {
-      "id": "10775948427575",
-      "titulo": "Boné Snapback Basic Amarelo Logo Verde",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-basic-amarelo-logo-verde",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "COPA",
-        "LIVE"
-      ],
-      "publicado": "2026-11-13T18:00:28-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B69_4c4259aa-fa4a-4be5-8cb5-7b133999b486.jpg?v=1781487968",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B69-2_58351de8-6f2e-45c7-9bc5-d6a84cd182f3.jpg?v=1781487967",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B69-3_29b0862e-26df-4d54-8350-ceee049d6d5c.jpg?v=1781487967"
-      ],
-      "variantes": [
-        {
-          "t": "Amarelo / Único",
-          "p": 67.00,
-          "c": 149.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10679051583799",
       "titulo": "Boné Snapback Verde Brasil Brasão Aba Reta",
       "url": "https://blckbrasil.com.br/products/bone-snapback-verde-brasil-brasao-aba-reta",
@@ -3157,7 +2664,7 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-13T18:00:28-03:00",
       "imagens": [
@@ -3168,7 +2675,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 57.00,
+          "p": 45.00,
           "c": 199.90,
           "a": true
         }
@@ -3182,7 +2689,7 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-13T18:00:27-03:00",
       "imagens": [
@@ -3193,7 +2700,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 67.00,
+          "p": 45.00,
           "c": 149.90,
           "a": true
         }
@@ -3232,7 +2739,7 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-13T07:53:27-03:00",
       "imagens": [
@@ -3243,7 +2750,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 47.00,
+          "p": 45.00,
           "c": 219.90,
           "a": true
         }
@@ -3333,7 +2840,7 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-12T12:40:04-03:00",
       "imagens": [
@@ -3345,68 +2852,8 @@
       "variantes": [
         {
           "t": "Amarelo / Único",
-          "p": 57.00,
+          "p": 45.00,
           "c": 219.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "8215702536503",
-      "titulo": "Boné Snapback Tiger Black Piano",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-tiger-black-piano",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L03",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-12T03:52:44-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B80_94f5093a-5025-4ee5-bb87-4cfb6479e637.jpg?v=1756736885",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B80-2_3ea75d49-c90a-4b37-9143-61b52dedfd83.jpg?v=1756736885",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B80-3_79e74e90-4d28-469e-becd-c13c950ce3a7.jpg?v=1756736885"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 187.00,
-          "c": 219.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10239196299575",
-      "titulo": "Boné Snapback Verde Musgo Contour Veludo Bege",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-verde-musgo-contour-veludo-bege",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L02",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-12T03:51:47-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3-1_83b4f3f1-bd7d-4d6c-801e-f9403b3e814c.jpg?v=1753288736",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3-2_b7315d89-7962-47f5-ba8a-d0670de580e7.jpg?v=1753288736",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3-3_fd365ef9-aa73-487c-802e-98ca6c68f4dc.jpg?v=1753288751",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3-4.jpg?v=1753288739"
-      ],
-      "variantes": [
-        {
-          "t": "Verde / Único",
-          "p": 187.00,
-          "c": 249.90,
           "a": true
         }
       ]
@@ -3418,11 +2865,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-11T17:12:18-03:00",
       "imagens": [
@@ -3434,7 +2877,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -3447,11 +2890,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-11T04:22:13-03:00",
       "imagens": [
@@ -3463,7 +2902,7 @@
       "variantes": [
         {
           "t": "Marrom / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -3477,12 +2916,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L03",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-11T04:22:12-03:00",
       "imagens": [
@@ -3493,7 +2927,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 117.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -3507,10 +2941,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -3521,7 +2952,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 167.00,
+          "p": 115.00,
           "c": 219.90,
           "a": true
         }
@@ -3535,11 +2966,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L01",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -3550,7 +2977,7 @@
       "variantes": [
         {
           "t": "Caramelo / Único",
-          "p": 110.00,
+          "p": 115.00,
           "c": 219.90,
           "a": true
         }
@@ -3564,10 +2991,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -3578,7 +3002,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 117.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -3592,10 +3016,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-11T04:22:08-03:00",
       "imagens": [
@@ -3606,39 +3027,8 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 137.00,
+          "p": 115.00,
           "c": 249.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "8215659315511",
-      "titulo": "Boné Snapback Wings Preto",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-wings-preto",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L01",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-11T04:22:08-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_set2__08.jpg?v=1694546474",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_set2__09.jpg?v=1694546472",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_set2__10.jpg?v=1694546473",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_set2__11.jpg?v=1694546473"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 110.00,
-          "c": 199.90,
           "a": true
         }
       ]
@@ -3650,12 +3040,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "L01",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-11T04:22:07-03:00",
       "imagens": [
@@ -3666,7 +3051,7 @@
       "variantes": [
         {
           "t": "Preto / UN",
-          "p": 110.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -3679,12 +3064,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-11T03:14:28-03:00",
       "imagens": [
@@ -3695,100 +3075,8 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 147.00,
+          "p": 115.00,
           "c": 219.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10505375646007",
-      "titulo": "Boné Snapback Trucker Laser Preto Logo Branco",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-trucker-laser-preto-logo-branco",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "BAU",
-        "MARATONA",
-        "SEPARAR"
-      ],
-      "publicado": "2026-11-10T13:53:07-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B2_6928f96e-a86a-421a-8813-b62a9b421568.jpg?v=1776343730",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Fev1__111_433f0e41-8400-4561-84f8-f774ab8f789c.jpg?v=1776343730",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Fev1__112_15d50162-f4d4-4bf5-a7b2-daeaad82aa39.jpg?v=1776343730"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 120.00,
-          "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11076001464631",
-      "titulo": "Boné Snapback Azul Marinho Square Veludo",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-azul-marinho-square-veludo",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [],
-      "publicado": "2026-11-10T01:22:53-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B2_1c1d49f0-26a0-44bf-abf1-3cdbaebaa01c.jpg?v=1794283841",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B2-2_79a6ff91-7812-4ebe-bf17-5ecca2e2fe20.jpg?v=1794283841",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B2-3_1aae36d0-44ef-48b4-bd61-54a6a7f4010d.jpg?v=1794283841"
-      ],
-      "variantes": [
-        {
-          "t": "Azul Marinho",
-          "p": 199.90,
-          "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11076004348215",
-      "titulo": "Boné Snapback Off White Racing Amarelo",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-racing-amarelo",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [],
-      "publicado": "2026-11-10T01:22:51-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B63_4be5eb50-93c8-4412-87b8-7d3ddac82d19.jpg?v=1794284275",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B63-2_6d102ccf-c606-4cc0-a441-e5a7bb2a9e38.jpg?v=1794284274",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B63-3_46492470-6238-41c2-a79f-c7d16ddd46a9.jpg?v=1794284275"
-      ],
-      "variantes": [
-        {
-          "t": "Off White",
-          "p": 249.90,
-          "c": 249.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11076004315447",
-      "titulo": "Boné Snapback Off White Racing Vermelho",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-racing-vermelho",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [],
-      "publicado": "2026-11-10T01:22:51-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B66_02ce5fe1-7fa4-423c-976b-7c685f582dee.jpg?v=1794284256",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B66-2_4bdcfe00-e7ee-4747-8985-49d5ea67b173.jpg?v=1794284256",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B66-3_8b6d6701-915e-4c02-9490-b7ae54c38778.jpg?v=1794284256"
-      ],
-      "variantes": [
-        {
-          "t": "Off White",
-          "p": 249.90,
-          "c": 249.90,
           "a": true
         }
       ]
@@ -3799,7 +3087,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-bege-racing-verde",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "MARATONA"
+      ],
       "publicado": "2026-11-10T01:22:51-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B67_0a035e58-a521-44ab-9963-18af29c3785d.jpg?v=1794284237",
@@ -3809,7 +3099,7 @@
       "variantes": [
         {
           "t": "Bege",
-          "p": 249.90,
+          "p": 115.00,
           "c": 249.90,
           "a": true
         }
@@ -3848,9 +3138,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-09T11:26:33-03:00",
       "imagens": [
@@ -3861,7 +3149,7 @@
       "variantes": [
         {
           "t": "Preto",
-          "p": 197.00,
+          "p": 115.00,
           "c": 249.90,
           "a": true
         }
@@ -3875,7 +3163,7 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-08T01:01:08-03:00",
       "imagens": [
@@ -3886,7 +3174,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 47.00,
+          "p": 45.00,
           "c": 219.90,
           "a": true
         }
@@ -3899,7 +3187,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-11-08T00:39:22-03:00",
@@ -3910,7 +3198,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 149.90,
           "a": true
         }
@@ -3923,7 +3211,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-11-08T00:38:58-03:00",
@@ -3934,33 +3222,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 149.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11070969938231",
-      "titulo": "Boné Dad Hat Verde Claro Vibe",
-      "url": "https://blckbrasil.com.br/products/bone-dad-hat-verde-claro-vibe",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "DADV",
-        "LIVE",
-        "PRODUZIR"
-      ],
-      "publicado": "2026-11-07T19:54:53-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/6_d3b6d56b-0cc2-457e-8395-fd15efe861c7.jpg?v=1794091537",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/6-1.jpg?v=1794091536"
-      ],
-      "variantes": [
-        {
-          "t": "Verde Claro",
-          "p": 57.00,
-          "c": 129.90,
           "a": true
         }
       ]
@@ -3973,7 +3236,7 @@
       "tipo": "Chapéus",
       "tags": [
         "DADV",
-        "LIVE",
+        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-11-07T19:54:51-03:00",
@@ -3984,7 +3247,7 @@
       "variantes": [
         {
           "t": "Salmão",
-          "p": 57.00,
+          "p": 45.00,
           "c": 129.90,
           "a": true
         }
@@ -3998,7 +3261,7 @@
       "tipo": "Chapéus",
       "tags": [
         "DADV",
-        "LIVE",
+        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-11-07T19:54:51-03:00",
@@ -4009,7 +3272,7 @@
       "variantes": [
         {
           "t": "Amarelo",
-          "p": 57.00,
+          "p": 45.00,
           "c": 129.90,
           "a": true
         }
@@ -4022,7 +3285,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
         "PRODUZIR",
         "TREND"
@@ -4036,7 +3298,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 87.00,
+          "p": 85.00,
           "c": 179.90,
           "a": true
         }
@@ -4050,8 +3312,6 @@
       "tipo": "Chapéus",
       "tags": [
         "HALFTONE",
-        "L01",
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4062,7 +3322,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 110.00,
+          "p": 95.00,
           "c": 199.90,
           "a": true
         }
@@ -4076,8 +3336,6 @@
       "tipo": "Chapéus",
       "tags": [
         "HALFTONE",
-        "L02",
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4088,7 +3346,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 97.00,
+          "p": 95.00,
           "c": 199.90,
           "a": true
         }
@@ -4101,7 +3359,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -4113,25 +3371,25 @@
       "variantes": [
         {
           "t": "P / Rosa",
-          "p": 47.00,
+          "p": 55.00,
           "c": 165.90,
           "a": true
         },
         {
           "t": "M / Rosa",
-          "p": 47.00,
+          "p": 55.00,
           "c": 165.90,
           "a": false
         },
         {
           "t": "G / Rosa",
-          "p": 47.00,
+          "p": 55.00,
           "c": 165.90,
           "a": false
         },
         {
           "t": "GG / Rosa",
-          "p": 47.00,
+          "p": 55.00,
           "c": 165.90,
           "a": false
         }
@@ -4144,7 +3402,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -4155,25 +3413,25 @@
       "variantes": [
         {
           "t": "P / Vinho",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": true
         },
         {
           "t": "M / Vinho",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         },
         {
           "t": "G / Vinho",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         },
         {
           "t": "GG / Vinho",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         }
@@ -4187,7 +3445,6 @@
       "tipo": "Chapéus",
       "tags": [
         "HALFTONE",
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4198,7 +3455,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 97.00,
+          "p": 95.00,
           "c": 199.90,
           "a": true
         }
@@ -4211,7 +3468,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4224,7 +3480,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 97.00,
+          "p": 85.00,
           "c": 159.90,
           "a": true
         }
@@ -4237,9 +3493,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ATC",
-        "L03",
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4252,7 +3505,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 97.00,
+          "p": 85.00,
           "c": 159.90,
           "a": true
         }
@@ -4265,9 +3518,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-04T15:33:14-03:00",
       "imagens": [
@@ -4278,7 +3529,7 @@
       "variantes": [
         {
           "t": "Preto",
-          "p": 187.00,
+          "p": 115.00,
           "c": 219.90,
           "a": true
         }
@@ -4291,9 +3542,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-11-04T15:33:14-03:00",
       "imagens": [
@@ -4304,7 +3553,7 @@
       "variantes": [
         {
           "t": "Cobre",
-          "p": 187.00,
+          "p": 115.00,
           "c": 219.90,
           "a": true
         }
@@ -4317,10 +3566,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-04T15:10:31-03:00",
       "imagens": [
@@ -4331,7 +3578,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 167.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -4344,10 +3591,8 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
-        "Oriental",
-        "SEPARAR"
+        "Oriental"
       ],
       "publicado": "2026-11-04T15:10:24-03:00",
       "imagens": [
@@ -4358,7 +3603,7 @@
       "variantes": [
         {
           "t": "Roxo / Único",
-          "p": 167.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -4372,7 +3617,7 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-11-01T17:53:18-03:00",
       "imagens": [
@@ -4383,7 +3628,7 @@
       "variantes": [
         {
           "t": "Azul / Único",
-          "p": 47.00,
+          "p": 45.00,
           "c": 219.90,
           "a": true
         }
@@ -4439,7 +3684,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4452,7 +3696,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 97.00,
+          "p": 85.00,
           "c": 159.90,
           "a": true
         }
@@ -4465,7 +3709,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4478,7 +3721,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 97.00,
+          "p": 95.00,
           "c": 179.90,
           "a": true
         }
@@ -4491,7 +3734,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4504,7 +3746,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 97.00,
+          "p": 95.00,
           "c": 179.90,
           "a": true
         }
@@ -4517,7 +3759,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4530,7 +3771,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 97.00,
+          "p": 95.00,
           "c": 179.90,
           "a": true
         }
@@ -4543,8 +3784,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "Oriental"
+        "MARATONA"
       ],
       "publicado": "2026-10-29T16:09:22-03:00",
       "imagens": [
@@ -4556,7 +3796,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 97.00,
+          "p": 75.00,
           "c": 189.90,
           "a": true
         }
@@ -4719,7 +3959,6 @@
       "tipo": "Chapéus",
       "tags": [
         "HALFTONE",
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4730,7 +3969,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 97.00,
+          "p": 95.00,
           "c": 199.90,
           "a": true
         }
@@ -4744,7 +3983,6 @@
       "tipo": "Chapéus",
       "tags": [
         "HALFTONE",
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -4755,7 +3993,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 97.00,
+          "p": 95.00,
           "c": 199.90,
           "a": true
         }
@@ -4768,8 +4006,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-26T19:18:05-03:00",
       "imagens": [
@@ -4780,7 +4017,7 @@
       "variantes": [
         {
           "t": "Preto",
-          "p": 167.00,
+          "p": 115.00,
           "c": 219.90,
           "a": true
         }
@@ -4892,8 +4129,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-20T12:44:33-03:00",
       "imagens": [
@@ -4904,7 +4140,7 @@
       "variantes": [
         {
           "t": "Preto",
-          "p": 147.00,
+          "p": 115.00,
           "c": 179.90,
           "a": true
         }
@@ -4918,8 +4154,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-20T12:44:18-03:00",
       "imagens": [
@@ -4930,7 +4165,7 @@
       "variantes": [
         {
           "t": "Off-White",
-          "p": 147.00,
+          "p": 115.00,
           "c": 179.90,
           "a": true
         }
@@ -4943,9 +4178,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-19T14:35:43-03:00",
       "imagens": [
@@ -4956,7 +4189,7 @@
       "variantes": [
         {
           "t": "Branco",
-          "p": 97.00,
+          "p": 95.00,
           "c": 139.90,
           "a": true
         }
@@ -4969,9 +4202,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-19T14:34:59-03:00",
       "imagens": [
@@ -4982,7 +4213,7 @@
       "variantes": [
         {
           "t": "Verde",
-          "p": 137.00,
+          "p": 115.00,
           "c": 159.90,
           "a": true
         }
@@ -4996,8 +4227,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-19T14:34:57-03:00",
       "imagens": [
@@ -5008,7 +4238,7 @@
       "variantes": [
         {
           "t": "Marrom",
-          "p": 147.00,
+          "p": 115.00,
           "c": 179.90,
           "a": true
         }
@@ -5022,9 +4252,7 @@
       "tipo": "Chapéus",
       "tags": [
         "ADS",
-        "BAU",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-19T14:34:57-03:00",
       "imagens": [
@@ -5035,7 +4263,7 @@
       "variantes": [
         {
           "t": "Vinho",
-          "p": 120.00,
+          "p": 115.00,
           "c": 179.90,
           "a": true
         }
@@ -5048,7 +4276,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-10-17T00:57:43-03:00",
       "imagens": [
@@ -5060,7 +4288,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 87.00,
+          "p": 75.00,
           "c": 189.90,
           "a": true
         }
@@ -5073,7 +4301,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-10-17T00:57:29-03:00",
       "imagens": [
@@ -5085,7 +4313,7 @@
       "variantes": [
         {
           "t": "Marrom / Único",
-          "p": 87.00,
+          "p": 75.00,
           "c": 189.90,
           "a": true
         }
@@ -5098,7 +4326,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -5110,25 +4338,25 @@
       "variantes": [
         {
           "t": "P / Off White",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": true
         },
         {
           "t": "M / Off White",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         },
         {
           "t": "G / Off White",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         },
         {
           "t": "GG / Off White",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         }
@@ -5141,9 +4369,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-16T16:23:01-03:00",
       "imagens": [
@@ -5154,7 +4380,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 97.00,
+          "p": 95.00,
           "c": 139.90,
           "a": true
         }
@@ -5167,9 +4393,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-16T15:21:15-03:00",
       "imagens": [
@@ -5180,7 +4404,7 @@
       "variantes": [
         {
           "t": "Vinho / Único",
-          "p": 127.00,
+          "p": 115.00,
           "c": 159.00,
           "a": true
         }
@@ -5193,12 +4417,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "ADS",
-        "ANCÔRAS",
-        "BLACK",
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-16T15:20:27-03:00",
       "imagens": [
@@ -5209,7 +4428,7 @@
       "variantes": [
         {
           "t": "Preta / UN",
-          "p": 117.00,
+          "p": 105.00,
           "c": 149.90,
           "a": true
         }
@@ -5222,9 +4441,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-10-13T19:24:50-03:00",
       "imagens": [
@@ -5236,7 +4453,7 @@
       "variantes": [
         {
           "t": "Preto",
-          "p": 117.00,
+          "p": 115.00,
           "c": 199.90,
           "a": true
         }
@@ -5300,7 +4517,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-10-08T17:57:48-03:00",
       "imagens": [
@@ -5311,32 +4528,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
-          "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11006253334839",
-      "titulo": "Óculos BLCK Smile Branco",
-      "url": "https://blckbrasil.com.br/products/oculos-blck-smile-branco",
-      "ref": "",
-      "tipo": "",
-      "tags": [
-        "ACESSÓRIOS",
-        "LIVE"
-      ],
-      "publicado": "2026-10-08T17:57:48-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/O32_41dc0bb5-a421-4300-b542-7bc140921d39.jpg?v=1791492090",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/O32-2_173f7f02-b28f-4635-bcf5-9c5c03080d22.jpg?v=1791492091",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/O32-3_69c84ade-0f3f-4269-b6a5-3a6982ef9c24.jpg?v=1791492090"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 199.90,
           "a": true
         }
@@ -5350,7 +4542,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-10-08T17:57:46-03:00",
       "imagens": [
@@ -5361,7 +4553,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 199.90,
           "a": true
         }
@@ -5375,7 +4567,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-10-08T17:57:46-03:00",
       "imagens": [
@@ -5386,7 +4578,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 199.90,
           "a": true
         }
@@ -5400,7 +4592,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-10-08T17:57:45-03:00",
       "imagens": [
@@ -5411,7 +4603,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 199.90,
           "a": true
         }
@@ -5425,7 +4617,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-10-08T17:57:44-03:00",
       "imagens": [
@@ -5436,7 +4628,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 199.90,
           "a": true
         }
@@ -5538,7 +4730,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -5551,25 +4743,25 @@
       "variantes": [
         {
           "t": "P / Vermelha",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         },
         {
           "t": "M / Vermelha",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": true
         },
         {
           "t": "G / Vermelha",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         },
         {
           "t": "GG / Vermelha",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         }
@@ -5582,7 +4774,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -5595,25 +4787,25 @@
       "variantes": [
         {
           "t": "P / Branca",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         },
         {
           "t": "M / Branca",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         },
         {
           "t": "G / Branca",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": true
         },
         {
           "t": "GG / Branca",
-          "p": 67.00,
+          "p": 75.00,
           "c": 159.90,
           "a": false
         }
@@ -5627,7 +4819,6 @@
       "tipo": "Chapéus",
       "tags": [
         "HALFTONE",
-        "LIVE",
         "MARATONA",
         "PRODUZIR"
       ],
@@ -5638,7 +4829,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 97.00,
+          "p": 95.00,
           "c": 199.90,
           "a": true
         }
@@ -5651,7 +4842,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-09-20T03:37:56-03:00",
@@ -5662,31 +4853,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
-          "c": 149.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10978981347639",
-      "titulo": "Boné Dad Hat Azul Claro Metal Silver",
-      "url": "https://blckbrasil.com.br/products/bone-dad-hat-azul-claro-metal-silver",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE",
-        "PRODUZIR"
-      ],
-      "publicado": "2026-09-20T03:37:54-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/D05_349c4fe7-651d-43c1-b10d-7d22f01c3ad6.jpg?v=1789882616",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/D05-2_704ba6a5-dd16-4730-9ec7-dd4ab8cdcffc.jpg?v=1789881295"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 149.90,
           "a": true
         }
@@ -5699,7 +4866,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-09-20T03:37:54-03:00",
@@ -5710,7 +4877,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 149.90,
           "a": true
         }
@@ -5723,7 +4890,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
+        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-09-20T03:37:53-03:00",
@@ -5734,7 +4901,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 47.00,
+          "p": 45.00,
           "c": 149.90,
           "a": true
         }
@@ -6159,7 +5326,6 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
         "MARATONA",
         "PRODUZIR",
         "TREND"
@@ -6173,7 +5339,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 87.00,
+          "p": 85.00,
           "c": 179.90,
           "a": true
         }
@@ -6232,31 +5398,6 @@
       ]
     },
     {
-      "id": "10884565664055",
-      "titulo": "Boné Five Panel Strapback Preto Osaka Cinza",
-      "url": "https://blckbrasil.com.br/products/bone-five-panel-strapback-preto-osaka-cinza",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "LIVE"
-      ],
-      "publicado": "2026-09-02T12:20:51-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B22_642d567e-93b2-4c0f-93fa-fc1cb75bebfd.jpg?v=1784590120",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B22-2_2d399f7e-f459-4017-9830-2cb0e2f5f3a9.jpg?v=1784590120",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B22-3_f5083328-26ec-403d-b81f-88cc557a93b7.jpg?v=1784590120",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B22-4_c3d79d82-042e-435c-87b3-8154864926bd.jpg?v=1784590120"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 87.00,
-          "c": 189.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "10799888990519",
       "titulo": "Boné Snapback Branco Aba Shine Corinthians",
       "url": "https://blckbrasil.com.br/products/bone-snapback-branco-aba-shine-corinthians",
@@ -6298,34 +5439,6 @@
           "t": "Preto / Único",
           "p": 199.90,
           "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10911945031991",
-      "titulo": "Boné Snapback Suede Vinho Wave",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-vinho-wave",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "BAU",
-        "MARATONA",
-        "Oriental",
-        "SEPARAR"
-      ],
-      "publicado": "2026-08-12T10:43:00-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B12_f53143e0-cdd4-4785-954e-9d3151a63f20.jpg?v=1786473267",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B12-2_53516d57-1ae3-40f1-bf01-c6b9bd51b725.jpg?v=1786478949",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B12-3_85a72dd7-1ac9-4519-88af-6ad8651b8c35.jpg?v=1786478949",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B12-4_11ddc527-9024-43c4-9410-f75994bd0269.jpg?v=1786478949"
-      ],
-      "variantes": [
-        {
-          "t": "Vermelho / Único",
-          "p": 120.00,
-          "c": 219.90,
           "a": true
         }
       ]
@@ -6388,9 +5501,7 @@
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
-        "LIVE",
-        "MARATONA",
-        "SEPARAR"
+        "MARATONA"
       ],
       "publicado": "2026-07-21T05:20:06-03:00",
       "imagens": [
@@ -6401,7 +5512,7 @@
       "variantes": [
         {
           "t": "Caramelo / Único",
-          "p": 97.00,
+          "p": 95.00,
           "c": 139.90,
           "a": true
         }
@@ -6543,7 +5654,7 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-06-10T19:32:13-03:00",
       "imagens": [
@@ -6554,7 +5665,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 27.00,
+          "p": 25.00,
           "c": 239.90,
           "a": true
         }
@@ -6568,7 +5679,7 @@
       "tipo": "Chapéus",
       "tags": [
         "COPA",
-        "LIVE"
+        "MARATONA"
       ],
       "publicado": "2026-06-10T19:32:13-03:00",
       "imagens": [
@@ -6579,7 +5690,7 @@
       "variantes": [
         {
           "t": "Azul / Único",
-          "p": 27.00,
+          "p": 25.00,
           "c": 239.90,
           "a": true
         }

@@ -2,8 +2,61 @@
   "marca": "Bolovo",
   "loja": "Site Bolovo",
   "site": "bolovo.com.br",
-  "atualizado": "2026-11-25T23:55:11Z",
+  "atualizado": "2026-11-26T16:05:50Z",
   "produtos": [
+    {
+      "id": "15225778962736",
+      "titulo": "Camiseta Expeditions Team Marrom",
+      "url": "https://bolovo.com.br/products/camiseta-expeditions-team-marrom",
+      "ref": "",
+      "tipo": "",
+      "tags": [],
+      "publicado": "2026-11-26T11:20:19-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/16_36_06_803_16_6_4_437_onlinebolovo_0009_blv209.webp?v=1787003057",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/07_10_11_959_7_6_2_285_49.webp?v=1787003056",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/07_10_51_934_7_6_4_452_onlinebolovo_0011_blv2011.webp?v=1787003057",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/16_36_06_738_16_6_3_378_onlinebolovo_0010_blv2010.webp?v=1787003057"
+      ],
+      "variantes": [
+        {
+          "t": "PP",
+          "p": 229.99,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 229.99,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 229.99,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 229.99,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 229.99,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "XGG",
+          "p": 229.99,
+          "c": 0,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "15414797599024",
       "titulo": "Comodoro Shorts Bolovo 20 Anos",
@@ -13,8 +66,12 @@
       "tags": [
         "Adulto",
         "Ativo",
+        "bege",
         "Coleção 20 Anos Q3'26",
-        "off white"
+        "off white",
+        "Short branco",
+        "Short off white",
+        "Shorts nude"
       ],
       "publicado": "2026-11-25T10:55:10-03:00",
       "imagens": [
@@ -151,6 +208,7 @@
       "tipo": "",
       "tags": [
         "BLV Kids'26",
+        "Camiseta preta",
         "Coleção Kids Q3'26",
         "Infantil"
       ],
@@ -303,8 +361,11 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "amarelo",
+        "bege",
         "Dads shorts",
         "Sem Coleção QX'XX",
+        "Short off white",
         "Shorts"
       ],
       "publicado": "2026-11-19T12:57:55-03:00",
@@ -422,6 +483,7 @@
         "Pro-tec",
         "s-s",
         "Sem Coleção QX'XX",
+        "Short marrom",
         "Shorts",
         "Verão 27"
       ],
@@ -540,6 +602,7 @@
         "Pro-tec",
         "s-s",
         "Sem Coleção QX'XX",
+        "Short verde",
         "Shorts",
         "Verão 27"
       ],
@@ -655,7 +718,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
-        "Coleção Verão'27 Q3'26"
+        "Coleção Verão'27 Q3'26",
+        "Short verde"
       ],
       "publicado": "2026-11-18T18:00:07-03:00",
       "imagens": [
@@ -743,7 +807,8 @@
       "tags": [
         "Adulto",
         "Coleção Verão'27 Q3'26",
-        "Inativo"
+        "Inativo",
+        "Short verde"
       ],
       "publicado": "2026-11-18T18:00:06-03:00",
       "imagens": [
@@ -803,6 +868,7 @@
         "Inativo",
         "Pro-tec",
         "s-s",
+        "Short marrom",
         "Shorts",
         "Verão 27"
       ],
@@ -1066,6 +1132,11 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
+        "Camiseta preta",
         "Camisetas",
         "Coleção Verão'27 Q3'26",
         "manga-curta",
@@ -1126,6 +1197,10 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
+        "Camiseta oversized",
         "Camisetas",
         "Coleção Verão'27 Q3'26",
         "manga-curta",
@@ -1360,9 +1435,12 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "azul",
         "Coleção Verão'27 Q3'26",
         "Inativo",
-        "s-s"
+        "s-s",
+        "Short azul claro",
+        "Short tactel azul"
       ],
       "publicado": "2026-11-18T06:43:03-03:00",
       "imagens": [
@@ -1418,6 +1496,8 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta basica marrom",
+        "Camiseta marrom;",
         "Camisetas",
         "Coleção Verão'27 Q3'26",
         "manga-curta",
@@ -1536,7 +1616,8 @@
       "tags": [
         "Adulto",
         "Coleção Verão'27 Q3'26",
-        "Inativo"
+        "Inativo",
+        "Short marrom"
       ],
       "publicado": "2026-11-18T06:43:02-03:00",
       "imagens": [
@@ -1592,10 +1673,16 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "amarelo",
+        "bege",
         "Coleção Verão'27 Q3'26",
         "Dads shorts",
         "Inativo",
+        "Short branco",
+        "Short off white",
+        "Short tactel branco",
         "Shorts",
+        "Shorts nude",
         "Verão 27"
       ],
       "publicado": "2026-11-18T06:43:01-03:00",
@@ -1652,6 +1739,9 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Coleção Verão'27 Q3'26",
         "manga-curta",
@@ -1711,6 +1801,8 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Coleção Verão'27 Q3'26",
         "manga-curta",
@@ -1758,6 +1850,9 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Coleção Verão'27 Q3'26",
         "manga-curta",
@@ -1805,6 +1900,8 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Coleção Verão'27 Q3'26",
         "manga-curta",
@@ -1852,6 +1949,9 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Coleção Verão'27 Q3'26",
         "manga-curta",
@@ -2106,6 +2206,11 @@
       "tags": [
         "20 Anos",
         "20 Anos'26",
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
+        "Camiseta preta",
         "Camisetas",
         "manga-curta",
         "Oversized"
@@ -2165,6 +2270,10 @@
       "tags": [
         "20 Anos",
         "20 Anos'26",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
+        "Camiseta oversized",
         "Camisetas",
         "manga-curta",
         "Oversized"
@@ -2253,6 +2362,9 @@
       "tags": [
         "20 Anos",
         "20 Anos'26",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "manga-curta"
       ],
@@ -2299,6 +2411,7 @@
       "tags": [
         "20 Anos",
         "20 Anos'26",
+        "Camiseta marrom;",
         "Camisetas",
         "manga-curta"
       ],
@@ -2873,6 +2986,8 @@
       "tags": [
         "20 Anos'26",
         "Adulto",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
         "Camisetas",
         "classicas blv",
         "Coleção 20 Anos Q3'26",
@@ -2991,6 +3106,7 @@
       "tags": [
         "s-s",
         "Sem Coleção'25",
+        "Short verde",
         "Shorts"
       ],
       "publicado": "2026-10-21T14:37:39-03:00",
@@ -3046,6 +3162,9 @@
       "tags": [
         "20 Anos'26",
         "Adulto",
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "Coleção 20 Anos Q3'26",
@@ -3316,6 +3435,9 @@
       "tipo": "",
       "tags": [
         "Black friday",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "manga-curta",
         "ultimas-unidades",
         "Verão'25",
@@ -3432,6 +3554,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -3867,9 +3992,12 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "amarelo",
+        "bege",
         "Pro-tec",
         "s-s",
         "Shorts",
+        "Shorts nude",
         "ultimas-unidades",
         "Verão'26",
         "Verão'26/Drop 2"
@@ -3986,8 +4114,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "bege",
         "Inverno'23",
+        "Short off white",
         "Shorts",
+        "Shorts nude",
         "Veludo",
         "Velvet shorts"
       ],
@@ -4101,6 +4232,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga longa preta;",
+        "Camiseta preta",
         "Camisetas",
         "Home Video'26",
         "manga-longa"
@@ -4158,6 +4291,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga longa branca",
+        "Camiseta manga longa off white",
+        "Camiseta off white",
         "Camisetas",
         "Home Video'26",
         "manga-longa"
@@ -4330,6 +4467,10 @@
       "tipo": "",
       "tags": [
         "Black friday",
+        "Camiseta branca",
+        "Camiseta manga longa branca",
+        "Camiseta manga longa off white",
+        "Camiseta off white",
         "Camisetas",
         "Inverno'25",
         "Inverno'25/Drop 2",
@@ -4560,6 +4701,9 @@
       "tipo": "",
       "tags": [
         "Black friday",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "manga-curta",
         "ultimas-unidades",
@@ -4617,6 +4761,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Casacos",
+        "Jaquetas",
         "marrom"
       ],
       "publicado": "2026-09-30T09:11:33-03:00",
@@ -4712,6 +4858,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga longa preta;",
+        "Camiseta preta",
         "Camisetas",
         "Inverno'25",
         "Inverno'25/Discovery",
@@ -4772,6 +4920,8 @@
       "tipo": "",
       "tags": [
         "Black friday",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "Good Times'22",
@@ -5119,6 +5269,7 @@
       "tags": [
         "Coleção Kids Q3'26",
         "Infantil",
+        "Short roxo",
         "Shortinhos"
       ],
       "publicado": "2026-09-17T07:20:27-03:00",
@@ -5158,7 +5309,8 @@
       "tags": [
         "Coleção Kids Q3'26",
         "Infantil",
-        "Junior"
+        "Junior",
+        "Short rosa"
       ],
       "publicado": "2026-09-17T07:20:26-03:00",
       "imagens": [
@@ -5570,7 +5722,8 @@
       "tags": [
         "Coleção Kids Q3'26",
         "Infantil",
-        "Junior"
+        "Junior",
+        "Short verde"
       ],
       "publicado": "2026-09-17T07:20:17-03:00",
       "imagens": [
@@ -5721,6 +5874,8 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -5984,6 +6139,7 @@
         "Inverno'24",
         "Inverno'24/Drop 3",
         "Outside shorts",
+        "Short verde",
         "Shorts"
       ],
       "publicado": "2026-09-10T03:11:28-03:00",
@@ -6070,6 +6226,11 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta basica preta",
+        "Camiseta cinza",
+        "Camiseta cinza mescla",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -6277,6 +6438,8 @@
       "tipo": "",
       "tags": [
         "Adulto",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Collab Dexter Q3'26",
         "Inverno'26/Drop 4",
@@ -6431,7 +6594,7 @@
           "t": "G",
           "p": 229.99,
           "c": 229.99,
-          "a": true
+          "a": false
         },
         {
           "t": "GG",
@@ -11236,7 +11399,7 @@
           "t": "XGG",
           "p": 1099.99,
           "c": 1099.99,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -11602,7 +11765,7 @@
           "t": "P",
           "p": 1099.99,
           "c": 1099.99,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
@@ -11838,7 +12001,7 @@
           "t": "G",
           "p": 549.99,
           "c": 549.99,
-          "a": true
+          "a": false
         },
         {
           "t": "GG",
@@ -15825,7 +15988,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "azul",
         "Comodoro shorts",
+        "Short azul marinho",
         "Shorts",
         "Verão'26",
         "Verão'26/Drop 1"
@@ -16212,6 +16377,7 @@
         "Calças",
         "Go Out'23",
         "Que vira shorts",
+        "Short marrom",
         "Tactel"
       ],
       "publicado": "2026-08-27T18:07:50-03:00",
@@ -16805,6 +16971,7 @@
       "tipo": "",
       "tags": [
         "Dads shorts",
+        "Short marrom",
         "Shorts",
         "ultimas-unidades",
         "Verão'25",
@@ -16865,6 +17032,7 @@
         "Dads shorts",
         "Perene",
         "Sem Coleção'22",
+        "Short marrom",
         "Shorts",
         "Tactel"
       ],
@@ -16923,6 +17091,7 @@
         "Dads shorts",
         "Inverno'26",
         "Inverno'26/Drop 3",
+        "Short roxo",
         "Shorts"
       ],
       "publicado": "2026-08-27T15:51:07-03:00",
@@ -16961,7 +17130,7 @@
           "t": "GG",
           "p": 349.99,
           "c": 349.99,
-          "a": true
+          "a": false
         },
         {
           "t": "XGG",
@@ -17038,6 +17207,7 @@
       "tags": [
         "classicas blv",
         "Dads shorts",
+        "Short verde",
         "Shorts",
         "Verão'26",
         "Verão'26/Drop 1"
@@ -17216,6 +17386,8 @@
         "Dads shorts",
         "Inverno'22",
         "Perene",
+        "Short cinza",
+        "Short roxo",
         "Shorts",
         "Tactel"
       ],
@@ -17272,6 +17444,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "amarelo",
+        "bege",
         "Dads shorts",
         "Go Out'19",
         "Perene",
@@ -17333,6 +17507,8 @@
       "tags": [
         "Born To Travel Forced To Work'25",
         "Dads shorts",
+        "Short cinza",
+        "Short roxo",
         "Shorts",
         "ultimas-unidades"
       ],
@@ -17390,6 +17566,7 @@
       "tipo": "",
       "tags": [
         "Comodoro shorts",
+        "Short marrom",
         "Shorts",
         "Verão'26",
         "Verão'26/Drop 1"
@@ -17448,6 +17625,7 @@
       "tipo": "",
       "tags": [
         "BLV Kids'25",
+        "Short verde",
         "Shortinhos"
       ],
       "publicado": "2026-08-27T15:46:50-03:00",
@@ -17549,6 +17727,7 @@
         "Inverno'24",
         "Inverno'24/Drop 3",
         "Outside shorts",
+        "Short azul marinho",
         "Shorts"
       ],
       "publicado": "2026-08-27T15:46:10-03:00",
@@ -17604,9 +17783,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "bege",
         "classicas blv",
         "Outside shorts",
         "Perene",
+        "Short sarja off white",
         "Shorts",
         "Verão'25",
         "Verão'25/Drop 3"
@@ -17727,6 +17908,7 @@
         "Inverno'19",
         "Perene",
         "Sarja",
+        "Short verde",
         "Shorts"
       ],
       "publicado": "2026-08-27T15:45:41-03:00",
@@ -17782,10 +17964,15 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "bege",
         "FDS Shorts",
         "Perene",
         "Sarja",
+        "Short branco",
+        "Short off white",
+        "Short sarja off white",
         "Shorts",
+        "Shorts nude",
         "Vermelho",
         "Verão'24"
       ],
@@ -17964,6 +18151,7 @@
         "Inverno'22",
         "Perene",
         "Sarja",
+        "Short marrom",
         "Shorts"
       ],
       "publicado": "2026-08-27T15:45:15-03:00",
@@ -18018,10 +18206,12 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "azul",
         "FDS Shorts",
         "Inverno'23",
         "Perene",
         "Sarja",
+        "Short azul marinho",
         "Shorts"
       ],
       "publicado": "2026-08-27T15:45:09-03:00",
@@ -18076,10 +18266,14 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "azul",
         "Carnaval'22",
         "FDS Shorts",
         "Jeans",
         "Perene",
+        "Short azul claro",
+        "Short azul marinho",
+        "Short jeans azul",
         "Shorts"
       ],
       "publicado": "2026-08-27T15:45:04-03:00",
@@ -18139,6 +18333,7 @@
         "Inverno'23",
         "Jeans",
         "Perene",
+        "Short jeans cinza",
         "Shorts"
       ],
       "publicado": "2026-08-27T15:44:58-03:00",
@@ -18194,6 +18389,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "amarelo",
+        "bege",
         "FDS Shorts",
         "Inverno'18",
         "Perene",
@@ -18253,10 +18450,15 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "amarelo",
+        "bege",
         "FDS Shorts",
         "Perene",
         "Sarja",
+        "Short branco",
+        "Short sarja off white",
         "Shorts",
+        "Shorts nude",
         "Verão'23"
       ],
       "publicado": "2026-08-27T15:44:41-03:00",
@@ -18369,6 +18571,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "amarelo",
+        "bege",
         "Dads shorts",
         "Perene",
         "Sem Coleção'22",
@@ -18429,6 +18633,7 @@
       "tags": [
         "Dads shorts",
         "Go Out'19",
+        "Short rosa",
         "Shorts",
         "Tactel"
       ],
@@ -18484,9 +18689,12 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "amarelo",
+        "bege",
         "Dads shorts",
         "Pro-tec",
         "Shorts",
+        "Shorts nude",
         "ultimas-unidades",
         "Verão'26",
         "Verão'26/Drop 2"
@@ -18603,7 +18811,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "azul",
         "s-s",
+        "Short azul marinho",
+        "Short tactel azul",
         "Shorts",
         "Tactel",
         "Vermelho",
@@ -18722,7 +18933,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "bege",
         "s-s",
+        "Short branco",
+        "Short off white",
+        "Short tactel branco",
         "Shorts",
         "Verão'25",
         "Verão'25/Drop 4"
@@ -18783,6 +18998,7 @@
         "classicas blv",
         "Perene",
         "s-s",
+        "Short marrom",
         "Shorts",
         "Tactel",
         "Verão'23"
@@ -18842,6 +19058,7 @@
       "tags": [
         "classicas blv",
         "s-s",
+        "Short roxo",
         "Shorts",
         "Tactel",
         "Vermelho",
@@ -18902,6 +19119,8 @@
       "tags": [
         "Dragão'24",
         "s-s",
+        "Short branco",
+        "Short tactel branco",
         "Shorts",
         "Tactel"
       ],
@@ -18958,6 +19177,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "azul",
+        "bege",
         "Inverno'23",
         "Perene",
         "s-s",
@@ -19018,8 +19239,10 @@
       "tipo": "",
       "tags": [
         "Aesthetics'23",
+        "bege",
         "s-s",
         "Shorts",
+        "Shorts nude",
         "Tactel"
       ],
       "publicado": "2026-08-27T15:39:17-03:00",
@@ -19075,10 +19298,13 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "azul",
         "classicas blv",
         "Home Video'21",
         "Perene",
         "s-s",
+        "Short azul marinho",
+        "Short tactel azul",
         "Shorts",
         "Tactel"
       ],
@@ -19135,9 +19361,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "bege",
         "s-s",
         "Sem Coleção'25",
-        "Shorts"
+        "Shorts",
+        "Shorts nude"
       ],
       "publicado": "2026-08-27T15:38:53-03:00",
       "imagens": [
@@ -19208,7 +19436,7 @@
           "t": "PP",
           "p": 299.99,
           "c": 299.99,
-          "a": true
+          "a": false
         },
         {
           "t": "P",
@@ -19226,7 +19454,7 @@
           "t": "G",
           "p": 299.99,
           "c": 299.99,
-          "a": true
+          "a": false
         },
         {
           "t": "GG",
@@ -19250,6 +19478,7 @@
       "tipo": "",
       "tags": [
         "BLV Kids'25",
+        "Short vermelho",
         "Shortinhos"
       ],
       "publicado": "2026-08-27T15:38:42-03:00",
@@ -19289,6 +19518,7 @@
       "tags": [
         "Perene",
         "Sem Coleção'24",
+        "Short verde",
         "Shorts",
         "Veludo",
         "Velvet shorts"
@@ -19462,6 +19692,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "bege",
         "Inverno'20",
         "Perene",
         "Shorts",
@@ -19524,6 +19755,7 @@
         "Home Video'21",
         "Perene",
         "s-s",
+        "Short vermelho",
         "Shorts",
         "Tactel"
       ],
@@ -19583,6 +19815,8 @@
         "Inverno'22",
         "Perene",
         "s-s",
+        "Short marrom",
+        "Short verde",
         "Shorts",
         "Tactel"
       ],
@@ -19641,6 +19875,7 @@
         "Inverno'21",
         "Perene",
         "s-s",
+        "Short verde",
         "Shorts",
         "Tactel"
       ],
@@ -19757,6 +19992,7 @@
         "Carnaval'26",
         "classicas blv",
         "s-s",
+        "Short marrom",
         "Shorts"
       ],
       "publicado": "2026-08-27T15:14:24-03:00",
@@ -19929,6 +20165,7 @@
       "tipo": "",
       "tags": [
         "Black friday",
+        "Camiseta marrom;",
         "Camisetas",
         "manga-curta",
         "Verão'26",
@@ -19987,6 +20224,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta bege",
         "Camisetas",
         "manga-curta",
         "Verão'26",
@@ -20220,6 +20458,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Carnaval'25",
         "manga-curta"
@@ -20278,6 +20519,8 @@
       "tipo": "",
       "tags": [
         "420",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "manga-curta",
         "Verão'25",
@@ -20337,6 +20580,9 @@
       "tipo": "",
       "tags": [
         "420",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "manga-curta",
         "Verão'25",
@@ -20447,6 +20693,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica marrom",
+        "Camiseta marrom;",
         "Camisetas",
         "manga-curta",
         "Verão'25",
@@ -20505,6 +20753,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta azul",
+        "Camiseta azul marinho",
+        "Camiseta basica azul",
+        "Camiseta manga curta azul marinho",
         "Camisetas",
         "manga-curta",
         "ultimas-unidades",
@@ -20564,6 +20816,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -20622,6 +20876,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -20731,6 +20988,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta bege",
         "Camisetas",
         "Go Out'23",
         "manga-curta"
@@ -20782,6 +21040,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga longa branca",
+        "Camiseta manga longa off white",
+        "Camiseta off white",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -20840,6 +21102,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta marrom;",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -21016,6 +21279,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta marrom;",
         "Camisetas",
         "Inverno'23",
         "Listras",
@@ -21074,6 +21338,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga longa off white",
+        "Camiseta manga longa preta;",
+        "Camiseta off white",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "Inverno'23",
@@ -21133,6 +21401,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga longa branca",
+        "Camiseta manga longa off white",
+        "Camiseta off white",
         "Camisetas",
         "Go Out'23",
         "manga-longa"
@@ -21242,6 +21514,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga longa preta;",
+        "Camiseta preta",
         "Camisetas",
         "Go Out'23",
         "manga-longa"
@@ -21293,6 +21567,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta marrom;",
         "Camisetas",
         "Go Out'23",
         "manga-longa"
@@ -21344,6 +21619,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -21402,6 +21679,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -21519,6 +21801,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta azul",
+        "Camiseta azul royal",
         "Camisetas",
         "Home Video'24",
         "Listras",
@@ -21578,6 +21862,10 @@
       "tipo": "",
       "tags": [
         "Black friday",
+        "Camiseta basica marrom",
+        "Camiseta manga curta preta",
+        "Camiseta marrom;",
+        "Camiseta preta",
         "Camisetas",
         "Inverno'23",
         "Listras",
@@ -21636,6 +21924,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga curta preta",
+        "Camiseta off white",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "Inverno'23",
@@ -21688,6 +21979,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta azul",
+        "Camiseta azul marinho",
+        "Camiseta manga curta azul marinho",
         "Camisetas",
         "classicas blv",
         "Inverno'24",
@@ -21748,6 +22042,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga curta preta",
+        "Camiseta off white",
+        "Camiseta preta",
         "Camisetas",
         "manga-curta",
         "ultimas-unidades",
@@ -21808,6 +22105,11 @@
       "tipo": "",
       "tags": [
         "Black friday",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta manga curta preta",
+        "Camiseta off white",
+        "Camiseta preta",
         "Camisetas",
         "manga-curta",
         "ultimas-unidades",
@@ -21867,6 +22169,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "Inverno'21",
@@ -21926,6 +22231,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "classicas blv",
         "Inverno'23",
@@ -21987,6 +22297,11 @@
       "tags": [
         "Black friday",
         "Born To Travel Forced To Work'25",
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "manga-curta"
       ],
@@ -22043,6 +22358,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta marrom;",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -22101,6 +22417,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -22160,6 +22481,8 @@
       "tipo": "",
       "tags": [
         "Black friday",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Inverno'23",
         "manga-curta",
@@ -22218,6 +22541,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Inverno'23",
         "manga-curta"
@@ -22258,7 +22584,7 @@
           "t": "GG",
           "p": 229.99,
           "c": 229.99,
-          "a": true
+          "a": false
         },
         {
           "t": "XGG",
@@ -22275,6 +22601,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Carnaval'22",
         "manga-curta",
@@ -22333,6 +22661,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Carnaval'22",
         "manga-curta"
@@ -22390,6 +22721,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Home Video'26",
         "manga-curta"
@@ -22447,6 +22780,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Home Video'26",
         "manga-curta"
@@ -22563,6 +22899,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica marrom",
+        "Camiseta marrom;",
         "Camisetas",
         "classicas blv",
         "Inverno'24",
@@ -22623,6 +22961,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "Go Out'23",
@@ -22682,6 +23023,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -22741,6 +23087,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "classicas blv",
         "Inverno'21",
@@ -22799,7 +23150,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
-        "BLV Kids'25"
+        "BLV Kids'25",
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta off white"
       ],
       "publicado": "2026-08-27T12:47:00-03:00",
       "imagens": [
@@ -22873,6 +23228,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta azul",
+        "Camiseta azul marinho",
+        "Camiseta basica azul",
+        "Camiseta manga curta azul marinho",
         "Camisetas",
         "classicas blv",
         "Home Video'21",
@@ -22932,6 +23291,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 2",
@@ -22990,6 +23352,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 2",
@@ -23101,6 +23466,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta oversized",
+        "Camiseta oversized preta",
         "Camisetas",
         "Home Video'26",
         "manga-curta",
@@ -23159,6 +23526,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -23217,6 +23589,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta oversized",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -23335,6 +23711,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -23393,6 +23774,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta oversized",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -23451,6 +23836,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
+        "Camiseta preta",
         "Camisetas",
         "manga-curta",
         "Oversized",
@@ -23510,6 +23900,12 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
+        "Camiseta oversized",
         "Camisetas",
         "manga-curta",
         "Oversized",
@@ -23569,6 +23965,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
+        "Camiseta preta",
         "Camisetas",
         "Home Video'25",
         "manga-curta",
@@ -23627,6 +24028,12 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
+        "Camiseta oversized",
         "Camisetas",
         "Home Video'25",
         "manga-curta",
@@ -23685,6 +24092,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
+        "Camiseta preta",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -23744,6 +24156,12 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
+        "Camiseta oversized",
         "Camisetas",
         "Inverno'26",
         "Inverno'26/Drop 3",
@@ -23803,6 +24221,11 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -23861,6 +24284,12 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
+        "Camiseta oversized",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -23890,7 +24319,7 @@
           "t": "M",
           "p": 299.99,
           "c": 299.99,
-          "a": true
+          "a": false
         },
         {
           "t": "G",
@@ -23919,6 +24348,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta cinza",
+        "Camiseta cinza mescla",
+        "Camiseta oversized",
+        "Camiseta oversized preta",
         "Camisetas",
         "classicas blv",
         "manga-curta",
@@ -23978,6 +24411,9 @@
       "tipo": "",
       "tags": [
         "Born To Travel Forced To Work'25",
+        "Camiseta basica preta",
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "manga-curta"
@@ -24036,6 +24472,11 @@
       "tipo": "",
       "tags": [
         "Born To Travel Forced To Work'25",
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "classicas blv",
         "manga-curta"
@@ -25082,6 +25523,12 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica branca",
+        "Camiseta basica off white",
+        "Camiseta branca",
+        "Camiseta manga longa branca",
+        "Camiseta manga longa off white",
+        "Camiseta off white",
         "Camisetas",
         "classicas blv",
         "Inverno'19",
@@ -25141,6 +25588,8 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta manga curta preta",
+        "Camiseta preta",
         "Camisetas",
         "Home Video'26",
         "manga-curta"
@@ -25197,6 +25646,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta branca",
+        "Camiseta manga curta branca",
+        "Camiseta off white",
         "Camisetas",
         "Home Video'26",
         "manga-curta"
@@ -25254,6 +25706,9 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta basica preta",
+        "Camiseta manga longa preta;",
+        "Camiseta preta",
         "Camisetas",
         "classicas blv",
         "Inverno'19",
@@ -25430,6 +25885,10 @@
       "ref": "",
       "tipo": "",
       "tags": [
+        "Camiseta azul",
+        "Camiseta azul marinho",
+        "Camiseta basica azul",
+        "Camiseta manga curta azul marinho",
         "Camisetas",
         "Home Video'26",
         "manga-curta"
