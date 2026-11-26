@@ -2,7 +2,7 @@
   "marca": "Puma",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-25T23:52:54Z",
+  "atualizado": "2026-11-26T11:59:25Z",
   "produtos": [
     {
       "id": "2003163",
@@ -273,72 +273,6 @@
       ]
     },
     {
-      "id": "2020879",
-      "titulo": "Tênis Puma Ralph Sampson Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-ralph-sampson-masculino-37084-6-001/p",
-      "ref": "37084-6-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2020-06-08T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/224357/Tenis-Puma-Ralph-Sampson-Masculino-Preto.jpg?v=637285396134300000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/224358/Tenis-Puma-Ralph-Sampson-Masculino-Preto-2.jpg?v=637285396359800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/224359/Tenis-Puma-Ralph-Sampson-Masculino-Preto-3.jpg?v=637285396640000000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/224360/Tenis-Puma-Ralph-Sampson-Masculino-Preto-4.jpg?v=637285397345500000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 400.0,
-          "c": 400.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 400.0,
-          "c": 400.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 400.0,
-          "c": 400.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 400.0,
-          "c": 400.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 400.0,
-          "c": 400.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 399.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 400.0,
-          "c": 400.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2020880",
       "titulo": "Tênis Puma Ralph Sampson Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-ralph-sampson-masculino-37084-6-002/p",
@@ -399,6 +333,72 @@
           "t": "44",
           "p": 399.99,
           "c": 399.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2020881",
+      "titulo": "Tênis Puma Ralph Sampson Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-ralph-sampson-masculino-37084-6-008/p",
+      "ref": "37084-6-008",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2020-06-08T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/224059/Tenis-Puma-Ralph-Sampson-Masculino-Branco.jpg?v=637272180001470000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/224060/Tenis-Puma-Ralph-Sampson-Masculino-Branco-2.jpg?v=637272184504730000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/224061/Tenis-Puma-Ralph-Sampson-Masculino-Branco-3.jpg?v=637272185046400000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/224062/Tenis-Puma-Ralph-Sampson-Masculino-Branco-4.jpg?v=637272185214830000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 400.0,
+          "c": 400.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         }
@@ -898,7 +898,7 @@
         },
         {
           "t": "35",
-          "p": 199.99,
+          "p": 349.99,
           "c": 349.99,
           "x": null,
           "a": false
@@ -912,7 +912,7 @@
         },
         {
           "t": "37",
-          "p": 199.99,
+          "p": 349.99,
           "c": 349.99,
           "x": null,
           "a": false
@@ -926,7 +926,7 @@
         },
         {
           "t": "39",
-          "p": 349.99,
+          "p": 199.99,
           "c": 349.99,
           "x": null,
           "a": false
@@ -940,14 +940,14 @@
         },
         {
           "t": "41",
-          "p": 199.99,
+          "p": 349.99,
           "c": 349.99,
           "x": null,
           "a": false
         },
         {
           "t": "42",
-          "p": 349.99,
+          "p": 199.99,
           "c": 349.99,
           "x": null,
           "a": false
@@ -1653,8 +1653,8 @@
         },
         {
           "t": "41",
-          "p": 319.99,
-          "c": 699.99,
+          "p": 700.0,
+          "c": 700.0,
           "x": null,
           "a": false
         },
@@ -1946,6 +1946,72 @@
       ]
     },
     {
+      "id": "2024480",
+      "titulo": "Tênis Puma MB1 Galaxy Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-mb1-galaxy-masculino-37667-7-007/p",
+      "ref": "37667-7-007",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2024-04-16T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/256214/37667-7-007-1.jpg?v=637909215160900000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/256491/37667-7-007-2.jpg?v=637909217797570000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/256768/37667-7-007-3.jpg?v=637909220650700000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/257045/37667-7-007-4.jpg?v=637909222986000000"
+      ],
+      "variantes": [
+        {
+          "t": "39",
+          "p": 899.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 899.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 899.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 899.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 899.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 899.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 899.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2024481",
       "titulo": "Tênis Puma MB1 Be You Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-mb1-be-you-masculino-37681-3-001/p",
@@ -2056,15 +2122,15 @@
         },
         {
           "t": "38",
-          "p": 599.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
         {
           "t": "39",
-          "p": 599.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
@@ -3243,121 +3309,6 @@
       ]
     },
     {
-      "id": "2027087",
-      "titulo": "Tênis Puma MB.02 Supernova Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-mb-02-supernova-masculino-37644-2-001/p",
-      "ref": "37644-2-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2024-04-16T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/301612/37644-2-001-1.jpg?v=638053407921630000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/301613/37644-2-001-2.jpg?v=638053408624570000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/301614/37644-2-001-3.jpg?v=638053408746430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/301615/37644-2-001-4.jpg?v=638053408848870000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 1099.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2027088",
       "titulo": "Tênis Puma MB1 Low Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-mb1-lo-masculino-37694-1-007/p",
@@ -3439,135 +3390,6 @@
           "t": "43",
           "p": 499.99,
           "c": 1099.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2027089",
-      "titulo": "Tênis Puma Rise Nitro Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-rise-nitro-masculino-37701-2-001/p",
-      "ref": "37701-2-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2022-05-23T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/276226/37701-2-001-1.jpg?v=637974588151070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/276227/37701-2-001-2.jpg?v=637974588281070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/276228/37701-2-001-3.jpg?v=637974588417100000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/276229/37701-2-001-4.jpg?v=637974588567430000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 399.99,
-          "c": 999.99,
           "x": null,
           "a": false
         }
@@ -3832,135 +3654,6 @@
       ]
     },
     {
-      "id": "2027092",
-      "titulo": "Tênis Puma Rise Nitro Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-rise-nitro-masculino-37701-2-004/p",
-      "ref": "37701-2-004",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2022-05-23T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/369404/37701-2-004-1.jpg?v=638161415106630000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/369613/37701-2-004-2.jpg?v=638161417757430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/369822/37701-2-004-3.jpg?v=638161420479670000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/369892/37701-2-004-4.jpg?v=638161420923900000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2027093",
       "titulo": "Tênis Puma Rise Nitro Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-rise-nitro-masculino-37701-2-005/p",
@@ -4090,129 +3783,258 @@
       ]
     },
     {
-      "id": "2027102",
-      "titulo": "Tênis Puma MB.02 Iridescent Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-mb-02-iridescent-masculino-37764-4-001/p",
-      "ref": "37764-4-001",
+      "id": "2027094",
+      "titulo": "Tênis Puma Rise Nitro Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-rise-nitro-masculino-37701-2-006/p",
+      "ref": "37701-2-006",
       "tipo": "/Tênis/Masculino/Puma/ Tênis",
       "tags": [],
       "publicado": "2022-05-23T00:00:00Z",
       "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/351936/37764-4-001-1.jpg?v=638101776826300000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/351937/37764-4-001-2.jpg?v=638101777987400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/351938/37764-4-001-3.jpg?v=638101778839700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/351939/37764-4-001-4.jpg?v=638101779033100000"
+        "https://artwalk.vteximg.com.br/arquivos/ids/276238/37701-2-006-1.jpg?v=637974617762330000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/276239/37701-2-006-2.jpg?v=637974617953900000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/276240/37701-2-006-3.jpg?v=637974618123700000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/276241/37701-2-006-4.jpg?v=637974618226700000"
       ],
       "variantes": [
         {
           "t": "34",
-          "p": 879.99,
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "35",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "36",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "46",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "49",
+          "p": 299.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2027101",
+      "titulo": "Tênis Puma MB.02 Roy Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-mb-02-roy-masculino-37758-6-001/p",
+      "ref": "37758-6-001",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2022-05-23T03:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/356281/37758-6-001-1.jpg?v=638134623667130000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/356416/37758-6-001-2.jpg?v=638134624362070000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/356551/37758-6-001-3.jpg?v=638134625575970000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/356686/37758-6-001-4.jpg?v=638134626810270000"
+      ],
+      "variantes": [
+        {
+          "t": "34",
+          "p": 829.99,
           "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "35",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "36",
-          "p": 879.99,
+          "p": 829.99,
           "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "37",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "38",
-          "p": 879.99,
+          "p": 829.99,
           "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "39",
-          "p": 879.99,
+          "p": 829.99,
           "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "40",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "41",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "42",
-          "p": 879.99,
+          "p": 829.99,
           "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "43",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "44",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "45",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "46",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "47",
-          "p": 879.99,
+          "p": 829.99,
           "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "48",
-          "p": 879.99,
+          "p": 829.99,
           "c": 1099.99,
           "x": null,
           "a": false
         },
         {
           "t": "49",
-          "p": 1100.0,
-          "c": 1100.0,
+          "p": 829.99,
+          "c": 1099.99,
           "x": null,
           "a": false
         }
@@ -4629,8 +4451,8 @@
         },
         {
           "t": "38",
-          "p": 750.0,
-          "c": 750.0,
+          "p": 299.99,
+          "c": 749.99,
           "x": null,
           "a": false
         },
@@ -4685,8 +4507,8 @@
         },
         {
           "t": "46",
-          "p": 299.99,
-          "c": 749.99,
+          "p": 750.0,
+          "c": 750.0,
           "x": null,
           "a": false
         }
@@ -4709,8 +4531,8 @@
       "variantes": [
         {
           "t": "34",
-          "p": 750.0,
-          "c": 750.0,
+          "p": 299.99,
+          "c": 749.99,
           "x": null,
           "a": false
         },
@@ -4779,8 +4601,8 @@
         },
         {
           "t": "44",
-          "p": 750.0,
-          "c": 750.0,
+          "p": 299.99,
+          "c": 749.99,
           "x": null,
           "a": false
         },
@@ -4838,15 +4660,15 @@
         },
         {
           "t": "37",
-          "p": 399.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
         {
           "t": "38",
-          "p": 399.99,
-          "c": 799.99,
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         },
@@ -5125,114 +4947,6 @@
       ]
     },
     {
-      "id": "2027153",
-      "titulo": "Tênis Puma  ´Energy Drink´ Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma--energy-drink--masculino-38765-6-001/p",
-      "ref": "38765-6-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2024-04-17T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/276666/38765-6-001-1.jpg?v=637979880332900000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/276898/38765-6-001-2.jpg?v=637979883312600000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/277050/38765-6-001-3.jpg?v=637979884287000000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/277263/38765-6-001-4.jpg?v=637979884730300000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 299.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2027154",
       "titulo": "Tênis Puma Xetic Sculpt Beyond Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-xetic-sculpt-beyond-masculino-38765-8-001/p",
@@ -5465,8 +5179,8 @@
       "variantes": [
         {
           "t": "34",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 399.99,
+          "c": 799.99,
           "x": null,
           "a": false
         },
@@ -5542,8 +5256,8 @@
         },
         {
           "t": "45",
-          "p": 800.0,
-          "c": 800.0,
+          "p": 399.99,
+          "c": 799.99,
           "x": null,
           "a": false
         },
@@ -6113,8 +5827,8 @@
         },
         {
           "t": "43",
-          "p": 550.0,
-          "c": 550.0,
+          "p": 269.99,
+          "c": 549.99,
           "x": null,
           "a": false
         },
@@ -6274,6 +5988,79 @@
       ]
     },
     {
+      "id": "2027177",
+      "titulo": "Tênis Puma Slipstream Lth Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-slipstream-lth-masculino-39176-4-004/p",
+      "ref": "39176-4-004",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2022-05-23T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/416629/39176-4-004-1.jpg?v=638252039143700000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/416927/39176-4-004-2.jpg?v=638252041015270000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/417225/39176-4-004-3.jpg?v=638252042484600000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/417502/39176-4-004-4.jpg?v=638252044276430000"
+      ],
+      "variantes": [
+        {
+          "t": "37",
+          "p": 449.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 449.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 449.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 449.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 449.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 449.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 449.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 449.99,
+          "c": 599.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2027178",
       "titulo": "Tênis Puma Slipstream Lth Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-slipstream-lth-masculino-39176-4-014/p",
@@ -6377,8 +6164,8 @@
         },
         {
           "t": "36",
-          "p": 600.0,
-          "c": 600.0,
+          "p": 279.99,
+          "c": 599.99,
           "x": null,
           "a": false
         },
@@ -6529,79 +6316,6 @@
           "t": "44",
           "p": 349.99,
           "c": 699.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2027182",
-      "titulo": "Tênis Puma Slipstream Mix Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-slipstream-mix-maculino-39176-7-003/p",
-      "ref": "39176-7-003",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2022-05-23T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/319570/39176-7-003-1.jpg?v=638060180988800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/319725/39176-7-003-2.jpg?v=638060181584030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/319879/39176-7-003-3.jpg?v=638060182201570000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/320030/39176-7-003-4.jpg?v=638060182823500000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 299.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 299.99,
-          "c": 599.99,
           "x": null,
           "a": false
         }
@@ -6775,86 +6489,6 @@
         {
           "t": "37",
           "p": 199.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2028252",
-      "titulo": "Tênis Puma Caven BDP Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-caven-bdp-masculino-38431-5-001/p",
-      "ref": "38431-5-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2022-04-19T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/370600/38431-5-001-1.jpg?v=638161425873600000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/370836/38431-5-001-2.jpg?v=638161427135570000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/371176/38431-5-001-4.jpg?v=638161428651800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/371242/38431-5-001-3.jpg?v=638161428776530000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 159.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 159.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 159.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 159.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 159.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 159.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 159.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 159.99,
-          "c": 449.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 159.99,
           "c": 449.99,
           "x": null,
           "a": false
@@ -7243,6 +6877,135 @@
           "t": "49",
           "p": 839.99,
           "c": 1099.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2029698",
+      "titulo": "Tênis Puma Court Rider Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-court-rider-masculino-37826-5-001/p",
+      "ref": "37826-5-001",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2022-11-17T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/360430/37826-5-001-1.jpg?v=638140493858900000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/360858/37826-5-001-2.jpg?v=638140496159330000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/361032/37826-5-001-3.jpg?v=638140496820630000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/361671/37826-5-001-5.jpg?v=638140505315100000"
+      ],
+      "variantes": [
+        {
+          "t": "34",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "35",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "36",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "46",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 800.0,
+          "c": 800.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "49",
+          "p": 800.0,
+          "c": 800.0,
           "x": null,
           "a": false
         }
@@ -7980,8 +7743,8 @@
         },
         {
           "t": "44",
-          "p": 899.99,
-          "c": 1299.99,
+          "p": 1300.0,
+          "c": 1300.0,
           "x": null,
           "a": false
         },
@@ -8152,129 +7915,108 @@
       ]
     },
     {
-      "id": "2029708",
-      "titulo": "Tênis Puma MB.01 Digital Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-mb-01-digital-masculino-37921-7-001/p",
-      "ref": "37921-7-001",
+      "id": "2029715",
+      "titulo": "Tênis Puma Extent Nitro Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-extent-nitro-masculino-39019-2-001/p",
+      "ref": "39019-2-001",
       "tipo": "/Tênis/Masculino/Puma/ Tênis",
       "tags": [],
       "publicado": "2022-11-17T00:00:00Z",
       "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/367038/37921-7-001-1.jpg?v=638152615887570000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/367039/37921-7-001-2.jpg?v=638152615974000000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/367040/37921-7-001-3.jpg?v=638152616076870000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/367041/37921-7-001-4.jpg?v=638152616177330000"
+        "https://artwalk.vteximg.com.br/arquivos/ids/356113/39019-2-001-1.jpg?v=638133727867100000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/356114/39019-2-001-2.jpg?v=638133728393730000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/356115/39019-2-001-3.jpg?v=638133728603570000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/356116/39019-2-001-4.jpg?v=638133728779770000"
       ],
       "variantes": [
         {
           "t": "34",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "35",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "36",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "37",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "38",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "39",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "40",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "41",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "42",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "43",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "44",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "45",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         },
         {
           "t": "46",
-          "p": 679.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 679.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 679.99,
-          "c": 1299.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 679.99,
-          "c": 1299.99,
+          "p": 359.99,
+          "c": 999.99,
           "x": null,
           "a": false
         }
@@ -8497,114 +8239,6 @@
       ]
     },
     {
-      "id": "2029731",
-      "titulo": "Tênis Puma Clyde TM Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-clyde-tm-masculino-39214-0-001/p",
-      "ref": "39214-0-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2022-11-17T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/445518/39214-0-001-1.jpg?v=638297984691270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/445519/39214-0-001-2.jpg?v=638297984772430000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/445520/39214-0-001-3.jpg?v=638297984891770000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/445521/39214-0-001-4.jpg?v=638297984985200000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2029735",
       "titulo": "Tênis Puma Slipstream Suede Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-slipstream-suede-masculino-39428-2-001/p",
@@ -8621,8 +8255,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 550.0,
-          "c": 550.0,
+          "p": 379.99,
+          "c": 549.99,
           "x": null,
           "a": false
         },
@@ -8701,8 +8335,8 @@
       "variantes": [
         {
           "t": "37",
-          "p": 379.99,
-          "c": 549.99,
+          "p": 550.0,
+          "c": 550.0,
           "x": null,
           "a": false
         },
@@ -8866,107 +8500,6 @@
       ]
     },
     {
-      "id": "2029739",
-      "titulo": "Tênis Puma Slipstream Premium Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-slipstream-premium-masculino-39428-3-002/p",
-      "ref": "39428-3-002",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2022-11-17T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/418469/39428-3-002-1.jpg?v=638252049577130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/418874/39428-3-002-2.jpg?v=638252052292800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/419278/39428-3-002-3.jpg?v=638252054836330000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/419664/39428-3-002-4.jpg?v=638252057196130000"
-      ],
-      "variantes": [
-        {
-          "t": "37",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "34",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 599.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2029740",
       "titulo": "Tênis Puma Slipstream Always On Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-slipstream-always-on-masculino-39428-5-002/p",
@@ -9048,107 +8581,6 @@
           "t": "43",
           "p": 279.99,
           "c": 599.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2029745",
-      "titulo": "Tênis Puma RS-X 3D Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-rs-x-3d-feminino-39431-1-001/p",
-      "ref": "39431-1-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2024-04-16T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/372352/39431-1-001-1.jpg?v=638163208729470000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/372353/39431-1-001-2.jpg?v=638163208815970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/372354/39431-1-001-3.jpg?v=638163208922930000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/372355/39431-1-001-4.jpg?v=638163209006000000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 299.99,
-          "c": 699.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 299.99,
-          "c": 699.99,
           "x": null,
           "a": false
         }
@@ -9467,8 +8899,8 @@
       "variantes": [
         {
           "t": "34",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 309.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
@@ -9530,15 +8962,15 @@
         },
         {
           "t": "43",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 309.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
         {
           "t": "44",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 309.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
@@ -9551,8 +8983,8 @@
         },
         {
           "t": "46",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 309.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
@@ -9789,6 +9221,316 @@
       ]
     },
     {
+      "id": "2031869",
+      "titulo": "Tênis Puma MB.02 Lo Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-mb-02-lo-masculino-37776-6-002/p",
+      "ref": "37776-6-002",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/455604/37776-6-002-1.jpg?v=638326305768230000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/456324/37776-6-002-2.jpg?v=638326309389000000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/457044/37776-6-002-3.jpg?v=638326312700270000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/457764/37776-6-002-4.jpg?v=638326316477300000"
+      ],
+      "variantes": [
+        {
+          "t": "34",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "35",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "36",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "49",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2031870",
+      "titulo": "Tênis Puma MB.02 Lo Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-mb-02-lo-masculino-37776-6-004/p",
+      "ref": "37776-6-004",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/455619/37776-6-004-1.jpg?v=638326305827500000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/456339/37776-6-004-2.jpg?v=638326309449130000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/457059/37776-6-004-3.jpg?v=638326312787170000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/457779/37776-6-004-4.jpg?v=638326316535370000"
+      ],
+      "variantes": [
+        {
+          "t": "34",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "35",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "36",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "49",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2031871",
+      "titulo": "Tênis Puma MB.03 Toxic Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-mb-03-toxic-masculino-37891-6-001/p",
+      "ref": "37891-6-001",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2023-06-20T03:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/468933/37891-6-001-1.jpg?v=638355956099900000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/468934/37891-6-001-2.jpg?v=638355956191800000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/468935/37891-6-001-3.jpg?v=638355956284470000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/468936/37891-6-001-4.jpg?v=638355956357700000"
+      ],
+      "variantes": [
+        {
+          "t": "42",
+          "p": 1099.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 1099.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 1099.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 1099.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 1099.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 1099.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "49",
+          "p": 1099.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2031879",
       "titulo": "Tênis Puma MB.03 Blue Hive Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-mb-03-blue-hive-masculino-37922-1-001/p",
@@ -9911,6 +9653,135 @@
         {
           "t": "46",
           "p": 799.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2031880",
+      "titulo": "Tênis Puma MB.03 Hills Masculino",
+      "url": "https://www.artwalk.com.br/tenis-puma-mb-03-hills-masculino-37923-5-001/p",
+      "ref": "37923-5-001",
+      "tipo": "/Tênis/Masculino/Puma/ Tênis",
+      "tags": [],
+      "publicado": "2023-06-20T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/471774/37923-5-001-1.jpg?v=638374801689670000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/471850/37923-5-001-2.jpg?v=638374802113470000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/471926/37923-5-001-3.jpg?v=638374802685300000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/472002/37923-5-001-4.jpg?v=638374803200700000"
+      ],
+      "variantes": [
+        {
+          "t": "34",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "35",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "36",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "47",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "48",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "49",
+          "p": 549.99,
+          "c": 1099.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "46",
+          "p": 549.99,
           "c": 1099.99,
           "x": null,
           "a": false
@@ -10941,8 +10812,8 @@
         },
         {
           "t": "37",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 489.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
@@ -10962,8 +10833,8 @@
         },
         {
           "t": "40",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 489.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
@@ -10997,8 +10868,8 @@
         },
         {
           "t": "45",
-          "p": 489.99,
-          "c": 699.99,
+          "p": 700.0,
+          "c": 700.0,
           "x": null,
           "a": false
         }
@@ -11460,8 +11331,8 @@
         },
         {
           "t": "43",
-          "p": 629.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -11474,8 +11345,8 @@
         },
         {
           "t": "45",
-          "p": 629.99,
-          "c": 999.99,
+          "p": 1000.0,
+          "c": 1000.0,
           "x": null,
           "a": false
         },
@@ -11561,8 +11432,8 @@
         },
         {
           "t": "42",
-          "p": 549.99,
-          "c": 649.99,
+          "p": 650.0,
+          "c": 650.0,
           "x": null,
           "a": false
         },
@@ -12599,30 +12470,6 @@
           "t": "36",
           "p": 379.99,
           "c": 549.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2034051",
-      "titulo": "Mochila Puma X One Piece Masculino",
-      "url": "https://www.artwalk.com.br/mochila-puma-x-one-piece-masculino-09030-7-001/p",
-      "ref": "09030-7-001",
-      "tipo": "/Acessórios/Bolsas e Mochilas/Puma/ Mochilas",
-      "tags": [],
-      "publicado": "2024-04-01T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/491549/09030-7-001-1.jpg?v=638475793558270000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/491550/09030-7-001-2.jpg?v=638475793695230000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/491551/09030-7-001-3.jpg?v=638475793858230000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/491552/09030-7-001-4.jpg?v=638475794028600000"
-      ],
-      "variantes": [
-        {
-          "t": "U",
-          "p": 399.99,
-          "c": 399.99,
           "x": null,
           "a": false
         }
@@ -14765,208 +14612,6 @@
       ]
     },
     {
-      "id": "2034990",
-      "titulo": "Tênis Puma Suede XL Skateserve",
-      "url": "https://www.artwalk.com.br/tenis-puma-rs-x-unissex-39724-3-001/p",
-      "ref": "39724-3-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2024-06-07T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/512948/39724-3-001-1.jpg?v=638490714056100000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/513129/39724-3-001-2.jpg?v=638490716513130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/513310/39724-3-001-3.jpg?v=638490717414400000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/513484/39724-3-001-4.jpg?v=638490718413500000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 649.99,
-          "c": 649.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 650.0,
-          "c": 650.0,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2035745",
-      "titulo": "Tênis Puma Suede XL Unissex",
-      "url": "https://www.artwalk.com.br/tenis-puma-suede-xl-unissex-39520-5-003/p",
-      "ref": "39520-5-003",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2024-01-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/524268/39520-5-003-1-800x1000.jpg?v=638514778736070000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/529354/39520-5-003-3-800x1000.jpg?v=638533852188800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/529355/39520-5-003-4-800x1000.jpg?v=638533852310970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/529356/39520-5-003-5-800x1000.jpg?v=638533852424730000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 439.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2035746",
       "titulo": "Tênis Puma Suede X One Piece Unissex",
       "url": "https://www.artwalk.com.br/tenis-puma-suede-x-one-piece-unissex-39652-5-001/p",
@@ -14990,8 +14635,8 @@
         },
         {
           "t": "35",
-          "p": 700.0,
-          "c": 700.0,
+          "p": 699.99,
+          "c": 699.99,
           "x": null,
           "a": false
         },
@@ -15025,8 +14670,8 @@
         },
         {
           "t": "40",
-          "p": 699.99,
-          "c": 699.99,
+          "p": 700.0,
+          "c": 700.0,
           "x": null,
           "a": false
         },
@@ -16629,135 +16274,6 @@
       ]
     },
     {
-      "id": "2037376",
-      "titulo": "Tênis Puma MB.04 1 Love Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-mb-04-1-love-masculino-31053-2-001/p",
-      "ref": "31053-2-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2024-08-05T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/568601/31053-2-001-1-AW-800x1000.jpg?v=638676221168900000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/568602/31053-2-001-2-AW-800x1000.jpg?v=638676221255970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/568603/31053-2-001-3-AW-800x1000.jpg?v=638676221427130000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/568604/31053-2-001-4-AW-800x1000.jpg?v=638676221545830000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 639.99,
-          "c": 1099.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2037378",
       "titulo": "Tênis Puma MB.04 Scooby Doo Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-mb-04-scooby-doo-masculino-31077-6-001/p",
@@ -17474,215 +16990,6 @@
       ]
     },
     {
-      "id": "2038033",
-      "titulo": "Tênis Puma Suede XL Unissex",
-      "url": "https://www.artwalk.com.br/tenis-puma-suede-xl-unissex-39520-5-026/p",
-      "ref": "39520-5-026",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2024-01-18T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/557892/39520-5-026-1-AW-800x1000.jpg?v=638640115854500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/557893/39520-5-026-2-AW-800x1000.jpg?v=638640116020330000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/557894/39520-5-026-3-AW-800x1000.jpg?v=638640116104170000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/557895/39520-5-026-4-AW-800x1000.jpg?v=638640116196800000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 329.99,
-          "c": 549.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2038463",
-      "titulo": "Tênis Puma LaFrancé 1 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-lafrance-1-masculino-31086-8-001/p",
-      "ref": "31086-8-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2024-10-25T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/561511/31086-8-001-1-AW-800x1000.jpg?v=638654755841300000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/561593/31086-8-001-2-AW-800x1000.jpg?v=638654759409470000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/561675/31086-8-001-3-AW-800x1000.jpg?v=638654759884730000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/561757/31086-8-001-4-AW-800x1000.jpg?v=638654761201970000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2040907",
       "titulo": "Tênis Puma MB.04 Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-mb-04-masculino-31130-7-001/p",
@@ -18328,128 +17635,6 @@
       ]
     },
     {
-      "id": "2040918",
-      "titulo": "Tênis Puma LaFrancé Butterfly Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-lafrance-butterfly-masculino-31133-3-002/p",
-      "ref": "31133-3-002",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2025-01-08T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/579265/31133-3-002-1-AW-800X1000.jpg?v=638955507947700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/579266/31133-3-002-2-AW-800X1000.jpg?v=638955507947700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/579267/31133-3-002-3-AW-800X1000.jpg?v=638955507947700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/579268/31133-3-002-4-AW-800X1000.jpg?v=638955507947830000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38.5",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40.5",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42.5",
-          "p": 799.99,
-          "c": 799.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2040919",
       "titulo": "Tênis Puma MB.03 Lo Teenage Mutant Ninja Turtle Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-mb-03-lo-tmnt-masculino-31132-7-001/p",
@@ -18828,135 +18013,6 @@
         "https://artwalk.vteximg.com.br/arquivos/ids/580139/31134-9-001-2-AW-800x1000.jpg?v=638864553482070000",
         "https://artwalk.vteximg.com.br/arquivos/ids/580140/31134-9-001-3-AW-800x1000.jpg?v=638864553554300000",
         "https://artwalk.vteximg.com.br/arquivos/ids/580141/31134-9-001-4-AW-800x1000.jpg?v=638864553628570000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "49",
-          "p": 539.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2040925",
-      "titulo": "Tênis Puma Scoot Zeros II Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-scoot-zeros-ii-masculino-31135-2-001/p",
-      "ref": "31135-2-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2025-01-08T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/576650/31135-2-001-1-AW-800x1000.jpg?v=638809268690630000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576704/31135-2-001-2-AW-800x1000.jpg?v=638809303347570000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576705/31135-2-001-3-AW-800x1000.jpg?v=638809303442630000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576706/31135-2-001-4-AW-800x1000.jpg?v=638809303582000000"
       ],
       "variantes": [
         {
@@ -21001,222 +20057,6 @@
       ]
     },
     {
-      "id": "2040956",
-      "titulo": "Tênis Puma RS-X Efekt Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-rs-x-efekt-masculino-40126-5-001/p",
-      "ref": "40126-5-001",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2025-01-08T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/577975/40126-5-001-1-AW-800X1000.jpg?v=638823148224700000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577976/40126-5-001-2-AW-800X1000.jpg?v=638823148327800000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577977/40126-5-001-3-AW-800X1000.jpg?v=638823148445970000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577978/40126-5-001-4-AW-800X1000.jpg?v=638823148550570000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 599.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2040957",
-      "titulo": "Tênis Puma RS-X Efekt Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-rs-x-efekt-masculino-40126-5-002/p",
-      "ref": "40126-5-002",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2025-01-08T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/578185/40126-5-002-1-AW-800x1000.jpg?v=638842300601730000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578186/40126-5-002-2-AW-800x1000.jpg?v=638842300601730000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578187/40126-5-002-3-AW-800x1000.jpg?v=638842300601900000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/578188/40126-5-002-4-AW-800x1000.jpg?v=638842300601900000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 449.99,
-          "c": 749.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2040958",
       "titulo": "Tênis Puma Suede Xl 2 Teenage Mutant Ninja Turtle Masculino",
       "url": "https://www.artwalk.com.br/tenis-puma-suede-xl-2-tmnt-masculino-40130-5-001/p",
@@ -21859,114 +20699,6 @@
           "t": "46",
           "p": 389.99,
           "c": 649.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "2040967",
-      "titulo": "Tênis Puma Ca Pro Rain Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-ca-pro-rain-masculino-40209-5-002/p",
-      "ref": "40209-5-002",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2025-01-08T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/577739/40209-5-002-1-AW-800x1000.jpg?v=638821632730830000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577740/40209-5-002-2-AW-800x1000.jpg?v=638821632806100000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577741/40209-5-002-3-AW-800x1000.jpg?v=638821632887300000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/577742/40209-5-002-4-AW-800x1000.jpg?v=638821632978700000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 249.99,
-          "c": 599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 249.99,
-          "c": 599.99,
           "x": null,
           "a": false
         }
@@ -24573,128 +23305,6 @@
       ]
     },
     {
-      "id": "2045393",
-      "titulo": "Tênis Puma LaFrancé RNNR Masculino",
-      "url": "https://www.artwalk.com.br/tenis-puma-lafrance-rnnr-masculino-31227-4-003/p",
-      "ref": "31227-4-003",
-      "tipo": "/Tênis/Masculino/Puma/ Tênis",
-      "tags": [],
-      "publicado": "2025-11-26T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/592947/31227-4-003-1-800x1000.jpg?v=639047723495630000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/592948/puma-lafrance-rnr-dusky-gray.jpg?v=639047723496600000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/592949/31227-4-003-2-800x1000.jpg?v=639047723497030000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/592950/31227-4-003-3-800x1000.jpg?v=639047723497200000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "37",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "45",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 449.99,
-          "c": 899.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2046405",
       "titulo": "Tênis Puma Suede XL Nippon Unissex",
       "url": "https://www.artwalk.com.br/tenis-puma-suede-xl-nippon-unissex-40322-8-001/p",
@@ -25971,8 +24581,8 @@
           "t": "43",
           "p": 749.99,
           "c": 1299.99,
-          "x": 749.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "44",

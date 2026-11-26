@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-25T23:47:17Z",
+  "atualizado": "2026-11-26T11:54:42Z",
   "produtos": [
     {
       "id": "48380",
@@ -2782,6 +2782,50 @@
       ]
     },
     {
+      "id": "55722",
+      "titulo": "Camiseta New balance Premium Logo Masculina",
+      "url": "https://www.authenticfeet.com.br/camiseta-new-balance-premium-logo-masculina-23394-9-100/p",
+      "ref": "23394-9-100",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2024-07-22T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483181/23394-9-100-1-AF-800X1000.jpg?v=638633005082670000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483182/23394-9-100-2-AF-800X1000.jpg?v=638633005204930000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/483183/23394-9-100-3-AF-800X1000.jpg?v=638633005328470000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 109.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 109.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 109.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 109.99,
+          "c": 169.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "55866",
       "titulo": "Camiseta New Balance Masculina",
       "url": "https://www.authenticfeet.com.br/camiseta-new-balance-masculina-mt509-b-001/p",
@@ -3776,6 +3820,65 @@
           "t": "43",
           "p": 719.99,
           "c": 1199.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "58830",
+      "titulo": "Tênis New Balance 1906 Unissex",
+      "url": "https://www.authenticfeet.com.br/tenis-new-balance-1906-unissex-27782-6-400/p",
+      "ref": "27782-6-400",
+      "tipo": "/Tênis/Masculino/New Balance/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-27T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/506103/27782-6-400-1-AF-800X1000.jpg?v=638961480602800000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/506104/27782-6-400-2-AF-800X1000.jpg?v=638961480686030000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/506105/27782-6-400-3-AF-800X1000.jpg?v=638961480780470000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/506106/27782-6-400-4-AF-800X1000.jpg?v=638961480892830000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 599.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 599.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 599.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 599.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 599.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 599.99,
+          "c": 999.99,
           "x": null,
           "a": false
         }
@@ -6094,8 +6197,8 @@
           "t": "41",
           "p": 299.99,
           "c": 579.99,
-          "x": 299.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "42",
@@ -7571,8 +7674,8 @@
           "t": "P",
           "p": 199.99,
           "c": 279.99,
-          "x": 199.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "GGG",
@@ -9073,8 +9176,8 @@
           "t": "35",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1234.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "36",
@@ -10131,8 +10234,8 @@
           "t": "38",
           "p": 399.99,
           "c": 799.99,
-          "x": 399.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "39",
@@ -10381,8 +10484,8 @@
           "t": "37",
           "p": 479.99,
           "c": 749.99,
-          "x": 479.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "38",
@@ -12570,8 +12673,8 @@
           "t": "37",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1234.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "38",
@@ -12758,8 +12861,8 @@
           "t": "37",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1234.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "38",
