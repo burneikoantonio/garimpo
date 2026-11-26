@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-26T15:57:16Z",
+  "atualizado": "2026-11-26T19:59:18Z",
   "produtos": [
     {
       "id": "16020",
@@ -257,15 +257,15 @@
         },
         {
           "t": "38",
-          "p": 239.99,
-          "c": 579.99,
+          "p": 580.0,
+          "c": 580.0,
           "x": null,
           "a": false
         },
         {
           "t": "39",
-          "p": 239.99,
-          "c": 579.99,
+          "p": 580.0,
+          "c": 580.0,
           "x": null,
           "a": false
         },
@@ -278,8 +278,8 @@
         },
         {
           "t": "41",
-          "p": 580.0,
-          "c": 580.0,
+          "p": 239.99,
+          "c": 579.99,
           "x": null,
           "a": false
         },
@@ -2309,65 +2309,6 @@
       ]
     },
     {
-      "id": "2031740",
-      "titulo": "Tênis New Balance 550 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-new-balance-550-masculino-b50ph-b-300/p",
-      "ref": "B50PH-B-300",
-      "tipo": "/Tênis/Masculino/New Balance/ Tênis",
-      "tags": [],
-      "publicado": "2023-06-06T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/461359/B50PH-B-300-1.jpg?v=638337538168000000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/461452/B50PH-B-300-2.jpg?v=638337538921470000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/461545/B50PH-B-300-3.jpg?v=638337539721200000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/461638/B50PH-B-300-4.jpg?v=638337540481930000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 399.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2031742",
       "titulo": "Tênis New Balance 550 Masculino",
       "url": "https://www.artwalk.com.br/tenis-new-balance-550-masculino-b50pw-g-100/p",
@@ -3786,7 +3727,7 @@
     {
       "id": "2033668",
       "titulo": "Blusão New Balance Masculino",
-      "url": "https://www.artwalk.com.br/casaco-new-balance-masculino-m1507-b-001/p",
+      "url": "https://www.artwalk.com.br/blusao-new-balance-masculino-m1507-b-001/p",
       "ref": "M1507-B-001",
       "tipo": "/Roupas/Masculino/Blusões/ Blusões",
       "tags": [],
@@ -3837,7 +3778,7 @@
     {
       "id": "2033669",
       "titulo": "Blusão New Balance Masculino",
-      "url": "https://www.artwalk.com.br/casaco-new-balance-masculino-m1507-b-200/p",
+      "url": "https://www.artwalk.com.br/blusao-new-balance-masculino-m1507-b-200/p",
       "ref": "M1507-B-200",
       "tipo": "/Roupas/Masculino/Blusões/ Blusões",
       "tags": [],
@@ -5184,9 +5125,61 @@
       ]
     },
     {
+      "id": "2035702",
+      "titulo": "Bermuda New Balance Essentials Masculina",
+      "url": "https://www.artwalk.com.br/bermuda-new-balance-essentials-masculina-m1520-b-001/p",
+      "ref": "M1520-B-001",
+      "tipo": "/Roupas/Masculino/Bermudas e Shorts/ Bermudas",
+      "tags": [],
+      "publicado": "2024-04-30T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/694049/M1520-B-001-1-800x1000.jpg?v=639313097129500000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/694050/M1520-B-001-2-800x1000.jpg?v=639313097129830000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/694051/M1520-B-001-3-800x1000.jpg?v=639313097129830000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/694052/M1520-B-001-4-800x1000.jpg?v=639313097130000000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 179.99,
+          "c": 229.99,
+          "x": 179.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 179.99,
+          "c": 229.99,
+          "x": 179.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 179.99,
+          "c": 229.99,
+          "x": 179.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 179.99,
+          "c": 229.99,
+          "x": 179.99,
+          "a": true
+        },
+        {
+          "t": "GGG",
+          "p": 179.99,
+          "c": 229.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2035780",
       "titulo": "Blusão New Balance Small Masculina",
-      "url": "https://www.artwalk.com.br/blusa-new-balance-small-com-capuz-masculina-17757-9-001/p",
+      "url": "https://www.artwalk.com.br/blusao-new-balance-small-masculina-17757-9-001/p",
       "ref": "17757-9-001",
       "tipo": "/Roupas/Masculino/Blusões/ Blusões",
       "tags": [],
@@ -6930,6 +6923,50 @@
       ]
     },
     {
+      "id": "2036882",
+      "titulo": "Camiseta New balance Essentials Masculina",
+      "url": "https://www.artwalk.com.br/camiseta-new-balance-essentials-masculina-17751-2-100/p",
+      "ref": "17751-2-100",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2024-07-22T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/581162/17751-2-100-1-AW-800x1000.jpg?v=638884458841170000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/581163/17751-2-100-2-AW-800x1000.jpg?v=638884458841170000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/581164/17751-2-100-3-AW-800x1000.jpg?v=638884458841170000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 79.99,
+          "c": 129.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 79.99,
+          "c": 129.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 79.99,
+          "c": 129.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 79.99,
+          "c": 129.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2036889",
       "titulo": "Tênis New balance 530 Unissex",
       "url": "https://www.artwalk.com.br/tenis-new-balance-530-unissex-23101-9-100/p",
@@ -7160,8 +7197,8 @@
         },
         {
           "t": "38",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 1199.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -7195,8 +7232,8 @@
         },
         {
           "t": "43",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 1199.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -8065,6 +8102,93 @@
       ]
     },
     {
+      "id": "2040647",
+      "titulo": "Tênis New Balance 740 Unissex",
+      "url": "https://www.artwalk.com.br/tenis-new-balance-740-unissex-27778-5-600/p",
+      "ref": "27778-5-600",
+      "tipo": "/Tênis/Masculino/New Balance/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-27T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/576125/27778-5-600-1-AW-800x1000.jpg?v=638923424258870000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/576126/27778-5-600-2-AW-800x1000.jpg?v=638923424258870000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/576127/27778-5-600-3-AW-800x1000.jpg?v=638923424258870000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/576128/27778-5-600-4-AW-800x1000.jpg?v=638923424259030000"
+      ],
+      "variantes": [
+        {
+          "t": "34",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "35",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "36",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 524.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2040648",
       "titulo": "Tênis New Balance 1906 Unissex",
       "url": "https://www.artwalk.com.br/tenis-new-balance-1906-unissex-27782-1-600/p",
@@ -8499,6 +8623,65 @@
       ]
     },
     {
+      "id": "2040661",
+      "titulo": "Tênis New Balance 1000 Masculino",
+      "url": "https://www.artwalk.com.br/tenis-new-balance-1000-masculino-27336-3-200/p",
+      "ref": "27336-3-200",
+      "tipo": "/Tênis/Masculino/New Balance/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-27T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/579029/27336-3-200-1-AW-800X1000.jpg?v=638840642341570000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/579030/27336-3-200-2-AW-800X1000.jpg?v=638840642411030000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/579031/27336-3-200-3-AW-800X1000.jpg?v=638840642511230000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/579032/27336-3-200-4-AW-800X1000.jpg?v=638840642682270000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 999.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2040662",
       "titulo": "Tênis New Balance 1000 Masculino",
       "url": "https://www.artwalk.com.br/tenis-new-balance-1000-masculino-27467-7-001/p",
@@ -8868,6 +9051,65 @@
       ]
     },
     {
+      "id": "2040685",
+      "titulo": "Tênis New Balance CT500 Masculino",
+      "url": "https://www.artwalk.com.br/tenis-new-balance-ct500-masculino-27509-5-001/p",
+      "ref": "27509-5-001",
+      "tipo": "/Tênis/Masculino/New Balance/ Tênis",
+      "tags": [],
+      "publicado": "2024-12-27T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/578605/27509-5-001-1-AW-800x1000.jpg?v=638830234568070000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/578606/27509-5-001-2-AW-800x1000.jpg?v=638830234568070000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/578607/27509-5-001-3-AW-800x1000.jpg?v=638830234568200000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/578608/27509-5-001-4-AW-800x1000.jpg?v=638830234568200000"
+      ],
+      "variantes": [
+        {
+          "t": "38",
+          "p": 419.99,
+          "c": 699.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 419.99,
+          "c": 699.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 419.99,
+          "c": 699.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 419.99,
+          "c": 699.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 419.99,
+          "c": 699.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 419.99,
+          "c": 699.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2040719",
       "titulo": "Bucket New Balance Unissex",
       "url": "https://www.artwalk.com.br/chapeu-new-balance-bucket-unissex-28760-2-100/p",
@@ -8885,6 +9127,140 @@
           "t": "U",
           "p": 99.99,
           "c": 229.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2040723",
+      "titulo": "Camiseta New Balance Athletics Masculina",
+      "url": "https://www.artwalk.com.br/camiseta-new-balance-athletics-masculina-28322-3-001/p",
+      "ref": "28322-3-001",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2024-12-28T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/581027/28322-3-001-1-AW-800x1000.jpg?v=638893069007570000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/581028/28322-3-001-2-AW-800x1000.jpg?v=638893069007730000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/581029/28322-3-001-3-AW-800x1000.jpg?v=638893069007730000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/581030/28322-3-001-4-AW-800x1000.jpg?v=638893069007730000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 99.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 99.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 99.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 99.99,
+          "c": 149.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2040725",
+      "titulo": "Camiseta New Balance Athletics Masculina",
+      "url": "https://www.artwalk.com.br/camiseta-new-balance-athletics-masculina-28322-5-001/p",
+      "ref": "28322-5-001",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2024-12-28T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/586278/28322-5-001-1-800X1000.jpg?v=638980562398170000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/586279/28322-5-001-2-800X1000.jpg?v=638980562515900000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/586280/28322-5-001-3-800X1000.jpg?v=638980562683030000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 69.99,
+          "c": 119.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 69.99,
+          "c": 119.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 69.99,
+          "c": 119.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 69.99,
+          "c": 119.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2040726",
+      "titulo": "Camiseta New Balance Athletics Masculina",
+      "url": "https://www.artwalk.com.br/camiseta-new-balance-athletics-masculina-28322-6-100/p",
+      "ref": "28322-6-100",
+      "tipo": "/Roupas/Masculino/Camisetas/ Camisetas",
+      "tags": [],
+      "publicado": "2024-12-28T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/586281/28322-6-100-1-800X1000.jpg?v=638980565710530000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/586282/28322-6-100-2-800X1000.jpg?v=638980565778270000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/586283/28322-6-100-3-800X1000.jpg?v=638980565867170000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/586284/28322-6-100-4-800X1000.jpg?v=638980565956600000"
+      ],
+      "variantes": [
+        {
+          "t": "G",
+          "p": 79.99,
+          "c": 119.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 79.99,
+          "c": 119.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 79.99,
+          "c": 119.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "P",
+          "p": 79.99,
+          "c": 119.99,
           "x": null,
           "a": false
         }
@@ -10204,8 +10580,8 @@
           "t": "41",
           "p": 599.99,
           "c": 999.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "42",
@@ -11157,8 +11533,8 @@
           "t": "37",
           "p": 479.99,
           "c": 749.99,
-          "x": 479.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "38",
@@ -11192,8 +11568,8 @@
           "t": "42",
           "p": 479.99,
           "c": 749.99,
-          "x": 479.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -11468,7 +11844,7 @@
     {
       "id": "2043211",
       "titulo": "Tênis New Balance 9060 Unissex",
-      "url": "https://www.artwalk.com.br/tenis-new-balance-9060-masculino-32508-1-001/p",
+      "url": "https://www.artwalk.com.br/tenis-new-balance-9060-unissex-32508-1-001/p",
       "ref": "32508-1-001",
       "tipo": "/Tênis/Masculino/New Balance/ Tênis",
       "tags": [],
@@ -11750,7 +12126,7 @@
     {
       "id": "2043214",
       "titulo": "Tênis New Balance 9060 Unissex",
-      "url": "https://www.artwalk.com.br/tenis-new-balance-9060-masculino-32512-1-001/p",
+      "url": "https://www.artwalk.com.br/tenis-new-balance-9060-unissex-32512-1-001/p",
       "ref": "32512-1-001",
       "tipo": "/Tênis/Masculino/New Balance/ Tênis",
       "tags": [],
@@ -13826,8 +14202,8 @@
           "t": "40",
           "p": 649.99,
           "c": 999.99,
-          "x": null,
-          "a": false
+          "x": 649.99,
+          "a": true
         },
         {
           "t": "41",
@@ -16609,8 +16985,8 @@
           "t": "37",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1234.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "38",

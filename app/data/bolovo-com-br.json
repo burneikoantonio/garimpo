@@ -2,8 +2,114 @@
   "marca": "Bolovo",
   "loja": "Site Bolovo",
   "site": "bolovo.com.br",
-  "atualizado": "2026-11-26T16:05:50Z",
+  "atualizado": "2026-11-26T20:07:12Z",
   "produtos": [
+    {
+      "id": "15251370803504",
+      "titulo": "Camiseta BLV GEAR Preta",
+      "url": "https://bolovo.com.br/products/camiseta-blv-gear-preta",
+      "ref": "",
+      "tipo": "",
+      "tags": [
+        "Adulto",
+        "Camisetas",
+        "Coleção Verão'27 Q3'26",
+        "manga-curta",
+        "Verão 27"
+      ],
+      "publicado": "2026-11-26T16:50:25-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/CamisetaBLVGEARPreta-Costas.jpg?v=1795722502",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/SUMMERBLV_BAIXAS_bysIRINO106.jpg?v=1795722502",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/CamisetaBLVGEARPreta-Frente.jpg?v=1795722502",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/2_42a970e6-2f06-4fe4-8db4-7266a1d1d3e9.png?v=1795722502"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        },
+        {
+          "t": "XGG",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "15251370672432",
+      "titulo": "Camiseta BLV GEAR Off White",
+      "url": "https://bolovo.com.br/products/camiseta-blv-gear-off-white",
+      "ref": "",
+      "tipo": "",
+      "tags": [
+        "Adulto",
+        "Camisetas",
+        "Coleção Verão'27 Q3'26",
+        "manga-curta",
+        "Verão 27"
+      ],
+      "publicado": "2026-11-26T16:47:37-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/CamisetaBLVGEAROffWhite-Costas.jpg?v=1795721739",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/336.png?v=1795722003",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/CamisetaBLVGEAROffWhite-Frente.jpg?v=1795721739",
+        "https://cdn.shopify.com/s/files/1/0984/5470/0336/files/337.png?v=1795722003"
+      ],
+      "variantes": [
+        {
+          "t": "P",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        },
+        {
+          "t": "XGG",
+          "p": 229.99,
+          "c": 229.99,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "15225778962736",
       "titulo": "Camiseta Expeditions Team Marrom",
@@ -1263,7 +1369,6 @@
         "Adulto",
         "Casacos",
         "Coleção Verão'27 Q3'26",
-        "Jaquetas",
         "Verão 27",
         "Windbreaker"
       ],
@@ -3802,6 +3907,7 @@
       "tags": [
         "Adulto",
         "Ativo",
+        "Dads shorts",
         "Shorts",
         "Swimwear",
         "Verão 27"
@@ -11321,7 +11427,7 @@
           "t": "M",
           "p": 1499.99,
           "c": 1499.99,
-          "a": true
+          "a": false
         },
         {
           "t": "G",
@@ -20049,6 +20155,8 @@
       "tipo": "",
       "tags": [
         "Camisetas",
+        "manga-curta",
+        "Regatas",
         "Verão'26",
         "Verão'26/Drop 1"
       ],

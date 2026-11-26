@@ -2,8 +2,72 @@
   "marca": "Carnan",
   "loja": "Site Carnan",
   "site": "carnan.com.br",
-  "atualizado": "2026-11-26T16:05:04Z",
+  "atualizado": "2026-11-26T20:06:29Z",
   "produtos": [
+    {
+      "id": "10167750689064",
+      "titulo": "Standard Twill Jacket - Navy",
+      "url": "https://carnan.com.br/products/standard-twill-jacket-navy",
+      "ref": "",
+      "tipo": "jackets/jaquetas",
+      "tags": [
+        "GERAL",
+        "jackets/jaquetas",
+        "standard",
+        "tops/parte de cima"
+      ],
+      "publicado": "2026-11-26T15:56:42-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0686/0675/5112/files/carnan-online_0001_Standard_Line-289911.jpg?v=1774903615",
+        "https://cdn.shopify.com/s/files/1/0686/0675/5112/files/redimensionado-standard-pt2_0001s_0001_CARNAN---LOOKBOOK---STANDART---FEV2026-by-FM2726.png?v=1774903615",
+        "https://cdn.shopify.com/s/files/1/0686/0675/5112/files/redimensionado-standard-pt2_0001s_0004_CARNAN---LOOKBOOK---STANDART---FEV2026-by-FM2606.png?v=1774903615",
+        "https://cdn.shopify.com/s/files/1/0686/0675/5112/files/carnan-online_0005_Standard_Line-28993.jpg?v=1774903615"
+      ],
+      "variantes": [
+        {
+          "t": "PP/XS",
+          "p": 849.00,
+          "c": 0.00,
+          "a": true
+        },
+        {
+          "t": "P/S",
+          "p": 849.00,
+          "c": 0.00,
+          "a": true
+        },
+        {
+          "t": "M/M",
+          "p": 849.00,
+          "c": 0.00,
+          "a": true
+        },
+        {
+          "t": "G/L",
+          "p": 849.00,
+          "c": 0.00,
+          "a": true
+        },
+        {
+          "t": "GG/XL",
+          "p": 849.00,
+          "c": 0.00,
+          "a": true
+        },
+        {
+          "t": "3G/XXL",
+          "p": 849.00,
+          "c": 0.00,
+          "a": false
+        },
+        {
+          "t": "4G/XXXL",
+          "p": 849.00,
+          "c": 0.00,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "10167753638184",
       "titulo": "Standard Hat",
@@ -2965,7 +3029,7 @@
           "t": "P/S",
           "p": 413.40,
           "c": 689.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M/M",
@@ -4364,7 +4428,7 @@
           "t": "Default Title",
           "p": 179.40,
           "c": 299.00,
-          "a": true
+          "a": false
         }
       ]
     },

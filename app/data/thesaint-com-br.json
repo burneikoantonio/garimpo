@@ -2,7 +2,7 @@
   "marca": "THESAINT",
   "loja": "Site THESAINT",
   "site": "thesaint.com.br",
-  "atualizado": "2026-11-26T16:05:41Z",
+  "atualizado": "2026-11-26T20:07:04Z",
   "produtos": [
     {
       "id": "10183386562851",
@@ -30,13 +30,13 @@
           "t": "PP / BLACK",
           "p": 139.20,
           "c": 348.00,
-          "a": false
+          "a": true
         },
         {
           "t": "GG / BLACK",
           "p": 139.20,
           "c": 348.00,
-          "a": false
+          "a": true
         },
         {
           "t": "P / BLACK",
@@ -250,7 +250,7 @@
           "t": "XGG / BLACK",
           "p": 99.20,
           "c": 248.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -393,31 +393,31 @@
           "t": "PP / GRAY",
           "p": 147.20,
           "c": 368.00,
-          "a": false
+          "a": true
         },
         {
           "t": "P / GRAY",
           "p": 147.20,
           "c": 368.00,
-          "a": false
+          "a": true
         },
         {
           "t": "M / GRAY",
           "p": 147.20,
           "c": 368.00,
-          "a": false
+          "a": true
         },
         {
           "t": "G / GRAY",
           "p": 147.20,
           "c": 368.00,
-          "a": false
+          "a": true
         },
         {
           "t": "GG / GRAY",
           "p": 147.20,
           "c": 368.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -462,7 +462,7 @@
           "t": "P / BLACK",
           "p": 159.20,
           "c": 398.00,
-          "a": false
+          "a": true
         },
         {
           "t": "M / BLACK",
@@ -486,7 +486,7 @@
           "t": "XGG / BLACK",
           "p": 159.20,
           "c": 398.00,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -7298,7 +7298,7 @@
           "t": "GG / STONED GREEN",
           "p": 119.20,
           "c": 298.00,
-          "a": false
+          "a": true
         },
         {
           "t": "P / STONED GREEN",
@@ -8279,7 +8279,7 @@
           "t": "G / OFF WHITE",
           "p": 107.20,
           "c": 268.00,
-          "a": true
+          "a": false
         },
         {
           "t": "XGG / OFF WHITE",
@@ -10793,7 +10793,7 @@
           "t": "M / OFF WHITE",
           "p": 91.20,
           "c": 228.00,
-          "a": false
+          "a": true
         },
         {
           "t": "G / OFF WHITE",
@@ -11120,7 +11120,7 @@
           "t": "G / OFF WHITE",
           "p": 147.20,
           "c": 368.00,
-          "a": false
+          "a": true
         },
         {
           "t": "XGG / OFF WHITE",
@@ -11539,7 +11539,7 @@
           "t": "G / STONED BROWN",
           "p": 147.20,
           "c": 368.00,
-          "a": true
+          "a": false
         },
         {
           "t": "GG / STONED BROWN",
@@ -11551,7 +11551,7 @@
           "t": "XGG / STONED BROWN",
           "p": 147.20,
           "c": 368.00,
-          "a": true
+          "a": false
         },
         {
           "t": "P / STONED BROWN",
@@ -12731,7 +12731,7 @@
           "t": "GG / OFF WHITE",
           "p": 79.20,
           "c": 198.00,
-          "a": true
+          "a": false
         },
         {
           "t": "XGG / OFF WHITE",
@@ -13073,7 +13073,7 @@
           "t": "GG / BLACK",
           "p": 71.20,
           "c": 178.00,
-          "a": false
+          "a": true
         },
         {
           "t": "P / BLACK",
@@ -13984,7 +13984,7 @@
           "t": "GG / AZUL",
           "p": 99.20,
           "c": 248.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M / AZUL",

@@ -2,7 +2,7 @@
   "marca": "Nike",
   "loja": "Overboard",
   "site": "www.overboard.com.br",
-  "atualizado": "2026-11-26T16:01:27Z",
+  "atualizado": "2026-11-26T20:03:16Z",
   "produtos": [
     {
       "id": "10020",
@@ -1816,30 +1816,6 @@
           "t": "43",
           "p": 349.9,
           "c": 649.9,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "12749",
-      "titulo": "Bolsa Unissex Nike Brasilia 9.5",
-      "url": "https://www.overboard.com.br/bolsa-unissex-nike-brasilia-95-0307321001/p",
-      "ref": "0307321001",
-      "tipo": "/Acessórios/Masculino/Mochilas/ ",
-      "tags": [],
-      "publicado": "2023-03-11T21:00:00Z",
-      "imagens": [
-        "https://overboard.vteximg.com.br/arquivos/ids/360646/bolsa-unissex-nike-brasilia-9.5-preta-dm3976-010-1.jpg?v=638139616499200000",
-        "https://overboard.vteximg.com.br/arquivos/ids/360647/bolsa-unissex-nike-brasilia-9.5-preta-dm3976-010-2.jpg?v=638139616653000000",
-        "https://overboard.vteximg.com.br/arquivos/ids/360648/bolsa-unissex-nike-brasilia-9.5-preta-dm3976-010-3.jpg?v=638139616911900000",
-        "https://overboard.vteximg.com.br/arquivos/ids/360649/bolsa-unissex-nike-brasilia-9.5-preta-dm3976-010-4.jpg?v=638139617112530000"
-      ],
-      "variantes": [
-        {
-          "t": "UNICO",
-          "p": 379.99,
-          "c": 379.99,
           "x": null,
           "a": false
         }
@@ -13016,8 +12992,8 @@
           "t": "G",
           "p": 139.99,
           "c": 139.99,
-          "x": 139.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "GG",

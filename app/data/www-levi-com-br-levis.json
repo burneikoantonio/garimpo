@@ -2,7 +2,7 @@
   "marca": "Levi's",
   "loja": "Site Levi's",
   "site": "www.levi.com.br",
-  "atualizado": "2026-11-26T15:56:08Z",
+  "atualizado": "2026-11-26T19:58:15Z",
   "produtos": [
     {
       "id": "10121",
@@ -175,10 +175,10 @@
         },
         {
           "t": "32X32 USA | 40 BR",
-          "p": 187.96,
+          "p": 469.9,
           "c": 469.9,
-          "x": 187.96,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "34X32 USA | 44 BR",
@@ -2673,8 +2673,8 @@
           "t": "38X34 USA | 48 BR",
           "p": 379.9,
           "c": 379.9,
-          "x": 379.9,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "42X34 USA | 52 BR",

@@ -2,7 +2,7 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-26T16:05:56Z",
+  "atualizado": "2026-11-26T20:07:18Z",
   "produtos": [
     {
       "id": "10701310656693",
@@ -2165,7 +2165,7 @@
           "t": "PRETO / GG",
           "p": 987.00,
           "c": 0,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -3174,7 +3174,7 @@
           "t": "OFF WHITE / GG",
           "p": 626.78,
           "c": 847.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -4020,48 +4020,6 @@
           "t": "ESTAMPADO / OV 2",
           "p": 1477.78,
           "c": 1997.00,
-          "a": false
-        }
-      ]
-    },
-    {
-      "id": "10553143886005",
-      "titulo": "Camisa Algodão Max Prega Vermelho",
-      "url": "https://handred.com.br/products/camisa-algodao-max-prega-vermelho",
-      "ref": "",
-      "tipo": "Camisas",
-      "tags": [
-        "CAMISAS",
-        "NOVIDADES",
-        "ROUPAS",
-        "SHOP",
-        "VERAO27",
-        "VERTUDO"
-      ],
-      "publicado": "2026-09-10T17:27:02-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/Copyofcamisaalgodaomaxpregavermelha_400.webp?v=1788889987",
-        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/Copyofcamisaalgodaomaxpregavermelha_402.webp?v=1788889987",
-        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/Copyofcamisaalgodaomaxpregavermelha_404.webp?v=1788889987",
-        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/Copyofcamisaalgodaomaxpregavermelha_403.webp?v=1788889987"
-      ],
-      "variantes": [
-        {
-          "t": "VERMELHO / OV 0",
-          "p": 1177.00,
-          "c": 0,
-          "a": false
-        },
-        {
-          "t": "VERMELHO / O1",
-          "p": 1177.00,
-          "c": 0,
-          "a": false
-        },
-        {
-          "t": "VERMELHO / O2",
-          "p": 1177.00,
-          "c": 0,
           "a": false
         }
       ]

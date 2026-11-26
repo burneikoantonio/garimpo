@@ -2,8 +2,111 @@
   "marca": "Piet",
   "loja": "Site Piet",
   "site": "piet.com.br",
-  "atualizado": "2026-11-26T16:05:05Z",
+  "atualizado": "2026-11-26T20:06:30Z",
   "produtos": [
+    {
+      "id": "9789255123173",
+      "titulo": "Cargo Canvas Tote Bag - Olive",
+      "url": "https://piet.com.br/products/cargo-canvas-tote-bag-khaki",
+      "ref": "",
+      "tipo": "Bolsas",
+      "tags": [
+        "PIET",
+        "SS26"
+      ],
+      "publicado": "2026-11-26T14:20:20-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Canvas-Tote-Bag-Khaki.webp?v=1793807304",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Canvas-Tote-Bag-Khaki-2.webp?v=1793807305",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Canvas-Tote-Bag-Khaki-3.webp?v=1793807306",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Canvas-Tote-Bag-Khaki-4.webp?v=1793807307"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 454.93,
+          "c": 649.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "9789254893797",
+      "titulo": "Cargo Canvas Tote Bag - Black",
+      "url": "https://piet.com.br/products/cargo-canvas-tote-bag-black",
+      "ref": "",
+      "tipo": "Bolsas",
+      "tags": [
+        "PIET",
+        "SS26"
+      ],
+      "publicado": "2026-11-26T14:20:20-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Canvas-Tote-Bag-Black.webp?v=1793807299",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Canvas-Tote-Bag-Black-2.webp?v=1793807301",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Canvas-Tote-Bag-Black-3.webp?v=1793807302",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Canvas-Tote-Bag-Black-4.webp?v=1793807303"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 454.93,
+          "c": 649.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "9789254631653",
+      "titulo": "Cargo Side Bag - Black",
+      "url": "https://piet.com.br/products/cargo-side-bag-black",
+      "ref": "",
+      "tipo": "Bolsas",
+      "tags": [
+        "PIET",
+        "SS26"
+      ],
+      "publicado": "2026-11-26T14:20:20-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Side-Bag-Black.webp?v=1793807285",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Side-Bag-Black-2.webp?v=1793807286",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Side-Bag-Black-3.webp?v=1793807287",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Side-Bag-Black-4.webp?v=1793807288"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 349.93,
+          "c": 499.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "9789254566117",
+      "titulo": "Cargo Side Bag - Olive",
+      "url": "https://piet.com.br/products/cargo-side-bag-khaki",
+      "ref": "",
+      "tipo": "Bolsas",
+      "tags": [
+        "PIET",
+        "SS26"
+      ],
+      "publicado": "2026-11-26T14:20:20-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Side-Bag-Khaki.webp?v=1793807282",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Side-Bag-Khaki-2.webp?v=1793807283",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Cargo-Side-Bag-Khaki-3.webp?v=1793807284"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 349.93,
+          "c": 499.90,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "9359628370149",
       "titulo": "Camiseta Manga Longa Piet + Oakley - Dark Tan",
@@ -828,7 +931,7 @@
           "t": "38BR | 28US",
           "p": 279.96,
           "c": 699.90,
-          "a": true
+          "a": false
         },
         {
           "t": "40BR | 30US",
@@ -5309,7 +5412,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 599.90,
+          "p": 419.93,
           "c": 599.90,
           "a": true
         }
@@ -5335,7 +5438,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 599.90,
+          "p": 419.93,
           "c": 599.90,
           "a": true
         }
@@ -6070,7 +6173,7 @@
           "t": "2XG | 2XL",
           "p": 139.95,
           "c": 279.90,
-          "a": true
+          "a": false
         },
         {
           "t": "3XG | 3XL",
