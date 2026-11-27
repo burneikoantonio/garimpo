@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-26T23:48:25Z",
+  "atualizado": "2026-11-27T11:49:59Z",
   "produtos": [
     {
       "id": "16020",
@@ -130,6 +130,65 @@
       ]
     },
     {
+      "id": "2027384",
+      "titulo": "Tênis New Balance 237 Masculino",
+      "url": "https://www.artwalk.com.br/tenis-new-balance-237-masculino-s237b-d-100/p",
+      "ref": "S237B-D-100",
+      "tipo": "/Tênis/Masculino/New Balance/ Tênis",
+      "tags": [],
+      "publicado": "2022-05-27T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/323773/S237B-D-100-1.jpg?v=638060302041400000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/328471/S237B-D-100-2.jpg?v=638060312738530000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/334053/S237B-D-100-3.jpg?v=638060334524030000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/337773/S237B-D-100-4.jpg?v=638060343174200000"
+      ],
+      "variantes": [
+        {
+          "t": "39",
+          "p": 249.99,
+          "c": 499.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 249.99,
+          "c": 499.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 249.99,
+          "c": 499.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 249.99,
+          "c": 499.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 249.99,
+          "c": 499.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 249.99,
+          "c": 499.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "2027388",
       "titulo": "Tênis New Balance 327 Masculino",
       "url": "https://www.artwalk.com.br/tenis-new-balance-327-masculino-s327l-n-001/p",
@@ -243,8 +302,8 @@
       "variantes": [
         {
           "t": "43",
-          "p": 239.99,
-          "c": 579.99,
+          "p": 580.0,
+          "c": 580.0,
           "x": null,
           "a": false
         },
@@ -600,6 +659,72 @@
           "t": "44",
           "p": 559.99,
           "c": 799.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2030542",
+      "titulo": "Tênis New Balance 650 Masculino",
+      "url": "https://www.artwalk.com.br/tenis-new-balance-650-masculino-b50rc-g-100/p",
+      "ref": "B50RC-G-100",
+      "tipo": "/Tênis/Masculino/New Balance/ Tênis",
+      "tags": [],
+      "publicado": "2023-01-11T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/372446/B50RC-G-100-1.jpg?v=638163874220600000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/372597/B50RC-G-100-2.jpg?v=638163875066630000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/372748/B50RC-G-100-3.jpg?v=638163875701730000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/372899/B50RC-G-100-4.jpg?v=638163876477170000"
+      ],
+      "variantes": [
+        {
+          "t": "39",
+          "p": 479.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 479.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 479.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 479.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 479.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 479.99,
+          "c": 1199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 479.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         }
@@ -4720,8 +4845,8 @@
           "t": "GG",
           "p": 69.99,
           "c": 249.99,
-          "x": null,
-          "a": false
+          "x": 69.99,
+          "a": true
         },
         {
           "t": "GGG",
@@ -8163,8 +8288,8 @@
       "variantes": [
         {
           "t": "34",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 1199.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -8198,8 +8323,8 @@
         },
         {
           "t": "40",
-          "p": 1199.99,
-          "c": 1199.99,
+          "p": 1200.0,
+          "c": 1200.0,
           "x": null,
           "a": false
         },
@@ -8212,8 +8337,8 @@
         },
         {
           "t": "42",
-          "p": 1200.0,
-          "c": 1200.0,
+          "p": 1199.99,
+          "c": 1199.99,
           "x": null,
           "a": false
         },
@@ -12317,8 +12442,8 @@
           "t": "42",
           "p": 479.99,
           "c": 749.99,
-          "x": 479.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -12651,7 +12776,7 @@
           "t": "40",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
+          "x": 1234.99,
           "a": false
         },
         {
@@ -14952,8 +15077,8 @@
           "t": "40",
           "p": 649.99,
           "c": 999.99,
-          "x": 649.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "41",
@@ -20748,8 +20873,8 @@
           "t": "42",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1234.99,
-          "a": true
+          "x": null,
+          "a": false
         }
       ]
     },
