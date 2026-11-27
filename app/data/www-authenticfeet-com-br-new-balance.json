@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-27T16:44:08Z",
+  "atualizado": "2026-11-27T17:30:18Z",
   "produtos": [
     {
       "id": "48380",
@@ -10684,8 +10684,8 @@
           "t": "44",
           "p": 749.99,
           "c": 1199.99,
-          "x": 749.99,
-          "a": true
+          "x": null,
+          "a": false
         }
       ]
     },
@@ -10743,8 +10743,8 @@
           "t": "43",
           "p": 599.99,
           "c": 1199.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "44",
@@ -15032,8 +15032,8 @@
           "t": "34",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1234.99,
+          "a": true
         },
         {
           "t": "35",

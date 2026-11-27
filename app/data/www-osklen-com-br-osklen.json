@@ -2,8 +2,88 @@
   "marca": "Osklen",
   "loja": "Site Osklen",
   "site": "www.osklen.com.br",
-  "atualizado": "2026-11-27T16:40:24Z",
+  "atualizado": "2026-11-27T17:26:25Z",
   "produtos": [
+    {
+      "id": "1",
+      "titulo": "Canvas ag sneaker masculino",
+      "url": "https://www.osklen.com.br/canvas-ag-sneaker-m-areia-66966-2510/p",
+      "ref": "669662510",
+      "tipo": "/Coleção/Masculino/Tênis/AG/ ",
+      "tags": [],
+      "publicado": "2020-06-27T15:27:00Z",
+      "imagens": [
+        "https://osklenbr.vteximg.com.br/arquivos/ids/475855/669662510_CANVAS-AG-SNEAKER-M_1.jpg?v=638404270649200000",
+        "https://osklenbr.vteximg.com.br/arquivos/ids/476139/669662510_CANVAS-AG-SNEAKER-M_2.jpg?v=638404272762930000",
+        "https://osklenbr.vteximg.com.br/arquivos/ids/476363/669662510_CANVAS-AG-SNEAKER-M_3.jpg?v=638404274531030000",
+        "https://osklenbr.vteximg.com.br/arquivos/ids/476594/669662510_CANVAS-AG-SNEAKER-M_4.jpg?v=638404276329830000"
+      ],
+      "variantes": [
+        {
+          "t": "39",
+          "p": 647.0,
+          "c": 647.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 647.0,
+          "c": 647.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 647.0,
+          "c": 647.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 647.0,
+          "c": 647.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 647.0,
+          "c": 647.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 647.0,
+          "c": 647.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 647.0,
+          "c": 647.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "37",
+          "p": 397.0,
+          "c": 647.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 397.0,
+          "c": 647.0,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "10",
       "titulo": "Canvas ag sneaker masculino",
@@ -25848,6 +25928,86 @@
       ]
     },
     {
+      "id": "24646",
+      "titulo": "Canvas ag sneaker masculino",
+      "url": "https://www.osklen.com.br/canvas-ag-sneaker-m-areia-66966-25220/p",
+      "ref": "6696625220",
+      "tipo": "/Coleção/Masculino/Tênis/AG/ ",
+      "tags": [],
+      "publicado": "2020-06-27T15:45:00Z",
+      "imagens": [
+        "https://osklenbr.vteximg.com.br/arquivos/ids/629523/6696625220_TENIS_1.jpg?v=638875823019200000",
+        "https://osklenbr.vteximg.com.br/arquivos/ids/629584/6696625220_TENIS_2.jpg?v=638875823244700000",
+        "https://osklenbr.vteximg.com.br/arquivos/ids/629813/6696625220_TENIS_3.jpg?v=638875832575470000",
+        "https://osklenbr.vteximg.com.br/arquivos/ids/629891/6696625220_TENIS_5.jpg?v=638875832872770000"
+      ],
+      "variantes": [
+        {
+          "t": "37",
+          "p": 697.0,
+          "c": 697.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "38",
+          "p": 697.0,
+          "c": 697.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "39",
+          "p": 697.0,
+          "c": 697.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 697.0,
+          "c": 697.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 697.0,
+          "c": 697.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 697.0,
+          "c": 697.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 697.0,
+          "c": 697.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 697.0,
+          "c": 697.0,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "45",
+          "p": 697.0,
+          "c": 697.0,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
       "id": "24650",
       "titulo": "Tênis trail trkk masculino",
       "url": "https://www.osklen.com.br/tenis-trail-trkk-masc-natural-74716-2524/p",
@@ -32338,8 +32498,8 @@
           "t": "P",
           "p": 167.0,
           "c": 247.0,
-          "x": 167.0,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "PP",
