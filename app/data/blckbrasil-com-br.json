@@ -2,29 +2,672 @@
   "marca": "Blck Brasil",
   "loja": "Site Blck Brasil",
   "site": "blckbrasil.com.br",
-  "atualizado": "2026-11-27T20:03:57Z",
+  "atualizado": "2026-11-27T23:57:35Z",
   "produtos": [
     {
-      "id": "10911903875383",
-      "titulo": "Boné Snapback Off White Indestructible",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-indestructible",
+      "id": "8215703486775",
+      "titulo": "Boné Snapback Aba Shine Black",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-aba-shine-black",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "MARATONA"
+      ],
+      "publicado": "2026-11-27T20:56:41-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B26_15a5ddf8-3a3f-4cd5-8865-46fa8935027f.jpg?v=1750087265",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B26-2_7affe840-d110-4e4c-afc2-a1b38c178be4.jpg?v=1750087265",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B26-3_9bd42017-c24f-458b-bea1-4a9730492902.jpg?v=1750087265"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / UN",
+          "p": 100.00,
+          "c": 199.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10560128844087",
+      "titulo": "Boné Snapback Suede Preto Unique Metal Copper",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-preto-unique-metal-copper",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "AVARIA",
+        "MARATONA"
+      ],
+      "publicado": "2026-11-27T20:35:29-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B66_f60934d2-070a-4394-a389-e321f349031b.jpg?v=1779217210",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B66-2_6ec118ba-9f74-4ae6-a59e-c3093b730b30.jpg?v=1779217209",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B66-3_0b680542-d5f9-492f-940e-c66dbec0e824.jpg?v=1779217209",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B66-4.jpg?v=1779217210"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / Único",
+          "p": 100.00,
+          "c": 349.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10560128909623",
+      "titulo": "Boné Snapback Suede Preto Unique Metal Silver",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-preto-unique-metal-silver",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "AVARIA",
+        "MARATONA"
+      ],
+      "publicado": "2026-11-27T20:35:18-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B65_4e0828be-c9eb-4dde-b0d9-64877803fecd.jpg?v=1779217205",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B65-2_1d22d9ab-0243-48d9-ac18-77cef495af9f.jpg?v=1779217204",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B65-3_9ac9b623-9343-418b-a213-0505b206cb6b.jpg?v=1779217204",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B65-4_30174e0d-577c-4cf7-8220-cb9a9738e324.jpg?v=1779217204"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / Único",
+          "p": 100.00,
+          "c": 349.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10560128942391",
+      "titulo": "Boné Snapback Suede Preto Unique Metal Gold",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-preto-unique-metal-gold",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "AVARIA",
+        "MARATONA"
+      ],
+      "publicado": "2026-11-27T20:35:08-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B67_9e3e6836-c77f-4f63-bffc-0f802a23ab29.jpg?v=1779217215",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B67-2_cb8756e9-e6da-465c-a1e5-6ab8ea0d5ced.jpg?v=1779217215",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B67-3_7e7684cb-1858-43da-9ff6-35da6ef44207.jpg?v=1779217215",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B67-4.jpg?v=1779217215"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / Único",
+          "p": 100.00,
+          "c": 349.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11006253334839",
+      "titulo": "Óculos BLCK Smile Branco",
+      "url": "https://blckbrasil.com.br/products/oculos-blck-smile-branco",
+      "ref": "",
+      "tipo": "",
+      "tags": [
+        "ACESSÓRIOS"
+      ],
+      "publicado": "2026-11-27T20:21:38-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/O32_41dc0bb5-a421-4300-b542-7bc140921d39.jpg?v=1791492090",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/O32-2_173f7f02-b28f-4635-bcf5-9c5c03080d22.jpg?v=1791492091",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/O32-3_69c84ade-0f3f-4269-b6a5-3a6982ef9c24.jpg?v=1791492090"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 199.90,
+          "c": 199.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10978986524983",
+      "titulo": "Boné Snapback Caramelo Halftone White",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-caramelo-halftone-white",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "HALFTONE",
+        "MARATONA",
+        "PRODUZIR"
+      ],
+      "publicado": "2026-11-27T19:31:59-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B16_fe9c89cf-72f3-4f4b-986e-3e87fef46320.jpg?v=1789885452"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 120.00,
+          "c": 199.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11015347994935",
+      "titulo": "Boné Snapback Cinza Aba Couro Black",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-cinza-aba-couro-black",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "MARATONA"
+      ],
+      "publicado": "2026-11-27T19:30:58-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B67_d3e9216d-8f3e-4288-90e3-d30ddcbbfa7a.jpg?v=1745868153",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B67-2_9f837b28-b0c3-47d7-a6bd-86fd163b5a3f.jpg?v=1745868547",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B67-3_65489fe4-ff33-4640-81e4-a9116aca8978.jpg?v=1745868547"
+      ],
+      "variantes": [
+        {
+          "t": "Cinza",
+          "p": 150.00,
+          "c": 219.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10239215239479",
+      "titulo": "Boné Snapback Basic Suede All Black 2.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-all-black-2-1",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "MARATONA"
+      ],
+      "publicado": "2026-11-27T19:04:44-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B41_67353821-93c5-4607-8a5a-70d8b1267acb.jpg?v=1750707474",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B41-2_321dd820-5a64-4df4-a064-0e8b1587832a.jpg?v=1750707474",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B41-3_550e6591-2c5b-441e-9845-af3123c680e4.jpg?v=1750707474"
+      ],
+      "variantes": [
+        {
+          "t": "Preto / Único",
+          "p": 150.00,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128403767",
+      "titulo": "Boné Snapback Suede Marrom Logo Black Piano",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-marrom-logo-black-piano-1",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:38-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B55_9fc263dd-22b1-4f7a-b6ea-92916e3a4348.jpg?v=1795815664",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B55-2_0a066813-106e-4311-b67c-239642c79ca0.jpg?v=1795815663",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B55-3_b91cefab-30eb-4aa7-b09b-912982a1a818.jpg?v=1795815663"
+      ],
+      "variantes": [
+        {
+          "t": "Marrom",
+          "p": 219.90,
+          "c": 219.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128370999",
+      "titulo": "Boné Snapback Suede Caramelo Logo Black Piano",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-caramelo-logo-black-piano",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:38-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B30_bb6c2e22-12db-4698-a393-eb26237f4d92.jpg?v=1795815655",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B30-2_c06dd8b9-10e5-4175-9877-a9d03ea9bea9.jpg?v=1795815655",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B30-3_84cfbf9e-1010-4023-9281-8a10b3b938b7.jpg?v=1795815655"
+      ],
+      "variantes": [
+        {
+          "t": "Caramelo",
+          "p": 219.90,
+          "c": 219.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128338231",
+      "titulo": "Boné Snapback Suede Coral Logo Black Piano",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-coral-logo-black-piano",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:38-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B39_03d51d13-ed2d-49c7-927e-cf3f9df81f4c.jpg?v=1795815647",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B39-2_af2a2499-ccc6-42c7-bddf-86f1129a82a1.jpg?v=1795815647",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B39-3_262c12c9-951d-455f-a2ea-6378fe00b2c1.jpg?v=1795815647"
+      ],
+      "variantes": [
+        {
+          "t": "Coral",
+          "p": 219.90,
+          "c": 219.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128305463",
+      "titulo": "Boné Snapback Suede Azul Bebê Logo Black Piano",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-azul-bebe-logo-black-piano",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:38-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B29_1782ec95-74ad-4dd2-a87a-1e17d1a3942e.jpg?v=1795815635",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B29-2_9a433963-3e47-4ee2-bc6c-26adf3b6074c.jpg?v=1795815635",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B29-3_a038d4ca-247d-48d4-9ee2-10372d8ed0c7.jpg?v=1795815635"
+      ],
+      "variantes": [
+        {
+          "t": "Azul Bebê",
+          "p": 219.90,
+          "c": 219.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128502071",
+      "titulo": "Boné Snapback Suede Preto Logo Black Piano",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-preto-logo-black-piano",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:37-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B63_2ae4d728-2f84-4b05-9d5e-ca9e989f363c.jpg?v=1795815722",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B63-2_23b27037-3f7a-4470-a98b-33ca4ee35a3d.jpg?v=1795815722",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B63-3_1224a451-0259-4c25-a3be-7d3c0a6dfc10.jpg?v=1795815722"
+      ],
+      "variantes": [
+        {
+          "t": "Preto",
+          "p": 219.90,
+          "c": 219.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128436535",
+      "titulo": "Boné Snapback Suede Azul Marinho Logo Black Piano",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-azul-marinho-logo-black-piano-1",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:37-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3_1.jpg?v=1795815679",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3-2_244fa02a-01f2-4988-b752-1716321fd68e.jpg?v=1795815679",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B3-3_e89e7868-aa75-416e-950d-7f0b53292719.jpg?v=1795815679"
+      ],
+      "variantes": [
+        {
+          "t": "Azul Marinho",
+          "p": 219.90,
+          "c": 219.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128633143",
+      "titulo": "Boné Snapback Vermelho Wings Champagne",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-vermelho-wings-champagne",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:36-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45_da5e1815-a06f-49b1-91bc-09a0d91291c9.jpg?v=1795815812",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-2_0b5733d6-9abe-45a1-8453-899555bff079.jpg?v=1795815812",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B45-3_0c45bc86-f600-48c4-8a7a-764e6f5e600d.jpg?v=1795815812"
+      ],
+      "variantes": [
+        {
+          "t": "Vermelho",
+          "p": 209.90,
+          "c": 209.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128469303",
+      "titulo": "Boné Snapback Suede Cinza Logo Black Piano",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-cinza-logo-black-piano",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:36-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B51_b3e0ff76-78a9-4e97-b87b-412ffa6b61d1.jpg?v=1795815712",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B51-2_86ee9b6c-05cc-4924-a84b-2f814e93b7b9.jpg?v=1795815712",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B51-3_53eda2bf-780a-4253-866d-ac873b8bb7dd.jpg?v=1795815712"
+      ],
+      "variantes": [
+        {
+          "t": "Cinza",
+          "p": 219.90,
+          "c": 219.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128928055",
+      "titulo": "Boné Snapback Vermelho Wings 3.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-vermelho-wings-3-0",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:35-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B49_cd7d3aa8-504d-4b7a-870b-8910e12548d4.jpg?v=1795815893",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B49-2_ac2c4de7-9936-4ced-a8a3-30bf4ffa94ce.jpg?v=1795815893",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B49-3_0021d65b-7638-4d91-ae9f-0c76864b16b4.jpg?v=1795815893"
+      ],
+      "variantes": [
+        {
+          "t": "Vermelho",
+          "p": 229.90,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128698679",
+      "titulo": "Boné Snapback Preto Wings Champagne",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-wings-champagne",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:35-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B64_9f2feb6c-3fec-445b-8fb3-2882def6dfbf.jpg?v=1795815829",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B64-2_4ab1f461-b749-4eef-b76a-82cb24023938.jpg?v=1795815829",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B64-3_fc9b6130-3f63-4cfa-9aea-ade4ee5be01c.jpg?v=1795815829"
+      ],
+      "variantes": [
+        {
+          "t": "Preto",
+          "p": 209.90,
+          "c": 209.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128665911",
+      "titulo": "Boné Snapback Off White Wings Champagne",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-wings-champagne",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:35-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B23_aa7ac410-fac5-4320-9f8d-9221dadf42f2.jpg?v=1795815820",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B23-2_e3b845c8-ba03-4c2d-be2b-1538be521177.jpg?v=1795815820",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B23-3_4f1cbdb4-f6c5-4f7a-b99f-17f120fafbd3.jpg?v=1795815820"
+      ],
+      "variantes": [
+        {
+          "t": "Off White",
+          "p": 209.90,
+          "c": 209.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116129059127",
+      "titulo": "Boné Snapback Caramelo Wings 3.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-caramelo-wings-3-0",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:34-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B02_b392660f-d7ce-4a9b-8194-942e4a793b65.jpg?v=1795815978",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B02-2_b8b1cf12-ce54-4937-ab96-c29a07f3df97.jpg?v=1795815978",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B02-3_15277721-49ae-4248-9082-2c8ea495523a.jpg?v=1795815978"
+      ],
+      "variantes": [
+        {
+          "t": "Caramelo",
+          "p": 229.90,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116129026359",
+      "titulo": "Boné Snapback Turquesa Wings 3.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-turquesa-wings-3-0",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:34-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B03_9a8b735b-f78a-475e-b4a3-ce4c9c8d8927.jpg?v=1795815973",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B03-2_e6f594fb-5157-4c59-8785-054b57496bab.jpg?v=1795815973",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B03-3_e89aebbf-0912-495f-bf9c-9ee78596e644.jpg?v=1795815972"
+      ],
+      "variantes": [
+        {
+          "t": "Turquesa",
+          "p": 229.90,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128993591",
+      "titulo": "Boné Snapback Off White Wings 3.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-wings-3-0",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:34-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25_7f3c5e98-a9df-43c0-8321-02e5865f9c3b.jpg?v=1795815962",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25-2_c95bc207-2987-41a7-9f0f-210bee8c88e1.jpg?v=1795815962",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B25-3_1fdb146a-5205-4079-9a7d-61ffe222f274.jpg?v=1795815962"
+      ],
+      "variantes": [
+        {
+          "t": "Off White",
+          "p": 229.90,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116128960823",
+      "titulo": "Boné Snapback Marrom Wings 3.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-marrom-wings-3-0",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:34-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B04_85fc0ce4-3d2e-4aca-9325-4dc7d997a121.jpg?v=1795815951",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B04-2_eee65a3a-a327-46d3-a891-d9ca5e07e7c8.jpg?v=1795815951",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B04-3_f87d9261-3ef9-4656-87a5-33ba9bac7849.jpg?v=1795815951"
+      ],
+      "variantes": [
+        {
+          "t": "Marrom",
+          "p": 229.90,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116129190199",
+      "titulo": "Boné Snapback All Black Wings 3.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-all-black-wings-3-0",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:32-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B72_bba99374-7cad-44af-a4e2-5420d0026488.jpg?v=1795816013",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B72-2_31e3e2b2-d8ba-48a8-b51d-0c311ea63bd8.jpg?v=1795816013",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B72-3_00a44d7e-5f29-4be9-8b15-99106b220ede.jpg?v=1795816013"
+      ],
+      "variantes": [
+        {
+          "t": "Preto",
+          "p": 229.90,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116129157431",
+      "titulo": "Boné Snapback Preto Wings 3.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-wings-3-0",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:32-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B80_8f643855-8b7a-486a-9a76-0a70f7abfd42.jpg?v=1795816003",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B80-2_339a6d52-aba7-4242-8d2a-8e5048d046fc.jpg?v=1795816003",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B80-3_c998e231-786b-4eda-b493-854910fca3c5.jpg?v=1795816003"
+      ],
+      "variantes": [
+        {
+          "t": "Preto",
+          "p": 229.90,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116129124663",
+      "titulo": "Boné Snapback Branco Wings 3.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-branco-wings-3-0",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:32-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B01_bfff0ff4-ca81-40c1-acdc-cb1bf88b398d.jpg?v=1795815994",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B01-2_4a9529aa-7760-46b7-92fe-c37215d2b8ef.jpg?v=1795815994",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B01-3_18115bbe-3a76-4a8b-8ae3-553cafce0d9d.jpg?v=1795815994"
+      ],
+      "variantes": [
+        {
+          "t": "Branco",
+          "p": 229.90,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "11116129091895",
+      "titulo": "Boné Snapback Vinho Wings 3.0",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-vinho-wings-3-0",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [],
+      "publicado": "2026-11-27T18:51:32-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B05_2e47d6b1-a1f8-40f6-a24d-59dbb3548d99.jpg?v=1795815986",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B05-2_61bef6a6-d809-4848-ba34-f13dd4feedb3.jpg?v=1795815986",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B05-3_ffc17265-7181-41e4-bd22-220fcf455232.jpg?v=1795815986"
+      ],
+      "variantes": [
+        {
+          "t": "Vinho",
+          "p": 229.90,
+          "c": 229.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10971736899895",
+      "titulo": "Boné Snapback Cinza Trend Azul",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-cinza-trend-azul",
       "ref": "",
       "tipo": "Chapéus",
       "tags": [
         "MARATONA",
-        "Oriental"
+        "PRODUZIR",
+        "TREND"
       ],
-      "publicado": "2026-11-27T16:44:08-03:00",
+      "publicado": "2026-11-27T17:42:38-03:00",
       "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B05_1b9490c7-f379-4a0a-b364-84e7f17dcdca.jpg?v=1786473267",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B05-2_bafa8487-fb26-4bb5-aa3b-d79b7a25c48d.jpg?v=1786478859",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B05-3_91f3fc1e-5163-45d9-827b-b65228f108c0.jpg?v=1786478859"
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B19_ad796f82-91e6-4f2a-ade0-23804fe3ecdd.jpg?v=1789407180",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B19-2_8bd8c0f0-02bc-4426-8607-364e880ddc7c.jpg?v=1789409177",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B19-3_8d0f05ca-f416-4fc5-a7b2-7fd10545ee83.jpg?v=1789409177"
       ],
       "variantes": [
         {
-          "t": "Off-White / Único",
+          "t": "Cinza / Único",
           "p": 110.00,
-          "c": 189.90,
+          "c": 179.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "10971736932663",
+      "titulo": "Boné Snapback Cinza Trend Branco",
+      "url": "https://blckbrasil.com.br/products/bone-snapback-cinza-trend-branco",
+      "ref": "",
+      "tipo": "Chapéus",
+      "tags": [
+        "MARATONA",
+        "PRODUZIR",
+        "TREND"
+      ],
+      "publicado": "2026-11-27T17:42:33-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B17_1b575ae2-9377-4aea-af80-7cc84a4a68d0.jpg?v=1789407181",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B17-2_0eebffcc-7c3e-4db4-a333-293b517499b7.jpg?v=1789409198",
+        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B17-3_5742e89d-0674-4169-937a-7d94c5e13bd4.jpg?v=1789409198"
+      ],
+      "variantes": [
+        {
+          "t": "Cinza / Único",
+          "p": 110.00,
+          "c": 179.90,
           "a": true
         }
       ]
@@ -84,7 +727,9 @@
       "url": "https://blckbrasil.com.br/products/bone-snapback-bege-racing-verde",
       "ref": "",
       "tipo": "Chapéus",
-      "tags": [],
+      "tags": [
+        "MARATONA"
+      ],
       "publicado": "2026-11-26T18:34:43-03:00",
       "imagens": [
         "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B67_0a035e58-a521-44ab-9963-18af29c3785d.jpg?v=1794284237",
@@ -94,7 +739,7 @@
       "variantes": [
         {
           "t": "Bege",
-          "p": 249.90,
+          "p": 150.00,
           "c": 249.90,
           "a": true
         }
@@ -121,57 +766,6 @@
           "t": "Preto",
           "p": 299.90,
           "c": 299.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10911903744311",
-      "titulo": "Boné Snapback Vermelho Indestructible",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-vermelho-indestructible",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "MARATONA",
-        "Oriental"
-      ],
-      "publicado": "2026-11-26T18:18:14-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B10_ba9c846b-bc1a-48f6-aa8c-5d8261bdaea9.jpg?v=1786473267",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B10-2_37864ff8-41d9-4dcd-b9a8-40128b6a86f4.jpg?v=1786478753",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B10-3_947cd916-2831-484d-93dd-7f595600b7db.jpg?v=1786478753"
-      ],
-      "variantes": [
-        {
-          "t": "Vermelho / Único",
-          "p": 110.00,
-          "c": 189.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10911945031991",
-      "titulo": "Boné Snapback Suede Vinho Wave",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-suede-vinho-wave",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "MARATONA",
-        "Oriental"
-      ],
-      "publicado": "2026-11-26T18:18:09-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B12_f53143e0-cdd4-4785-954e-9d3151a63f20.jpg?v=1786473267",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B12-2_53516d57-1ae3-40f1-bf01-c6b9bd51b725.jpg?v=1786478949",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B12-3_85a72dd7-1ac9-4519-88af-6ad8651b8c35.jpg?v=1786478949",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B12-4_11ddc527-9024-43c4-9410-f75994bd0269.jpg?v=1786478949"
-      ],
-      "variantes": [
-        {
-          "t": "Vermelho / Único",
-          "p": 130.00,
-          "c": 219.90,
           "a": true
         }
       ]
@@ -210,7 +804,6 @@
       "tags": [
         "APLIQUE",
         "DTF",
-        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-11-25T13:49:07-03:00",
@@ -237,7 +830,6 @@
       "tags": [
         "APLIQUE",
         "DTF",
-        "MARATONA",
         "PRODUZIR"
       ],
       "publicado": "2026-11-25T13:47:45-03:00",
@@ -297,7 +889,7 @@
       "variantes": [
         {
           "t": "Vermelho / Único",
-          "p": 150.00,
+          "p": 130.00,
           "c": 239.90,
           "a": true
         }
@@ -372,7 +964,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 130.00,
+          "p": 140.00,
           "c": 199.90,
           "a": true
         }
@@ -397,8 +989,8 @@
       "variantes": [
         {
           "t": "Preto",
-          "p": 399.90,
-          "c": 399.90,
+          "p": 499.90,
+          "c": 499.90,
           "a": true
         }
       ]
@@ -636,7 +1228,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -691,7 +1283,7 @@
       "variantes": [
         {
           "t": "Azul Marinho / Único",
-          "p": 90.00,
+          "p": 110.00,
           "c": 179.90,
           "a": true
         }
@@ -729,7 +1321,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -772,7 +1364,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -814,7 +1406,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -994,7 +1586,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 120.00,
+          "p": 110.00,
           "c": 159.90,
           "a": true
         }
@@ -1018,7 +1610,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 130.00,
+          "p": 110.00,
           "c": 159.90,
           "a": true
         }
@@ -1043,7 +1635,7 @@
       "variantes": [
         {
           "t": "Azul / Único",
-          "p": 130.00,
+          "p": 150.00,
           "c": 199.90,
           "a": true
         }
@@ -1092,54 +1684,6 @@
         {
           "t": "Branco / Único",
           "p": 130.00,
-          "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10560117702967",
-      "titulo": "Boné Snapback Branco Aba Couro Number One",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-branco-aba-couro-number-one",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "MARATONA"
-      ],
-      "publicado": "2026-11-19T23:55:17-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B14_1afd860b-5d56-4dab-90f3-af46f0816b25.jpg?v=1779217148",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B14-2_d5e3de53-d1c4-4f38-b136-71489b052efd.jpg?v=1779217148",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B14-3_95ca1826-ca3e-433b-bb6a-0ea2b4fc6904.jpg?v=1779217148"
-      ],
-      "variantes": [
-        {
-          "t": "Branco / Único",
-          "p": 100.00,
-          "c": 229.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10351882666295",
-      "titulo": "Boné Snapback Preto Resping Colors",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-resping-colors",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "MARATONA"
-      ],
-      "publicado": "2026-11-19T23:55:17-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B53_6e1fa6fd-0f03-40cb-8517-95c1b1e8383d.jpg?v=1764124401",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B53-2_f670ee45-fd49-4a9d-8490-163bded85f4e.jpg?v=1764124401",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B53-3_b9473f26-6c62-42f8-a0d8-2e9c78d20cc7.jpg?v=1764124401"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 100.00,
           "c": 199.90,
           "a": true
         }
@@ -1213,7 +1757,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 120.00,
+          "p": 130.00,
           "c": 179.90,
           "a": true
         }
@@ -1268,31 +1812,6 @@
       ]
     },
     {
-      "id": "9599280808247",
-      "titulo": "Boné Branco Snapback Follow The Leader",
-      "url": "https://blckbrasil.com.br/products/bone-branco-snapback-follow-the-leader",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "MARATONA"
-      ],
-      "publicado": "2026-11-19T23:55:17-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Mai2__07_381e86cf-3efc-47eb-b5a0-d10dea8d4bbb.jpg?v=1716842890",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Mai2__08_557d0099-21b9-43b7-8ebe-3cb34fda253b.jpg?v=1716842893",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Mai2__09_99eccd79-49ee-4949-be2f-6a9dfc7b1be1.jpg?v=1716842897",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Mai2__10_0c6bd47c-2d8c-485d-8cda-eef0ce7b438d.jpg?v=1716842900"
-      ],
-      "variantes": [
-        {
-          "t": "Branco / Único",
-          "p": 100.00,
-          "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "8251231633719",
       "titulo": "Boné Verde Musgo Snapback Logo Camuflado",
       "url": "https://blckbrasil.com.br/products/bone-verde-musgo-snapback-logo-camuflado",
@@ -1311,7 +1830,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 130.00,
+          "p": 150.00,
           "c": 199.90,
           "a": true
         }
@@ -1333,7 +1852,7 @@
       "variantes": [
         {
           "t": "Preto / UN",
-          "p": 130.00,
+          "p": 120.00,
           "c": 199.90,
           "a": true
         }
@@ -1357,32 +1876,8 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 130.00,
+          "p": 110.00,
           "c": 159.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10860066668855",
-      "titulo": "Boné Snapback Off White Alto Relevo Verde Musgo",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-off-white-alto-relevo-verde-musgo",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "MARATONA"
-      ],
-      "publicado": "2026-11-19T23:55:13-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B04_e26ad4cc-70ea-42f8-8043-b2cc6bb370c7.jpg?v=1783468331",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B04-2_691ade8b-e560-4822-9afc-548de6c789a5.jpg?v=1783468330",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B04-3_c2fe2001-2dd3-498a-b320-dc35fc08daa3.jpg?v=1783468330"
-      ],
-      "variantes": [
-        {
-          "t": "Off-White / Único",
-          "p": 100.00,
-          "c": 199.90,
           "a": true
         }
       ]
@@ -1405,7 +1900,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 130.00,
+          "p": 150.00,
           "c": 219.90,
           "a": true
         }
@@ -1455,7 +1950,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 130.00,
+          "p": 150.00,
           "c": 199.90,
           "a": true
         }
@@ -1479,33 +1974,8 @@
       "variantes": [
         {
           "t": "Marrom / Único",
-          "p": 130.00,
+          "p": 150.00,
           "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10057854648631",
-      "titulo": "Boné Preto Snapback Logo Couro Branco",
-      "url": "https://blckbrasil.com.br/products/bone-preto-snapback-logo-couro-branco",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "MARATONA"
-      ],
-      "publicado": "2026-11-19T23:55:12-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Fev_01_35_8577545f-4697-49f6-8f5b-1820a8e3a28b.jpg?v=1739283891",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Fev_01_36_a4ebbe56-30d2-4443-87c5-7d493dc09348.jpg?v=1739283893",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Fev_01_37_8d2d198f-992c-403e-a20f-59aa3b3db3d6.jpg?v=1739283895",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/Bone-Masculino-Aba-Curva-Blck-Brasil_Fev_01_38_198bd61d-72e9-4fd9-9da8-adae05d6d386.jpg?v=1739283898"
-      ],
-      "variantes": [
-        {
-          "t": "Preto / Único",
-          "p": 130.00,
-          "c": 219.90,
           "a": true
         }
       ]
@@ -1682,7 +2152,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 120.00,
+          "p": 140.00,
           "c": 249.90,
           "a": true
         }
@@ -1707,7 +2177,7 @@
       "variantes": [
         {
           "t": "Vinho / Único",
-          "p": 120.00,
+          "p": 140.00,
           "c": 249.90,
           "a": true
         }
@@ -1732,7 +2202,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 130.00,
+          "p": 150.00,
           "c": 199.90,
           "a": true
         }
@@ -1763,38 +2233,13 @@
       ]
     },
     {
-      "id": "10596180361527",
-      "titulo": "Boné Snapback Verde New Wings Amarelo",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-verde-new-wings-amarelo-1",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "COPA",
-        "MARATONA"
-      ],
-      "publicado": "2026-11-16T15:07:58-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B15_7edeaa18-9cf2-4859-a36d-5ab65dc0e7dc.jpg?v=1773781634",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B15-2_4964442c-3c55-470f-96bc-13c60d6cb8a0.jpg?v=1773781634",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B15-3_1c48d168-280b-45b1-8029-32c52914e730.jpg?v=1773781634"
-      ],
-      "variantes": [
-        {
-          "t": "Verde / Único",
-          "p": 100.00,
-          "c": 219.90,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "11091244548407",
       "titulo": "Camiseta Verde BLCK Est. 2015",
       "url": "https://blckbrasil.com.br/products/camiseta-verde-blck-est-2015",
       "ref": "",
       "tipo": "",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -1830,7 +2275,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -1854,7 +2299,7 @@
       "ref": "",
       "tipo": "",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -1890,7 +2335,7 @@
       "variantes": [
         {
           "t": "Caramelo / Único",
-          "p": 90.00,
+          "p": 110.00,
           "c": 159.90,
           "a": true
         }
@@ -1937,31 +2382,6 @@
           "p": 47.00,
           "c": 149.90,
           "a": false
-        }
-      ]
-    },
-    {
-      "id": "10679051583799",
-      "titulo": "Boné Snapback Verde Brasil Brasão Aba Reta",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-verde-brasil-brasao-aba-reta",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "COPA",
-        "MARATONA"
-      ],
-      "publicado": "2026-11-13T18:00:28-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B02_cf1c35fc-88eb-4bd5-9b12-ea4edd51c1e1.jpg?v=1780497424",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B02-2_2f51ddeb-4d67-4314-a26e-5d7aaa6ff46f.jpg?v=1780497425",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B02-3_91f431d6-6284-400d-9155-50024298e891.jpg?v=1780497424"
-      ],
-      "variantes": [
-        {
-          "t": "Verde / Único",
-          "p": 100.00,
-          "c": 199.90,
-          "a": true
         }
       ]
     },
@@ -2084,7 +2504,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 100.00,
+          "p": 150.00,
           "c": 199.90,
           "a": true
         }
@@ -2109,7 +2529,7 @@
       "variantes": [
         {
           "t": "Marrom / Único",
-          "p": 130.00,
+          "p": 150.00,
           "c": 199.90,
           "a": true
         }
@@ -2134,7 +2554,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 100.00,
+          "p": 140.00,
           "c": 199.90,
           "a": true
         }
@@ -2159,7 +2579,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 120.00,
+          "p": 150.00,
           "c": 219.90,
           "a": true
         }
@@ -2184,7 +2604,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 130.00,
+          "p": 140.00,
           "c": 199.90,
           "a": true
         }
@@ -2209,7 +2629,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 150.00,
+          "p": 140.00,
           "c": 249.90,
           "a": true
         }
@@ -2383,7 +2803,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 90.00,
+          "p": 110.00,
           "c": 179.90,
           "a": true
         }
@@ -2407,7 +2827,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 100.00,
+          "p": 120.00,
           "c": 199.90,
           "a": true
         }
@@ -2431,7 +2851,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 100.00,
+          "p": 120.00,
           "c": 199.90,
           "a": true
         }
@@ -2444,7 +2864,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "TSHIRT",
         "VESTUÁRIO"
       ],
@@ -2487,7 +2907,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -2540,7 +2960,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 100.00,
+          "p": 120.00,
           "c": 199.90,
           "a": true
         }
@@ -2565,7 +2985,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 90.00,
+          "p": 110.00,
           "c": 159.90,
           "a": true
         }
@@ -2590,7 +3010,7 @@
       "variantes": [
         {
           "t": "Branco / Único",
-          "p": 90.00,
+          "p": 110.00,
           "c": 159.90,
           "a": true
         }
@@ -2757,7 +3177,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 90.00,
+          "p": 110.00,
           "c": 159.90,
           "a": true
         }
@@ -2782,7 +3202,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 100.00,
+          "p": 110.00,
           "c": 179.90,
           "a": true
         }
@@ -2807,7 +3227,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 100.00,
+          "p": 110.00,
           "c": 179.90,
           "a": true
         }
@@ -2832,7 +3252,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 100.00,
+          "p": 110.00,
           "c": 179.90,
           "a": true
         }
@@ -2857,7 +3277,7 @@
       "variantes": [
         {
           "t": "Cinza / Único",
-          "p": 90.00,
+          "p": 70.00,
           "c": 189.90,
           "a": true
         }
@@ -3030,7 +3450,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 100.00,
+          "p": 120.00,
           "c": 199.90,
           "a": true
         }
@@ -3054,32 +3474,8 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 100.00,
+          "p": 120.00,
           "c": 199.90,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "11035071971639",
-      "titulo": "Boné Snapback Preto Listrado Aba Couro",
-      "url": "https://blckbrasil.com.br/products/bone-snapback-preto-listrado-aba-couro",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "MARATONA"
-      ],
-      "publicado": "2026-10-26T19:18:05-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B83_7bc03c1e-f3db-4027-a5ce-69f47660b91d.jpg?v=1793049522",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B83-2_acacce48-153c-409c-98df-5c48ec6703f8.jpg?v=1793052684",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B83-3_a59e138e-6f34-4df5-8855-fa1759256a5d.jpg?v=1793052684"
-      ],
-      "variantes": [
-        {
-          "t": "Preto",
-          "p": 100.00,
-          "c": 219.90,
           "a": true
         }
       ]
@@ -3250,7 +3646,7 @@
       "variantes": [
         {
           "t": "Branco",
-          "p": 100.00,
+          "p": 110.00,
           "c": 139.90,
           "a": true
         }
@@ -3275,7 +3671,7 @@
       "variantes": [
         {
           "t": "Verde / Único",
-          "p": 80.00,
+          "p": 70.00,
           "c": 189.90,
           "a": true
         }
@@ -3300,7 +3696,7 @@
       "variantes": [
         {
           "t": "Marrom / Único",
-          "p": 80.00,
+          "p": 70.00,
           "c": 189.90,
           "a": true
         }
@@ -3313,7 +3709,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -3367,7 +3763,7 @@
       "variantes": [
         {
           "t": "Preto / Único",
-          "p": 100.00,
+          "p": 80.00,
           "c": 139.90,
           "a": true
         }
@@ -3415,7 +3811,7 @@
       "variantes": [
         {
           "t": "Preta / UN",
-          "p": 110.00,
+          "p": 120.00,
           "c": 149.90,
           "a": true
         }
@@ -3440,7 +3836,7 @@
       "variantes": [
         {
           "t": "Preto",
-          "p": 100.00,
+          "p": 110.00,
           "c": 199.90,
           "a": true
         }
@@ -3504,7 +3900,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "MARATONA"
+        "LIVE"
       ],
       "publicado": "2026-10-08T17:57:48-03:00",
       "imagens": [
@@ -3529,7 +3925,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "MARATONA"
+        "LIVE"
       ],
       "publicado": "2026-10-08T17:57:46-03:00",
       "imagens": [
@@ -3554,7 +3950,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "MARATONA"
+        "LIVE"
       ],
       "publicado": "2026-10-08T17:57:46-03:00",
       "imagens": [
@@ -3579,7 +3975,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "MARATONA"
+        "LIVE"
       ],
       "publicado": "2026-10-08T17:57:45-03:00",
       "imagens": [
@@ -3604,7 +4000,7 @@
       "tipo": "",
       "tags": [
         "ACESSÓRIOS",
-        "MARATONA"
+        "LIVE"
       ],
       "publicado": "2026-10-08T17:57:44-03:00",
       "imagens": [
@@ -3717,7 +4113,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -3761,7 +4157,7 @@
       "ref": "",
       "tipo": "Camiseta",
       "tags": [
-        "MARATONA",
+        "LIVE",
         "OVERSIZED",
         "VESTUÁRIO"
       ],
@@ -3816,7 +4212,7 @@
       "variantes": [
         {
           "t": "Default Title",
-          "p": 100.00,
+          "p": 120.00,
           "c": 199.90,
           "a": true
         }
@@ -4016,32 +4412,6 @@
           "t": "Default Title",
           "p": 249.00,
           "c": 249.00,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "10975027396919",
-      "titulo": "Boné Legendários Suede Verde Água Guatemala",
-      "url": "https://blckbrasil.com.br/products/bone-legendarios-suede-verde-agua-guatemala",
-      "ref": "",
-      "tipo": "Chapéus",
-      "tags": [
-        "COLLAB",
-        "LGND"
-      ],
-      "publicado": "2026-09-16T13:42:30-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B43_da28cd86-9213-4c69-8869-7878ace59862.jpg?v=1789574946",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B43-2_5808d40b-c064-4432-99c7-caf32ebac7a4.jpg?v=1789576407",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B43-3_c36fc37a-7032-48ea-8253-56facc9f290e.jpg?v=1789576407",
-        "https://cdn.shopify.com/s/files/1/0734/8820/4087/files/B43-4_9cb41d23-3270-4602-b346-57fe4e80b276.jpg?v=1789576407"
-      ],
-      "variantes": [
-        {
-          "t": "Default Title",
-          "p": 239.00,
-          "c": 239.00,
           "a": true
         }
       ]
@@ -4326,7 +4696,7 @@
       "variantes": [
         {
           "t": "Off-White / Único",
-          "p": 90.00,
+          "p": 110.00,
           "c": 179.90,
           "a": true
         }
@@ -4475,7 +4845,7 @@
       "variantes": [
         {
           "t": "Caramelo / Único",
-          "p": 100.00,
+          "p": 80.00,
           "c": 139.90,
           "a": true
         }

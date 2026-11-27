@@ -2,7 +2,7 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-27T20:02:43Z",
+  "atualizado": "2026-11-27T23:56:18Z",
   "produtos": [
     {
       "id": "10703255175349",
@@ -42,13 +42,13 @@
           "t": "OFF WHITE / P",
           "p": 1857.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "OFF WHITE / M",
           "p": 1857.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "OFF WHITE / G",
@@ -113,7 +113,7 @@
           "t": "PRETO / 39",
           "p": 2597.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "PRETO / 40",
@@ -456,7 +456,7 @@
           "t": "CAMELO / P",
           "p": 1037.00,
           "c": 0,
-          "a": true
+          "a": false
         },
         {
           "t": "CAMELO / M",
@@ -2890,7 +2890,7 @@
           "t": "OFF / O2",
           "p": 2247.00,
           "c": 0,
-          "a": false
+          "a": true
         }
       ]
     },
@@ -3743,7 +3743,7 @@
           "t": "ESTAMPADO / P",
           "p": 2387.98,
           "c": 3227.00,
-          "a": true
+          "a": false
         },
         {
           "t": "ESTAMPADO / M",

@@ -2,7 +2,7 @@
   "marca": "Levi's",
   "loja": "Site Levi's",
   "site": "www.levi.com.br",
-  "atualizado": "2026-11-27T19:52:57Z",
+  "atualizado": "2026-11-27T23:46:53Z",
   "produtos": [
     {
       "id": "10121",
@@ -154,10 +154,10 @@
         },
         {
           "t": "33X32 USA | 44 BR",
-          "p": 140.97,
+          "p": 469.9,
           "c": 469.9,
-          "x": 140.97,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "28X32 USA | 36 BR",

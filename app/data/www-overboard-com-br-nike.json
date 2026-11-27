@@ -2,7 +2,7 @@
   "marca": "Nike",
   "loja": "Overboard",
   "site": "www.overboard.com.br",
-  "atualizado": "2026-11-27T19:58:05Z",
+  "atualizado": "2026-11-27T23:52:06Z",
   "produtos": [
     {
       "id": "10020",
@@ -10762,8 +10762,8 @@
           "t": "42",
           "p": 359.99,
           "c": 449.99,
-          "x": 359.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
