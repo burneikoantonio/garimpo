@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Site New Balance",
   "site": "www.newbalance.com.br",
-  "atualizado": "2026-11-27T15:53:12Z",
+  "atualizado": "2026-11-27T16:25:09Z",
   "produtos": [
     {
       "id": "1100319",
@@ -3604,8 +3604,8 @@
           "t": "44",
           "p": 349.99,
           "c": 349.99,
-          "x": 349.99,
-          "a": true
+          "x": null,
+          "a": false
         }
       ]
     },
@@ -4876,7 +4876,7 @@
           "t": "P",
           "p": 229.99,
           "c": 229.99,
-          "x": 229.99,
+          "x": null,
           "a": false
         }
       ]
@@ -5189,8 +5189,8 @@
           "t": "39",
           "p": 799.99,
           "c": 999.99,
-          "x": 799.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40",
@@ -10535,8 +10535,8 @@
           "t": "39",
           "p": 329.99,
           "c": 399.99,
-          "x": 329.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40",
@@ -11875,8 +11875,8 @@
           "t": "41",
           "p": 399.99,
           "c": 549.99,
-          "x": null,
-          "a": false
+          "x": 399.99,
+          "a": true
         },
         {
           "t": "42",
@@ -11889,8 +11889,8 @@
           "t": "43",
           "p": 399.99,
           "c": 549.99,
-          "x": null,
-          "a": false
+          "x": 399.99,
+          "a": true
         },
         {
           "t": "44",
@@ -23907,72 +23907,6 @@
       ]
     },
     {
-      "id": "1395105",
-      "titulo": "Tênis New Balance Fresh Foam Ellipse Masculino",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-fresh-foam-ellipse-masculino-1395105/p",
-      "ref": "MELPS_MELPS7CA_1395105",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-08-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235704/MELPS_MELPS7CA.jpg?v=639263154748430000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235705/MELPS_MELPS7CA.jpg?v=639263154787970000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235706/MELPS_MELPS7CA.jpg?v=639263154830100000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/235707/MELPS_MELPS7CA.jpg?v=639263154857370000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 899.99,
-          "c": 899.99,
-          "x": 899.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "1395106",
       "titulo": "Tênis New Balance Fresh Foam Ellipse Masculino",
       "url": "https://www.newbalance.com.br/tenis-new-balance-fresh-foam-ellipse-masculino-1395106/p",
@@ -24226,100 +24160,6 @@
           "c": 899.99,
           "x": 899.99,
           "a": true
-        }
-      ]
-    },
-    {
-      "id": "1395123",
-      "titulo": "Tênis New Balance Fresh Foam Ellipse Masculino",
-      "url": "https://www.newbalance.com.br/tenis-new-balance-fresh-foam-ellipse-masculino-1395123/p",
-      "ref": "MELPS_MELPS30E_1395123",
-      "tipo": "/Calçado/Tênis/ ",
-      "tags": [],
-      "publicado": "2026-09-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/240689/MELPS_MELPS30E.jpg?v=639306976527130000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/240690/MELPS_MELPS30E.jpg?v=639306976557570000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/240691/MELPS_MELPS30E.jpg?v=639306976596270000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/240692/MELPS_MELPS30E.jpg?v=639306976624570000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "39",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "41",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "42",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "43",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "44",
-          "p": 999.99,
-          "c": 999.99,
-          "x": 999.99,
-          "a": true
-        },
-        {
-          "t": "45",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "47",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "48",
-          "p": 999.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
         }
       ]
     },
@@ -29836,8 +29676,8 @@
           "t": "39",
           "p": 749.99,
           "c": 749.99,
-          "x": 749.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "40",
