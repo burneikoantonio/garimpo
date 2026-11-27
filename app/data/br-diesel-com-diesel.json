@@ -2,7 +2,7 @@
   "marca": "Diesel",
   "loja": "Site Diesel",
   "site": "br.diesel.com",
-  "atualizado": "2026-11-27T16:33:23Z",
+  "atualizado": "2026-11-27T16:51:16Z",
   "produtos": [
     {
       "id": "365358",
@@ -2043,7 +2043,7 @@
           "t": "29 ITALIA - 39 BRASIL",
           "p": 1495.0,
           "c": 1495.0,
-          "x": 1495.0,
+          "x": null,
           "a": false
         },
         {
@@ -5108,6 +5108,58 @@
           "p": 1395.0,
           "c": 1395.0,
           "x": 1395.0,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "368524",
+      "titulo": "Calça Diesel P-Hant Chino",
+      "url": "https://br.diesel.com/calca-diesel-p-hant-chino-a196380njbp9xx/p",
+      "ref": "A196380NJBP9XX",
+      "tipo": "/Masculino/Roupas Masculinas/Calças Masculinas/ ",
+      "tags": [],
+      "publicado": "2026-05-11T18:38:00Z",
+      "imagens": [
+        "https://diesel.vteximg.com.br/arquivos/ids/262126/A19638_0NJBP_9XX-1.jpg?v=639142865696300000",
+        "https://diesel.vteximg.com.br/arquivos/ids/262127/A19638_0NJBP_9XX-2.jpg?v=639142865696300000",
+        "https://diesel.vteximg.com.br/arquivos/ids/262128/A19638_0NJBP_9XX-3.jpg?v=639142865696470000",
+        "https://diesel.vteximg.com.br/arquivos/ids/262129/A19638_0NJBP_9XX-4.jpg?v=639142865696470000"
+      ],
+      "variantes": [
+        {
+          "t": "46 ITALIA - PP BRASIL",
+          "p": 1995.0,
+          "c": 1995.0,
+          "x": 1995.0,
+          "a": true
+        },
+        {
+          "t": "48 ITALIA - P BRASIL",
+          "p": 1995.0,
+          "c": 1995.0,
+          "x": 1995.0,
+          "a": true
+        },
+        {
+          "t": "50 ITALIA  - M BRASIL",
+          "p": 1995.0,
+          "c": 1995.0,
+          "x": 1995.0,
+          "a": true
+        },
+        {
+          "t": "52 ITALIA - G BRASIL",
+          "p": 1995.0,
+          "c": 1995.0,
+          "x": 1995.0,
+          "a": true
+        },
+        {
+          "t": "54 ITALIA - GG BRASIL",
+          "p": 1995.0,
+          "c": 1995.0,
+          "x": 1995.0,
           "a": true
         }
       ]

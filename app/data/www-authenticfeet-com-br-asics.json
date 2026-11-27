@@ -2,7 +2,7 @@
   "marca": "ASICS",
   "loja": "Authentic Feet",
   "site": "www.authenticfeet.com.br",
-  "atualizado": "2026-11-27T16:31:02Z",
+  "atualizado": "2026-11-27T16:48:28Z",
   "produtos": [
     {
       "id": "32218",
@@ -1679,100 +1679,6 @@
       ]
     },
     {
-      "id": "50683",
-      "titulo": "Tênis Asics Superblast Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-asics-superblast-13a12-7-750/p",
-      "ref": "13A12-7-750",
-      "tipo": "/Tênis/Masculino/Asics/ Tênis",
-      "tags": [],
-      "publicado": "2023-07-13T00:00:00Z",
-      "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/493383/13A12-7-750-1-AF-800X1000.jpg?v=638705639223530000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/493384/13A12-7-750-2-AF-800X1000.jpg?v=638705639305900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/493385/13A12-7-750-3-AF-800X1000.jpg?v=638705639402870000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/493386/13A12-7-750-4-AF-800X1000.jpg?v=638705639562600000"
-      ],
-      "variantes": [
-        {
-          "t": "34",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "35",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "44",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "46",
-          "p": 1099.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "52805",
       "titulo": "Tênis Asics Gel-Kayano 30 Masculino",
       "url": "https://www.authenticfeet.com.br/tenis-asics-gel-kayano-30-masculino-11b54-8-005/p",
@@ -1826,6 +1732,65 @@
           "t": "44",
           "p": 519.99,
           "c": 1299.99,
+          "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "52806",
+      "titulo": "Tênis Asics NovaBlast 4 Masculino",
+      "url": "https://www.authenticfeet.com.br/tenis-asics-novablast-4-masculino-11b69-3-001/p",
+      "ref": "11B69-3-001",
+      "tipo": "/Tênis/Masculino/Asics/ Tênis",
+      "tags": [],
+      "publicado": "2024-01-22T00:00:00Z",
+      "imagens": [
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/406480/11B69-3-001-1.jpg?v=638439646685000000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/406541/11B69-3-001-2.jpg?v=638439647549070000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/406602/11B69-3-001-3.jpg?v=638439648282730000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/406663/11B69-3-001-4.jpg?v=638439648735530000"
+      ],
+      "variantes": [
+        {
+          "t": "39",
+          "p": 699.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 699.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 699.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 699.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 699.99,
+          "c": 999.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "44",
+          "p": 699.99,
+          "c": 999.99,
           "x": null,
           "a": false
         }
@@ -2787,58 +2752,51 @@
       ]
     },
     {
-      "id": "52833",
+      "id": "52834",
       "titulo": "Tênis Asics Superblast Unissex",
-      "url": "https://www.authenticfeet.com.br/tenis-asics-superblast-unissex-13a12-7-302/p",
-      "ref": "13A12-7-302",
+      "url": "https://www.authenticfeet.com.br/tenis-asics-superblast-unissex-13a12-7-600/p",
+      "ref": "13A12-7-600",
       "tipo": "/Tênis/Masculino/Asics/ Tênis",
       "tags": [],
       "publicado": "2023-07-13T00:00:00Z",
       "imagens": [
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/417185/13A12-7-302-1.jpg?v=638472560690900000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/417186/13A12-7-302-2.jpg?v=638472560765070000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/417187/13A12-7-302-3.jpg?v=638472560838530000",
-        "https://authenticfeet.vteximg.com.br/arquivos/ids/417188/13A12-7-302-4.jpg?v=638472560904200000"
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/406515/13A12-7-600-1.jpg?v=638439646845330000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/406576/13A12-7-600-2.jpg?v=638439647801700000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/406637/13A12-7-600-3.jpg?v=638439648461970000",
+        "https://authenticfeet.vteximg.com.br/arquivos/ids/406698/13A12-7-600-4.jpg?v=638439648894500000"
       ],
       "variantes": [
         {
-          "t": "40",
-          "p": 1279.99,
+          "t": "37",
+          "p": 1599.99,
           "c": 1599.99,
           "x": null,
           "a": false
         },
         {
-          "t": "41",
-          "p": 1279.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 1279.99,
-          "c": 1599.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 1279.99,
+          "t": "38",
+          "p": 1599.99,
           "c": 1599.99,
           "x": null,
           "a": false
         },
         {
           "t": "39",
-          "p": 1279.99,
+          "p": 1599.99,
           "c": 1599.99,
           "x": null,
           "a": false
         },
         {
-          "t": "44",
-          "p": 1279.99,
+          "t": "40",
+          "p": 1599.99,
+          "c": 1599.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 1599.99,
           "c": 1599.99,
           "x": null,
           "a": false

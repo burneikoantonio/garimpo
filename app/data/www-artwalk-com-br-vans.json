@@ -2,7 +2,7 @@
   "marca": "Vans",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-27T16:32:49Z",
+  "atualizado": "2026-11-27T16:50:39Z",
   "produtos": [
     {
       "id": "16207",
@@ -2351,15 +2351,15 @@
       "variantes": [
         {
           "t": "39",
-          "p": 480.0,
-          "c": 480.0,
+          "p": 239.99,
+          "c": 479.99,
           "x": null,
           "a": false
         },
         {
           "t": "40",
-          "p": 480.0,
-          "c": 480.0,
+          "p": 239.99,
+          "c": 479.99,
           "x": null,
           "a": false
         },
@@ -2764,8 +2764,8 @@
       "variantes": [
         {
           "t": "34",
-          "p": 199.99,
-          "c": 449.99,
+          "p": 450.0,
+          "c": 450.0,
           "x": null,
           "a": false
         },
@@ -3643,8 +3643,8 @@
         },
         {
           "t": "38",
-          "p": 390.0,
-          "c": 390.0,
+          "p": 159.99,
+          "c": 389.99,
           "x": null,
           "a": false
         },
@@ -3678,8 +3678,8 @@
         },
         {
           "t": "43",
-          "p": 390.0,
-          "c": 390.0,
+          "p": 159.99,
+          "c": 389.99,
           "x": null,
           "a": false
         },
@@ -4762,8 +4762,8 @@
       "variantes": [
         {
           "t": "34",
-          "p": 550.0,
-          "c": 550.0,
+          "p": 199.99,
+          "c": 549.99,
           "x": null,
           "a": false
         },
@@ -5902,8 +5902,8 @@
         },
         {
           "t": "36",
-          "p": 400.0,
-          "c": 400.0,
+          "p": 199.99,
+          "c": 399.99,
           "x": null,
           "a": false
         },
@@ -5923,8 +5923,8 @@
         },
         {
           "t": "39",
-          "p": 199.99,
-          "c": 399.99,
+          "p": 400.0,
+          "c": 400.0,
           "x": null,
           "a": false
         }
@@ -7922,6 +7922,58 @@
           "p": 149.99,
           "c": 449.99,
           "x": null,
+          "a": false
+        }
+      ]
+    },
+    {
+      "id": "2037266",
+      "titulo": "Tênis Vans UA Ultrarange Exo Se Masculino",
+      "url": "https://www.artwalk.com.br/tenis-vans-ua-ultrarange-exo-se-masculino-cwddr-b-200/p",
+      "ref": "CWDDR-B-200",
+      "tipo": "/Tênis/Masculino/Vans/ Tênis",
+      "tags": [],
+      "publicado": "2024-08-01T00:00:00Z",
+      "imagens": [
+        "https://artwalk.vteximg.com.br/arquivos/ids/552051/CWDDR-B-200-1-AW-800X1000.jpg?v=638972826213970000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/552052/CWDDR-B-200-2-AW-800X1000.jpg?v=638972826214100000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/552053/CWDDR-B-200-3-AW-800X1000.jpg?v=638972826214100000",
+        "https://artwalk.vteximg.com.br/arquivos/ids/552054/CWDDR-B-200-4-AW-800X1000.jpg?v=638972826214100000"
+      ],
+      "variantes": [
+        {
+          "t": "39",
+          "p": 449.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "40",
+          "p": 449.99,
+          "c": 749.99,
+          "x": 449.99,
+          "a": false
+        },
+        {
+          "t": "41",
+          "p": 449.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "42",
+          "p": 449.99,
+          "c": 749.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "43",
+          "p": 449.99,
+          "c": 749.99,
+          "x": 449.99,
           "a": false
         }
       ]
