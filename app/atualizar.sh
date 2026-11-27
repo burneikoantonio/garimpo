@@ -166,6 +166,15 @@ grep -v '^#' marcas.txt | while IFS='|' read -r nome site rel obs liberar; do
     '. + [{nome: $nome, site: $site, relacao: $rel, obs: $obs, liberada: $lib, arquivos: $arqs}]' "$TMP/marcas.json" > "$TMP/m.json" && mv "$TMP/m.json" "$TMP/marcas.json"
 done
 
+# marcas achadas nas lojas lidas pelo Mac (Shop2gether, Nike…) que ainda não estão em marcas.txt entram como sugeridas
+cut -f1 "$TMP/arquivos.tsv" | sort -u | while IFS= read -r nome; do
+  [ -z "$nome" ] && continue
+  jq -e --arg n "$nome" 'any(.[]; .nome == $n)' "$TMP/marcas.json" >/dev/null && continue
+  arqs=$(awk -F'\t' -v m="$nome" '$1 == m {print $2}' "$TMP/arquivos.tsv" | jq -R . | jq -s .)
+  lojas=$(for f in $(echo "$arqs" | jq -r '.[]'); do jq -r .loja "$f"; done | sort -u | paste -sd ", " -)
+  jq --arg n "$nome" --arg obs "Achada na Black Friday ($lojas)" --argjson arqs "$arqs" '. + [{nome: $n, site: "", relacao: "sugerida", obs: $obs, liberada: "", arquivos: $arqs}]' "$TMP/marcas.json" > "$TMP/m.json" && mv "$TMP/m.json" "$TMP/marcas.json"
+done
+
 jq --arg hoje "$(date '+%d/%m/%Y %H:%M')" '{atualizado: $hoje, marcas: .}' "$TMP/marcas.json" > data/marcas.json
 rm -rf "$TMP"
 echo "Pronto. Dados em app/data/"
