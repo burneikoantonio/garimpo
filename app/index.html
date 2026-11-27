@@ -429,6 +429,15 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 .barra-fixa .btn { flex: 1; height: 44px; }
 .barra-ic { background: none; border: 0; color: var(--fg); display: grid; justify-items: center; gap: 2px; font: inherit; font-size: 10px; padding: 0; }
 .barra-ic.ativo { color: var(--spray); }
+/* tela da peça: foto vai até o topo (sem faixa preta no relógio), voltar flutua sobre a foto, ações paradas logo após o preço */
+.sheet:has(.hdr-peca) { padding-top: 0; }
+.hdr-peca { position: sticky; top: 0; height: 0; border: 0; background: none; z-index: 20; }
+.hdr-peca .iconbtn { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 8px); left: 10px; width: 40px; height: 40px; background: rgba(255,255,255,.82); color: #111; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); box-shadow: 0 1px 4px rgba(0,0,0,.18); }
+.barra-fixa.acoes-peca { position: static; border-top: 0; background: none; padding: 16px 0 4px; }
+/* gesto de voltar: a tela acompanha o dedo */
+.sheet.arrastando { transition: none; box-shadow: -8px 0 24px rgba(0,0,0,.25); }
+.sheet.soltando { transition: transform .22s ease-out; }
+#app.trocando { transition: transform .2s ease-out, opacity .2s ease-out; }
 .bigprice .now { font-size: 30px; letter-spacing: 0; }
 .bigprice .off { background: var(--spray); color: #fff; padding: 1px 6px; transform: rotate(-4deg); display: inline-block; }
 /* sem círculos */
@@ -484,7 +493,7 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 <div id="toast" class="toast" role="status" hidden></div>
 
 <script src="icones.js"></script>
-<script src="core.js?v=1795797351"></script>
+<script src="core.js?v=1795797739"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -701,8 +710,15 @@ function viewOfertas() {
   // com busca ou filtro: procura em todas as marcas e lojas, e compara as lojas
   if (buscando()) {
     const q = semAcento(S.q.trim()).split(/\s+/).filter(Boolean);
+    // palavra de tipo ("moletom", "camiseta", "tenis"...) vira filtro de tipo de peça: "moletom" não traz camiseta
+    const TIPOS_BUSCA = [[/^(moletom|moletons|moleton|hoodies?|sweats?|sweatshirts?|blusao|blusoes|cardigans?|sueteres?|tricots?)$/, 'moletom'],
+      [/^(camisetas?|t-?shirts?|tees?|regatas?)$/, 'camiseta'], [/^(camisas?|polos?)$/, 'camisa'], [/^(calcas?|jeans|joggers?|pants)$/, 'calca'],
+      [/^(bermudas?|shorts?)$/, 'bermuda'], [/^(jaquetas?|casacos?|parkas?|blazers?|coletes?|corta-?ventos?|jackets?)$/, 'jaqueta'],
+      [/^(tenis|sneakers?|sapatos?|botas?)$/, 'tenis'], [/^(bones?|toucas?|gorros?|caps?)$/, 'bone']];
+    let tipoBusca = null;
+    const palavras = q.filter(w => { const t = TIPOS_BUSCA.find(([re]) => re.test(w)); if (t && !tipoBusca) { tipoBusca = t[1]; return false; } return true; });
     let { items, hiddenSize } = feedList(p =>
-      q.every(w => semAcento(p.marca + ' ' + p.titulo).includes(w)) &&
+      (!tipoBusca || p.kind === tipoBusca) && palavras.every(w => semAcento(p.marca + ' ' + p.titulo).includes(w)) &&
       (S.cat === 'Tudo' || p.cat === S.cat) && (S.qKind === 'Tudo' || p.kind === S.qKind) &&
       (S.qBrand === 'Todas' || p.marca === S.qBrand) && (S.qLoja === 'Todas' || p.ofertas.some(o => o.loja === S.qLoja)));
     items = ordenar(items.filter(x => (S.qMax >= 3000 || x.e.price <= S.qMax) && (!S.qSale || x.e.off > 0) && (!S.qBaixou || baixouRecente(x.e))));
@@ -898,7 +914,7 @@ function abrirImportado(i) {
   const fmt2 = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   const partes = [['Produto', k.produto, 'var(--c-produto)'], ['Frete', k.frete, '#888780'], [`Imposto de importação (${Math.round(k.c.ii * 100)}%)`, k.ii, '#EF9F27'], [`ICMS (${Math.round(k.c.icms * 100)}%)`, k.icms, '#D85A30']];
   const pct = v => Math.round(v / k.total * 100);
-  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${esc(a.marca)} · Farfetch</h1></div></header>
+  showSheet(`<header class="hdr hdr-peca"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button></header>
     <div class="gallery">${(a.imgs || [a.img]).map((u, n) => `<img src="${esc(img(u, 800))}" alt="${esc(a.nome)} – foto ${n + 1}" ${n ? 'loading="lazy"' : ''}>`).join('')}</div>
     ${(a.imgs || []).length > 1 ? `<div class="wrap"><div class="gallery-count">${a.imgs.length} fotos · deslize para o lado</div></div>` : ''}
     <div class="wrap">
@@ -1628,7 +1644,7 @@ function priceChart(h) {
 }
 
 // bloco que abre e fecha com "+" (página do produto)
-function sanfona(titulo, html, aberta = false) {
+function sanfona(titulo, html, aberta = true) {   // abertas por padrão; tocar no título fecha
   if (!html || !String(html).trim()) return '';
   return `<div class="sanfona ${aberta ? 'aberta' : ''}"><button data-sanfona aria-expanded="${aberta}"><span>${esc(titulo)}</span><span class="mais">+</span></button><div class="conteudo">${html}</div></div>`;
 }
@@ -1661,7 +1677,7 @@ function openDetail(key) {
     <div class="list">${e.lojas.map((l, i) => `<div class="row"><div class="grow"><span class="t1">${esc(l.loja)} ${l.intl ? '<span class="tag t-intl">INTERNACIONAL</span> ' : ''}${i === 0 && e.lojas.length > 1 ? (e.lojas[1].price > l.price ? '<span class="tag t-ok">Mais barato</span>' : '<span class="tag t-gray">Mesmo preço</span>') : ''}</span>${l.de ? `<span class="t2 mono">de ${brl(l.de)}</span>` : ''}</div><span class="mono" style="font-size:15px">${brl(l.price)}</span><a class="btn ghost sm" href="${esc(l.url)}" target="_blank" rel="noopener">Abrir ${icone('abrir', 12)}</a></div>`).join('')}</div>` : '';
   const histBlock = e.ok && e.hist.length > 1 ? `<div class="panel">${priceChart(e.hist)}</div>`
     : `<div class="notice"><span>O histórico deste item começou em ${esc(fmtDate(e.hist?.[0]?.[0]) || 'hoje')}. A cada atualização o gráfico ganha um ponto e a nota passa a considerar se é o menor preço já visto.</span></div>`;
-  showSheet(`<header class="hdr"><div class="wrap"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button><h1 style="font-size:16px">${esc(p.marca)}</h1></div></header>
+  showSheet(`<header class="hdr hdr-peca"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button></header>
     <div class="gallery">${p.imagens.map((s, i) => `<img src="${esc(img(s, 800))}" alt="${esc(p.titulo)} – foto ${i + 1}" ${i ? 'loading="lazy"' : ''}>`).join('')}</div>
     <div class="wrap">
       ${p.imagens.length > 1 ? `<div class="gallery-count">${p.imagens.length} fotos · deslize para o lado</div>` : ''}
@@ -1685,6 +1701,12 @@ function openDetail(key) {
       })()}
       <div class="lbl" style="margin-bottom:8px">Tamanhos${p.group !== 'one' ? ' · marcado = seu tamanho' : ''}</div>
       <div class="sizes">${sizes}</div>
+      <div class="barra-fixa acoes-peca">
+        <button class="barra-ic ${saved ? 'ativo' : ''}" data-save="${esc(key)}" aria-pressed="${saved}" aria-label="${saved ? 'Alerta ligado' : 'Ligar alerta'}">${icone('alertas', 24)}<span>Alerta</span></button>
+        <button class="barra-ic ${curti ? 'ativo' : ''}" data-curti="${esc(key)}" aria-pressed="${curti}" aria-label="${curti ? 'Curtido' : 'Curtir'}">${icone('salvos', 24, { cheio: curti })}<span>Curtir</span></button>
+        <button class="barra-ic ${S.carrinho[key] ? 'ativo' : ''}" data-carrinho="${esc(key)}" aria-label="Simular compra">${icone('simular', 24)}<span>Simular</span></button>
+        <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener"><span>${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato' : 'Ver na loja'}</span></a>
+      </div>
       ${sanfona('Pagamento e entrega', e.ok ? pagamentoHTML(e.lojas[0], e.price) : '', true)}
       ${sanfona('Preço justo', e.ok && e.justo ? (() => {
         const j = e.justo, pct = Math.round(Math.abs(j.dif) * 100);
@@ -1718,13 +1740,7 @@ function openDetail(key) {
       ${sanfona('Importar', intlBlock)}
       ${sanfona('Histórico de preço', histBlock)}
       ${sanfona('Combinar', miniLook(p))}
-      <button class="btn tertiary" data-ocultar="${esc(key)}" style="margin:16px 0 8px">Não curti: esconder esta e as iguais</button>
-    </div>
-    <div class="barra-fixa">
-      <button class="barra-ic ${saved ? 'ativo' : ''}" data-save="${esc(key)}" aria-pressed="${saved}" aria-label="${saved ? 'Alerta ligado' : 'Ligar alerta'}">${icone('alertas', 24)}<span>Alerta</span></button>
-      <button class="barra-ic ${curti ? 'ativo' : ''}" data-curti="${esc(key)}" aria-pressed="${curti}" aria-label="${curti ? 'Curtido' : 'Curtir'}">${icone('salvos', 24, { cheio: curti })}<span>Curtir</span></button>
-      <button class="barra-ic ${S.carrinho[key] ? 'ativo' : ''}" data-carrinho="${esc(key)}" aria-label="Simular compra">${icone('simular', 24)}<span>Simular</span></button>
-      <a class="btn" href="${esc(e.ok ? e.lojas[0].url : p.ofertas[0].url)}" target="_blank" rel="noopener"><span>${e.ok && e.lojas.length > 1 && e.lojas[1].price > e.lojas[0].price ? 'Mais barato' : 'Ver na loja'}</span></a>
+      <button class="btn tertiary" data-ocultar="${esc(key)}" style="margin:16px 0 calc(16px + env(safe-area-inset-bottom, 0px))">Não curti: esconder esta e as iguais</button>
     </div>`);
 }
 
@@ -1993,6 +2009,71 @@ function abrirPorLink() {
   else return;
   history.replaceState(null, '', location.pathname);
 }
+/* ---------- Gestos (igual iPhone) ----------
+   Numa peça/tela aberta: arrastar para a direita volta (a tela acompanha o dedo).
+   Nas abas: arrastar para o lado troca de aba (Ofertas ⇄ Marcas ⇄ Importados ⇄ Salvos ⇄ Perfil).
+   Áreas que já rolam para o lado (fotos, vitrines, filtros, tamanhos) continuam rolando normalmente; da borda esquerda sempre volta. */
+(() => {
+  const ROLAVEIS = '.gallery, .vitrine, .chips, .sizes, .rec-pics, input, select, textarea';
+  const rolavel = el => {
+    for (let n = el; n && n !== document.body && n.id !== 'sheet'; n = n.parentElement) {
+      if (n.matches && n.matches(ROLAVEIS)) return true;
+      if (n.scrollWidth > n.clientWidth + 4 && /auto|scroll/.test(getComputedStyle(n).overflowX)) return true;
+    }
+    return false;
+  };
+  const sheet = () => document.getElementById('sheet'), app = () => document.getElementById('app');
+  const fim = (el, fn) => { let feito = false; const f = () => { if (feito) return; feito = true; el.removeEventListener('transitionend', f); fn(); }; el.addEventListener('transitionend', f); setTimeout(f, 300); };
+  let g = null;
+  document.addEventListener('touchstart', e => {
+    g = null;
+    if (e.touches.length !== 1 || document.querySelector('.abertura')) return;
+    const t = e.touches[0], borda = t.clientX < 28, naTela = !sheet().hidden;
+    if (!borda && rolavel(e.target)) return;
+    if (!naTela && !VIEWS[S.tab]) return;
+    g = { x: t.clientX, y: t.clientY, t: Date.now(), naTela, modo: null, dx: 0 };
+  }, { passive: true });
+  document.addEventListener('touchmove', e => {
+    if (!g) return;
+    const t = e.touches[0], dx = t.clientX - g.x, dy = t.clientY - g.y;
+    if (!g.modo) {
+      if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy) * 1.3) g.modo = 'lado';
+      else if (Math.abs(dy) > 10) { g = null; return; }
+      else return;
+    }
+    e.preventDefault();
+    g.dx = dx;
+    if (g.naTela) { const s = sheet(); s.classList.add('arrastando'); s.style.transform = `translateX(${Math.max(0, dx)}px)`; }
+    else { const a = app(); a.style.transform = `translateX(${dx * 0.35}px)`; a.style.opacity = String(1 - Math.min(0.5, Math.abs(dx) / 600)); }
+  }, { passive: false });
+  const soltar = () => {
+    if (!g || g.modo !== 'lado') { g = null; return; }
+    const { dx, naTela } = g, vel = dx / Math.max(1, Date.now() - g.t);
+    g = null;
+    if (naTela) {
+      const s = sheet(); s.classList.remove('arrastando'); s.classList.add('soltando');
+      if (dx > innerWidth * 0.33 || (vel > 0.45 && dx > 40)) {
+        s.style.transform = 'translateX(100%)';
+        fim(s, () => { s.classList.remove('soltando'); voltar(); s.style.transform = ''; });
+      } else { s.style.transform = ''; fim(s, () => s.classList.remove('soltando')); }
+      return;
+    }
+    const a = app(), i = TABS.findIndex(([k]) => k === S.tab), j = dx < 0 ? i + 1 : i - 1;
+    a.classList.add('trocando');
+    if ((Math.abs(dx) > 70 || (Math.abs(vel) > 0.4 && Math.abs(dx) > 40)) && TABS[j]) {
+      a.style.transform = `translateX(${dx < 0 ? -40 : 40}px)`; a.style.opacity = '0';
+      fim(a, () => {
+        a.classList.remove('trocando');
+        S.tab = TABS[j][0]; S.limit = 40; render(); window.scrollTo(0, 0);
+        a.style.transform = `translateX(${dx < 0 ? 40 : -40}px)`;
+        requestAnimationFrame(() => requestAnimationFrame(() => { a.classList.add('trocando'); a.style.transform = ''; a.style.opacity = ''; fim(a, () => a.classList.remove('trocando')); }));
+      });
+    } else { a.style.transform = ''; a.style.opacity = ''; fim(a, () => a.classList.remove('trocando')); }
+  };
+  document.addEventListener('touchend', soltar);
+  document.addEventListener('touchcancel', soltar);
+})();
+
 document.getElementById('app').innerHTML = telaCarregando();
 abertura();
 load().then(() => {
