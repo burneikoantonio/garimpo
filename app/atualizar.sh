@@ -12,6 +12,9 @@ UA="Mozilla/5.0 (Garimpo; uso pessoal)"
 [ -f data/historico.json ] || echo '{}' > data/historico.json
 echo '[]' > "$TMP/marcas.json"
 : > "$TMP/arquivos.tsv"   # marca <tab> arquivo
+# para a seção "Chegou agora": o que já existia antes desta rodada
+jq 'keys' data/historico.json > "$TMP/hist-antes.json"
+jq '[.marcas[]?.nome]' data/marcas.json > "$TMP/marcas-antes.json" 2>/dev/null || echo '[]' > "$TMP/marcas-antes.json"
 
 trim() { printf '%s' "$1" | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//'; }
 
@@ -176,5 +179,18 @@ cut -f1 "$TMP/arquivos.tsv" | sort -u | while IFS= read -r nome; do
 done
 
 jq --arg hoje "$(date '+%d/%m/%Y %H:%M')" '{atualizado: $hoje, marcas: .}' "$TMP/marcas.json" > data/marcas.json
+# ---------- Chegou agora: peças e marcas que entraram nesta rodada (o app mostra numa seção própria) ----------
+[ -f data/novidades.json ] || echo '{"rodadas":[]}' > data/novidades.json
+jq --slurpfile antes "$TMP/hist-antes.json" --slurpfile hist data/historico.json \
+   --slurpfile mantes "$TMP/marcas-antes.json" --slurpfile marcas data/marcas.json \
+   --arg quando "$(date -u +%Y-%m-%dT%H:%M:%SZ)" --arg rotulo "$(TZ=America/Sao_Paulo date '+%d/%m às %Hh')" '
+  ($antes[0] | map({(.): 1}) | add // {}) as $ja
+  | ($mantes[0] | map({(.): 1}) | add // {}) as $mja
+  | {quando: $quando, rotulo: $rotulo,
+     pecas: [$hist[0] | keys[] | select($ja[.] | not)],
+     marcas: [$marcas[0].marcas[].nome | select($mja[.] | not)]} as $r
+  | .rodadas = ([$r] + .rodadas)[:6]' data/novidades.json > "$TMP/nov.json" && mv "$TMP/nov.json" data/novidades.json
+echo "✓ Chegou agora: $(jq '.rodadas[0].pecas | length' data/novidades.json) peças e $(jq '.rodadas[0].marcas | length' data/novidades.json) marcas novas nesta rodada"
+
 rm -rf "$TMP"
 echo "Pronto. Dados em app/data/"

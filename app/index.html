@@ -498,7 +498,7 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 <div id="toast" class="toast" role="status" hidden></div>
 
 <script src="icones.js"></script>
-<script src="core.js?v=1795799681"></script>
+<script src="core.js?v=1795799950"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -556,7 +556,7 @@ const loadSizes = () => { const s = store.get('sizes', DEFAULT_SIZES); return { 
 const sizesText = () => [S.sizes.top, S.sizes.bottom, S.sizes.shoe].map(l => l.join('/')).join(' · ');
 const S = {
   tab: (t => t === 'novas' ? 'marcas' : t === 'buscar' ? 'ofertas' : t)(store.get('tab', 'ofertas')), cat: 'Tudo', limit: 40,
-  q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, qBaixou: false, filtrosAbertos: false,
+  q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, qBaixou: false, qNovas: false, filtrosAbertos: false,
   sizes: loadSizes(), onlyMySize: store.get('onlyMySize', true),
   withSuggested: store.get('withSuggested', true), notaMin: store.get('notaMin', 70),
   saved: store.get('saved', {}), follow: store.get('follow', null),
@@ -593,6 +593,9 @@ async function load() {
   store.set('segueVistas', segue);
   DATA = buildData(idx, cats, hist, cambio, lojasInfo);
   FF = await get("farfetch.json").catch(() => null);
+  const nov = await get('data/novidades.json').catch(() => null);
+  NOVA = (nov?.rodadas || []).find(r => r.pecas.length || r.marcas.length) || null;   // a última atualização que trouxe algo
+  NOVSET = new Set(NOVA?.pecas || []);
   SX = await get("stockx.json").catch(() => null);
 }
 
@@ -653,6 +656,22 @@ function paraVoceBloco() {
   return `<div class="wrap"><h2 class="section-h" style="margin-top:8px">Para você</h2>
     <p class="section-sub">Parecidas com as ${n} ${n > 1 ? 'peças que você curtiu' : 'peça que você curtiu'}: mesmo tipo, marcas e cores, com preço bom.</p>
     <div class="vitrine">${l.map(x => `<button data-open="${esc(x.q.key)}" aria-label="${esc(x.q.titulo)}"><img loading="lazy" src="${esc(img(x.q.imagens[0], 300))}" alt=""><span class="mono">${brl(x.e.price)}${x.e.off > 0 ? ` · -${Math.round(x.e.off * 100)}%` : ''}</span></button>`).join('')}</div></div>`;
+}
+
+// seção "Chegou agora": peças e marcas que entraram na última atualização do robô (2x por dia)
+function chegouBloco() {
+  if (!NOVA) return '';
+  const { items } = feedList(p => ehNovo(p));
+  const marcas = NOVA.marcas.filter(n => DATA.marcas.some(m => m.nome === n));
+  if (!items.length && !marcas.length) return '';
+  const l = items.slice(0, 15);
+  const partes = [items.length ? `${items.length} ${items.length > 1 ? 'peças novas' : 'peça nova'} no seu tamanho` : '', marcas.length ? `${marcas.length} ${marcas.length > 1 ? 'marcas novas' : 'marca nova'}` : ''].filter(Boolean).join(' e ');
+  return `<div class="wrap"><h2 class="section-h" style="margin-top:8px">Chegou agora</h2>
+    <p class="section-sub">Na atualização de ${esc(NOVA.rotulo || '')}: ${partes}.</p>
+    ${l.length ? `<div class="vitrine">${l.map(x => `<button data-open="${esc(x.p.key)}" aria-label="${esc(x.p.titulo)}"><img loading="lazy" src="${esc(img(x.p.imagens[0], 300))}" alt=""><span class="mono">${brl(x.e.price)}${x.e.off > 0 ? ` · -${Math.round(x.e.off * 100)}%` : ''}</span></button>`).join('')}</div>` : ''}
+    ${marcas.length ? `<div class="chips" style="margin-top:8px">${marcas.slice(0, 20).map(n => `<button class="chip" data-brand="${esc(n)}">${esc(n)}</button>`).join('')}</div>` : ''}
+    ${items.length > l.length ? `<button class="btn tertiary sm" data-novas style="margin-top:8px">Ver as ${items.length} novidades</button>` : ''}
+  </div>`;
 }
 
 function naoCurtiContagem() {
@@ -723,7 +742,7 @@ function viewOfertas() {
     let tipoBusca = null;
     const palavras = q.filter(w => { const t = TIPOS_BUSCA.find(([re]) => re.test(w)); if (t && !tipoBusca) { tipoBusca = t[1]; return false; } return true; });
     let { items, hiddenSize } = feedList(p =>
-      (!tipoBusca || p.kind === tipoBusca) && palavras.every(w => semAcento(p.marca + ' ' + p.titulo).includes(w)) &&
+      (!tipoBusca || p.kind === tipoBusca) && (!S.qNovas || ehNovo(p)) && palavras.every(w => semAcento(p.marca + ' ' + p.titulo).includes(w)) &&
       (S.cat === 'Tudo' || p.cat === S.cat) && (S.qKind === 'Tudo' || p.kind === S.qKind) &&
       (S.qBrand === 'Todas' || p.marca === S.qBrand) && (S.qLoja === 'Todas' || p.ofertas.some(o => o.loja === S.qLoja)));
     items = ordenar(items.filter(x => (S.qMax >= 3000 || x.e.price <= S.qMax) && (!S.qSale || x.e.off > 0) && (!S.qBaixou || baixouRecente(x.e))));
@@ -745,6 +764,7 @@ function viewOfertas() {
     <div class="wrap intro">
       <p>${deals.length} ofertas nos seus tamanhos (${esc(sizesText())}) em ${fontes} marcas · atualizado em ${esc(DATA.atualizado)}</p>
     </div>
+    ${chegouBloco()}
     ${paraVoceBloco()}
     ${saleBloco()}
     ${cats}
@@ -776,7 +796,7 @@ function baixouRecente(e) {
   const max = antes.length ? Math.max(...antes) : 0;
   return max > e.price ? { antes: max, queda: 1 - e.price / max } : null;
 }
-const filtrosAtivos = () => [S.qKind !== 'Tudo', S.qBrand !== 'Todas', S.qLoja !== 'Todas', S.qSale, S.qBaixou, S.qMax < 3000].filter(Boolean).length;
+const filtrosAtivos = () => [S.qKind !== 'Tudo', S.qBrand !== 'Todas', S.qLoja !== 'Todas', S.qSale, S.qBaixou, S.qNovas, S.qMax < 3000].filter(Boolean).length;
 const buscando = () => !!S.q.trim() || filtrosAtivos() > 0;
 function painelBusca() {
   const marcas = ['Todas', ...DATA.marcas.filter(m => m.arquivos?.length).map(m => m.nome)];
@@ -798,6 +818,7 @@ function painelBusca() {
         <div class="field"><label for="qLoja">Loja</label><select id="qLoja">${lojas.map(b => `<option ${b === S.qLoja ? 'selected' : ''}>${esc(b)}</option>`).join('')}</select></div>
       </div>
       <div class="field"><div class="range-val"><label for="qMax">Preço até</label><span class="mono lbl">${S.qMax >= 3000 ? 'qualquer' : brl(S.qMax)}</span></div><input id="qMax" type="range" min="100" max="3000" step="50" value="${S.qMax}"></div>
+      ${NOVA ? `<div class="toggle"><div class="grow"><span>Só o que chegou em ${esc(NOVA.rotulo)}</span></div><button class="switch" role="switch" data-sw="qNovas" aria-checked="${S.qNovas}" aria-label="Só o que chegou na última atualização"></button></div>` : ''}
       <div class="toggle"><div class="grow"><span>Só peças com desconto</span></div><button class="switch" role="switch" data-sw="qSale" aria-checked="${S.qSale}" aria-label="Só peças com desconto"></button></div>
       <div class="toggle"><div class="grow"><span>Só o que baixou de preço</span><span class="t2" style="display:block;font-size:12px;color:var(--helper)">Qualquer queda nos últimos 14 dias, maiores quedas primeiro</span></div><button class="switch" role="switch" data-sw="qBaixou" aria-checked="${S.qBaixou}" aria-label="Só o que baixou de preço"></button></div>
     </div>` : ''}
@@ -884,6 +905,9 @@ function cardMarca(m) {
 
 /* ---------- Aba Farfetch: marcas e achados escolhidos à mão (o robô não consegue ler a Farfetch) ---------- */
 let FF = null, SX = null;
+// Chegou agora: o robô grava em data/novidades.json o que entrou em cada atualização
+let NOVA = null, NOVSET = new Set();
+const ehNovo = p => NOVSET.size > 0 && p.ofertas.some(o => NOVSET.has(o.key));
 // A Farfetch Brasil já embute o imposto de importação no preço e cobra o frete internacional à parte.
 // Separamos o total pago em produto, frete e impostos (estimativa com as alíquotas de farfetch.json).
 function custoFarfetch(preco) {
@@ -1912,7 +1936,8 @@ document.addEventListener('click', ev => {
   else if (d.tema) { S.tema = d.tema; aplicarTema(); render(); }
   else if (d.ffi !== undefined) { navegar(abrirImportado, +d.ffi); }
   else if ('filtros' in d) { S.filtrosAbertos = !S.filtrosAbertos; render(); }
-  else if ('limpar' in d) { Object.assign(S, { q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, qBaixou: false, limit: 40 }); render(); }
+  else if ('novas' in d) { Object.assign(S, { tab: 'ofertas', q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qSale: false, qBaixou: false, qNovas: true, limit: 40 }); render(); window.scrollTo(0, 0); }
+  else if ('limpar' in d) { Object.assign(S, { q: '', qKind: 'Tudo', qBrand: 'Todas', qLoja: 'Todas', qMax: 3000, qSale: false, qBaixou: false, qNovas: false, limit: 40 }); render(); }
   else if (d.loja) { S.qLoja = d.loja; S.limit = 40; render(); }
   else if (d.salebrand) { S.tab = 'ofertas'; S.qBrand = d.salebrand; S.qSale = true; S.q = ''; S.qKind = 'Tudo'; S.limit = 40; render(); window.scrollTo(0, 0); }
   else if (d.sw) { S[d.sw] = !S[d.sw]; render(); }
