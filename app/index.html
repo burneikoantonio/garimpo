@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Achei">
 <meta name="theme-color" content="#0d0d0d">
-<link rel="manifest" href="manifest.webmanifest?v=4">
-<link rel="apple-touch-icon" href="achei4-180.png">
-<link rel="icon" type="image/png" href="achei4-192.png">
+<link rel="manifest" href="manifest.webmanifest?v=5">
+<link rel="apple-touch-icon" href="achei5-180.png">
+<link rel="icon" type="image/png" href="achei5-192.png">
 <title>Achei</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Lacquer&display=swap">
 <style>
@@ -465,6 +465,11 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 /* abertura: fundo branco, ~2 s */
 #abertura { position: fixed; inset: 0; z-index: 100; background: #f2f2f2; display: grid; place-items: center; transition: opacity .3s; }
 #abertura.saindo { opacity: 0; }
+/* logo (diamante) junto do nome Achei */
+.logo-achei { display: inline-flex; align-items: center; gap: 6px; }
+.logo-ic { width: 34px; height: 34px; border-radius: 8px; flex: none; display: block; }
+#abertura .nome { display: grid; justify-items: center; gap: 4px; }
+#abertura .logo-grande { width: 132px; height: 132px; }
 #abertura > * { grid-area: 1 / 1; }
 #abertura .etq path { stroke-dasharray: 80; stroke-dashoffset: 80; animation: etq-desenha .6s ease-out forwards, some .2s .6s forwards; }
 @keyframes etq-desenha { to { stroke-dashoffset: 0; } }
@@ -473,7 +478,7 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 #abertura .nome .tagtitulo { font-size: 64px; transform: rotate(-10deg) skewX(-8deg); letter-spacing: -2px; }
 #abertura .nome .tagtitulo::before { left: 5px; top: 5px; }
 @keyframes quique { 0% { opacity: 0; transform: scale(.3); } 100% { opacity: 1; transform: scale(1); } }
-#abertura .marcas { width: min(320px, 84vw); height: auto; pointer-events: none; }
+#abertura .marcas { width: min(320px, 84vw); height: auto; pointer-events: none; transform: translateY(68px); }
 #abertura .marcas path { opacity: 0; animation: aparece .15s forwards; }
 @keyframes aparece { to { opacity: 1; } }
 
@@ -493,7 +498,7 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 <div id="toast" class="toast" role="status" hidden></div>
 
 <script src="icones.js"></script>
-<script src="core.js?v=1795797919"></script>
+<script src="core.js?v=1795799681"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -705,7 +710,7 @@ const activeBrands = () => new Set(DATA.marcas.filter(m => S.follow.includes(m.n
 
 /* ---------- Telas ---------- */
 function viewOfertas() {
-  const cabeca = header('<span class="tagtitulo logo-tag" data-t="Achei"><span>Achei</span></span>', `<button class="iconbtn" data-sw="qBaixou" aria-label="Só o que baixou de preço" aria-pressed="${S.qBaixou}" style="font-size:18px;${S.qBaixou ? "background:var(--layer2)" : ""}">${icone('baixou', 20)}</button><button class="iconbtn" data-top10 aria-label="Top 10 da semana" >${icone('top10', 20)}</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
+  const cabeca = header('<span class="logo-achei"><img class="logo-ic" src="logo-achei.svg" alt=""><span class="tagtitulo logo-tag" data-t="Achei"><span>Achei</span></span></span>', `<button class="iconbtn" data-sw="qBaixou" aria-label="Só o que baixou de preço" aria-pressed="${S.qBaixou}" style="font-size:18px;${S.qBaixou ? "background:var(--layer2)" : ""}">${icone('baixou', 20)}</button><button class="iconbtn" data-top10 aria-label="Top 10 da semana" >${icone('top10', 20)}</button><button class="iconbtn" data-alerts aria-label="Alertas">${ICON.bell}${buildAlerts().length ? '<span class="dot"></span>' : ''}</button>`);
   const cats = `<div class="wrap chips" role="group" aria-label="Categoria">${['Tudo', 'Roupas', 'Tênis', 'Acessórios'].map(c => `<button class="chip" data-cat="${c}" aria-pressed="${S.cat === c}">${c}</button>`).join('')}</div>`;
   // com busca ou filtro: procura em todas as marcas e lojas, e compara as lojas
   if (buscando()) {
@@ -1301,7 +1306,7 @@ async function desligarPush() {
 }
 async function testarPush() {
   const reg = await navigator.serviceWorker.ready;
-  await reg.showNotification('Achei', { body: 'Teste: as notificações do Achei estão funcionando neste celular.', icon: 'achei4-192.png', data: { url: './#top10' } });
+  await reg.showNotification('Achei', { body: 'Teste: as notificações do Achei estão funcionando neste celular.', icon: 'achei5-192.png', data: { url: './#top10' } });
 }
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
@@ -1315,7 +1320,7 @@ function abrirBoasVindas() {
   BOAS_ABERTA = true;
   const y = document.getElementById('sheet').scrollTop;
   const marcas = DATA.marcas.filter(m => (m.arquivos || []).length).map(m => m.nome).sort((a, b) => a.localeCompare(b));
-  showSheet(`<header class="hdr"><div class="wrap"><h1 style="font-size:16px">Bem-vindo ao Achei</h1></div></header>
+  showSheet(`<header class="hdr"><div class="wrap"><img class="logo-ic" src="logo-achei.svg" alt=""><h1 style="font-size:16px">Bem-vindo ao Achei</h1></div></header>
     <div class="wrap">
       <p class="section-sub" style="margin-top:12px">Escolha seus tamanhos e as marcas que você curte. Dá para mudar depois no Perfil.</p>
       ${[['top', 'Camisetas, moletons e jaquetas'], ['bottom', 'Calças e bermudas'], ['shoe', 'Tênis']].map(([g, label]) => `
@@ -1347,7 +1352,7 @@ function abertura() {
   ].join('');
   document.body.insertAdjacentHTML('beforeend', `<div id="abertura" aria-hidden="true">
     <svg class="etq" viewBox="0 0 24 24" width="90" height="90"><g filter="url(#trem0)"><path d="${TRACOS.ofertas[0]}" stroke="#0d0d0d" stroke-width="1.6" fill="none"/></g></svg>
-    <div class="nome"><span class="tagtitulo" data-t="Achei"><span>Achei</span></span></div>
+    <div class="nome"><img class="logo-grande" src="logo-achei.svg" alt=""><span class="tagtitulo" data-t="Achei"><span>Achei</span></span></div>
     <svg class="marcas" viewBox="0 0 300 240" fill="none" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#trem0)">${marcas}</g></svg>
   </div>`);
   setTimeout(() => { const a = document.getElementById('abertura'); a?.classList.add('saindo'); setTimeout(() => a?.remove(), 350); }, 2100);
