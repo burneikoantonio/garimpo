@@ -2,7 +2,7 @@
   "marca": "Levi's",
   "loja": "Site Levi's",
   "site": "www.levi.com.br",
-  "atualizado": "2026-11-27T11:48:58Z",
+  "atualizado": "2026-11-27T15:53:15Z",
   "produtos": [
     {
       "id": "10121",
@@ -168,17 +168,17 @@
         },
         {
           "t": "30X32 USA | 38 BR",
-          "p": 140.97,
-          "c": 469.9,
-          "x": 140.97,
-          "a": true
-        },
-        {
-          "t": "32X32 USA | 40 BR",
           "p": 469.9,
           "c": 469.9,
           "x": null,
           "a": false
+        },
+        {
+          "t": "32X32 USA | 40 BR",
+          "p": 140.97,
+          "c": 469.9,
+          "x": 140.97,
+          "a": true
         },
         {
           "t": "34X32 USA | 44 BR",
@@ -1991,10 +1991,10 @@
         },
         {
           "t": "M USA | M BR",
-          "p": 899.94,
+          "p": 1499.9,
           "c": 1499.9,
-          "x": 899.94,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "L USA | G BR",
@@ -2305,142 +2305,6 @@
       ]
     },
     {
-      "id": "5482",
-      "titulo": "Calça Jeans Levi's® 510® Skinny Lavagem Escura",
-      "url": "https://www.levi.com.br/calca-jeans-levis-510-skinny-0551003360336/p",
-      "ref": "055100336",
-      "tipo": "/Masculino/Roupas/Jeans/ ",
-      "tags": [],
-      "publicado": "2026-05-29T00:00:00Z",
-      "imagens": [
-        "https://lojalevis.vteximg.com.br/arquivos/ids/508569/055100336_1.jpg?v=638375589402500000",
-        "https://lojalevis.vteximg.com.br/arquivos/ids/394460/055100336_1.jpg?v=638882729078000000",
-        "https://lojalevis.vteximg.com.br/arquivos/ids/396521/055100336_2.jpg?v=638882729078000000",
-        "https://lojalevis.vteximg.com.br/arquivos/ids/398360/055100336_3.jpg?v=638882729078000000"
-      ],
-      "variantes": [
-        {
-          "t": "34X34",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "33X34",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "32X34",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "36X34",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "40X34",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "30X34",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "38X34",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "28X34 USA | 36 BR",
-          "p": 119.97,
-          "c": 399.9,
-          "x": 119.97,
-          "a": true
-        },
-        {
-          "t": "Calça Jeans Levi's® 510® Skinny Lavagem Escura 38X32 USA | 48 BR",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "Calça Jeans Levi's® 510® Skinny Lavagem Escura 30X32 USA | 38 BR",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "Calça Jeans Levi's® 510® Skinny Lavagem Escura 32X32 USA | 40 BR",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "Calça Jeans Levi's® 510® Skinny Lavagem Escura 36X32 USA | 46 BR",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "Calça Jeans Levi's® 510® Skinny Lavagem Escura 40X32 USA | 50 BR",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "Calça Jeans Levi's® 510® Skinny Lavagem Escura 34X32 USA | 44 BR",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "Calça Jeans Levi's® 510® Skinny Lavagem Escura 31X32 USA | 39 BR",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "Calça Jeans Levi's® 510® Skinny Lavagem Escura 33X32 USA | 42 BR",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "Calça Jeans Levi's® 510® Skinny Lavagem Escura 28X32 USA | 39 BR",
-          "p": 199.95,
-          "c": 399.9,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "5568",
       "titulo": "Camiseta Levi's® Graphic Set-In Neck Preta Manga Curta",
       "url": "https://www.levi.com.br/camiseta-levis-graphic-set-in-neck-preta-manga-curtalb00100240024/p",
@@ -2673,8 +2537,8 @@
           "t": "38X34 USA | 48 BR",
           "p": 379.9,
           "c": 379.9,
-          "x": null,
-          "a": false
+          "x": 379.9,
+          "a": true
         },
         {
           "t": "42X34 USA | 52 BR",

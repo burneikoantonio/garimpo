@@ -2,8 +2,62 @@
   "marca": "Piet",
   "loja": "Site Piet",
   "site": "piet.com.br",
-  "atualizado": "2026-11-27T11:56:43Z",
+  "atualizado": "2026-11-27T16:01:31Z",
   "produtos": [
+    {
+      "id": "9318646382821",
+      "titulo": "Boné PIET F.C. Emblem - Azul",
+      "url": "https://piet.com.br/products/piet-f-c-emblem-cap-blue",
+      "ref": "",
+      "tipo": "Bonés",
+      "tags": [
+        "Boné",
+        "FLII",
+        "FW25",
+        "PIET"
+      ],
+      "publicado": "2026-11-27T11:34:42-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/bone_boca_frente.jpg?v=1760641233",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/bone_boca_lado.jpg?v=1760641233",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/bone_boca_atras.jpg?v=1760641233",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/bone_azul_detalhe.jpg?v=1760641233"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 134.97,
+          "c": 449.90,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "9359628632293",
+      "titulo": "Mochila Sling Piet + Oakley - Olive Green/Preto",
+      "url": "https://piet.com.br/products/mochila-sling-piet-oakley-olive-green-preto",
+      "ref": "",
+      "tipo": "Mochilas",
+      "tags": [
+        "Oakley25",
+        "PIET"
+      ],
+      "publicado": "2026-11-27T11:34:09-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Mochila-Sling-Piet-Oakley-Olive-GreenPreto.webp?v=1793806924",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Mochila-Sling-Piet-Oakley-Olive-GreenPreto-2.webp?v=1793806925",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Mochila-Sling-Piet-Oakley-Olive-GreenPreto-3.webp?v=1793806926",
+        "https://cdn.shopify.com/s/files/1/0628/0999/7541/files/Mochila-Sling-Piet-Oakley-Olive-GreenPreto-4.webp?v=1793806927"
+      ],
+      "variantes": [
+        {
+          "t": "Default Title",
+          "p": 539.97,
+          "c": 1799.90,
+          "a": true
+        }
+      ]
+    },
     {
       "id": "9413295407333",
       "titulo": "Camiseta PY 97 Raw Edge",
@@ -36,7 +90,7 @@
           "t": "P | S",
           "p": 119.97,
           "c": 399.90,
-          "a": true
+          "a": false
         },
         {
           "t": "M",
@@ -48,7 +102,7 @@
           "t": "G | L",
           "p": 119.97,
           "c": 399.90,
-          "a": true
+          "a": false
         },
         {
           "t": "XG | XL",
@@ -60,7 +114,7 @@
           "t": "2XG | 2XL",
           "p": 119.97,
           "c": 399.90,
-          "a": true
+          "a": false
         },
         {
           "t": "3XG | 3XL",
@@ -114,7 +168,7 @@
           "t": "M",
           "p": 389.97,
           "c": 1299.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G | L",
@@ -210,7 +264,7 @@
           "t": "3XG | 3XL",
           "p": 119.97,
           "c": 399.90,
-          "a": true
+          "a": false
         },
         {
           "t": "4XG | 4XL",
@@ -304,7 +358,7 @@
           "t": "P | S",
           "p": 149.97,
           "c": 499.90,
-          "a": true
+          "a": false
         },
         {
           "t": "M | M",
@@ -340,7 +394,7 @@
           "t": "3XG | 3XL",
           "p": 149.97,
           "c": 499.90,
-          "a": true
+          "a": false
         },
         {
           "t": "4XG | 4XL",
@@ -391,7 +445,7 @@
           "t": "G | L",
           "p": 149.97,
           "c": 499.90,
-          "a": true
+          "a": false
         },
         {
           "t": "XG | XL",
@@ -403,7 +457,7 @@
           "t": "2XG | 2XL",
           "p": 149.97,
           "c": 499.90,
-          "a": true
+          "a": false
         },
         {
           "t": "3XG | 3XL",
@@ -713,55 +767,55 @@
       "variantes": [
         {
           "t": "36BR | 26US",
-          "p": 359.96,
+          "p": 269.97,
           "c": 899.90,
           "a": true
         },
         {
           "t": "38BR | 28US",
-          "p": 359.96,
+          "p": 269.97,
           "c": 899.90,
           "a": true
         },
         {
           "t": "40BR | 30US",
-          "p": 359.96,
+          "p": 269.97,
           "c": 899.90,
           "a": true
         },
         {
           "t": "42BR | 32US",
-          "p": 359.96,
+          "p": 269.97,
           "c": 899.90,
           "a": false
         },
         {
           "t": "44BR | 34US",
-          "p": 359.96,
+          "p": 269.97,
           "c": 899.90,
           "a": false
         },
         {
           "t": "46BR | 36US",
-          "p": 359.96,
+          "p": 269.97,
           "c": 899.90,
           "a": false
         },
         {
           "t": "48BR | 38US",
-          "p": 359.96,
+          "p": 269.97,
           "c": 899.90,
           "a": false
         },
         {
           "t": "50BR | 40US",
-          "p": 359.96,
+          "p": 269.97,
           "c": 899.90,
           "a": false
         },
         {
           "t": "52BR | 42US",
-          "p": 359.96,
+          "p": 269.97,
           "c": 899.90,
           "a": false
         }
@@ -802,7 +856,7 @@
           "t": "M",
           "p": 104.97,
           "c": 349.90,
-          "a": true
+          "a": false
         },
         {
           "t": "G | L",
@@ -883,7 +937,7 @@
           "t": "XG | XL",
           "p": 104.97,
           "c": 349.90,
-          "a": true
+          "a": false
         },
         {
           "t": "2XG | 2XL",
@@ -958,7 +1012,7 @@
           "t": "2XG | 2XL",
           "p": 164.97,
           "c": 549.90,
-          "a": true
+          "a": false
         },
         {
           "t": "3XG | 3XL",
@@ -2442,7 +2496,7 @@
           "t": "2XG | 2XL",
           "p": 147.96,
           "c": 369.90,
-          "a": true
+          "a": false
         },
         {
           "t": "3XG | 3XL",
@@ -3321,7 +3375,7 @@
           "t": "40BR | 30US",
           "p": 319.96,
           "c": 799.90,
-          "a": true
+          "a": false
         },
         {
           "t": "42BR | 32US",
@@ -4404,7 +4458,7 @@
           "t": "XG | XL",
           "p": 119.96,
           "c": 299.90,
-          "a": true
+          "a": false
         },
         {
           "t": "2XG | 2XL",
@@ -4805,49 +4859,49 @@
       "variantes": [
         {
           "t": "38BR | 28US",
-          "p": 799.90,
+          "p": 239.97,
           "c": 799.90,
           "a": false
         },
         {
           "t": "40BR | 30US",
-          "p": 799.90,
+          "p": 239.97,
           "c": 799.90,
           "a": false
         },
         {
           "t": "42BR | 32US",
-          "p": 799.90,
+          "p": 239.97,
           "c": 799.90,
-          "a": true
+          "a": false
         },
         {
           "t": "44BR | 34US",
-          "p": 799.90,
+          "p": 239.97,
           "c": 799.90,
-          "a": true
+          "a": false
         },
         {
           "t": "46BR | 36US",
-          "p": 799.90,
+          "p": 239.97,
           "c": 799.90,
-          "a": true
+          "a": false
         },
         {
           "t": "48BR | 38US",
-          "p": 799.90,
+          "p": 239.97,
           "c": 799.90,
           "a": false
         },
         {
           "t": "50BR | 40US",
-          "p": 799.90,
+          "p": 239.97,
           "c": 799.90,
           "a": false
         },
         {
           "t": "52BR | 42US",
-          "p": 799.90,
+          "p": 239.97,
           "c": 799.90,
           "a": false
         }
@@ -5301,13 +5355,13 @@
           "t": "PP | XS",
           "p": 159.95,
           "c": 319.90,
-          "a": true
+          "a": false
         },
         {
           "t": "P | S",
           "p": 159.95,
           "c": 319.90,
-          "a": true
+          "a": false
         },
         {
           "t": "M | M",
@@ -6479,7 +6533,7 @@
           "t": "Default Title",
           "p": 419.93,
           "c": 599.90,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -8374,7 +8428,7 @@
           "t": "2XG | 2XL",
           "p": 174.95,
           "c": 349.90,
-          "a": true
+          "a": false
         },
         {
           "t": "3XG | 3XL",
@@ -9239,7 +9293,7 @@
           "t": "XG | XL",
           "p": 879.96,
           "c": 2199.90,
-          "a": true
+          "a": false
         },
         {
           "t": "2XG | 2XL",
@@ -9573,7 +9627,7 @@
           "t": "XG | XL",
           "p": 219.96,
           "c": 549.90,
-          "a": true
+          "a": false
         },
         {
           "t": "2XG | 2XL",

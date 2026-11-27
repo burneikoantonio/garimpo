@@ -2,7 +2,7 @@
   "marca": "Deus Ex Machina",
   "loja": "Site Deus Ex Machina",
   "site": "deusexmachina.com.br",
-  "atualizado": "2026-11-27T11:57:04Z",
+  "atualizado": "2026-11-27T16:02:00Z",
   "produtos": [
     {
       "id": "7208767029296",
@@ -434,7 +434,7 @@
           "t": "GG / PRETA",
           "p": 624.50,
           "c": 1249.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -671,42 +671,12 @@
           "t": "G / PRETA",
           "p": 209.30,
           "c": 299.00,
-          "a": true
+          "a": false
         },
         {
           "t": "GG / PRETA",
           "p": 209.30,
           "c": 299.00,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "7657419178032",
-      "titulo": "Boné Terrace - Petróleo",
-      "url": "https://deusexmachina.com.br/products/bone-terrace-petroleo",
-      "ref": "",
-      "tipo": "DEUS IMPORTADO",
-      "tags": [
-        "Acessórios Femininos",
-        "Acessórios Masculinos",
-        "bonés e chapéus femininos",
-        "Bonés e Gorros Masculinos",
-        "Feminino",
-        "Masculino",
-        "Sale Masculino"
-      ],
-      "publicado": "2026-11-26T18:42:10-03:00",
-      "imagens": [
-        "https://cdn.shopify.com/s/files/1/0552/1709/4704/files/Bone-Terrace-Petroleo_01.05.0194.PTL_01.jpg?v=1744822525",
-        "https://cdn.shopify.com/s/files/1/0552/1709/4704/files/Bone-Terrace-Petroleo_01.05.0194.PTL_03.jpg?v=1749661320",
-        "https://cdn.shopify.com/s/files/1/0552/1709/4704/files/Bone-Terrace-Petroleo_01.05.0194.PTL_02.jpg?v=1749661320"
-      ],
-      "variantes": [
-        {
-          "t": "UN / PETROLEO",
-          "p": 110.70,
-          "c": 369.00,
           "a": true
         }
       ]
@@ -830,13 +800,13 @@
           "t": "44 / AZUL",
           "p": 239.70,
           "c": 799.00,
-          "a": true
+          "a": false
         },
         {
           "t": "46 / AZUL",
           "p": 239.70,
           "c": 799.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -867,7 +837,7 @@
           "t": "P / AZUL CLARO",
           "p": 179.70,
           "c": 599.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M / AZUL CLARO",
@@ -1010,6 +980,12 @@
       ],
       "variantes": [
         {
+          "t": "PP / CHUMBO",
+          "p": 199.50,
+          "c": 399.00,
+          "a": false
+        },
+        {
           "t": "P / CHUMBO",
           "p": 119.70,
           "c": 399.00,
@@ -1029,6 +1005,12 @@
         },
         {
           "t": "GG / CHUMBO",
+          "p": 199.50,
+          "c": 399.00,
+          "a": false
+        },
+        {
+          "t": "GGG / CHUMBO",
           "p": 199.50,
           "c": 399.00,
           "a": false
@@ -3280,7 +3262,7 @@
           "t": "M / PRETA",
           "p": 299.00,
           "c": 299.00,
-          "a": true
+          "a": false
         },
         {
           "t": "G / PRETA",
@@ -11216,7 +11198,7 @@
           "t": "46 / PETROLEO",
           "p": 269.70,
           "c": 899.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -12060,7 +12042,7 @@
           "t": "M / PRETA",
           "p": 799.00,
           "c": 799.00,
-          "a": true
+          "a": false
         },
         {
           "t": "G / PRETA",
@@ -12571,7 +12553,7 @@
           "t": "M / BRANCA",
           "p": 209.30,
           "c": 299.00,
-          "a": true
+          "a": false
         },
         {
           "t": "G / BRANCA",

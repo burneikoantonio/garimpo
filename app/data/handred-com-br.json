@@ -2,8 +2,68 @@
   "marca": "Handred",
   "loja": "Site Handred",
   "site": "handred.com.br",
-  "atualizado": "2026-11-27T11:57:19Z",
+  "atualizado": "2026-11-27T16:02:25Z",
   "produtos": [
+    {
+      "id": "10703255175349",
+      "titulo": "Calça Linho Transpassada",
+      "url": "https://handred.com.br/products/calca-linho-transpassada-1",
+      "ref": "",
+      "tipo": "Calças",
+      "tags": [
+        "CALÇAS",
+        "NOVIDADES",
+        "ROUPAS",
+        "SHOP",
+        "VERAO27",
+        "VERTUDO"
+      ],
+      "publicado": "2026-11-27T11:08:17-03:00",
+      "imagens": [
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/CopyofGRAVATASEDAYANAGI_BLAZERLINHOBOXOFF_CALCALINHOCINTURAALTATRANSPASSADAOFF_1001.webp?v=1795723524",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/POLOTRICOTOFF_CALCALINHOCINTURAALTATRANSPASSADAOFF_578_1.webp?v=1795723524",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/POLOTRICOTOFF_CALCALINHOCINTURAALTATRANSPASSADAOFF_585_1.webp?v=1795723524",
+        "https://cdn.shopify.com/s/files/1/0593/7115/9733/files/POLOTRICOTOFF_CALCALINHOCINTURAALTATRANSPASSADAOFF_577_1.webp?v=1795723524"
+      ],
+      "variantes": [
+        {
+          "t": "OFF WHITE / XXP",
+          "p": 1857.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "OFF WHITE / PP",
+          "p": 1857.00,
+          "c": 0,
+          "a": false
+        },
+        {
+          "t": "OFF WHITE / P",
+          "p": 1857.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / M",
+          "p": 1857.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / G",
+          "p": 1857.00,
+          "c": 0,
+          "a": true
+        },
+        {
+          "t": "OFF WHITE / GG",
+          "p": 1857.00,
+          "c": 0,
+          "a": false
+        }
+      ]
+    },
     {
       "id": "10701310656693",
       "titulo": "Mocassim Quadrado Couro",
@@ -125,7 +185,7 @@
           "t": "AMARELO / P",
           "p": 202.50,
           "c": 675.00,
-          "a": true
+          "a": false
         },
         {
           "t": "AMARELO / M",
@@ -4760,7 +4820,7 @@
           "t": "VERDE / PP",
           "p": 1107.78,
           "c": 1497.00,
-          "a": true
+          "a": false
         },
         {
           "t": "VERDE / P",
@@ -4984,7 +5044,7 @@
           "t": "VERDE / P",
           "p": 626.78,
           "c": 847.00,
-          "a": true
+          "a": false
         },
         {
           "t": "VERDE / M",
@@ -5329,7 +5389,7 @@
           "t": "PRETO / O1",
           "p": 1169.10,
           "c": 3897.00,
-          "a": true
+          "a": false
         },
         {
           "t": "PRETO / O2",
