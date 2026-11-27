@@ -2,7 +2,7 @@
   "marca": "THESAINT",
   "loja": "Site THESAINT",
   "site": "thesaint.com.br",
-  "atualizado": "2026-11-27T17:54:25Z",
+  "atualizado": "2026-11-27T20:02:29Z",
   "produtos": [
     {
       "id": "10183386562851",
@@ -1989,7 +1989,7 @@
           "t": "XGG / OFF WHITE",
           "p": 79.20,
           "c": 198.00,
-          "a": false
+          "a": true
         },
         {
           "t": "GG / OFF WHITE",
@@ -2593,7 +2593,7 @@
           "t": "GG / BLACK",
           "p": 107.20,
           "c": 268.00,
-          "a": false
+          "a": true
         },
         {
           "t": "XGG / BLACK",
@@ -2646,7 +2646,7 @@
           "t": "XGG / BLACK",
           "p": 147.20,
           "c": 368.00,
-          "a": false
+          "a": true
         },
         {
           "t": "GG / BLACK",
@@ -3587,7 +3587,7 @@
           "t": "P / GRAY",
           "p": 119.20,
           "c": 298.00,
-          "a": true
+          "a": false
         },
         {
           "t": "M / GRAY",
@@ -6236,7 +6236,7 @@
           "t": "M / LIGHT GREEN",
           "p": 91.20,
           "c": 228.00,
-          "a": false
+          "a": true
         },
         {
           "t": "G / LIGHT GREEN",
@@ -7362,7 +7362,7 @@
           "t": "GG / BLACK",
           "p": 99.20,
           "c": 248.00,
-          "a": false
+          "a": true
         },
         {
           "t": "XGG / BLACK",
@@ -8279,7 +8279,7 @@
           "t": "G / OFF WHITE",
           "p": 107.20,
           "c": 268.00,
-          "a": false
+          "a": true
         },
         {
           "t": "XGG / OFF WHITE",
@@ -9282,7 +9282,7 @@
           "t": "XGG / OFF WHITE",
           "p": 131.20,
           "c": 328.00,
-          "a": true
+          "a": false
         }
       ]
     },
@@ -11539,13 +11539,13 @@
           "t": "G / STONED BROWN",
           "p": 147.20,
           "c": 368.00,
-          "a": false
+          "a": true
         },
         {
           "t": "GG / STONED BROWN",
           "p": 147.20,
           "c": 368.00,
-          "a": true
+          "a": false
         },
         {
           "t": "XGG / STONED BROWN",
@@ -13881,7 +13881,7 @@
           "t": "GG / OFF WHITE",
           "p": 131.20,
           "c": 328.00,
-          "a": false
+          "a": true
         },
         {
           "t": "XGG / OFF WHITE",
@@ -13984,7 +13984,7 @@
           "t": "GG / AZUL",
           "p": 99.20,
           "c": 248.00,
-          "a": false
+          "a": true
         },
         {
           "t": "M / AZUL",
