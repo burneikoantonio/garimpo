@@ -498,7 +498,7 @@ input, select, .panel, .notice, .field input, .search { border-radius: 0 !import
 <div id="toast" class="toast" role="status" hidden></div>
 
 <script src="icones.js"></script>
-<script src="core.js?v=1795799950"></script>
+<script src="core.js?v=1795800470"></script>
 <script>
 /* ---------- Ícones ---------- */
 const ICON = {
@@ -1703,7 +1703,7 @@ function openDetail(key) {
     </div>
     <div class="notice" style="background:var(--layer2)"><span>${e.intlDescartado ? `Não compensa importar: precisa sair ${S.minSave}% mais barato que no Brasil.` : brMin ? `Compensa: ${Math.round((1 - imp.price / brMin) * 100)}% mais barato que no Brasil.` : 'Não encontramos esta peça à venda no Brasil, então comparamos só com peças parecidas.'} Câmbio de ${esc(fmtDate(DATA.cambio?.data))}; frete e impostos são estimativas.</span></div></div>` : '';
   const lojasBlock = e.ok ? `<h3 class="section-h">Onde comprar${S.onlyMySize && p.group !== 'one' ? ' no seu tamanho' : ''}</h3>
-    <div class="list">${e.lojas.map((l, i) => `<div class="row"><div class="grow"><span class="t1">${esc(l.loja)} ${l.intl ? '<span class="tag t-intl">INTERNACIONAL</span> ' : ''}${i === 0 && e.lojas.length > 1 ? (e.lojas[1].price > l.price ? '<span class="tag t-ok">Mais barato</span>' : '<span class="tag t-gray">Mesmo preço</span>') : ''}</span>${l.de ? `<span class="t2 mono">de ${brl(l.de)}</span>` : ''}</div><span class="mono" style="font-size:15px">${brl(l.price)}</span><a class="btn ghost sm" href="${esc(l.url)}" target="_blank" rel="noopener">Abrir ${icone('abrir', 12)}</a></div>`).join('')}</div>` : '';
+    <div class="list">${e.lojas.map((l, i) => `<div class="row"><div class="grow"><span class="t1">${esc(l.loja)} ${l.intl ? '<span class="tag t-intl">INTERNACIONAL</span> ' : ''}${l.loja === 'Amazon' ? '<span class="tag t-ok">VENDIDO E ENTREGUE PELA AMAZON</span> ' : ''}${i === 0 && e.lojas.length > 1 ? (e.lojas[1].price > l.price ? '<span class="tag t-ok">Mais barato</span>' : '<span class="tag t-gray">Mesmo preço</span>') : ''}</span>${l.de ? `<span class="t2 mono">de ${brl(l.de)}</span>` : ''}</div><span class="mono" style="font-size:15px">${brl(l.price)}</span><a class="btn ghost sm" href="${esc(l.url)}" target="_blank" rel="noopener">Abrir ${icone('abrir', 12)}</a></div>`).join('')}</div>` : '';
   const histBlock = e.ok && e.hist.length > 1 ? `<div class="panel">${priceChart(e.hist)}</div>`
     : `<div class="notice"><span>O histórico deste item começou em ${esc(fmtDate(e.hist?.[0]?.[0]) || 'hoje')}. A cada atualização o gráfico ganha um ponto e a nota passa a considerar se é o menor preço já visto.</span></div>`;
   showSheet(`<header class="hdr hdr-peca"><button class="iconbtn" data-close aria-label="Voltar">${ICON.back}</button></header>
