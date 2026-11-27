@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Site New Balance",
   "site": "www.newbalance.com.br",
-  "atualizado": "2026-11-27T17:27:54Z",
+  "atualizado": "2026-11-27T17:45:50Z",
   "produtos": [
     {
       "id": "1100319",
@@ -1182,6 +1182,58 @@
           "p": 399.99,
           "c": 549.99,
           "x": 399.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1233668",
+      "titulo": "Shorts Sport Essentials 2 In 1 - 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-sport-essentials-2-in-1---5--masculino-1233668/p",
+      "ref": "MS41230B_NEF_1233668",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2024-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/183699/MS41230B_NEF.jpg?v=638852608735100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/183700/MS41230B_NEF.jpg?v=638852608735100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/183701/MS41230B_NEF.jpg?v=638852608735230000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/183702/MS41230B_NEF.jpg?v=638852608735230000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 169.9,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "G",
+          "p": 169.9,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "GG",
+          "p": 169.9,
+          "c": 199.99,
+          "x": null,
+          "a": false
+        },
+        {
+          "t": "M",
+          "p": 169.9,
+          "c": 199.99,
+          "x": 169.9,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 169.9,
+          "c": 199.99,
+          "x": 169.9,
           "a": true
         }
       ]
@@ -13429,6 +13481,110 @@
       ]
     },
     {
+      "id": "1355736",
+      "titulo": "Casaco Com Capuz Athletics Small Logo Masculino",
+      "url": "https://www.newbalance.com.br/casaco-com-capuz-athletics-small-logo-masculino-1355736/p",
+      "ref": "MT41534B_ABJ_1355736",
+      "tipo": "/Confecção/Casaco Com Capuz/ ",
+      "tags": [],
+      "publicado": "2026-03-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227311/MT41534B_ABJ.jpg?v=639214640491300000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227312/MT41534B_ABJ.jpg?v=639214640531930000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227313/MT41534B_ABJ.jpg?v=639214640562300000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/227314/MT41534B_ABJ.jpg?v=639214640604070000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 429.99,
+          "c": 429.99,
+          "x": 429.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 429.99,
+          "c": 429.99,
+          "x": 429.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 429.99,
+          "c": 429.99,
+          "x": 429.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 429.99,
+          "c": 429.99,
+          "x": 429.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 429.99,
+          "c": 429.99,
+          "x": 429.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1355745",
+      "titulo": "Shorts Athletics Small Logo 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-athletics-small-logo-5--masculino-1355745/p",
+      "ref": "MS41511B_ABJ_1355745",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2026-02-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226637/MS41511B_ABJ.jpg?v=639209329842130000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226638/MS41511B_ABJ.jpg?v=639209329886130000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226639/MS41511B_ABJ.jpg?v=639209329924830000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226640/MS41511B_ABJ.jpg?v=639209329959730000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 279.99,
+          "c": 279.99,
+          "x": 279.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1355746",
       "titulo": "Camiseta Track Masculina",
       "url": "https://www.newbalance.com.br/camiseta-track-masculina-1355746/p",
@@ -13753,6 +13909,58 @@
         "https://newbrasil.vteximg.com.br/arquivos/ids/217587/MJ6126S5B_BK.jpg?v=639172321600800000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/217588/MJ6126S5B_BK.jpg?v=639172321600800000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/217589/MJ6126S5B_BK.jpg?v=639172321600800000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 399.99,
+          "c": 399.99,
+          "x": 399.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1356089",
+      "titulo": "Jaqueta Corta Vento Fast Days Masculino",
+      "url": "https://www.newbalance.com.br/jaqueta-corta-vento-fast-days-masculino-1356089/p",
+      "ref": "MJ6126S5B_AFG_1356089",
+      "tipo": "/Confecção/Jaqueta Corta Vento/ ",
+      "tags": [],
+      "publicado": "2026-03-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220441/MJ6126S5B_AFG.jpg?v=639184203763730000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220442/MJ6126S5B_AFG.jpg?v=639184203805870000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220443/MJ6126S5B_AFG.jpg?v=639184203834500000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/220444/MJ6126S5B_AFG.jpg?v=639184203902270000"
       ],
       "variantes": [
         {
@@ -14192,58 +14400,6 @@
           "p": 289.99,
           "c": 469.99,
           "x": 289.99,
-          "a": true
-        }
-      ]
-    },
-    {
-      "id": "1356257",
-      "titulo": "Shorts Athletics Stretch Woven 7\" Masculino",
-      "url": "https://www.newbalance.com.br/shorts-athletics-stretch-woven-7--masculino-1356257/p",
-      "ref": "MB6174CD_ABP_1356257",
-      "tipo": "/Confecção/Shorts/ ",
-      "tags": [],
-      "publicado": "2026-02-01T00:00:00Z",
-      "imagens": [
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203088/MB6174CD_ABP.jpg?v=639077946674900000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203089/MB6174CD_ABP.jpg?v=639077946713700000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203090/MB6174CD_ABP.jpg?v=639077946754400000",
-        "https://newbrasil.vteximg.com.br/arquivos/ids/203091/MB6174CD_ABP.jpg?v=639077946783800000"
-      ],
-      "variantes": [
-        {
-          "t": "2GG",
-          "p": 389.99,
-          "c": 389.99,
-          "x": 389.99,
-          "a": true
-        },
-        {
-          "t": "G",
-          "p": 389.99,
-          "c": 389.99,
-          "x": 389.99,
-          "a": true
-        },
-        {
-          "t": "GG",
-          "p": 389.99,
-          "c": 389.99,
-          "x": 389.99,
-          "a": true
-        },
-        {
-          "t": "M",
-          "p": 389.99,
-          "c": 389.99,
-          "x": 389.99,
-          "a": true
-        },
-        {
-          "t": "P",
-          "p": 389.99,
-          "c": 389.99,
-          "x": 389.99,
           "a": true
         }
       ]
@@ -14925,6 +15081,58 @@
       ]
     },
     {
+      "id": "1356434",
+      "titulo": "Casaco Com Capuz Made Usa Masculino",
+      "url": "https://www.newbalance.com.br/casaco-com-capuz-made-usa-masculino-1356434/p",
+      "ref": "MT43546_SST_1356434",
+      "tipo": "/Confecção/Casaco Com Capuz/ ",
+      "tags": [],
+      "publicado": "2026-02-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/202738/MT43546_SST.jpg?v=639071954526570000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/202739/MT43546_SST.jpg?v=639071954567000000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/202740/MT43546_SST.jpg?v=639071954606600000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/202741/MT43546_SST.jpg?v=639071954635970000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 999.99,
+          "c": 999.99,
+          "x": 999.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1356463",
       "titulo": "Tênis New Balance 740 Unisex",
       "url": "https://www.newbalance.com.br/tenis-new-balance-740-unisex-1356463/p",
@@ -15071,6 +15279,58 @@
       ]
     },
     {
+      "id": "1356527",
+      "titulo": "Jaqueta Corta Vento Packable Rc Masculino",
+      "url": "https://www.newbalance.com.br/jaqueta-corta-vento-packable-rc-masculino-1356527/p",
+      "ref": "MJ61U1I9_GYM_1356527",
+      "tipo": "/Confecção/Jaqueta Corta Vento/ ",
+      "tags": [],
+      "publicado": "2026-03-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226317/MJ61U1I9_GYM.jpg?v=639207797465470000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226318/MJ61U1I9_GYM.jpg?v=639207797508130000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226319/MJ61U1I9_GYM.jpg?v=639207797550900000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226320/MJ61U1I9_GYM.jpg?v=639207797589500000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 799.99,
+          "c": 799.99,
+          "x": 799.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 799.99,
+          "c": 799.99,
+          "x": 799.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 799.99,
+          "c": 799.99,
+          "x": 799.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 799.99,
+          "c": 799.99,
+          "x": 799.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 799.99,
+          "c": 799.99,
+          "x": 799.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1356543",
       "titulo": "Shorts Rc Essential 5\" Masculino",
       "url": "https://www.newbalance.com.br/shorts-rc-essential-5--masculino-1356543/p",
@@ -15083,6 +15343,58 @@
         "https://newbrasil.vteximg.com.br/arquivos/ids/195754/MB6180TA_BK.jpg?v=639045916774170000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/195755/MB6180TA_BK.jpg?v=639045916774170000",
         "https://newbrasil.vteximg.com.br/arquivos/ids/195756/MB6180TA_BK.jpg?v=639045916774170000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1356580",
+      "titulo": "Shorts Rc Essential 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-rc-essential-5--masculino-1356580/p",
+      "ref": "MB6180TA_AA5_1356580",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2026-01-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226346/MB6180TA_AA5.jpg?v=639207804181100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226347/MB6180TA_AA5.jpg?v=639207804220930000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226348/MB6180TA_AA5.jpg?v=639207804263100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226349/MB6180TA_AA5.jpg?v=639207804305530000"
       ],
       "variantes": [
         {
@@ -16494,6 +16806,58 @@
           "p": 329.99,
           "c": 329.99,
           "x": 329.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1382451",
+      "titulo": "Casaco Com Capuz Essentials Basic Masculino",
+      "url": "https://www.newbalance.com.br/casaco-com-capuz-essentials-basic-masculino-1382451/p",
+      "ref": "MT31537B_AGG_1382451",
+      "tipo": "/Confecção/Casaco Com Capuz/ ",
+      "tags": [],
+      "publicado": "2026-03-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226137/MT31537B_AGG.jpg?v=639205208904200000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226138/MT31537B_AGG.jpg?v=639205208944800000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226139/MT31537B_AGG.jpg?v=639205208985000000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/226140/MT31537B_AGG.jpg?v=639205209025800000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 369.99,
+          "c": 369.99,
+          "x": 369.99,
           "a": true
         }
       ]
@@ -30765,6 +31129,110 @@
       ]
     },
     {
+      "id": "1403386",
+      "titulo": "Casaco Com Capuz Athletics Small Logo Masculino",
+      "url": "https://www.newbalance.com.br/casaco-com-capuz-athletics-small-logo-masculino-1403386/p",
+      "ref": "MT41534B_NOG_1403386",
+      "tipo": "/Confecção/Casaco Com Capuz/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236366/MT41534B_NOG.jpg?v=639275948304170000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236367/MT41534B_NOG.jpg?v=639275948362930000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236368/MT41534B_NOG.jpg?v=639275948404470000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/236369/MT41534B_NOG.jpg?v=639275948449730000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1403387",
+      "titulo": "Casaco Com Capuz Athletics Small Logo Masculino",
+      "url": "https://www.newbalance.com.br/casaco-com-capuz-athletics-small-logo-masculino-1403387/p",
+      "ref": "MT41534B_OFG_1403387",
+      "tipo": "/Confecção/Casaco Com Capuz/ ",
+      "tags": [],
+      "publicado": "2026-07-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/241003/MT41534B_OFG.jpg?v=639310582984700000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/241004/MT41534B_OFG.jpg?v=639310583029200000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/241005/MT41534B_OFG.jpg?v=639310583068330000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/241006/MT41534B_OFG.jpg?v=639310583097770000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 449.99,
+          "c": 449.99,
+          "x": 449.99,
+          "a": true
+        }
+      ]
+    },
+    {
       "id": "1403388",
       "titulo": "Casaco Com Capuz Trackside Masculino",
       "url": "https://www.newbalance.com.br/casaco-com-capuz-trackside-masculino-1403388/p",
@@ -31624,6 +32092,58 @@
           "p": 189.99,
           "c": 189.99,
           "x": 189.99,
+          "a": true
+        }
+      ]
+    },
+    {
+      "id": "1404532",
+      "titulo": "Shorts Sport Essentials 2 In 1 - 5\" Masculino",
+      "url": "https://www.newbalance.com.br/shorts-sport-essentials-2-in-1---5--masculino-1404532/p",
+      "ref": "MS41230BR_OFG_1404532",
+      "tipo": "/Confecção/Shorts/ ",
+      "tags": [],
+      "publicado": "2026-09-01T00:00:00Z",
+      "imagens": [
+        "https://newbrasil.vteximg.com.br/arquivos/ids/240338/MS41230BR_OFG.jpg?v=639298274314100000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/240339/MS41230BR_OFG.jpg?v=639298274342270000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/240340/MS41230BR_OFG.jpg?v=639298274398000000",
+        "https://newbrasil.vteximg.com.br/arquivos/ids/240341/MS41230BR_OFG.jpg?v=639298274466200000"
+      ],
+      "variantes": [
+        {
+          "t": "2GG",
+          "p": 229.99,
+          "c": 229.99,
+          "x": 229.99,
+          "a": true
+        },
+        {
+          "t": "G",
+          "p": 229.99,
+          "c": 229.99,
+          "x": 229.99,
+          "a": true
+        },
+        {
+          "t": "GG",
+          "p": 229.99,
+          "c": 229.99,
+          "x": 229.99,
+          "a": true
+        },
+        {
+          "t": "M",
+          "p": 229.99,
+          "c": 229.99,
+          "x": 229.99,
+          "a": true
+        },
+        {
+          "t": "P",
+          "p": 229.99,
+          "c": 229.99,
+          "x": 229.99,
           "a": true
         }
       ]

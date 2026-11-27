@@ -1,5 +1,5 @@
 {
-  "atualizado": "27/11/2026 14:40",
+  "atualizado": "27/11/2026 14:55",
   "marcas": [
     {
       "nome": "Carnan",
@@ -62,6 +62,7 @@
         "data/www-overboard-com-br-adidas-originals.json",
         "data/www-ostore-com-br-adidas-originals.json",
         "extra/adidas-adidas-originals.json",
+        "extra/amazon-adidas-originals.json",
         "extra/centauro-adidas-originals.json",
         "extra/shop2gether-adidas-originals.json",
         "extra/youridstore-adidas-originals.json"
@@ -139,6 +140,7 @@
         "data/www-artwalk-com-br-new-balance.json",
         "data/www-authenticfeet-com-br-new-balance.json",
         "data/www-ostore-com-br-new-balance.json",
+        "extra/amazon-new-balance.json",
         "extra/centauro-new-balance.json",
         "extra/shop2gether-new-balance.json",
         "extra/youridstore-new-balance.json"
@@ -343,6 +345,7 @@
         "data/www-artwalk-com-br-asics.json",
         "data/www-authenticfeet-com-br-asics.json",
         "data/www-ostore-com-br-asics.json",
+        "extra/amazon-asics.json",
         "extra/centauro-asics.json",
         "extra/shop2gether-asics.json",
         "extra/youridstore-asics.json"
@@ -357,6 +360,7 @@
       "arquivos": [
         "data/www-authenticfeet-com-br-puma.json",
         "data/www-artwalk-com-br-puma.json",
+        "extra/amazon-puma.json",
         "extra/centauro-puma.json",
         "extra/shop2gether-puma.json",
         "extra/youridstore-puma.json"
@@ -395,6 +399,7 @@
       "arquivos": [
         "data/www-authenticfeet-com-br-mizuno.json",
         "data/www-artwalk-com-br-mizuno.json",
+        "extra/amazon-mizuno.json",
         "extra/centauro-mizuno.json"
       ]
     },
@@ -593,9 +598,10 @@
       "nome": "Calvin Klein",
       "site": "",
       "relacao": "sugerida",
-      "obs": "Achada na Black Friday (Shop2gether)",
+      "obs": "Achada na Black Friday (Amazon,Shop2gether)",
       "liberada": "",
       "arquivos": [
+        "extra/amazon-calvin-klein.json",
         "extra/shop2gether-calvin-klein.json"
       ]
     },
@@ -663,9 +669,10 @@
       "nome": "Fila",
       "site": "",
       "relacao": "sugerida",
-      "obs": "Achada na Black Friday (Shop2gether)",
+      "obs": "Achada na Black Friday (Amazon,Shop2gether)",
       "liberada": "",
       "arquivos": [
+        "extra/amazon-fila.json",
         "extra/shop2gether-fila.json"
       ]
     },
@@ -803,9 +810,10 @@
       "nome": "Lacoste",
       "site": "",
       "relacao": "sugerida",
-      "obs": "Achada na Black Friday (Shop2gether)",
+      "obs": "Achada na Black Friday (Amazon,Shop2gether)",
       "liberada": "",
       "arquivos": [
+        "extra/amazon-lacoste.json",
         "extra/shop2gether-lacoste.json"
       ]
     },
@@ -863,9 +871,10 @@
       "nome": "Oakley",
       "site": "",
       "relacao": "sugerida",
-      "obs": "Achada na Black Friday (Shop2gether)",
+      "obs": "Achada na Black Friday (Amazon,Shop2gether)",
       "liberada": "",
       "arquivos": [
+        "extra/amazon-oakley.json",
         "extra/shop2gether-oakley.json"
       ]
     },
@@ -983,9 +992,10 @@
       "nome": "The North Face",
       "site": "",
       "relacao": "sugerida",
-      "obs": "Achada na Black Friday (Shop2gether)",
+      "obs": "Achada na Black Friday (Amazon,Shop2gether)",
       "liberada": "",
       "arquivos": [
+        "extra/amazon-the-north-face.json",
         "extra/shop2gether-the-north-face.json"
       ]
     },
@@ -1007,6 +1017,16 @@
       "liberada": "",
       "arquivos": [
         "extra/shop2gether-umbro.json"
+      ]
+    },
+    {
+      "nome": "Under Armour",
+      "site": "",
+      "relacao": "sugerida",
+      "obs": "Achada na Black Friday (Amazon)",
+      "liberada": "",
+      "arquivos": [
+        "extra/amazon-under-armour.json"
       ]
     },
     {
