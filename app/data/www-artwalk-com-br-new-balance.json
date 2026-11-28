@@ -2,7 +2,7 @@
   "marca": "New Balance",
   "loja": "Artwalk",
   "site": "www.artwalk.com.br",
-  "atualizado": "2026-11-27T23:48:00Z",
+  "atualizado": "2026-11-28T11:44:26Z",
   "produtos": [
     {
       "id": "16020",
@@ -316,8 +316,8 @@
         },
         {
           "t": "38",
-          "p": 239.99,
-          "c": 579.99,
+          "p": 580.0,
+          "c": 580.0,
           "x": null,
           "a": false
         },
@@ -337,8 +337,8 @@
         },
         {
           "t": "41",
-          "p": 580.0,
-          "c": 580.0,
+          "p": 239.99,
+          "c": 579.99,
           "x": null,
           "a": false
         },
@@ -8248,30 +8248,6 @@
       ]
     },
     {
-      "id": "2037018",
-      "titulo": "Meia New Balance Cano Alto Unissex",
-      "url": "https://www.artwalk.com.br/meia-new-balance-cano-alto-unissex-36anb-0-100/p",
-      "ref": "36ANB-0-100",
-      "tipo": "/Roupas/Masculino/Meias/ Meias",
-      "tags": [],
-      "publicado": "2024-07-25T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/643776/36ANB-0-100-1-800X1000.jpg?v=639180087452170000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/643777/36ANB-0-100-2-800X1000.jpg?v=639180087452330000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/643778/36ANB-0-100-3-800X1000.jpg?v=639180087452500000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/643779/36ANB-0-100-4-800X1000.jpg?v=639180087452630000"
-      ],
-      "variantes": [
-        {
-          "t": "39 a 42",
-          "p": 19.99,
-          "c": 49.99,
-          "x": 19.99,
-          "a": true
-        }
-      ]
-    },
-    {
       "id": "2037526",
       "titulo": "Tênis New Balance 9060 Unissex",
       "url": "https://www.artwalk.com.br/tenis-new-balance-9060-unissex-23097-7-001/p",
@@ -8295,8 +8271,8 @@
         },
         {
           "t": "35",
-          "p": 1199.99,
-          "c": 1199.99,
+          "p": 1200.0,
+          "c": 1200.0,
           "x": null,
           "a": false
         },
@@ -8330,8 +8306,8 @@
         },
         {
           "t": "41",
-          "p": 1199.99,
-          "c": 1199.99,
+          "p": 1200.0,
+          "c": 1200.0,
           "x": null,
           "a": false
         },
@@ -9676,65 +9652,6 @@
       ]
     },
     {
-      "id": "2040660",
-      "titulo": "Tênis New Balance 1000 Masculino",
-      "url": "https://www.artwalk.com.br/tenis-new-balance-1000-masculino-27337-8-001/p",
-      "ref": "27337-8-001",
-      "tipo": "/Tênis/Masculino/New Balance/ Tênis",
-      "tags": [],
-      "publicado": "2024-12-27T00:00:00Z",
-      "imagens": [
-        "https://artwalk.vteximg.com.br/arquivos/ids/576842/27337-8-001-1-AW-800X1000.jpg?v=638811150434770000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576843/27337-8-001-2-AW-800X1000.jpg?v=638811150590000000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576844/27337-8-001-3-AW-800X1000.jpg?v=638811150750100000",
-        "https://artwalk.vteximg.com.br/arquivos/ids/576845/27337-8-001-4-AW-800X1000.jpg?v=638811150847970000"
-      ],
-      "variantes": [
-        {
-          "t": "38",
-          "p": 649.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "39",
-          "p": 649.99,
-          "c": 999.99,
-          "x": 649.99,
-          "a": true
-        },
-        {
-          "t": "40",
-          "p": 649.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "41",
-          "p": 649.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "42",
-          "p": 649.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        },
-        {
-          "t": "43",
-          "p": 649.99,
-          "c": 999.99,
-          "x": null,
-          "a": false
-        }
-      ]
-    },
-    {
       "id": "2040661",
       "titulo": "Tênis New Balance 1000 Masculino",
       "url": "https://www.artwalk.com.br/tenis-new-balance-1000-masculino-27336-3-200/p",
@@ -10856,15 +10773,15 @@
           "t": "GG",
           "p": 99.99,
           "c": 269.99,
-          "x": 99.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "M",
           "p": 99.99,
           "c": 269.99,
-          "x": 99.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "P",
@@ -11487,8 +11404,8 @@
           "t": "42",
           "p": 599.99,
           "c": 999.99,
-          "x": 599.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -12631,8 +12548,8 @@
           "t": "35",
           "p": 479.99,
           "c": 749.99,
-          "x": 479.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "36",
@@ -13762,8 +13679,8 @@
           "t": "P",
           "p": 169.99,
           "c": 169.99,
-          "x": 161.49,
-          "a": true
+          "x": null,
+          "a": false
         }
       ]
     },
@@ -14450,8 +14367,8 @@
           "t": "37",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1234.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "38",
@@ -14661,8 +14578,8 @@
           "t": "G",
           "p": 89.99,
           "c": 129.99,
-          "x": 89.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "GG",
@@ -15082,8 +14999,8 @@
           "t": "42",
           "p": 649.99,
           "c": 999.99,
-          "x": 649.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
@@ -16000,8 +15917,8 @@
           "t": "GG",
           "p": 189.99,
           "c": 189.99,
-          "x": 180.49,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "M",
@@ -16037,8 +15954,8 @@
           "t": "G",
           "p": 129.99,
           "c": 129.99,
-          "x": 123.49,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "M",
@@ -16375,8 +16292,8 @@
           "t": "34",
           "p": 479.99,
           "c": 749.99,
-          "x": 479.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "35",
@@ -17809,15 +17726,15 @@
           "t": "36",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1234.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "37",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1234.99,
+          "a": true
         },
         {
           "t": "38",
@@ -21111,8 +21028,8 @@
           "t": "42",
           "p": 1299.99,
           "c": 1299.99,
-          "x": null,
-          "a": false
+          "x": 1234.99,
+          "a": true
         }
       ]
     },
@@ -21191,8 +21108,8 @@
           "t": "42",
           "p": 1299.99,
           "c": 1299.99,
-          "x": 1234.99,
-          "a": true
+          "x": null,
+          "a": false
         },
         {
           "t": "43",
